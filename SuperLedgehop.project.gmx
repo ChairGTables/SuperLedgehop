@@ -4,10 +4,136 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
-  <paths name="paths"/>
+  <sounds name="sound">
+    <sounds name="chair">
+      <sound>sound\snd_samplesound_chair</sound>
+    </sounds>
+    <sounds name="sonii">
+      <sound>sound\snd_samplesound_sonii</sound>
+    </sounds>
+    <sounds name="david">
+      <sound>sound\snd_samplesound_david</sound>
+    </sounds>
+    <sounds name="ultran">
+      <sound>sound\snd_samplesound_ultran</sound>
+    </sounds>
+  </sounds>
+  <sprites name="sprites">
+    <sprites name="chair">
+      <sprite>sprites\spr_samplesprite_chair</sprite>
+    </sprites>
+    <sprites name="sonii">
+      <sprite>sprites\spr_samplesprite_sonii</sprite>
+    </sprites>
+    <sprites name="david">
+      <sprite>sprites\spr_samplesprite_david</sprite>
+    </sprites>
+    <sprites name="ultran">
+      <sprite>sprites\spr_samplesprite_ultran</sprite>
+    </sprites>
+  </sprites>
+  <backgrounds name="background">
+    <backgrounds name="chair">
+      <background>background\back_samplebackground_chair</background>
+    </backgrounds>
+    <backgrounds name="sonii">
+      <background>background\back_samplebackground_sonii</background>
+    </backgrounds>
+    <backgrounds name="david">
+      <background>background\back_samplebackground_david</background>
+    </backgrounds>
+    <backgrounds name="ultran">
+      <background>background\back_samplebackground_ultran</background>
+    </backgrounds>
+  </backgrounds>
+  <paths name="paths">
+    <paths name="chair">
+      <path>paths\path_samplepath_chair</path>
+    </paths>
+    <paths name="sonii">
+      <path>paths\path_samplepath_sonii</path>
+    </paths>
+    <paths name="david">
+      <path>paths\path_samplepath_david</path>
+    </paths>
+    <paths name="ultran">
+      <path>paths\path_samplepath_ultran</path>
+    </paths>
+  </paths>
+  <scripts name="scripts">
+    <scripts name="chair">
+      <script>scripts\script_samplescript_chair.gml</script>
+    </scripts>
+    <scripts name="sonii">
+      <script>scripts\script_samplescript_sonii.gml</script>
+    </scripts>
+    <scripts name="david">
+      <script>scripts\script_samplescript_david.gml</script>
+    </scripts>
+    <scripts name="ultran">
+      <script>scripts\script_samplescript_ultran.gml</script>
+    </scripts>
+  </scripts>
+  <fonts name="fonts">
+    <fonts name="chair">
+      <font>fonts\fnt_samplefont_chair</font>
+    </fonts>
+    <fonts name="sonii">
+      <font>fonts\fnt_samplefont_sonii</font>
+    </fonts>
+    <fonts name="david">
+      <font>fonts\fnt_samplefont_david</font>
+    </fonts>
+    <fonts name="ultran">
+      <font>fonts\fnt_samplefont_ultran</font>
+    </fonts>
+  </fonts>
+  <objects name="objects">
+    <objects name="chair">
+      <object>objects\obj_sampleobject_chair</object>
+      <object>objects\obj_camera_chair</object>
+    </objects>
+    <objects name="sonii">
+      <object>objects\obj_sampleobject_sonii</object>
+    </objects>
+    <objects name="david">
+      <object>objects\obj_sampleobject_david</object>
+    </objects>
+    <objects name="ultran">
+      <object>objects\obj_sampleobject_ultran</object>
+    </objects>
+  </objects>
+  <timelines name="timelines">
+    <timelines name="chair">
+      <timeline>timelines\time_sampletimeline_chair</timeline>
+    </timelines>
+    <timelines name="sonii">
+      <timeline>timelines\time_sampletimeline_sonii</timeline>
+    </timelines>
+    <timelines name="david">
+      <timeline>timelines\time_sampletimeline_david</timeline>
+    </timelines>
+    <timelines name="ultran">
+      <timeline>timelines\time_sampletimeline_ultran</timeline>
+    </timelines>
+  </timelines>
+  <rooms name="rooms">
+    <rooms name="master">
+      <room>rooms\rm_title</room>
+    </rooms>
+    <rooms name="chair">
+      <room>rooms\rm_sampleroom_chair</room>
+    </rooms>
+    <rooms name="sonii">
+      <room>rooms\rm_sampleroom_sonii</room>
+    </rooms>
+    <rooms name="david">
+      <room>rooms\rm_sampleroom_david</room>
+    </rooms>
+    <rooms name="ultran">
+      <room>rooms\rm_sampleroom_ultran</room>
+    </rooms>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
