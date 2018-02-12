@@ -30,6 +30,10 @@ global.chizurumovey = 0;
 
 global.chizuruaimx = 0;
 global.chizuruaimy = 0;
+
+global.aimangle = 0;
+global.shottype = 0;
+global.maxshottype = 2;
 </string>
           </argument>
         </arguments>

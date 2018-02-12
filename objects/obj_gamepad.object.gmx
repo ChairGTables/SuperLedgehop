@@ -32,6 +32,10 @@ joy_x = false;
 joy_c = false;
 joy_a = false;
 joy_s = false;
+joy_rt = false;
+joy_rb = false;
+joy_lt = false;
+joy_lb = false;
 joy_right = false;
 joy_left = false;
 joy_down = false;
@@ -307,6 +311,63 @@ if gamepad_button_check_pressed(0, gp_face2)
             keyboard_key_press(ord('C'));
         }
     }  
+
+if (gamepad_button_check_released(0, gp_shoulderr) &amp;&amp; joy_rb == true)
+{
+    joy_rb = false;
+}     
+
+if (gamepad_button_check_pressed(0, gp_shoulderr) &amp;&amp; joy_rb == false)
+{
+    joy_rb = true;
+    if (instance_exists(obj_chizuru))
+    {
+        global.shottype += 1;
+        
+        if !(instance_exists(obj_chizurucurrentbullet))
+        {
+            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+        }
+    }
+    
+}     
+
+if (gamepad_button_check_released(0, gp_shoulderl) &amp;&amp; joy_lb == true)
+{
+    joy_lb = false;
+}     
+
+if (gamepad_button_check_pressed(0, gp_shoulderl) &amp;&amp; joy_lb == false)
+{
+    joy_lb = true;
+    if (instance_exists(obj_chizuru))
+    {
+        global.shottype -= 1;
+        
+        if !(instance_exists(obj_chizurucurrentbullet))
+        {
+            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+        }
+    }
+    
+}     
+
+if (gamepad_button_value(0, gp_shoulderrb) &lt; 0.7 &amp;&amp; joy_rt == true)
+{
+    joy_rt = false;
+}
+    
+if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; joy_rt == false)
+{
+    joy_rt = true;
+    if (instance_exists(obj_chizuru))
+    {
+        script_execute(scr_chizurushoot);
+    }
+    
+}    
+
+
       
 if (gamepad_axis_value(0, gp_axislh) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislh) &gt; -0.1 &amp;&amp; dpad = 0)
 {
