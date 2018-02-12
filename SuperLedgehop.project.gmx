@@ -21,6 +21,25 @@
   <sprites name="sprites">
     <sprites name="chair">
       <sprite>sprites\spr_samplesprite_chair</sprite>
+      <sprite>sprites\spr_chizuruarrow</sprite>
+      <sprites name="chizuru">
+        <sprites name="stand">
+          <sprite>sprites\spr_chizurustandd</sprite>
+          <sprite>sprites\spr_chizurustanddr</sprite>
+          <sprite>sprites\spr_chizurustandr</sprite>
+          <sprite>sprites\spr_chizurustandur</sprite>
+          <sprite>sprites\spr_chizurustandu</sprite>
+        </sprites>
+        <sprites name="walk">
+          <sprite>sprites\spr_chizuruwalkd</sprite>
+          <sprite>sprites\spr_chizuruwalkdr</sprite>
+          <sprite>sprites\spr_chizuruwalkr</sprite>
+          <sprite>sprites\spr_chizuruwalkur</sprite>
+          <sprite>sprites\spr_chizuruwalku</sprite>
+        </sprites>
+        <sprite>sprites\spr_chizurubasicbullet</sprite>
+        <sprite>sprites\spr_chizurucurrentbullet</sprite>
+      </sprites>
     </sprites>
     <sprites name="sonii">
       <sprite>sprites\spr_samplesprite_sonii</sprite>
@@ -63,6 +82,7 @@
   <scripts name="scripts">
     <scripts name="chair">
       <script>scripts\script_samplescript_chair.gml</script>
+      <script>scripts\scr_chizurushoot.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -92,6 +112,13 @@
     <objects name="chair">
       <object>objects\obj_sampleobject_chair</object>
       <object>objects\obj_camera_chair</object>
+      <object>objects\obj_gamepad</object>
+      <object>objects\obj_chizuru</object>
+      <object>objects\obj_title</object>
+      <object>objects\obj_controller</object>
+      <object>objects\obj_chizuruaimarrow</object>
+      <object>objects\obj_chizurubasicbullet</object>
+      <object>objects\obj_chizurucurrentbullet</object>
     </objects>
     <objects name="sonii">
       <object>objects\obj_sampleobject_sonii</object>
@@ -120,8 +147,6 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
-    </rooms>
-    <rooms name="chair">
       <room>rooms\rm_sampleroom_chair</room>
     </rooms>
     <rooms name="sonii">
