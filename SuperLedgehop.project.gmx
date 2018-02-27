@@ -21,7 +21,6 @@
   <sprites name="sprites">
     <sprites name="chair">
       <sprite>sprites\spr_samplesprite_chair</sprite>
-      <sprite>sprites\spr_chizuruarrow</sprite>
       <sprites name="chizuru">
         <sprites name="stand">
           <sprite>sprites\spr_chizurustandd</sprite>
@@ -37,8 +36,24 @@
           <sprite>sprites\spr_chizuruwalkur</sprite>
           <sprite>sprites\spr_chizuruwalku</sprite>
         </sprites>
+        <sprite>sprites\spr_chizuruarrow</sprite>
         <sprite>sprites\spr_chizurubasicbullet</sprite>
+        <sprite>sprites\spr_chizuruenhancedbullet</sprite>
+        <sprite>sprites\spr_chizururapidbullet</sprite>
+        <sprite>sprites\spr_chizuruspreadbullet</sprite>
+        <sprite>sprites\spr_chizuruicebullet</sprite>
+        <sprite>sprites\spr_chizurufirebullet</sprite>
         <sprite>sprites\spr_chizurucurrentbullet</sprite>
+        <sprite>sprites\spr_chizuruflame</sprite>
+        <sprite>sprites\spr_icepath</sprite>
+      </sprites>
+      <sprites name="effects">
+        <sprite>sprites\spr_smallcircle</sprite>
+      </sprites>
+      <sprites name="functionality">
+        <sprite>sprites\spr_hudbars</sprite>
+        <sprite>sprites\spr_chizuruhud</sprite>
+        <sprite>sprites\spr_ammohud</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -111,14 +126,31 @@
   <objects name="objects">
     <objects name="chair">
       <object>objects\obj_sampleobject_chair</object>
-      <object>objects\obj_camera_chair</object>
-      <object>objects\obj_gamepad</object>
-      <object>objects\obj_chizuru</object>
-      <object>objects\obj_title</object>
-      <object>objects\obj_controller</object>
-      <object>objects\obj_chizuruaimarrow</object>
-      <object>objects\obj_chizurubasicbullet</object>
-      <object>objects\obj_chizurucurrentbullet</object>
+      <objects name="chizuru">
+        <object>objects\obj_chizuru</object>
+        <object>objects\obj_chizuruaimarrow</object>
+        <object>objects\obj_chizurubasicbullet</object>
+        <object>objects\obj_chizuruenhancedbullet</object>
+        <object>objects\obj_chizururapidbullet</object>
+        <object>objects\obj_chizuruspreadbullet</object>
+        <object>objects\obj_chizuruicebullet</object>
+        <object>objects\obj_chizurufirebullet</object>
+        <object>objects\obj_chizurucurrentbullet</object>
+        <object>objects\obj_chizuruflame</object>
+        <object>objects\obj_icepath</object>
+      </objects>
+      <objects name="functionality">
+        <object>objects\obj_title</object>
+        <object>objects\obj_controller</object>
+        <object>objects\obj_camera_chair</object>
+        <object>objects\obj_gamepad</object>
+      </objects>
+      <objects name="effects">
+        <object>objects\obj_smallcircle</object>
+      </objects>
+      <objects name="map">
+        <object>objects\obj_wall</object>
+      </objects>
     </objects>
     <objects name="sonii">
       <object>objects\obj_sampleobject_sonii</object>

@@ -37,6 +37,35 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Draw scripts
+xAmmo = view_xview+15;
+yAmmo = view_yview+334;
+
+xMain = view_xview+15;
+yMain = view_yview+355;
+
+myWidth = 100;
+myHeight = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -63,6 +92,40 @@ if (global.shottype &gt; global.maxshottype)
 {
     global.shottype = 0;
 }
+
+if (global.chizurushotcooldown &gt; 0)
+{
+    global.chizurushotcooldown -= 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Draw scripts
+xAmmo = view_xview+15;
+yAmmo = view_yview+334;
+
+xMain = view_xview+15;
+yMain = view_yview+355;
+
+myWidth = 100;
+myHeight = 4;
 </string>
           </argument>
         </arguments>
@@ -142,6 +205,56 @@ if (global.shottype &gt; global.maxshottype)
           <argument>
             <kind>0</kind>
             <string>100</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_sprite(spr_chizuruhud, 0, xMain, yMain)
+if (global.shottype != 0)
+{
+    draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo)
+}
+
+if (global.shottype == 1)
+{
+    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.enhancedcount,myHeight)
+}
+if (global.shottype == 2)
+{
+    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.spreadcount,myHeight)
+}
+if (global.shottype == 3)
+{
+    draw_sprite_stretched(spr_hudbars,3,xAmmo,yAmmo,global.rapidcount,myHeight)
+}
+if (global.shottype == 4)
+{
+    draw_sprite_stretched(spr_hudbars,3,xAmmo,yAmmo,global.firecount,myHeight)
+}
+if (global.shottype == 5)
+{
+    draw_sprite_stretched(spr_hudbars,3,xAmmo,yAmmo,global.icecount,myHeight)
+}
+
+draw_sprite_stretched(spr_hudbars,0,xMain+71,yMain+25,global.chizuruhp,myHeight)
+draw_sprite_stretched(spr_hudbars,1,xMain+71,yMain+36,global.chizurump,myHeight)
+draw_sprite_stretched(spr_hudbars,2,xMain+71,yMain+47,global.chizurushine,myHeight)
+</string>
           </argument>
         </arguments>
       </action>
