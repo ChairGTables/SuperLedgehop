@@ -55,15 +55,22 @@ image_speed = 0.3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//x movement
+            <string>speedMultiplier = 1;
+
+if position_meeting(x, y, obj_icepath)
+{
+    speedMultiplier = 1.5;
+}
+
+//x movement
 if (global.chizurumovex &gt; analogBoundary || global.chizurumovex &lt; -analogBoundary)
 {
-    x += global.chizurumovex * mySpeed;
+    x += global.chizurumovex * mySpeed * speedMultiplier;
 }
 //y movement
 if (global.chizurumovey &gt; analogBoundary || global.chizurumovey &lt; -analogBoundary)
 {
-    y += global.chizurumovey * mySpeed;
+    y += global.chizurumovey * mySpeed * speedMultiplier;
 }
 
 if (abs(global.chizurumovex) &gt; analogBoundary || abs(global.chizurumovey) &gt; analogBoundary)
