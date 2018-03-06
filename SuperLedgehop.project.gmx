@@ -58,6 +58,7 @@
     </sprites>
     <sprites name="sonii">
       <sprite>sprites\spr_samplesprite_sonii</sprite>
+      <sprite>sprites\spr_whateveryouregoingtonamethis_sonii</sprite>
     </sprites>
     <sprites name="david">
       <sprite>sprites\spr_samplesprite_david</sprite>
