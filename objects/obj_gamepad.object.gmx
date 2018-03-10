@@ -204,23 +204,7 @@ if gamepad_button_check_pressed(0, gp_face4)
         }   
     }
     
-if gamepad_button_check_released(0, gp_face1)
-    {
-        if (joy_x = true)
-        {
-            joy_x = false;
-            keyboard_key_release(ord('X'));
-        }
-    }    
-    
-if gamepad_button_check_pressed(0, gp_face1)
-    {
-        if (joy_x = false)
-        {
-            joy_x = true;
-            keyboard_key_press(ord('X'));
-        }
-    }
+
 
 if gamepad_button_check_released(0, gp_face2)
     {
@@ -374,6 +358,28 @@ if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; global.chizurusho
         script_execute(scr_chizurushoot);
     }
 }
+
+
+
+//Shine
+if (gamepad_button_check_released(0, gp_face3) &amp;&amp; joy_x == true)
+{
+    joy_x = false;
+    if (instance_exists(obj_chizuru))
+    {
+        script_execute(scr_chizurushine);
+    }
+}
+    
+if (gamepad_button_check(0, gp_face3))
+{
+    joy_x = true;
+    if (instance_exists(obj_chizuru))
+    {
+        global.chizurushinecharge += 1;
+    }
+}    
+
 
 
       

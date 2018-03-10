@@ -3,10 +3,12 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sounds name="chair">
       <sound>sound\snd_samplesound_chair</sound>
+      <sound>sound\snd_bulletcollect</sound>
     </sounds>
     <sounds name="sonii">
       <sound>sound\snd_samplesound_sonii</sound>
@@ -36,6 +38,9 @@
           <sprite>sprites\spr_chizuruwalkur</sprite>
           <sprite>sprites\spr_chizuruwalku</sprite>
         </sprites>
+        <sprites name="hurt">
+          <sprite>sprites\spr_chizuruhurtd</sprite>
+        </sprites>
         <sprite>sprites\spr_chizuruarrow</sprite>
         <sprite>sprites\spr_chizurubasicbullet</sprite>
         <sprite>sprites\spr_chizuruenhancedbullet</sprite>
@@ -46,14 +51,29 @@
         <sprite>sprites\spr_chizurucurrentbullet</sprite>
         <sprite>sprites\spr_chizuruflame</sprite>
         <sprite>sprites\spr_icepath</sprite>
+        <sprite>sprites\spr_shine</sprite>
+        <sprite>sprites\spr_absorbbubble</sprite>
+        <sprite>sprites\spr_absorbparticle</sprite>
+        <sprite>sprites\spr_smolhitbox</sprite>
       </sprites>
       <sprites name="effects">
         <sprite>sprites\spr_smallcircle</sprite>
+        <sprite>sprites\spr_whitedot</sprite>
+        <sprite>sprites\spr_explosion</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
         <sprite>sprites\spr_chizuruhud</sprite>
         <sprite>sprites\spr_ammohud</sprite>
+        <sprite>sprites\spr_transparentbluesquare</sprite>
+      </sprites>
+      <sprites name="enemies">
+        <sprite>sprites\spr_enemyenhancedbullet</sprite>
+        <sprite>sprites\spr_oldbasicenemy</sprite>
+        <sprite>sprites\spr_roundcannon</sprite>
+        <sprite>sprites\spr_roundcannonhurt</sprite>
+        <sprite>sprites\spr_spiketiles</sprite>
+        <sprite>sprites\spr_oldbasicenemyhurt</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -99,6 +119,9 @@
     <scripts name="chair">
       <script>scripts\script_samplescript_chair.gml</script>
       <script>scripts\scr_chizurushoot.gml</script>
+      <script>scripts\scr_chizurushine.gml</script>
+      <script>scripts\scr_enemydamage.gml</script>
+      <script>scripts\scr_chizurudamage.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -113,6 +136,8 @@
   <fonts name="fonts">
     <fonts name="chair">
       <font>fonts\fnt_samplefont_chair</font>
+      <font>fonts\fnt_damage</font>
+      <font>fonts\fnt_damageback</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -139,6 +164,10 @@
         <object>objects\obj_chizurucurrentbullet</object>
         <object>objects\obj_chizuruflame</object>
         <object>objects\obj_icepath</object>
+        <object>objects\obj_shine</object>
+        <object>objects\obj_absorbbubble</object>
+        <object>objects\obj_absorbparticle</object>
+        <object>objects\obj_smolhitbox</object>
       </objects>
       <objects name="functionality">
         <object>objects\obj_title</object>
@@ -148,9 +177,17 @@
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
+        <object>objects\obj_damagenumber</object>
+        <object>objects\obj_explosion</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
+      </objects>
+      <objects name="enemies">
+        <object>objects\obj_surroundshooter</object>
+        <object>objects\obj_enemyenhancedbullet</object>
+        <object>objects\obj_slowspikes</object>
+        <object>objects\obj_rightcannon</object>
       </objects>
     </objects>
     <objects name="sonii">
