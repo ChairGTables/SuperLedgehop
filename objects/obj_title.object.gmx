@@ -35,10 +35,13 @@ global.aimangle = 0;
 global.shottype = 0;
 global.maxshottype = 5;
 
-global.chizuruhp = 0;
+global.chizuruhp = 100;
 global.chizurump = 100;
 global.chizurushine = 100;
 global.chizurushotcooldown = 0;
+global.chizurushinecharge = 0;
+global.chizurupoptime = 60;
+global.invincibility = 0;
 
 global.basiccount = 100;
 global.enhancedcount = 100;

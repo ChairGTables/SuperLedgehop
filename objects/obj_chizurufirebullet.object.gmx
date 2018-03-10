@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = direction;
+            <string>damage = 20;
+
+image_angle = direction;
 
 alarm[0] = 200;
 alarm[1] = 3;
@@ -98,14 +100,43 @@ alarm[1] = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = direction;
+            <string>
+
+image_angle = direction;
 
 
 
 //check if outside view
-if (x &lt; view_xview-10 || x &gt; view_xview+778 || y &gt; view_yview+442 || y &lt; view_yview-10)
+if (x &lt; view_xview-10 || x &gt; view_xview+969 || y &gt; view_yview+549 || y &lt; view_yview-10)
 {
     instance_destroy(self);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (instance_exists(obj_chizuru))
+{
+    x = obj_chizuru.x;
+    y = obj_chizuru.y;
 }
 </string>
           </argument>
