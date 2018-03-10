@@ -31,8 +31,17 @@ aimBoundary = 0.01;
 isMoving = 1;
 isAiming = 1;
 lookDirection = 2;
+knockbackLook = 2;
 
 image_speed = 0.3;
+
+upmomentum = 0;
+rightmomentum = 0;
+leftmomentum = 0;
+downmomentum = 0;
+
+
+action = 1;
 </string>
           </argument>
         </arguments>
@@ -55,110 +64,224 @@ image_speed = 0.3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speedMultiplier = 1;
-
-if position_meeting(x, y, obj_icepath)
+            <string>//Invincibility check
+if (global.invincibility &gt; 0)
 {
-    speedMultiplier = 1.5;
-}
-
-//x movement
-if (global.chizurumovex &gt; analogBoundary || global.chizurumovex &lt; -analogBoundary)
-{
-    x += global.chizurumovex * mySpeed * speedMultiplier;
-}
-//y movement
-if (global.chizurumovey &gt; analogBoundary || global.chizurumovey &lt; -analogBoundary)
-{
-    y += global.chizurumovey * mySpeed * speedMultiplier;
-}
-
-if (abs(global.chizurumovex) &gt; analogBoundary || abs(global.chizurumovey) &gt; analogBoundary)
-{
-    isMoving = 1;
+    image_alpha = 0.4;
 }
 else
 {
-    isMoving = 0;
+    image_alpha = 1;
 }
-if (abs(global.chizuruaimx) &gt; aimBoundary || abs(global.chizuruaimy) &gt; aimBoundary)
+
+/////////////////////////
+//Momentum Control
+////////////////////////
+
+//Set momentum to zero if they are small enough
+if (upmomentum &lt; 0.5)
 {
-    isAiming = 1;
+    upmomentum = 0;
 }
-else
+
+if (upmomentum &gt; 0)
 {
-    isAiming = 0;
+    upmomentum = upmomentum - 0.5;
 }
 
 
-////////////////////////////
-//aim look
-////////////////////////////
-
-//right look
-if ((global.chizuruaimx &gt; analogBoundary || global.chizuruaimx &lt; -analogBoundary) &amp;&amp; abs(global.chizuruaimx) &gt; abs(global.chizuruaimy))
+if (leftmomentum &lt; 0.5)
 {
-    if (global.chizuruaimx &gt; 0)
+    leftmomentum = 0;
+}
+
+if (leftmomentum &gt; 0)
+{
+    leftmomentum = leftmomentum - 0.5;
+}
+
+
+if (rightmomentum &lt; 0.5)
+{
+    rightmomentum = 0;
+}
+
+if (rightmomentum &gt; 0)
+{
+    rightmomentum = rightmomentum - 0.5;
+}
+
+
+if (downmomentum &lt; 0.5)
+{
+    downmomentum = 0;
+}
+
+if (downmomentum &gt; 0)
+{
+    downmomentum = downmomentum - 0.5;
+}
+
+if ((vspeed &lt; 0.6) &amp;&amp; (vspeed &gt; -0.6))
+{
+    vspeed = 0;
+}
+
+if ((hspeed &lt; 0.6) &amp;&amp; (hspeed &gt; -0.6))
+{
+    hspeed = 0;
+}
+
+if ((vspeed != 0) &amp;&amp; (vspeed &gt; 0))
+{
+    vspeed = vspeed - 0.6;
+}
+
+if ((vspeed != 0) &amp;&amp; (vspeed &lt; 0))
+{
+    vspeed = vspeed + 0.6;
+}
+
+if ((hspeed != 0) &amp;&amp; (hspeed &gt; 0))
+{
+    hspeed = hspeed - 0.6;
+}
+
+if ((hspeed != 0) &amp;&amp; (hspeed &lt; 0))
+{
+    hspeed = hspeed + 0.6;
+}
+
+
+//Move object based on its current momentum
+x -= leftmomentum;
+x += rightmomentum;
+y += downmomentum;
+y -= upmomentum;
+
+
+
+
+/////////////////////////
+//Wall Checks
+////////////////////////
+if (instance_position(x + hspeed, y + vspeed, obj_wall) || instance_position(x + rightmomentum - leftmomentum, y + downmomentum - upmomentum, obj_wall))
+{
+    x -= hspeed + rightmomentum - leftmomentum;
+    y -= vspeed + downmomentum - upmomentum;
+    hspeed = 0;
+    vspeed = 0;    
+    rightmomentum = 0;
+    leftmomentum = 0;
+    upmomentum = 0;
+    downmomentum = 0;
+}
+
+
+
+///////////////////////////////
+//Check if player can do action
+//////////////////////////////
+action = 1;
+if (sprite_index == spr_chizuruhurtd)
+{
+    action = 0;
+}
+
+
+////////////////////////////////
+//Player Controls
+///////////////////////////////
+
+
+
+if (action == 1)
+{
+    speedMultiplier = 1;
+    
+    if position_meeting(x, y, obj_icepath)
     {
-        lookDirection = 6;
+        speedMultiplier = 1.5;
+    }
+    
+    //x movement
+    if (global.chizurumovex &gt; analogBoundary || global.chizurumovex &lt; -analogBoundary)
+    {
+        if (!instance_position(x + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall) &amp;&amp; !instance_position(x  + global.chizurumovex * mySpeed * speedMultiplier * 2, y, obj_wall) &amp;&amp; !instance_position(x + global.chizurumovex, y, obj_wall) )
+        {
+            xWallCheck = 0;
+            for (i = 0; i &lt; 16; i++)
+            {
+                for (j = -12; j &lt; 12; j++)
+                {
+                    if (instance_position(x + i, y + j, obj_wall) &amp;&amp; global.chizurumovex &gt; 0)
+                    {
+                        xWallCheck = 1;    
+                    }
+                    if (instance_position(x - i, y + j, obj_wall) &amp;&amp; global.chizurumovex &lt; 0)
+                    {
+                        xWallCheck = 1;    
+                    }
+                }
+                
+            }
+            if (xWallCheck == 0)
+            {
+                x+= global.chizurumovex * mySpeed * speedMultiplier;
+            }
+            
+        }
+    }
+    //y movement
+    if (global.chizurumovey &gt; analogBoundary || global.chizurumovey &lt; -analogBoundary)
+    {
+        if (!instance_position(x, y + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) &amp;&amp; !instance_position(x, y + global.chizurumovey * mySpeed * speedMultiplier * 2, obj_wall) &amp;&amp; !instance_position(x, y + global.chizurumovey, obj_wall) )
+        {
+            yWallCheck = 0;
+            for (i = 0; i &lt; 20; i++)
+            {
+                if (instance_position(x, y + i, obj_wall) &amp;&amp; global.chizurumovey &gt; 0)
+                {
+                    yWallCheck = 1;    
+                }
+                if (instance_position(x, y - i, obj_wall) &amp;&amp; global.chizurumovey &lt; 0)
+                {
+                    yWallCheck = 1;    
+                }
+            }
+            if (yWallCheck == 0)
+            {
+                y += global.chizurumovey * mySpeed * speedMultiplier;
+            }
+        }
+    }
+    
+    if (abs(global.chizurumovex) &gt; analogBoundary || abs(global.chizurumovey) &gt; analogBoundary)
+    {
+        isMoving = 1;
     }
     else
     {
-        lookDirection = 4;
+        isMoving = 0;
     }
-}
-
-//down look
-if (global.chizuruaimy &gt; analogBoundary &amp;&amp; global.chizuruaimy &gt; abs(global.chizuruaimx))
-{
-    lookDirection = 2;
-}
-
-//down right look
-if (abs(global.chizuruaimx) &gt; 0.4 &amp;&amp; global.chizuruaimy &gt; 0.4)
-{
-    if (global.chizuruaimx &gt; 0)
+    if (abs(global.chizuruaimx) &gt; aimBoundary || abs(global.chizuruaimy) &gt; aimBoundary)
     {
-        lookDirection = 3;
+        isAiming = 1;
     }
     else
     {
-        lookDirection = 1;
+        isAiming = 0;
     }
-}
-
-//up look
-if (global.chizuruaimy &lt; -analogBoundary &amp;&amp; abs(global.chizuruaimy) &gt; abs(global.chizuruaimx))
-{
-    lookDirection = 8;
-}
-
-//up right look
-if (abs(global.chizuruaimx) &gt; 0.4 &amp;&amp; global.chizuruaimy &lt; -0.4)
-{
-    if (global.chizuruaimx &gt; 0)
-    {
-        lookDirection = 9;
-    }
-    else
-    {
-        lookDirection = 7;
-    }
-}
-
-
-
-////////////////////////////
-//move look
-////////////////////////////
-
-
-if (isAiming == 0)
-{
+    
+    
+    ////////////////////////////
+    //aim look
+    ////////////////////////////
+    
     //right look
-    if ((global.chizurumovex &gt; analogBoundary || global.chizurumovex &lt; -analogBoundary) &amp;&amp; abs(global.chizurumovex) &gt; abs(global.chizurumovey))
+    if ((global.chizuruaimx &gt; analogBoundary || global.chizuruaimx &lt; -analogBoundary) &amp;&amp; abs(global.chizuruaimx) &gt; abs(global.chizuruaimy))
     {
-        if (global.chizurumovex &gt; 0)
+        if (global.chizuruaimx &gt; 0)
         {
             lookDirection = 6;
         }
@@ -169,15 +292,15 @@ if (isAiming == 0)
     }
     
     //down look
-    if (global.chizurumovey &gt; analogBoundary &amp;&amp; global.chizurumovey &gt; global.chizurumovex)
+    if (global.chizuruaimy &gt; analogBoundary &amp;&amp; global.chizuruaimy &gt; abs(global.chizuruaimx))
     {
         lookDirection = 2;
     }
     
     //down right look
-    if (abs(global.chizurumovex) &gt; 0.4 &amp;&amp; global.chizurumovey &gt; 0.4)
+    if (abs(global.chizuruaimx) &gt; 0.4 &amp;&amp; global.chizuruaimy &gt; 0.4)
     {
-        if (global.chizurumovex &gt; 0)
+        if (global.chizuruaimx &gt; 0)
         {
             lookDirection = 3;
         }
@@ -188,15 +311,15 @@ if (isAiming == 0)
     }
     
     //up look
-    if (global.chizurumovey &lt; -analogBoundary &amp;&amp; abs(global.chizurumovey) &gt; abs(global.chizurumovex))
+    if (global.chizuruaimy &lt; -analogBoundary &amp;&amp; abs(global.chizuruaimy) &gt; abs(global.chizuruaimx))
     {
         lookDirection = 8;
     }
     
     //up right look
-    if (abs(global.chizurumovex) &gt; 0.4 &amp;&amp; global.chizurumovey &lt; -0.4)
+    if (abs(global.chizuruaimx) &gt; 0.4 &amp;&amp; global.chizuruaimy &lt; -0.4)
     {
-        if (global.chizurumovex &gt; 0)
+        if (global.chizuruaimx &gt; 0)
         {
             lookDirection = 9;
         }
@@ -205,114 +328,263 @@ if (isAiming == 0)
             lookDirection = 7;
         }
     }
+    
+    
+    
+    ////////////////////////////
+    //move look
+    ////////////////////////////
+    
+    
+    if (isAiming == 0)
+    {
+        //right look
+        if ((global.chizurumovex &gt; analogBoundary || global.chizurumovex &lt; -analogBoundary) &amp;&amp; abs(global.chizurumovex) &gt; abs(global.chizurumovey))
+        {
+            if (global.chizurumovex &gt; 0)
+            {
+                lookDirection = 6;
+            }
+            else
+            {
+                lookDirection = 4;
+            }
+        }
+        
+        //down look
+        if (global.chizurumovey &gt; analogBoundary &amp;&amp; global.chizurumovey &gt; global.chizurumovex)
+        {
+            lookDirection = 2;
+        }
+        
+        //down right look
+        if (abs(global.chizurumovex) &gt; 0.4 &amp;&amp; global.chizurumovey &gt; 0.4)
+        {
+            if (global.chizurumovex &gt; 0)
+            {
+                lookDirection = 3;
+            }
+            else
+            {
+                lookDirection = 1;
+            }
+        }
+        
+        //up look
+        if (global.chizurumovey &lt; -analogBoundary &amp;&amp; abs(global.chizurumovey) &gt; abs(global.chizurumovex))
+        {
+            lookDirection = 8;
+        }
+        
+        //up right look
+        if (abs(global.chizurumovex) &gt; 0.4 &amp;&amp; global.chizurumovey &lt; -0.4)
+        {
+            if (global.chizurumovex &gt; 0)
+            {
+                lookDirection = 9;
+            }
+            else
+            {
+                lookDirection = 7;
+            }
+        }
+    }
+    
+    
+    ////////////////////
+    //look set
+    ///////////////////
+    if(lookDirection == 1)
+    {
+        image_xscale = -1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalkdr;
+        }
+        else
+        {
+            sprite_index = spr_chizurustanddr;
+        }
+    }
+    
+    if(lookDirection == 2)
+    {
+        image_xscale = 1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalkd;
+        }
+        else
+        {
+            sprite_index = spr_chizurustandd;
+        }
+    }
+    
+    if(lookDirection == 3)
+    {
+        image_xscale = 1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalkdr;
+        }
+        else
+        {
+            sprite_index = spr_chizurustanddr;
+        }
+    }
+    
+    if (lookDirection == 4)
+    {
+        image_xscale = -1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalkr;
+        }
+        else
+        {
+            sprite_index = spr_chizurustandr;
+        }
+    }
+    
+    if (lookDirection == 6)
+    {
+        image_xscale = 1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalkr;
+        }
+        else
+        {
+            sprite_index = spr_chizurustandr;
+        }
+    }
+    
+    if (lookDirection == 7)
+    {
+        image_xscale = -1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalkur;
+        }
+        else
+        {
+            sprite_index = spr_chizurustandur;
+        }
+    }
+    
+    if (lookDirection == 8)
+    {
+        image_xscale = 1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalku;
+        }
+        else
+        {
+            sprite_index = spr_chizurustandu;
+        }
+    }
+    
+    if (lookDirection == 9)
+    {
+        image_xscale = 1;
+        if (isMoving == 1)
+        {
+            sprite_index = spr_chizuruwalkur;
+        }
+        else
+        {
+            sprite_index = spr_chizurustandur;
+        }
+    }
+
 }
 
 
-////////////////////
-//look set
-///////////////////
-if(lookDirection == 1)
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sprite_index == spr_chizuruhurtd)
 {
-    image_xscale = -1;
-    if (isMoving == 1)
+    lookDirection = knockbackLook;
+    
+    if(lookDirection == 1)
     {
-        sprite_index = spr_chizuruwalkdr;
-    }
-    else
-    {
+        image_xscale = -1;
         sprite_index = spr_chizurustanddr;
     }
-}
-
-if(lookDirection == 2)
-{
-    image_xscale = 1;
-    if (isMoving == 1)
-    {
-        sprite_index = spr_chizuruwalkd;
-    }
-    else
+    
+    if(lookDirection == 2)
     {
         sprite_index = spr_chizurustandd;
     }
-}
-
-if(lookDirection == 3)
-{
-    image_xscale = 1;
-    if (isMoving == 1)
+    
+    if(lookDirection == 3)
     {
-        sprite_index = spr_chizuruwalkdr;
-    }
-    else
-    {
+        image_xscale = 1;
         sprite_index = spr_chizurustanddr;
+        
     }
-}
-
-if (lookDirection == 4)
-{
-    image_xscale = -1;
-    if (isMoving == 1)
+    
+    if (lookDirection == 4)
     {
-        sprite_index = spr_chizuruwalkr;
-    }
-    else
-    {
+        image_xscale = -1;
         sprite_index = spr_chizurustandr;
+        
     }
-}
-
-if (lookDirection == 6)
-{
-    image_xscale = 1;
-    if (isMoving == 1)
+    
+    if (lookDirection == 6)
     {
-        sprite_index = spr_chizuruwalkr;
-    }
-    else
-    {
+        image_xscale = 1;
         sprite_index = spr_chizurustandr;
+        
     }
-}
-
-if (lookDirection == 7)
-{
-    image_xscale = -1;
-    if (isMoving == 1)
+    
+    if (lookDirection == 7)
     {
-        sprite_index = spr_chizuruwalkur;
-    }
-    else
-    {
+        image_xscale = -1;
         sprite_index = spr_chizurustandur;
+        
     }
-}
-
-if (lookDirection == 8)
-{
-    image_xscale = 1;
-    if (isMoving == 1)
+    
+    if (lookDirection == 8)
     {
-        sprite_index = spr_chizuruwalku;
-    }
-    else
-    {
+        image_xscale = 1;
         sprite_index = spr_chizurustandu;
+        
     }
-}
-
-if (lookDirection == 9)
-{
-    image_xscale = 1;
-    if (isMoving == 1)
+    
+    if (lookDirection == 9)
     {
-        sprite_index = spr_chizuruwalkur;
-    }
-    else
-    {
+        image_xscale = 1;
         sprite_index = spr_chizurustandur;
     }
+    
+    image_index = 0;
+    image_speed = 0.5;
 }
 </string>
           </argument>
