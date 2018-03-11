@@ -15,6 +15,7 @@
     </sounds>
     <sounds name="david">
       <sound>sound\snd_samplesound_david</sound>
+      <sound>sound\snd_testtrack_david</sound>
     </sounds>
     <sounds name="ultran">
       <sound>sound\snd_samplesound_ultran</sound>
@@ -82,6 +83,10 @@
     </sprites>
     <sprites name="david">
       <sprite>sprites\spr_samplesprite_david</sprite>
+      <sprite>sprites\spr_beat_david</sprite>
+      <sprite>sprites\spr_beattick_david</sprite>
+      <sprite>sprites\spr_testtarget_david</sprite>
+      <sprite>sprites\spr_beatindicator_david</sprite>
     </sprites>
     <sprites name="ultran">
       <sprite>sprites\spr_samplesprite_ultran</sprite>
@@ -195,6 +200,15 @@
     </objects>
     <objects name="david">
       <object>objects\obj_sampleobject_david</object>
+      <object>objects\obj_musiccontroller_david</object>
+      <object>objects\obj_beat_david</object>
+      <object>objects\obj_beattick_david</object>
+      <object>objects\obj_beatindicator_david</object>
+      <objects name="enemies">
+        <object>objects\obj_rightcannon_david</object>
+        <object>objects\obj_shooterdude_david</object>
+        <object>objects\obj_testtarget_david</object>
+      </objects>
     </objects>
     <objects name="ultran">
       <object>objects\obj_sampleobject_ultran</object>
@@ -215,15 +229,17 @@
     </timelines>
   </timelines>
   <rooms name="rooms">
+    <rooms name="david">
+      <room>rooms\rm_title_david</room>
+      <room>rooms\rm_test_david</room>
+      <room>rooms\rm_sampleroom_david</room>
+    </rooms>
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_sampleroom_chair</room>
     </rooms>
     <rooms name="sonii">
       <room>rooms\rm_sampleroom_sonii</room>
-    </rooms>
-    <rooms name="david">
-      <room>rooms\rm_sampleroom_david</room>
     </rooms>
     <rooms name="ultran">
       <room>rooms\rm_sampleroom_ultran</room>
