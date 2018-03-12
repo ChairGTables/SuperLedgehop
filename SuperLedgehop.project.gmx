@@ -79,7 +79,18 @@
     </sprites>
     <sprites name="sonii">
       <sprite>sprites\spr_samplesprite_sonii</sprite>
+      <sprite>sprites\spr_warninglaser_sonii</sprite>
+      <sprite>sprites\spr_laser_sonii</sprite>
       <sprite>sprites\spr_whateveryouregoingtonamethis_sonii</sprite>
+      <sprite>sprites\spr_boombox_sonii</sprite>
+      <sprites name="charger">
+        <sprite>sprites\spr_charger_idle_sonii</sprite>
+      </sprites>
+      <sprite>sprites\spr_shockwave_sonii</sprite>
+      <sprite>sprites\spr_enemyrapidbullet</sprite>
+      <sprite>sprites\spr_turretaimer</sprite>
+      <sprite>sprites\spr_lazercannon_sonii</sprite>
+      <sprite>sprites\spr_aimcannon_sonii</sprite>
     </sprites>
     <sprites name="david">
       <sprite>sprites\spr_samplesprite_david</sprite>
@@ -197,6 +208,16 @@
     </objects>
     <objects name="sonii">
       <object>objects\obj_sampleobject_sonii</object>
+      <object>objects\obj_charger_sonii</object>
+      <object>objects\obj_boombox_sonii</object>
+      <objects name="bullets">
+        <object>objects\obj_rapidbullet</object>
+        <object>objects\obj_laser_sonii</object>
+      </objects>
+      <object>objects\obj_cannonaim_sonii</object>
+      <object>objects\obj_lazerCannon_sonii</object>
+      <object>objects\obj_beatIndicator_sonii</object>
+      <object>objects\obj_warninglaser_sonii</object>
     </objects>
     <objects name="david">
       <object>objects\obj_sampleobject_david</object>
