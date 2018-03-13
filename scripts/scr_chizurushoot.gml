@@ -50,6 +50,11 @@ if (instance_exists(obj_chizuru))
         iceShot.speed = bulletSpeed;
         global.icecount -= 5;
     }
+    
+    if (instance_exists(obj_camera_chair))
+    {
+        obj_camera_chair.intensity = 1;
+    }
 }
 
 
