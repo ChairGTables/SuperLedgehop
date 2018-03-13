@@ -49,6 +49,9 @@ global.rapidcount = 100;
 global.spreadcount = 100;
 global.firecount = 100;
 global.icecount = 100;
+
+global.bpm = 120;
+global.bpmToSec = global.bpm/60;
 </string>
           </argument>
         </arguments>

@@ -1,5 +1,10 @@
 if (global.invincibility == 0 && absorbed == 0 && instance_exists(obj_chizuru))
 {
+    if (instance_exists(obj_camera_chair))
+    {
+        obj_camera_chair.intensity = 10;
+    }
+
     global.chizuruhp -= damage;
     global.invincibility = 100;
     
