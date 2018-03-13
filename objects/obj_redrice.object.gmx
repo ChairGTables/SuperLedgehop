@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>friendly = 0;
+            <string>friendly  = 0;
 absorbed = 0;
 
-damage = 10;
-knockbackspeed = 10;
+damage = 5;
+knockbackspeed = 5;
 destroyable = 1;
 
 upmomentum = 0;
@@ -38,30 +38,45 @@ rightmomentum = 0;
 downmomentum = 0;
 
 image_angle = direction;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(x, y, obj_absorbparticle);
-instance_destroy(self);
+
+hp = 40;
+
+//set animation speed
+image_speed = 0.2;
+
+//You must define the hurt sprite as a string
+hurtSprite = "spr_oldbasicenemyhurt";
+
+//Do not touch this
+sS = sprite_index;
+hS = asset_get_index(hurtSprite);
+
+//Define the knockback and hitstun
+bulletKnockback = 5;
+shineKnockback = 7;
+hitstunTime = 13;
+
+//Define the beat that sets the alarm events to occur
+shootBeat = global.bpmToSec;    // whole note
+moveBeat = global.bpmToSec / 2; // half note
+
+//Use these to shoot x amount of times before the enemy shoots again
+shotCount = 0;
+shotsBeforeRest = 3;
+shootRestTime = 150;
+action = 1;
+
+//Do not touch these
+upmomentum = 0;
+rightmomentum = 0;
+leftmomentum = 0;
+downmomentum = 0;
+
+//Begin the alarms based on the beats
+//alarm[0] = shootBeat;
+shootTimer = shootBeat;
+//alarm[1] = moveBeat;
+moveTimer = moveBeat;
 </string>
           </argument>
         </arguments>
@@ -84,40 +99,68 @@ instance_destroy(self);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (absorbed == 0)
+            <string>//////////////////////////
+// Core-functionalities
+// Do not touch these
+// Scroll all the way down for changeable features
+/////////////////////////
+
+
+//Spin animation for spinning enemies (comment this out if non-spinner)
+image_angle = direction;
+
+
+
+////////////////////////////
+//Add additional step features here
+////////////////////////////
+
+shootTimer -= delta_time / 1000000;
+moveTimer  -= delta_time / 1000000;
+
+if (shootTimer &lt;= 0)
 {
-    image_angle = direction;
+    // ======== SHOOTING ====================
+    //Reset timer
+    shootTimer = 9999999999999999;
+    
+    
+    //Perform shooting
+    if (action == 1)
+    {
+        if (instance_exists(obj_chizuru))
+        {
+            move_towards_point(obj_chizuru.x, obj_chizuru.y, 10);
+        }
+    }
+    
+    // Beat indicator
+    var beatIndicator = instance_create(x, y, obj_beatindicator_david);
+    beatIndicator.image_speed = shootBeat;
 }
+// ======================================================
 
-
-//check if outside view
-if (x &lt; view_xview-10 || x &gt; view_xview+969 || y &gt; view_yview+549 || y &lt; view_yview-10)
+if (moveTimer &lt;= 0)
 {
+    // ++++++++++++++ MOVING ++++++++++++++++++++++++++++
+    //Always set the timer again so it loops
+    moveTimer = 99999999;
+    
+    //Action is checked on the step state to see if enemy is hurt or enemy is offscreen
+    hspeed = 0;
+    vspeed = 0;
+}
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+/////////////////////////////
+//Death
+/////////////////////////
+if (hp &lt; 1)
+{
+    instance_create(x, y, obj_explosion);
     instance_destroy(self);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_wall">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_destroy(self);
 </string>
           </argument>
         </arguments>

@@ -25,52 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.chizurumovex = 0;
-global.chizurumovey = 0;
-
-global.chizuruaimx = 0;
-global.chizuruaimy = 0;
-
-global.aimangle = 0;
-global.shottype = 0;
-global.maxshottype = 5;
-
-global.chizuruhp = 100;
-global.chizurump = 100;
-global.chizurushine = 100;
-global.chizurushotcooldown = 0;
-global.chizurushinecharge = 0;
-global.chizurupoptime = 60;
-global.invincibility = 0;
-
-global.basiccount = 100;
-global.enhancedcount = 100;
-global.rapidcount = 100;
-global.spreadcount = 100;
-global.firecount = 100;
-global.icecount = 100;
-
-global.bpm = 120;
-global.bpmToSec = global.bpm/60;
+            <string>global.musicrm1 = audio_play_sound (snd_bosstheme, 10, true); // Music in rm1, priority 10, looping
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

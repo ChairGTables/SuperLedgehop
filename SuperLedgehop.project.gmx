@@ -8,7 +8,20 @@
   <sounds name="sound">
     <sounds name="chair">
       <sound>sound\snd_samplesound_chair</sound>
-      <sound>sound\snd_bulletcollect</sound>
+      <sounds name="sfx">
+        <sound>sound\snd_bulletcollect</sound>
+        <sound>sound\snd_gatling</sound>
+        <sound>sound\snd_waveblast</sound>
+        <sound>sound\snd_ricebullet</sound>
+      </sounds>
+      <sounds name="music">
+        <sound>sound\snd_bosstheme</sound>
+      </sounds>
+      <sounds name="tito">
+        <sound>sound\snd_titohey</sound>
+        <sound>sound\snd_titowave</sound>
+        <sound>sound\snd_titorice</sound>
+      </sounds>
     </sounds>
     <sounds name="sonii">
       <sound>sound\snd_samplesound_sonii</sound>
@@ -190,6 +203,7 @@
         <object>objects\obj_controller</object>
         <object>objects\obj_camera_chair</object>
         <object>objects\obj_gamepad</object>
+        <object>objects\obj_bossmusic</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -204,6 +218,10 @@
         <object>objects\obj_enemyenhancedbullet</object>
         <object>objects\obj_slowspikes</object>
         <object>objects\obj_rightcannon</object>
+        <objects name="tito">
+          <object>objects\obj_tito</object>
+          <object>objects\obj_redrice</object>
+        </objects>
       </objects>
     </objects>
     <objects name="sonii">
@@ -250,14 +268,14 @@
     </timelines>
   </timelines>
   <rooms name="rooms">
+    <rooms name="master">
+      <room>rooms\rm_title</room>
+      <room>rooms\rm_sampleroom_chair</room>
+    </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>
       <room>rooms\rm_test_david</room>
       <room>rooms\rm_sampleroom_david</room>
-    </rooms>
-    <rooms name="master">
-      <room>rooms\rm_title</room>
-      <room>rooms\rm_sampleroom_chair</room>
     </rooms>
     <rooms name="sonii">
       <room>rooms\rm_sampleroom_sonii</room>
