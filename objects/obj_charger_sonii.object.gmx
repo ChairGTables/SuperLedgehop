@@ -32,7 +32,7 @@ hp = 20;
 image_speed = 0.2;
 
 //You must define the hurt sprite as a string
-hurtSprite = "spr_oldbasicenemyhurt";
+hurtSprite = "spr_whateveryouregoingtonamethis_sonii";
 
 //Do not touch this
 sS = sprite_index;
@@ -379,8 +379,8 @@ if (shootTimer &lt;= 0)
 {
     // ======== SHOOTING ====================
     //Reset timer
-    shootTimer = shootBeat;
     
+    shootTimer = shootBeat;
     //Perform shooting
    /* if (action == 1)
     {

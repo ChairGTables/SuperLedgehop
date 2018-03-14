@@ -112,7 +112,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(self);
+            <string>audio_play_sound (snd_bulletget, 10, false); 
+instance_destroy(self);
 </string>
           </argument>
         </arguments>

@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -29,7 +29,7 @@
 disappear = 1;
 fading = 0;
 
-alarm[0] = 15;
+alarm[0] = 30;
 </string>
           </argument>
         </arguments>
@@ -109,9 +109,9 @@ if (disappear &lt; 0.1)
             <kind>1</kind>
             <string>draw_set_font(fnt_damageback);
 draw_set_halign(fa_center);
-draw_text_color(x,y,damage,c_black,c_black,c_black,c_black,disappear);
+draw_text_color(x,y,damage,070709,070709,070709,070709,disappear);
 
-draw_set_font(fnt_damageback);
+draw_set_font(fnt_damage);
 draw_set_halign(fa_center);
 draw_text_color(x,y,damage,c_white,c_white,c_white,c_white,disappear)
 </string>

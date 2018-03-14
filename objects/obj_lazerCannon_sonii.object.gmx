@@ -405,6 +405,7 @@ if (timer &lt;= 0)
     if (action == 1)
     {   
         //This code segment shoots a huge surrounding circle
+        audio_play_sound (snd_waveblast, 10, false); 
         var shot = instance_create(x, y, obj_laser_sonii);
         //shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
     }
@@ -425,8 +426,11 @@ if( warnTimer &lt;= 0 )
     
     //show indicator 
     
+    if (action == 1)
+    {
+        var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
+    }
     
-    var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
     //warnIndicator.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y)+random_range(0,50);
     //warnIndicator.image_speed = warningBeat;
 

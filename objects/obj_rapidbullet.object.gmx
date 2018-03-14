@@ -172,7 +172,7 @@ if (x &lt; view_xview-10 || x &gt; view_xview+969 || y &gt; view_yview+549 || y 
     friendly = 1;
     
     alarm[0] = global.chizurupoptime;
-
+    audio_play_sound (snd_absorb, 10, false); 
     instance_create(x, y, obj_absorbbubble);
         
     vspeed = 0;
@@ -206,7 +206,7 @@ if (x &lt; view_xview-10 || x &gt; view_xview+969 || y &gt; view_yview+549 || y 
     friendly = 1;
     
     alarm[0] = global.chizurupoptime;
-
+    audio_play_sound (snd_absorb, 10, false); 
     instance_create(x, y, obj_absorbbubble);
         
     vspeed = 0;
@@ -216,7 +216,7 @@ if (x &lt; view_xview-10 || x &gt; view_xview+969 || y &gt; view_yview+549 || y 
 if (other.absorb == 0 &amp;&amp; friendly == 0 &amp;&amp; absorbed == 0)
 {
     friendly = 1;
-    
+    audio_play_sound (snd_reflect, 10, false); 
     var darkside = instance_create(x, y, obj_chizuruenhancedbullet);
     darkside.direction = direction + 180;
     darkside.speed = speed * 3;
