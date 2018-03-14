@@ -32,7 +32,7 @@ hp = 20;
 image_speed = 0.5;
 
 //You must define the hurt sprite as a string
-hurtSprite = "spr_oldbasicenemyhurt";
+hurtSprite = "spr_boombox_sonii";
 
 //Do not touch this
 sS = sprite_index;
@@ -381,7 +381,7 @@ if (shootTimer &lt;= 0)
     if (action == 1)
     {
         //This code segment shoots a huge surrounding circle
-        
+        audio_play_sound (snd_enemybullet, 10, false); 
         anglePerShot = 3;
         for (i = 0; i &lt; 360 / anglePerShot; i++)
         {
