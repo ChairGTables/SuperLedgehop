@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 60;
+            <string>damage = 1;
+destroyable = 0;
+
+alarm[0] = 60;
 
 fading = 0;
 </string>

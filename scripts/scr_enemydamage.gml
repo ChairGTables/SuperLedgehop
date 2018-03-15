@@ -31,4 +31,8 @@ if (other.vspeed < 0)
 hspeed = 0;
 vspeed = 0;
 
-instance_destroy(other);
+if (other.destroyable == 1)
+{
+    instance_destroy(other);
+}
+

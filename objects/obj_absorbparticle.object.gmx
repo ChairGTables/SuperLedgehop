@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>phase = 0;
+category = "nothing"
 
 alarm[0] = 10;
 
@@ -113,6 +114,31 @@ else
           <argument>
             <kind>1</kind>
             <string>audio_play_sound (snd_bulletget, 10, false); 
+
+if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)
+{
+    global.enhancedcount += 3;
+}
+if (category == "spread" &amp;&amp; global.spreadcount &lt; 100)
+{
+    global.spreadcount += 3;
+}
+
+if (category == "rapid" &amp;&amp; global.rapidcount &lt; 100)
+{
+    global.rapidcount += 3;
+}
+
+if (category == "fire" &amp;&amp; global.firecount &lt; 100)
+{
+    global.firecount += 3;
+}
+
+if (category == "ice" &amp;&amp; global.icecount &lt; 100)
+{
+    global.icecount += 3;
+}
+
 instance_destroy(self);
 </string>
           </argument>
