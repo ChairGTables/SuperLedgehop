@@ -1,0 +1,19 @@
+if (other.absorb == 1 && absorbed == 0)
+{
+    if (instance_number(obj_absorbbubble) < 100)
+    {
+        absorbed = 1;
+        friendly = 1;
+        
+        alarm[0] = global.chizurupoptime;
+        audio_play_sound (snd_absorb, 10, false); 
+        instance_create(x, y, obj_absorbbubble);
+            
+        vspeed = 0;
+        hspeed = 0;
+    }
+    else
+    {
+        instance_destroy(self);
+    }
+}

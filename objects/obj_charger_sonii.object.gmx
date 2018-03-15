@@ -68,6 +68,9 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+destroyable = 0;
+absorbed = 0;
 </string>
           </argument>
         </arguments>
@@ -76,27 +79,41 @@ moveTimer = moveBeat;
     <event eventtype="2" enumb="11">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Do not touch
-if (sprite_index == hS)
-{
-    sprite_index = sS;
-}
-image_index = 0;
-</string>
+            <kind>9</kind>
+            <script>scr_enemyhitstunend</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -243,129 +260,7 @@ if (action == 1)
 // Scroll all the way down for changeable features
 /////////////////////////
 
-
-//Spin animation for spinning enemies (comment this out if non-spinner)
-//image_angle += 5;
-
-
-//Look to left or right depending on direction
-if (hspeed &gt; 0)
-{
-    image_xscale = 1;
-}
-else if (hspeed &lt; 0)
-{
-    image_xscale = -1;
-}
-
-
-//Smooth movement stopper
-if (vspeed &lt; 0.5 &amp;&amp; vspeed &gt; -0.5)
-{
-    vspeed = 0;
-}
-
-if (vspeed &gt; 0)
-{
-    vspeed -= 0.5;
-}
-
-if (vspeed &lt; 0)
-{
-    vspeed += 0.5;
-}
-
-if (hspeed &lt; 0.5 &amp;&amp; hspeed &gt; -0.5)
-{
-    hspeed = 0;
-}
-
-if (hspeed &gt; 0)
-{
-    hspeed -= 0.5;
-}
-
-if (hspeed &lt; 0)
-{
-    hspeed += 0.5;
-}
-
-//Set momentum to zero if they are small enough
-if (upmomentum &lt; 0.5)
-{
-    upmomentum = 0;
-}
-
-if (upmomentum &gt; 0)
-{
-    upmomentum = upmomentum - 0.5;
-}
-
-
-if (leftmomentum &lt; 0.5)
-{
-    leftmomentum = 0;
-}
-
-if (leftmomentum &gt; 0)
-{
-    leftmomentum = leftmomentum - 0.5;
-}
-
-
-if (rightmomentum &lt; 0.5)
-{
-    rightmomentum = 0;
-}
-
-if (rightmomentum &gt; 0)
-{
-    rightmomentum = rightmomentum - 0.5;
-}
-
-
-if (downmomentum &lt; 0.5)
-{
-    downmomentum = 0;
-}
-
-if (downmomentum &gt; 0)
-{
-    downmomentum = downmomentum - 0.5;
-}
-
-
-
-
-
-
-//Move object based on its current momentum
-x -= leftmomentum;
-x += rightmomentum;
-y += downmomentum;
-y -= upmomentum;
-
-
-//Correct sprite layer ordering
-depth = -y;
-
-//Check if enemy is in the state to not perform an action
-action = 1;
-
-if (sprite_index == spr_roundcannonhurt)
-{
-    action = 0;
-}
-
-//Check if this dude left the screen
-if (action == 1 &amp;&amp; (x &lt; view_xview-200 || x &gt; view_xview+1168 || y &lt; view_yview-200 || y &gt; view_yview+732))
-{
-    action = 0;
-    hspeed = 0;
-    vspeed = 0
-}
-
-
+script_execute(scr_enemycorestep);
 
 
 ////////////////////////////
@@ -457,63 +352,88 @@ if (hp &lt; 1)
     <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Do not touch!
-myNum = 7;
-
-if (vspeed &lt; 0)
-{
-    y += myNum;
-}
-if (vspeed &gt; 0)
-{
-    y -=  myNum;
-}
-if (hspeed &lt; 0)
-{
-    x += myNum;
-}
-if (hspeed &gt; 0)
-{
-    x -= myNum;
-}
-
-
-if (upmomentum &gt; 0)
-{
-    y += myNum;
-}
-if (downmomentum &gt; 0)
-{
-    y -= myNum;
-}
-if (leftmomentum &gt; 0)
-{
-    x += myNum;
-}
-if (rightmomentum &gt; 0)
-{
-    x -= myNum;
-}
-</string>
+            <kind>9</kind>
+            <script>scr_enemywalltouch</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_smolhitbox">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_chizurudamage</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_shine">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -530,40 +450,16 @@ if (rightmomentum &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.invincibility == 0  &amp;&amp; instance_exists(obj_chizuru))
+            <string>if (other.hitbox == 1)
 {
-    global.chizuruhp -= damage;
-    global.invincibility = 100;
-    
-    if (hspeed &gt; 0)
-    {
-        obj_chizuru.rightmomentum = knockbackspeed;
-    }
-    if (hspeed &lt; 0)
-    {
-        obj_chizuru.leftmomentum = knockbackspeed;
-    }
-    if (vspeed &gt; 0)
-    {
-        obj_chizuru.downmomentum = knockbackspeed;
-    }
-    if (vspeed &lt; 0)
-    {
-        obj_chizuru.upmomentum = knockbackspeed;
-    }
-
-    obj_chizuru.knockbackLook = obj_chizuru.lookDirection;
-    obj_chizuru.sprite_index = spr_chizuruhurtd;
-    obj_chizuru.image_index = 0;
-    obj_chizuru.image_speed = 1;
-    
+    script_execute(scr_enemydamage);
 }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_chizurufirebullet">
+    <event eventtype="4" ename="obj_chizuruflame">
       <action>
         <libid>1</libid>
         <id>605</id>

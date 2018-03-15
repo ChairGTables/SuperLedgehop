@@ -31,6 +31,8 @@ image_yscale = 0;
 image_alpha = 0.25;
 
 alarm[0] = global.chizurupoptime;
+
+absorb = 1;
 </string>
           </argument>
         </arguments>

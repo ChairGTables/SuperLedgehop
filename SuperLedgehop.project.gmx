@@ -127,7 +127,9 @@
       <sprite>sprites\spr_warninglaser_sonii</sprite>
       <sprite>sprites\spr_laser_sonii</sprite>
       <sprite>sprites\spr_whateveryouregoingtonamethis_sonii</sprite>
+      <sprite>sprites\spr_whateveryouregoingtonamethishurt_sonii</sprite>
       <sprite>sprites\spr_boombox_sonii</sprite>
+      <sprite>sprites\spr_boomboxhurt_sonii</sprite>
       <sprites name="charger">
         <sprite>sprites\spr_charger_idle_sonii</sprite>
       </sprites>
@@ -185,6 +187,13 @@
       <script>scripts\scr_chizurushine.gml</script>
       <script>scripts\scr_enemydamage.gml</script>
       <script>scripts\scr_chizurudamage.gml</script>
+      <script>scripts\scr_bulletabsorb.gml</script>
+      <script>scripts\scr_bulletreflect.gml</script>
+      <script>scripts\scr_destroywhenoutofview.gml</script>
+      <script>scripts\scr_absorbedbulletdisappear.gml</script>
+      <script>scripts\scr_enemycorestep.gml</script>
+      <script>scripts\scr_enemywalltouch.gml</script>
+      <script>scripts\scr_enemyhitstunend.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -251,10 +260,10 @@
         <object>objects\obj_bigredtree</object>
       </objects>
       <objects name="enemies">
-        <object>objects\obj_surroundshooter</object>
+        <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
         <object>objects\obj_enemyenhancedbullet</object>
         <object>objects\obj_slowspikes</object>
-        <object>objects\obj_rightcannon</object>
+        <object>objects\obj_rightcannonDONOTDUPLICATE</object>
         <objects name="tito">
           <object>objects\obj_tito</object>
           <object>objects\obj_redrice</object>
