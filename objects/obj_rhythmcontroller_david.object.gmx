@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -37,10 +37,37 @@ global.currentQuarterSec =  global.quarterSec -
     (((currentPos * 100) % (global.bpmToSec * 100 / 4)) / 100);
 
 // Resync every 30 seconds
-alarm[0] = 30 * room_speed;
+alarm[0] = 20 * room_speed;
+
+// Permit resync at start after first 4 seconds of the song
+loopSync = true;
+alarm[1] = 150;
 
 // Set resync toggle on
 global.resyncing = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>loopSync = false;
 </string>
           </argument>
         </arguments>
@@ -63,22 +90,8 @@ global.resyncing = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Get current position of the track
-currentPos = audio_sound_get_track_position(global.musicrm1);
-
-// Calculate current tempo position
-global.currentWholeSec   =  global.wholeSec   -
-    (((currentPos * 100) % (global.bpmToSec * 100))     / 100);
-global.currentHalfSec    =  global.halfSec    -
-    (((currentPos * 100) % (global.bpmToSec * 100 / 2)) / 100);
-global.currentQuarterSec =  global.quarterSec -
-    (((currentPos * 100) % (global.bpmToSec * 100 / 4)) / 100);
-
-// Restart timer
-alarm[0] = 30 * room_speed;
-
-// Set resync toggle on
-global.resyncing = true;
+            <string>// Perform resync
+script_execute(scr_resync_david);
 </string>
           </argument>
         </arguments>
@@ -106,7 +119,121 @@ if (alarm[0] &gt; 0)
 {
     global.resyncing = false;
 }
+
+// Check audio position
+myFart = audio_sound_get_track_position(global.musicrm1);
+
+// Resync when at music start position
+if (myFart &lt; 1 &amp;&amp; loopSync == false)
+{
+    loopSync = true;
+    alarm[1] = 150;
+    //effect_create_above(ef_explosion, obj_chizuru.x, obj_chizuru.y, 2, c_red);
+    script_execute(scr_resync_david);
+}
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>524</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_color</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>13</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>fnt_damage</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>myFart</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_xview+20</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_yview+20</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>loopSync</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_xview+20</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_yview+50</string>
           </argument>
         </arguments>
       </action>
