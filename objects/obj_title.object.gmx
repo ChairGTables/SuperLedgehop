@@ -50,10 +50,27 @@ global.spreadcount = 100;
 global.firecount = 100;
 global.icecount = 100;
 
+
+
+//////////////////////////
+//Rhythm components
+////////////////////////////
+// Initial variables
 global.bpm = 120;
-global.bpmToSec = global.bpm/60;
+global.bpmToSec = global.bpm / 60;
 
+// Resync variables
+global.currentWholeSec = 0;
+global.currentHalfSec = 0;
+global.currentQuarterSec = 0;
 
+// Variables for objects to use (when not resyncing)
+global.wholeSec = global.bpmToSec;
+global.halfSec = global.bpm / 2;
+global.quarterSec = global.bpmToSec / 4;
+
+// Resync toggle
+global.resyncing = false; // When true all objects will resync
 
 
 
