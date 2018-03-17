@@ -10,8 +10,22 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>global.bpm = 120;
-global.bpmToSec = global.bpm/60;</code>
+  <code>// Initial variables
+global.bpm = 120;
+global.bpmToSec = global.bpm / 60;
+
+// Resync variables
+global.currentWholeSec = 0;
+global.currentHalfSec = 0;
+global.currentQuarterSec = 0;
+
+// Variables for objects to use (when not resyncing)
+global.wholeSec = global.bpmToSec;
+global.halfSec = global.bpm / 2;
+global.quarterSec = global.bpmToSec / 4;
+
+// Resync toggle
+global.resyncing = false; // When true all objects will resync</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

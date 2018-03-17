@@ -284,16 +284,17 @@
       <object>objects\obj_warninglaser_sonii</object>
     </objects>
     <objects name="david">
-      <object>objects\obj_sampleobject_david</object>
-      <object>objects\obj_musiccontroller_david</object>
-      <object>objects\obj_beat_david</object>
-      <object>objects\obj_beattick_david</object>
-      <object>objects\obj_beatindicator_david</object>
       <objects name="enemies">
         <object>objects\obj_rightcannon_david</object>
         <object>objects\obj_shooterdude_david</object>
         <object>objects\obj_testtarget_david</object>
       </objects>
+      <object>objects\obj_beat_david</object>
+      <object>objects\obj_beatindicator_david</object>
+      <object>objects\obj_beattick_david</object>
+      <object>objects\obj_musiccontroller_david</object>
+      <object>objects\obj_rhythmcontroller_david</object>
+      <object>objects\obj_sampleobject_david</object>
     </objects>
     <objects name="ultran">
       <object>objects\obj_sampleobject_ultran</object>
@@ -314,15 +315,15 @@
     </timelines>
   </timelines>
   <rooms name="rooms">
-    <rooms name="master">
-      <room>rooms\rm_title</room>
-      <room>rooms\rm_templevelone</room>
-      <room>rooms\rm_sampleroom_chair</room>
-    </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>
       <room>rooms\rm_test_david</room>
       <room>rooms\rm_sampleroom_david</room>
+    </rooms>
+    <rooms name="master">
+      <room>rooms\rm_title</room>
+      <room>rooms\rm_templevelone</room>
+      <room>rooms\rm_sampleroom_chair</room>
     </rooms>
     <rooms name="sonii">
       <room>rooms\rm_sampleroom_sonii</room>
