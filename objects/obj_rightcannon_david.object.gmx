@@ -44,7 +44,7 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.bpmToSec/4; // each quarter note
+shootBeat = global.quarterSec; // each quarter note
 moveBeat = -1;
 
 //Use these to shoot x amount of times before the enemy shoots again
@@ -366,8 +366,23 @@ if (action == 1 &amp;&amp; (x &lt; view_xview-200 || x &gt; view_xview+1168 || y
 
 
 
-// Trying out deltaTime
+// Decrease timer
 timer -= delta_time / 1000000; // delta time is in microsec
+
+// Resyncing
+if (global.resyncing)
+{
+    if (shotBeat == global.wholeSec)
+    {
+        timer = global.currentWholeSec;
+    } else if (shootBeat == global.halfSec)
+    {
+        timer = global.currentHalfSec;
+    } else if (shootBeat == global.quarterSec)
+    {
+        timer = global.currentQuarterSec;
+    }
+}
 
 // ========= SHOOTING =======================
 if (timer &lt;= 0)
