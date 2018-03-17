@@ -83,10 +83,10 @@
             <kind>1</kind>
             <string>//Draw scripts
 xAmmo = view_xview+15;
-yAmmo = view_yview+334;
+yAmmo = view_yview+434;
 
 xMain = view_xview+15;
-yMain = view_yview+355;
+yMain = view_yview+455;
 
 myWidth = 100;
 myHeight = 4;
@@ -130,6 +130,12 @@ if (global.invincibility &gt; 0)
 {
     global.invincibility -= 2;
 }
+
+
+if (global.enhancedcount &gt; 100)
+{
+    global.enhancedcount = 100;
+}
 </string>
           </argument>
         </arguments>
@@ -152,10 +158,10 @@ if (global.invincibility &gt; 0)
             <kind>1</kind>
             <string>//Draw scripts
 xAmmo = view_xview+15;
-yAmmo = view_yview+334;
+yAmmo = view_yview+434;
 
 xMain = view_xview+15;
-yMain = view_yview+355;
+yMain = view_yview+455;
 
 myWidth = 100;
 myHeight = 4;
@@ -165,6 +171,35 @@ myHeight = 4;
       </action>
     </event>
     <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Draw scripts
+xAmmo = view_xview+15;
+yAmmo = view_yview+434;
+
+xMain = view_xview+15;
+yMain = view_yview+455;
+
+myWidth = 100;
+myHeight = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>524</id>
@@ -273,15 +308,15 @@ if (global.shottype == 2)
 }
 if (global.shottype == 3)
 {
-    draw_sprite_stretched(spr_hudbars,3,xAmmo,yAmmo,global.rapidcount,myHeight)
+    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.rapidcount,myHeight)
 }
 if (global.shottype == 4)
 {
-    draw_sprite_stretched(spr_hudbars,3,xAmmo,yAmmo,global.firecount,myHeight)
+    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.firecount,myHeight)
 }
 if (global.shottype == 5)
 {
-    draw_sprite_stretched(spr_hudbars,3,xAmmo,yAmmo,global.icecount,myHeight)
+    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.icecount,myHeight)
 }
 
 draw_sprite_stretched(spr_hudbars,0,xMain+71,yMain+25,global.chizuruhp,myHeight)

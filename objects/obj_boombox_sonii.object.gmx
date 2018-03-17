@@ -32,7 +32,7 @@ hp = 20;
 image_speed = 0.5;
 
 //You must define the hurt sprite as a string
-hurtSprite = "spr_oldbasicenemyhurt";
+hurtSprite = "spr_boomboxhurt_sonii";
 
 //Do not touch this
 sS = sprite_index;
@@ -240,133 +240,18 @@ if (action == 1)
 /////////////////////////
 
 
-//Spin animation for spinning enemies (comment this out if non-spinner)
-//image_angle += 5;
 
-
-//Look to left or right depending on direction
-if (hspeed &gt; 0)
-{
-    image_xscale = 1;
-}
-else if (hspeed &lt; 0)
-{
-    image_xscale = -1;
-}
-
-
-//Smooth movement stopper
-if (vspeed &lt; 0.5 &amp;&amp; vspeed &gt; -0.5)
-{
-    vspeed = 0;
-}
-
-if (vspeed &gt; 0)
-{
-    vspeed -= 0.5;
-}
-
-if (vspeed &lt; 0)
-{
-    vspeed += 0.5;
-}
-
-if (hspeed &lt; 0.5 &amp;&amp; hspeed &gt; -0.5)
-{
-    hspeed = 0;
-}
-
-if (hspeed &gt; 0)
-{
-    hspeed -= 0.5;
-}
-
-if (hspeed &lt; 0)
-{
-    hspeed += 0.5;
-}
-
-//Set momentum to zero if they are small enough
-if (upmomentum &lt; 0.5)
-{
-    upmomentum = 0;
-}
-
-if (upmomentum &gt; 0)
-{
-    upmomentum = upmomentum - 0.5;
-}
-
-
-if (leftmomentum &lt; 0.5)
-{
-    leftmomentum = 0;
-}
-
-if (leftmomentum &gt; 0)
-{
-    leftmomentum = leftmomentum - 0.5;
-}
-
-
-if (rightmomentum &lt; 0.5)
-{
-    rightmomentum = 0;
-}
-
-if (rightmomentum &gt; 0)
-{
-    rightmomentum = rightmomentum - 0.5;
-}
-
-
-if (downmomentum &lt; 0.5)
-{
-    downmomentum = 0;
-}
-
-if (downmomentum &gt; 0)
-{
-    downmomentum = downmomentum - 0.5;
-}
-
-
-
-
-
-
-//Move object based on its current momentum
-x -= leftmomentum;
-x += rightmomentum;
-y += downmomentum;
-y -= upmomentum;
-
-
-//Correct sprite layer ordering
-depth = -y;
-
-//Check if enemy is in the state to not perform an action
-action = 1;
-
-if (sprite_index == spr_roundcannonhurt)
-{
-    action = 0;
-}
-
-//Check if this dude left the screen
-if (action == 1 &amp;&amp; (x &lt; view_xview-200 || x &gt; view_xview+1168 || y &lt; view_yview-200 || y &gt; view_yview+732))
-{
-    action = 0;
-    hspeed = 0;
-    vspeed = 0
-}
-
+script_execute(scr_enemycorestep);
 
 
 
 ////////////////////////////
 //Add additional step features here
 ////////////////////////////
+
+//Spin animation for spinning enemies (comment this out if non-spinner)
+//image_angle += 5;
+
 
 shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
@@ -381,7 +266,7 @@ if (shootTimer &lt;= 0)
     if (action == 1)
     {
         //This code segment shoots a huge surrounding circle
-        
+        audio_play_sound (snd_enemybullet, 10, false); 
         anglePerShot = 3;
         for (i = 0; i &lt; 360 / anglePerShot; i++)
         {
@@ -509,7 +394,33 @@ if (rightmomentum &gt; 0)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_chizurufirebullet">
+    <event eventtype="4" ename="obj_shine">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (other.hitbox == 1)
+{
+    script_execute(scr_enemydamage);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_chizuruflame">
       <action>
         <libid>1</libid>
         <id>605</id>

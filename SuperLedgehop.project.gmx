@@ -13,14 +13,38 @@
         <sound>sound\snd_gatling</sound>
         <sound>sound\snd_waveblast</sound>
         <sound>sound\snd_ricebullet</sound>
+        <sound>sound\snd_basicbullet</sound>
+        <sound>sound\snd_enhancedbullet</sound>
+        <sound>sound\snd_spreadbullet</sound>
+        <sound>sound\snd_firebullet</sound>
+        <sound>sound\snd_icebullet</sound>
+        <sound>sound\snd_playerhit</sound>
+        <sound>sound\snd_enemydamage</sound>
+        <sound>sound\snd_enemybullet</sound>
+        <sound>sound\snd_reflect</sound>
+        <sound>sound\snd_absorb</sound>
+        <sound>sound\snd_bulletget</sound>
+        <sound>sound\snd_absorbpop</sound>
+        <sound>sound\snd_crashed</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
+        <sound>sound\snd_titlemusic</sound>
       </sounds>
       <sounds name="tito">
         <sound>sound\snd_titohey</sound>
         <sound>sound\snd_titowave</sound>
         <sound>sound\snd_titorice</sound>
+      </sounds>
+      <sounds name="chizuru">
+        <sound>sound\snd_chizuruoof</sound>
+        <sound>sound\snd_chizuruhafaadai</sound>
+      </sounds>
+      <sounds name="generic">
+        <sound>sound\snd_death1</sound>
+        <sound>sound\snd_death2</sound>
+        <sound>sound\snd_death3</sound>
+        <sound>sound\snd_death4</sound>
       </sounds>
     </sounds>
     <sounds name="sonii">
@@ -80,6 +104,9 @@
         <sprite>sprites\spr_chizuruhud</sprite>
         <sprite>sprites\spr_ammohud</sprite>
         <sprite>sprites\spr_transparentbluesquare</sprite>
+        <sprite>sprites\spr_titlelogo</sprite>
+        <sprite>sprites\spr_titleselection</sprite>
+        <sprite>sprites\spr_yellowbox</sprite>
       </sprites>
       <sprites name="enemies">
         <sprite>sprites\spr_enemyenhancedbullet</sprite>
@@ -88,6 +115,11 @@
         <sprite>sprites\spr_roundcannonhurt</sprite>
         <sprite>sprites\spr_spiketiles</sprite>
         <sprite>sprites\spr_oldbasicenemyhurt</sprite>
+        <sprite>sprites\spr_bigredtree</sprite>
+      </sprites>
+      <sprites name="tito">
+        <sprite>sprites\spr_titowalk</sprite>
+        <sprite>sprites\spr_titohurt</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -95,7 +127,9 @@
       <sprite>sprites\spr_warninglaser_sonii</sprite>
       <sprite>sprites\spr_laser_sonii</sprite>
       <sprite>sprites\spr_whateveryouregoingtonamethis_sonii</sprite>
+      <sprite>sprites\spr_whateveryouregoingtonamethishurt_sonii</sprite>
       <sprite>sprites\spr_boombox_sonii</sprite>
+      <sprite>sprites\spr_boomboxhurt_sonii</sprite>
       <sprites name="charger">
         <sprite>sprites\spr_charger_idle_sonii</sprite>
       </sprites>
@@ -119,6 +153,8 @@
   <backgrounds name="background">
     <backgrounds name="chair">
       <background>background\back_samplebackground_chair</background>
+      <background>background\back_title</background>
+      <background>background\back_levelone</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -151,6 +187,13 @@
       <script>scripts\scr_chizurushine.gml</script>
       <script>scripts\scr_enemydamage.gml</script>
       <script>scripts\scr_chizurudamage.gml</script>
+      <script>scripts\scr_bulletabsorb.gml</script>
+      <script>scripts\scr_bulletreflect.gml</script>
+      <script>scripts\scr_destroywhenoutofview.gml</script>
+      <script>scripts\scr_absorbedbulletdisappear.gml</script>
+      <script>scripts\scr_enemycorestep.gml</script>
+      <script>scripts\scr_enemywalltouch.gml</script>
+      <script>scripts\scr_enemyhitstunend.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -204,6 +247,8 @@
         <object>objects\obj_camera_chair</object>
         <object>objects\obj_gamepad</object>
         <object>objects\obj_bossmusic</object>
+        <object>objects\obj_titleselection</object>
+        <object>objects\obj_nextroom</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -212,12 +257,13 @@
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
+        <object>objects\obj_bigredtree</object>
       </objects>
       <objects name="enemies">
-        <object>objects\obj_surroundshooter</object>
+        <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
         <object>objects\obj_enemyenhancedbullet</object>
         <object>objects\obj_slowspikes</object>
-        <object>objects\obj_rightcannon</object>
+        <object>objects\obj_rightcannonDONOTDUPLICATE</object>
         <objects name="tito">
           <object>objects\obj_tito</object>
           <object>objects\obj_redrice</object>
@@ -276,6 +322,7 @@
     </rooms>
     <rooms name="master">
       <room>rooms\rm_title</room>
+      <room>rooms\rm_templevelone</room>
       <room>rooms\rm_sampleroom_chair</room>
     </rooms>
     <rooms name="sonii">
