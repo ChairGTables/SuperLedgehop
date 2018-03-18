@@ -264,7 +264,7 @@ timer -= delta_time / 1000000; // delta time is in microsec
 // Resyncing
 if (global.resyncing)
 {
-    if (shotBeat == global.wholeSec)
+    if (shootBeat == global.wholeSec)
     {
         timer = global.currentWholeSec;
     } else if (shootBeat == global.halfSec)
