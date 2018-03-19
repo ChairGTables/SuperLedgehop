@@ -26,6 +26,7 @@
         <sound>sound\snd_ricebullet</sound>
         <sound>sound\snd_spreadbullet</sound>
         <sound>sound\snd_waveblast</sound>
+        <sound>sound\snd_rhythmconfirm</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
@@ -96,6 +97,7 @@
       </sprites>
       <sprites name="effects">
         <sprite>sprites\spr_smallcircle</sprite>
+        <sprite>sprites\spr_redcircle</sprite>
         <sprite>sprites\spr_whitedot</sprite>
         <sprite>sprites\spr_explosion</sprite>
       </sprites>
@@ -209,6 +211,7 @@
     <scripts name="david">
       <script>scripts\script_samplescript_david.gml</script>
       <script>scripts\scr_resync_david.gml</script>
+      <script>scripts\scr_resyncenemies_david.gml</script>
     </scripts>
     <scripts name="ultran">
       <script>scripts\script_samplescript_ultran.gml</script>
@@ -261,6 +264,7 @@
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
+        <object>objects\obj_redcircle</object>
         <object>objects\obj_damagenumber</object>
         <object>objects\obj_explosion</object>
       </objects>

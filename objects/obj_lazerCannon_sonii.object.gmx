@@ -289,6 +289,8 @@ timer -= delta_time / 1000000; // delta time is in microsec
 
 warnTimer -= delta_time / 1000000;
 
+script_execute(scr_resyncenemies_david);
+
 // ========= SHOOTING =======================
 if (timer &lt;= 0)
 {

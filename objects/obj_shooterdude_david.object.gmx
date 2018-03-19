@@ -267,6 +267,8 @@ script_execute(scr_enemycorestep);
 shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
 
+script_execute(scr_resyncenemies_david);
+
 if (shootTimer &lt;= 0)
 {
     // ======== SHOOTING ====================
