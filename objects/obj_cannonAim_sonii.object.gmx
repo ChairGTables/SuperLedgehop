@@ -44,7 +44,7 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.bpmToSec/4; // each quarter note
+shootBeat = global.quarterSec; // each quarter note
 moveBeat = -1;
 
 //Use these to shoot x amount of times before the enemy shoots again
@@ -273,8 +273,8 @@ if (timer &lt;= 0)
     {   
         audio_play_sound (snd_enemybullet, 10, false); 
         //This code segment shoots a huge surrounding circle
-        var shot = instance_create(x, y, obj_enemyenhancedbullet);
-        shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);;
+        var shot = instance_create(x, y, obj_spread_sonii);
+        shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
         shot.speed = 15;
     }
     
