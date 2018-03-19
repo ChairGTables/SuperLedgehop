@@ -55,7 +55,7 @@ absorb = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound (snd_absorbpop, 10, false); 
+            <string>audio_play_sound_on (global.effectsEmitter, snd_absorbpop, false, 10); 
 instance_destroy(self);
 </string>
           </argument>

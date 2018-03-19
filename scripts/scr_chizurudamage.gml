@@ -1,7 +1,7 @@
 if (global.invincibility == 0 && absorbed == 0 && instance_exists(obj_chizuru))
 {
-    audio_play_sound (snd_chizuruoof, 10, false); 
-    audio_play_sound (snd_playerhit, 10, false); 
+    audio_play_sound_on (global.voiceEmitter, snd_chizuruoof, false, 10); 
+    audio_play_sound_on (global.effectsEmitter, snd_playerhit, false, 10); 
     if (instance_exists(obj_camera_chair))
     {
         obj_camera_chair.intensity = 10;

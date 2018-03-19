@@ -9,23 +9,23 @@
     <sounds name="chair">
       <sound>sound\snd_samplesound_chair</sound>
       <sounds name="sfx">
-        <sound>sound\snd_bulletcollect</sound>
-        <sound>sound\snd_gatling</sound>
-        <sound>sound\snd_waveblast</sound>
-        <sound>sound\snd_ricebullet</sound>
+        <sound>sound\snd_absorb</sound>
+        <sound>sound\snd_absorbpop</sound>
         <sound>sound\snd_basicbullet</sound>
+        <sound>sound\snd_bulletcollect</sound>
+        <sound>sound\snd_bulletget</sound>
+        <sound>sound\snd_crashed</sound>
+        <sound>sound\snd_enemybullet</sound>
+        <sound>sound\snd_enemydamage</sound>
         <sound>sound\snd_enhancedbullet</sound>
-        <sound>sound\snd_spreadbullet</sound>
         <sound>sound\snd_firebullet</sound>
+        <sound>sound\snd_gatling</sound>
         <sound>sound\snd_icebullet</sound>
         <sound>sound\snd_playerhit</sound>
-        <sound>sound\snd_enemydamage</sound>
-        <sound>sound\snd_enemybullet</sound>
         <sound>sound\snd_reflect</sound>
-        <sound>sound\snd_absorb</sound>
-        <sound>sound\snd_bulletget</sound>
-        <sound>sound\snd_absorbpop</sound>
-        <sound>sound\snd_crashed</sound>
+        <sound>sound\snd_ricebullet</sound>
+        <sound>sound\snd_spreadbullet</sound>
+        <sound>sound\snd_waveblast</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
@@ -182,18 +182,18 @@
   </paths>
   <scripts name="scripts">
     <scripts name="chair">
-      <script>scripts\script_samplescript_chair.gml</script>
-      <script>scripts\scr_chizurushoot.gml</script>
-      <script>scripts\scr_chizurushine.gml</script>
-      <script>scripts\scr_enemydamage.gml</script>
-      <script>scripts\scr_chizurudamage.gml</script>
+      <script>scripts\scr_absorbedbulletdisappear.gml</script>
       <script>scripts\scr_bulletabsorb.gml</script>
       <script>scripts\scr_bulletreflect.gml</script>
+      <script>scripts\scr_chizurudamage.gml</script>
+      <script>scripts\scr_chizurushine.gml</script>
+      <script>scripts\scr_chizurushoot.gml</script>
       <script>scripts\scr_destroywhenoutofview.gml</script>
-      <script>scripts\scr_absorbedbulletdisappear.gml</script>
       <script>scripts\scr_enemycorestep.gml</script>
-      <script>scripts\scr_enemywalltouch.gml</script>
+      <script>scripts\scr_enemydamage.gml</script>
       <script>scripts\scr_enemyhitstunend.gml</script>
+      <script>scripts\scr_enemywalltouch.gml</script>
+      <script>scripts\script_samplescript_chair.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -296,6 +296,7 @@
       <object>objects\obj_musiccontroller_david</object>
       <object>objects\obj_rhythmcontroller_david</object>
       <object>objects\obj_sampleobject_david</object>
+      <object>objects\obj_soundcontroller_david</object>
     </objects>
     <objects name="ultran">
       <object>objects\obj_sampleobject_ultran</object>
