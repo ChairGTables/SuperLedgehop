@@ -6,7 +6,7 @@ if (other.absorb == 1 && absorbed == 0)
         friendly = 1;
         
         alarm[0] = global.chizurupoptime;
-        audio_play_sound (snd_absorb, 10, false); 
+        audio_play_sound_on (global.effectsEmitter, snd_absorb, false, 10); 
         instance_create(x, y, obj_absorbbubble);
             
         vspeed = 0;

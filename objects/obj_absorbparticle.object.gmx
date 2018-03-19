@@ -113,7 +113,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound (snd_bulletget, 10, false); 
+            <string>audio_play_sound_on (global.effectsEmitter, snd_bulletget, false, 10); 
 
 if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)
 {

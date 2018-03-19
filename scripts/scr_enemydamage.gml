@@ -3,7 +3,7 @@ sprite_index = asset_get_index(hurtSprite);
 image_index = 0;
 alarm[11] = hitstunTime;
 
-audio_play_sound (snd_enemydamage, 10, false); 
+audio_play_sound_on (global.effectsEmitter, snd_enemydamage, false, 10); 
 var damageNumber = instance_create(x, y, obj_damagenumber);
 damageNumber.hspeed = random_range(-5, 5);
 damageNumber.vspeed = random_range(-10, -15);

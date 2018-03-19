@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.musicrm1 = audio_play_sound (snd_bosstheme, 10, true); // Music in rm1, priority 10, looping
+            <string>global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10); // Music in rm1, priority 10, looping
 </string>
           </argument>
         </arguments>

@@ -72,8 +72,25 @@ global.quarterSec = global.bpmToSec / 4;
 // Resync toggle
 global.resyncing = false; // When true all objects will resync
 
+//////////////////////////
+//Sound emitters
+////////////////////////////
+// Volumes
+global.masterVolume  = 1;
+global.musicVolume   = 1;
+global.effectsVolume = 1;
+global.voiceVolume   = 1;
 
+// Sound emitters
+global.musicEmitter   = audio_emitter_create();
+global.effectsEmitter = audio_emitter_create();
+global.voiceEmitter   = audio_emitter_create();
 
+// Set volumes of emitters
+audio_master_gain (global.masterVolume);
+audio_emitter_gain(global.musicEmitter,   global.musicVolume);
+audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
+audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
 
 
 //Wave
@@ -88,7 +105,7 @@ yy = y;
 
 
 //music
-audio_play_sound(snd_titlemusic, 10, true);
+audio_play_sound_on(global.musicEmitter, snd_titlemusic, true, 0);
 </string>
           </argument>
         </arguments>
