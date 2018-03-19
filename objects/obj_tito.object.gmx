@@ -47,6 +47,10 @@ hitstunTime = 13;
 shootBeat = global.bpmToSec;    // whole note
 moveBeat = global.bpmToSec / 2; // half note
 
+//Original beats
+originalShootBeat = shootBeat;
+originalMoveBeat = moveBeat;
+
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
 shotsBeforeRest = 3;
@@ -273,13 +277,16 @@ script_execute(scr_enemycorestep);
 shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
 
+script_execute(scr_resyncenemies_david);
+
 if (shootTimer &lt;= 0)
 {
     // ======== SHOOTING ====================
     //Reset timer
     if (shotCount &lt; shotsBeforeRest)
     {
-        shootTimer = shootBeat / 4;
+        shootBeat = global.quarterSec;
+        shootTimer = shootBeat;
         shotCount += 1;
     }
     else
@@ -288,6 +295,7 @@ if (shootTimer &lt;= 0)
         chosenAttack = -1;
         attackDelay = 0;
         gatlingShot = 0;
+        shootBeat = global.wholeSec;
         shootTimer = shootBeat;
     }
     
@@ -338,13 +346,15 @@ if (shootTimer &lt;= 0)
             if (gatlingShot == 0)
             {
                 shotsBeforeRest = 12;
-                shootTimer = shootBeat / 8;
+                shootBeat = global.eighthSec;
+                shootTimer = shootBeat;
                 gatlingShot = 1;
             }
             else if (gatlingShot == 1)
             {
                 gatlingShot = 0;
-                shootTimer = shootBeat / 8;
+                shootBeat = global.eighthSec;
+                shootTimer = shootBeat;
                 var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
             }
             
@@ -358,7 +368,8 @@ if (shootTimer &lt;= 0)
         if (attackDelay &lt; 1)
         {
             attackDelay += 1;
-            shootTimer = shootBeat / 2;
+            shootBeat = global.halfSec;
+            shootTimer = shootBeat;
         }
         else
         {
@@ -385,7 +396,8 @@ if (shootTimer &lt;= 0)
         if (attackDelay &lt; 1)
         {
             attackDelay += 1;
-            shootTimer = shootBeat / 2;
+            shootBeat = global.halfSec
+            shootTimer = shootBeat;
         }
         else
         {
@@ -425,6 +437,7 @@ if (shootTimer &lt;= 0)
     
     if (chosenAttack == -1)
     {
+        shootBeat = originalShootBeat;
         chosenAttack = 0;
     }
 }

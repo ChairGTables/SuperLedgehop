@@ -44,8 +44,8 @@ global.chizurupoptime = 60;
 global.invincibility = 0;
 
 global.basiccount = 100;
-global.enhancedcount = 0;
-global.rapidcount = 70;
+global.enhancedcount = 100;
+global.rapidcount = 100;
 global.spreadcount = 100;
 global.firecount = 100;
 global.icecount = 100;
@@ -63,11 +63,19 @@ global.bpmToSec = global.bpm / 60;
 global.currentWholeSec = 0;
 global.currentHalfSec = 0;
 global.currentQuarterSec = 0;
+global.currentEighthSec = 0;
 
 // Variables for objects to use (when not resyncing)
 global.wholeSec = global.bpmToSec;
 global.halfSec = global.bpmToSec / 2;
 global.quarterSec = global.bpmToSec / 4;
+global.eighthSec = global.bpmToSec / 8;
+
+global.chizuruShootBeat = global.quarterSec;
+global.chizuruShootTimer = global.chizuruShootBeat;
+global.chizuruMoveBeat = global.quarterSec;
+global.chizuruMoveTimer = global.chizuruMoveBeat;
+global.chizuruShootRest = 0;
 
 // Resync toggle
 global.resyncing = false; // When true all objects will resync

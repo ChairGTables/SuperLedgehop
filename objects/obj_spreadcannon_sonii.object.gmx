@@ -262,6 +262,8 @@ image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
 // Trying out deltaTime
 timer -= delta_time / 1000000; // delta time is in microsec
 
+script_execute(scr_resyncenemies_david);
+
 // ========= SHOOTING =======================
 if (timer &lt;= 0)
 {
