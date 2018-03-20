@@ -31,6 +31,7 @@
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
         <sound>sound\snd_titlemusic</sound>
+        <sound>sound\snd_bossintro</sound>
       </sounds>
       <sounds name="tito">
         <sound>sound\snd_titohey</sound>
@@ -80,6 +81,23 @@
         <sprites name="hurt">
           <sprite>sprites\spr_chizuruhurtd</sprite>
         </sprites>
+        <sprites name="wavedash">
+          <sprite>sprites\spr_chizuruwaved</sprite>
+          <sprite>sprites\spr_chizuruwavedr</sprite>
+          <sprite>sprites\spr_chizuruwaver</sprite>
+          <sprite>sprites\spr_chizuruwaveur</sprite>
+          <sprite>sprites\spr_chizuruwaveu</sprite>
+        </sprites>
+        <sprites name="spin">
+          <sprite>sprites\spr_chizuruspin</sprite>
+        </sprites>
+        <sprites name="dialogue">
+          <sprite>sprites\spr_chizuruhappy</sprite>
+          <sprite>sprites\spr_chizuruneutral</sprite>
+          <sprite>sprites\spr_chizurusad</sprite>
+          <sprite>sprites\spr_chizuruangry</sprite>
+          <sprite>sprites\spr_chizurucurious</sprite>
+        </sprites>
         <sprite>sprites\spr_chizuruarrow</sprite>
         <sprite>sprites\spr_chizurubasicbullet</sprite>
         <sprite>sprites\spr_chizuruenhancedbullet</sprite>
@@ -100,6 +118,7 @@
         <sprite>sprites\spr_redcircle</sprite>
         <sprite>sprites\spr_whitedot</sprite>
         <sprite>sprites\spr_explosion</sprite>
+        <sprite>sprites\spr_mediumwhitecircle</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -122,6 +141,12 @@
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
         <sprite>sprites\spr_titohurt</sprite>
+        <sprite>sprites\spr_titoneutral</sprite>
+        <sprite>sprites\spr_titoangry</sprite>
+      </sprites>
+      <sprites name="yuuto">
+        <sprite>sprites\spr_yuutoneutral</sprite>
+        <sprite>sprites\spr_yuutosad</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -204,6 +229,9 @@
       <script>scripts\scr_enemyhitstunend.gml</script>
       <script>scripts\scr_enemywalltouch.gml</script>
       <script>scripts\script_samplescript_chair.gml</script>
+      <script>scripts\scr_chizuruwavedash.gml</script>
+      <script>scripts\scr_chizuruspecial.gml</script>
+      <script>scripts\scr_enemyshined.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -252,6 +280,7 @@
         <object>objects\obj_absorbbubble</object>
         <object>objects\obj_absorbparticle</object>
         <object>objects\obj_smolhitbox</object>
+        <object>objects\obj_circleeraser</object>
       </objects>
       <objects name="functionality">
         <object>objects\obj_title</object>

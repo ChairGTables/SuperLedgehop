@@ -416,6 +416,7 @@ if (rightmomentum &gt; 0)
             <string>if (other.hitbox == 1)
 {
     script_execute(scr_enemydamage);
+    script_execute(scr_enemyshined);
 }
 </string>
           </argument>

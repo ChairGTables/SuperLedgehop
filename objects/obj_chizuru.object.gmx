@@ -42,10 +42,247 @@ downmomentum = 0;
 
 
 action = 1;
+waveshine = 0;
+spinning = 0;
+
+spinAngle[0] = 0;
+spinAngle[1] = 90;
+spinAngle[2] = 180;
+spinAngle[3] = 270;
+
+spinFinish = 0;
 
 global.chizuruShootBeat = global.quarterSec;
 global.chizuruShootTimer = global.chizuruShootBeat;
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+
+if (spinFinish &gt; 20)
+{
+    obj_camera_chair.intensity = 10;
+    angleDetermine = 0;
+    for (j = 0; j &lt; 36; j++)
+    {
+        var bullet = instance_create(x, y, obj_chizuruspreadbullet);
+        bullet.speed = 30;
+        bullet.direction = angleDetermine;
+                        
+        bullet.image_xscale = 4;
+        bullet.image_yscale = 4;
+        
+        bullet.hspeed += hspeed;
+        bullet.vspeed += vspeed;
+        
+        angleDetermine += 10;
+    }
+    
+    instance_create(x, y, obj_circleeraser);
+}
+
+spinning = 0;
+action = 1;
+hspeed = 0;
+vspeed = 0;
+
+
+
+if(lookDirection == 1)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustanddr;
+    }
+    
+    if(lookDirection == 2)
+    {
+        sprite_index = spr_chizurustandd;
+    }
+    
+    if(lookDirection == 3)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustanddr;
+        
+    }
+    
+    if (lookDirection == 4)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 6)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 7)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandur;
+        
+    }
+    
+    if (lookDirection == 8)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandu;
+        
+    }
+    
+    if (lookDirection == 9)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandur;
+    }
+    
+    image_index = 0;
+    image_speed = 0.5;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="9">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>action = 1;
+waveshine = 0;
+
+    if(lookDirection == 1)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustanddr;
+    }
+    
+    if(lookDirection == 2)
+    {
+        sprite_index = spr_chizurustandd;
+    }
+    
+    if(lookDirection == 3)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustanddr;
+        
+    }
+    
+    if (lookDirection == 4)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 6)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 7)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandur;
+        
+    }
+    
+    if (lookDirection == 8)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandu;
+        
+    }
+    
+    if (lookDirection == 9)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandur;
+    }
+    
+    image_index = 0;
+    image_speed = 0.5;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_chizuruwavedash</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -220,6 +457,39 @@ if (instance_position(x + hspeed, y + vspeed, obj_wall) || instance_position(x +
     downmomentum = 0;
 }
 
+////////////////////////////////
+//Spin Action
+///////////////////////////////
+if (spinning == 1 &amp;&amp; instance_exists(obj_gamepad))
+{
+    if (obj_gamepad.joy_lt == true)
+    {
+        spinFinish += 1;
+        angleIncrease = random_range(20, 50);
+        for (i = 0; i &lt; 4; i++)
+        {
+            if (random_range(0, 100) &gt; 30)
+            {
+                for (j = 0; j &lt; random_range(2,5); j++)
+                {
+                    var bullet = instance_create(x, y, obj_chizurubasicbullet);
+                    bullet.speed = 15;
+                    bullet.direction = spinAngle[i] + random_range(-5, 5);
+                    bullet.hspeed += hspeed;
+                    bullet.vspeed += vspeed;
+                    
+                    bullet.image_xscale = 2;
+                    bullet.image_yscale = 2;
+                    
+                    bullet.vortex = 1;
+                }
+                
+            }
+            
+            spinAngle[i] += angleIncrease;    
+        } 
+    }
+}
 
 
 ///////////////////////////////
@@ -227,6 +497,15 @@ if (instance_position(x + hspeed, y + vspeed, obj_wall) || instance_position(x +
 //////////////////////////////
 action = 1;
 if (sprite_index == spr_chizuruhurtd)
+{
+    action = 0;
+    spinning = 0;
+}
+if (waveshine == 1)
+{
+    action = 0;
+}
+if (spinning == 1)
 {
     action = 0;
 }

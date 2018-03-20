@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//Set health for enemy
-hp = 20;
+hp = 90;
 
 //set animation speed
 image_speed = 0.2;
@@ -410,6 +410,7 @@ if (hp &lt; 1)
             <string>if (other.hitbox == 1)
 {
     script_execute(scr_enemydamage);
+    script_execute(scr_enemyshined);
 }
 </string>
           </argument>

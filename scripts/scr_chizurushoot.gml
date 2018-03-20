@@ -15,6 +15,7 @@ if (instance_exists(obj_chizuru))
         if ( firstBoolCheck == 1 && secondBoolCheck == 1)
         {
             tempAngle = -2;
+            var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
             
             for (i = 0; i < 2; i++)
@@ -27,7 +28,7 @@ if (instance_exists(obj_chizuru))
                 
                 tempAngle += 4;
                 
-                var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
+                
             }
         }
         else
@@ -48,7 +49,7 @@ if (instance_exists(obj_chizuru))
         if ( firstBoolCheck == 1 && secondBoolCheck == 1)
         {
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
-        
+            var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             tempAngle = -2;
             for (i = 0; i < 2; i++)
             {
@@ -60,7 +61,7 @@ if (instance_exists(obj_chizuru))
                 
                 tempAngle += 4;
                 
-                var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
+                
                 
                 global.enhancedcount -= 0.5;
             }
@@ -84,6 +85,7 @@ if (instance_exists(obj_chizuru))
         if ( firstBoolCheck == 1 && secondBoolCheck == 1)
         {
             tempAngle = -25;
+            var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
             for (i = 0; i < 6; i += 1)
             {
@@ -129,19 +131,16 @@ if (instance_exists(obj_chizuru))
     if (global.shottype == 4 && global.firecount > 0)
     {
         global.chizuruShootRest = global.chizuruShootBeat / 2;
+        
         audio_play_sound_on (global.effectsEmitter, snd_firebullet, false, 10); 
         if ( firstBoolCheck == 1 && secondBoolCheck == 1)
         {
+            var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
-            tempAngle = -20;
-            for (i = 0; i < 3; i++)
-            {
-                var fireShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizurufirebullet);
-                fireShot.direction = global.aimangle + tempAngle;
-                fireShot.speed = bulletSpeed;
-                
-                tempAngle += 20;
-            }
+            var fireShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizurufirebullet);
+            fireShot.direction = global.aimangle;
+            fireShot.speed = bulletSpeed;
+            fireShot.steroids = 1;
             global.firecount -= 3;
         }
         else
@@ -164,6 +163,7 @@ if (instance_exists(obj_chizuru))
         if ( firstBoolCheck == 1 && secondBoolCheck == 1)
         {
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
+            var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             tempAngle = -3;
             for (i = 0; i < 3; i++)
             {
