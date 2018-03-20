@@ -156,6 +156,7 @@
     <instance objName="obj_wall" x="224" y="96" name="inst_F9400219" locked="0" code="" scaleX="2" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="288" y="704" name="inst_8A323214" locked="0" code="" scaleX="26" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1056" y="96" name="inst_4BF1E5F3" locked="0" code="" scaleX="3" scaleY="19" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rhythmcontroller_david" x="96" y="192" name="inst_F07A522A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_levelone" x="544" y="256" w="32" h="32" xo="160" yo="224" id="10000012" name="inst_E44EEB8E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
