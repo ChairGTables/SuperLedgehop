@@ -169,9 +169,20 @@
         <sprite>sprites\spr_enemyrapidbullet</sprite>
         <sprite>sprites\spr_enemyflame_sonii</sprite>
         <sprite>sprites\spr_enemyspread_sonii</sprite>
+        <sprite>sprites\spr_grenade_sonii</sprite>
       </sprites>
       <sprites name="firecast">
         <sprite>sprites\spr_firecast_sonii</sprite>
+      </sprites>
+      <sprites name="wip">
+        <sprite>sprites\spr_spreadmove_sonii</sprite>
+        <sprite>sprites\spr_squremovehurt_sonii</sprite>
+        <sprite>sprites\spr_sidetoside_sonii</sprite>
+        <sprite>sprites\spr_sidetosidehurt_sonii</sprite>
+        <sprite>sprites\spr_squaremove_sonii</sprite>
+        <sprite>sprites\spr_spreadmovehurt_sonii</sprite>
+        <sprite>sprites\spr_grenaider_sonii</sprite>
+        <sprite>sprites\spr_grenaiderhurt_sonii</sprite>
       </sprites>
     </sprites>
     <sprites name="david">
@@ -235,6 +246,7 @@
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
+      <script>scripts\scr_keepcharger_sonii.gml</script>
     </scripts>
     <scripts name="david">
       <script>scripts\script_samplescript_david.gml</script>
@@ -319,15 +331,21 @@
         <object>objects\obj_spread_sonii</object>
         <object>objects\obj_laser_sonii</object>
         <object>objects\obj_flame_sonii</object>
+        <object>objects\obj_grenadespread_sonii</object>
       </objects>
       <object>objects\obj_beatIndicator_sonii</object>
       <object>objects\obj_warninglaser_sonii</object>
       <objects name="enemies">
         <object>objects\obj_boombox_sonii</object>
+        <object>objects\obj_squaremover_sonii</object>
+        <object>objects\obj_sidetoside_sonii</object>
+        <object>objects\obj_spreadmove_sonii</object>
+        <object>objects\obj_grenaider_sonii</object>
         <object>objects\obj_cannonaim_sonii</object>
         <object>objects\obj_spreadcannon_sonii</object>
         <object>objects\obj_lazerCannon_sonii</object>
         <object>objects\obj_charger_sonii</object>
+        <object>objects\obj_nostop_sonii</object>
       </objects>
     </objects>
     <objects name="david">
