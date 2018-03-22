@@ -176,11 +176,11 @@
       </sprites>
       <sprites name="wip">
         <sprite>sprites\spr_spreadmove_sonii</sprite>
+        <sprite>sprites\spr_spreadmovehurt_sonii</sprite>
+        <sprite>sprites\spr_squaremove_sonii</sprite>
         <sprite>sprites\spr_squremovehurt_sonii</sprite>
         <sprite>sprites\spr_sidetoside_sonii</sprite>
         <sprite>sprites\spr_sidetosidehurt_sonii</sprite>
-        <sprite>sprites\spr_squaremove_sonii</sprite>
-        <sprite>sprites\spr_spreadmovehurt_sonii</sprite>
         <sprite>sprites\spr_grenaider_sonii</sprite>
         <sprite>sprites\spr_grenaiderhurt_sonii</sprite>
       </sprites>
@@ -326,6 +326,8 @@
     </objects>
     <objects name="sonii">
       <object>objects\obj_sampleobject_sonii</object>
+      <object>objects\obj_beatIndicator_sonii</object>
+      <object>objects\obj_warninglaser_sonii</object>
       <objects name="bullets">
         <object>objects\obj_rapidbullet</object>
         <object>objects\obj_spread_sonii</object>
@@ -333,8 +335,6 @@
         <object>objects\obj_flame_sonii</object>
         <object>objects\obj_grenadespread_sonii</object>
       </objects>
-      <object>objects\obj_beatIndicator_sonii</object>
-      <object>objects\obj_warninglaser_sonii</object>
       <objects name="enemies">
         <object>objects\obj_boombox_sonii</object>
         <object>objects\obj_squaremover_sonii</object>

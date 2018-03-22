@@ -25,7 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Set health for enemy
+            <string>friendly = 0;
+absorbed = 0;
+
+category = "spread";
+
+image_angle = direction;
+
+//Set health for enemy
 hp = 20;
 
 //set animation speed
@@ -45,13 +52,15 @@ hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
 shootBeat = global.wholeSec;    // whole note
-//moveBeat = global.wholeSec; // half note
+moveBeat = global.wholeSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
 shotsBeforeRest = 0;
 shootRestTime = 150;
 action = 1;
+
+counter = 0;
 
 //Do not touch these
 upmomentum = 0;
@@ -63,7 +72,7 @@ downmomentum = 0;
 //alarm[0] = shootBeat;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
-//moveTimer = moveBeat;
+moveTimer = moveBeat;
 </string>
           </argument>
         </arguments>
@@ -103,6 +112,7 @@ script_execute(scr_enemycorestep);
 
 
 shootTimer -= delta_time / 1000000;
+moveTimer -= delta_time / 1000000;
 
 script_execute(scr_resyncenemies_david);
 
@@ -120,7 +130,7 @@ if (shootTimer &lt;= 0)
         anglePerShot = 3;
         for (i = 0; i &lt; 360 / anglePerShot; i++)
         {
-            var shot = instance_create(x, y, obj_rapidbullet);
+            var shot = instance_create(x, y, obj_spread_sonii);
             if (instance_exists(shot))
             {
                 shot.direction = i * anglePerShot;
@@ -133,10 +143,29 @@ if (shootTimer &lt;= 0)
     var beatIndicator = instance_create(x, y, obj_beatindicator_david);
     beatIndicator.image_speed = shootBeat;
     
-    instance_create(x, y, obj_explosion);
-    instance_destroy(self);
+
+    hp = -1;
 }
 // ======================================================
+
+if (moveTimer &lt;= 0)
+{
+    // ++++++++++++++ MOVING ++++++++++++++++++++++++++++
+    //Always set the timer again so it loops
+    moveTimer = moveBeat;
+    
+    //Action is checked on the step state to see if enemy is hurt or enemy is offscreen
+    if(action == 1)
+    {
+        //Touch these to modify movement
+        followspeed = 7;
+        minimumspeed = 5;
+        maximumspeed = 10;
+        
+            move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
+    }
+}
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
