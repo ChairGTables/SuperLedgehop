@@ -246,8 +246,11 @@
     <instance objName="obj_slowspikes" x="1792" y="672" name="inst_2EB62191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rhythmcontroller_david" x="64" y="224" name="inst_A6820D56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_soundcontroller_david" x="64" y="160" name="inst_DED32422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_flame_sonii" x="448" y="256" name="inst_963E76ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="576" y="256" name="inst_2578895A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nostop_sonii" x="832" y="1056" name="inst_8E2E025F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nostop_sonii" x="1568" y="256" name="inst_90F1459B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spreadmove_sonii" x="672" y="320" name="inst_6784FCE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spreadmove_sonii" x="672" y="320" name="inst_3C399CFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_levelone" x="736" y="224" w="32" h="32" xo="64" yo="160" id="10000145" name="inst_DF06B3E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
