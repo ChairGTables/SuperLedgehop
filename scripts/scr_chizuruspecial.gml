@@ -6,9 +6,55 @@ if (instance_exists(obj_chizuru))
         obj_chizuru.action = 0;
         obj_chizuru.waveshine = 0;
         
-        obj_chizuru.hspeed = global.chizurumovex * 25;
-        obj_chizuru.vspeed = global.chizurumovey * 25;
+        //Check if there's a wall nearby
+        xWallCheck = 0;
+        for (i = 0; i < 64; i++)
+        {
+            for (j = -64; j < 64; j++)
+            {
+                if (instance_position(obj_chizuru.x + i, obj_chizuru.y + j, obj_wall) && global.chizurumovex > 0)
+                {
+                    xWallCheck = 1;    
+                }
+                if (instance_position(obj_chizuru.x - i, obj_chizuru.y + j, obj_wall) && global.chizurumovex < 0)
+                {
+                    xWallCheck = 1;    
+                }
+            }                
+        }
+        if (xWallCheck == 0)
+        {
+            obj_chizuru.hspeed = global.chizurumovex * 25;
+        }
+        else
+        {
+            obj_chizuru.hspeed = 0;
+        }
         
+        yWallCheck = 0;
+        for (i = 0; i < 64; i++)
+        {
+            for (j = -64 * 2; j < 64; j++)
+            {
+                if (instance_position(obj_chizuru.x + j, obj_chizuru.y + i, obj_wall) && global.chizurumovey > 0)
+                {
+                    yWallCheck = 1;    
+                }
+                if (instance_position(obj_chizuru.x + j, obj_chizuru.y - i, obj_wall) && global.chizurumovey < 0)
+                {
+                    yWallCheck = 1;    
+                }
+            }                
+        }
+        if (yWallCheck == 0)
+        {
+            obj_chizuru.vspeed = global.chizurumovey * 25;
+        }
+        else
+        {
+            obj_chizuru.vspeed = 0;
+        }
+   
         obj_chizuru.alarm[10] = 30;
         obj_chizuru.alarm[8] = -1;
         obj_chizuru.alarm[9] = -1;
