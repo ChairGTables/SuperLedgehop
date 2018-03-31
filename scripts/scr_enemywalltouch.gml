@@ -1,21 +1,25 @@
+
+
 //Do not touch!
+
+move_bounce_all(false);
 myNum = 7;
 
 if (vspeed < 0)
 {
-    y += myNum;
+    y += abs(vspeed) * 2;
 }
 if (vspeed > 0)
 {
-    y -=  myNum;
+    y -=  abs(vspeed) * 2;
 }
 if (hspeed < 0)
 {
-    x += myNum;
+    x += abs(hspeed) * 2;
 }
 if (hspeed > 0)
 {
-    x -= myNum;
+    x -= abs(hspeed) * 2;
 }
 
 

@@ -27,6 +27,8 @@
         <sound>sound\snd_spreadbullet</sound>
         <sound>sound\snd_waveblast</sound>
         <sound>sound\snd_rhythmconfirm</sound>
+        <sound>sound\snd_reflector</sound>
+        <sound>sound\snd_absorbing</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
@@ -41,6 +43,8 @@
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
         <sound>sound\snd_chizuruhafaadai</sound>
+        <sound>sound\snd_chizurueatthis</sound>
+        <sound>sound\snd_chizurutakethis</sound>
       </sounds>
       <sounds name="generic">
         <sound>sound\snd_death1</sound>
@@ -243,6 +247,9 @@
       <script>scripts\scr_chizuruwavedash.gml</script>
       <script>scripts\scr_chizuruspecial.gml</script>
       <script>scripts\scr_enemyshined.gml</script>
+      <script>scripts\scr_speedwallcheck.gml</script>
+      <script>scripts\scr_enemywallfix.gml</script>
+      <script>scripts\scr_playerwallfix.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>

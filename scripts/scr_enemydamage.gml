@@ -33,15 +33,18 @@ vspeed = 0;
 
 if (other.vortex == 1 && instance_exists(obj_chizuru))
 {
-    speed = 25;
+    speed = 20;
     direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
     rightmomentum = 0;
     leftmomentum = 0;
     upmomentum = 0;
     downmomentum = 0;
+
     hp += other.damage;
     hp -= 1;
 }
+
+script_execute(scr_speedwallcheck);
 
 if (other.destroyable == 1)
 {
