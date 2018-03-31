@@ -1,4 +1,8 @@
+
+
 //Do not touch!
+
+move_bounce_all(false);
 myNum = 7;
 
 if (vspeed < 0)
