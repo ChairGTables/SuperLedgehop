@@ -445,17 +445,7 @@ y -= upmomentum;
 /////////////////////////
 //Wall Checks
 ////////////////////////
-if (instance_position(x + hspeed, y + vspeed, obj_wall) || instance_position(x + rightmomentum - leftmomentum, y + downmomentum - upmomentum, obj_wall))
-{
-    x -= hspeed + rightmomentum - leftmomentum;
-    y -= vspeed + downmomentum - upmomentum;
-    hspeed = 0;
-    vspeed = 0;    
-    rightmomentum = 0;
-    leftmomentum = 0;
-    upmomentum = 0;
-    downmomentum = 0;
-}
+script_execute(scr_speedwallcheck);
 
 ////////////////////////////////
 //Spin Action

@@ -243,6 +243,7 @@
       <script>scripts\scr_chizuruwavedash.gml</script>
       <script>scripts\scr_chizuruspecial.gml</script>
       <script>scripts\scr_enemyshined.gml</script>
+      <script>scripts\scr_speedwallcheck.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
