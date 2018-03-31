@@ -2,12 +2,14 @@ if (instance_exists(obj_chizuru))
 {
     if (global.chizurushinecharge > 5)
     {
+        audio_play_sound_on (global.effectsEmitter, snd_absorbing, false, 10); 
         var shine = instance_create(obj_chizuru.x, obj_chizuru.y, obj_shine);
         shine.absorb = 1;
     }
     else
     {
         var shine = instance_create(obj_chizuru.x, obj_chizuru.y, obj_shine);
+        audio_play_sound_on (global.effectsEmitter, snd_reflector, false, 10); 
         shine.absorb = 0;
     }
     global.chizurushinecharge = 0;
@@ -21,6 +23,8 @@ if (instance_exists(obj_chizuru))
     
     obj_chizuru.alarm[10] = -1;
     
+    obj_chizuru.hspeed *= 0.7;
+    obj_chizuru.vspeed *= 0.7;
     
     if(obj_chizuru.lookDirection == 1)
     {
