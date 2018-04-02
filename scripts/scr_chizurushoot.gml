@@ -17,6 +17,10 @@ if (instance_exists(obj_chizuru))
             tempAngle = -2;
             var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
+            var note1 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            var note2 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            note1.hspeed = -5;
+            note2. hspeed = 5;
             
             for (i = 0; i < 2; i++)
             {
@@ -25,7 +29,7 @@ if (instance_exists(obj_chizuru))
                 basicShot.speed = bulletSpeed;
                 basicShot.image_xscale = 2;
                 basicShot.image_yscale = 2;
-                
+                basicShot.timed = 1;
                 tempAngle += 4;
                 
                 
@@ -50,6 +54,10 @@ if (instance_exists(obj_chizuru))
         {
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
             var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
+            var note1 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            var note2 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            note1.hspeed = -5;
+            note2. hspeed = 5;
             tempAngle = -2;
             for (i = 0; i < 2; i++)
             {
@@ -58,7 +66,7 @@ if (instance_exists(obj_chizuru))
                 strongShot.speed = bulletSpeed;
                 strongShot.image_xscale = 2;
                 strongShot.image_yscale = 2;
-                
+                strongShot.timed = 1;
                 tempAngle += 4;
                 
                 
@@ -87,11 +95,16 @@ if (instance_exists(obj_chizuru))
             tempAngle = -25;
             var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
+            var note1 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            var note2 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            note1.hspeed = -5;
+            note2. hspeed = 5;
             for (i = 0; i < 6; i += 1)
             {
                 var spreadShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizuruspreadbullet);
                 spreadShot.direction = global.aimangle + tempAngle;
                 spreadShot.speed = bulletSpeed * 1.2;
+                spreadShot.timed = 1;
                 tempAngle += 10;
                 
                 spreadShot.image_xscale = 2;
@@ -111,6 +124,7 @@ if (instance_exists(obj_chizuru))
             {
                 spreadShot.image_xscale = 2;
                 spreadShot.image_yscale = 2;
+                spreadShot.timed = 1;
             }
         }
         global.spreadcount -= 5;
@@ -137,10 +151,16 @@ if (instance_exists(obj_chizuru))
         {
             var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
+            var note1 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            var note2 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            note1.hspeed = -5;
+            note2. hspeed = 5;
+            
             var fireShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizurufirebullet);
             fireShot.direction = global.aimangle;
             fireShot.speed = bulletSpeed;
             fireShot.steroids = 1;
+            fireShot.timed = 1;
             global.firecount -= 3;
         }
         else
@@ -164,13 +184,18 @@ if (instance_exists(obj_chizuru))
         {
             audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
             var ringEffect = instance_create(obj_chizuru.x, obj_chizuru.y, obj_redcircle);
+            var note1 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            var note2 = instance_create(obj_chizuru.x, obj_chizuru.y, obj_musicnote);
+            note1.hspeed = -5;
+            note2. hspeed = 5;
+            
             tempAngle = -3;
             for (i = 0; i < 3; i++)
             {
                 var iceShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizuruicebullet);
                 iceShot.direction = global.aimangle + tempAngle;
                 iceShot.speed = bulletSpeed;
-                
+                iceShot.timed = 1;
                 tempAngle += 3;
             }
             global.firecount -= 3;

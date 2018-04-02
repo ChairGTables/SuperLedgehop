@@ -6,6 +6,7 @@ if (other.absorb == 0 && friendly == 0 && absorbed == 0)
     darkside.direction = direction + 180;
     darkside.speed = speed * 3;
     darkside.sprite_index = sprite_index;
+    darkside.timed = 1;
     
     instance_destroy(self);
 }

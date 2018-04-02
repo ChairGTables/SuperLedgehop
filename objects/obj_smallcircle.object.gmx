@@ -3,7 +3,7 @@
   <spriteName>spr_smallcircle</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-900</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 0;
-image_yscale = 0;
+            <string>image_xscale = 0.5;
+image_yscale = 0.5;
 </string>
           </argument>
         </arguments>
@@ -49,10 +49,10 @@ image_yscale = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale += 0.1;
-image_yscale += 0.1;
+            <string>image_xscale += 0.3;
+image_yscale += 0.3;
 
-image_alpha -= 0.05;
+image_alpha -= 0.1;
 
 if (image_alpha &lt; 0.05)
 {
