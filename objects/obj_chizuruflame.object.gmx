@@ -32,6 +32,8 @@ alarm[0] = 15;
 
 fading = 0;
 steroids = 0;
+vortex = 0;
+timed = 0;
 </string>
           </argument>
         </arguments>
