@@ -29,6 +29,7 @@
 destroyable = 1;
 image_angle = direction;
 vortex = 0;
+timed = 0;
 alarm[0] = 200;
 alarm[1] = 2;
 </string>

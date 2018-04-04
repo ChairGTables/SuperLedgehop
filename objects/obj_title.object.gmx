@@ -50,7 +50,7 @@ global.spreadcount = 100;
 global.firecount = 100;
 global.icecount = 100;
 
-
+global.combo = 0;
 
 //////////////////////////
 //Rhythm components

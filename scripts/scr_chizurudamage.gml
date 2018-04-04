@@ -12,6 +12,21 @@ if (instance_exists(obj_chizuru))
         global.chizuruhp -= damage;
         global.invincibility = 100;
         
+        if (global.combo > 0)
+        {
+            global.combo = -1;
+        }
+        else
+        {
+            global.combo = 0;
+        }
+        
+
+        if (instance_exists(obj_controller))
+        {
+            obj_controller.alarm[0] = 1;
+        }
+        
         if (hspeed > 0)
         {
             obj_chizuru.rightmomentum = knockbackspeed;

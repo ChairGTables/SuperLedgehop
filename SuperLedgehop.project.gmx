@@ -52,6 +52,21 @@
         <sound>sound\snd_death3</sound>
         <sound>sound\snd_death4</sound>
       </sounds>
+      <sounds name="combo">
+        <sound>sound\snd_cool</sound>
+        <sound>sound\snd_destruction</sound>
+        <sound>sound\snd_dope</sound>
+        <sound>sound\snd_getpunished</sound>
+        <sound>sound\snd_hype</sound>
+        <sound>sound\snd_jamming</sound>
+        <sound>sound\snd_nice</sound>
+        <sound>sound\snd_ohyeah</sound>
+        <sound>sound\snd_okayyoucanstopnow</sound>
+        <sound>sound\snd_sick</sound>
+        <sound>sound\snd_swinging</sound>
+        <sound>sound\snd_killingit</sound>
+        <sound>sound\snd_pianoslam</sound>
+      </sounds>
     </sounds>
     <sounds name="sonii">
       <sound>sound\snd_samplesound_sonii</sound>
@@ -123,6 +138,10 @@
         <sprite>sprites\spr_whitedot</sprite>
         <sprite>sprites\spr_explosion</sprite>
         <sprite>sprites\spr_mediumwhitecircle</sprite>
+        <sprite>sprites\spr_combotext</sprite>
+        <sprite>sprites\spr_comborush</sprite>
+        <sprite>sprites\spr_musicnote</sprite>
+        <sprite>sprites\spr_hitsweat</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -269,6 +288,8 @@
       <font>fonts\fnt_samplefont_chair</font>
       <font>fonts\fnt_damage</font>
       <font>fonts\fnt_damageback</font>
+      <font>fonts\fnt_combo</font>
+      <font>fonts\fnt_comboglow</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -315,6 +336,9 @@
         <object>objects\obj_redcircle</object>
         <object>objects\obj_damagenumber</object>
         <object>objects\obj_explosion</object>
+        <object>objects\obj_combotext</object>
+        <object>objects\obj_musicnote</object>
+        <object>objects\obj_hitsweat</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>

@@ -90,6 +90,57 @@ yMain = view_yview+455;
 
 myWidth = 100;
 myHeight = 4;
+
+global.combo = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.combo = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>one = instance_create(0, 0, obj_combotext);
+alarm[1] = 2;
+
+
 </string>
           </argument>
         </arguments>
@@ -322,6 +373,26 @@ if (global.shottype == 5)
 draw_sprite_stretched(spr_hudbars,0,xMain+71,yMain+25,global.chizuruhp,myHeight)
 draw_sprite_stretched(spr_hudbars,1,xMain+71,yMain+36,global.chizurump,myHeight)
 draw_sprite_stretched(spr_hudbars,2,xMain+71,yMain+47,global.chizurushine,myHeight)
+
+
+
+
+
+
+if (global.combo &gt; 1)
+{
+    draw_sprite(spr_comborush, 0, view_xview+25, view_yview+110);
+    
+    draw_set_font(fnt_comboglow);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_center);
+    draw_text_color(view_xview+30,view_yview+135,global.combo,070709,070709,070709,070709,1);
+    
+    draw_set_font(fnt_combo);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_center);
+    draw_text_color(view_xview+30,view_yview+135,global.combo,c_white,c_white,c_white,c_white,1)
+}
 </string>
           </argument>
         </arguments>
