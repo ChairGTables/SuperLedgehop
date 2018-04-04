@@ -42,7 +42,345 @@ downmomentum = 0;
 
 
 action = 1;
+waveshine = 0;
+spinning = 0;
+
+spinAngle[0] = 0;
+spinAngle[1] = 90;
+spinAngle[2] = 180;
+spinAngle[3] = 270;
+
+spinFinish = 0;
+
+global.chizuruShootBeat = global.quarterSec;
+global.chizuruShootTimer = global.chizuruShootBeat;
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+
+if (spinFinish &gt; 15)
+{
+    obj_camera_chair.intensity = 10;
+    angleDetermine = 0;
+    for (j = 0; j &lt; 36; j++)
+    {
+        var bullet = instance_create(x, y, obj_chizuruspreadbullet);
+        bullet.speed = 30;
+        bullet.direction = angleDetermine;
+                        
+        bullet.image_xscale = 4;
+        bullet.image_yscale = 4;
+        
+        //bullet.hspeed += hspeed;
+        //bullet.vspeed += vspeed;
+        
+        angleDetermine += 10;
+    }
+    
+    instance_create(x, y, obj_circleeraser);
+    
+    audio_stop_sound(snd_basicbullet);
+    
+    audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10);
+    if (random_range(0, 100) &gt; 50)
+    {
+        audio_play_sound_on (global.effectsEmitter, snd_chizurueatthis, false, 10);
+    }
+    else
+    {
+        audio_play_sound_on (global.effectsEmitter, snd_chizurutakethis, false, 10);
+    }
+    
+}
+
+spinning = 0;
+action = 1;
+hspeed = 0;
+vspeed = 0;
+spinFinish = 0;
+
+
+
+if(lookDirection == 1)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustanddr;
+    }
+    
+    if(lookDirection == 2)
+    {
+        sprite_index = spr_chizurustandd;
+    }
+    
+    if(lookDirection == 3)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustanddr;
+        
+    }
+    
+    if (lookDirection == 4)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 6)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 7)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandur;
+        
+    }
+    
+    if (lookDirection == 8)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandu;
+        
+    }
+    
+    if (lookDirection == 9)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandur;
+    }
+    
+    image_index = 0;
+    image_speed = 0.5;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="9">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>action = 1;
+waveshine = 0;
+
+    if(lookDirection == 1)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustanddr;
+    }
+    
+    if(lookDirection == 2)
+    {
+        sprite_index = spr_chizurustandd;
+    }
+    
+    if(lookDirection == 3)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustanddr;
+        
+    }
+    
+    if (lookDirection == 4)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 6)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandr;
+        
+    }
+    
+    if (lookDirection == 7)
+    {
+        image_xscale = -1;
+        sprite_index = spr_chizurustandur;
+        
+    }
+    
+    if (lookDirection == 8)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandu;
+        
+    }
+    
+    if (lookDirection == 9)
+    {
+        image_xscale = 1;
+        sprite_index = spr_chizurustandur;
+    }
+    
+    image_index = 0;
+    image_speed = 0.5;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_chizuruwavedash</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_speedwallcheck</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_speedwallcheck</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -73,6 +411,46 @@ else
 {
     image_alpha = 1;
 }
+
+/////////////////////////
+//Beat check
+/////////////////////////
+global.chizuruShootTimer -= delta_time / 1000000;
+global.chizuruMoveTimer  -= delta_time / 1000000;
+
+if (global.chizuruShootRest &gt; -1)
+{
+    global.chizuruShootRest  -= delta_time / 1000000;
+}
+
+
+if (global.resyncing)
+{
+    if (global.chizuruShootBeat == global.wholeSec)
+    {
+        global.chizuruShootTimer = global.currentWholeSec;
+    } else if (global.chizuruShootBeat == global.halfSec)
+    {
+        global.chizuruShootTimer = global.currentHalfSec;
+    } else if (global.chizuruShootBeat == global.quarterSec)
+    {
+        global.chizuruShootTimer = global.currentQuarterSec;
+    }
+}
+
+if (global.chizuruShootTimer &lt;= 0)
+{
+    // ======== SHOOTING ====================
+    //Reset timer
+    global.chizuruShootTimer = global.chizuruShootBeat;
+}
+if (global.chizuruMoveTimer &lt;= 0)
+{
+    // ======== SHOOTING ====================
+    //Reset timer
+    global.chizuruMoveTimer = global.chizuruMoveBeat;
+}
+
 
 /////////////////////////
 //Momentum Control
@@ -122,34 +500,34 @@ if (downmomentum &gt; 0)
     downmomentum = downmomentum - 0.5;
 }
 
-if ((vspeed &lt; 0.6) &amp;&amp; (vspeed &gt; -0.6))
+if ((vspeed &lt; 1) &amp;&amp; (vspeed &gt; -1))
 {
     vspeed = 0;
 }
 
-if ((hspeed &lt; 0.6) &amp;&amp; (hspeed &gt; -0.6))
+if ((hspeed &lt; 1) &amp;&amp; (hspeed &gt; -1))
 {
     hspeed = 0;
 }
 
 if ((vspeed != 0) &amp;&amp; (vspeed &gt; 0))
 {
-    vspeed = vspeed - 0.6;
+    vspeed = vspeed - 1;
 }
 
 if ((vspeed != 0) &amp;&amp; (vspeed &lt; 0))
 {
-    vspeed = vspeed + 0.6;
+    vspeed = vspeed + 1;
 }
 
 if ((hspeed != 0) &amp;&amp; (hspeed &gt; 0))
 {
-    hspeed = hspeed - 0.6;
+    hspeed = hspeed - 1;
 }
 
 if ((hspeed != 0) &amp;&amp; (hspeed &lt; 0))
 {
-    hspeed = hspeed + 0.6;
+    hspeed = hspeed + 1;
 }
 
 
@@ -165,18 +543,42 @@ y -= upmomentum;
 /////////////////////////
 //Wall Checks
 ////////////////////////
-if (instance_position(x + hspeed, y + vspeed, obj_wall) || instance_position(x + rightmomentum - leftmomentum, y + downmomentum - upmomentum, obj_wall))
-{
-    x -= hspeed + rightmomentum - leftmomentum;
-    y -= vspeed + downmomentum - upmomentum;
-    hspeed = 0;
-    vspeed = 0;    
-    rightmomentum = 0;
-    leftmomentum = 0;
-    upmomentum = 0;
-    downmomentum = 0;
-}
+script_execute(scr_speedwallcheck);
 
+////////////////////////////////
+//Spin Action
+///////////////////////////////
+if (spinning == 1 &amp;&amp; instance_exists(obj_gamepad))
+{
+    if (obj_gamepad.joy_lt == true)
+    {
+        spinFinish += 1;
+        angleIncrease = random_range(20, 50);
+        for (i = 0; i &lt; 4; i++)
+        {
+            if (random_range(0, 100) &gt; 30)
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_basicbullet, false, 10); 
+                for (j = 0; j &lt; random_range(2,5); j++)
+                {
+                    var bullet = instance_create(x, y, obj_chizurubasicbullet);
+                    bullet.speed = 15;
+                    bullet.direction = spinAngle[i] + random_range(-5, 5);
+                    bullet.hspeed += hspeed;
+                    bullet.vspeed += vspeed;
+                    
+                    bullet.image_xscale = 2;
+                    bullet.image_yscale = 2;
+                    
+                    bullet.vortex = 1;
+                }
+                
+            }
+            
+            spinAngle[i] += angleIncrease;    
+        } 
+    }
+}
 
 
 ///////////////////////////////
@@ -184,6 +586,15 @@ if (instance_position(x + hspeed, y + vspeed, obj_wall) || instance_position(x +
 //////////////////////////////
 action = 1;
 if (sprite_index == spr_chizuruhurtd)
+{
+    action = 0;
+    spinning = 0;
+}
+if (waveshine == 1)
+{
+    action = 0;
+}
+if (spinning == 1)
 {
     action = 0;
 }
@@ -201,7 +612,15 @@ if (action == 1)
     
     if position_meeting(x, y, obj_icepath)
     {
-        speedMultiplier = 1.5;
+        if (abs(hspeed) &lt; 30)
+        {
+            hspeed += global.chizurumovex * (mySpeed / 3);
+        }
+        if (abs(vspeed) &lt; 30)
+        {
+            vspeed += global.chizurumovey * (mySpeed / 3);
+        }
+        
     }
     
     //x movement
@@ -210,7 +629,7 @@ if (action == 1)
         if (!instance_position(x + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall) &amp;&amp; !instance_position(x  + global.chizurumovex * mySpeed * speedMultiplier * 2, y, obj_wall) &amp;&amp; !instance_position(x + global.chizurumovex, y, obj_wall) )
         {
             xWallCheck = 0;
-            for (i = 0; i &lt; 16; i++)
+            for (i = 0; i &lt; 16 + abs(hspeed); i++)
             {
                 for (j = -12; j &lt; 12; j++)
                 {
@@ -238,7 +657,7 @@ if (action == 1)
         if (!instance_position(x, y + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) &amp;&amp; !instance_position(x, y + global.chizurumovey * mySpeed * speedMultiplier * 2, obj_wall) &amp;&amp; !instance_position(x, y + global.chizurumovey, obj_wall) )
         {
             yWallCheck = 0;
-            for (i = 0; i &lt; 20; i++)
+            for (i = 0; i &lt; 20 + abs(vspeed); i++)
             {
                 if (instance_position(x, y + i, obj_wall) &amp;&amp; global.chizurumovey &gt; 0)
                 {
@@ -255,6 +674,8 @@ if (action == 1)
             }
         }
     }
+    
+    script_execute(scr_playerwallfix);
     
     if (abs(global.chizurumovex) &gt; analogBoundary || abs(global.chizurumovey) &gt; analogBoundary)
     {
@@ -587,6 +1008,106 @@ if (action == 1)
     image_speed = 0.5;
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>500</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring>draw_self();</codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.chizuruShootRest</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_xview+20</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_yview+100</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.chizuruShootRest &lt; global.chizuruShootBeat - global.chizuruShootBeat</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_xview+20</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_yview+200</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>(global.chizuruShootTimer &lt; 0.1 || global.chizuruShootTimer &gt; global.chizuruShootBeat - 0.1)</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_xview+20</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_yview+300</string>
           </argument>
         </arguments>
       </action>

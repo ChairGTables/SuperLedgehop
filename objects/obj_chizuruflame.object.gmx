@@ -28,9 +28,12 @@
             <string>damage = 1;
 destroyable = 0;
 
-alarm[0] = 60;
+alarm[0] = 15;
 
 fading = 0;
+steroids = 0;
+vortex = 0;
+timed = 0;
 </string>
           </argument>
         </arguments>
@@ -76,7 +79,13 @@ fading = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (fading == 1)
+            <string>if (steroids == 1)
+{
+    image_alpha -= 0.05;
+    image_xscale -= 0.05;
+    image_yscale -= 0.05;
+}
+else if (fading == 1)
 {
     image_alpha -= 0.1;
 }

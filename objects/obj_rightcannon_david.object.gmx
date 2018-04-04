@@ -60,7 +60,7 @@ leftmomentum = 0;
 downmomentum = 0;
 
 //Begin the alarms based on the beats
-timer = shootBeat;
+shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 </string>
           </argument>
@@ -259,28 +259,16 @@ script_execute(scr_enemycorestep);
 
 
 // Decrease timer
-timer -= delta_time / 1000000; // delta time is in microsec
+shootTimer -= delta_time / 1000000; // delta time is in microsec
 
 // Resyncing
-if (global.resyncing)
-{
-    if (shootBeat == global.wholeSec)
-    {
-        timer = global.currentWholeSec;
-    } else if (shootBeat == global.halfSec)
-    {
-        timer = global.currentHalfSec;
-    } else if (shootBeat == global.quarterSec)
-    {
-        timer = global.currentQuarterSec;
-    }
-}
+script_execute(scr_resyncenemies_david);
 
 // ========= SHOOTING =======================
-if (timer &lt;= 0)
+if (shootTimer &lt;= 0)
 {
     // Reset timer
-    timer = shootBeat;
+    shootTimer = shootBeat;
     
     //Perform shooting
     if (action == 1)
@@ -374,6 +362,7 @@ if (hp &lt; 1)
             <string>if (other.hitbox == 1)
 {
     script_execute(scr_enemydamage);
+    script_execute(scr_enemyshined);
 }
 </string>
           </argument>

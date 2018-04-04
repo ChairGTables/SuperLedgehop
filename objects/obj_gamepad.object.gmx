@@ -361,6 +361,22 @@ if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; global.chizurusho
 }
 
 
+if (gamepad_button_value(0, gp_shoulderlb) &lt; 0.7 &amp;&amp; joy_lt == true)
+{
+    joy_lt = false;
+}
+    
+if (gamepad_button_value(0, gp_shoulderlb) &gt; 0.7 &amp;&amp; joy_lt == false)
+{
+    joy_lt = true;
+    if (instance_exists(obj_chizuru))
+    {
+        script_execute(scr_chizuruspecial);
+    }
+    
+}    
+
+
 
 //Shine
 if (gamepad_button_check_released(0, gp_face3) &amp;&amp; joy_x == true)

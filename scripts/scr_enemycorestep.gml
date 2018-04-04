@@ -1,3 +1,5 @@
+script_execute(scr_enemywallfix);
+
 //Look to left or right depending on direction
 if (hspeed > 0)
 {
@@ -87,7 +89,8 @@ if (downmomentum > 0)
 
 
 
-
+//Check walls
+script_execute(scr_speedwallcheck);
 
 //Move object based on its current momentum
 x -= leftmomentum;

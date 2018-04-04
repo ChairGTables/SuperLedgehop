@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>damage = 10;
 destroyable = 0;
-
+vortex = 0;
 absorb = 0;
 
 image_speed = 0;

@@ -8,6 +8,8 @@ global.currentHalfSec    =  global.halfSec    -
     (((currentPos * 100) % (global.bpmToSec * 100 / 2)) / 100);
 global.currentQuarterSec =  global.quarterSec -
     (((currentPos * 100) % (global.bpmToSec * 100 / 4)) / 100);
+global.currentEighthSec =  global.eighthSec -
+    (((currentPos * 100) % (global.bpmToSec * 100 / 8)) / 100);
 
 // Restart timer
 alarm[0] = 20 * room_speed;

@@ -44,8 +44,8 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.bpmToSec;    // whole note
-moveBeat = global.bpmToSec; // half note
+shootBeat = global.wholeSec;    // whole note
+moveBeat = global.wholeSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
@@ -256,6 +256,8 @@ script_execute(scr_enemycorestep);
 shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
 
+script_execute(scr_resyncenemies_david);
+
 if (shootTimer &lt;= 0)
 {
     // ======== SHOOTING ====================
@@ -414,6 +416,7 @@ if (rightmomentum &gt; 0)
             <string>if (other.hitbox == 1)
 {
     script_execute(scr_enemydamage);
+    script_execute(scr_enemyshined);
 }
 </string>
           </argument>

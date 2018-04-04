@@ -64,10 +64,10 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.bpmToSec; // each whole note note
+shootBeat = global.wholeSec; // each whole note note
 moveBeat = -1;
 //for lazer cannon/enemies: do a warning indicator for 4 beats, with the lazer firing on the 4th one
-warningBeat = global.bpmToSec / 4;
+warningBeat = global.quarterSec;
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
@@ -289,6 +289,8 @@ timer -= delta_time / 1000000; // delta time is in microsec
 
 warnTimer -= delta_time / 1000000;
 
+script_execute(scr_resyncenemies_david);
+
 // ========= SHOOTING =======================
 if (timer &lt;= 0)
 {
@@ -409,6 +411,7 @@ if (hp &lt; 1)
             <string>if (other.hitbox == 1)
 {
     script_execute(scr_enemydamage);
+    script_execute(scr_enemyshined);
 }
 </string>
           </argument>

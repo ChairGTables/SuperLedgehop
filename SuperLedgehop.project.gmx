@@ -26,10 +26,14 @@
         <sound>sound\snd_ricebullet</sound>
         <sound>sound\snd_spreadbullet</sound>
         <sound>sound\snd_waveblast</sound>
+        <sound>sound\snd_rhythmconfirm</sound>
+        <sound>sound\snd_reflector</sound>
+        <sound>sound\snd_absorbing</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
         <sound>sound\snd_titlemusic</sound>
+        <sound>sound\snd_bossintro</sound>
       </sounds>
       <sounds name="tito">
         <sound>sound\snd_titohey</sound>
@@ -39,12 +43,29 @@
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
         <sound>sound\snd_chizuruhafaadai</sound>
+        <sound>sound\snd_chizurueatthis</sound>
+        <sound>sound\snd_chizurutakethis</sound>
       </sounds>
       <sounds name="generic">
         <sound>sound\snd_death1</sound>
         <sound>sound\snd_death2</sound>
         <sound>sound\snd_death3</sound>
         <sound>sound\snd_death4</sound>
+      </sounds>
+      <sounds name="combo">
+        <sound>sound\snd_cool</sound>
+        <sound>sound\snd_destruction</sound>
+        <sound>sound\snd_dope</sound>
+        <sound>sound\snd_getpunished</sound>
+        <sound>sound\snd_hype</sound>
+        <sound>sound\snd_jamming</sound>
+        <sound>sound\snd_nice</sound>
+        <sound>sound\snd_ohyeah</sound>
+        <sound>sound\snd_okayyoucanstopnow</sound>
+        <sound>sound\snd_sick</sound>
+        <sound>sound\snd_swinging</sound>
+        <sound>sound\snd_killingit</sound>
+        <sound>sound\snd_pianoslam</sound>
       </sounds>
     </sounds>
     <sounds name="sonii">
@@ -79,6 +100,23 @@
         <sprites name="hurt">
           <sprite>sprites\spr_chizuruhurtd</sprite>
         </sprites>
+        <sprites name="wavedash">
+          <sprite>sprites\spr_chizuruwaved</sprite>
+          <sprite>sprites\spr_chizuruwavedr</sprite>
+          <sprite>sprites\spr_chizuruwaver</sprite>
+          <sprite>sprites\spr_chizuruwaveur</sprite>
+          <sprite>sprites\spr_chizuruwaveu</sprite>
+        </sprites>
+        <sprites name="spin">
+          <sprite>sprites\spr_chizuruspin</sprite>
+        </sprites>
+        <sprites name="dialogue">
+          <sprite>sprites\spr_chizuruhappy</sprite>
+          <sprite>sprites\spr_chizuruneutral</sprite>
+          <sprite>sprites\spr_chizurusad</sprite>
+          <sprite>sprites\spr_chizuruangry</sprite>
+          <sprite>sprites\spr_chizurucurious</sprite>
+        </sprites>
         <sprite>sprites\spr_chizuruarrow</sprite>
         <sprite>sprites\spr_chizurubasicbullet</sprite>
         <sprite>sprites\spr_chizuruenhancedbullet</sprite>
@@ -96,8 +134,14 @@
       </sprites>
       <sprites name="effects">
         <sprite>sprites\spr_smallcircle</sprite>
+        <sprite>sprites\spr_redcircle</sprite>
         <sprite>sprites\spr_whitedot</sprite>
         <sprite>sprites\spr_explosion</sprite>
+        <sprite>sprites\spr_mediumwhitecircle</sprite>
+        <sprite>sprites\spr_combotext</sprite>
+        <sprite>sprites\spr_comborush</sprite>
+        <sprite>sprites\spr_musicnote</sprite>
+        <sprite>sprites\spr_hitsweat</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -120,24 +164,49 @@
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
         <sprite>sprites\spr_titohurt</sprite>
+        <sprite>sprites\spr_titoneutral</sprite>
+        <sprite>sprites\spr_titoangry</sprite>
+      </sprites>
+      <sprites name="yuuto">
+        <sprite>sprites\spr_yuutoneutral</sprite>
+        <sprite>sprites\spr_yuutosad</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
       <sprite>sprites\spr_samplesprite_sonii</sprite>
       <sprite>sprites\spr_warninglaser_sonii</sprite>
-      <sprite>sprites\spr_laser_sonii</sprite>
       <sprite>sprites\spr_whateveryouregoingtonamethis_sonii</sprite>
       <sprite>sprites\spr_whateveryouregoingtonamethishurt_sonii</sprite>
       <sprite>sprites\spr_boombox_sonii</sprite>
       <sprite>sprites\spr_boomboxhurt_sonii</sprite>
       <sprites name="charger">
+        <sprite>sprites\spr_charger_attack_sonii</sprite>
         <sprite>sprites\spr_charger_idle_sonii</sprite>
       </sprites>
       <sprite>sprites\spr_shockwave_sonii</sprite>
-      <sprite>sprites\spr_enemyrapidbullet</sprite>
       <sprite>sprites\spr_turretaimer</sprite>
       <sprite>sprites\spr_lazercannon_sonii</sprite>
       <sprite>sprites\spr_aimcannon_sonii</sprite>
+      <sprites name="bullets">
+        <sprite>sprites\spr_laser_sonii</sprite>
+        <sprite>sprites\spr_enemyrapidbullet</sprite>
+        <sprite>sprites\spr_enemyflame_sonii</sprite>
+        <sprite>sprites\spr_enemyspread_sonii</sprite>
+        <sprite>sprites\spr_grenade_sonii</sprite>
+      </sprites>
+      <sprites name="firecast">
+        <sprite>sprites\spr_firecast_sonii</sprite>
+      </sprites>
+      <sprites name="wip">
+        <sprite>sprites\spr_spreadmove_sonii</sprite>
+        <sprite>sprites\spr_spreadmovehurt_sonii</sprite>
+        <sprite>sprites\spr_squaremove_sonii</sprite>
+        <sprite>sprites\spr_squremovehurt_sonii</sprite>
+        <sprite>sprites\spr_sidetoside_sonii</sprite>
+        <sprite>sprites\spr_sidetosidehurt_sonii</sprite>
+        <sprite>sprites\spr_grenaider_sonii</sprite>
+        <sprite>sprites\spr_grenaiderhurt_sonii</sprite>
+      </sprites>
     </sprites>
     <sprites name="david">
       <sprite>sprites\spr_samplesprite_david</sprite>
@@ -194,13 +263,21 @@
       <script>scripts\scr_enemyhitstunend.gml</script>
       <script>scripts\scr_enemywalltouch.gml</script>
       <script>scripts\script_samplescript_chair.gml</script>
+      <script>scripts\scr_chizuruwavedash.gml</script>
+      <script>scripts\scr_chizuruspecial.gml</script>
+      <script>scripts\scr_enemyshined.gml</script>
+      <script>scripts\scr_speedwallcheck.gml</script>
+      <script>scripts\scr_enemywallfix.gml</script>
+      <script>scripts\scr_playerwallfix.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
+      <script>scripts\scr_keepcharger_sonii.gml</script>
     </scripts>
     <scripts name="david">
       <script>scripts\script_samplescript_david.gml</script>
       <script>scripts\scr_resync_david.gml</script>
+      <script>scripts\scr_resyncenemies_david.gml</script>
     </scripts>
     <scripts name="ultran">
       <script>scripts\script_samplescript_ultran.gml</script>
@@ -211,6 +288,8 @@
       <font>fonts\fnt_samplefont_chair</font>
       <font>fonts\fnt_damage</font>
       <font>fonts\fnt_damageback</font>
+      <font>fonts\fnt_combo</font>
+      <font>fonts\fnt_comboglow</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -241,6 +320,7 @@
         <object>objects\obj_absorbbubble</object>
         <object>objects\obj_absorbparticle</object>
         <object>objects\obj_smolhitbox</object>
+        <object>objects\obj_circleeraser</object>
       </objects>
       <objects name="functionality">
         <object>objects\obj_title</object>
@@ -253,8 +333,12 @@
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
+        <object>objects\obj_redcircle</object>
         <object>objects\obj_damagenumber</object>
         <object>objects\obj_explosion</object>
+        <object>objects\obj_combotext</object>
+        <object>objects\obj_musicnote</object>
+        <object>objects\obj_hitsweat</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -273,16 +357,27 @@
     </objects>
     <objects name="sonii">
       <object>objects\obj_sampleobject_sonii</object>
-      <object>objects\obj_charger_sonii</object>
-      <object>objects\obj_boombox_sonii</object>
-      <objects name="bullets">
-        <object>objects\obj_rapidbullet</object>
-        <object>objects\obj_laser_sonii</object>
-      </objects>
-      <object>objects\obj_cannonaim_sonii</object>
-      <object>objects\obj_lazerCannon_sonii</object>
       <object>objects\obj_beatIndicator_sonii</object>
       <object>objects\obj_warninglaser_sonii</object>
+      <objects name="bullets">
+        <object>objects\obj_rapidbullet</object>
+        <object>objects\obj_spread_sonii</object>
+        <object>objects\obj_laser_sonii</object>
+        <object>objects\obj_flame_sonii</object>
+        <object>objects\obj_grenadespread_sonii</object>
+      </objects>
+      <objects name="enemies">
+        <object>objects\obj_boombox_sonii</object>
+        <object>objects\obj_squaremover_sonii</object>
+        <object>objects\obj_sidetoside_sonii</object>
+        <object>objects\obj_spreadmove_sonii</object>
+        <object>objects\obj_grenaider_sonii</object>
+        <object>objects\obj_cannonaim_sonii</object>
+        <object>objects\obj_spreadcannon_sonii</object>
+        <object>objects\obj_lazerCannon_sonii</object>
+        <object>objects\obj_charger_sonii</object>
+        <object>objects\obj_nostop_sonii</object>
+      </objects>
     </objects>
     <objects name="david">
       <objects name="enemies">

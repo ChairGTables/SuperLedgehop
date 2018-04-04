@@ -33,10 +33,12 @@ image_speed = 0.2;
 
 //You must define the hurt sprite as a string
 hurtSprite = "spr_whateveryouregoingtonamethis_sonii";
+attackSprite = "spr_charger_attack_sonii"
 
 //Do not touch this
 sS = sprite_index;
 hS = asset_get_index(hurtSprite);
+aS = asset_get_index(attackSprite);
 
 //Define the knockback and hitstun
 bulletKnockback = 5;
@@ -44,8 +46,8 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.bpmToSec / 4;    // whole note
-moveBeat = global.bpmToSec / 4; // half note
+shootBeat = -1;//global.quarterSec;    // whole note
+moveBeat = global.quarterSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
@@ -114,6 +116,34 @@ absorbed = 0;
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Do not touch
+if (sprite_index == aS)
+{
+    sprite_index = sS;
+}
+image_index = 0;
+</string>
           </argument>
         </arguments>
       </action>
@@ -270,6 +300,8 @@ script_execute(scr_enemycorestep);
 shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
 
+script_execute(scr_resyncenemies_david);
+
 if (shootTimer &lt;= 0)
 {
     // ======== SHOOTING ====================
@@ -317,6 +349,10 @@ if (moveTimer &lt;= 0)
      //   if (random_range(0, 100) &gt; 50 &amp;&amp; instance_exists(obj_chizuru))
      //   {
             move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
+            
+            sprite_index = asset_get_index(attackSprite);
+            image_index = 0;
+            alarm[10] = 10;
      //   }
     /*    else
         {
@@ -453,6 +489,7 @@ if (hp &lt; 1)
             <string>if (other.hitbox == 1)
 {
     script_execute(scr_enemydamage);
+    script_execute(scr_enemyshined);
 }
 </string>
           </argument>
