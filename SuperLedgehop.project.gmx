@@ -164,6 +164,7 @@
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
         <sprite>sprites\spr_titohurt</sprite>
+        <sprite>sprites\spr_titoshoot</sprite>
         <sprite>sprites\spr_titoneutral</sprite>
         <sprite>sprites\spr_titoangry</sprite>
       </sprites>
@@ -269,6 +270,7 @@
       <script>scripts\scr_speedwallcheck.gml</script>
       <script>scripts\scr_enemywallfix.gml</script>
       <script>scripts\scr_playerwallfix.gml</script>
+      <script>scripts\scr_fliptoplayer.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -418,8 +420,8 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
-      <room>rooms\rm_templevelone</room>
       <room>rooms\rm_sampleroom_chair</room>
+      <room>rooms\rm_templevelone</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>
