@@ -24,7 +24,5 @@
     <frame index="1">images\spr_chizurustandur_1.png</frame>
     <frame index="2">images\spr_chizurustandur_2.png</frame>
     <frame index="3">images\spr_chizurustandur_3.png</frame>
-    <frame index="4">images\spr_chizurustandur_4.png</frame>
-    <frame index="5">images\spr_chizurustandur_5.png</frame>
   </frames>
 </sprite>
