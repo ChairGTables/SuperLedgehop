@@ -29,6 +29,7 @@
 destroyable = 0;
 vortex = 0;
 absorb = 0;
+timed = 0;
 
 image_speed = 0;
 

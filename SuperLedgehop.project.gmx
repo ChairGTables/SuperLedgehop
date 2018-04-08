@@ -362,15 +362,19 @@
       <objects name="bullets">
         <object>objects\obj_rapidbullet</object>
         <object>objects\obj_spread_sonii</object>
+        <object>objects\obj_enemybasicbullet_sonii</object>
         <object>objects\obj_laser_sonii</object>
         <object>objects\obj_flame_sonii</object>
         <object>objects\obj_grenadespread_sonii</object>
+        <object>objects\obj_grenadespread2_sonii</object>
+        <object>objects\obj_grenadespread3_sonii</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_boombox_sonii</object>
         <object>objects\obj_squaremover_sonii</object>
         <object>objects\obj_sidetoside_sonii</object>
         <object>objects\obj_spreadmove_sonii</object>
+        <object>objects\obj_enemybasic_sonii</object>
         <object>objects\obj_grenaider_sonii</object>
         <object>objects\obj_cannonaim_sonii</object>
         <object>objects\obj_spreadcannon_sonii</object>

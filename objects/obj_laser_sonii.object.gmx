@@ -29,8 +29,8 @@
 absorbed = 0;
 
 fading = 1;
-image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y) + random_range(-25,25);
-//image_xscale += 5;
+//image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y) + random_range(-25,25);
+image_xscale += 5;
 
 damage = 20;
 knockbackspeed = 25;
@@ -40,6 +40,7 @@ upmomentum = 0;
 leftmomentum = 0;
 rightmomentum = 0;
 downmomentum = 0;
+
 
 </string>
           </argument>
