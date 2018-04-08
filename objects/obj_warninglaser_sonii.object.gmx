@@ -29,8 +29,6 @@
 
 image_alpha = 1;
 
-image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y) + random_range(-10,10);
-
 image_xscale += 5;
 </string>
           </argument>
