@@ -45,6 +45,11 @@
         <sound>sound\snd_chizuruhafaadai</sound>
         <sound>sound\snd_chizurueatthis</sound>
         <sound>sound\snd_chizurutakethis</sound>
+        <sound>sound\snd_cheeseitup</sound>
+        <sound>sound\snd_iwillcheeseyouup</sound>
+        <sound>sound\snd_imgoingallin</sound>
+        <sound>sound\snd_superledgehopone</sound>
+        <sound>sound\snd_superledgehoptwo</sound>
       </sounds>
       <sounds name="generic">
         <sound>sound\snd_death1</sound>
@@ -225,6 +230,13 @@
       <background>background\back_samplebackground_chair</background>
       <background>background\back_title</background>
       <background>background\back_levelone</background>
+      <background>background\back_leveloneextend</background>
+      <background>background\back_frontbuilding</background>
+      <background>background\back_backbuildings</background>
+      <background>background\back_starbg</background>
+      <background>background\back_titletransition</background>
+      <background>background\back_blackback</background>
+      <background>background\back_vistaview</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -332,6 +344,7 @@
         <object>objects\obj_bossmusic</object>
         <object>objects\obj_titleselection</object>
         <object>objects\obj_nextroom</object>
+        <object>objects\obj_titlecamera</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -420,6 +433,7 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
+      <room>rooms\rm_stage1</room>
       <room>rooms\rm_sampleroom_chair</room>
       <room>rooms\rm_templevelone</room>
     </rooms>
