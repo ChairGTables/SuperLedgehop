@@ -32,7 +32,7 @@ hp = 20;
 image_speed = 0.5;
 
 //You must define the hurt sprite as a string
-hurtSprite = "spr_spreadmovehurt_sonii";
+hurtSprite = "spr_grenaiderhurt_sonii";
 
 //Do not touch this
 sS = sprite_index;
@@ -44,16 +44,17 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.halfSec;    // whole note
-moveBeat = global.quarterSec; // half note
-
-shootRestBeat = global.wholeSec * 10;
+shootBeat = global.quarterSec;    // whole note
+moveBeat = -1;//global.wholeSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
-shotsBeforeRest = 3;
-shootRestTime = 0;
+shotsBeforeRest = 0;
+shootRestTime = 150;
 action = 1;
+
+beatCount = 0;
+hittable = 0;
 
 //Do not touch these
 upmomentum = 0;
@@ -99,6 +100,125 @@ image_index = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Always set the alarm again so it loops
+alarm[1] = moveBeat;
+
+//Action is checked on the step state to see if enemy is hurt or enemy is offscreen
+if(action == 1)
+{
+    //Touch these to modify movement
+    followspeed = 7;
+    minimumspeed = 5;
+    maximumspeed = 10;
+    
+    //Do not touch these
+    if (random_range(0, 100) &gt; 50 &amp;&amp; instance_exists(obj_chizuru))
+    {
+        move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
+    }
+    else
+    {
+        hspeed = random_range(minimumspeed, maximumspeed);
+        vspeed = random_range(minimumspeed, maximumspeed);
+        if (random_range(0, 100) &gt; 50)
+        {
+            hspeed = -hspeed;
+        }
+        if (random_range(0, 100) &gt; 50)
+        {
+            vspeed = -vspeed;
+        }
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Shoot at small intervals until the rest time
+if (shotCount &lt; shotsBeforeRest - 1)
+{
+    alarm[0] = shootBeat;
+    shotCount += 1;
+}
+else
+{
+    //rest for a long time before shooting again
+    alarm[0] = shootRestTime;
+    shotCount = 0;
+}
+
+//Perform shooting
+if (action == 1)
+{
+    //I have provided example bullet patterns; try them out
+
+    //This code segment shoots a couple of bullets towards the player with a random variation of 30 degrees
+    /*
+    for (i = 0; i &lt; 3; i++)
+    {
+        var shot = instance_create(x, y, obj_enemyenhancedbullet);
+        shot.speed = 8;
+        shot.direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + random_range(-30, 30);
+    }
+    */
+    
+    
+    //This code segment shoots a huge surrounding circle
+    
+    anglePerShot = 3;
+    for (i = 0; i &lt; 360 / anglePerShot; i++)
+    {
+        var shot = instance_create(x, y, obj_enemyenhancedbullet);
+        if (instance_exists(shot))
+        {
+            shot.direction = i * anglePerShot;
+            shot.speed = 5;
+        }
+        
+    }
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -138,63 +258,78 @@ script_execute(scr_enemycorestep);
 
 shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
-shootRestTime -= delta_time/100000;
-        
 
 script_execute(scr_resyncenemies_david);
 
-if (global.resyncing)
-{
-    shootRestTime = global.currentWholeSec * 10;
-}
-
 if (shootTimer &lt;= 0)
 {
-    //done only if shootresttime &lt;= 0
     
-    if( shootRestTime &lt;= 0 )
-    {
     // ======== SHOOTING ====================
     //Reset timer
     shootTimer = shootBeat;
     
     //Perform shooting
-        if (action == 1)
-        {
+    if (action == 1)
+    {
         //This code segment shoots a huge surrounding circle
-            audio_play_sound (snd_enemybullet, 10, false); 
-            var shot = instance_create(x, y, obj_enemybasicbullet_sonii);
-            shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
-            shot.speed = 7;
-            /*anglePerShot = 29;
-            for (i = 0; i &lt; 87 / anglePerShot; i++)
-            {
-                var shot = instance_create(x, y, obj_spread_sonii);
-                if (instance_exists(shot))
-                {
-                   shot.direction = (i * anglePerShot)  + point_direction(x,y,obj_chizuru.x,obj_chizuru.y) - 29;
-                   shot.speed = 3;
-                }
-            }*/
-        }
-    
-    // Beat indicator
-        var beatIndicator = instance_create(x, y, obj_beatindicator_david);
-        beatIndicator.image_speed = shootBeat;
-        
-        shotCount += 1;
-    
-        if( shotCount &gt;= shotsBeforeRest )
+        audio_play_sound (snd_enemybullet, 10, false); 
+        if(beatCount == 0 )//|| beatCount == 1)
         {
-            shootRestTime = shootRestBeat;
-            shotCount = 0;
+            //underneath
+            hittable = 0;
+        }
+        else if( beatCount == 1 || beatCount == 2 )
+        {
+            //reveal
+            if(beatCount == 1)
+            {
+                //code to change
+                hittable = 1;
+            }
+            else
+                hittable = 1;
+                
+                
+            var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
+            
+            warnIndicator.image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
+            
+        }
+        else if( beatCount == 3 || beatCount == 4 )
+        {
+            //shooting
+            var bulletShoot = instance_create(x,y, obj_enemyenhancedbullet);
+            
+            bulletShoot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
+            
+            bulletShoot.speed = 15;
+        }
+        else if( beatCount == 5 || beatCount == 6 )
+        {
+            //stop shooting
         }
     
+        
+        
     }
     
+    // Beat indicator
+    var beatIndicator = instance_create(x, y, obj_beatindicator_david);
+    beatIndicator.image_speed = shootBeat;
+    
+    if( beatCount == 7 )
+    {
+        beatCount = 0;
+        hittable = 0;
+    }
+    else
+    {
+        beatCount += 1;
+    }
 }
 // ======================================================
 
+/*
 if (moveTimer &lt;= 0)
 {
     // ++++++++++++++ MOVING ++++++++++++++++++++++++++++
@@ -205,32 +340,15 @@ if (moveTimer &lt;= 0)
     if(action == 1)
     {
         //Touch these to modify movement
-        followspeed = 4;
-        minimumspeed = 3;
-        maximumspeed = 7;
+        followspeed = 7;
+        minimumspeed = 5;
+        maximumspeed = 10;
         
-        //Do not touch these
-        if (random_range(0, 100) &gt; 50 &amp;&amp; instance_exists(obj_chizuru))
-        {
             move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
-        }
-        else
-        {
-            hspeed = random_range(minimumspeed, maximumspeed);
-            vspeed = random_range(minimumspeed, maximumspeed);
-            if (random_range(0, 100) &gt; 50)
-            {
-                hspeed = -hspeed;
-            }
-            if (random_range(0, 100) &gt; 50)
-            {
-                vspeed = -vspeed;
-            }
-        }
     }
 }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+*/
 
 /////////////////////////////
 //Death
@@ -678,7 +796,7 @@ if (rightmomentum &gt; 0)
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_enemydamage</script>
+            <script>scr_waterhider_sonii</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -699,6 +817,94 @@ if (rightmomentum &gt; 0)
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>500</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring>draw_self();</codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>fnt_damage</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>524</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_color</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>13</kind>
+            <string>255</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>beatCount</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
           </argument>
         </arguments>
       </action>

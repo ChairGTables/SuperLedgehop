@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_chizuru" x="672" y="512" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizuru" x="576" y="384" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controller" x="96" y="32" name="inst_E0109ADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamepad" x="96" y="96" name="inst_70CF5B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slowspikes" x="384" y="288" name="inst_0B578719" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -109,7 +109,7 @@
     <instance objName="obj_bigredtree" x="1024" y="96" name="inst_9F9A42A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bigredtree" x="1088" y="96" name="inst_893220F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="224" y="96" name="inst_F9400219" locked="0" code="" scaleX="2" scaleY="21" colour="4294967295" rotation="0"/>
-    <instance objName="obj_shooterdude_david" x="1312" y="416" name="inst_051A713E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shooterdude_david" x="1472" y="736" name="inst_051A713E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bigredtree" x="384" y="672" name="inst_A5D140B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bigredtree" x="384" y="672" name="inst_5581EBBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bigredtree" x="384" y="672" name="inst_39454007" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -248,9 +248,25 @@
     <instance objName="obj_soundcontroller_david" x="64" y="160" name="inst_DED32422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="576" y="256" name="inst_2578895A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nostop_sonii" x="832" y="1056" name="inst_8E2E025F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_nostop_sonii" x="1568" y="256" name="inst_90F1459B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadmove_sonii" x="672" y="320" name="inst_6784FCE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemybasic_sonii" x="800" y="416" name="inst_9B95191E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nostop_sonii" x="1632" y="736" name="inst_90F1459B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemybasic_sonii" x="1280" y="768" name="inst_9B95191E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="544" y="416" name="inst_F8067573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="576" y="416" name="inst_F90B77B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="608" y="416" name="inst_63DD4C19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="544" y="352" name="inst_2211144B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="544" y="384" name="inst_60843E09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="544" y="320" name="inst_9B28A3DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="544" y="288" name="inst_BC460D06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="576" y="288" name="inst_A3429A9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="608" y="288" name="inst_FD80587D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="640" y="288" name="inst_160E7D6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="672" y="288" name="inst_57CAC3F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="672" y="320" name="inst_4B8EFE39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="672" y="352" name="inst_79090A3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="672" y="352" name="inst_12EC618F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="640" y="416" name="inst_013E969E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="672" y="384" name="inst_2DC245D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_breakablecrate_sonii" x="672" y="416" name="inst_B6A716E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_levelone" x="736" y="224" w="32" h="32" xo="64" yo="160" id="10000145" name="inst_DF06B3E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
