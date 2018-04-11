@@ -114,6 +114,25 @@ yy = y;
 
 //music
 audio_play_sound_on(global.musicEmitter, snd_titlemusic, true, 0);
+
+
+
+
+
+randThing = random_range(0,200);
+
+if (randThing &lt; 75)
+{
+    audio_play_sound_on(global.voiceEmitter, snd_superledgehopone, false, 0);
+}
+else if (randThing &gt; 74 &amp;&amp; randThing &lt; 125)
+{
+    audio_play_sound_on(global.voiceEmitter, snd_superledgehopone, false, 0);
+}
+else
+{
+    audio_play_sound_on(global.voiceEmitter, snd_superledgehoptwo, false, 0);
+}
 </string>
           </argument>
         </arguments>
@@ -165,23 +184,30 @@ y = yy + shift; //vertical wave motion
           <argument>
             <kind>1</kind>
             <string>audio_stop_sound(snd_titlemusic);
+
+randThing = random_range(0,200);
+
+if (randThing &lt; 75)
+{
+    audio_play_sound_on(global.voiceEmitter, snd_iwillcheeseyouup, false, 0);
+}
+else if (randThing &gt; 74 &amp;&amp; randThing &lt; 125)
+{
+    audio_play_sound_on(global.voiceEmitter, snd_cheeseitup, false, 0);
+}
+else
+{
+    audio_play_sound_on(global.voiceEmitter, snd_imgoingallin, false, 0);
+}
+
+
+if (instance_exists(obj_titlecamera))
+{
+    obj_titlecamera.action = 1;
+}
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

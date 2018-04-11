@@ -296,18 +296,20 @@ if (moveTimer &lt;= 0)
         minimumspeed = 5;
         maximumspeed = 10;
         
+        moveSpeed = random_range(5, 10);
+        
         //move right
         if( moveDirection == 0 )
-            hspeed = maximumspeed;
+            hspeed = moveSpeed;
         //move down
         else if( moveDirection == 1 )
-            vspeed = -maximumspeed;
+            vspeed = -moveSpeed;
         //move left
         else if( moveDirection == 2 )
-            hspeed = -maximumspeed;
+            hspeed = -moveSpeed;
         //move up
         else if( moveDirection == 3 )
-            vspeed = maximumspeed;
+            vspeed = moveSpeed;
         
         moveDirection++;
         if(moveDirection == 4 )

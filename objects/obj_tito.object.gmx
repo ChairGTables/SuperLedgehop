@@ -394,7 +394,14 @@ if (shootTimer &lt;= 0)
             chosenAttack = 3;
             normalAttack += 1;
             audio_play_sound (snd_titohey, 10, false); 
+            sprite_index = spr_titoshoot;
+            image_index = 0;
+            script_execute(scr_fliptoplayer);
             var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
+            if (instance_exists(obj_chizuru))
+            {
+                warnIndicator.image_angle = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
+            }
             if (instance_exists(obj_chizuru))
             {
                 aimDirection = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
@@ -439,7 +446,13 @@ if (shootTimer &lt;= 0)
                 gatlingShot = 0;
                 shootBeat = global.eighthSec;
                 shootTimer = shootBeat;
+                script_execute(scr_fliptoplayer);
                 var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
+                if (instance_exists(obj_chizuru))
+                {
+                    warnIndicator.image_angle = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
+                }
+                
             }
             
         }
@@ -458,6 +471,9 @@ if (shootTimer &lt;= 0)
         else
         {
             angleShot = -20;
+            script_execute(scr_fliptoplayer);
+            sprite_index = spr_titoshoot;
+            image_index = 0;
             audio_play_sound (snd_ricebullet, 10, false); 
             for (i = 0; i &lt; 5; i++)
             {         
@@ -486,6 +502,9 @@ if (shootTimer &lt;= 0)
         else
         {
             audio_play_sound (snd_waveblast, 10, false); 
+            script_execute(scr_fliptoplayer);
+            sprite_index = spr_titoshoot;
+            image_index = 0;
             openArc = random_range(0, 50)
             for (i = 0; i &lt; 60; i++)
             {         
@@ -515,7 +534,7 @@ if (shootTimer &lt;= 0)
     
     // Beat indicator
     var beatIndicator = instance_create(x, y, obj_beatindicator_david);
-    beatIndicator.image_speed = shootBeat;
+    beatIndicator.image_speed = shootBeat * 40;
     
     
     
@@ -531,6 +550,8 @@ if (gatlingShot == 1)
 {
     audio_play_sound (snd_gatling, 10, false); 
     var gatling = instance_create(x, y, obj_rapidbullet);
+    sprite_index = spr_titoshoot;
+    image_index = 0;
     if (instance_exists(gatling))
     {
         gatling.direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + random_range(-5, 5);
@@ -1034,6 +1055,32 @@ if (hp &lt; 1)
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (sprite_index == spr_titoshoot)
+{
+    sprite_index = spr_titowalk;
+}
+</string>
           </argument>
         </arguments>
       </action>

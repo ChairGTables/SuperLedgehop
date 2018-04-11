@@ -45,6 +45,11 @@
         <sound>sound\snd_chizuruhafaadai</sound>
         <sound>sound\snd_chizurueatthis</sound>
         <sound>sound\snd_chizurutakethis</sound>
+        <sound>sound\snd_cheeseitup</sound>
+        <sound>sound\snd_iwillcheeseyouup</sound>
+        <sound>sound\snd_imgoingallin</sound>
+        <sound>sound\snd_superledgehopone</sound>
+        <sound>sound\snd_superledgehoptwo</sound>
       </sounds>
       <sounds name="generic">
         <sound>sound\snd_death1</sound>
@@ -164,6 +169,7 @@
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
         <sprite>sprites\spr_titohurt</sprite>
+        <sprite>sprites\spr_titoshoot</sprite>
         <sprite>sprites\spr_titoneutral</sprite>
         <sprite>sprites\spr_titoangry</sprite>
       </sprites>
@@ -207,6 +213,8 @@
         <sprite>sprites\spr_grenaider_sonii</sprite>
         <sprite>sprites\spr_grenaiderhurt_sonii</sprite>
       </sprites>
+      <sprite>sprites\spr_crate</sprite>
+      <sprite>sprites\spr_cratedamaged</sprite>
     </sprites>
     <sprites name="david">
       <sprite>sprites\spr_samplesprite_david</sprite>
@@ -224,6 +232,13 @@
       <background>background\back_samplebackground_chair</background>
       <background>background\back_title</background>
       <background>background\back_levelone</background>
+      <background>background\back_leveloneextend</background>
+      <background>background\back_frontbuilding</background>
+      <background>background\back_backbuildings</background>
+      <background>background\back_starbg</background>
+      <background>background\back_titletransition</background>
+      <background>background\back_blackback</background>
+      <background>background\back_vistaview</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -269,10 +284,12 @@
       <script>scripts\scr_speedwallcheck.gml</script>
       <script>scripts\scr_enemywallfix.gml</script>
       <script>scripts\scr_playerwallfix.gml</script>
+      <script>scripts\scr_fliptoplayer.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
       <script>scripts\scr_keepcharger_sonii.gml</script>
+      <script>scripts\scr_waterhider_sonii.gml</script>
     </scripts>
     <scripts name="david">
       <script>scripts\script_samplescript_david.gml</script>
@@ -330,6 +347,7 @@
         <object>objects\obj_bossmusic</object>
         <object>objects\obj_titleselection</object>
         <object>objects\obj_nextroom</object>
+        <object>objects\obj_titlecamera</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -362,18 +380,26 @@
       <objects name="bullets">
         <object>objects\obj_rapidbullet</object>
         <object>objects\obj_spread_sonii</object>
+        <object>objects\obj_enemybasicbullet_sonii</object>
         <object>objects\obj_laser_sonii</object>
         <object>objects\obj_flame_sonii</object>
         <object>objects\obj_grenadespread_sonii</object>
+        <object>objects\obj_grenadespread2_sonii</object>
+        <object>objects\obj_grenadespread3_sonii</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_boombox_sonii</object>
         <object>objects\obj_squaremover_sonii</object>
         <object>objects\obj_sidetoside_sonii</object>
         <object>objects\obj_spreadmove_sonii</object>
+        <object>objects\obj_enemybasic_sonii</object>
+        <object>objects\obj_basicenemy2_sonii</object>
+        <object>objects\obj_basicenemy3_sonii</object>
         <object>objects\obj_grenaider_sonii</object>
+        <object>objects\obj_waterhider_sonii</object>
         <object>objects\obj_cannonaim_sonii</object>
         <object>objects\obj_spreadcannon_sonii</object>
+        <object>objects\obj_breakablecrate_sonii</object>
         <object>objects\obj_lazerCannon_sonii</object>
         <object>objects\obj_charger_sonii</object>
         <object>objects\obj_nostop_sonii</object>
@@ -414,8 +440,9 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
-      <room>rooms\rm_templevelone</room>
+      <room>rooms\rm_stage1</room>
       <room>rooms\rm_sampleroom_chair</room>
+      <room>rooms\rm_templevelone</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>

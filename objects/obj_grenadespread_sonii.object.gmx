@@ -51,8 +51,8 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.wholeSec;    // whole note
-moveBeat = global.wholeSec; // half note
+shootBeat = global.quarterSec;    // whole note
+//moveBeat = global.wholeSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
@@ -72,7 +72,7 @@ downmomentum = 0;
 //alarm[0] = shootBeat;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
-moveTimer = moveBeat;
+//moveTimer = moveBeat;
 </string>
           </argument>
         </arguments>
@@ -101,18 +101,18 @@ moveTimer = moveBeat;
 // Scroll all the way down for changeable features
 /////////////////////////
 
-script_execute(scr_enemycorestep);
+//script_execute(scr_enemycorestep);
 
 ////////////////////////////
 //Add additional step features here
 ////////////////////////////
 
 //Spin animation for spinning enemies (comment this out if non-spinner)
-//image_angle += 5;
+image_angle += 7.5;
 
 
 shootTimer -= delta_time / 1000000;
-moveTimer -= delta_time / 1000000;
+//moveTimer -= delta_time / 1000000;
 
 script_execute(scr_resyncenemies_david);
 
@@ -127,27 +127,29 @@ if (shootTimer &lt;= 0)
     {
         //This code segment shoots a huge surrounding circle
         audio_play_sound (snd_enemybullet, 10, false); 
-        anglePerShot = 3;
+        anglePerShot = 10;
         for (i = 0; i &lt; 360 / anglePerShot; i++)
         {
             var shot = instance_create(x, y, obj_spread_sonii);
             if (instance_exists(shot))
             {
                 shot.direction = i * anglePerShot;
-                shot.speed = 10;
+                shot.speed = 6;
             }
         }
+        
+        
     }
     
     // Beat indicator
     var beatIndicator = instance_create(x, y, obj_beatindicator_david);
     beatIndicator.image_speed = shootBeat;
     
-
     hp = -1;
+
 }
 // ======================================================
-
+/*
 if (moveTimer &lt;= 0)
 {
     // ++++++++++++++ MOVING ++++++++++++++++++++++++++++
@@ -164,7 +166,7 @@ if (moveTimer &lt;= 0)
         
             move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
     }
-}
+}*/
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -65,6 +65,7 @@ hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
 shootBeat = global.wholeSec; // each whole note note
+
 moveBeat = -1;
 //for lazer cannon/enemies: do a warning indicator for 4 beats, with the lazer firing on the 4th one
 warningBeat = global.quarterSec;
@@ -85,6 +86,11 @@ downmomentum = 0;
 timer = shootBeat;
 warnTimer = warningBeat;
 //alarm[1] = moveBeat;
+
+//use for storing last aiming of the laser
+warningLaser = 0;
+
+warningLaserBeat = 0;
 </string>
           </argument>
         </arguments>
@@ -282,7 +288,6 @@ script_execute(scr_enemycorestep);
 ////////////////////////////
 
 
-image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
 
 // Trying out deltaTime
 timer -= delta_time / 1000000; // delta time is in microsec
@@ -303,6 +308,7 @@ if (timer &lt;= 0)
         //This code segment shoots a huge surrounding circle
         audio_play_sound (snd_waveblast, 10, false); 
         var shot = instance_create(x, y, obj_laser_sonii);
+        shot.image_angle = warningLaser;
         //shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
     }
     
@@ -322,13 +328,31 @@ if( warnTimer &lt;= 0 )
     
     //show indicator 
     
-    if (action == 1)
+    if( warningLaserBeat &lt; 3 )
     {
-        var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
+    
+    
+        if (action == 1)
+        {
+            var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
+            
+            warnIndicator.image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y) + random_range( -(20 - (warningLaserBeat * 5 ) ), (20 - (warningLaserBeat * 5 ) ) );
+            
+            warningLaser = warnIndicator.image_angle;
+        }
+        
     }
+    
+    warningLaserBeat++;
+    
+    if( warningLaserBeat &gt; 3 )
+        warningLaserBeat = 0;
     
     //warnIndicator.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y)+random_range(0,50);
     //warnIndicator.image_speed = warningBeat;
+    
+    
+    image_angle = warningLaser;
 
 }
 

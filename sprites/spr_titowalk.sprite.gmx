@@ -22,5 +22,7 @@
   <frames>
     <frame index="0">images\spr_titowalk_0.png</frame>
     <frame index="1">images\spr_titowalk_1.png</frame>
+    <frame index="2">images\spr_titowalk_2.png</frame>
+    <frame index="3">images\spr_titowalk_3.png</frame>
   </frames>
 </sprite>
