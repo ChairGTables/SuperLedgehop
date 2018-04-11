@@ -213,6 +213,8 @@
         <sprite>sprites\spr_grenaider_sonii</sprite>
         <sprite>sprites\spr_grenaiderhurt_sonii</sprite>
       </sprites>
+      <sprite>sprites\spr_crate</sprite>
+      <sprite>sprites\spr_cratedamaged</sprite>
     </sprites>
     <sprites name="david">
       <sprite>sprites\spr_samplesprite_david</sprite>
@@ -287,6 +289,7 @@
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
       <script>scripts\scr_keepcharger_sonii.gml</script>
+      <script>scripts\scr_waterhider_sonii.gml</script>
     </scripts>
     <scripts name="david">
       <script>scripts\script_samplescript_david.gml</script>
@@ -390,9 +393,13 @@
         <object>objects\obj_sidetoside_sonii</object>
         <object>objects\obj_spreadmove_sonii</object>
         <object>objects\obj_enemybasic_sonii</object>
+        <object>objects\obj_basicenemy2_sonii</object>
+        <object>objects\obj_basicenemy3_sonii</object>
         <object>objects\obj_grenaider_sonii</object>
+        <object>objects\obj_waterhider_sonii</object>
         <object>objects\obj_cannonaim_sonii</object>
         <object>objects\obj_spreadcannon_sonii</object>
+        <object>objects\obj_breakablecrate_sonii</object>
         <object>objects\obj_lazerCannon_sonii</object>
         <object>objects\obj_charger_sonii</object>
         <object>objects\obj_nostop_sonii</object>
