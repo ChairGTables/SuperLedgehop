@@ -25,33 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>myX = 0;
-
-alarm[0] = 60;
-alarm[1] = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_destroy(self);
+            <string>timer = global.quarterSec;
+ratio = -global.quarterSec / (view_wview / 2);
+yoffset = view_hview / 25;
 </string>
           </argument>
         </arguments>
@@ -74,16 +50,52 @@ alarm[1] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mySpeed = speed;
-speed = 0;
-nega = 1;
-
-if (direction &gt; 90)
+            <string>if( x &lt; obj_beat_david.x )
 {
-    nega = -1;
+    x = timer / ratio;
+    x += view_wview/2;
+}
+else
+{
+    x = timer / -ratio;
+    x += view_wview/2;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Decrease timer
+timer -= delta_time / 1000000;
+
+// Resyncing
+if (global.resyncing)
+{
+    timer = global.currentQuarterSec;
 }
 
-myX += 15 * nega;
+// Destroy when time's up
+if (timer &lt;= 0)
+{
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>
@@ -106,7 +118,7 @@ myX += 15 * nega;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_beattick_david, 0, view_xview + 480 + myX, view_yview + 21);
+            <string>draw_sprite(sprite_index, image_index, view_xview + x, view_yview + yoffset);
 </string>
           </argument>
         </arguments>
