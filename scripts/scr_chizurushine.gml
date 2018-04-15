@@ -19,7 +19,7 @@ if (instance_exists(obj_chizuru))
     obj_chizuru.spinning = 0;
     obj_chizuru.spinFinish = 0;
     
-    obj_chizuru.alarm[8] = 5;
+    obj_chizuru.alarm[8] = 2;
     
     obj_chizuru.alarm[10] = -1;
     

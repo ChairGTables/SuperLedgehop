@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>//Set health for enemy
-hp = 200;
+hp = 434;
+global.bossone = 434;
+global.bosstwo = 0;
+global.bossthree = 0;
 
 //set animation speed
 image_speed = 0.2;
@@ -122,6 +125,27 @@ chosenAttack = 0;
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed = 0.2;
+</string>
           </argument>
         </arguments>
       </action>
@@ -363,6 +387,11 @@ moveTimer  -= delta_time / 1000000;
 
 script_execute(scr_resyncenemies_david);
 
+if (global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    global.bossone = hp;
+}
+
 if (shootTimer &lt;= 0)
 {
     // ======== SHOOTING ====================
@@ -396,6 +425,7 @@ if (shootTimer &lt;= 0)
             audio_play_sound (snd_titohey, 10, false); 
             sprite_index = spr_titoshoot;
             image_index = 0;
+            image_speed = 1;
             script_execute(scr_fliptoplayer);
             var warnIndicator = instance_create (x,y, obj_warninglaser_sonii);
             if (instance_exists(obj_chizuru))
@@ -474,6 +504,7 @@ if (shootTimer &lt;= 0)
             script_execute(scr_fliptoplayer);
             sprite_index = spr_titoshoot;
             image_index = 0;
+            image_speed = 1;
             audio_play_sound (snd_ricebullet, 10, false); 
             for (i = 0; i &lt; 5; i++)
             {         
@@ -505,6 +536,7 @@ if (shootTimer &lt;= 0)
             script_execute(scr_fliptoplayer);
             sprite_index = spr_titoshoot;
             image_index = 0;
+            image_speed = 1;
             openArc = random_range(0, 50)
             for (i = 0; i &lt; 60; i++)
             {         
@@ -552,6 +584,7 @@ if (gatlingShot == 1)
     var gatling = instance_create(x, y, obj_rapidbullet);
     sprite_index = spr_titoshoot;
     image_index = 0;
+    image_speed = 1;
     if (instance_exists(gatling))
     {
         gatling.direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + random_range(-5, 5);
@@ -608,7 +641,7 @@ if (moveTimer &lt;= 0)
 /////////////////////////////
 //Death
 /////////////////////////
-if (hp &lt; 1)
+if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1)
 {
     instance_create(x, y, obj_explosion);
     instance_destroy(self);
@@ -1079,6 +1112,7 @@ if (hp &lt; 1)
             <string>if (sprite_index == spr_titoshoot)
 {
     sprite_index = spr_titowalk;
+    image_speed = 0.2;
 }
 </string>
           </argument>

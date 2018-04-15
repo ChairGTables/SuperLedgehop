@@ -35,9 +35,9 @@ global.aimangle = 0;
 global.shottype = 0;
 global.maxshottype = 5;
 
-global.chizuruhp = 100;
-global.chizurump = 100;
-global.chizurushine = 100;
+global.chizuruhp = 99;
+global.chizurump = 99;
+global.chizurushine = 99;
 global.chizurushotcooldown = 0;
 global.chizurushinecharge = 0;
 global.chizurupoptime = 60;
@@ -51,6 +51,10 @@ global.firecount = 100;
 global.icecount = 100;
 
 global.combo = 0;
+
+global.bossone = 434;
+global.bosstwo = 434;
+global.bossthree = 434;
 
 //////////////////////////
 //Rhythm components

@@ -151,6 +151,7 @@
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
         <sprite>sprites\spr_chizuruhud</sprite>
+        <sprite>sprites\spr_bosshud</sprite>
         <sprite>sprites\spr_ammohud</sprite>
         <sprite>sprites\spr_transparentbluesquare</sprite>
         <sprite>sprites\spr_titlelogo</sprite>
@@ -239,6 +240,7 @@
       <background>background\back_titletransition</background>
       <background>background\back_blackback</background>
       <background>background\back_vistaview</background>
+      <background>background\background13</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -440,9 +442,9 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
-      <room>rooms\rm_stage1</room>
       <room>rooms\rm_sampleroom_chair</room>
       <room>rooms\rm_templevelone</room>
+      <room>rooms\rm_stage1</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>
