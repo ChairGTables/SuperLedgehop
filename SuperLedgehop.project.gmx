@@ -222,6 +222,11 @@
       <sprite>sprites\spr_beattick_david</sprite>
       <sprite>sprites\spr_testtarget_david</sprite>
       <sprite>sprites\spr_beatindicator_david</sprite>
+      <sprites name="obstacles">
+        <sprite>sprites\spr_door_david</sprite>
+        <sprite>sprites\spr_switch_david</sprite>
+        <sprite>sprites\spr_key_david</sprite>
+      </sprites>
     </sprites>
     <sprites name="ultran">
       <sprite>sprites\spr_samplesprite_ultran</sprite>
@@ -418,6 +423,11 @@
       <object>objects\obj_rhythmcontroller_david</object>
       <object>objects\obj_sampleobject_david</object>
       <object>objects\obj_soundcontroller_david</object>
+      <objects name="obstacles">
+        <object>objects\obj_door_david</object>
+        <object>objects\obj_switch_david</object>
+        <object>objects\obj_key_david</object>
+      </objects>
     </objects>
     <objects name="ultran">
       <object>objects\obj_sampleobject_ultran</object>

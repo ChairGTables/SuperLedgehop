@@ -70,6 +70,10 @@
     <instance objName="obj_testtarget_david" x="512" y="128" name="inst_9F869763" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_charger_sonii" x="288" y="128" name="inst_7A818B62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="320" y="224" name="inst_F874DF83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door_david" x="544" y="224" name="inst_9EB8F5FD" locked="0" code="unlockID = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door_david" x="640" y="224" name="inst_CC03697B" locked="0" code="unlockID = 33;&#xA;orientation = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_switch_david" x="544" y="288" name="inst_0DD86CD8" locked="0" code="unlockID = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_key_david" x="640" y="288" name="inst_D62A2794" locked="0" code="unlockID = 33;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
