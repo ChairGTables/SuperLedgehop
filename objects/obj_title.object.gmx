@@ -56,6 +56,13 @@ global.bossone = 434;
 global.bosstwo = 434;
 global.bossthree = 434;
 
+for (i = 0; i &lt; 100; i++)
+{
+    global.keyID[i] = 0;
+}
+global.keyIndex = 0;
+
+
 //////////////////////////
 //Rhythm components
 ////////////////////////////

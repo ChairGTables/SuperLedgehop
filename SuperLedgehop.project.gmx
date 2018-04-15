@@ -302,6 +302,7 @@
       <script>scripts\script_samplescript_david.gml</script>
       <script>scripts\scr_resync_david.gml</script>
       <script>scripts\scr_resyncenemies_david.gml</script>
+      <script>scripts\scr_switchdoor.gml</script>
     </scripts>
     <scripts name="ultran">
       <script>scripts\script_samplescript_ultran.gml</script>
@@ -355,6 +356,7 @@
         <object>objects\obj_titleselection</object>
         <object>objects\obj_nextroom</object>
         <object>objects\obj_titlecamera</object>
+        <object>objects\obj_keyeraser</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -452,13 +454,13 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
+      <room>rooms\rm_test_david</room>
       <room>rooms\rm_sampleroom_chair</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_stage1</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>
-      <room>rooms\rm_test_david</room>
       <room>rooms\rm_sampleroom_david</room>
     </rooms>
     <rooms name="sonii">
