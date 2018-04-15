@@ -92,6 +92,12 @@ myWidth = 100;
 myHeight = 4;
 
 global.combo = 0;
+
+for (i = 0; i &lt; 100; i++)
+{
+    global.keyID[i] = 0;
+}
+global.keyIndex = 0;
 </string>
           </argument>
         </arguments>

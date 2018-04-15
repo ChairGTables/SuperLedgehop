@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>// Get offset for positioning this object (following view)
-offset_x  = view_wview[view_current] / 2;
+offset_x  = view_wview[view_current] / 2 + 3;
 offset_y  = view_hview[view_current] / 25;
 
+x = offset_x;
 // Set timer
 beatTimer = global.quarterSec; // quarter note
 </string>
