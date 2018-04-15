@@ -31,6 +31,9 @@ unlockID = 0;
 // Whether the switch is active
 active = false;
 
+// Wait time before switch can be used again
+cooldown = 0;
+
 // Other stuff
 image_index = 0;
 image_speed = 0;
@@ -39,7 +42,7 @@ image_speed = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_flame_sonii">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -56,248 +59,10 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
+            <string>if (cooldown &gt; 0)
 {
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
+    cooldown -= 1;
 }
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemybasicbullet_sonii">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_spread_sonii">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_rapidbullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemyenhancedbullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_chizurufirebullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
 </string>
           </argument>
         </arguments>
@@ -306,43 +71,41 @@ instance_destroy( other );
     <event eventtype="4" ename="obj_chizuruicebullet">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
+            <kind>9</kind>
+            <script>scr_switchdoor</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -350,43 +113,41 @@ instance_destroy( other );
     <event eventtype="4" ename="obj_chizuruspreadbullet">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
+            <kind>9</kind>
+            <script>scr_switchdoor</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -394,43 +155,41 @@ instance_destroy( other );
     <event eventtype="4" ename="obj_chizururapidbullet">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
+            <kind>9</kind>
+            <script>scr_switchdoor</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -438,43 +197,41 @@ instance_destroy( other );
     <event eventtype="4" ename="obj_chizuruenhancedbullet">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
+            <kind>9</kind>
+            <script>scr_switchdoor</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -482,43 +239,41 @@ instance_destroy( other );
     <event eventtype="4" ename="obj_chizurubasicbullet">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>for( var i = 0; i &lt; instance_number( obj_door_david ); i++ )
-{
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID )
-    {
-        door.open = !door.open;
-        active = !active;
-        break;
-    }
-}
-
-if( active )
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
-
-instance_destroy( other );
-</string>
+            <kind>9</kind>
+            <script>scr_switchdoor</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

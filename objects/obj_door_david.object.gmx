@@ -34,6 +34,11 @@ open = false;
 
 // Other stuff
 image_speed = 0;
+
+// Generate hitbox
+myWall = instance_create(x, y, obj_wall);
+myWall.image_xscale = 0.7;
+myWall.image_yscale = 0.7;
 </string>
           </argument>
         </arguments>
@@ -58,6 +63,8 @@ image_speed = 0;
             <kind>1</kind>
             <string>if( open )
 {
+    myWall.x = -9999;
+    myWall.y = -9999;
     switch( orientation )
     {
         case 0:
@@ -75,6 +82,8 @@ image_speed = 0;
 }
 else
 {
+    myWall.x = x;
+    myWall.y = y;
     switch( orientation )
     {
         case 0:
@@ -88,6 +97,37 @@ else
         default:
             image_index = 0;
             break;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_chizuru">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>for (i = 0; i &lt; 100; i++)
+{
+    if (global.keyID[i] == unlockID &amp;&amp; open == false)
+    {
+        open = !open;
+        myEraser = instance_create(x, y, obj_keyeraser);
+        myEraser.unlockID = unlockID;
     }
 }
 </string>
