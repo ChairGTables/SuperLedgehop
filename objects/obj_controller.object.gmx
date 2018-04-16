@@ -349,63 +349,67 @@ myHeight = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_chizuruhud, 0, xMain, yMain)
-if (global.shottype != 0)
+            <string>if (global.speaking == false)
 {
-    draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo)
-}
-
-if (global.shottype == 1)
-{
-    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.enhancedcount,myHeight)
-}
-if (global.shottype == 2)
-{
-    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.spreadcount,myHeight)
-}
-if (global.shottype == 3)
-{
-    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.rapidcount,myHeight)
-}
-if (global.shottype == 4)
-{
-    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.firecount,myHeight)
-}
-if (global.shottype == 5)
-{
-    draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.icecount,myHeight)
-}
-
-draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25,global.chizuruhp,myHeight)
-draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36,global.chizurump,myHeight)
-draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47,global.chizurushine,myHeight)
-
-
-
-
-
-
-if (global.combo &gt; 1)
-{
-    draw_sprite(spr_comborush, 0, view_xview+25, view_yview+110);
+    draw_sprite(spr_chizuruhud, 0, xMain, yMain)
+    if (global.shottype != 0)
+    {
+        draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo)
+    }
     
-    draw_set_font(fnt_comboglow);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_center);
-    draw_text_color(view_xview+30,view_yview+135,global.combo,070709,070709,070709,070709,1);
+    if (global.shottype == 1)
+    {
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.enhancedcount,myHeight)
+    }
+    if (global.shottype == 2)
+    {
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.spreadcount,myHeight)
+    }
+    if (global.shottype == 3)
+    {
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.rapidcount,myHeight)
+    }
+    if (global.shottype == 4)
+    {
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.firecount,myHeight)
+    }
+    if (global.shottype == 5)
+    {
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.icecount,myHeight)
+    }
     
-    draw_set_font(fnt_combo);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_center);
-    draw_text_color(view_xview+30,view_yview+135,global.combo,c_white,c_white,c_white,c_white,1)
+    draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25,global.chizuruhp,myHeight)
+    draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36,global.chizurump,myHeight)
+    draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47,global.chizurushine,myHeight)
+    
+    
+    
+    
+    
+    
+    if (global.combo &gt; 1)
+    {
+        draw_sprite(spr_comborush, 0, view_xview+25, view_yview+110);
+        
+        draw_set_font(fnt_comboglow);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_center);
+        draw_text_color(view_xview+30,view_yview+135,global.combo,070709,070709,070709,070709,1);
+        
+        draw_set_font(fnt_combo);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_center);
+        draw_text_color(view_xview+30,view_yview+135,global.combo,c_white,c_white,c_white,c_white,1)
+    }
+    
+    
+    if (instance_exists(obj_tito))
+    {
+        draw_sprite(spr_bosshud, 0, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+    }
 }
 
-
-if (instance_exists(obj_tito))
-{
-    draw_sprite(spr_bosshud, 0, view_xview+440, yMain);
-    draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
-}
 </string>
           </argument>
         </arguments>
