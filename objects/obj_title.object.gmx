@@ -56,12 +56,38 @@ global.bossone = 434;
 global.bosstwo = 434;
 global.bossthree = 434;
 
+//Key unlockables
 for (i = 0; i &lt; 100; i++)
 {
     global.keyID[i] = 0;
 }
 global.keyIndex = 0;
 
+//Dialogue variables
+global.message = "";
+global.chr1 = 0;
+global.messageNumber = 0;
+global.text = " ";
+global.speaking = false;
+
+for (i = 0; i &lt; 100; i++)
+{
+    global.messageArray[i] = " ";
+}
+for (i = 0; i &lt; 100; i++)
+{
+    global.emotionProtagonistArray[i] = "neutral";
+    global.emotionAntagonistArray[i] = "neutral";
+}
+for (i = 0; i &lt; 100; i++)
+{
+    global.voiceArray[i] = snd_gatling;
+}
+for (i = 0; i &lt; 100; i++)
+{
+    global.categoryArray[i] = 0
+}
+global.messageLimit = 0;
 
 //////////////////////////
 //Rhythm components

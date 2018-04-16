@@ -29,6 +29,8 @@
         <sound>sound\snd_rhythmconfirm</sound>
         <sound>sound\snd_reflector</sound>
         <sound>sound\snd_absorbing</sound>
+        <sound>sound\snd_girlbleep</sound>
+        <sound>sound\snd_malebleep</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
@@ -315,6 +317,8 @@
       <font>fonts\fnt_damageback</font>
       <font>fonts\fnt_combo</font>
       <font>fonts\fnt_comboglow</font>
+      <font>fonts\fnt_name</font>
+      <font>fonts\fnt_talk</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -357,6 +361,10 @@
         <object>objects\obj_nextroom</object>
         <object>objects\obj_titlecamera</object>
         <object>objects\obj_keyeraser</object>
+        <object>objects\obj_dialogue</object>
+        <object>objects\obj_protagonisttalk</object>
+        <object>objects\obj_antagonisttalk</object>
+        <object>objects\obj_dialoguetest</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -454,10 +462,10 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
+      <room>rooms\rm_stage1</room>
       <room>rooms\rm_test_david</room>
       <room>rooms\rm_sampleroom_chair</room>
       <room>rooms\rm_templevelone</room>
-      <room>rooms\rm_stage1</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>
