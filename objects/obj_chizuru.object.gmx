@@ -52,6 +52,8 @@ spinAngle[3] = 270;
 
 spinFinish = 0;
 
+gamepadCheck = global.isGamepad;
+
 global.chizuruShootBeat = global.quarterSec;
 global.chizuruShootTimer = global.chizuruShootBeat;
 </string>
@@ -402,14 +404,42 @@ waveshine = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Invincibility check
+            <string>if (global.chizuruhp &lt; 1)
+{
+    global.invincibility = 1;
+    global.isCutscene = true;
+}
+
+//Invincibility check
 if (global.invincibility &gt; 0)
 {
-    image_alpha = 0.4;
+    if (global.chizuruhp &lt; 1)
+    {
+        image_alpha = 0;
+    }
+    else
+    {
+        image_alpha = 0.4;
+    }
+
 }
 else
 {
     image_alpha = 1;
+}
+
+//Gamepad check
+if (global.isGamepad == true &amp;&amp; gamepadCheck == false)
+{
+    controlboi = instance_create(0, 0, obj_controlscheme);
+    controlboi.image_index = 1;
+    gamepadCheck = true;
+}
+if (global.isGamepad == false &amp;&amp; gamepadCheck == true)
+{
+    controlboi = instance_create(0, 0, obj_controlscheme);
+    controlboi.image_index = 0;
+    gamepadCheck = false;
 }
 
 /////////////////////////
@@ -500,35 +530,39 @@ if (downmomentum &gt; 0)
     downmomentum = downmomentum - 0.5;
 }
 
-if ((vspeed &lt; 1) &amp;&amp; (vspeed &gt; -1))
+if(global.isCutscene == false)
 {
-    vspeed = 0;
+    if ((vspeed &lt; 1) &amp;&amp; (vspeed &gt; -1))
+    {
+        vspeed = 0;
+    }
+    
+    if ((hspeed &lt; 1) &amp;&amp; (hspeed &gt; -1))
+    {
+        hspeed = 0;
+    }
+    
+    if ((vspeed != 0) &amp;&amp; (vspeed &gt; 0))
+    {
+        vspeed = vspeed - 1;
+    }
+    
+    if ((vspeed != 0) &amp;&amp; (vspeed &lt; 0))
+    {
+        vspeed = vspeed + 1;
+    }
+    
+    if ((hspeed != 0) &amp;&amp; (hspeed &gt; 0))
+    {
+        hspeed = hspeed - 1;
+    }
+    
+    if ((hspeed != 0) &amp;&amp; (hspeed &lt; 0))
+    {
+        hspeed = hspeed + 1;
+    }
 }
 
-if ((hspeed &lt; 1) &amp;&amp; (hspeed &gt; -1))
-{
-    hspeed = 0;
-}
-
-if ((vspeed != 0) &amp;&amp; (vspeed &gt; 0))
-{
-    vspeed = vspeed - 1;
-}
-
-if ((vspeed != 0) &amp;&amp; (vspeed &lt; 0))
-{
-    vspeed = vspeed + 1;
-}
-
-if ((hspeed != 0) &amp;&amp; (hspeed &gt; 0))
-{
-    hspeed = hspeed - 1;
-}
-
-if ((hspeed != 0) &amp;&amp; (hspeed &lt; 0))
-{
-    hspeed = hspeed + 1;
-}
 
 
 //Move object based on its current momentum
@@ -550,7 +584,7 @@ script_execute(scr_speedwallcheck);
 ///////////////////////////////
 if (spinning == 1 &amp;&amp; instance_exists(obj_gamepad))
 {
-    if (obj_gamepad.joy_lt == true)
+    if (obj_gamepad.spinning == true)
     {
         spinFinish += 1;
         angleIncrease = random_range(20, 50);
@@ -595,6 +629,10 @@ if (waveshine == 1)
     action = 0;
 }
 if (spinning == 1)
+{
+    action = 0;
+}
+if (global.isCutscene == true)
 {
     action = 0;
 }
@@ -1052,20 +1090,20 @@ if (action == 1)
         <functionname>action_draw_variable</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>0</relative>
+        <relative>-1</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>global.chizuruShootRest</string>
+            <string>global.chizurumovex</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>view_xview+20</string>
+            <string>20</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>view_yview+100</string>
+            <string>100</string>
           </argument>
         </arguments>
       </action>
@@ -1080,20 +1118,20 @@ if (action == 1)
         <functionname>action_draw_variable</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>0</relative>
+        <relative>-1</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>global.chizuruShootRest &lt; global.chizuruShootBeat - global.chizuruShootBeat</string>
+            <string>global.chizurumovey</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>view_xview+20</string>
+            <string>20</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>view_yview+200</string>
+            <string>200</string>
           </argument>
         </arguments>
       </action>

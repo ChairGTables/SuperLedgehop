@@ -56,7 +56,19 @@
 
 if (y &gt; room_height - 270)
 {
-    room_goto_next();
+    if (global.titleSelection == 0)
+    {
+        room_goto_next();
+    }
+    if (global.titleSelection == 1)
+    {
+        room_goto(room9);
+    }
+    if (global.titleSelection == 2)
+    {
+        room_goto(rm_survivalmode);
+    }
+    
 }
 </string>
           </argument>

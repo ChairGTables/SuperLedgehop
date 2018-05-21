@@ -90,7 +90,7 @@ if (downmomentum > 0)
 
 
 //Check walls
-script_execute(scr_speedwallcheck);
+script_execute(scr_enemywallfix);
 
 //Move object based on its current momentum
 x -= leftmomentum;

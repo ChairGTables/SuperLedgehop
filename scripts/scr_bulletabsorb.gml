@@ -1,4 +1,4 @@
-if (other.absorb == 1 && absorbed == 0)
+if (other.absorb == 1 && absorbed == 0 && global.absorbing == 1)
 {
     if (instance_number(obj_absorbbubble) < 100)
     {

@@ -38,6 +38,11 @@ hurtSprite = "spr_grenaiderhurt_sonii";
 sS = sprite_index;
 hS = asset_get_index(hurtSprite);
 
+//Set hurt sounds
+hurtSoundOne = snd_hurt3;
+hurtSoundTwo = snd_hurt4;
+deathSound = snd_death6;
+
 //Define the knockback and hitstun
 bulletKnockback = 5;
 shineKnockback = 7;
@@ -261,6 +266,16 @@ moveTimer  -= delta_time / 1000000;
 
 script_execute(scr_resyncenemies_david);
 
+if (hittable == 0)
+{
+    image_alpha = 0;
+}
+else
+{
+    image_alpha = 1;
+}
+
+
 if (shootTimer &lt;= 0)
 {
     
@@ -355,8 +370,7 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
-    instance_create(x, y, obj_explosion);
-    instance_destroy(self);
+    script_execute(scr_enemydeath);
 }
 </string>
           </argument>

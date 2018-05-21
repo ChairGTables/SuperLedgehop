@@ -34,6 +34,11 @@ image_speed = 0.2;
 //You must define the hurt sprite as a string
 hurtSprite = "spr_oldbasicenemyhurt";
 
+//Set hurt sounds
+hurtSoundOne = snd_hurt3;
+hurtSoundTwo = snd_hurt4;
+deathSound = snd_death6;
+
 //Do not touch this
 sS = sprite_index;
 hS = asset_get_index(hurtSprite);
@@ -309,8 +314,8 @@ if (moveTimer &lt;= 0)
     {
         //Touch these to modify movement
         followspeed = 7;
-        minimumspeed = 5;
-        maximumspeed = 10;
+        minimumspeed = 1;
+        maximumspeed = 3;
         
         //Do not touch these
         if (random_range(0, 100) &gt; 50 &amp;&amp; instance_exists(obj_chizuru))
@@ -340,8 +345,7 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
-    instance_create(x, y, obj_explosion);
-    instance_destroy(self);
+    script_execute(scr_enemydeath);
 }
 </string>
           </argument>

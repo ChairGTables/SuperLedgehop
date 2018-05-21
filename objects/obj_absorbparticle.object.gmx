@@ -30,8 +30,8 @@ category = "nothing"
 
 alarm[0] = 10;
 
-vspeed = random_range(-7, -15);
-hspeed = random_range(-3, 3);
+vspeed = random_range(-13, -20);
+hspeed = random_range(-7, 7);
 </string>
           </argument>
         </arguments>
@@ -113,33 +113,37 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound_on (global.effectsEmitter, snd_bulletget, false, 10); 
-
-if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)
+            <string>if (phase == 1)
 {
-    global.enhancedcount += 3;
-}
-if (category == "spread" &amp;&amp; global.spreadcount &lt; 100)
-{
-    global.spreadcount += 3;
+    audio_play_sound_on (global.effectsEmitter, snd_bulletget, false, 10); 
+    
+    if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)
+    {
+        global.enhancedcount += 3;
+    }
+    if (category == "spread" &amp;&amp; global.spreadcount &lt; 100)
+    {
+        global.spreadcount += 3;
+    }
+    
+    if (category == "rapid" &amp;&amp; global.rapidcount &lt; 100)
+    {
+        global.rapidcount += 3;
+    }
+    
+    if (category == "fire" &amp;&amp; global.firecount &lt; 100)
+    {
+        global.firecount += 3;
+    }
+    
+    if (category == "ice" &amp;&amp; global.icecount &lt; 100)
+    {
+        global.icecount += 3;
+    }
+    
+    instance_destroy(self);
 }
 
-if (category == "rapid" &amp;&amp; global.rapidcount &lt; 100)
-{
-    global.rapidcount += 3;
-}
-
-if (category == "fire" &amp;&amp; global.firecount &lt; 100)
-{
-    global.firecount += 3;
-}
-
-if (category == "ice" &amp;&amp; global.icecount &lt; 100)
-{
-    global.icecount += 3;
-}
-
-instance_destroy(self);
 </string>
           </argument>
         </arguments>
