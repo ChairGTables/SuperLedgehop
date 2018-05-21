@@ -31,11 +31,27 @@
         <sound>sound\snd_absorbing</sound>
         <sound>sound\snd_girlbleep</sound>
         <sound>sound\snd_malebleep</sound>
+        <sound>sound\snd_pineapplethrow</sound>
+        <sound>sound\snd_bombbeep</sound>
+        <sound>sound\snd_bombthrow</sound>
+        <sound>sound\snd_silence</sound>
+        <sound>sound\snd_ricochet</sound>
+        <sound>sound\snd_thud</sound>
+        <sound>sound\snd_correct</sound>
+        <sound>sound\snd_siren</sound>
+        <sound>sound\snd_hpheal</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bosstheme</sound>
         <sound>sound\snd_titlemusic</sound>
         <sound>sound\snd_bossintro</sound>
+        <sound>sound\snd_winsong</sound>
+        <sound>sound\snd_chillevent</sound>
+        <sound>sound\snd_comedyevent</sound>
+        <sound>sound\snd_coolevent</sound>
+        <sound>sound\snd_hypeevent</sound>
+        <sound>sound\snd_finalloop</sound>
+        <sound>sound\snd_gutsman</sound>
       </sounds>
       <sounds name="tito">
         <sound>sound\snd_titohey</sound>
@@ -52,12 +68,25 @@
         <sound>sound\snd_imgoingallin</sound>
         <sound>sound\snd_superledgehopone</sound>
         <sound>sound\snd_superledgehoptwo</sound>
+        <sound>sound\snd_chizurumissioncomplete</sound>
       </sounds>
       <sounds name="generic">
         <sound>sound\snd_death1</sound>
         <sound>sound\snd_death2</sound>
         <sound>sound\snd_death3</sound>
         <sound>sound\snd_death4</sound>
+        <sound>sound\snd_death5</sound>
+        <sound>sound\snd_death6</sound>
+        <sound>sound\snd_death7</sound>
+        <sound>sound\snd_hurt1</sound>
+        <sound>sound\snd_hurt2</sound>
+        <sound>sound\snd_hurt3</sound>
+        <sound>sound\snd_hurt4</sound>
+        <sound>sound\snd_hurt5</sound>
+        <sound>sound\snd_hurt6</sound>
+        <sound>sound\snd_hurt7</sound>
+        <sound>sound\snd_hurt8</sound>
+        <sound>sound\snd_screech1</sound>
       </sounds>
       <sounds name="combo">
         <sound>sound\snd_cool</sound>
@@ -73,6 +102,16 @@
         <sound>sound\snd_swinging</sound>
         <sound>sound\snd_killingit</sound>
         <sound>sound\snd_pianoslam</sound>
+      </sounds>
+      <sounds name="liz">
+        <sound>sound\snd_lizfreeze</sound>
+        <sound>sound\snd_lizburn</sound>
+        <sound>sound\snd_lizyouhavetheright</sound>
+        <sound>sound\snd_lizouch</sound>
+        <sound>sound\snd_lizgah</sound>
+        <sound>sound\snd_lizgiggle</sound>
+        <sound>sound\snd_lizvulcano</sound>
+        <sound>sound\snd_lizdeath</sound>
       </sounds>
     </sounds>
     <sounds name="sonii">
@@ -149,6 +188,11 @@
         <sprite>sprites\spr_comborush</sprite>
         <sprite>sprites\spr_musicnote</sprite>
         <sprite>sprites\spr_hitsweat</sprite>
+        <sprite>sprites\spr_bigwhite</sprite>
+        <sprite>sprites\spr_siopaoexplosion</sprite>
+        <sprite>sprites\spr_chaptercomplete</sprite>
+        <sprite>sprites\spr_hpup</sprite>
+        <sprite>sprites\spr_mpup</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -159,6 +203,13 @@
         <sprite>sprites\spr_titlelogo</sprite>
         <sprite>sprites\spr_titleselection</sprite>
         <sprite>sprites\spr_yellowbox</sprite>
+        <sprite>sprites\spr_controlscheme</sprite>
+        <sprite>sprites\spr_caution</sprite>
+        <sprite>sprites\spr_wowyoudied</sprite>
+        <sprite>sprites\spr_stage1</sprite>
+        <sprite>sprites\spr_stage2</sprite>
+        <sprite>sprites\spr_survivalmenu</sprite>
+        <sprite>sprites\sprite142</sprite>
       </sprites>
       <sprites name="enemies">
         <sprite>sprites\spr_enemyenhancedbullet</sprite>
@@ -168,6 +219,16 @@
         <sprite>sprites\spr_spiketiles</sprite>
         <sprite>sprites\spr_oldbasicenemyhurt</sprite>
         <sprite>sprites\spr_bigredtree</sprite>
+        <sprite>sprites\spr_musicbox</sprite>
+        <sprite>sprites\spr_musicboxhurt</sprite>
+        <sprite>sprites\snd_gatestopper</sprite>
+        <sprite>sprites\spr_enemybasic2</sprite>
+        <sprite>sprites\spr_enemybasic2hurt</sprite>
+        <sprite>sprites\spr_enemybasic3</sprite>
+        <sprite>sprites\spr_enemybasic3hurt</sprite>
+        <sprite>sprites\spr_wooddoor</sprite>
+        <sprite>sprites\spr_moose</sprite>
+        <sprite>sprites\spr_moosehurt</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -180,6 +241,25 @@
         <sprite>sprites\spr_yuutoneutral</sprite>
         <sprite>sprites\spr_yuutosad</sprite>
       </sprites>
+      <sprites name="liz">
+        <sprite>sprites\spr_lizwalk</sprite>
+        <sprite>sprites\spr_lizshoot</sprite>
+        <sprite>sprites\spr_lizhurt</sprite>
+        <sprite>sprites\spr_lizneutral</sprite>
+        <sprite>sprites\spr_lizangry</sprite>
+        <sprite>sprites\spr_lizbombexplosion</sprite>
+        <sprite>sprites\spr_lizbombwarning</sprite>
+        <sprite>sprites\spr_lizpineapple</sprite>
+        <sprite>sprites\spr_flashbang</sprite>
+        <sprite>sprites\spr_flashbangblindness</sprite>
+      </sprites>
+      <sprites name="kamuro">
+        <sprite>sprites\spr_kamuroneutral</sprite>
+        <sprite>sprites\spr_kamuroangry</sprite>
+        <sprite>sprites\spr_kamurowalk</sprite>
+        <sprite>sprites\spr_kamuroshoot</sprite>
+        <sprite>sprites\spr_kamurohurt</sprite>
+      </sprites>
     </sprites>
     <sprites name="sonii">
       <sprite>sprites\spr_samplesprite_sonii</sprite>
@@ -191,6 +271,7 @@
       <sprites name="charger">
         <sprite>sprites\spr_charger_attack_sonii</sprite>
         <sprite>sprites\spr_charger_idle_sonii</sprite>
+        <sprite>sprites\spr_charger_hurt_sonii</sprite>
       </sprites>
       <sprite>sprites\spr_shockwave_sonii</sprite>
       <sprite>sprites\spr_turretaimer</sprite>
@@ -248,6 +329,8 @@
       <background>background\back_blackback</background>
       <background>background\back_vistaview</background>
       <background>background\background13</background>
+      <background>background\back_mrbeast</background>
+      <background>background\background15</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -292,8 +375,10 @@
       <script>scripts\scr_enemyshined.gml</script>
       <script>scripts\scr_speedwallcheck.gml</script>
       <script>scripts\scr_enemywallfix.gml</script>
+      <script>scripts\scr_enemywallbeforemove.gml</script>
       <script>scripts\scr_playerwallfix.gml</script>
       <script>scripts\scr_fliptoplayer.gml</script>
+      <script>scripts\scr_enemydeath.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -336,6 +421,7 @@
       <objects name="chizuru">
         <object>objects\obj_chizuru</object>
         <object>objects\obj_chizuruaimarrow</object>
+        <object>objects\obj_dialogue</object>
         <object>objects\obj_chizurubasicbullet</object>
         <object>objects\obj_chizuruenhancedbullet</object>
         <object>objects\obj_chizururapidbullet</object>
@@ -361,10 +447,17 @@
         <object>objects\obj_nextroom</object>
         <object>objects\obj_titlecamera</object>
         <object>objects\obj_keyeraser</object>
-        <object>objects\obj_dialogue</object>
         <object>objects\obj_protagonisttalk</object>
         <object>objects\obj_antagonisttalk</object>
         <object>objects\obj_dialoguetest</object>
+        <object>objects\obj_controlscheme</object>
+        <object>objects\obj_caution</object>
+        <object>objects\obj_musictransition</object>
+        <object>objects\obj_survivalmode</object>
+        <object>objects\obj_wowyoudied</object>
+        <object>objects\obj_stage1</object>
+        <object>objects\obj_stage2</object>
+        <object>objects\obj_survivalmenu</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -374,10 +467,17 @@
         <object>objects\obj_combotext</object>
         <object>objects\obj_musicnote</object>
         <object>objects\obj_hitsweat</object>
+        <object>objects\obj_whitefadein</object>
+        <object>objects\obj_chaptercomplete</object>
+        <object>objects\obj_siopaoexplosion</object>
+        <object>objects\obj_hpup</object>
+        <object>objects\obj_mpup</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
         <object>objects\obj_bigredtree</object>
+        <object>objects\obj_gatestopper</object>
+        <object>objects\obj_wooddoor</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -387,6 +487,33 @@
         <objects name="tito">
           <object>objects\obj_tito</object>
           <object>objects\obj_redrice</object>
+        </objects>
+        <objects name="liz">
+          <object>objects\obj_liz</object>
+          <object>objects\obj_lizpineapple</object>
+          <object>objects\obj_lizflashbang</object>
+          <object>objects\obj_lizbombwarning</object>
+          <object>objects\obj_lizexplosion</object>
+          <object>objects\obj_lizflashbangblindness</object>
+          <object>objects\obj_lizstandby</object>
+        </objects>
+        <object>objects\obj_bossdeath</object>
+        <object>objects\obj_musicbox</object>
+        <object>objects\obj_musicboxstopper</object>
+        <object>objects\obj_firecannon</object>
+        <object>objects\obj_mooseentrance</object>
+        <object>objects\obj_moose</object>
+        <objects name="kamuro">
+          <object>objects\obj_kamurodialogue1</object>
+          <object>objects\obj_kamurodialogue2</object>
+          <object>objects\obj_kamurodialogue3</object>
+          <object>objects\obj_titodialogue1</object>
+          <object>objects\obj_titodialogue2</object>
+          <object>objects\obj_titodialogue3</object>
+          <object>objects\obj_titodialogue4</object>
+          <object>objects\obj_kamuronpc1</object>
+          <object>objects\obj_titonpc1</object>
+          <object>objects\obj_titonpc2</object>
         </objects>
       </objects>
     </objects>
@@ -406,6 +533,7 @@
       </objects>
       <objects name="enemies">
         <object>objects\obj_boombox_sonii</object>
+        <object>objects\obj_cannonaim_sonii</object>
         <object>objects\obj_squaremover_sonii</object>
         <object>objects\obj_sidetoside_sonii</object>
         <object>objects\obj_spreadmove_sonii</object>
@@ -414,7 +542,6 @@
         <object>objects\obj_basicenemy3_sonii</object>
         <object>objects\obj_grenaider_sonii</object>
         <object>objects\obj_waterhider_sonii</object>
-        <object>objects\obj_cannonaim_sonii</object>
         <object>objects\obj_spreadcannon_sonii</object>
         <object>objects\obj_breakablecrate_sonii</object>
         <object>objects\obj_lazerCannon_sonii</object>
@@ -463,9 +590,12 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_stage1</room>
-      <room>rooms\rm_test_david</room>
+      <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_sampleroom_chair</room>
+      <room>rooms\room9</room>
+      <room>rooms\rm_survivalmode</room>
       <room>rooms\rm_templevelone</room>
+      <room>rooms\rm_test_david</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>

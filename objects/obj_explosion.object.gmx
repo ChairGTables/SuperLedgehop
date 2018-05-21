@@ -27,7 +27,9 @@
             <kind>1</kind>
             <string>randomize();
 audio_play_sound_on(global.effectsEmitter, snd_crashed, false, 10);
-
+global.remaining -= 1;
+global.destroyed += 1;
+/*
 // Random integer between 0 and 3, including 0 and 3, a range of 4
 switch (irandom(3))
 {
@@ -47,6 +49,7 @@ switch (irandom(3))
         audio_play_sound_on(global.voiceEmitter, snd_death4, false, 10);
         break;
 }
+*/
 </string>
           </argument>
         </arguments>

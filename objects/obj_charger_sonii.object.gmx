@@ -26,19 +26,24 @@
           <argument>
             <kind>1</kind>
             <string>//Set health for enemy
-hp = 20;
+hp = 10;
 
 //set animation speed
 image_speed = 0.2;
 
 //You must define the hurt sprite as a string
-hurtSprite = "spr_whateveryouregoingtonamethis_sonii";
+hurtSprite = "spr_charger_hurt_sonii";
 attackSprite = "spr_charger_attack_sonii"
 
 //Do not touch this
 sS = sprite_index;
 hS = asset_get_index(hurtSprite);
 aS = asset_get_index(attackSprite);
+
+//Set hurt sounds
+hurtSoundOne = snd_hurt5;
+hurtSoundTwo = snd_hurt6;
+deathSound = snd_death7;
 
 //Define the knockback and hitstun
 bulletKnockback = 5;
@@ -377,8 +382,7 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
-    instance_create(x, y, obj_explosion);
-    instance_destroy(self);
+    script_execute(scr_enemydeath);
 }
 </string>
           </argument>

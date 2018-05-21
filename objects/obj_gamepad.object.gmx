@@ -41,6 +41,9 @@ joy_left = false;
 joy_down = false;
 joy_up = false;
 joy_select = false;
+
+leftClick = false;
+spinning = false;
 dpad = 0;
 index = 0;
 
@@ -76,7 +79,102 @@ index = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if gamepad_button_check_released(0, gp_padu)
+            <string>if gamepad_button_check_released(0, gp_face1)
+    {
+        if (joy_z = true)
+        {
+            joy_z = false;
+            keyboard_key_release(ord('T'));
+        }
+    }    
+    
+if gamepad_button_check_pressed(0, gp_face1)
+    {
+        if (joy_z = false)
+        {
+            joy_z = true;
+            keyboard_key_press(ord('T'));
+        }
+    }
+    
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if keyboard_check_pressed(vk_tab)
+{
+    global.isGamepad = false;
+    if (instance_exists(obj_chizuru))
+    {
+        global.shottype += 1;
+        
+        if !(instance_exists(obj_chizurucurrentbullet))
+        {
+            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+        }
+    }
+}
+
+
+if gamepad_button_check_released(0, gp_padu)
     {
         if (joy_up = true)
         {
@@ -167,6 +265,26 @@ if gamepad_button_check(0, gp_padl)
             keyboard_key_press(vk_left);
         }
     }
+    
+
+if gamepad_button_check_released(0, gp_face1)
+    {
+        if (joy_z = true)
+        {
+            joy_z = false;
+            keyboard_key_release(ord('T'));
+        }
+    }    
+    
+if gamepad_button_check_pressed(0, gp_face1)
+    {
+        if (joy_z = false)
+        {
+            joy_z = true;
+            keyboard_key_press(ord('T'));
+        }
+    }
+    
 
 if gamepad_button_check_released(0, gp_face3)
     {
@@ -304,6 +422,7 @@ if (gamepad_button_check_released(0, gp_shoulderr) &amp;&amp; joy_rb == true)
 if (gamepad_button_check_pressed(0, gp_shoulderr) &amp;&amp; joy_rb == false)
 {
     joy_rb = true;
+    global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
         global.shottype += 1;
@@ -324,6 +443,7 @@ if (gamepad_button_check_released(0, gp_shoulderl) &amp;&amp; joy_lb == true)
 if (gamepad_button_check_pressed(0, gp_shoulderl) &amp;&amp; joy_lb == false)
 {
     joy_lb = true;
+    global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
         global.shottype -= 1;
@@ -344,6 +464,7 @@ if (gamepad_button_value(0, gp_shoulderrb) &lt; 0.7 &amp;&amp; joy_rt == true)
 if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; joy_rt == false)
 {
     joy_rt = true;
+    global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
         script_execute(scr_chizurushoot);
@@ -354,6 +475,7 @@ if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; joy_rt == false)
 if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; global.chizurushotcooldown == 0 &amp;&amp; global.shottype == 3)
 {
     joy_rt = true;
+    global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
         script_execute(scr_chizurushoot);
@@ -364,13 +486,16 @@ if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; global.chizurusho
 if (gamepad_button_value(0, gp_shoulderlb) &lt; 0.7 &amp;&amp; joy_lt == true)
 {
     joy_lt = false;
+    spinning = false;
 }
     
 if (gamepad_button_value(0, gp_shoulderlb) &gt; 0.7 &amp;&amp; joy_lt == false)
 {
     joy_lt = true;
+    global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
+        spinning = true;
         script_execute(scr_chizuruspecial);
     }
     
@@ -382,6 +507,7 @@ if (gamepad_button_value(0, gp_shoulderlb) &gt; 0.7 &amp;&amp; joy_lt == false)
 if (gamepad_button_check_released(0, gp_face3) &amp;&amp; joy_x == true)
 {
     joy_x = false;
+    global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
         script_execute(scr_chizurushine);
@@ -397,150 +523,1407 @@ if (gamepad_button_check(0, gp_face3))
     }
 }    
 
+/////////////////////////MOVEMENT////////////////////////////
 
-
-      
-if (gamepad_axis_value(0, gp_axislh) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislh) &gt; -0.1 &amp;&amp; dpad = 0)
+if (gamepad_axis_value(0, gp_axislh) &gt; 0.02 || gamepad_axis_value(0, gp_axislh) &lt; -0.02) 
 {
-    global.chizurumovex = 0;
+    global.isGamepad = true;
+}
 
-    /*
-    if (joy_right = true)
-    {
-        joy_right = false;
-        keyboard_key_release(vk_right);
-    }    
-    if (joy_left = true)
-    {
-        joy_left = false;
-        keyboard_key_release(vk_left);
-    }
-    */
-}   
-else
+if (global.isGamepad == true)
 {
-    if gamepad_axis_value(0, gp_axislh) &gt; 0.1
+
+    if (gamepad_axis_value(0, gp_axislh) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislh) &gt; -0.1 &amp;&amp; dpad = 0)
     {
-        global.chizurumovex = gamepad_axis_value(0, gp_axislh);
+        global.chizurumovex = 0;
+        
         /*
-        if (joy_right = false)
-        {
-            joy_right = true;
-            keyboard_key_press(vk_right);
-        }  
-        if (joy_left = true)
-        {
-            joy_left = false;
-            keyboard_key_release(vk_left);
-        }    
-        */
-    }
-    
-    if gamepad_axis_value(0, gp_axislh) &lt; -0.1
-    {
-        global.chizurumovex = gamepad_axis_value(0, gp_axislh);
-        /*
-        if (joy_left = false)
-        {
-            joy_left = true;
-            keyboard_key_press(vk_left);
-        }    
         if (joy_right = true)
         {
             joy_right = false;
             keyboard_key_release(vk_right);
-        } 
+        }    
+        if (joy_left = true)
+        {
+            joy_left = false;
+            keyboard_key_release(vk_left);
+        }
+        */
+    }   
+    else
+    {
+        if gamepad_axis_value(0, gp_axislh) &gt; 0.1
+        {
+            global.chizurumovex = gamepad_axis_value(0, gp_axislh);
+            global.isGamepad = true;
+            /*
+            if (joy_right = false)
+            {
+                joy_right = true;
+                keyboard_key_press(vk_right);
+            }  
+            if (joy_left = true)
+            {
+                joy_left = false;
+                keyboard_key_release(vk_left);
+            }    
+            */
+        }
+        
+        if gamepad_axis_value(0, gp_axislh) &lt; -0.1
+        {
+            global.chizurumovex = gamepad_axis_value(0, gp_axislh);
+            global.isGamepad = true;
+            /*
+            if (joy_left = false)
+            {
+                joy_left = true;
+                keyboard_key_press(vk_left);
+            }    
+            if (joy_right = true)
+            {
+                joy_right = false;
+                keyboard_key_release(vk_right);
+            } 
+            */
+        }
+    } 
+        
+    if (gamepad_axis_value(0, gp_axislv) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislv) &gt; -0.1 &amp;&amp; dpad = 0)
+    {
+        global.chizurumovey = 0;
+        /*
+        if (joy_up = true)
+        {
+            joy_up = false;
+            keyboard_key_release(vk_up);
+        }    
+        if (joy_down = true)
+        {
+            joy_down = false;
+            keyboard_key_release(vk_down);
+        }
         */
     }
-} 
     
-if (gamepad_axis_value(0, gp_axislv) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislv) &gt; -0.1 &amp;&amp; dpad = 0)
-{
-    global.chizurumovey = 0;
-    /*
-    if (joy_up = true)
+    if gamepad_axis_value(0, gp_axislv) &lt; -0.1
     {
-        joy_up = false;
-        keyboard_key_release(vk_up);
-    }    
-    if (joy_down = true)
-    {
-        joy_down = false;
-        keyboard_key_release(vk_down);
+        global.chizurumovey = gamepad_axis_value(0, gp_axislv);
+        global.isGamepad = true;
+        /*
+        if (joy_up = false)
+        {
+            joy_up = true;
+            keyboard_key_press(vk_up);
+        }    
+        if (joy_down = true)
+        {
+            joy_down = false;
+            keyboard_key_release(vk_down);
+        }
+        */
     }
-    */
-}
-
-if gamepad_axis_value(0, gp_axislv) &lt; -0.1
-{
-    global.chizurumovey = gamepad_axis_value(0, gp_axislv);
-    /*
-    if (joy_up = false)
-    {
-        joy_up = true;
-        keyboard_key_press(vk_up);
-    }    
-    if (joy_down = true)
-    {
-        joy_down = false;
-        keyboard_key_release(vk_down);
-    }
-    */
-}
-
-if gamepad_axis_value(0, gp_axislv) &gt; 0.1
-{
-    global.chizurumovey = gamepad_axis_value(0, gp_axislv);
-    /*
-    if (joy_down = false)
-    {
-        joy_down = true;
-        keyboard_key_press(vk_down);
-    }    
-    if (joy_up = true)
-    {
-        joy_up = false;
-        keyboard_key_release(vk_up);
-    }    
-    */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if (gamepad_axis_value(0, gp_axisrh) &lt; 0.02 &amp;&amp; gamepad_axis_value(0, gp_axisrh) &gt; -0.02 &amp;&amp; dpad = 0)
-{
-    global.chizuruaimx = 0;
-}   
-else
-{
-    if (gamepad_axis_value(0, gp_axisrh) &gt; 0.02 || gamepad_axis_value(0, gp_axisrh) &lt; -0.02) 
-    {
-        global.chizuruaimx = gamepad_axis_value(0, gp_axisrh);
-    }
-} 
     
-if (gamepad_axis_value(0, gp_axisrv) &lt; 0.02 &amp;&amp; gamepad_axis_value(0, gp_axisrv) &gt; -0.02 &amp;&amp; dpad = 0)
+    if gamepad_axis_value(0, gp_axislv) &gt; 0.1
+    {
+        global.chizurumovey = gamepad_axis_value(0, gp_axislv);
+        global.isGamepad = true;
+        /*
+        if (joy_down = false)
+        {
+            joy_down = true;
+            keyboard_key_press(vk_down);
+        }    
+        if (joy_up = true)
+        {
+            joy_up = false;
+            keyboard_key_release(vk_up);
+        }    
+        */
+    }
+
+
+
+}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+if (gamepad_axis_value(0, gp_axisrh) &gt; 0.02 || gamepad_axis_value(0, gp_axisrh) &lt; -0.02) 
 {
-    global.chizuruaimy = 0;
+    global.isGamepad = true;
 }
 
-if (gamepad_axis_value(0, gp_axisrv) &lt; -0.02 || gamepad_axis_value(0, gp_axisrv) &gt; 0.02)
+if (global.isGamepad == true)
 {
-    global.chizuruaimy = gamepad_axis_value(0, gp_axisrv);
+    if (gamepad_axis_value(0, gp_axisrh) &lt; 0.02 &amp;&amp; gamepad_axis_value(0, gp_axisrh) &gt; -0.02 &amp;&amp; dpad = 0)
+    {
+        global.chizuruaimx = 0;
+    }   
+    else
+    {
+        if (gamepad_axis_value(0, gp_axisrh) &gt; 0.02 || gamepad_axis_value(0, gp_axisrh) &lt; -0.02) 
+        {
+            global.chizuruaimx = gamepad_axis_value(0, gp_axisrh);
+        }
+    } 
+        
+    if (gamepad_axis_value(0, gp_axisrv) &lt; 0.02 &amp;&amp; gamepad_axis_value(0, gp_axisrv) &gt; -0.02 &amp;&amp; dpad = 0)
+    {
+        global.chizuruaimy = 0;
+    }
+    
+    if (gamepad_axis_value(0, gp_axisrv) &lt; -0.02 || gamepad_axis_value(0, gp_axisrv) &gt; 0.02)
+    {
+        global.chizuruaimy = gamepad_axis_value(0, gp_axisrv);
+    }
 }
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="87">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovey = -1;
+
+global.isGamepad = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="83">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovey = 1;
+
+global.isGamepad = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="68">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovex = 1;
+
+global.isGamepad = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="65">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovex = -1;
+
+global.isGamepad = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="61">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.isGamepad = false;
+if (instance_exists(obj_chizuru))
+{
+    global.shottype -= 1;
+        
+    if !(instance_exists(obj_chizurucurrentbullet))
+    {
+        var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="60">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.isGamepad = false;
+if (instance_exists(obj_chizuru))
+{
+    global.shottype += 1;
+        
+    if !(instance_exists(obj_chizurucurrentbullet))
+    {
+        var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="58">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spinning = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="57">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.isGamepad = false;
+if (instance_exists(obj_chizuru))
+{
+    script_execute(scr_chizurushine);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="56">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (leftClick  == true)
+{
+    leftClick  = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="55">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.isGamepad = false;
+spinning = true;
+if (instance_exists(obj_chizuru))
+{
+    script_execute(scr_chizuruspecial);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="51">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (instance_exists(obj_chizuru))
+{
+    global.chizurushinecharge += 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="50">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (leftClick == false)
+{
+    leftClick = true;
+    if (instance_exists(obj_chizuru))
+    {
+        script_execute(scr_chizurushoot);
+    }
+    
+}    
+
+if (global.chizurushotcooldown == 0 &amp;&amp; global.shottype == 3)
+{
+    leftClick = true;
+    if (instance_exists(obj_chizuru))
+    {
+        script_execute(scr_chizurushoot);
+    }
+}
+
+global.isGamepad = false;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="70">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.isGamepad = false;
+spinning = true;
+if (instance_exists(obj_chizuru))
+{
+    script_execute(scr_chizuruspecial);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="87">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovey = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="83">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovey = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="70">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spinning = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="68">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovex = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="65">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.isCutscene</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.chizurumovex = 0;
 </string>
           </argument>
         </arguments>

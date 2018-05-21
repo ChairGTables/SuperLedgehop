@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9998</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y = view_yview;
+            <string>y = view_yview+40;
 hspeed = 15;
 image_speed = 0;
 
@@ -57,7 +57,7 @@ curiousSprite = spr_chizurucurious;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y = view_yview;
+            <string>y = view_yview+40;
 if (x &gt; view_xview-30)
 {
     hspeed = 0;

@@ -38,19 +38,25 @@ hurtSprite = "spr_spreadmovehurt_sonii";
 sS = sprite_index;
 hS = asset_get_index(hurtSprite);
 
+//Set hurt sounds
+hurtSoundOne = snd_hurt3;
+hurtSoundTwo = snd_hurt4;
+deathSound = snd_death6;
+
 //Define the knockback and hitstun
 bulletKnockback = 5;
 shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.wholeSec;    // whole note
-moveBeat = global.halfSec; // half note
+shootBeat = global.quarterSec;    // whole note
+moveBeat = global.quarterSec; // half note
+shootRestBeat = global.wholeSec * 5;
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
-shotsBeforeRest = 0;
-shootRestTime = 150;
+shotsBeforeRest = 3;
+shootRestTime = 0;
 action = 1;
 
 //Do not touch these
@@ -255,35 +261,56 @@ script_execute(scr_enemycorestep);
 
 shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
+shootRestTime -= delta_time/100000;
 
 script_execute(scr_resyncenemies_david);
 
+if (global.resyncing)
+{
+    shootRestTime = global.currentWholeSec * 5;
+}
+
 if (shootTimer &lt;= 0)
 {
+    //done only if shootresttime &lt;= 0
+    
+    if( shootRestTime &lt;= 0 )
+    {
     // ======== SHOOTING ====================
     //Reset timer
     shootTimer = shootBeat;
     
     //Perform shooting
-    if (action == 1)
-    {
-        //This code segment shoots a huge surrounding circle
-        audio_play_sound (snd_enemybullet, 10, false); 
-        anglePerShot = 29;
-        for (i = 0; i &lt; 87 / anglePerShot; i++)
+        if (action == 1)
         {
-            var shot = instance_create(x, y, obj_spread_sonii);
-            if (instance_exists(shot))
+        //This code segment shoots a huge surrounding circle
+            audio_play_sound (snd_enemybullet, 10, false); 
+            anglePerShot = 29;
+            for (i = 0; i &lt; 87 / anglePerShot; i++)
             {
-                shot.direction = (i * anglePerShot)  + point_direction(x,y,obj_chizuru.x,obj_chizuru.y) - 29;
-                shot.speed = 3;
+                var shot = instance_create(x, y, obj_spread_sonii);
+                if (instance_exists(shot))
+                {
+                    shot.direction = (i * anglePerShot)  + point_direction(x,y,obj_chizuru.x,obj_chizuru.y) - 29;
+                    shot.speed = 3;
+                }
             }
         }
-    }
     
     // Beat indicator
-    var beatIndicator = instance_create(x, y, obj_beatindicator_david);
-    beatIndicator.image_speed = shootBeat;
+        var beatIndicator = instance_create(x, y, obj_beatindicator_david);
+        beatIndicator.image_speed = shootBeat;
+        
+        shotCount += 1;
+    
+        if( shotCount &gt;= shotsBeforeRest )
+        {
+            shootRestTime = shootRestBeat;
+            shotCount = 0;
+        }
+    
+    }
+    
 }
 // ======================================================
 
@@ -329,8 +356,7 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
-    instance_create(x, y, obj_explosion);
-    instance_destroy(self);
+    script_execute(scr_enemydeath);
 }
 </string>
           </argument>

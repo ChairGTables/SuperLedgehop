@@ -37,6 +37,11 @@ image_speed = 0.2;
 //You must define the hurt sprite as a string
 hurtSprite = "spr_titohurt";
 
+
+// Hurt Sounds
+hurtSoundOne = snd_silence;
+hurtSoundTwo = snd_silence;
+
 //Do not touch this
 sS = sprite_index;
 hS = asset_get_index(hurtSprite);
@@ -643,7 +648,10 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1)
 {
-    instance_create(x, y, obj_explosion);
+    audio_stop_sound(snd_bosstheme);
+    //audio_play_sound_on (global.voiceEmitter, snd_lizdeath, false, 10); 
+    var death = instance_create(x, y, obj_bossdeath);
+    death.sprite_index = spr_titohurt;
     instance_destroy(self);
 }
 </string>

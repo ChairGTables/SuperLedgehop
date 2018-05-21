@@ -31,6 +31,8 @@ fading = 0;
 
 alarm[0] = 30;
 alarm[1] = 1;
+
+visible = 0;
 </string>
           </argument>
         </arguments>
@@ -53,10 +55,16 @@ alarm[1] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (damage &lt; 1)
+            <string>if (damage &lt; 1 &amp;&amp; damage &gt; -500)
 {
     damage = 1;
 }
+if (damage == -900)
+{
+    damage = 0;
+}
+
+visible = 1;
 </string>
           </argument>
         </arguments>
