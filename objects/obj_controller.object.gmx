@@ -98,6 +98,35 @@ for (i = 0; i &lt; 100; i++)
     global.keyID[i] = 0;
 }
 global.keyIndex = 0;
+
+
+
+alarm[5] = 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.secondsPassed += 1;
+
+alarm[5] = room_speed;
 </string>
           </argument>
         </arguments>
@@ -193,6 +222,40 @@ if (global.enhancedcount &gt; 100)
 {
     global.enhancedcount = 100;
 }
+
+
+
+if (global.bossone &lt; 0)
+{
+    global.bossone = 0;
+}
+if (global.bosstwo &lt; 0)
+{
+    global.bosstwo = 0;
+}
+if (global.bossthree &lt; 0)
+{
+    global.bossthree = 0;
+}
+
+
+if (global.chizurushine &lt; 99)
+{
+    global.chizurushine += 0.3;
+}
+if (global.chizurushine &gt; 99)
+{
+    global.chizurushine = 99;
+}
+
+if (global.chizurump &lt; 99)
+{
+    global.chizurump += 0.1;
+}
+if (global.chizurump &gt; 99)
+{
+    global.chizurump = 99;
+}
 </string>
           </argument>
         </arguments>
@@ -213,7 +276,17 @@ if (global.enhancedcount &gt; 100)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Draw scripts
+            <string>if (global.chizuruhp &lt; 1)
+{
+    if (!instance_exists(obj_wowyoudied))
+    {
+        instance_create(obj_chizuru.x, obj_chizuru.y, obj_explosion);
+        instance_create(0, 0, obj_wowyoudied);
+    }
+}
+
+
+//Draw scripts
 xAmmo = view_xview+15;
 yAmmo = view_yview+434;
 
@@ -230,30 +303,95 @@ myHeight = 4;
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>404</id>
+        <kind>0</kind>
         <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_number</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Draw scripts
-xAmmo = view_xview+15;
-yAmmo = view_yview+434;
-
-xMain = view_xview+15;
-yMain = view_yview+455;
-
-myWidth = 100;
-myHeight = 4;
-</string>
+            <kind>10</kind>
+            <object>obj_survivalmode</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>fnt_combo</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>Time: </string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_xview+20</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_yview+20</string>
           </argument>
         </arguments>
       </action>
@@ -273,7 +411,7 @@ myHeight = 4;
         <arguments>
           <argument>
             <kind>13</kind>
-            <string>16382457</string>
+            <string>16316664</string>
           </argument>
         </arguments>
       </action>
@@ -293,43 +431,58 @@ myHeight = 4;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>global.chizurumovex</string>
+            <string>global.secondsPassed</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>300</string>
+            <string>view_xview+ 150</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>50</string>
+            <string>view_yview + 20</string>
           </argument>
         </arguments>
       </action>
       <action>
         <libid>1</libid>
-        <id>613</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_variable</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>global.chizurumovey</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>300</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
+            <kind>1</kind>
+            <string>//Draw scripts
+xAmmo = view_xview+15;
+yAmmo = view_yview+434;
+
+xMain = view_xview+15;
+yMain = view_yview+455;
+
+myWidth = 100;
+myHeight = 4;
+</string>
           </argument>
         </arguments>
       </action>
@@ -408,11 +561,214 @@ myHeight = 4;
         draw_sprite(spr_bosshud, 0, view_xview+440, yMain);
         draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
     }
+    if (instance_exists(obj_liz))
+    {
+        draw_sprite(spr_bosshud, 1, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+    }
+    if (instance_exists(obj_moose) &amp;&amp; instance_exists(obj_kamuronpc1))
+    {
+        draw_sprite(spr_bosshud, 2, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+    }
 }
 
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="120">
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_testtrack_david</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_chillevent</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_hypeevent</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_coolevent</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_bosstheme</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>224</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_another_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>11</kind>
+            <room>rm_title</room>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="114">
+      <action>
+        <libid>1</libid>
+        <id>221</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_previous_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="113">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="112">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_sound(snd_bosstheme);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>223</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_current_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

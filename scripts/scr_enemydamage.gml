@@ -26,6 +26,20 @@ if (other.timed == 1)
     sprite_index = asset_get_index(hurtSprite);
     image_index = 0;
     alarm[11] = hitstunTime;
+    
+    if (random_range(0,100) < 10)
+    {
+        audio_stop_sound(hurtSoundOne);
+        audio_stop_sound(hurtSoundTwo);
+        audio_play_sound_on (global.voiceEmitter, hurtSoundOne, false, 10); 
+    }
+    else if (random_range(0,100) > 90)
+    {
+        audio_stop_sound(hurtSoundOne);
+        audio_stop_sound(hurtSoundTwo);
+        audio_play_sound_on (global.voiceEmitter, hurtSoundTwo, false, 10); 
+    }
+    
     if (other.hspeed > 0)
     {
         rightmomentum = abs((other.hspeed / other.speed)) * bulletKnockback;

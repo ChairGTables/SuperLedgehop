@@ -38,6 +38,11 @@ hurtSprite = "spr_roundcannonhurt";
 sS = sprite_index;
 hS = asset_get_index(hurtSprite);
 
+//Set hurt sounds
+hurtSoundOne = snd_silence;
+hurtSoundTwo = snd_silence;
+deathSound = snd_silence;
+
 //Define the knockback and hitstun
 bulletKnockback = 5;
 shineKnockback = 7;
@@ -274,6 +279,8 @@ if (shootTimer &lt;= 0)
     if (action == 1)
     {   
         //This code segment shoots a huge surrounding circle
+        audio_stop_sound (snd_enemybullet);
+        audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
         var shot = instance_create(x, y, obj_enemyenhancedbullet);
         shot.direction = 0;
         shot.speed = 15;
@@ -292,8 +299,7 @@ if (shootTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
-    instance_create(x, y, obj_explosion);
-    instance_destroy(self);
+    script_execute(scr_enemydeath);
 }
 </string>
           </argument>

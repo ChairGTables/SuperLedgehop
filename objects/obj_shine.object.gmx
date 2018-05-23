@@ -29,7 +29,7 @@
 destroyable = 0;
 vortex = 0;
 absorb = 0;
-timed = 0;
+timed = 1;
 
 image_speed = 0;
 
@@ -46,7 +46,7 @@ else
 image_xscale = 1;
 image_yscale = 1;
 
-if (instance_exists(obj_chizuru))
+if (instance_exists(obj_chizuru) &amp;&amp; global.shineget == 1)
 {
     x = obj_chizuru.x;
     y = obj_chizuru.y;
@@ -114,7 +114,7 @@ else
     image_index = 1;
 }
 
-if (instance_exists(obj_chizuru))
+if (instance_exists(obj_chizuru) &amp;&amp; global.shineget == 1)
 {
     x = obj_chizuru.x;
     y = obj_chizuru.y;
