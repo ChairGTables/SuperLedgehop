@@ -51,18 +51,58 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Get current position of the track
+            <string>//// DO NOT USE global.bpmToSec ////
+/*
+global.bpmToSec = global.bpm / 60;
+*/
+global.bpmToSec = ( 60 / global.bpm ) * 4;
+////////////////////
+
+// Resync variables
+global.currentWholeSec = 0;
+global.currentHalfSec = 0;
+global.currentQuarterSec = 0;
+global.currentEighthSec = 0;
+
+// Variables for objects to use (when not resyncing)
+
+/*
+global.wholeSec = global.bpmToSec;
+global.halfSec = global.bpmToSec / 2;
+global.quarterSec = global.bpmToSec / 4;
+global.eighthSec = global.bpmToSec / 8;
+*/
+
+/*
+global.quarterSec = 60 / global.bpm; // &lt;- THIS ONE FIRST!
+global.wholeSec = global.quarterSec * 4; // Also duration of a measure
+global.halfSec = global.quarterSec * 2;
+global.eighthSec = global.quarterSec / 2;
+*/
+
+global.chizuruShootBeat = global.quarterSec;
+global.chizuruShootTimer = global.chizuruShootBeat;
+global.chizuruMoveBeat = global.quarterSec;
+global.chizuruMoveTimer = global.chizuruMoveBeat;
+global.chizuruShootRest = 0;
+
+// Resync toggle
+global.resyncing = false; // When true all objects will resync
+
+//////////////////////////////////////
+
+// Get current position of the track
 currentPos = audio_sound_get_track_position(global.musicrm1);
 
 // Calculate current tempo position
 global.currentWholeSec   =  global.wholeSec -
-    (((currentPos * 100) % (global.bpmToSec * 100))     / 100);
+    (((currentPos * 100) % (global.wholeSec * 100))     / 100);
 global.currentHalfSec    =  global.halfSec -
-    (((currentPos * 100) % (global.bpmToSec * 100 / 2)) / 100);
+    (((currentPos * 100) % (global.wholeSec * 100 / 2)) / 100);
 global.currentQuarterSec =  global.quarterSec -
-    (((currentPos * 100) % (global.bpmToSec * 100 / 4)) / 100);
+    (((currentPos * 100) % (global.wholeSec * 100 / 4)) / 100);
 global.currentEighthSec =  global.eighthSec -
-    (((currentPos * 100) % (global.bpmToSec * 100 / 8)) / 100);
+    (((currentPos * 100) % (global.wholeSec * 100 / 8)) / 100);
 
 // Resync every 30 seconds
 alarm[0] = 20 * room_speed;

@@ -29,7 +29,7 @@
 image_speed = 0;
 
 //Set the frame for the time it activates and deactivates
-activateBeat = global.bpmToSec / 4;    // whole note
+activateBeat = global.quarterSec;    // whole note
 
 
 //Keep note that you need to have damage, destroyable, and absorbed

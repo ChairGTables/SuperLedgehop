@@ -54,8 +54,8 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.bpmToSec;    // whole note
-moveBeat = global.bpmToSec / 4; // half note
+shootBeat = global.wholeSec;    // whole note
+moveBeat = global.quarterSec; // quarter note
 
 //Original beats
 originalShootBeat = shootBeat;

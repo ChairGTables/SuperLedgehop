@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>// Variables
-tempoBeat = global.bpmToSec / 4; // Extra points during quarter note
+tempoBeat = global.quarterSec; // Extra points during quarter note
 extraDamage = false;             // Make true during quarter notes
 tempoTimer = tempoBeat;          // Set timer
 </string>

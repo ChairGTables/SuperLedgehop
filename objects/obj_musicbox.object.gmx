@@ -29,7 +29,7 @@
 image_speed = 0;
 
 //Set the frame for the time it activates and deactivates
-shootBeat = global.bpmToSec / 4;    // whole note
+shootBeat = global.quarterSec;    // whole note
 
 hurtSprite = "spr_musicboxhurt";
 //Keep note that you need to have damage, destroyable, and absorbed

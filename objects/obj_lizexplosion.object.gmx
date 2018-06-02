@@ -63,8 +63,8 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.bpmToSec;    // whole note
-moveBeat = global.bpmToSec / 2; // half note
+shootBeat = global.wholeSec;    // whole note
+moveBeat = global.halfSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;

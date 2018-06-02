@@ -256,6 +256,7 @@ global.messageLimit = 0;
 //////////////////////////
 //Rhythm components
 ////////////////////////////
+/*
 // Initial variables
 global.bpm = 120;
 global.bpmToSec = global.bpm / 60;
@@ -276,6 +277,32 @@ global.chizuruShootBeat = global.quarterSec;
 global.chizuruShootTimer = global.chizuruShootBeat;
 global.chizuruMoveBeat = global.quarterSec;
 global.chizuruMoveTimer = global.chizuruMoveBeat;
+global.chizuruShootRest = 0;
+
+// Resync toggle
+global.resyncing = false; // When true all objects will resync
+*/
+
+// Initial variables
+global.bpm = 0;
+global.bpmToSec = 0;
+
+// Resync variables
+global.currentWholeSec = 0;
+global.currentHalfSec = 0;
+global.currentQuarterSec = 0;
+global.currentEighthSec = 0;
+
+// Variables for objects to use (when not resyncing)
+global.wholeSec = 0;
+global.halfSec = 0;
+global.quarterSec = 0;
+global.eighthSec = 0;
+
+global.chizuruShootBeat = 0;
+global.chizuruShootTimer = 0;
+global.chizuruMoveBeat = 0;
+global.chizuruMoveTimer = 0;
 global.chizuruShootRest = 0;
 
 // Resync toggle

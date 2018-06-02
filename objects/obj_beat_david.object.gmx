@@ -73,15 +73,6 @@ if (beatTimer &lt;= 0)
     image_speed = 1;
     
     // Shoot a tick from each side
-    
-    /*var tickL = instance_create(0, 0, obj_beattick_david);
-    tickL.direction = 0;
-    tickL.speed = 15;
-    
-    var tickR = instance_create(x, y, obj_beattick_david);
-    tickR.direction = 180;
-    tickR.speed = 15;*/
-    
     instance_create(0, y, obj_beattick_david);
     instance_create(view_wview[view_current], y, obj_beattick_david);
 }
