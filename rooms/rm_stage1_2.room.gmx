@@ -51,6 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="obj_rhythmcontroller_david" x="96" y="192" name="inst_F07A522A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controller" x="96" y="32" name="inst_E0109ADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamepad" x="96" y="96" name="inst_70CF5B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_chair" x="256" y="32" name="inst_146D2DA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -58,7 +59,6 @@
     <instance objName="obj_wall" x="-32" y="-64" name="inst_54D3F9AD" locked="0" code="" scaleX="65" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-32" y="0" name="inst_555372D5" locked="0" code="" scaleX="1" scaleY="33" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2016" y="0" name="inst_E25B546B" locked="0" code="" scaleX="5" scaleY="31" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rhythmcontroller_david" x="96" y="192" name="inst_F07A522A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_musiccontroller_david" x="640" y="224" name="inst_4A7B1812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_soundcontroller_david" x="480" y="192" name="inst_A2960B1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-64" y="608" name="inst_34E1C500" locked="0" code="" scaleX="8" scaleY="17" colour="4294967295" rotation="0"/>

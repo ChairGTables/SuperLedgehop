@@ -29,7 +29,7 @@
 image_speed = 0;
 
 //Set the frame for the time it activates and deactivates
-activateBeat = global.bpmToSec / 4;    // whole note
+activateBeat = global.wholeSec;    // whole note
 
 
 mySong = snd_testtrack_david;

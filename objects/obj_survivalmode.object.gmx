@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>audio_stop_sound(snd_testtrack_david);
+audio_stop_sound(snd_bosstheme);
+audio_stop_sound(snd_finalloop);
+audio_stop_sound(snd_yuutotheme);
 // Music in rm1, priority 10, looping
-global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10);
+global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutotheme, true, 10);
 
 spawned = 0;
 maxSpawn = 1;
@@ -47,7 +50,7 @@ global.chizuruhp = 1;
 
 
 //Set the frame for the time it activates and deactivates
-activateBeat = global.bpmToSec / 4;    // whole note
+activateBeat = global.quarterSec;    // whole note
 
 
 //Keep note that you need to have damage, destroyable, and absorbed

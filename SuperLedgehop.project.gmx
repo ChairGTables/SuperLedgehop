@@ -42,16 +42,20 @@
         <sound>sound\snd_hpheal</sound>
       </sounds>
       <sounds name="music">
-        <sound>sound\snd_bosstheme</sound>
-        <sound>sound\snd_titlemusic</sound>
         <sound>sound\snd_bossintro</sound>
-        <sound>sound\snd_winsong</sound>
+        <sound>sound\snd_bosstheme</sound>
         <sound>sound\snd_chillevent</sound>
         <sound>sound\snd_comedyevent</sound>
         <sound>sound\snd_coolevent</sound>
-        <sound>sound\snd_hypeevent</sound>
+        <sound>sound\snd_finalbossintro</sound>
+        <sound>sound\snd_finalbosstheme</sound>
         <sound>sound\snd_finalloop</sound>
         <sound>sound\snd_gutsman</sound>
+        <sound>sound\snd_hypeevent</sound>
+        <sound>sound\snd_titlemusic</sound>
+        <sound>sound\snd_winsong</sound>
+        <sound>sound\snd_yuutointro</sound>
+        <sound>sound\snd_yuutotheme</sound>
       </sounds>
       <sounds name="tito">
         <sound>sound\snd_titohey</sound>
@@ -438,26 +442,26 @@
         <object>objects\obj_circleeraser</object>
       </objects>
       <objects name="functionality">
-        <object>objects\obj_title</object>
-        <object>objects\obj_controller</object>
-        <object>objects\obj_camera_chair</object>
-        <object>objects\obj_gamepad</object>
-        <object>objects\obj_bossmusic</object>
-        <object>objects\obj_titleselection</object>
-        <object>objects\obj_nextroom</object>
-        <object>objects\obj_titlecamera</object>
-        <object>objects\obj_keyeraser</object>
-        <object>objects\obj_protagonisttalk</object>
         <object>objects\obj_antagonisttalk</object>
-        <object>objects\obj_dialoguetest</object>
-        <object>objects\obj_controlscheme</object>
+        <object>objects\obj_bossmusic</object>
+        <object>objects\obj_camera_chair</object>
         <object>objects\obj_caution</object>
+        <object>objects\obj_controller</object>
+        <object>objects\obj_controlscheme</object>
+        <object>objects\obj_dialoguetest</object>
+        <object>objects\obj_gamepad</object>
+        <object>objects\obj_keyeraser</object>
         <object>objects\obj_musictransition</object>
-        <object>objects\obj_survivalmode</object>
-        <object>objects\obj_wowyoudied</object>
+        <object>objects\obj_nextroom</object>
+        <object>objects\obj_protagonisttalk</object>
         <object>objects\obj_stage1</object>
         <object>objects\obj_stage2</object>
         <object>objects\obj_survivalmenu</object>
+        <object>objects\obj_survivalmode</object>
+        <object>objects\obj_title</object>
+        <object>objects\obj_titlecamera</object>
+        <object>objects\obj_titleselection</object>
+        <object>objects\obj_wowyoudied</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -532,21 +536,21 @@
         <object>objects\obj_grenadespread3_sonii</object>
       </objects>
       <objects name="enemies">
-        <object>objects\obj_boombox_sonii</object>
-        <object>objects\obj_cannonaim_sonii</object>
-        <object>objects\obj_squaremover_sonii</object>
-        <object>objects\obj_sidetoside_sonii</object>
-        <object>objects\obj_spreadmove_sonii</object>
-        <object>objects\obj_enemybasic_sonii</object>
         <object>objects\obj_basicenemy2_sonii</object>
         <object>objects\obj_basicenemy3_sonii</object>
-        <object>objects\obj_grenaider_sonii</object>
-        <object>objects\obj_waterhider_sonii</object>
-        <object>objects\obj_spreadcannon_sonii</object>
+        <object>objects\obj_boombox_sonii</object>
         <object>objects\obj_breakablecrate_sonii</object>
-        <object>objects\obj_lazerCannon_sonii</object>
+        <object>objects\obj_cannonaim_sonii</object>
         <object>objects\obj_charger_sonii</object>
+        <object>objects\obj_enemybasic_sonii</object>
+        <object>objects\obj_grenaider_sonii</object>
+        <object>objects\obj_lazerCannon_sonii</object>
         <object>objects\obj_nostop_sonii</object>
+        <object>objects\obj_sidetoside_sonii</object>
+        <object>objects\obj_spreadcannon_sonii</object>
+        <object>objects\obj_spreadmove_sonii</object>
+        <object>objects\obj_squaremover_sonii</object>
+        <object>objects\obj_waterhider_sonii</object>
       </objects>
     </objects>
     <objects name="david">
@@ -558,10 +562,13 @@
       <object>objects\obj_beat_david</object>
       <object>objects\obj_beatindicator_david</object>
       <object>objects\obj_beattick_david</object>
+      <object>objects\obj_finalbossmusic_david</object>
       <object>objects\obj_musiccontroller_david</object>
       <object>objects\obj_rhythmcontroller_david</object>
       <object>objects\obj_sampleobject_david</object>
       <object>objects\obj_soundcontroller_david</object>
+      <object>objects\obj_tempotransition_david</object>
+      <object>objects\obj_yuutothememusic_david</object>
       <objects name="obstacles">
         <object>objects\obj_door_david</object>
         <object>objects\obj_switch_david</object>
@@ -589,10 +596,13 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
+      <room>rooms\rm_120bpm_david</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_sampleroom_chair</room>
+      <room>rooms\rm_140bpm_david</room>
       <room>rooms\room9</room>
+      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_survivalmode</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
