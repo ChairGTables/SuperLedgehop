@@ -28,6 +28,10 @@
             <string>//Set health for enemy
 hp = 20;
 
+//set health drops
+minDrops = 1;
+maxDrops = 5;
+
 //set animation speed
 image_speed = 0.2;
 

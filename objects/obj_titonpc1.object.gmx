@@ -31,6 +31,15 @@ state = 0;
 global.isCutscene = true;
 alarm[0] = 30;
 absorb = 0;
+
+script_execute(scr_releaseinputs);
+
+if (instance_exists(obj_chizuru))
+{
+    obj_chizuru.sprite_index = spr_chizurustanddr;
+    obj_chizuru.image_xscale = -1;
+    obj_chizuru.lookDirection = 1;
+}
 </string>
           </argument>
         </arguments>
@@ -86,6 +95,10 @@ if (state == 2)
     instance_create(x, y, obj_titodialogue1);
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chillevent, true, 10); 
     state = 3;
+    if (instance_exists(obj_moose))
+    {
+        obj_moose.hp = 0;
+    }
 }
 
 if (state == 1)
@@ -143,12 +156,10 @@ if (state == 7 &amp;&amp; instance_number(obj_titodialogue3) == 0)
 
 if (state == 5 &amp;&amp; instance_number(obj_titodialogue2) == 0)
 {
-    instance_create(obj_chizuru.x + 10, obj_chizuru.y, obj_hpup);
-    instance_create(obj_chizuru.x - 10, obj_chizuru.y, obj_mpup);
     instance_create(obj_chizuru.x, obj_chizuru.y, obj_smallcircle);
-    audio_play_sound_on (global.effectsEmitter, snd_hpheal, false, 10); 
+    instance_create(x, y, obj_shinemessage);
     global.shineget = 1;
-    alarm[0] = 60;
+    alarm[0] = 90;
     state = 6;
 }
 
@@ -159,9 +170,33 @@ if (state == 3 &amp;&amp; instance_number(obj_titodialogue1) == 0)
     instance_create(obj_chizuru.x, obj_chizuru.y, obj_smallcircle);
     audio_play_sound_on (global.effectsEmitter, snd_hpheal, false, 10); 
     global.chizuruhp = 100;
+    global.chizurump = 100;
     alarm[0] = 40;
     state = 4;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="51">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_pretitoskip);
 </string>
           </argument>
         </arguments>
@@ -185,6 +220,52 @@ if (state == 3 &amp;&amp; instance_number(obj_titodialogue1) == 0)
           <argument>
             <kind>1</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="16">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_pretitoskip);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_pretitoskip);
+</string>
           </argument>
         </arguments>
       </action>

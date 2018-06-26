@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Set health for enemy
+            <string>myWall = instance_create(x, y, obj_wall);
+
+//Set health for enemy
 hp = 20;
 
 //set animation speed
@@ -67,7 +69,32 @@ downmomentum = 0;
 //Begin the alarms based on the beats
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
+
+
+
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -254,7 +281,7 @@ if (action == 1)
 // Scroll all the way down for changeable features
 /////////////////////////
 
-script_execute(scr_enemycorestep);
+//script_execute(scr_enemycorestep);
 
 
 ////////////////////////////
@@ -275,20 +302,6 @@ if (shootTimer &lt;= 0)
     // Reset timer
     shootTimer = shootBeat;
     
-    //Perform shooting
-    if (action == 1)
-    {   
-        //This code segment shoots a huge surrounding circle
-        audio_stop_sound (snd_enemybullet);
-        audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
-        var shot = instance_create(x, y, obj_enemyenhancedbullet);
-        shot.direction = 0;
-        shot.speed = 15;
-    }
-    
-    // Create beat indicator
-    var beatIndicator = instance_create(x, y, obj_beatindicator_david);
-    beatIndicator.image_speed = shootBeat;
 }
 // ===============================================
 
@@ -300,6 +313,7 @@ if (shootTimer &lt;= 0)
 if (hp &lt; 1)
 {
     instance_create(x, y, obj_explosion);
+    instance_destroy(myWall);
     instance_destroy(self);
 }
 </string>

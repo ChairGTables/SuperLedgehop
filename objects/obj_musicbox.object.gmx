@@ -28,6 +28,10 @@
             <string>//Turn off animation speed because sprite changes with timer
 image_speed = 0;
 
+//set health drops
+minDrops = 3;
+maxDrops = 5;
+
 //Set the frame for the time it activates and deactivates
 shootBeat = global.quarterSec;    // whole note
 
@@ -281,7 +285,7 @@ shootTimer  -= delta_time / 1000000;
 script_execute(scr_resyncenemies_david);
 
 firstBoolCheck = global.chizuruShootRest &lt; global.chizuruShootBeat - global.chizuruShootBeat;
-secondBoolCheck = global.chizuruShootTimer &lt; 0.1 || global.chizuruShootTimer &gt; global.chizuruShootBeat - 0.1;
+secondBoolCheck = audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter &lt; 0.1 || audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter &gt; 0.4;
 
 if (firstBoolCheck &amp;&amp; secondBoolCheck)
 {

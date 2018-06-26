@@ -254,7 +254,7 @@ instance_destroy(self);
     {
         damage = 40;
     }
-    if (global.chizuruhp &lt; 41 &amp;&amp; !instance_exists(obj_titonpc1))
+    if (global.chizuruhp &lt; 41 &amp;&amp; !instance_exists(obj_titonpc1) &amp;&amp; global.shineget == 0)
     {
         friendly = 1;
         vspeed = -vspeed * 2;

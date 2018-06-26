@@ -1,0 +1,13 @@
+keyboard_key_release(ord('Z'));
+keyboard_key_release(ord('X'));
+keyboard_key_release(ord('C'));
+keyboard_key_release(ord('A'));
+keyboard_key_release(vk_escape);
+keyboard_key_release(ord('P'));
+keyboard_key_release(vk_up);
+keyboard_key_release(vk_down);
+keyboard_key_release(vk_right);
+keyboard_key_release(vk_left);
+keyboard_key_release(ord('W'));
+keyboard_key_release(ord('S'));
+keyboard_key_release(ord('D'));

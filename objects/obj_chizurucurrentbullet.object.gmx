@@ -106,6 +106,7 @@ if (instance_exists(obj_chizuru))
 nextBullet = global.shottype + 1;
 previousBullet = global.shottype - 1;
 
+//Check boundaries
 if (nextBullet &gt; global.maxshottype)
 {
     nextBullet = 0;
@@ -115,6 +116,52 @@ if (previousBullet &lt; 0)
 {
     previousBullet = global.maxshottype;
 }
+
+//Check if next bullet is empty
+if (nextBullet == 1 &amp;&amp; global.enhancedcount &lt;= 0)
+{
+    nextBullet += 1;
+}
+if (nextBullet == 2 &amp;&amp; global.spreadcount &lt;= 0)
+{
+    nextBullet += 1;
+}
+if (nextBullet == 3 &amp;&amp; global.rapidcount &lt;= 0)
+{
+    nextBullet += 1;
+}
+if (nextBullet == 4 &amp;&amp; global.firecount &lt;= 0)
+{
+    nextBullet += 1;
+}
+if (nextBullet == 5 &amp;&amp; global.icecount &lt;= 0)
+{
+    nextBullet = 0;
+}
+
+//Check if previous bullet is empty
+if (previousBullet == 5 &amp;&amp; global.icecount &lt;= 0)
+{
+    previousBullet -= 1;
+}
+if (previousBullet == 4 &amp;&amp; global.firecount &lt;= 0)
+{
+    previousBullet -= 1;
+}
+if (previousBullet = 3 &amp;&amp; global.rapidcount &lt;= 0)
+{
+    previousBullet -= 1;
+}
+if (previousBullet = 2 &amp;&amp; global.spreadcount &lt;= 0)
+{
+    previousBullet -= 1;
+}
+if (previousBullet = 1 &amp;&amp; global.enhancedcount &lt;= 0)
+{
+    previousBullet = 0;
+}
+
+
 </string>
           </argument>
         </arguments>

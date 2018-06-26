@@ -81,7 +81,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Draw scripts
+            <string>if (!instance_exists(obj_beatinstructions))
+{
+    instance_create(x, y, obj_blackfadein);
+}
+
+//Draw scripts
 xAmmo = view_xview+15;
 yAmmo = view_yview+434;
 
@@ -102,6 +107,8 @@ global.keyIndex = 0;
 
 
 alarm[5] = 30;
+
+global.playerQuarter = (60000 / global.bpm) / 1000;
 </string>
           </argument>
         </arguments>
@@ -176,6 +183,71 @@ alarm[5] = room_speed;
 alarm[1] = 2;
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>weaponChanged = false;
+//Change bullets when out
+if (instance_exists(obj_chizuru))
+{
+    for (i = 0; i &lt; 2; i++)
+    {
+        if (global.enhancedcount &lt;= 0 &amp;&amp; global.shottype == 1)
+        {
+            global.shottype = 0;
+            weaponChanged = true;
+        }
+        if (global.spreadcount &lt;= 0 &amp;&amp; global.shottype == 2)
+        {
+            global.shottype = 0;
+            weaponChanged = true;
+        }
+        if (global.rapidcount &lt;= 0 &amp;&amp; global.shottype == 3)
+        {
+            global.shottype = 0;
+            weaponChanged = true;
+        }
+        if (global.firecount &lt;= 0 &amp;&amp; global.shottype == 4)
+        {
+            global.shottype = 0;
+            weaponChanged = true;
+        }
+        if (global.icecount &lt;= 0 &amp;&amp; global.shottype == 5)
+        {
+            global.shottype = 0;
+            weaponChanged = true;
+        }
+    }
+        
+    if (!(instance_exists(obj_chizurucurrentbullet)) &amp;&amp; weaponChanged == true)
+    {
+        var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+    }
+    if (weaponChanged == true)
+    {
+        audio_play_sound_on (global.effectsEmitter, snd_outofammo, false, 10); 
+        instance_create(obj_chizuru.x, obj_chizuru.y + 10, obj_outofammo);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -256,6 +328,13 @@ if (global.chizurump &gt; 99)
 {
     global.chizurump = 99;
 }
+
+if (global.chizuruhp &gt; 99)
+{
+    global.chizuruhp = 99;
+}
+
+
 </string>
           </argument>
         </arguments>
@@ -295,6 +374,14 @@ yMain = view_yview+455;
 
 myWidth = 100;
 myHeight = 4;
+
+
+// Tempo fix
+global.quarterSec = 60 / global.bpm; // &lt;- THIS ONE FIRST!
+global.wholeSec = global.quarterSec * 4; // Also duration of a measure
+global.halfSec = global.quarterSec * 2;
+global.eighthSec = global.quarterSec / 2;
+global.playerQuarter = (60000 / global.bpm) / 1000;
 </string>
           </argument>
         </arguments>
@@ -698,6 +785,29 @@ myHeight = 4;
           <argument>
             <kind>11</kind>
             <room>rm_title</room>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="118">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.shineget = 1;
+</string>
           </argument>
         </arguments>
       </action>

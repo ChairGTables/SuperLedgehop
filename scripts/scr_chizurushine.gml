@@ -4,6 +4,7 @@ if (instance_exists(obj_chizuru) && global.chizurushine > 15)
     {
         if (global.chizurushinecharge > 5 && global.chizurushine > 60 && !instance_exists(obj_absorbbubble))
         {
+            instance_create(x, y, obj_healmagnet);
             audio_play_sound_on (global.effectsEmitter, snd_absorbing, false, 10); 
             var shine = instance_create(obj_chizuru.x, obj_chizuru.y, obj_shine);
             shine.absorb = 1;
@@ -12,6 +13,7 @@ if (instance_exists(obj_chizuru) && global.chizurushine > 15)
         }
         else
         {
+            instance_create(x, y, obj_healmagnet);
             var shine = instance_create(obj_chizuru.x, obj_chizuru.y, obj_shine);
             audio_play_sound_on (global.effectsEmitter, snd_reflector, false, 10); 
             shine.absorb = 0;

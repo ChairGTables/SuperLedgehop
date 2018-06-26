@@ -182,6 +182,7 @@ global.destroyed = 0;
 global.secondsPassed = 0;
 global.titleSelection = 0;
 global.shineget = 0;
+global.bossvirgin = 1;
 
 global.chizurumovex = 0;
 global.chizurumovey = 0;
@@ -283,9 +284,15 @@ global.chizuruShootRest = 0;
 global.resyncing = false; // When true all objects will resync
 */
 
+
+
 // Initial variables
 global.bpm = 0;
 global.bpmToSec = 0;
+
+// Player Beats
+global.playerQuarter = (60000 / global.bpm) / 1000;
+
 
 // Resync variables
 global.currentWholeSec = 0;
