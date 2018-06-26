@@ -4,8 +4,9 @@ bulletSpeed = 15;
 
 if (instance_exists(obj_chizuru))
 {
+    secondBoolCheck = audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter < 0.1 || audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter > 0.4;
     firstBoolCheck = global.chizuruShootRest < global.chizuruShootBeat - global.chizuruShootBeat;
-    secondBoolCheck = global.chizuruShootTimer < 0.1 || global.chizuruShootTimer > global.chizuruShootBeat - 0.1;
+    //secondBoolCheck = global.chizuruShootTimer < 0.1 || global.chizuruShootTimer > global.chizuruShootBeat - 0.1;
 
     //Basic
     if (global.shottype == 0)

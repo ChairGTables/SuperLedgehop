@@ -28,15 +28,46 @@
             <string>global.bossone = 434;
 image_speed = 0;
 state = 0;
-global.isCutscene = true;
-alarm[0] = 30;
-alarm[1] = 20;
 
-if (instance_exists(obj_chizuru))
+if (global.bossvirgin == 0)
 {
-    obj_chizuru.sprite_index = spr_chizuruwalku;
-    obj_chizuru.vspeed = -7;
+    alarm[2] = 1;
 }
+else
+{
+    global.isCutscene = true;
+    alarm[0] = 30;
+    alarm[1] = 20;
+    
+    if (instance_exists(obj_chizuru))
+    {
+        obj_chizuru.sprite_index = spr_chizuruwalku;
+        obj_chizuru.vspeed = -7;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_titoskip);
 </string>
           </argument>
         </arguments>
@@ -131,6 +162,29 @@ if (state == 1 &amp;&amp; instance_number(obj_titodialogue4) == 0)
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="54">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_titoskip);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
@@ -149,6 +203,52 @@ if (state == 1 &amp;&amp; instance_number(obj_titodialogue4) == 0)
           <argument>
             <kind>1</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="16">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_titoskip);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_titoskip);
+</string>
           </argument>
         </arguments>
       </action>

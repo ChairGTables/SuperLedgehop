@@ -134,7 +134,10 @@ script_execute(scr_destroywhenoutofview);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(self);
+            <string>if (!instance_exists(obj_yuutorock))
+{    
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

@@ -39,7 +39,10 @@
         <sound>sound\snd_thud</sound>
         <sound>sound\snd_correct</sound>
         <sound>sound\snd_siren</sound>
+        <sound>sound\snd_mpheal</sound>
         <sound>sound\snd_hpheal</sound>
+        <sound>sound\snd_outofammo</sound>
+        <sound>sound\snd_itemget</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -56,11 +59,12 @@
         <sound>sound\snd_winsong</sound>
         <sound>sound\snd_yuutointro</sound>
         <sound>sound\snd_yuutotheme</sound>
-      </sounds>
-      <sounds name="tito">
-        <sound>sound\snd_titohey</sound>
-        <sound>sound\snd_titowave</sound>
-        <sound>sound\snd_titorice</sound>
+        <sound>sound\snd_stagetwo</sound>
+        <sounds name="tito">
+          <sound>sound\snd_titohey</sound>
+          <sound>sound\snd_titowave</sound>
+          <sound>sound\snd_titorice</sound>
+        </sounds>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -116,6 +120,14 @@
         <sound>sound\snd_lizgiggle</sound>
         <sound>sound\snd_lizvulcano</sound>
         <sound>sound\snd_lizdeath</sound>
+      </sounds>
+      <sounds name="yuuto">
+        <sound>sound\snd_yuutoyeah</sound>
+        <sound>sound\snd_yuutothere</sound>
+        <sound>sound\snd_yuutoastro</sound>
+        <sound>sound\snd_yuutokyah</sound>
+        <sound>sound\snd_yuutogah</sound>
+        <sound>sound\snd_yuutodeviation</sound>
       </sounds>
     </sounds>
     <sounds name="sonii">
@@ -181,6 +193,7 @@
         <sprite>sprites\spr_absorbbubble</sprite>
         <sprite>sprites\spr_absorbparticle</sprite>
         <sprite>sprites\spr_smolhitbox</sprite>
+        <sprite>sprites\spr_healmagnet</sprite>
       </sprites>
       <sprites name="effects">
         <sprite>sprites\spr_smallcircle</sprite>
@@ -193,10 +206,16 @@
         <sprite>sprites\spr_musicnote</sprite>
         <sprite>sprites\spr_hitsweat</sprite>
         <sprite>sprites\spr_bigwhite</sprite>
+        <sprite>sprites\spr_bigblack</sprite>
         <sprite>sprites\spr_siopaoexplosion</sprite>
         <sprite>sprites\spr_chaptercomplete</sprite>
         <sprite>sprites\spr_hpup</sprite>
         <sprite>sprites\spr_mpup</sprite>
+        <sprite>sprites\spr_absorbinstruction</sprite>
+        <sprite>sprites\spr_beatinstruction</sprite>
+        <sprite>sprites\spr_outofammo</sprite>
+        <sprite>sprites\spr_cutsceneskip</sprite>
+        <sprite>sprites\spr_shinemessage</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -214,6 +233,40 @@
         <sprite>sprites\spr_stage2</sprite>
         <sprite>sprites\spr_survivalmenu</sprite>
         <sprite>sprites\sprite142</sprite>
+        <sprite>sprites\spr_hporb</sprite>
+        <sprite>sprites\spr_mporb</sprite>
+        <sprite>sprites\spr_caveentrance</sprite>
+        <sprite>sprites\spr_caveshadow</sprite>
+      </sprites>
+      <sprites name="tito">
+        <sprite>sprites\spr_titowalk</sprite>
+        <sprite>sprites\spr_titohurt</sprite>
+        <sprite>sprites\spr_titoshoot</sprite>
+        <sprite>sprites\spr_titoneutral</sprite>
+        <sprite>sprites\spr_titoangry</sprite>
+      </sprites>
+      <sprites name="yuuto">
+        <sprite>sprites\spr_yuutoneutral</sprite>
+        <sprite>sprites\spr_yuutosad</sprite>
+        <sprite>sprites\spr_yuutowalkd</sprite>
+        <sprite>sprites\spr_yuutoshootd</sprite>
+        <sprite>sprites\spr_yuutowalku</sprite>
+        <sprite>sprites\spr_yuutoshootu</sprite>
+        <sprite>sprites\spr_yuutohurt</sprite>
+        <sprite>sprites\spr_yuutorock</sprite>
+        <sprite>sprites\spr_yuutosillhoute</sprite>
+      </sprites>
+      <sprites name="liz">
+        <sprite>sprites\spr_lizwalk</sprite>
+        <sprite>sprites\spr_lizshoot</sprite>
+        <sprite>sprites\spr_lizhurt</sprite>
+        <sprite>sprites\spr_lizneutral</sprite>
+        <sprite>sprites\spr_lizangry</sprite>
+        <sprite>sprites\spr_lizbombexplosion</sprite>
+        <sprite>sprites\spr_lizbombwarning</sprite>
+        <sprite>sprites\spr_lizpineapple</sprite>
+        <sprite>sprites\spr_flashbang</sprite>
+        <sprite>sprites\spr_flashbangblindness</sprite>
       </sprites>
       <sprites name="enemies">
         <sprite>sprites\spr_enemyenhancedbullet</sprite>
@@ -233,29 +286,10 @@
         <sprite>sprites\spr_wooddoor</sprite>
         <sprite>sprites\spr_moose</sprite>
         <sprite>sprites\spr_moosehurt</sprite>
-      </sprites>
-      <sprites name="tito">
-        <sprite>sprites\spr_titowalk</sprite>
-        <sprite>sprites\spr_titohurt</sprite>
-        <sprite>sprites\spr_titoshoot</sprite>
-        <sprite>sprites\spr_titoneutral</sprite>
-        <sprite>sprites\spr_titoangry</sprite>
-      </sprites>
-      <sprites name="yuuto">
-        <sprite>sprites\spr_yuutoneutral</sprite>
-        <sprite>sprites\spr_yuutosad</sprite>
-      </sprites>
-      <sprites name="liz">
-        <sprite>sprites\spr_lizwalk</sprite>
-        <sprite>sprites\spr_lizshoot</sprite>
-        <sprite>sprites\spr_lizhurt</sprite>
-        <sprite>sprites\spr_lizneutral</sprite>
-        <sprite>sprites\spr_lizangry</sprite>
-        <sprite>sprites\spr_lizbombexplosion</sprite>
-        <sprite>sprites\spr_lizbombwarning</sprite>
-        <sprite>sprites\spr_lizpineapple</sprite>
-        <sprite>sprites\spr_flashbang</sprite>
-        <sprite>sprites\spr_flashbangblindness</sprite>
+        <sprite>sprites\spr_totempole</sprite>
+        <sprite>sprites\spr_dooradvice</sprite>
+        <sprite>sprites\spr_trashbin</sprite>
+        <sprite>sprites\spr_musicboxadvice</sprite>
       </sprites>
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>
@@ -335,6 +369,10 @@
       <background>background\background13</background>
       <background>background\back_mrbeast</background>
       <background>background\background15</background>
+      <background>background\back_bridgeviolet</background>
+      <background>background\back_hillsalt</background>
+      <background>background\back_hills</background>
+      <background>background\back_river</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -383,6 +421,13 @@
       <script>scripts\scr_playerwallfix.gml</script>
       <script>scripts\scr_fliptoplayer.gml</script>
       <script>scripts\scr_enemydeath.gml</script>
+      <script>scripts\scr_releaseinputs.gml</script>
+      <script>scripts\scr_stopmusic.gml</script>
+      <script>scripts\scr_checkbullet.gml</script>
+      <script>scripts\scr_checkbulletreverse.gml</script>
+      <script>scripts\scr_titoskip.gml</script>
+      <script>scripts\scr_mooseskip.gml</script>
+      <script>scripts\scr_pretitoskip.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -440,6 +485,7 @@
         <object>objects\obj_absorbparticle</object>
         <object>objects\obj_smolhitbox</object>
         <object>objects\obj_circleeraser</object>
+        <object>objects\obj_healmagnet</object>
       </objects>
       <objects name="functionality">
         <object>objects\obj_antagonisttalk</object>
@@ -462,6 +508,9 @@
         <object>objects\obj_titlecamera</object>
         <object>objects\obj_titleselection</object>
         <object>objects\obj_wowyoudied</object>
+        <object>objects\obj_hporb</object>
+        <object>objects\obj_mporb</object>
+        <object>objects\obj_stagetwomusic</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -472,16 +521,29 @@
         <object>objects\obj_musicnote</object>
         <object>objects\obj_hitsweat</object>
         <object>objects\obj_whitefadein</object>
+        <object>objects\obj_blackfadein</object>
+        <object>objects\obj_blackfadeout</object>
         <object>objects\obj_chaptercomplete</object>
         <object>objects\obj_siopaoexplosion</object>
         <object>objects\obj_hpup</object>
         <object>objects\obj_mpup</object>
+        <object>objects\obj_absorbinstructions</object>
+        <object>objects\obj_beatinstructions</object>
+        <object>objects\obj_absorbinstructionsspace</object>
+        <object>objects\obj_beatinstructionspace</object>
+        <object>objects\obj_outofammo</object>
+        <object>objects\obj_skippingcutscene</object>
+        <object>objects\obj_shinemessage</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
         <object>objects\obj_bigredtree</object>
         <object>objects\obj_gatestopper</object>
+        <object>objects\obj_dooradvice</object>
+        <object>objects\obj_musicboxadvice</object>
         <object>objects\obj_wooddoor</object>
+        <object>objects\obj_caveentrance</object>
+        <object>objects\obj_caveshadow</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -501,12 +563,18 @@
           <object>objects\obj_lizflashbangblindness</object>
           <object>objects\obj_lizstandby</object>
         </objects>
+        <objects name="yuuto">
+          <object>objects\obj_yuutoboss</object>
+          <object>objects\obj_yuutorock</object>
+          <object>objects\obj_yuutosillhoute</object>
+        </objects>
         <object>objects\obj_bossdeath</object>
         <object>objects\obj_musicbox</object>
         <object>objects\obj_musicboxstopper</object>
         <object>objects\obj_firecannon</object>
         <object>objects\obj_mooseentrance</object>
         <object>objects\obj_moose</object>
+        <object>objects\obj_trashbin</object>
         <objects name="kamuro">
           <object>objects\obj_kamurodialogue1</object>
           <object>objects\obj_kamurodialogue2</object>
@@ -597,12 +665,14 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_stage1</room>
+      <room>rooms\rm_165bpm_david</room>
+      <room>rooms\room16</room>
+      <room>rooms\room15</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_sampleroom_chair</room>
+      <room>rooms\rm_stage1</room>
       <room>rooms\rm_140bpm_david</room>
       <room>rooms\room9</room>
-      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_survivalmode</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>

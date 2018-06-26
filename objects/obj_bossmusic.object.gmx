@@ -27,11 +27,12 @@
             <kind>1</kind>
             <string>global.speaking = false;
 
-audio_stop_sound(snd_testtrack_david);
-audio_stop_sound(snd_bosstheme);
-audio_stop_sound(snd_finalloop);
-audio_stop_sound(snd_yuutotheme);
-global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10); // Music in rm1, priority 10, looping
+// Music in rm1, priority 10, looping
+if (!audio_is_playing(snd_bosstheme))
+{
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10); // Music in rm1, priority 10, looping
+}
+
 </string>
           </argument>
         </arguments>

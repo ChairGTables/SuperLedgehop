@@ -25,9 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timer = global.quarterSec;
-ratio = -global.quarterSec / (view_wview / 2);
+            <string>timer = global.playerQuarter; //global.quarterSec;
+ratio = -global.playerQuarter / (view_wview / 2);//-global.quarterSec / (view_wview / 2);
 yoffset = view_hview / 25;
+
+moveMode = 0
+
+if( x &lt; obj_beat_david.x )
+{
+    modeMode = 0;
+}
+else
+{
+    moveMode = 1;
+}
 </string>
           </argument>
         </arguments>
@@ -50,14 +61,14 @@ yoffset = view_hview / 25;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( x &lt; obj_beat_david.x )
+            <string>if( moveMode == 0 )
 {
-    x = timer / ratio;
+    x = timer / -ratio;
     x += view_wview/2;
 }
 else
 {
-    x = timer / -ratio;
+    x = timer / ratio;
     x += view_wview/2;
 }
 </string>
@@ -83,18 +94,18 @@ else
           <argument>
             <kind>1</kind>
             <string>// Decrease timer
-timer -= delta_time / 1000000;
-
+timer = global.playerQuarter - (audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter );//delta_time / 1000000;
+ratio = -global.playerQuarter / (view_wview / 2);//-global.quarterSec / (view_wview / 2);
 // Resyncing
 if (global.resyncing)
 {
-    timer = global.currentQuarterSec;
+    //timer = global.currentQuarterSec;
 }
 
 // Destroy when time's up
 if (timer &lt;= 0)
 {
-    instance_destroy(self);
+    //instance_destroy(self);
 }
 </string>
           </argument>
@@ -118,7 +129,11 @@ if (timer &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprite_index, image_index, view_xview + x, view_yview + yoffset);
+            <string>if (!global.isCutscene)
+{
+    draw_sprite(sprite_index, image_index, view_xview + x, view_yview + yoffset);
+}
+
 </string>
           </argument>
         </arguments>

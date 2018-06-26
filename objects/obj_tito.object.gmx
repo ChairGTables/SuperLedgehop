@@ -30,6 +30,7 @@ hp = 434;
 global.bossone = 434;
 global.bosstwo = 0;
 global.bossthree = 0;
+global.bossvirgin = 0;
 
 //set animation speed
 image_speed = 0.2;
@@ -519,6 +520,7 @@ if (shootTimer &lt;= 0)
                     shot.direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + angleShot;
                     shot.speed = random_range(5, 15);
                     angleShot += 10;
+                    shot.damage = 20;
                 }
             }
         }
@@ -554,6 +556,7 @@ if (shootTimer &lt;= 0)
                     shot.image_xscale = 2;
                     shot.image_yscale = 2;
                     shot.category = "spread";
+                    shot.damage = 20;
                 }
 
                 
@@ -594,6 +597,7 @@ if (gatlingShot == 1)
     {
         gatling.direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + random_range(-5, 5);
         gatling.speed = 20;
+        gatling.damage = 10;
     }
     gatlingShot = 2;
 }
