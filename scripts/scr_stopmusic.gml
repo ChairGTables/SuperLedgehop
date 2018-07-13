@@ -5,3 +5,4 @@ audio_stop_sound(snd_yuutotheme);
 audio_stop_sound(snd_chillevent);
 audio_stop_sound(snd_hypeevent);
 audio_stop_sound(snd_coolevent);
+audio_stop_sound(snd_stagetwo);

@@ -25,7 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>myRock = instance_create(x, y, obj_yuutorock);
+            <string>if (global.xHolder[0] != 0 &amp;&amp; global.yHolder[0] != 0)
+{
+    if (instance_exists(obj_chizuru))
+    {
+        obj_chizuru.x = global.xHolder[0];
+        obj_chizuru.y = global.yHolder[0];
+    }
+    x = global.xHolder[1];
+    y = global.yHolder[1];
+}
+
+myRock = instance_create(x, y, obj_yuutorock);
 
 //Set health for enemy (434 is max)
 hp = 200;

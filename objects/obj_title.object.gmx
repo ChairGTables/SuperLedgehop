@@ -351,8 +351,13 @@ yy = y;
 audio_play_sound_on(global.musicEmitter, snd_titlemusic, true, 0);
 
 
-
-
+//misc
+global.shmupPosition = 480;
+for (i = 0; i &lt; 5; i++)
+{
+    global.xHolder[i] = 0;
+    global.yHolder[i] = 0;
+}
 
 randThing = random_range(0,200);
 

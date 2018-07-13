@@ -21,5 +21,8 @@
   <height>400</height>
   <frames>
     <frame index="0">images\spr_kamuroangry_0.png</frame>
+    <frame index="1">images\spr_kamuroangry_1.png</frame>
+    <frame index="2">images\spr_kamuroangry_2.png</frame>
+    <frame index="3">images\spr_kamuroangry_3.png</frame>
   </frames>
 </sprite>

@@ -68,6 +68,7 @@
     <instance objName="obj_shooterdude_david" x="2400" y="3360" name="inst_E87032DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveentrance" x="1120" y="103" name="inst_8C78FCD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chizuru" x="1248" y="690" name="inst_93C40A5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nextroom" x="1120" y="123" name="inst_2382FF05" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_river" x="1056" y="2592" w="32" h="32" xo="0" yo="64" id="10009901" name="inst_8544C338" depth="9999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

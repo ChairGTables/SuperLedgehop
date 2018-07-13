@@ -43,46 +43,55 @@ else
 }
 
 
-
-if (global.isGamepad == false)
+if (instance_exists(obj_shmupcontroller))
 {
-    global.aimangle = point_direction(x, y, mouse_x, mouse_y);
-    angleMan = 0;
-    if ( abs ( distance_to_point(mouse_x, y) ) &gt; abs ( distance_to_point(x, mouse_y) ) )
-    {
-        angleMan = abs ( distance_to_point(mouse_x, y) );
-    }
-    else 
-    {
-        angleMan = abs ( distance_to_point(x, mouse_y) );
-    }
-    global.chizuruaimx = distance_to_point(mouse_x, y) / angleMan;
-    global.chizuruaimy = distance_to_point(x, mouse_y) / angleMan;
-    
-    if (mouse_x &lt; x)
-    {
-        global.chizuruaimx = -global.chizuruaimx;
-    }
-    if (mouse_y &lt; y)
-    {
-        global.chizuruaimy = -global.chizuruaimy;
-    }
-    image_angle = global.aimangle;
+    global.chizuruaimx = 0;
+    global.chizuruaimy = -1;
+    global.aimangle = point_direction(0, 0, global.chizuruaimx, global.chizuruaimy);
+    image_angle = 90;
 }
 else
 {
-    if (global.chizuruaimx != 0 &amp;&amp; global.chizuruaimx != 0)
+    if (global.isGamepad == false)
     {
-        global.aimangle = point_direction(0, 0, global.chizuruaimx, global.chizuruaimy);
+        global.aimangle = point_direction(x, y, mouse_x, mouse_y);
+        angleMan = 0;
+        if ( abs ( distance_to_point(mouse_x, y) ) &gt; abs ( distance_to_point(x, mouse_y) ) )
+        {
+            angleMan = abs ( distance_to_point(mouse_x, y) );
+        }
+        else 
+        {
+            angleMan = abs ( distance_to_point(x, mouse_y) );
+        }
+        global.chizuruaimx = distance_to_point(mouse_x, y) / angleMan;
+        global.chizuruaimy = distance_to_point(x, mouse_y) / angleMan;
+        
+        if (mouse_x &lt; x)
+        {
+            global.chizuruaimx = -global.chizuruaimx;
+        }
+        if (mouse_y &lt; y)
+        {
+            global.chizuruaimy = -global.chizuruaimy;
+        }
+        image_angle = global.aimangle;
     }
     else
     {
-        if (global.chizurumovex != 0 &amp;&amp; global.chizurumovex != 0)
+        if (global.chizuruaimx != 0 &amp;&amp; global.chizuruaimx != 0)
         {
-            global.aimangle = point_direction(0, 0, global.chizurumovex, global.chizurumovey);
+            global.aimangle = point_direction(0, 0, global.chizuruaimx, global.chizuruaimy);
         }
+        else
+        {
+            if (global.chizurumovex != 0 &amp;&amp; global.chizurumovex != 0)
+            {
+                global.aimangle = point_direction(0, 0, global.chizurumovex, global.chizurumovey);
+            }
+        }
+        image_angle = global.aimangle;
     }
-    image_angle = global.aimangle;
 }
 </string>
           </argument>

@@ -244,6 +244,9 @@
         <sprite>sprites\spr_titoshoot</sprite>
         <sprite>sprites\spr_titoneutral</sprite>
         <sprite>sprites\spr_titoangry</sprite>
+        <sprite>sprites\spr_titocurious</sprite>
+        <sprite>sprites\spr_titohappy</sprite>
+        <sprite>sprites\spr_titosad</sprite>
       </sprites>
       <sprites name="yuuto">
         <sprite>sprites\spr_yuutoneutral</sprite>
@@ -290,6 +293,10 @@
         <sprite>sprites\spr_dooradvice</sprite>
         <sprite>sprites\spr_trashbin</sprite>
         <sprite>sprites\spr_musicboxadvice</sprite>
+        <sprite>sprites\spr_beamboy</sprite>
+        <sprite>sprites\spr_beamrotate</sprite>
+        <sprite>sprites\spr_curvingplane</sprite>
+        <sprite>sprites\spr_straightdown</sprite>
       </sprites>
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>
@@ -297,6 +304,20 @@
         <sprite>sprites\spr_kamurowalk</sprite>
         <sprite>sprites\spr_kamuroshoot</sprite>
         <sprite>sprites\spr_kamurohurt</sprite>
+      </sprites>
+      <sprites name="default">
+        <sprite>sprites\spr_defaultneutral</sprite>
+        <sprite>sprites\spr_defaultangry</sprite>
+        <sprite>sprites\spr_crossettehappy</sprite>
+        <sprite>sprites\spr_crossetteneutral</sprite>
+      </sprites>
+      <sprites name="bill">
+        <sprite>sprites\spr_billneutral</sprite>
+        <sprite>sprites\spr_billsad</sprite>
+      </sprites>
+      <sprites name="chizuma">
+        <sprite>sprites\spr_chizumaneutral</sprite>
+        <sprite>sprites\spr_chizumaangry</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -373,6 +394,7 @@
       <background>background\back_hillsalt</background>
       <background>background\back_hills</background>
       <background>background\back_river</background>
+      <background>background\back_yuutospace</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -511,6 +533,7 @@
         <object>objects\obj_hporb</object>
         <object>objects\obj_mporb</object>
         <object>objects\obj_stagetwomusic</object>
+        <object>objects\obj_shmupcontroller</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -550,6 +573,10 @@
         <object>objects\obj_enemyenhancedbullet</object>
         <object>objects\obj_slowspikes</object>
         <object>objects\obj_rightcannonDONOTDUPLICATE</object>
+        <object>objects\obj_straightdown</object>
+        <object>objects\obj_beamboy</object>
+        <object>objects\obj_beamrotate</object>
+        <object>objects\obj_curvingplane</object>
         <objects name="tito">
           <object>objects\obj_tito</object>
           <object>objects\obj_redrice</object>
@@ -567,6 +594,14 @@
           <object>objects\obj_yuutoboss</object>
           <object>objects\obj_yuutorock</object>
           <object>objects\obj_yuutosillhoute</object>
+          <object>objects\obj_yuutodialogue1</object>
+          <object>objects\obj_yuutodialogue2</object>
+          <object>objects\obj_yuutodialogue3</object>
+          <object>objects\obj_yuutodialogue4</object>
+          <object>objects\obj_yuutodialogue5</object>
+          <object>objects\obj_yuutodialogue6</object>
+          <object>objects\obj_yuutodialogue7</object>
+          <object>objects\obj_yuutonpc1</object>
         </objects>
         <object>objects\obj_bossdeath</object>
         <object>objects\obj_musicbox</object>
@@ -665,12 +700,13 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_165bpm_david</room>
-      <room>rooms\room16</room>
-      <room>rooms\room15</room>
+      <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_sampleroom_chair</room>
-      <room>rooms\rm_stage1</room>
+      <room>rooms\room15</room>
+      <room>rooms\rm_yuutoshmup</room>
+      <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_140bpm_david</room>
       <room>rooms\room9</room>
       <room>rooms\rm_survivalmode</room>

@@ -43,7 +43,7 @@ global.emotionAntagonistArray[0] = "neutral";
 global.messageArray[1] = "And you are my favorite niece!";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
-global.emotionAntagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "happy";
 
 
 global.messageArray[2] = "I wouldn't just give this away foolishly!";
@@ -109,28 +109,28 @@ global.emotionAntagonistArray[10] = "neutral";
 global.messageArray[11] = "Exactly! I mean stealing is bad, but I'd rather you live!";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "happy";
-global.emotionAntagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "curious";
 
 global.messageArray[12] = "But how are you gonna get home without this now?";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "sad";
-global.emotionAntagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "curious";
 
 global.messageArray[13] = "Ahh, don't worry about me! I still got tons of bullets
 in my inventory pockets!";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "sad";
-global.emotionAntagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "curious";
 
 global.messageArray[14] = "Besides, doing this will totally add up my cool uncle points!";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "sad";
-global.emotionAntagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "happy";
 
 global.messageArray[15] = "Oooookaaaay?";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "neutral";
-global.emotionAntagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "happy";
 
 global.messageArray[16] = "Alright! I know you're smart so I'll let you go.";
 global.categoryArray[16] = "right";
@@ -141,7 +141,7 @@ global.messageArray[17] = "Try it out on that door over there.
 Absorb some fire bullets and burn it down!";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "neutral";
-global.emotionAntagonistArray[17] = "neutral";
+global.emotionAntagonistArray[17] = "angry";
 </string>
           </argument>
         </arguments>

@@ -52,7 +52,7 @@
 y = view_yview + view_hview / 2;
 
 
-if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(global.musicrm1) - 0.1 || !audio_is_playing(snd_bossintro))
+if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(global.musicrm1) - 0.1 || (!audio_is_playing(snd_bossintro) &amp;&amp; !audio_is_playing(snd_yuutointro)))
 {
     global.isCutscene = false;
     if (instance_exists(obj_mooseentrance))
@@ -65,7 +65,15 @@ if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(glob
         instance_create(obj_titonpc2.x, obj_titonpc2.y, obj_tito);
         instance_destroy(obj_titonpc2);
     }
-    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10); 
+    if (instance_exists(obj_yuutonpc1))
+    {
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutotheme, true, 10); 
+        room_goto_next();
+    }
+    else
+    {
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10); 
+    }
     instance_destroy(self);
 }
 </string>
@@ -84,6 +92,20 @@ if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(glob
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring>draw_self();</codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
@@ -143,20 +165,6 @@ if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(glob
             <string>view_yview+400</string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>425</id>
-        <kind>4</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
