@@ -44,12 +44,12 @@ global.speaking = false;
 presenting = 0;
 speaker = 0;
 speaking = 0;
-room_speed = 60;
+room_speed = 30;
 emotionone = 0;
 emotiontwo = 0;
 
 alarm[0] = 2;
-alarm[1] = 100;
+alarm[1] = 50;
 
 
 protagonist = "chizuru";
@@ -99,9 +99,12 @@ antagonist = "tito";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = 100;
+            <string>alarm[1] = 50;
 
-
+if (instance_exists(obj_yuutonpc1))
+{
+    alarm[1] = 70;
+}
 
 if (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4)
 {
@@ -185,7 +188,7 @@ global.speaking = true;
 speaking = 1;
 
 var protagonistDisplay = instance_create(view_xview-200, view_yview, obj_protagonisttalk);
-var antagonistDisplay = instance_create(view_xview+1022, view_yview, obj_antagonisttalk);
+var antagonistDisplay = instance_create(view_xview+1060, view_yview, obj_antagonisttalk);
 
 
 if (boss == 1 &amp;&amp; global.messageNumber == global.messageLimit - 3)
@@ -207,13 +210,45 @@ if (protagonist == "chizuru")
     protagonistDisplay.angrySprite = spr_chizuruangry;
     protagonistDisplay.curiousSprite = spr_chizurucurious;
 }
+if (protagonist == "none")
+{
+    protagonistDisplay.happySprite = spr_hudbars;
+    protagonistDisplay.neutralSprite = spr_hudbars;
+    protagonistDisplay.sadSprite = spr_hudbars;
+    protagonistDisplay.angrySprite = spr_hudbars;
+    protagonistDisplay.curiousSprite = spr_hudbars;
+}
 
 if (antagonist == "tito")
 {
-    antagonistDisplay.happySprite = spr_hudbars;
+    antagonistDisplay.happySprite = spr_titohappy;
     antagonistDisplay.neutralSprite = spr_titoneutral;
-    antagonistDisplay.sadSprite = spr_hudbars;
+    antagonistDisplay.sadSprite = spr_titosad;
     antagonistDisplay.angrySprite = spr_titoangry;
+    antagonistDisplay.curiousSprite = spr_titocurious;
+}
+if (antagonist == "default")
+{
+    antagonistDisplay.happySprite = spr_hudbars;
+    antagonistDisplay.neutralSprite = spr_defaultneutral;
+    antagonistDisplay.sadSprite = spr_hudbars;
+    antagonistDisplay.angrySprite = spr_defaultangry;
+    antagonistDisplay.curiousSprite = spr_hudbars;
+}
+if (antagonist == "crossette")
+{
+    antagonistDisplay.happySprite = spr_crossettehappy;
+    antagonistDisplay.neutralSprite = spr_crossetteneutral;
+    antagonistDisplay.sadSprite = spr_hudbars;
+    antagonistDisplay.angrySprite = spr_hudbars;
+    antagonistDisplay.curiousSprite = spr_hudbars;
+}
+if (antagonist == "yuuto")
+{
+    antagonistDisplay.happySprite = spr_hudbars;
+    antagonistDisplay.neutralSprite = spr_yuutoneutral;
+    antagonistDisplay.sadSprite = spr_yuutosad;
+    antagonistDisplay.angrySprite = spr_hudbars;
     antagonistDisplay.curiousSprite = spr_hudbars;
 }
 if (antagonist == "liz")
@@ -230,6 +265,38 @@ if (antagonist == "kamuro")
     antagonistDisplay.neutralSprite = spr_kamuroneutral;
     antagonistDisplay.sadSprite = spr_hudbars;
     antagonistDisplay.angrySprite = spr_kamuroangry;
+    antagonistDisplay.curiousSprite = spr_hudbars;
+}
+if (antagonist == "bill")
+{
+    antagonistDisplay.happySprite = spr_hudbars;
+    antagonistDisplay.neutralSprite = spr_billneutral;
+    antagonistDisplay.sadSprite = spr_billsad;
+    antagonistDisplay.angrySprite = spr_hudbars;
+    antagonistDisplay.curiousSprite = spr_hudbars;
+}
+if (antagonist == "chizuma")
+{
+    antagonistDisplay.happySprite = spr_hudbars;
+    antagonistDisplay.neutralSprite = spr_chizumaneutral;
+    antagonistDisplay.sadSprite = spr_hudbars;
+    antagonistDisplay.angrySprite = spr_chizumaangry;
+    antagonistDisplay.curiousSprite = spr_hudbars;
+}
+if (antagonist == "none")
+{
+    antagonistDisplay.happySprite = spr_hudbars;
+    antagonistDisplay.neutralSprite = spr_hudbars;
+    antagonistDisplay.sadSprite = spr_hudbars;
+    antagonistDisplay.angrySprite = spr_hudbars;
+    antagonistDisplay.curiousSprite = spr_hudbars;
+}
+if (antagonist == "unknown")
+{
+    antagonistDisplay.happySprite = spr_hudbars;
+    antagonistDisplay.neutralSprite = spr_hudbars;
+    antagonistDisplay.sadSprite = spr_hudbars;
+    antagonistDisplay.angrySprite = spr_hudbars;
     antagonistDisplay.curiousSprite = spr_hudbars;
 }
 </string>
@@ -256,7 +323,7 @@ if (antagonist == "kamuro")
             <kind>1</kind>
             <string>global.message = global.messageArray[global.messageNumber];
 
-global.chr1 += 1;
+global.chr1 += 2;
 global.text = string_copy(global.message,1,global.chr1);
 if (global.speaking == true)
 {
@@ -308,7 +375,7 @@ if (bleeping == global.chr1)
     {
         if (instance_exists(obj_protagonisttalk))
         {
-            obj_protagonisttalk.image_speed = 0.4;
+            obj_protagonisttalk.image_speed = 0.8;
             obj_antagonisttalk.image_speed = 0;
             obj_antagonisttalk.image_index = 0;
         }
@@ -317,7 +384,7 @@ if (bleeping == global.chr1)
     {
         if (instance_exists(obj_antagonisttalk))
         {
-            obj_antagonisttalk.image_speed = 0.4;
+            obj_antagonisttalk.image_speed = 0.8;
             obj_protagonisttalk.image_speed = 0;
             obj_protagonisttalk.image_index = 0;
         }
@@ -341,7 +408,7 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
 {
     sounding += 1;
     
-    if (sounding == 7)
+    if (sounding == 3)
     {
         sounding = 0;
         //category 1 = protag   category 2 = antag
@@ -351,7 +418,7 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
             }    
-            if (protagonist == "oniichan")
+            if (protagonist == "chizuma")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
             }    
@@ -374,6 +441,14 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
             }
+            if (antagonist == "unknown")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
+            }
+            if (antagonist == "crossette")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
+            }
             if (antagonist == "liz")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
@@ -386,7 +461,7 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             {
                 audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
             }    
-            if (antagonist == "oniichan")
+            if (antagonist == "chizuma")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
             }    
@@ -437,7 +512,12 @@ if (instance_exists(obj_antagonisttalk))
 
 
     depth = -9000;
-    alarm[1] = 100;
+    alarm[1] = 50;
+    if (instance_exists(obj_yuutonpc1))
+    {
+        alarm[1] = 70;
+    }
+
     if (instance_exists(obj_antagonisttalk))
     {
         image_index = 0;
@@ -492,12 +572,16 @@ if (instance_exists(obj_antagonisttalk))
     
     if (boss == 1 &amp;&amp; global.messageNumber == global.messageLimit - 3)
     {
-        audio_stop_sound(snd_testtrack_david);
-        audio_stop_sound(snd_bosstheme);
-        audio_stop_sound(snd_hypeevent);
-        audio_stop_sound(snd_chillevent);
+        script_execute(scr_stopmusic);
         // Music in rm1, priority 10, looping
-        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
+        if (instance_exists(obj_shmupcontroller))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutointro, false, 10);
+        }
+        else
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
+        }
     }
 }
 
@@ -556,6 +640,36 @@ if (instance_exists(obj_antagonisttalk))
             draw_set_color($9c92f5);
             draw_text(view_xview+10, view_yview+445, "Kamuro");
         }
+        if (antagonist == "unknown")
+        {
+            draw_set_color($ea8a89);
+            draw_text(view_xview+10, view_yview+445, "???");
+        }
+        if (antagonist == "yuuto")
+        {
+            draw_set_color($ea8a89);
+            draw_text(view_xview+10, view_yview+445, "Yuuto Ichika");
+        }
+        if (antagonist == "default")
+        {
+            draw_set_color($ea8a89);
+            draw_text(view_xview+10, view_yview+445, "Default");
+        }
+        if (antagonist == "crossette")
+        {
+            draw_set_color($9c92f5);
+            draw_text(view_xview+10, view_yview+445, "Crossette");
+        }
+        if (antagonist == "bill")
+        {
+            draw_set_color($ea8a89);
+            draw_text(view_xview+10, view_yview+445, "Bill Steels");
+        }
+        if (antagonist == "chizuma")
+        {
+            draw_set_color($ea8a89);
+            draw_text(view_xview+10, view_yview+445, "Chizuma");
+        }
     }
     draw_set_color(16645629);
     draw_set_font(fnt_talk);
@@ -594,7 +708,12 @@ if (instance_exists(obj_antagonisttalk))
 
 
     depth = -9000;
-    alarm[1] = 100;
+    alarm[1] = 50;
+    if (instance_exists(obj_yuutonpc1))
+    {
+        alarm[1] = 70;
+    }
+
     if (instance_exists(obj_antagonisttalk))
     {
         image_index = 0;
@@ -649,12 +768,16 @@ if (instance_exists(obj_antagonisttalk))
     
     if (boss == 1 &amp;&amp; global.messageNumber == global.messageLimit - 3)
     {
-        audio_stop_sound(snd_testtrack_david);
-        audio_stop_sound(snd_bosstheme);
-        audio_stop_sound(snd_hypeevent);
-        audio_stop_sound(snd_chillevent);
+        script_execute(scr_stopmusic);
         // Music in rm1, priority 10, looping
-        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
+        if (instance_exists(obj_shmupcontroller))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutointro, false, 10);
+        }
+        else
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
+        }
     }
 }
 
