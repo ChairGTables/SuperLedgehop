@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>friendly = 0;
 absorbed = 0;
-
+targetSpeed = 0;
 //Categories include: enhanced, spread, rapid, fire, ice
 category = "enhanced"
 
@@ -105,7 +105,12 @@ image_angle = direction;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (absorbed == 0)
+            <string>if (targetSpeed != 0)
+{
+    speed += 0.3;
+}
+
+if (absorbed == 0)
 {
     image_angle = direction;
 }

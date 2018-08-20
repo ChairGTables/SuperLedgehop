@@ -56,11 +56,12 @@ if (other.timed == 1)
     {
         upmomentum = abs((other.vspeed / other.speed)) * bulletKnockback;
     }
+    hspeed = 0;
+    vspeed = 0;
 }
 
 
-hspeed = 0;
-vspeed = 0;
+
 
 if (other.vortex == 1 && instance_exists(obj_chizuru))
 {

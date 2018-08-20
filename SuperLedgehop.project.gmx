@@ -16,6 +16,8 @@
         <sound>sound\snd_bulletget</sound>
         <sound>sound\snd_crashed</sound>
         <sound>sound\snd_enemybullet</sound>
+        <sound>sound\snd_enemysmall</sound>
+        <sound>sound\snd_enemymedium</sound>
         <sound>sound\snd_enemydamage</sound>
         <sound>sound\snd_enhancedbullet</sound>
         <sound>sound\snd_firebullet</sound>
@@ -43,6 +45,9 @@
         <sound>sound\snd_hpheal</sound>
         <sound>sound\snd_outofammo</sound>
         <sound>sound\snd_itemget</sound>
+        <sound>sound\snd_slice</sound>
+        <sound>sound\snd_stab</sound>
+        <sound>sound\snd_throw</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -129,6 +134,41 @@
         <sound>sound\snd_yuutogah</sound>
         <sound>sound\snd_yuutodeviation</sound>
       </sounds>
+      <sounds name="crossette">
+        <sound>sound\snd_defaultya1</sound>
+        <sound>sound\snd_defaultya2</sound>
+        <sound>sound\snd_defaultfire</sound>
+        <sound>sound\snd_defaultgetlost</sound>
+        <sound>sound\snd_defaultow1</sound>
+        <sound>sound\snd_defaultow2</sound>
+        <sound>sound\snd_defaultdash</sound>
+        <sound>sound\snd_defaultwarn</sound>
+      </sounds>
+      <sounds name="kamuro">
+        <sound>sound\snd_kamuroow</sound>
+        <sound>sound\snd_kamurogah</sound>
+        <sound>sound\snd_kamurotakethis1</sound>
+        <sound>sound\snd_kamurotakethis2</sound>
+        <sound>sound\snd_kamurodestroy</sound>
+        <sound>sound\snd_kamurolaugh</sound>
+        <sound>sound\snd_kamurofool</sound>
+        <sound>sound\snd_kamuroya1</sound>
+        <sound>sound\snd_kamuroya2</sound>
+        <sound>sound\snd_kamuroroman</sound>
+        <sound>sound\snd_kamurovolcano</sound>
+      </sounds>
+      <sounds name="louie">
+        <sound>sound\snd_louieready1</sound>
+        <sound>sound\snd_louieready2</sound>
+        <sound>sound\snd_louiegrowl</sound>
+        <sound>sound\snd_louiehurt1</sound>
+        <sound>sound\snd_louiehurt2</sound>
+        <sound>sound\snd_louienomore</sound>
+        <sound>sound\snd_louiebull</sound>
+        <sound>sound\snd_louiestaydown1</sound>
+        <sound>sound\snd_louiestaydown2</sound>
+        <sound>sound\snd_louiedeath</sound>
+      </sounds>
     </sounds>
     <sounds name="sonii">
       <sound>sound\snd_samplesound_sonii</sound>
@@ -139,6 +179,14 @@
     </sounds>
     <sounds name="ultran">
       <sound>sound\snd_samplesound_ultran</sound>
+    </sounds>
+    <sounds name="bill">
+      <sound>sound\snd_billhurt1</sound>
+      <sound>sound\snd_billhurt2</sound>
+      <sound>sound\snd_billcrimestopper</sound>
+      <sound>sound\snd_billiamthelaw</sound>
+      <sound>sound\snd_billveto</sound>
+      <sound>sound\snd_billlawbreaker</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -216,6 +264,9 @@
         <sprite>sprites\spr_outofammo</sprite>
         <sprite>sprites\spr_cutsceneskip</sprite>
         <sprite>sprites\spr_shinemessage</sprite>
+        <sprite>sprites\spr_warnbox</sprite>
+        <sprite>sprites\spr_warnboxcenter</sprite>
+        <sprite>sprites\spr_bubbleexplosion</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -304,20 +355,39 @@
         <sprite>sprites\spr_kamurowalk</sprite>
         <sprite>sprites\spr_kamuroshoot</sprite>
         <sprite>sprites\spr_kamurohurt</sprite>
+        <sprite>sprites\spr_flamebeam</sprite>
+        <sprite>sprites\spr_flamebeamvert</sprite>
       </sprites>
       <sprites name="default">
         <sprite>sprites\spr_defaultneutral</sprite>
         <sprite>sprites\spr_defaultangry</sprite>
         <sprite>sprites\spr_crossettehappy</sprite>
         <sprite>sprites\spr_crossetteneutral</sprite>
+        <sprite>sprites\spr_defaultwalk</sprite>
+        <sprite>sprites\spr_defaultshoot</sprite>
+        <sprite>sprites\spr_defaultfade</sprite>
+        <sprite>sprites\spr_defaulthurt</sprite>
       </sprites>
       <sprites name="bill">
         <sprite>sprites\spr_billneutral</sprite>
         <sprite>sprites\spr_billsad</sprite>
+        <sprite>sprites\spr_billwalk</sprite>
+        <sprite>sprites\spr_billshoot</sprite>
+        <sprite>sprites\spr_billhurt</sprite>
+        <sprite>sprites\spr_billball</sprite>
       </sprites>
       <sprites name="chizuma">
         <sprite>sprites\spr_chizumaneutral</sprite>
         <sprite>sprites\spr_chizumaangry</sprite>
+      </sprites>
+      <sprites name="louie">
+        <sprite>sprites\spr_louiewalk</sprite>
+        <sprite>sprites\spr_louieshoot</sprite>
+        <sprite>sprites\spr_louiehurt</sprite>
+        <sprite>sprites\spr_louieslash</sprite>
+        <sprite>sprites\spr_louiespear</sprite>
+        <sprite>sprites\spr_masterspark</sprite>
+        <sprite>sprites\spr_louiedisc</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -374,6 +444,7 @@
     <sprites name="ultran">
       <sprite>sprites\spr_samplesprite_ultran</sprite>
     </sprites>
+    <sprite>sprites\sprite185</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="chair">
@@ -557,6 +628,7 @@
         <object>objects\obj_outofammo</object>
         <object>objects\obj_skippingcutscene</object>
         <object>objects\obj_shinemessage</object>
+        <object>objects\obj_warnbox</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -618,9 +690,28 @@
           <object>objects\obj_titodialogue2</object>
           <object>objects\obj_titodialogue3</object>
           <object>objects\obj_titodialogue4</object>
+          <object>objects\obj_kamuro</object>
           <object>objects\obj_kamuronpc1</object>
           <object>objects\obj_titonpc1</object>
           <object>objects\obj_titonpc2</object>
+        </objects>
+        <objects name="default">
+          <object>objects\obj_default</object>
+          <object>objects\obj_defaultdetonate</object>
+          <object>objects\obj_defaultdetonator</object>
+        </objects>
+        <objects name="bill">
+          <object>objects\obj_bill</object>
+          <object>objects\obj_lawbreaker</object>
+          <object>objects\obj_lawsmoke</object>
+          <object>objects\obj_billball</object>
+          <object>objects\obj_billbomb</object>
+        </objects>
+        <objects name="louie">
+          <object>objects\obj_louie</object>
+          <object>objects\obj_louieslash</object>
+          <object>objects\obj_louiespear</object>
+          <object>objects\obj_louiedisc</object>
         </objects>
       </objects>
     </objects>
@@ -700,14 +791,18 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_louiefight</room>
+      <room>rooms\rm_kamurofight</room>
+      <room>rooms\rm_billfight</room>
+      <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_stage1</room>
-      <room>rooms\rm_stage1_2</room>
-      <room>rooms\rm_sampleroom_chair</room>
-      <room>rooms\room15</room>
       <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_yuutoboss_</room>
-      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_stage1_2</room>
+      <room>rooms\rm_sampleroom_chair</room>
+      <room>rooms\room15</room>
       <room>rooms\room9</room>
       <room>rooms\rm_survivalmode</room>
       <room>rooms\rm_templevelone</room>
