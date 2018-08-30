@@ -63,6 +63,7 @@
     <instance objName="obj_wall" x="960" y="0" name="inst_34054445" locked="0" code="" scaleX="6" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagetwomusic" x="128" y="448" name="inst_97F630B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutonpc1" x="1024" y="448" name="inst_A58C31B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shmupcontroller" x="448" y="-160" name="inst_465D4CC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

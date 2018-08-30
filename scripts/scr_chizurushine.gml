@@ -2,13 +2,13 @@ if (instance_exists(obj_chizuru) && global.chizurushine > 15)
 {
     if (global.shineget == 1)
     {
-        if (global.chizurushinecharge > 5 && global.chizurushine > 60 && !instance_exists(obj_absorbbubble))
+        if (global.chizurushinecharge > 5 && global.chizurushine > 50 && !instance_exists(obj_absorbbubble))
         {
             instance_create(x, y, obj_healmagnet);
             audio_play_sound_on (global.effectsEmitter, snd_absorbing, false, 10); 
             var shine = instance_create(obj_chizuru.x, obj_chizuru.y, obj_shine);
             shine.absorb = 1;
-            global.chizurushine -= 60;
+            global.chizurushine -= 50;
             global.absorbing = 1;
         }
         else

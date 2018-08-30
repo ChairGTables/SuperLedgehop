@@ -414,6 +414,11 @@ waveshine = 0;
     global.isCutscene = true;
 }
 
+if (global.chizurushinecharge &gt; 5 &amp;&amp; global.chizurushine &gt; 50)
+{
+    instance_create(x, y, obj_smallcircle);
+}
+
 //Invincibility check
 if (global.invincibility &gt; 0)
 {
@@ -588,7 +593,7 @@ script_execute(scr_speedwallcheck);
 ///////////////////////////////
 if (spinning == 1 &amp;&amp; instance_exists(obj_gamepad))
 {
-    if (obj_gamepad.spinning == true)
+    if (obj_gamepad.spinning == true &amp;&amp; global.chizurump &gt; 0)
     {
         spinFinish += 1;
         angleIncrease = random_range(20, 50);
@@ -635,18 +640,14 @@ if (waveshine == 1)
 if (spinning == 1)
 {
     action = 0;
+    global.chizurump -= 5;
 }
 if (global.isCutscene == true)
 {
     action = 0;
-}
-
-if (action == 0)
-{
     global.chizurumovex = 0;
     global.chizurumovey = 0;
 }
-
 
 
 ////////////////////////////////

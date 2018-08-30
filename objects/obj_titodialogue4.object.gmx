@@ -34,14 +34,14 @@ obj_dialogue.boss = 1;
 global.messageLimit = 25;
 
 
-global.messageArray[0] = "Chizuru...";
+global.messageArray[0] = "Hold up! I've done a goof.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "It has come to my attention that these men are actually
-targeting you.";
+global.messageArray[1] = "I just realized you're heading out somewhere
+and all of these guys are trying to kill you.";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "sad";
