@@ -39,11 +39,12 @@
 myRock = instance_create(x, y, obj_yuutorock);
 
 //Set health for enemy (434 is max)
-hp = 200;
+hp = 434;
 global.bossone = 434;
-global.bosstwo = 200;
+global.bosstwo = 0;
 global.bossthree = 0;
-hpIndex = 2;
+hpIndex = 1;
+global.shineget = 1;
 
 //set animation speed
 image_speed = 0.2;
@@ -592,10 +593,10 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1)
 {
-    audio_stop_sound(snd_bosstheme);
-    audio_play_sound_on (global.voiceEmitter, snd_lizdeath, false, 10); 
+    audio_stop_sound(snd_yuutotheme);
+    //audio_play_sound_on (global.voiceEmitter, deathSound, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
-    death.sprite_index = spr_lizhurt;
+    death.sprite_index = spr_yuutohurt;
     instance_destroy(self);
 }
 </string>

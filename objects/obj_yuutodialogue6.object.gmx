@@ -51,12 +51,12 @@ global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
 global.messageArray[3] = "Guess I finally got your mindgames downloaded!";
-global.categoryArray[3] = "right";
+global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "neutral";
 
 global.messageArray[4] = "Are you gonna keep hiding around?";
-global.categoryArray[4] = "right";
+global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
 </string>

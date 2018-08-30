@@ -26,9 +26,16 @@
           <argument>
             <kind>1</kind>
             <string>global.shineget = 1;
-
+global.bossvirgin = 0;
 //Set health for enemy
-hp = 500;
+global.bossone = 434;
+global.bosstwo = 200;
+global.bossthree = 0;
+hp = 200;
+hpIndex = 2;
+
+ready = 0;
+alarm[6] = 60;
 
 //set health drops
 minDrops = 3;
@@ -47,7 +54,7 @@ hS = asset_get_index(hurtSprite);
 //Set hurt sounds
 hurtSoundOne = snd_defaultow1;
 hurtSoundTwo = snd_defaultow2;
-deathSound = snd_death5;
+deathSound = snd_silence;
 
 
 //Define the knockback and hitstun
@@ -119,6 +126,29 @@ if (sprite_index == hS)
     sprite_index = sS;
 }
 image_index = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ready = 1;
 </string>
           </argument>
         </arguments>
@@ -200,6 +230,31 @@ shootRestTime -= delta_time/100000;
 
 script_execute(scr_resyncenemies_david);
 
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &gt; 0 &amp;&amp; global.bossone &gt; 0)
+{
+    global.bossthree = hp;
+}
+
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 3)
+    {
+        hp = global.bosstwo;
+        hpIndex = 2;
+    }
+    global.bosstwo = hp;
+}
+
+if (global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 2)
+    {
+        hp = global.bossone;
+        hpIndex = 1;
+    }
+    global.bossone = hp;
+}
+
 if (global.resyncing)
 {
     shootRestTime = global.currentWholeSec * 4;
@@ -222,7 +277,7 @@ if (shootTimer &lt;= 0)
     shootTimer = shootBeat;
     
     //Perform shooting
-        if (1 == 1)
+        if (ready == 1)
         {
             
             if (phase &lt; 3)
@@ -303,7 +358,7 @@ if (shootTimer &lt;= 0)
                             shot.direction = direction + random_range(-30, 30);
                         }
                         shot.speed = random_range(1, 15);
-                        
+                        shot.damage = 20;
                     }
                 }
                 else if (shotCount == 2)
@@ -405,9 +460,13 @@ if (moveTimer &lt;= 0)
 /////////////////////////////
 //Death
 /////////////////////////
-if (hp &lt; 1)
+if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1)
 {
-    script_execute(scr_enemydeath);
+    script_execute(scr_stopmusic);
+    audio_play_sound_on (global.voiceEmitter, deathSound, false, 10); 
+    var death = instance_create(x, y, obj_bossdeath);
+    death.sprite_index = spr_defaulthurt;
+    instance_destroy(self);
 }
 </string>
           </argument>
@@ -548,6 +607,7 @@ if (rightmomentum &gt; 0)
             fire = instance_create(x, y, obj_flame_sonii);
             fire.speed = random_range(7,9);
             fire.direction = i;
+            fire.damage = 20;
         }
         //direction = point_direction(x, y, warn[i+1].x, warn[i+1].y);
         //speed = 20;
@@ -883,6 +943,7 @@ script_execute(scr_enemydamage);
 {
     sekret = instance_create(other.x, other.y, obj_laser_sonii);
     sekret.visible = 0;
+    sekret.damage = 20;
     
     if(instance_exists(obj_shine))
     {

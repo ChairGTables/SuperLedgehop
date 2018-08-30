@@ -325,22 +325,27 @@ if (shootTimer &lt;= 0)
                     randomGetter = random_range(0, 100);
                     
                     
-                    if (randomGetter &lt; 25)
+                    if (randomGetter &lt; 33)
                     {
                         audio_play_sound_on (global.voiceEmitter, snd_kamuroroman, false, 10); 
                         shootBeat = global.quarterSec;
                         shootTimer = shootBeat;
                     }
-                    else if (randomGetter &gt; 75)
+                    else if (randomGetter &gt; 67)
                     {
                         audio_play_sound_on (global.voiceEmitter, snd_kamurovolcano, false, 10); 
                         shootBeat = global.quarterSec;
                         shootTimer = shootBeat;
                     }
+                    else
+                    {
+                        shootBeat = global.eighthSec / 2;
+                        shootTimer = shootBeat;
+                    }
                 }
                 else if (shotCount == 148)
                 {
-                    if (randomGetter &lt; 25)
+                    if (randomGetter &lt; 33)
                     {
                         shotCount = 149;
                         
@@ -372,7 +377,7 @@ if (shootTimer &lt;= 0)
                         shootBeat = global.wholeSec;
                         shootTimer = shootBeat;
                     }
-                    else if (randomGetter &gt; 75)
+                    else if (randomGetter &gt; 67)
                     {
                         shotCount = 150;    
                         shootBeat = global.wholeSec;
@@ -427,6 +432,23 @@ if (shootTimer &lt;= 0)
                         }
                         thisWarn.image_angle = directionHold;
                     }
+                    
+                    if (shotCount == 151)
+                    {
+                        thisWarn.rotator = 1.4;
+                        
+                        thisWarn = instance_create(x, y, obj_warninglaser_sonii);
+                        if (instance_exists(obj_chizuru))
+                        {
+                            if (shotCount == 150)
+                            {
+                                directionHold = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
+                            }
+                            thisWarn.image_angle = directionHold;
+                        }
+                        thisWarn.rotator = -1.4;
+                    }
+                    
                     shotCount += 1;
                     shootBeat = global.quarterSec;
                     shootTimer = shootBeat;
@@ -494,6 +516,20 @@ if (shootTimer &lt;= 0)
                         //myWarn.image_angle = 270;
                         myWarn.image_xscale = 1;
                     }
+                    
+                    for (i = 1; i &lt; 4; i++)
+                    {
+                        for (j = 0; j &lt; 3; j++)
+                        {
+                            flame = instance_create(x, y, obj_flame_sonii);
+                            if (instance_exists(obj_chizuru))
+                            {
+                                flame.direction = (point_direction(x, y, obj_chizuru.x, obj_chizuru.y) - 20) + (j * 20);
+                            }
+                            flame.speed = i * 2;
+                        }
+                    }
+                    
                     shootBeat = global.quarterSec;
                     shootTimer = shootBeat;
                 }
@@ -535,6 +571,20 @@ if (shootTimer &lt;= 0)
                         myWarn.image_angle = 0;
                         myWarn.image_xscale = 10;
                     }
+                    
+                    for (i = 1; i &lt; 4; i++)
+                    {
+                        for (j = 0; j &lt; 3; j++)
+                        {
+                            flame = instance_create(x, y, obj_flame_sonii);
+                            if (instance_exists(obj_chizuru))
+                            {
+                                flame.direction = (point_direction(x, y, obj_chizuru.x, obj_chizuru.y) - 20) + (j * 20);
+                            }
+                            flame.speed = i * 2;
+                        }
+                    }
+                    
                     shootBeat = global.quarterSec;
                     shootTimer = shootBeat;
                 }
@@ -591,6 +641,20 @@ if (shootTimer &lt;= 0)
                         //myWarn.image_angle = 270;
                         myWarn.image_xscale = 1;
                     }
+                    
+                    for (i = 1; i &lt; 4; i++)
+                    {
+                        for (j = 0; j &lt; 3; j++)
+                        {
+                            flame = instance_create(x, y, obj_flame_sonii);
+                            if (instance_exists(obj_chizuru))
+                            {
+                                flame.direction = (point_direction(x, y, obj_chizuru.x, obj_chizuru.y) - 20) + (j * 20);
+                            }
+                            flame.speed = i * 2;
+                        }
+                    }
+                    
                     shootBeat = global.wholeSec;
                     shootTimer = shootBeat;
                 }

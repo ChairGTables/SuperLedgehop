@@ -8,7 +8,10 @@ if (other.absorb == 0 && friendly == 0 && absorbed == 0)
         darkside.direction = direction + 180;
         darkside.speed = speed * 3;
         darkside.sprite_index = sprite_index;
+        darkside.damage = round(damage / 3);
         darkside.timed = 1;
+        darkside.image_xscale = image_xscale;
+        darkside.image_yscale = image_yscale;
     }
 
 

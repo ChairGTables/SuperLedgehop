@@ -111,12 +111,14 @@ alarm[0] = 3;
 {
     visible = 1;
     audio_play_sound_on (global.effectsEmitter, snd_enemymedium, false, 10); 
+    alarm[6] = 200;
 }
 if (other.phase == detonation + 1 &amp;&amp; created == 0)
 {
     visible = 0;
     created = 1;
     fire = instance_create(x + 16, y + 16, obj_flame_sonii);      
+    fire.damage = 20;
     audio_play_sound_on (global.effectsEmitter, snd_ricebullet, false, 10);     
     alarm[6] = 30;
 }

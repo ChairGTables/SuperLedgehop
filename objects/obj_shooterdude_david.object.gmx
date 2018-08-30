@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//Set health for enemy
-hp = 90;
+hp = 2;
 
 //set health drops
 minDrops = 0;
@@ -292,7 +292,7 @@ if (shootTimer &lt;= 0)
         anglePerShot = 3;
         for (i = 0; i &lt; 360 / anglePerShot; i++)
         {
-            var shot = instance_create(x, y, obj_enemyenhancedbullet);
+            var shot = instance_create(x, y, obj_spread_sonii);
             if (instance_exists(shot))
             {
                 shot.direction = i * anglePerShot;

@@ -3,6 +3,10 @@ if (instance_exists(obj_kamuronpc1))
 {
     cancel = 1;
 }
+if (instance_exists(obj_louie))
+{
+    cancel = 1;
+}
 if (instance_exists(obj_bill))
 {
     cancel = 1;

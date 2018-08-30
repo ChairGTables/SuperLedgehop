@@ -164,7 +164,7 @@ alarm[2] = 2;
     image_angle = direction;
 }*/
 
-if (targetSpeed != 0)
+if (targetSpeed != 0 &amp;&amp; speed &lt; targetSpeed)
 {
     speed += 0.3;
 }

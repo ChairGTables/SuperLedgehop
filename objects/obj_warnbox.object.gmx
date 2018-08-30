@@ -73,13 +73,13 @@ fading = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_alpha &lt; 0.5)
+            <string>if (visible == 0)
 {
-    image_alpha = 1;
+    visible = 1;
 }
 else
 {
-    image_alpha = 0;
+    visible = 0;
 }
 
 alarm[0] = 3;

@@ -284,9 +284,9 @@ if (timer &lt;= 0)
     {   
         audio_play_sound (snd_enemybullet, 10, false); 
         //This code segment shoots a huge surrounding circle
-        var shot = instance_create(x, y, obj_spread_sonii);
+        var shot = instance_create(x, y, obj_enemyenhancedbullet);
         shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
-        shot.speed = 15;
+        shot.speed = 10;
     }
     
     // Create beat indicator

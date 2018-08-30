@@ -654,11 +654,30 @@ myHeight = 4;
         draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
         draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
     }
+    if (instance_exists(obj_default))
+    {
+        draw_sprite(spr_bosshud, 4, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+    }
+    if (instance_exists(obj_yuutoboss))
+    {
+        draw_sprite(spr_bosshud, 5, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+    }
     if (instance_exists(obj_moose) &amp;&amp; instance_exists(obj_kamuronpc1))
     {
         draw_sprite(spr_bosshud, 2, view_xview+440, yMain);
         draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
         draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+    }
+    if (instance_exists(obj_louie))
+    {
+        draw_sprite(spr_bosshud, 3, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 2, view_xview+440+447, yMain+25, -global.bossthree, 26, 0, c_white, 1 );
     }
 }
 

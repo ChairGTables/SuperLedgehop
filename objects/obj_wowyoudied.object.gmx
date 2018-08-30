@@ -3,7 +3,7 @@
   <spriteName>spr_wowyoudied</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -201,6 +201,11 @@ global.chizurump = 99;
 
 global.isCutscene = false;
 global.invincibility = 0;
+
+if (instance_exists(obj_survivalmode))
+{
+    room_goto(rm_title);
+}
 </string>
           </argument>
         </arguments>

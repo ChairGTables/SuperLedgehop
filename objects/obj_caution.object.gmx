@@ -60,6 +60,11 @@ if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(glob
         instance_create(obj_mooseentrance.x, obj_mooseentrance.y, obj_moose);
         instance_destroy(obj_mooseentrance);
     }
+    if (instance_exists(obj_defaultnpc1))
+    {
+        instance_create(obj_defaultnpc1.x, obj_defaultnpc1.y, obj_default);
+        instance_destroy(obj_defaultnpc1);
+    }
     if (instance_exists(obj_titonpc2))
     {
         instance_create(obj_titonpc2.x, obj_titonpc2.y, obj_tito);
