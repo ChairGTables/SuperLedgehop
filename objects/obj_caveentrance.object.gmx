@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>instance_create(x, y, obj_caveshadow);
+global.shineget = 1;
 </string>
           </argument>
         </arguments>

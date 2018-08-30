@@ -56,7 +56,7 @@ instance_create(x, y, obj_circleeraser);
             <kind>1</kind>
             <string>global.bossvirgin = 1;
 
-if (sprite_index == spr_defaulthurt)
+if (sprite_index == spr_defaulthurt || sprite_index == spr_louiehurt)
 {
     room_goto(rm_title);
 }

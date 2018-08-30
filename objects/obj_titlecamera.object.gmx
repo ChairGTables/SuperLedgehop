@@ -62,11 +62,11 @@ if (y &gt; room_height - 270)
     }
     if (global.titleSelection == 1)
     {
-        room_goto(rm_140bpm_david);
+        room_goto(rm_120bpmstage2);
     }
     if (global.titleSelection == 2)
     {
-        room_goto(rm_165bpm_david);
+        room_goto(rm_165bpmsurvival);
     }
     
 }

@@ -1,6 +1,6 @@
 speedCap = 30;
 
-if (instance_exists(obj_chizuru))
+if (instance_exists(obj_chizuru) && global.chizurump > 5)
 {
     if (obj_chizuru.spinning == 0)
     {

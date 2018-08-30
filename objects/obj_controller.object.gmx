@@ -290,9 +290,30 @@ if (global.invincibility &gt; 0)
 }
 
 
-if (global.enhancedcount &gt; 100)
+if (global.enhancedcount &gt; 99)
 {
-    global.enhancedcount = 100;
+    global.enhancedcount = 99;
+}
+
+if (global.spreadcount &gt; 99)
+{
+    global.spreadcount = 99;
+}
+
+if (global.rapidcount &gt; 99)
+{
+    global.rapidcount = 99;
+}
+
+if (global.firecount &gt; 99)
+{
+    global.firecount = 99;
+}
+
+
+if (global.icecount &gt; 99)
+{
+    global.icecount = 99;
 }
 
 
@@ -313,25 +334,38 @@ if (global.bossthree &lt; 0)
 
 if (global.chizurushine &lt; 99)
 {
-    global.chizurushine += 0.3;
+    global.chizurushine += 0.1;
 }
 if (global.chizurushine &gt; 99)
 {
     global.chizurushine = 99;
 }
+if (global.chizurushine &lt; 0)
+{
+    global.chizurushine = 0;
+}
 
 if (global.chizurump &lt; 99)
 {
-    global.chizurump += 0.1;
+    global.chizurump += 0.08;
 }
 if (global.chizurump &gt; 99)
 {
     global.chizurump = 99;
 }
+if (global.chizurump &lt; 0)
+{
+    global.chizurump = 0;
+}
 
 if (global.chizuruhp &gt; 99)
 {
     global.chizuruhp = 99;
+}
+
+if (global.chizuruhp &lt; 0)
+{
+    global.chizuruhp = 0;
 }
 
 

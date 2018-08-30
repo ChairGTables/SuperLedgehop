@@ -802,15 +802,15 @@
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_sampleroom_chair</room>
-      <room>rooms\rm_120bpm3</room>
+      <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
-      <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_120bpm2</room>
       <room>rooms\rm_stage2_2</room>
       <room>rooms\rm_defaultfight</room>
-      <room>rooms\rm_165bpm2</room>
+      <room>rooms\rm_165bpmsurvival</room>
       <room>rooms\rm_survivalmode</room>
       <room>rooms\rm_140bpm_david</room>
       <room>rooms\rm_louiefight</room>
