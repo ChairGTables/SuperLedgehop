@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.05);
+            <string>script_execute(scr_stopmusic);
+
+if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.05);
 go = 0;
 joy_z = false;
 joy_x = false;

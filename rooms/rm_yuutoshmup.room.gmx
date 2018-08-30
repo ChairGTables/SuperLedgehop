@@ -61,7 +61,6 @@
     <instance objName="obj_wall" x="-96" y="0" name="inst_8D99671B" locked="0" code="" scaleX="3" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="544" name="inst_0BAF0596" locked="0" code="" scaleX="35" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="0" name="inst_34054445" locked="0" code="" scaleX="6" scaleY="17" colour="4294967295" rotation="0"/>
-    <instance objName="obj_shmupcontroller" x="832" y="96" name="inst_CF8416C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagetwomusic" x="128" y="448" name="inst_97F630B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutonpc1" x="1024" y="448" name="inst_A58C31B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

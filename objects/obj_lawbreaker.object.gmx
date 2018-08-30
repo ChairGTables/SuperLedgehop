@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>alarm[2] = 2;
-
+previousX = x;
+previousY = y;
 //Set the alarm based on the given beat
 shootBeat = global.halfSec;    // whole note
 shootTimer = shootBeat;
@@ -56,6 +57,30 @@ shootTimer = shootBeat;
             <string>smoke = instance_create(x, y, obj_lawsmoke);
 smoke.image_speed = 0.5;
 alarm[2] = 2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>previousX = x;
+previousY = y;
 </string>
           </argument>
         </arguments>
@@ -95,6 +120,45 @@ if (shootTimer &lt;= 0)
     
     instance_destroy(self);
 }
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>for (i = 0; i &lt; 20; i++)
+{
+    bullet = instance_create(previousX, previousY, obj_spread_sonii);
+    bullet.speed = random_range(2, 20);
+    bullet.gravity_direction = 270;
+    bullet.gravity = 0.5;
+    bullet.direction = random_range(20, 160);
+    
+    if (direction &gt; 30 &amp;&amp; direction &lt; 140)
+    {
+        bullet.direction += 180;
+    }
+}
+    
+instance_destroy(self);
 </string>
           </argument>
         </arguments>

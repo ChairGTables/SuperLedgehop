@@ -25,10 +25,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.shineget = 1;
+            <string>if (instance_exists(obj_chizuru))
+{
+    if (global.xHolder[0] != 0 &amp;&amp; global.yHolder[0] != 0)
+    {
+        obj_chizuru.x = global.xHolder[0];
+        obj_chizuru.y = global.yHolder[0];
+    }
+}
+
+global.shineget = 1;
 
 //Set health for enemy
-hp = 500;
+hp = 100;
+
+global.bossone = 434;
+global.bosstwo = 434;
+global.bossthree = 100;
+
+hpIndex = 3;
 
 //set health drops
 minDrops = 3;
@@ -170,10 +185,34 @@ image_index = 0;
 // Scroll all the way down for changeable features
 /////////////////////////
 
-
+global.chizurump = 0;
 
 script_execute(scr_enemycorestep);
 
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &gt; 0 &amp;&amp; global.bossone &gt; 0)
+{
+    global.bossthree = hp;
+}
+
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 3)
+    {
+        hp = global.bosstwo;
+        hpIndex = 2;
+    }
+    global.bosstwo = hp;
+}
+
+if (global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 2)
+    {
+        hp = global.bossone;
+        hpIndex = 1;
+    }
+    global.bossone = hp;
+}
 
 
 ////////////////////////////
@@ -249,12 +288,12 @@ if (shotCount == 60 || shotCount == 61)
     }
 }
 
-if (shotCount == 64)
+if (shotCount == 64 &amp;&amp; !instance_exists(obj_blackbackground))
 {
     for (i = 0; i &lt; 3; i++)
     {
         //audio_play_sound_on (global.effectsEmitter, snd_enemysmall, false, 10); 
-        bullet = instance_create(x, y, obj_enemyenhancedbullet);
+        bullet = instance_create(x, y, obj_spread_sonii);
         bullet.speed = 0;
         bullet.direction = random_range(0, 360);
         bullet.targetSpeed = random_range(4,9);
@@ -373,7 +412,7 @@ if (shootTimer &lt;= 0)
                         image_index = 0;
                         image_speed = 0.3;
                         
-                        if (random_range(0, 100) &gt; 50)
+                        if (random_range(0, 100) &gt; 100)
                         {
                             audio_play_sound_on (global.voiceEmitter, snd_louiestaydown1, false, 10); 
                         }
@@ -478,11 +517,16 @@ if (shootTimer &lt;= 0)
                 }
                 else if (shotCount == 62)
                 {
-                    audio_play_sound_on (global.effectsEmitter, snd_defaultwarn, false, 10); 
                     audio_play_sound_on (global.voiceEmitter, snd_louiebull, false, 10);
-                    warn = instance_create(x, y, obj_warninglaser_sonii);
-                    warn.image_angle = directionHold;
-                    warn.image_yscale = 8;
+                    if (!instance_exists(obj_blackbackground))
+                    {
+                        audio_play_sound_on (global.effectsEmitter, snd_defaultwarn, false, 10); 
+                        
+                        warn = instance_create(x, y, obj_warninglaser_sonii);
+                        warn.image_angle = directionHold;
+                        warn.image_yscale = 8;
+                    }
+                    
                     shotCount += 1;
                     shootBeat = global.halfSec + global.quarterSec;
                     shootTimer = shootBeat;
@@ -496,12 +540,25 @@ if (shootTimer &lt;= 0)
                     spark.image_angle = directionHold;
                     spark.image_xscale = 1;
                     
+                    if (instance_exists(obj_camera_chair))
+                    {
+                        obj_camera_chair.intensity = 30;
+                    }
+                    
                     spark.damage = 9000;
                     spark.fading = 0;
                     spark.alarm[1] = 90;
                     spark.frequency = 0.7;
                     spark.amplitude = 0.09;
-                    shotCount += 1;
+                    spark.depth = depth - 1;
+                    if (instance_exists(obj_blackbackground))
+                    {
+                        shotCount = 65;
+                    }
+                    else
+                    {
+                        shotCount += 1;
+                    }
                     shootBeat = global.wholeSec * 2;
                     shootTimer = shootBeat;
                 }
@@ -570,9 +627,13 @@ if (moveTimer &lt;= 0)
 /////////////////////////////
 //Death
 /////////////////////////
-if (hp &lt; 1)
+if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1)
 {
-    script_execute(scr_enemydeath);
+    script_execute(scr_stopmusic);
+    audio_play_sound_on (global.voiceEmitter, deathSound, false, 10); 
+    var death = instance_create(x, y, obj_bossdeath);
+    death.sprite_index = spr_louiehurt;
+    instance_destroy(self);
 }
 </string>
           </argument>
@@ -747,7 +808,7 @@ if (rightmomentum &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount &gt; 0)
 {
     other.timed = 0;
 }
@@ -794,7 +855,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount &gt; 0)
 {
     other.timed = 0;
 }
@@ -841,7 +902,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount &gt; 0)
 {
     other.timed = 0;
 }
@@ -888,7 +949,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount &gt; 0)
 {
     other.timed = 0;
 }
@@ -935,7 +996,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount &gt; 0)
 {
     other.timed = 0;
 }
@@ -962,7 +1023,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount &gt; 0)
 {
     other.timed = 0;
 }
@@ -989,39 +1050,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1)
-{
-    sekret = instance_create(other.x, other.y, obj_laser_sonii);
-    sekret.visible = 0;
-    
-    if(instance_exists(obj_shine))
-    {
-        instance_destroy(obj_shine);
-    }
-    
-    image_speed = 0.7;
-                    shootBeat = global.eighthSec;
-                    shootTimer = shootBeat;
-                    shotCount = 2;
-                    speed = 0;
-                    audio_stop_sound (snd_enemybullet);
-                    audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
-                    if (random_range(0, 100) &gt; 50)
-                    {
-                        audio_play_sound_on (global.voiceEmitter, snd_defaultfire, false, 10); 
-                    }
-                    for (i = 0; i &lt; random_range(20, 30); i++)
-                    {
-                        shot = instance_create(x, y, obj_flame_sonii);
-                        if (instance_exists(obj_chizuru))
-                        {
-                            shot.direction = direction + random_range(-30, 30);
-                        }
-                        shot.speed = random_range(1, 15);
-                        
-                    }
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

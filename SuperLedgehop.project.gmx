@@ -70,6 +70,7 @@
           <sound>sound\snd_titowave</sound>
           <sound>sound\snd_titorice</sound>
         </sounds>
+        <sound>sound\snd_survivaltheme</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -404,6 +405,7 @@
       </sprites>
       <sprite>sprites\spr_shockwave_sonii</sprite>
       <sprite>sprites\spr_turretaimer</sprite>
+      <sprite>sprites\spr_turretaimerhurt</sprite>
       <sprite>sprites\spr_lazercannon_sonii</sprite>
       <sprite>sprites\spr_aimcannon_sonii</sprite>
       <sprites name="bullets">
@@ -466,6 +468,7 @@
       <background>background\back_hills</background>
       <background>background\back_river</background>
       <background>background\back_yuutospace</background>
+      <background>background\back_waterloop</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -521,6 +524,7 @@
       <script>scripts\scr_titoskip.gml</script>
       <script>scripts\scr_mooseskip.gml</script>
       <script>scripts\scr_pretitoskip.gml</script>
+      <script>scripts\scr_defaultskip.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -617,6 +621,7 @@
         <object>objects\obj_whitefadein</object>
         <object>objects\obj_blackfadein</object>
         <object>objects\obj_blackfadeout</object>
+        <object>objects\obj_blackbackground</object>
         <object>objects\obj_chaptercomplete</object>
         <object>objects\obj_siopaoexplosion</object>
         <object>objects\obj_hpup</object>
@@ -697,6 +702,8 @@
         </objects>
         <objects name="default">
           <object>objects\obj_default</object>
+          <object>objects\obj_defaultnpc1</object>
+          <object>objects\obj_defaultdialogue1</object>
           <object>objects\obj_defaultdetonate</object>
           <object>objects\obj_defaultdetonator</object>
         </objects>
@@ -712,6 +719,7 @@
           <object>objects\obj_louieslash</object>
           <object>objects\obj_louiespear</object>
           <object>objects\obj_louiedisc</object>
+          <object>objects\obj_louienpc1</object>
         </objects>
       </objects>
     </objects>
@@ -791,20 +799,24 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_140bpm_david</room>
-      <room>rooms\rm_louiefight</room>
-      <room>rooms\rm_kamurofight</room>
-      <room>rooms\rm_billfight</room>
-      <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_stage1</room>
+      <room>rooms\rm_stage1_2</room>
+      <room>rooms\rm_sampleroom_chair</room>
+      <room>rooms\rm_120bpm3</room>
+      <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_yuutoboss_</room>
-      <room>rooms\rm_stage1_2</room>
-      <room>rooms\rm_sampleroom_chair</room>
-      <room>rooms\room15</room>
-      <room>rooms\room9</room>
+      <room>rooms\rm_120bpm2</room>
+      <room>rooms\rm_stage2_2</room>
+      <room>rooms\rm_defaultfight</room>
+      <room>rooms\rm_165bpm2</room>
       <room>rooms\rm_survivalmode</room>
+      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_louiefight</room>
+      <room>rooms\rm_billfight</room>
+      <room>rooms\rm_kamurofight</room>
+      <room>rooms\room9</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
     </rooms>

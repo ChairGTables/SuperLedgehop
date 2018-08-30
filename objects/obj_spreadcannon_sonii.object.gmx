@@ -36,7 +36,7 @@ maxDrops = 5;
 image_speed = 0.2;
 
 //You must define the hurt sprite as a string
-hurtSprite = "spr_roundcannonhurt";//need to make a spr_turretaimerhurt sprite
+hurtSprite = "spr_turretaimerhurt";//need to make a spr_turretaimerhurt sprite
 
 //Do not touch this
 sS = sprite_index;
@@ -370,12 +370,9 @@ if (timer &lt;= 0)
         anglePerShot = 9;
         for (i = 0; i &lt; 45 / anglePerShot; i++)
         {
-            var shot = instance_create(x, y, obj_spread_sonii);
-            if (instance_exists(shot))
-            {
-                shot.direction = (i * anglePerShot) + point_direction(x,y,obj_chizuru.x,obj_chizuru.y) - 25;
-                shot.speed = 5;
-            }
+            shot = instance_create(x, y, obj_spread_sonii);
+            shot.direction = (i * anglePerShot) + point_direction(x,y,obj_chizuru.x,obj_chizuru.y) - 25;
+            shot.speed = 5;
         }
     }
     

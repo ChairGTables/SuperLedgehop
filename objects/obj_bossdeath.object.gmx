@@ -55,27 +55,16 @@ instance_create(x, y, obj_circleeraser);
           <argument>
             <kind>1</kind>
             <string>global.bossvirgin = 1;
+
+if (sprite_index == spr_defaulthurt)
+{
+    room_goto(rm_title);
+}
+else
+{
+    room_goto_next();
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>rm_title</room>
           </argument>
         </arguments>
       </action>
@@ -124,11 +113,18 @@ alarm[7] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Music in rm1, priority 10, looping
-global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_winsong, false, 10);
-
-
-alarm[6] = 80;
+            <string>if (sprite_index == spr_yuutohurt)
+{
+    room_goto_next();
+}
+else
+{
+    // Music in rm1, priority 10, looping
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_winsong, false, 10);
+    
+    
+    alarm[6] = 80;
+}
 </string>
           </argument>
         </arguments>

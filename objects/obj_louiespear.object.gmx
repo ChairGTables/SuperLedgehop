@@ -8,6 +8,43 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>friendly  = 0;
+absorbed = 0;
+damage = 0;
+knockbackspeed = 0;
+destroyable = 0;
+
+//Categories include: enhanced, spread, rapid, fire, ice
+category = "rapid";
+
+upmomentum = 0;
+leftmomentum = 0;
+rightmomentum = 0;
+downmomentum = 0;
+
+image_angle = direction;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -26,6 +63,70 @@
           <argument>
             <kind>1</kind>
             <string>image_angle = direction;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_laser_sonii">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy(self);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_smolhitbox">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!instance_exists(obj_blackbackground))
+{
+    //script_execute(scr_chizurudamage);
+    instance_create(x, y, obj_blackbackground);
+    instance_create(x, y, obj_whitefadein);
+    script_execute(scr_stopmusic);
+    audio_play_sound_on (global.effectsEmitter, snd_stab, false, 10); 
+    speed = 0;
+    if (instance_exists(obj_enemyenhancedbullet))
+    {
+        instance_destroy(obj_enemyenhancedbullet);
+    }
+    if (instance_exists(obj_chizuru))
+    {
+        obj_chizuru.sprite_index = spr_chizuruhurtd;
+        obj_chizuru.image_index = 1;
+        obj_chizuru.image_speed = 0;
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -146,17 +146,7 @@ image_index = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
-{
-    shadow = instance_create(x, y, obj_yuutosillhoute);
-    shadow.sprite_index = spr_defaultfade;
-    shadow.direction = direction + 180;
-    shadow.speed = 1;
-    shadow.image_xscale = image_xscale;
-    shadow.fadeSpeed = 0.03;
-}
-    alarm[1] = 2;
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -208,6 +198,20 @@ script_execute(scr_resyncenemies_david);
 if (global.resyncing)
 {
     shootRestTime = global.currentWholeSec * 4;
+}
+
+if (shotCount == 501)
+{
+    for (i = 0; i &lt; 3; i++)
+    {
+        bullet = instance_create(x, y, obj_enemyenhancedbullet);
+        bullet.direction = random_range(1, 359);
+        bullet.targetDirection = random_range(1, 359);
+        bullet.targetSpeed = random_range(5,8);
+        bullet.speed = 1;
+        
+    }
+    audio_play_sound_on (global.effectsEmitter, snd_enemysmall, false, 10);
 }
 
 if (shootTimer &lt;= 0)
@@ -270,11 +274,11 @@ if (shootTimer &lt;= 0)
                     shootTimer = shootBeat;
                     
                     randomChoice = random_range(0, 100);
-                    if (randomChoice &gt; 75)
+                    if (randomChoice &gt; 67)
                     {
                         audio_play_sound_on (global.voiceEmitter, snd_billcrimestopper, false, 10); 
                     }
-                    else if (randomChoice &lt; 25)
+                    else if (randomChoice &lt; 33)
                     {
                         audio_play_sound_on (global.voiceEmitter, snd_billveto, false, 10); 
                         shootBeat = global.eighthSec;
@@ -291,7 +295,7 @@ if (shootTimer &lt;= 0)
             
                 else if (shotCount == 50)
                 {
-                    if (randomChoice &gt; 75)
+                    if (randomChoice &gt; 67)
                     {
                         audio_play_sound_on (global.effectsEmitter, snd_bombbeep, false, 10); 
                         
@@ -321,7 +325,7 @@ if (shootTimer &lt;= 0)
                         shootBeat = global.halfSec + global.quarterSec;
                         shootTimer = shootBeat;
                     }
-                    else if (randomChoice &lt; 25)
+                    else if (randomChoice &lt; 33)
                     {
                         shotCount = 300;
                         shootBeat = global.quarterSec;
@@ -348,8 +352,7 @@ if (shootTimer &lt;= 0)
                     }
                     else
                     {
-                        phase = 0;
-                        shotCount = 0;
+                        shotCount = 500;
                         sprite_index = spr_billshoot;
                         image_index = 0;
                         image_speed = 0.3;
@@ -384,7 +387,7 @@ if (shootTimer &lt;= 0)
                             ball.speed = 3;
                             ball.following = 1;
                         }
-                        shootBeat = global.wholeSec;
+                        shootBeat = global.quarterSec;
                         shootTimer = shootBeat;
                     }
                 }
@@ -443,7 +446,7 @@ if (shootTimer &lt;= 0)
                         warning.image_angle = directionHold[i];
                     }
                 }
-                else if (shotCount == 400 || 401 || 402)
+                else if (shotCount == 400 || shotCount == 401 || shotCount == 402)
                 {
                     audio_play_sound_on (global.effectsEmitter, snd_bombbeep, false, 10); 
                         
@@ -484,6 +487,19 @@ if (shootTimer &lt;= 0)
                         shootTimer = shootBeat;
                     }
                     
+                }
+                else if (shotCount == 500)
+                {
+                    shotCount += 1;
+                    shootBeat = global.wholeSec + global.halfSec;
+                    shootTimer = shootBeat;
+                }
+                else if (shotCount == 501)
+                {
+                    shotCount = 0;
+                    phase = 0;
+                    shootBeat = global.wholeSec + global.halfSec;
+                    shootTimer = shootBeat;
                 }
             }
         }
@@ -932,60 +948,6 @@ script_execute(scr_enemydamage);
     other.timed = 0;
 }
 script_execute(scr_enemydamage);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_chizuru">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (shotCount == 1)
-{
-    sekret = instance_create(other.x, other.y, obj_laser_sonii);
-    sekret.visible = 0;
-    
-    if(instance_exists(obj_shine))
-    {
-        instance_destroy(obj_shine);
-    }
-    
-    image_speed = 0.7;
-                    shootBeat = global.eighthSec;
-                    shootTimer = shootBeat;
-                    shotCount = 2;
-                    speed = 0;
-                    audio_stop_sound (snd_enemybullet);
-                    audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
-                    if (random_range(0, 100) &gt; 50)
-                    {
-                        audio_play_sound_on (global.voiceEmitter, snd_defaultfire, false, 10); 
-                    }
-                    for (i = 0; i &lt; random_range(20, 30); i++)
-                    {
-                        shot = instance_create(x, y, obj_flame_sonii);
-                        if (instance_exists(obj_chizuru))
-                        {
-                            shot.direction = direction + random_range(-30, 30);
-                        }
-                        shot.speed = random_range(1, 15);
-                        
-                    }
-}
 </string>
           </argument>
         </arguments>

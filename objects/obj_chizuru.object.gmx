@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mySpeed = 7;
+            <string>global.chizurumovex = 0;
+global.chizurumovey = 0;
+
+
+mySpeed = 7;
 analogBoundary = 0.1;
 aimBoundary = 0.01;
 isMoving = 1;
@@ -636,6 +640,13 @@ if (global.isCutscene == true)
 {
     action = 0;
 }
+
+if (action == 0)
+{
+    global.chizurumovex = 0;
+    global.chizurumovey = 0;
+}
+
 
 
 ////////////////////////////////
