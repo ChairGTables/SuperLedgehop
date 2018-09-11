@@ -52,7 +52,7 @@ hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
 shootBeat = global.quarterSec * 3;    // whole note
-//moveBeat = global.wholeSec; // half note
+moveBeat = global.wholeSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
@@ -180,6 +180,29 @@ if( hp &lt; 1 )
     instance_destroy(self);
     
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>shootTimer = 0
 </string>
           </argument>
         </arguments>

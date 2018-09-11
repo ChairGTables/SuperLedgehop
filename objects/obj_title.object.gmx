@@ -222,6 +222,7 @@ global.bossthree = 434;
 global.isGamepad = true;
 
 global.isCutscene = false;
+global.stageState = 0;
 
 //Key unlockables
 for (i = 0; i &lt; 100; i++)

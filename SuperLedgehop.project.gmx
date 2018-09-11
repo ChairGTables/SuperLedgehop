@@ -71,6 +71,7 @@
           <sound>sound\snd_titorice</sound>
         </sounds>
         <sound>sound\snd_survivaltheme</sound>
+        <sound>sound\snd_stagethree</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -349,6 +350,12 @@
         <sprite>sprites\spr_beamrotate</sprite>
         <sprite>sprites\spr_curvingplane</sprite>
         <sprite>sprites\spr_straightdown</sprite>
+        <sprite>sprites\spr_policerifle</sprite>
+        <sprite>sprites\spr_policeriflehurt</sprite>
+        <sprite>sprites\spr_policegrenade</sprite>
+        <sprite>sprites\spr_policegrenadehurt</sprite>
+        <sprite>sprites\spr_policecyborg</sprite>
+        <sprite>sprites\spr_policecyborghurt</sprite>
       </sprites>
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>
@@ -469,6 +476,30 @@
       <background>background\back_river</background>
       <background>background\back_yuutospace</background>
       <background>background\back_waterloop</background>
+      <background>background\back_building1a</background>
+      <background>background\back_building1b</background>
+      <background>background\back_gates</background>
+      <background>background\back_diagonalbrickswhite</background>
+      <background>background\back_wallswhite</background>
+      <background>background\back_ladderswhite</background>
+      <background>background\back_laddersviolet</background>
+      <backgrounds name="stage3">
+        <background>background\back_barrierred</background>
+        <background>background\back_barrierviolet</background>
+        <background>background\back_barrierpurplealt</background>
+        <background>background\back_barrierredalt</background>
+        <background>background\back_carpetred</background>
+        <background>background\back_carpetpurple</background>
+        <background>background\back_carpetredalt</background>
+        <background>background\back_carpetpurplealt</background>
+        <background>background\back_fancytable</background>
+        <background>background\back_fancytablealt</background>
+        <background>background\back_vase</background>
+        <background>background\back_fancywallred</background>
+        <background>background\back_fancywallviolet</background>
+        <background>background\back_buildingwhite1</background>
+        <background>background\back_buildingwhite2</background>
+      </backgrounds>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -608,7 +639,9 @@
         <object>objects\obj_hporb</object>
         <object>objects\obj_mporb</object>
         <object>objects\obj_stagetwomusic</object>
+        <object>objects\obj_stagethreemusic</object>
         <object>objects\obj_shmupcontroller</object>
+        <object>objects\obj_chizuruspawner</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -654,6 +687,7 @@
         <object>objects\obj_beamboy</object>
         <object>objects\obj_beamrotate</object>
         <object>objects\obj_curvingplane</object>
+        <object>objects\obj_policegrenade</object>
         <objects name="tito">
           <object>objects\obj_tito</object>
           <object>objects\obj_redrice</object>
@@ -684,6 +718,8 @@
         <object>objects\obj_musicbox</object>
         <object>objects\obj_musicboxstopper</object>
         <object>objects\obj_firecannon</object>
+        <object>objects\obj_policerapid</object>
+        <object>objects\obj_policecyborg</object>
         <object>objects\obj_mooseentrance</object>
         <object>objects\obj_moose</object>
         <object>objects\obj_trashbin</object>
@@ -798,14 +834,17 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
+      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_stage3_1</room>
+      <room>rooms\rm_stage_3_2</room>
+      <room>rooms\rm_repeat3_1</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_sampleroom_chair</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_yuutoshmup</room>
-      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_120bpm2</room>
       <room>rooms\rm_stage2_2</room>

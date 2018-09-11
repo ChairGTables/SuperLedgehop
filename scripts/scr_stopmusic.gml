@@ -8,3 +8,4 @@ audio_stop_sound(snd_hypeevent);
 audio_stop_sound(snd_coolevent);
 audio_stop_sound(snd_stagetwo);
 audio_stop_sound(snd_survivaltheme);
+audio_stop_sound(snd_stagethree);
