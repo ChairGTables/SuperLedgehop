@@ -55,6 +55,7 @@ instance_create(x, y, obj_circleeraser);
           <argument>
             <kind>1</kind>
             <string>global.bossvirgin = 1;
+global.stageState = 0;
 
 if (sprite_index == spr_defaulthurt || sprite_index == spr_louiehurt)
 {
