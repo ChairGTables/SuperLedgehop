@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>//create dialogue
-var dialogue = instance_create(0, 0, obj_dialogue);
+dialogue = instance_create(0, 0, obj_dialogue);
 
-obj_dialogue.antagonist = "tito";
+dialogue.antagonist = "yuuto";
+dialogue.mini = 1;
 
 //set limit
 global.messageLimit = 5;
@@ -42,8 +43,8 @@ global.emotionAntagonistArray[0] = "neutral";
 
 global.messageArray[1] = "It's just your favorite uncle. TITO!";
 global.categoryArray[1] = "right";
-global.emotionProtagonistArray[1] = "angry";
-global.emotionAntagonistArray[1] = "angry";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
 
 
 global.messageArray[2] = "W-What are you doing here!?";
@@ -51,10 +52,10 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "angry";
 
-global.messageArray[3] = "Well, it's too dangaerous!";
+global.messageArray[3] = "Well, it's too dangerous!";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
-global.emotionAntagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "sad";
 
 global.messageArray[4] = "What do I do?";
 global.categoryArray[4] = "left";

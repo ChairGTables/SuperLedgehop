@@ -185,6 +185,29 @@ if (image_alpha &lt; 0.1)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_yuutohitbox">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_yuutodamage);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_defaultdetonator">
       <action>
         <libid>1</libid>
@@ -375,13 +398,21 @@ instance_destroy(self);
         hspeed = -hspeed * 2;
         audio_play_sound_on (global.effectsEmitter, snd_reflector, false, 10); 
         var darkside = instance_create(x, y, obj_chizuruenhancedbullet);
-        darkside.direction = direction + 180;
+        if (instance_exists(obj_moose))
+        {
+            darkside.direction = point_direction(x, y, obj_moose.x, obj_moose.y);
+        }
+        else
+        {
+            darkside.direction = direction + 180;
+        }
         darkside.speed = speed * 3;
         darkside.sprite_index = sprite_index;
         darkside.timed = 1;
         instance_create(x, y, obj_shine);
         instance_create(x, y, obj_titonpc1);
         instance_create(x, y, obj_redcircle);
+        
         instance_destroy(self);
     }
     if (!instance_exists(obj_titonpc1))

@@ -29,7 +29,7 @@
 image_speed = 0;
 
 //Set the frame for the time it activates and deactivates
-activateBeat = global.quarterSec;    // whole note
+activateBeat = global.halfSec;    // whole note
 
 
 //Keep note that you need to have damage, destroyable, and absorbed
@@ -107,6 +107,33 @@ if (activateTimer &lt;= 0)
 //Make the sprite go to it's next subimage whenever this alarm happens
     image_index += 1;
 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_yuutohitbox">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if (image_index == 1)
+{
+    script_execute(scr_yuutodamage);
 }
 </string>
           </argument>

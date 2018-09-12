@@ -176,6 +176,7 @@ else
             <kind>1</kind>
             <string>global.chizurump += 3;
 global.chizurushine += 2;
+global.assisthp += 2;
 instance_create(x, y, obj_mpup);
 audio_play_sound_on (global.effectsEmitter, snd_mpheal, false, 10); 
 instance_destroy(self);

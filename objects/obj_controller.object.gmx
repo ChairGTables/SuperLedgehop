@@ -369,6 +369,18 @@ if (global.chizuruhp &lt; 0)
 }
 
 
+
+if (global.assisthp &gt; 99)
+{
+    global.assisthp = 99;
+}
+
+if (global.assisthp &lt; 0)
+{
+    global.assisthp = 0;
+}
+
+
 </string>
           </argument>
         </arguments>
@@ -623,7 +635,16 @@ myHeight = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.speaking == false)
+            <string>exceptionCheck = 0;
+if (instance_exists(obj_dialogue))
+{
+    if (obj_dialogue.mini == 1)
+    {
+        exceptionCheck = 1;
+    }
+}
+
+if (global.speaking == false || exceptionCheck == 1)
 {
     draw_sprite(spr_chizuruhud, 0, xMain, yMain)
     if (global.shottype != 0)
@@ -656,8 +677,12 @@ myHeight = 4;
     draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36,global.chizurump,myHeight)
     draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47,global.chizurushine,myHeight)
     
-    
-    
+    if (instance_exists(obj_yuutoassist))
+    {
+        draw_sprite(spr_assisthud, 0, xMain, yMain - 100)
+        draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+47-100,global.assisthp,myHeight)        
+    }
+
     
     
     
@@ -675,6 +700,8 @@ myHeight = 4;
         draw_set_valign(fa_center);
         draw_text_color(view_xview+30,view_yview+135,global.combo,c_white,c_white,c_white,c_white,1)
     }
+    
+    
     
     
     if (instance_exists(obj_tito))
