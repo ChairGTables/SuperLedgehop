@@ -26,15 +26,60 @@
           <argument>
             <kind>1</kind>
             <string>bounce = 0;
-rotationSpeed = 2
+rotationSpeed = 2;
+astral = 0;
 alarm[0] = 15;
 alarm[1] = 2;
 shootAngle = 0;
+previousX = x;
+previousY = y;
 
 if (instance_exists(obj_yuutoboss))
 {
     speed = 7;
     direction = point_direction(x, y, obj_yuutoboss.x, obj_yuutoboss.y);
+}
+
+if (instance_exists(obj_yuutoassist))
+{
+    speed = 7;
+    direction = point_direction(x, y, obj_yuutoassist.x, obj_yuutoassist.y);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>astral = 0;
+audio_play_sound_on (global.effectsEmitter, snd_ricebullet, false, 10); 
+for (i = 0; i &lt; 360; i += 20)
+{
+    shot = instance_create(x, y, obj_chizuruspreadbullet);
+    shot.direction = i;
+    shot.speed = 7;
+}
+
+if (instance_exists(obj_yuutoassist) &amp;&amp; astral == 0)
+{
+    speed = 10;
+    direction = point_direction(x, y, obj_yuutoassist.x, obj_yuutoassist.y);
 }
 </string>
           </argument>
@@ -91,6 +136,36 @@ if (instance_exists(obj_yuutoboss) &amp;&amp; bounce == 0 &amp;&amp; rotationSpe
     direction = point_direction(x, y, obj_yuutoboss.x, obj_yuutoboss.y);
     
 }
+
+if (instance_exists(obj_yuutoassist) &amp;&amp; astral == 0)
+{
+    speed = 10;
+    direction = point_direction(x, y, obj_yuutoassist.x, obj_yuutoassist.y);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>previousX = x;
+previousY = y;
 </string>
           </argument>
         </arguments>
@@ -189,6 +264,28 @@ else
             direction = point_direction(x, y, obj_yuutoboss.x, obj_yuutoboss.y);
         }
         alarm[0] = 5;
+    }
+}
+
+if (astral == 1)
+{
+    x = previousX;
+    y = previousY;
+    astral = 0;
+    alarm[7] = -1;
+    audio_play_sound_on (global.effectsEmitter, snd_ricebullet, false, 10); 
+    for (i = 0; i &lt; 360; i += 20)
+    {
+        shot = instance_create(x, y, obj_chizuruspreadbullet);
+        shot.direction = i;
+        shot.speed = 7;
+    }
+    
+    
+    if (instance_exists(obj_yuutoassist) &amp;&amp; astral == 0)
+    {
+        speed = 10;
+        direction = point_direction(x, y, obj_yuutoassist.x, obj_yuutoassist.y);
     }
 }
 </string>

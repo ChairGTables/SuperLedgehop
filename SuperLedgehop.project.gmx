@@ -72,6 +72,7 @@
         </sounds>
         <sound>sound\snd_survivaltheme</sound>
         <sound>sound\snd_stagethree</sound>
+        <sound>sound\snd_minigametheme</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -273,6 +274,7 @@
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
         <sprite>sprites\spr_chizuruhud</sprite>
+        <sprite>sprites\spr_assisthud</sprite>
         <sprite>sprites\spr_bosshud</sprite>
         <sprite>sprites\spr_ammohud</sprite>
         <sprite>sprites\spr_transparentbluesquare</sprite>
@@ -453,7 +455,6 @@
     <sprites name="ultran">
       <sprite>sprites\spr_samplesprite_ultran</sprite>
     </sprites>
-    <sprite>sprites\sprite185</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="chair">
@@ -556,6 +557,8 @@
       <script>scripts\scr_mooseskip.gml</script>
       <script>scripts\scr_pretitoskip.gml</script>
       <script>scripts\scr_defaultskip.gml</script>
+      <script>scripts\scr_yuutodetection.gml</script>
+      <script>scripts\scr_yuutodamage.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -662,6 +665,7 @@
         <object>objects\obj_absorbinstructions</object>
         <object>objects\obj_beatinstructions</object>
         <object>objects\obj_absorbinstructionsspace</object>
+        <object>objects\obj_reflectinstructionspace</object>
         <object>objects\obj_beatinstructionspace</object>
         <object>objects\obj_outofammo</object>
         <object>objects\obj_skippingcutscene</object>
@@ -713,6 +717,9 @@
           <object>objects\obj_yuutodialogue6</object>
           <object>objects\obj_yuutodialogue7</object>
           <object>objects\obj_yuutonpc1</object>
+          <object>objects\obj_yuutodetect</object>
+          <object>objects\obj_yuutoassist</object>
+          <object>objects\obj_yuutohitbox</object>
         </objects>
         <object>objects\obj_bossdeath</object>
         <object>objects\obj_musicbox</object>
@@ -731,6 +738,9 @@
           <object>objects\obj_titodialogue2</object>
           <object>objects\obj_titodialogue3</object>
           <object>objects\obj_titodialogue4</object>
+          <object>objects\obj_titoabsorbdialogue</object>
+          <object>objects\obj_titoweaponsdialogue</object>
+          <object>objects\obj_titoreflectdialogue</object>
           <object>objects\obj_kamuro</object>
           <object>objects\obj_kamuronpc1</object>
           <object>objects\obj_titonpc1</object>
@@ -834,18 +844,18 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
-      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_stage3_1</room>
-      <room>rooms\rm_stage_3_2</room>
-      <room>rooms\rm_repeat3_1</room>
-      <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
+      <room>rooms\rm_stage1</room>
+      <room>rooms\rm_stage3_1</room>
+      <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_yuutoshmup</room>
+      <room>rooms\rm_yuutoboss_</room>
+      <room>rooms\rm_repeat3_1</room>
+      <room>rooms\rm_stage3_2</room>
       <room>rooms\rm_sampleroom_chair</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
-      <room>rooms\rm_yuutoshmup</room>
-      <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_120bpm2</room>
       <room>rooms\rm_stage2_2</room>
       <room>rooms\rm_defaultfight</room>

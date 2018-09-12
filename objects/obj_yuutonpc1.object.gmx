@@ -70,6 +70,7 @@ absorb = 0;
 image_xscale = -1;
 global.shineget = 1;
 
+script_execute(scr_stopmusic);
 script_execute(scr_releaseinputs);
 
 if (instance_exists(obj_chizuru))
@@ -238,13 +239,13 @@ if (state == 13 &amp;&amp; instance_number(obj_yuutodialogue5) == 0)
     
     
     instance_create(0, -300, obj_straightdown);
-    straight1 = instance_create(64, -2000, obj_curvingplane);
-    straight2 = instance_create(-64, -2000, obj_curvingplane);
-    straight1.selectedStop = straight1.stop[1];
-    straight2.selectedStop = straight2.stop[1];
+    //straight1 = instance_create(64, -2000, obj_curvingplane);
+    //straight2 = instance_create(-64, -2000, obj_curvingplane);
+    //straight1.selectedStop = straight1.stop[1];
+    //straight2.selectedStop = straight2.stop[1];
     
-    beam1 = instance_create(64, -3000, obj_beamboy);
-    beam2 = instance_create(-64, -3000, obj_beamboy);
+    beam1 = instance_create(64, -2000, obj_beamboy);
+    beam2 = instance_create(-64, -2000, obj_beamboy);
     beam1.selectedStop = beam1.stop[1];
     beam2.selectedStop = beam2.stop[1];
     
@@ -327,6 +328,10 @@ if (state == 1 &amp;&amp; instance_number(obj_yuutodialogue1) == 0)
     instance_create(-192, -32, obj_straightdown);
     global.isCutscene = false;
     state = 2;
+    if (!audio_is_playing(snd_minigametheme))
+    {
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_minigametheme, true, 10); // Music in rm1, priority 10, looping
+    }
 }
 
 

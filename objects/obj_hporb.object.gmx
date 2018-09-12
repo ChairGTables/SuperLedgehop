@@ -175,6 +175,7 @@ else
           <argument>
             <kind>1</kind>
             <string>global.chizuruhp += 3;
+global.assisthp += 3;
 instance_create(x, y, obj_hpup);
 audio_play_sound_on (global.effectsEmitter, snd_hpheal, false, 10); 
 instance_destroy(self);

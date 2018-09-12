@@ -39,6 +39,10 @@ if (state < 8)
     {
         instance_destroy(obj_titodialogue4);
     }
+    if (instance_exists(obj_moose))
+    {
+        instance_destroy(obj_moose);
+    }
     if (global.shineget == 0)
     {
         instance_create(x, y, obj_shinemessage);

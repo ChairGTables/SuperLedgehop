@@ -34,6 +34,7 @@ chat = 0;
 category = 1;
 sounding = 0;
 boss = 0;
+mini = 0;
 
 global.message = "";
 global.chr1 = 0;
@@ -106,7 +107,12 @@ if (instance_exists(obj_yuutonpc1))
     alarm[1] = 70;
 }
 
-if (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4)
+if (mini == 1)
+{
+    alarm[1] = 85;
+}
+
+if (mini == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4))
 {
     depth = -9000;
     
@@ -187,8 +193,16 @@ presenting = 1;
 global.speaking = true;
 speaking = 1;
 
-var protagonistDisplay = instance_create(view_xview-200, view_yview, obj_protagonisttalk);
-var antagonistDisplay = instance_create(view_xview+1060, view_yview, obj_antagonisttalk);
+protagonistDisplay = instance_create(view_xview-200, view_yview, obj_protagonisttalk);
+antagonistDisplay = instance_create(view_xview+1060, view_yview, obj_antagonisttalk);
+
+protagonistDisplay.mini = mini;
+antagonistDisplay.mini = mini;
+
+if (mini == 1)
+{
+    alarm[1] = 85;
+}
 
 
 if (boss == 1 &amp;&amp; global.messageNumber == global.messageLimit - 3)
@@ -506,7 +520,7 @@ if (instance_exists(obj_antagonisttalk))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (boss == 0 || global.messageNumber &lt; global.messageLimit - 3)
+            <string>if (mini == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
 {
 
 
@@ -609,75 +623,116 @@ if (instance_exists(obj_antagonisttalk))
             <kind>1</kind>
             <string>if (presenting == 1)
 {
-    draw_set_color(c_black);
-    draw_rectangle(view_xview, view_yview+440, view_xview+960, view_yview+540, false);
-    draw_set_font(fnt_name);
-    draw_set_valign(fa_top);
-    draw_set_halign(fa_left);
-    if (category == 1)
+    if (mini == 0)
     {
-        if (protagonist == "chizuru")
+        draw_set_color(c_black);
+        draw_rectangle(view_xview, view_yview+440, view_xview+960, view_yview+540, false);
+        draw_set_font(fnt_name);
+        draw_set_valign(fa_top);
+        draw_set_halign(fa_left);
+        if (category == 1)
         {
-            draw_set_color($ea8a89);
-            draw_text(view_xview + 10, view_yview+445, "Chizuru");
+            if (protagonist == "chizuru")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview + 10, view_yview+445, "Chizuru");
+            }
+        }
+        if (category == 0)
+        {
+            //$9c92f5 is red
+            if (antagonist == "tito")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445, "Tito");
+            }
+            if (antagonist == "liz")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445, "Liz");
+            }
+            if (antagonist == "kamuro")
+            {
+                draw_set_color($9c92f5);
+                draw_text(view_xview+10, view_yview+445, "Kamuro");
+            }
+            if (antagonist == "unknown")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445, "???");
+            }
+            if (antagonist == "yuuto")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445, "Yuuto Ichika");
+            }
+            if (antagonist == "default")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445, "Default");
+            }
+            if (antagonist == "crossette")
+            {
+                draw_set_color($9c92f5);
+                draw_text(view_xview+10, view_yview+445, "Crossette");
+            }
+            if (antagonist == "bill")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445, "Bill Steels");
+            }
+            if (antagonist == "chizuma")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445, "Chizuma");
+            }
+        }
+        draw_set_color(16645629);
+        draw_set_font(fnt_talk);
+        if (global.speaking == true) 
+        {
+            draw_text(view_xview[view_current]+10,view_yview[view_current]+485,string(global.text));
         }
     }
-    if (category == 0)
+    else
     {
-        //$9c92f5 is red
-        if (antagonist == "tito")
+        draw_set_color(c_black);
+        draw_rectangle(view_xview, view_yview+480, view_xview+960, view_yview+540, false);
+        if (instance_exists(obj_protagonisttalk) &amp;&amp; category == 1)
         {
-            draw_set_color($ea8a89);
-            draw_text(view_xview+10, view_yview+445, "Tito");
+            draw_sprite_ext(obj_protagonisttalk.sprite_index, obj_protagonisttalk.image_index, view_xview+150, view_yview+360, obj_protagonisttalk.image_xscale, obj_protagonisttalk.image_yscale, obj_protagonisttalk.image_angle, c_white, obj_protagonisttalk.image_alpha);
+            draw_set_color(c_black);
+            draw_rectangle(view_xview + 400, view_yview+480, view_xview+960, view_yview+540, false);
+            draw_set_color(16645629);
+            draw_set_font(fnt_talk);
+            draw_set_valign(fa_top);
+            draw_set_halign(fa_left);
+            if (global.speaking == true) 
+            {
+                draw_text(view_xview+410,view_yview+490,string(global.text));
+            }
+            draw_set_font(fnt_talk);
+            draw_set_valign(fa_top);
+            draw_set_halign(fa_left);
         }
-        if (antagonist == "liz")
+        else if (instance_exists(obj_protagonisttalk) &amp;&amp; category == 0)
         {
-            draw_set_color($ea8a89);
-            draw_text(view_xview+10, view_yview+445, "Liz");
-        }
-        if (antagonist == "kamuro")
-        {
-            draw_set_color($9c92f5);
-            draw_text(view_xview+10, view_yview+445, "Kamuro");
-        }
-        if (antagonist == "unknown")
-        {
-            draw_set_color($ea8a89);
-            draw_text(view_xview+10, view_yview+445, "???");
-        }
-        if (antagonist == "yuuto")
-        {
-            draw_set_color($ea8a89);
-            draw_text(view_xview+10, view_yview+445, "Yuuto Ichika");
-        }
-        if (antagonist == "default")
-        {
-            draw_set_color($ea8a89);
-            draw_text(view_xview+10, view_yview+445, "Default");
-        }
-        if (antagonist == "crossette")
-        {
-            draw_set_color($9c92f5);
-            draw_text(view_xview+10, view_yview+445, "Crossette");
-        }
-        if (antagonist == "bill")
-        {
-            draw_set_color($ea8a89);
-            draw_text(view_xview+10, view_yview+445, "Bill Steels");
-        }
-        if (antagonist == "chizuma")
-        {
-            draw_set_color($ea8a89);
-            draw_text(view_xview+10, view_yview+445, "Chizuma");
+            draw_sprite_ext(obj_antagonisttalk.sprite_index, obj_antagonisttalk.image_index, view_xview+view_wview+50, view_yview+360, obj_antagonisttalk.image_xscale, obj_antagonisttalk.image_yscale, obj_antagonisttalk.image_angle, c_white, obj_antagonisttalk.image_alpha);
+            draw_set_color(c_black);
+            draw_rectangle(view_xview + 400, view_yview+480, view_xview+760, view_yview+540, false);
+            draw_set_color(16645629);
+            draw_set_font(fnt_talk);
+            draw_set_valign(fa_top);
+            draw_set_halign(fa_left);
+            if (global.speaking == true) 
+            {
+                draw_text(view_xview+210,view_yview+490,string(global.text));
+            }
+            draw_set_font(fnt_talk);
+            draw_set_valign(fa_top);
+            draw_set_halign(fa_left);
         }
     }
-    draw_set_color(16645629);
-    draw_set_font(fnt_talk);
-    if (global.speaking == true) 
-    {
-        draw_text(view_xview[view_current]+10,view_yview[view_current]+485,string(global.text));
-    }
-    
     
 }
 </string>
@@ -702,7 +757,7 @@ if (instance_exists(obj_antagonisttalk))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (boss == 0 || global.messageNumber &lt; global.messageLimit - 3)
+            <string>if (mini == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
 {
 
 

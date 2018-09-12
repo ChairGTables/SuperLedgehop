@@ -37,7 +37,7 @@ image_speed = 0;
 
 // Generate hitbox
 myWall = instance_create(x, y, obj_wall);
-myWall.image_xscale = 0.7;
+myWall.image_xscale = 1;
 myWall.image_yscale = 0.7;
 </string>
           </argument>
@@ -83,7 +83,7 @@ myWall.image_yscale = 0.7;
 else
 {
     myWall.x = x;
-    myWall.y = y;
+    myWall.y = y + 16;
     switch( orientation )
     {
         case 0:

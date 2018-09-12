@@ -77,6 +77,9 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+
+dropKey = 0;
 </string>
           </argument>
         </arguments>
@@ -382,6 +385,11 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
+    if (dropKey == 1)
+    {
+        key = instance_create(x, y, obj_key_david);
+        key.unlockID = 1;
+    }
     script_execute(scr_enemydeath);
 }
 </string>

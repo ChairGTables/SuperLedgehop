@@ -196,6 +196,8 @@ global.aimangle = 0;
 global.shottype = 0;
 global.maxshottype = 5;
 
+global.assisthp = 99;
+
 global.chizuruhp = 99;
 global.chizurump = 99;
 global.chizurushine = 99;

@@ -70,11 +70,11 @@
     <instance objName="obj_wall" x="-64" y="2240" name="inst_A5D5AC79" locked="0" code="" scaleX="6" scaleY="57" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="544" y="2496" name="inst_AEEF5427" locked="0" code="" scaleX="19" scaleY="33" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1120" y="2816" name="inst_F0018D6B" locked="0" code="" scaleX="30" scaleY="11.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="544" y="3776" name="inst_15A366DF" locked="0" code="" scaleX="33" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="544" y="3776" name="inst_15A366DF" locked="0" code="" scaleX="33" scaleY="8.26000022888184" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1312" y="3456" name="inst_E0FDA35A" locked="0" code="" scaleX="9" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1600" y="3488" name="inst_594BE0F9" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1792" y="3488" name="inst_5CF2681A" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="1952" y="3072" name="inst_E1619625" locked="0" code="" scaleX="12" scaleY="29" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1952" y="3072" name="inst_E1619625" locked="0" code="" scaleX="12.5" scaleY="30" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="3136" name="inst_C0AC7C50" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="400" y="3136" name="inst_B199A218" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="2784" name="inst_B1821545" locked="0" code="" scaleX="7.5" scaleY="1" colour="4294967295" rotation="0"/>
@@ -156,7 +156,7 @@
     <instance objName="obj_policerapid" x="2320" y="1760" name="inst_E6BCF7EE" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="1888" y="1520" name="inst_98C48A68" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="1136" y="1584" name="inst_58F02764" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policerapid" x="976" y="1680" name="inst_F49E1842" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policerapid" x="976" y="1680" name="inst_F49E1842" locked="0" code="dropKey = 1;&#xA;if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="912" y="1936" name="inst_CE879167" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="192" y="3376" name="inst_BA8EE5AF" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="400" y="3536" name="inst_A995B170" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -172,7 +172,9 @@
     <instance objName="obj_policerapid" x="1664" y="1680" name="inst_464A96D6" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagethreemusic" x="464" y="576" name="inst_74D152F7" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    audio_stop_sound(snd_stagethree);&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chizuruspawner" x="352" y="3856" name="inst_22465872" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chizuruspawner" x="3936" y="416" name="inst_3DBC59DA" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizuruspawner" x="3936" y="416" name="inst_3DBC59DA" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;else&#xA;{&#xA;    instance_create(x, y, obj_yuutoassist);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nextroom" x="1520" y="4032" name="inst_84413040" locked="0" code="" scaleX="20" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dialoguetest" x="48" y="432" name="inst_F03C8EA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_carpetred" x="128" y="3968" w="32" h="32" xo="128" yo="0" id="10020690" name="inst_C6D4CF51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
