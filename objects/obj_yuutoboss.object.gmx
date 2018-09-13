@@ -29,18 +29,18 @@
 {
     if (instance_exists(obj_chizuru))
     {
-        obj_chizuru.x = global.xHolder[0];
-        obj_chizuru.y = global.yHolder[0];
+        obj_chizuru.x = global.xHolder[0] + 32;
+        obj_chizuru.y = global.yHolder[0] + 32;
     }
-    x = global.xHolder[1];
-    y = global.yHolder[1];
+    x = global.xHolder[1] + 32;
+    y = global.yHolder[1] + 32;
 }
 
 myRock = instance_create(x, y, obj_yuutorock);
 
 //Set health for enemy (434 is max)
-hp = 434;
-global.bossone = 434;
+hp = 4;
+global.bossone = 4;
 global.bosstwo = 0;
 global.bossthree = 0;
 hpIndex = 1;
@@ -597,6 +597,7 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     //audio_play_sound_on (global.voiceEmitter, deathSound, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_yuutohurt;
+    death.name = "yuuto";
     instance_destroy(self);
 }
 </string>
