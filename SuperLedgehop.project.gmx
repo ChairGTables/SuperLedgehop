@@ -48,6 +48,7 @@
         <sound>sound\snd_slice</sound>
         <sound>sound\snd_stab</sound>
         <sound>sound\snd_throw</sound>
+        <sound>sound\snd_quake</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -310,6 +311,7 @@
         <sprite>sprites\spr_yuutoshootd</sprite>
         <sprite>sprites\spr_yuutowalku</sprite>
         <sprite>sprites\spr_yuutoshootu</sprite>
+        <sprite>sprites\spr_yuutokneel</sprite>
         <sprite>sprites\spr_yuutohurt</sprite>
         <sprite>sprites\spr_yuutorock</sprite>
         <sprite>sprites\spr_yuutosillhoute</sprite>
@@ -666,6 +668,8 @@
         <object>objects\obj_beatinstructions</object>
         <object>objects\obj_absorbinstructionsspace</object>
         <object>objects\obj_reflectinstructionspace</object>
+        <object>objects\obj_cavedialoguespace</object>
+        <object>objects\obj_lieddialoguespace</object>
         <object>objects\obj_beatinstructionspace</object>
         <object>objects\obj_outofammo</object>
         <object>objects\obj_skippingcutscene</object>
@@ -716,6 +720,7 @@
           <object>objects\obj_yuutodialogue5</object>
           <object>objects\obj_yuutodialogue6</object>
           <object>objects\obj_yuutodialogue7</object>
+          <object>objects\obj_yuutodialogue8</object>
           <object>objects\obj_yuutonpc1</object>
           <object>objects\obj_yuutodetect</object>
           <object>objects\obj_yuutoassist</object>
@@ -739,8 +744,14 @@
           <object>objects\obj_titodialogue3</object>
           <object>objects\obj_titodialogue4</object>
           <object>objects\obj_titoabsorbdialogue</object>
+          <object>objects\obj_titocavedialogue</object>
+          <object>objects\obj_titolieddialogue</object>
           <object>objects\obj_titoweaponsdialogue</object>
           <object>objects\obj_titoreflectdialogue</object>
+          <object>objects\obj_yuutolockdialogue</object>
+          <object>objects\obj_yuutogreendialogue</object>
+          <object>objects\obj_yuutoreddialogue</object>
+          <object>objects\obj_yuutoviolet</object>
           <object>objects\obj_kamuro</object>
           <object>objects\obj_kamuronpc1</object>
           <object>objects\obj_titonpc1</object>
@@ -845,19 +856,19 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_yuutoboss_</room>
+      <room>rooms\rm_stage2_2</room>
+      <room>rooms\rm_stage3_2</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage3_1</room>
-      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_yuutoshmup</room>
-      <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_repeat3_1</room>
-      <room>rooms\rm_stage3_2</room>
       <room>rooms\rm_sampleroom_chair</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_120bpm2</room>
-      <room>rooms\rm_stage2_2</room>
       <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_165bpmsurvival</room>
       <room>rooms\rm_survivalmode</room>

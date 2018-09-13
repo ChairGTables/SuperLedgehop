@@ -186,6 +186,8 @@
     <instance objName="obj_basicenemy2_sonii" x="1728" y="1952" name="inst_EE53CF55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy2_sonii" x="928" y="2240" name="inst_D6172AD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy2_sonii" x="1024" y="2256" name="inst_5AEAFBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cavedialoguespace" x="1136" y="3280" name="inst_9B1A1EAF" locked="0" code="" scaleX="3.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lieddialoguespace" x="1232" y="640" name="inst_32D02C48" locked="0" code="" scaleX="3.5" scaleY="8" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_hills" x="416" y="3232" w="32" h="32" xo="0" yo="96" id="10012701" name="inst_D410619A" depth="9999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

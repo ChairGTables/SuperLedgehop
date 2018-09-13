@@ -29,6 +29,7 @@
 alarm[0] = 3;
 alarm[1] = 4;
 alarm[4] = 40;
+name = "none";
 
 instance_create(x, y, obj_circleeraser);
 
@@ -57,14 +58,29 @@ instance_create(x, y, obj_circleeraser);
             <string>global.bossvirgin = 1;
 global.stageState = 0;
 
-if (sprite_index == spr_defaulthurt || sprite_index == spr_louiehurt)
+
+
+if (sprite_index == spr_yuutokneel)
+{
+    audio_stop_sound(snd_quake);
+    audio_play_sound_on (global.effectsEmitter, snd_crashed, false, 10); 
+    alarm[7] = 60;
+    sprite_index = spr_yuutohurt;
+    image_alpha = 0;
+}
+else if (sprite_index == spr_defaulthurt || sprite_index == spr_louiehurt)
 {
     room_goto(rm_title);
 }
 else
 {
+    global.isCutscene = false;
     room_goto_next();
 }
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -87,11 +103,32 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_chaptercomplete);
-audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
+            <string>if (sprite_index == spr_yuutokneel)
+{
+    if (instance_exists(obj_dialogue))
+    {
+        alarm[6] = 2;
+    }
+    else
+    {
+        if (instance_exists(obj_chizuru))
+        {
+            obj_chizuru.direction = 90;
+            obj_chizuru.speed = 30;
+            obj_chizuru.sprite_index = spr_chizuruwalku;
+        }
+        instance_create(0, 0, obj_blackfadeout);
+        alarm[7] = 20;
+    }
+}
+else
+{
+    instance_create(x, y, obj_chaptercomplete);
+    audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
 
 
-alarm[7] = 120;
+    alarm[7] = 120;
+}
 </string>
           </argument>
         </arguments>
@@ -114,9 +151,11 @@ alarm[7] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprite_index == spr_yuutohurt)
+            <string>if (sprite_index == spr_yuutokneel)
 {
-    room_goto_next();
+    dialogue = instance_create(x, y, obj_yuutodialogue8);
+    alarm[6] = 5;
+    global.isCutscene = true;
 }
 else
 {
@@ -153,7 +192,17 @@ instance_create(x, y, obj_circleeraser);
 
 alarm[5] = 30;
 disappear = 1;
-image_alpha = 0;
+
+if (sprite_index = spr_yuutohurt)
+{
+    sprite_index = spr_yuutokneel;
+    script_execute(scr_fliptoplayer);
+    alarm[5] = 60;
+}
+else
+{
+    image_alpha = 0;
+}
 </string>
           </argument>
         </arguments>
