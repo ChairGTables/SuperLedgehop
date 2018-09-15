@@ -254,7 +254,7 @@ if (antagonist == "crossette")
     antagonistDisplay.happySprite = spr_crossettehappy;
     antagonistDisplay.neutralSprite = spr_crossetteneutral;
     antagonistDisplay.sadSprite = spr_hudbars;
-    antagonistDisplay.angrySprite = spr_hudbars;
+    antagonistDisplay.angrySprite = spr_crossetteangry;
     antagonistDisplay.curiousSprite = spr_hudbars;
 }
 if (antagonist == "yuuto")
@@ -673,7 +673,7 @@ if (instance_exists(obj_antagonisttalk))
             }
             if (antagonist == "crossette")
             {
-                draw_set_color($9c92f5);
+                draw_set_color($ea8a89);
                 draw_text(view_xview+10, view_yview+445, "Crossette");
             }
             if (antagonist == "bill")

@@ -66,6 +66,11 @@ if (x &lt; view_xview+975)
     hspeed = 0;
 }
 
+if (emotion == "none" )
+{
+    sprite_index = spr_emptysprite;
+}
+
 if (emotion == "neutral" &amp;&amp; sprite_index != neutralSprite)
 {
     sprite_index = neutralSprite;

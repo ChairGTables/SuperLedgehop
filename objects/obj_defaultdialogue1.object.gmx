@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
+            <string>
+
+//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.antagonist = "default";
@@ -34,7 +36,7 @@ obj_dialogue.boss = 1;
 global.messageLimit = 35;
 
 
-global.messageArray[0] = "W-Wait! Don't move!";
+global.messageArray[0] = "W-Wait! You're not allowed to enter this building!";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";

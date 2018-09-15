@@ -48,7 +48,9 @@
         <sound>sound\snd_slice</sound>
         <sound>sound\snd_stab</sound>
         <sound>sound\snd_throw</sound>
+        <sound>sound\snd_shimmer</sound>
         <sound>sound\snd_quake</sound>
+        <sound>sound\snd_wave</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -293,6 +295,7 @@
         <sprite>sprites\spr_mporb</sprite>
         <sprite>sprites\spr_caveentrance</sprite>
         <sprite>sprites\spr_caveshadow</sprite>
+        <sprite>sprites\spr_emptysprite</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -375,7 +378,10 @@
         <sprite>sprites\spr_defaultangry</sprite>
         <sprite>sprites\spr_crossettehappy</sprite>
         <sprite>sprites\spr_crossetteneutral</sprite>
+        <sprite>sprites\spr_crossetteangry</sprite>
         <sprite>sprites\spr_defaultwalk</sprite>
+        <sprite>sprites\spr_crossettewalk</sprite>
+        <sprite>sprites\spr_defaultkneel</sprite>
         <sprite>sprites\spr_defaultshoot</sprite>
         <sprite>sprites\spr_defaultfade</sprite>
         <sprite>sprites\spr_defaulthurt</sprite>
@@ -675,6 +681,7 @@
         <object>objects\obj_skippingcutscene</object>
         <object>objects\obj_shinemessage</object>
         <object>objects\obj_warnbox</object>
+        <object>objects\obj_whiteenlarge</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -761,6 +768,8 @@
           <object>objects\obj_default</object>
           <object>objects\obj_defaultnpc1</object>
           <object>objects\obj_defaultdialogue1</object>
+          <object>objects\obj_defaultdialogue2</object>
+          <object>objects\obj_defaultdialogue3</object>
           <object>objects\obj_defaultdetonate</object>
           <object>objects\obj_defaultdetonator</object>
         </objects>
@@ -855,25 +864,25 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
+      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_120bpmstage2</room>
+      <room>rooms\rm_defaultfight</room>
+      <room>rooms\rm_louiefight</room>
+      <room>rooms\rm_stage3_1</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_repeat3_1</room>
+      <room>rooms\rm_stage3_2</room>
       <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_stage2_2</room>
-      <room>rooms\rm_stage3_2</room>
+      <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_stage1</room>
-      <room>rooms\rm_stage3_1</room>
-      <room>rooms\rm_yuutoshmup</room>
-      <room>rooms\rm_repeat3_1</room>
       <room>rooms\rm_sampleroom_chair</room>
-      <room>rooms\rm_120bpmstage2</room>
-      <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_120bpm2</room>
-      <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_165bpmsurvival</room>
       <room>rooms\rm_survivalmode</room>
-      <room>rooms\rm_140bpm_david</room>
-      <room>rooms\rm_louiefight</room>
       <room>rooms\rm_billfight</room>
       <room>rooms\rm_kamurofight</room>
       <room>rooms\room9</room>

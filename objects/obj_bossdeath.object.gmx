@@ -30,6 +30,7 @@ alarm[0] = 3;
 alarm[1] = 4;
 alarm[4] = 40;
 name = "none";
+endSong = 0;
 
 instance_create(x, y, obj_circleeraser);
 
@@ -68,7 +69,7 @@ if (sprite_index == spr_yuutokneel)
     sprite_index = spr_yuutohurt;
     image_alpha = 0;
 }
-else if (sprite_index == spr_defaulthurt || sprite_index == spr_louiehurt)
+else if (sprite_index == spr_crossettewalk|| sprite_index == spr_louiehurt)
 {
     room_goto(rm_title);
 }
@@ -121,6 +122,18 @@ else
         alarm[7] = 20;
     }
 }
+else if (sprite_index == spr_crossettewalk &amp;&amp; endSong == 0)
+{
+    if (instance_exists(obj_dialogue))
+    {
+        alarm[6] = 2;
+    }
+    else
+    {
+        alarm[5] = 20;
+        endSong = 1;
+    }
+}
 else
 {
     instance_create(x, y, obj_chaptercomplete);
@@ -156,6 +169,30 @@ else
     dialogue = instance_create(x, y, obj_yuutodialogue8);
     alarm[6] = 5;
     global.isCutscene = true;
+}
+else if (sprite_index == spr_defaultkneel)
+{
+    if (!instance_exists(obj_defaultdialogue2))
+    {
+        dialogue = instance_create(x, y, obj_defaultdialogue2);
+        
+        global.isCutscene = true;
+    }
+    alarm[5] = 5;
+}
+else if (sprite_index == spr_crossettewalk &amp;&amp; endSong == 0)
+{
+    if (instance_exists(obj_whiteenlarge))
+    {
+        instance_destroy(obj_whiteenlarge);
+        instance_create(x, y, obj_whitefadein);
+        alarm[5] = 20;
+    }
+    else
+    {
+        dialogue = instance_create(x, y, obj_defaultdialogue3);
+        alarm[6] = 5;
+    }
 }
 else
 {
@@ -196,6 +233,12 @@ disappear = 1;
 if (sprite_index = spr_yuutohurt)
 {
     sprite_index = spr_yuutokneel;
+    script_execute(scr_fliptoplayer);
+    alarm[5] = 60;
+}
+else if (sprite_index = spr_defaulthurt)
+{
+    sprite_index = spr_defaultkneel;
     script_execute(scr_fliptoplayer);
     alarm[5] = 60;
 }
