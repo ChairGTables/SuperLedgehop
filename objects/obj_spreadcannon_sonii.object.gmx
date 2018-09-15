@@ -366,6 +366,7 @@ if (timer &lt;= 0)
     //Perform shooting
     if (action == 1)
     {   
+        audio_stop_sound(snd_enemybullet);
         audio_play_sound (snd_enemybullet, 10, false); 
         anglePerShot = 9;
         for (i = 0; i &lt; 45 / anglePerShot; i++)

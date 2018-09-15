@@ -2,7 +2,7 @@ if (instance_exists(obj_chizuru) && global.chizurushine > 15)
 {
     if (global.shineget == 1)
     {
-        if (global.chizurushinecharge > 5 && global.chizurushine > 50 && !instance_exists(obj_absorbbubble))
+        if (global.chizurushinecharge > 5 && global.chizurushine > 40 && !instance_exists(obj_absorbbubble))
         {
             instance_create(x, y, obj_healmagnet);
             audio_play_sound_on (global.effectsEmitter, snd_absorbing, false, 10); 

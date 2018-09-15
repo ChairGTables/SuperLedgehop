@@ -339,35 +339,6 @@ instance_destroy(self);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_smolhitbox">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Check if spikes are out
-if (image_index == 1)
-{
-    //Execute this script whenever you want to deal damage
-    //but don't forget to set the three important variables I discuss on Create
-    script_execute(scr_chizurudamage);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_chizurufirebullet">
       <action>
         <libid>1</libid>

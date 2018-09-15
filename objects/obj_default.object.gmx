@@ -519,7 +519,7 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 103)
+            <string>if (shotCount &gt; 99 &amp;&amp; shotCount &lt; 104)
 {
     if (instance_exists(obj_warnbox))
     {
