@@ -39,8 +39,8 @@
 myRock = instance_create(x, y, obj_yuutorock);
 
 //Set health for enemy (434 is max)
-hp = 4;
-global.bossone = 4;
+hp = 434;
+global.bossone = 434;
 global.bosstwo = 0;
 global.bossthree = 0;
 hpIndex = 1;

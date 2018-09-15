@@ -312,6 +312,7 @@ if (shootTimer &lt;= 0)
             {
                 shot.direction = 270 + random_range(-15, 15);
                 shot.speed = random_range(7,20);
+                shot.damage = 10;
             }
             
             if (shotCount mod 15 == 0)
@@ -324,6 +325,7 @@ if (shootTimer &lt;= 0)
                     {
                         shot.direction = 270 + random_range(-15, 15);
                         shot.speed = 7;
+                        shot.damage = 10;
                     }
                 }
             }

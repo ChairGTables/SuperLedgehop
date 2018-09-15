@@ -401,7 +401,9 @@ if (global.assisthp &lt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.chizuruhp &lt; 1)
+            <string>window_mouse_set(clamp(window_mouse_get_x(),0,window_get_width()),clamp(window_mouse_get_y(),0,window_get_height()))
+
+if (global.chizuruhp &lt; 1)
 {
     if (!instance_exists(obj_wowyoudied))
     {
@@ -904,6 +906,28 @@ if (global.speaking == false || exceptionCheck == 1)
             <kind>1</kind>
             <string>global.shineget = 1;
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="115">
+      <action>
+        <libid>1</libid>
+        <id>531</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_fullscreen</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
