@@ -596,6 +596,7 @@ if (spinning == 1 &amp;&amp; instance_exists(obj_gamepad))
     if (obj_gamepad.spinning == true &amp;&amp; global.chizurump &gt; 0)
     {
         spinFinish += 1;
+        global.chizurump -= 5;
         angleIncrease = random_range(20, 50);
         for (i = 0; i &lt; 4; i++)
         {
@@ -640,7 +641,7 @@ if (waveshine == 1)
 if (spinning == 1)
 {
     action = 0;
-    global.chizurump -= 5;
+    
 }
 if (global.isCutscene == true)
 {

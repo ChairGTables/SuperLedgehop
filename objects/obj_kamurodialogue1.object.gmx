@@ -28,6 +28,8 @@
             <string>//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
+instance_create(x, y, obj_skipinstructions);
+
 obj_dialogue.antagonist = "kamuro";
 
 //set limit

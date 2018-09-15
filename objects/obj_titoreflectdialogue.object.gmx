@@ -55,7 +55,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "sad";
 
-global.messageArray[4] = "Just worried it'S one of those
+global.messageArray[4] = "Just worried it's one of those
 features you'd forget that exists!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "neutral";

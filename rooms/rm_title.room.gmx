@@ -55,8 +55,8 @@
     <instance objName="obj_gamepad" x="32" y="32" name="inst_09C813A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_titlecamera" x="832" y="192" name="inst_A87C6BE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stage1" x="224" y="443" name="inst_D261FF34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stage2" x="480" y="450" name="inst_5BF2186B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_survivalmenu" x="736" y="443" name="inst_5BA5CD82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stage2" x="736" y="450" name="inst_5BF2186B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_survivalmenu" x="1120" y="438" name="inst_5BA5CD82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

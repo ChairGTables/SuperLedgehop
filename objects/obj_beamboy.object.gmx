@@ -38,8 +38,8 @@ beam = instance_create(x, y, obj_smallcircle);
 hp = 9;
 
 //set health drops
-minDrops = 0;
-maxDrops = 0;
+minDrops = 4;
+maxDrops = 6;
 
 //set animation speed
 image_speed = 0.1;

@@ -598,6 +598,10 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_yuutohurt;
     death.name = "yuuto";
+    if (instance_exists(obj_yuutorock))
+    {
+        instance_destroy(obj_yuutorock);
+    }
     instance_destroy(self);
 }
 </string>
@@ -801,6 +805,28 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     <event eventtype="4" ename="obj_chizuruspreadbullet">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>other.damage += 1;
+script_execute(scr_enemydamage);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>605</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -816,46 +842,6 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
           <argument>
             <kind>1</kind>
             <string>Apply this script for any bullet that can hurt this object</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_enemydamage</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -863,6 +849,28 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     <event eventtype="4" ename="obj_chizururapidbullet">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>other.damage += 1;
+script_execute(scr_enemydamage);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>605</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -878,46 +886,6 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
           <argument>
             <kind>1</kind>
             <string>Apply this script for any bullet that can hurt this object</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_enemydamage</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -925,6 +893,28 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     <event eventtype="4" ename="obj_chizuruenhancedbullet">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>other.damage += 1;
+script_execute(scr_enemydamage);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>605</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -940,46 +930,6 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
           <argument>
             <kind>1</kind>
             <string>Apply this script for any bullet that can hurt this object</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_enemydamage</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -1007,41 +957,23 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
       </action>
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>scr_enemydamage</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>other.damage += 1;
+script_execute(scr_enemydamage);
+</string>
           </argument>
         </arguments>
       </action>

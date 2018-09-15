@@ -78,7 +78,11 @@ vspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (instance_exists(obj_shmupcontroller))
+{
+    absorbed = 1;
+}
+
 
 if (absorbed == 1)
 {
@@ -178,6 +182,7 @@ else
 global.chizurushine += 2;
 global.assisthp += 2;
 instance_create(x, y, obj_mpup);
+audio_stop_sound(snd_mpheal);
 audio_play_sound_on (global.effectsEmitter, snd_mpheal, false, 10); 
 instance_destroy(self);
 </string>
