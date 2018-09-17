@@ -8,6 +8,7 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5)
         obj_chizuru.action = 0;
         obj_chizuru.waveshine = 0;
         
+        
         //Check if there's a wall nearby
         xWallCheck = 0;
         for (i = 0; i < 64; i++)

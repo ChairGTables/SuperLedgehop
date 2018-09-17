@@ -25,7 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//set shmup values
+            <string>friendly = 0;
+absorbed = 0;
+targetSpeed = 0;
+targetDirection = 0;
+//Categories include: enhanced, spread, rapid, fire, ice
+category = "enhanced";
+
+damage = 10;
+knockbackspeed = 10;
+destroyable = 0;
+
+//set shmup values
 initialX = x;
 stop[0] = 96;
 stop[1] = 144;
@@ -371,6 +382,48 @@ if (hp &lt; 1)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_smolhitbox">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_chizurudamage</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_chizuruflame">
       <action>
         <libid>1</libid>
@@ -503,7 +556,9 @@ if (hp &lt; 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+            <string>    other.vortex = 0;
+    
+    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
     other.direction += 180;
     other.direction += random_range(0, 40);
     other.speed *= 2;
@@ -662,7 +717,9 @@ if (hp &lt; 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+            <string>    other.vortex = 0;
+    
+    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
     other.direction += 180;
     other.direction += random_range(0, 40);
     other.speed *= 2;

@@ -78,7 +78,7 @@ antagonist = "tito";
           <argument>
             <kind>1</kind>
             <string>global.speaking = false;
-
+global.messageNumber = 0;
 if (instance_exists(obj_protagonisttalk))
 {
     instance_destroy(obj_protagonisttalk);

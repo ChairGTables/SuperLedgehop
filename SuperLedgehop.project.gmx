@@ -51,6 +51,9 @@
         <sound>sound\snd_shimmer</sound>
         <sound>sound\snd_quake</sound>
         <sound>sound\snd_wave</sound>
+        <sound>sound\snd_noabsorb</sound>
+        <sound>sound\snd_mpready</sound>
+        <sound>sound\snd_absorbready</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -274,6 +277,13 @@
         <sprite>sprites\spr_warnbox</sprite>
         <sprite>sprites\spr_warnboxcenter</sprite>
         <sprite>sprites\spr_bubbleexplosion</sprite>
+        <sprite>sprites\spr_noshine</sprite>
+        <sprite>sprites\spr_outofabsorbs</sprite>
+        <sprite>sprites\spr_mprecharged</sprite>
+        <sprite>sprites\spr_absorbready</sprite>
+        <sprite>sprites\spr_halfshinenotice</sprite>
+        <sprite>sprites\spr_mpnotice</sprite>
+        <sprite>sprites\spr_rapidadvice</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -673,6 +683,8 @@
         <object>objects\obj_hpup</object>
         <object>objects\obj_mpup</object>
         <object>objects\obj_absorbinstructions</object>
+        <object>objects\obj_mpnotice</object>
+        <object>objects\obj_rapidadvice</object>
         <object>objects\obj_beatinstructions</object>
         <object>objects\obj_absorbinstructionsspace</object>
         <object>objects\obj_reflectinstructionspace</object>
@@ -680,6 +692,9 @@
         <object>objects\obj_lieddialoguespace</object>
         <object>objects\obj_beatinstructionspace</object>
         <object>objects\obj_outofammo</object>
+        <object>objects\obj_outofabsorbs</object>
+        <object>objects\obj_absorbready</object>
+        <object>objects\obj_mprecharged</object>
         <object>objects\obj_skippingcutscene</object>
         <object>objects\obj_skipinstructions</object>
         <object>objects\obj_shinemessage</object>
@@ -688,6 +703,7 @@
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
+        <object>objects\obj_tempwall</object>
         <object>objects\obj_bigredtree</object>
         <object>objects\obj_gatestopper</object>
         <object>objects\obj_dooradvice</object>
@@ -868,9 +884,9 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_titofight</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
-      <room>rooms\rm_titofight</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_165bpm_david</room>

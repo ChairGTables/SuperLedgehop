@@ -67,9 +67,6 @@
     <instance objName="obj_lazerCannon_sonii" x="2336" y="1856" name="inst_02149AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="1248" y="1984" name="inst_DD09F0D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="1664" y="811" name="inst_D37670A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="1408" y="3392" name="inst_3DEFB39E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="864" y="3328" name="inst_370E8C72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadcannon_sonii" x="640" y="3552" name="inst_C7A3735D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="640" y="3296" name="inst_160DB723" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="2176" y="1952" name="inst_9FA4B0E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="2496" y="1536" name="inst_FCFA1F94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -186,7 +183,7 @@
     <instance objName="obj_basicenemy2_sonii" x="1728" y="1952" name="inst_EE53CF55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy2_sonii" x="928" y="2240" name="inst_D6172AD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy2_sonii" x="1024" y="2256" name="inst_5AEAFBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cavedialoguespace" x="1136" y="3280" name="inst_9B1A1EAF" locked="0" code="" scaleX="3.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cavedialoguespace" x="1024" y="3504" name="inst_9B1A1EAF" locked="0" code="" scaleX="9.80645179748535" scaleY="5.15999984741211" colour="4294967295" rotation="0"/>
     <instance objName="obj_lieddialoguespace" x="1232" y="640" name="inst_32D02C48" locked="0" code="" scaleX="3.5" scaleY="8" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

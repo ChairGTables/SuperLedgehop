@@ -88,6 +88,7 @@ if (spinFinish &gt; 15)
 {
     obj_camera_chair.intensity = 10;
     angleDetermine = 0;
+    global.specialsuccess = 1;
     for (j = 0; j &lt; 36; j++)
     {
         var bullet = instance_create(x, y, obj_chizuruspreadbullet);
@@ -117,6 +118,17 @@ if (spinFinish &gt; 15)
         audio_play_sound_on (global.effectsEmitter, snd_chizurutakethis, false, 10);
     }
     
+}
+else
+{
+        if (global.specialattempts == 1 &amp;&amp; global.specialsuccess == 0)
+        {
+            instance_create(x, y, obj_mpnotice);
+        }
+        if (global.specialattempts &lt;= 1)
+        {
+            global.specialattempts += 1;
+        }
 }
 
 spinning = 0;
@@ -414,9 +426,12 @@ waveshine = 0;
     global.isCutscene = true;
 }
 
-if (global.chizurushinecharge &gt; 5 &amp;&amp; global.chizurushine &gt; 50)
+if (global.chizurushinecharge &gt; 5)
 {
-    instance_create(x, y, obj_smallcircle);
+    if (global.chizurushine &gt; 40)
+    {
+        instance_create(x, y, obj_smallcircle);
+    }
 }
 
 //Invincibility check

@@ -190,6 +190,15 @@ if (state == 0)
             <kind>1</kind>
             <string>depth = -y - 5;
 
+if (instance_exists(obj_smolhitbox))
+{
+    if (x &lt; obj_smolhitbox.x)
+    {
+        x = obj_smolhitbox.x;
+        speed = 0;
+    }
+}
+
 if (state == 18 &amp;&amp; instance_number(obj_yuutodialogue7) == 0)
 {
     instance_create(x - 50, y + 20, obj_caution);

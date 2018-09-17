@@ -119,7 +119,7 @@ else
     
     if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)
     {
-        global.enhancedcount += 3;
+        global.enhancedcount += 6;
         global.shottype = 1;
         if !(instance_exists(obj_chizurucurrentbullet))
         {

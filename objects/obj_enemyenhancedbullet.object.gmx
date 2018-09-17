@@ -30,7 +30,7 @@ absorbed = 0;
 targetSpeed = 0;
 targetDirection = 0;
 //Categories include: enhanced, spread, rapid, fire, ice
-category = "enhanced"
+category = "enhanced";
 
 damage = 10;
 knockbackspeed = 10;

@@ -25,13 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
+            <string>global.messageNumber = 0;
+
+//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.antagonist = "unknown";
 
 //set limit
-global.messageLimit = 12;
+global.messageLimit = 14;
 
 
 global.messageArray[0] = "Gee, it's kinda dark...";
@@ -99,22 +101,22 @@ global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "neutral";
 
-global.messageArray[11] = "Uhh... murder is a crime you know.";
-global.categoryArray[11] = "left";
-global.emotionProtagonistArray[11] = "neutral";
-global.emotionAntagonistArray[11] = "neutral";
-
-global.messageArray[12] = "Alright! You asked for it!
-I've locked your directional aiming!";
-global.categoryArray[12] = "right";
+global.messageArray[12] = "Uhh... murder is a crime you know.";
+global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "neutral";
 
-global.messageArray[12] = "Y-You could have left me alone,
+global.messageArray[13] = "Alright! You asked for it!
+I've LOCKED your DIRECTIONAL AIMING!";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Y-You could have left me alone,
 but I have to show you my worth!";
-global.categoryArray[12] = "right";
-global.emotionProtagonistArray[12] = "neutral";
-global.emotionAntagonistArray[12] = "neutral";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "neutral";
 </string>
           </argument>
         </arguments>

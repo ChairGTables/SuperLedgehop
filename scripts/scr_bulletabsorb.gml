@@ -1,7 +1,15 @@
-if (other.absorb == 1 && absorbed == 0 && global.absorbing == 1)
+
+
+if (other.absorb == 1 && absorbed == 0)
 {
-    if (instance_number(obj_absorbbubble) < 100)
+    if (global.absorbing == 0)
     {
+        instance_destroy(self);
+    }
+    else if (instance_number(obj_absorbbubble) < 100)
+    {
+    
+    
         absorbed = 1;
         friendly = 1;
         
