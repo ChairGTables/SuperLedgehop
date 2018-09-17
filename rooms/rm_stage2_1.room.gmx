@@ -62,8 +62,8 @@
     <instance objName="obj_sampleobject_chair" x="640" y="352" name="inst_F5AED2BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagetwomusic" x="652" y="231" name="inst_018C7C44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_switch_david" x="1184" y="3392" name="inst_32719095" locked="0" code="unlockID = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadcannon_sonii" x="1088" y="3424" name="inst_58954258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy2_sonii" x="640" y="3456" name="inst_A78D6209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spreadcannon_sonii" x="784" y="3408" name="inst_58954258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basicenemy2_sonii" x="1072" y="3424" name="inst_A78D6209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_david" x="768" y="3328" name="inst_45263D32" locked="0" code="unlockID = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveentrance" x="1120" y="103" name="inst_8C78FCD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chizuru" x="1072" y="3968" name="inst_93C40A5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

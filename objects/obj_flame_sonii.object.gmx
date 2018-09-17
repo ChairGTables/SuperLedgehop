@@ -202,7 +202,7 @@ if (image_alpha &lt; 0.1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.phase == 3 &amp;&amp; speed == 0)
+            <string>if (other.phase == 3 &amp;&amp; speed == 0 &amp;&amp; absorbed == 0)
 {
     speed = 0.3;
     targetSpeed = random_range(7, 9);

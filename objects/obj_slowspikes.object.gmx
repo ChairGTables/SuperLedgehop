@@ -133,7 +133,7 @@ if (activateTimer &lt;= 0)
             <string>
 if (image_index == 1)
 {
-    script_execute(scr_yuutodamage);
+    //script_execute(scr_yuutodamage);
 }
 </string>
           </argument>

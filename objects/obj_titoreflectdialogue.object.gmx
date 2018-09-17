@@ -31,7 +31,7 @@ dialogue = instance_create(x, y, obj_dialogue);
 dialogue.antagonist = "tito";
 dialogue.mini = 1;
 //set limit
-global.messageLimit = 6;
+global.messageLimit = 5;
 
 global.messageArray[0] = "Remember you can always reflect by just
 pressing instead of holding!";
@@ -50,36 +50,31 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "happy";
 
-global.messageArray[3] = "W-Whoa! I-I'm sorry, o-okay?";
-global.categoryArray[3] = "right";
-global.emotionProtagonistArray[3] = "happy";
-global.emotionAntagonistArray[3] = "sad";
-
-global.messageArray[4] = "Just worried it's one of those
+global.messageArray[3] = "Just worried it's one of those
 features you'd forget that exists!";
-global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "neutral";
-global.emotionAntagonistArray[4] = "curious";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "curious";
 
 if (global.isGamepad == true)
 {
-    global.messageArray[5] = "Look. Holding X absorbs.
+    global.messageArray[4] = "Look. Holding X absorbs.
 Pressing X right away just reflects.";
 }
 else
 {
-    global.messageArray[5] = "Holding right click absorbs. Pressing
+    global.messageArray[4] = "Holding right click absorbs. Pressing
 right click immediately just reflects.";
 }
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "happy";
+
+global.messageArray[5] = "I already know how to cheese this.
+Just chill!";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "angry";
-global.emotionAntagonistArray[5] = "happy";
-
-global.messageArray[6] = "I already know how to cheese this.
-Just chill!";
-global.categoryArray[6] = "left";
-global.emotionProtagonistArray[6] = "angry";
-global.emotionAntagonistArray[6] = "curious";
+global.emotionAntagonistArray[5] = "curious";
 </string>
           </argument>
         </arguments>

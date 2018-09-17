@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
+            <string>global.messageNumber = 0;
+
+//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.antagonist = "yuuto";

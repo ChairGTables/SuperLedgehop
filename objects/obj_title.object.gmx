@@ -186,6 +186,9 @@ global.titleSelection = 0;
 global.shineget = 0;
 global.bossvirgin = 1;
 
+global.specialsuccess = 0;
+global.specialattempts = 0;
+
 global.chizurumovex = 0;
 global.chizurumovey = 0;
 
@@ -206,6 +209,8 @@ global.chizurushinecharge = 0;
 global.chizurupoptime = 60;
 global.invincibility = 0;
 global.absorbing = 0;
+global.shineready = 1;
+global.specialready = 1;
 
 global.basiccount = 100;
 global.enhancedcount = 0;
@@ -213,6 +218,8 @@ global.rapidcount = 0;
 global.spreadcount = 0;
 global.firecount = 0;
 global.icecount = 0;
+
+global.rapidvirgin = 1;
 
 global.combo = 0;
 

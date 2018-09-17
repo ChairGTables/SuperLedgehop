@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
+            <string>global.messageNumber = 0;
+
+//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.antagonist = "unknown";
@@ -34,7 +36,7 @@ obj_dialogue.antagonist = "unknown";
 global.messageLimit = 4;
 
 
-global.messageArray[0] = "You know, you should at least aim your lasers!";
+global.messageArray[0] = "You know, you should at least AIM your lasers!";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
@@ -50,7 +52,7 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "Okay! Okay! I'll aim this time!
+global.messageArray[3] = "Okay! Okay! I will AIM this time!
 You asked for it!";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "happy";

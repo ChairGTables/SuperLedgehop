@@ -141,7 +141,7 @@ if (instance_exists(obj_chizuru))
             rapidShot.direction = global.aimangle + random_range(-10, 10);
             rapidShot.speed = bulletSpeed;
             global.chizurucooldown = 3;
-            global.rapidcount -= 0.1;
+            global.rapidcount -= 0.5;
         }
         
         //Fire

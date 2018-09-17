@@ -109,6 +109,17 @@ global.keyIndex = 0;
 alarm[5] = 30;
 
 global.playerQuarter = (60000 / global.bpm) / 1000;
+
+
+
+//Wave
+t = 0;
+increment = 12; //degrees -- freq = 1 oscillation per second (1Hz) in a 30 fps room
+amplitude = 5; //pixels of peak oscillation
+ 
+//clone the y-position (or use x instead if you're doing horizontal oscillation)
+yy = 0;
+yyy = 0;
 </string>
           </argument>
         </arguments>
@@ -270,7 +281,53 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.shottype &lt; 0)
+            <string>if (global.isCutscene == true)
+{
+    global.chizurushinecharge = 0;
+}
+
+if (global.rapidcount &gt; 0 &amp;&amp; global.rapidvirgin == 1)
+{
+    global.rapidvirgin = 0;
+    instance_create(x, y, obj_rapidadvice);
+}
+
+
+if (global.chizurump &lt; 99)
+{
+    global.specialready = 0;
+}
+else
+{
+    if (global.isCutscene == false &amp;&amp; instance_exists(obj_chizuru) &amp;&amp; global.specialready == 0)
+    {
+        instance_create(obj_chizuru.x, obj_chizuru.y, obj_mprecharged);   
+        audio_play_sound_on (global.effectsEmitter, snd_mpready, false, 10);  
+    }
+    global.specialready = 1;
+}
+
+if (global.chizurushine &lt; 40)
+{
+    if (global.isCutscene == false &amp;&amp; instance_exists(obj_chizuru) &amp;&amp; global.shineready == 1)
+    {
+        instance_create(obj_chizuru.x, obj_chizuru.y, obj_outofabsorbs);    
+        audio_play_sound_on (global.effectsEmitter, snd_noabsorb, false, 10); 
+    }
+    global.shineready = 0;
+}
+
+if (global.chizurushine &gt;= 40)
+{
+    if (global.isCutscene == false &amp;&amp; instance_exists(obj_chizuru) &amp;&amp; global.shineready == 0)
+    {
+        instance_create(obj_chizuru.x, obj_chizuru.y, obj_absorbready); 
+        audio_play_sound_on (global.effectsEmitter, snd_absorbready, false, 10);    
+    }
+    global.shineready = 1;
+}
+
+if (global.shottype &lt; 0)
 {
     global.shottype = global.maxshottype;
 }
@@ -334,7 +391,7 @@ if (global.bossthree &lt; 0)
 
 if (global.chizurushine &lt; 99)
 {
-    global.chizurushine += 0.12;
+    global.chizurushine += 0.16;
 }
 if (global.chizurushine &gt; 99)
 {
@@ -646,12 +703,34 @@ if (instance_exists(obj_dialogue))
     }
 }
 
+
+if (global.chizurushinecharge &gt; 5 &amp;&amp; instance_exists(obj_chizuru))
+{
+    if (global.isCutscene == false &amp;&amp; global.chizurushine &lt; 40)
+    {
+        draw_sprite(spr_halfshinenotice, 0, obj_chizuru.x, obj_chizuru.y + 15);
+    }       
+}
+
+
+
+if (global.chizurushine &lt; 40 &amp;&amp; instance_exists(obj_chizuru))
+{
+    yy = obj_chizuru.y - 17;
+    t = (t + increment) mod 360;
+    shift = amplitude * dsin(t);
+    
+    yyy = yy;
+    yy = yyy + shift; 
+    draw_sprite(spr_noshine, 0, obj_chizuru.x + 17, yy);    
+}
+
 if (global.speaking == false || exceptionCheck == 1)
 {
     draw_sprite(spr_chizuruhud, 0, xMain, yMain)
     if (global.shottype != 0)
     {
-        draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo)
+        draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo);
     }
     
     if (global.shottype == 1)

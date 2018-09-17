@@ -1,4 +1,9 @@
 cancel = 0;
+
+if (absorbed == 1)
+{
+    cancel = 1;
+}
 if (instance_exists(obj_kamuronpc1))
 {
     cancel = 1;

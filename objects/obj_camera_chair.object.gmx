@@ -28,6 +28,8 @@
             <string>intensity = 0;
 shake_xoffset = 0;
 shake_yoffset = 0;
+tempX = 0;
+tempY = 0;
 
 exception = 0;
 
@@ -40,6 +42,13 @@ if (instance_exists(obj_chizuru))
 {
     x = obj_chizuru.x;
     y = obj_chizuru.y;
+}
+
+if (instance_exists(obj_kamuronpc1))
+{
+    exception = 2;
+    tempX = view_xview + (view_wview/2);
+    tempY = view_yview + (view_hview/2);
 }
 </string>
           </argument>
@@ -85,65 +94,18 @@ if (exception == 1)
     x = (room_width/2) + shake_xoffset;
     y = (room_width/2) + shake_yoffset;
 }
+
+if (exception == 2)
+{
+    x = tempX + shake_xoffset;
+    y = tempY + shake_yoffset;
+    
+    if (global.shineget == 1 &amp;&amp; !instance_exists(obj_titodialogue3) &amp;&amp; global.isCutscene == false)
+    {
+        exception = 0;
+    }
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>613</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>x</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>613</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>150</string>
           </argument>
         </arguments>
       </action>
