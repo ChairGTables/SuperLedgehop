@@ -198,6 +198,7 @@
             <kind>1</kind>
             <string>global.chizuruhp = 99;
 global.chizurump = 99;
+global.chizurushine = 99;
 
 global.isCutscene = false;
 global.invincibility = 0;

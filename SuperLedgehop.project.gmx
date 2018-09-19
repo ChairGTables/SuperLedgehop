@@ -54,6 +54,7 @@
         <sound>sound\snd_noabsorb</sound>
         <sound>sound\snd_mpready</sound>
         <sound>sound\snd_absorbready</sound>
+        <sound>sound\snd_lowhealth</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -79,6 +80,7 @@
         <sound>sound\snd_survivaltheme</sound>
         <sound>sound\snd_stagethree</sound>
         <sound>sound\snd_minigametheme</sound>
+        <sound>sound\snd_stage4</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -520,6 +522,31 @@
         <background>background\back_buildingwhite1</background>
         <background>background\back_buildingwhite2</background>
       </backgrounds>
+      <backgrounds name="stage4">
+        <background>background\back_buildingblack1</background>
+        <background>background\back_buildingblack2</background>
+        <background>background\back_roadwhite</background>
+        <background>background\back_roadviolet</background>
+        <background>background\back_rockywhite</background>
+        <background>background\back_sidewalkblack</background>
+        <background>background\back_doorwhite</background>
+        <background>background\back_doorblack</background>
+        <background>background\back_bricksblack</background>
+        <background>background\back_grasswhite</background>
+        <background>background\back_windowblack</background>
+        <background>background\back_windowwhite</background>
+        <background>background\back_laddersblack</background>
+        <background>background\back_wallsblack</background>
+        <background>background\back_treeswhite</background>
+      </backgrounds>
+      <backgrounds name="stage5">
+        <background>background\back_bricksfull</background>
+        <background>background\back_roadfull</background>
+        <background>background\back_grassfull</background>
+        <background>background\back_rockyfull</background>
+        <background>background\back_wallfull</background>
+        <background>background\back_laddersfull</background>
+      </backgrounds>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -663,12 +690,14 @@
         <object>objects\obj_mporb</object>
         <object>objects\obj_stagetwomusic</object>
         <object>objects\obj_stagethreemusic</object>
+        <object>objects\obj_stagefourmusic</object>
         <object>objects\obj_shmupcontroller</object>
         <object>objects\obj_chizuruspawner</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
         <object>objects\obj_redcircle</object>
+        <object>objects\obj_circlewarn</object>
         <object>objects\obj_damagenumber</object>
         <object>objects\obj_explosion</object>
         <object>objects\obj_combotext</object>
@@ -884,8 +913,9 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_yuutoshmup</room>
+      <room>rooms\rm_stage4_1</room>
       <room>rooms\rm_titofight</room>
+      <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_120bpmstage2</room>

@@ -86,6 +86,10 @@
     instance_create(x, y, obj_blackfadein);
 }
 
+//hud shake
+hudintensity = 0;
+hudshake_yoffset = 0;
+
 //Draw scripts
 xAmmo = view_xview+15;
 yAmmo = view_yview+434;
@@ -281,7 +285,33 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.isCutscene == true)
+            <string>if (global.lowhp == 0 &amp;&amp; global.chizuruhp &lt;= 20)
+{
+    global.lowhp = 1;
+    if (global.isCutscene == false)
+    {
+        audio_play_sound_on (global.effectsEmitter, snd_lowhealth, false, 10); 
+    }
+}
+
+if (global.lowhp == 1 &amp;&amp; global.chizuruhp &gt; 20)
+{
+    global.lowhp = 0;
+}
+
+
+//Reduce intensity over time
+hudintensity -= 1;
+if (hudintensity &lt; 0)
+{
+    hudintensity = 0;
+}
+
+//Caclculate random offset
+hudshake_yoffset = round(random_range(-hudintensity, hudintensity));
+
+
+if (global.isCutscene == true)
 {
     global.chizurushinecharge = 0;
 }
@@ -727,36 +757,50 @@ if (global.chizurushine &lt; 40 &amp;&amp; instance_exists(obj_chizuru))
 
 if (global.speaking == false || exceptionCheck == 1)
 {
-    draw_sprite(spr_chizuruhud, 0, xMain, yMain)
+    if (instance_exists(obj_chizuru))
+    {
+        if (obj_chizuru.sprite_index == spr_chizuruhurtd)
+        {
+            draw_sprite(spr_chizuruhud, 1, xMain, yMain + hudshake_yoffset)
+        }
+        else if (global.chizuruhp &lt;= 20)
+        {
+            draw_sprite(spr_chizuruhud, 2, xMain, yMain + hudshake_yoffset)
+        }
+        else
+        {
+            draw_sprite(spr_chizuruhud, 0, xMain, yMain + hudshake_yoffset)
+        }
+    }
     if (global.shottype != 0)
     {
-        draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo);
+        draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo + hudshake_yoffset);
     }
     
     if (global.shottype == 1)
     {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.enhancedcount,myHeight)
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.enhancedcount,myHeight)
     }
     if (global.shottype == 2)
     {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.spreadcount,myHeight)
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.spreadcount,myHeight)
     }
     if (global.shottype == 3)
     {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.rapidcount,myHeight)
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.rapidcount,myHeight)
     }
     if (global.shottype == 4)
     {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.firecount,myHeight)
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.firecount,myHeight)
     }
     if (global.shottype == 5)
     {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4,global.icecount,myHeight)
+        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.icecount,myHeight)
     }
     
-    draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25,global.chizuruhp,myHeight)
-    draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36,global.chizurump,myHeight)
-    draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47,global.chizurushine,myHeight)
+    draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25+ hudshake_yoffset,global.chizuruhp,myHeight)
+    draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36+ hudshake_yoffset,global.chizurump,myHeight)
+    draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47+ hudshake_yoffset,global.chizurushine,myHeight)
     
     if (instance_exists(obj_yuutoassist))
     {

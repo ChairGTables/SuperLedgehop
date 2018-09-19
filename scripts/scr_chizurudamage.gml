@@ -8,7 +8,10 @@ if (instance_exists(obj_chizuru))
         {
             obj_camera_chair.intensity = 10;
         }
-    
+        if (instance_exists(obj_controller))
+        {
+            obj_controller.hudintensity = 15;
+        }
         global.chizuruhp -= damage;
         global.invincibility = 100;
         
