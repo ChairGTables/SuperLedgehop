@@ -186,6 +186,8 @@ global.titleSelection = 0;
 global.shineget = 0;
 global.bossvirgin = 1;
 
+global.lowhp = 0;
+
 global.specialsuccess = 0;
 global.specialattempts = 0;
 
