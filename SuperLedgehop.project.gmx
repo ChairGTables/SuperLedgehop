@@ -297,6 +297,7 @@
         <sprite>sprites\spr_titlelogo</sprite>
         <sprite>sprites\spr_titleselection</sprite>
         <sprite>sprites\spr_yellowbox</sprite>
+        <sprite>sprites\spr_whitebox</sprite>
         <sprite>sprites\spr_controlscheme</sprite>
         <sprite>sprites\spr_caution</sprite>
         <sprite>sprites\spr_wowyoudied</sprite>
@@ -542,6 +543,10 @@
         <background>background\back_laddersblack</background>
         <background>background\back_wallsblack</background>
         <background>background\back_treeswhite</background>
+        <background>background\back_fancyfloorred</background>
+        <background>background\back_fancyfloorblack</background>
+        <background>background\back_fancyfloorviolet</background>
+        <background>background\back_carpetwhite</background>
       </backgrounds>
       <backgrounds name="stage5">
         <background>background\back_bricksfull</background>
@@ -744,6 +749,7 @@
         <object>objects\obj_wooddoor</object>
         <object>objects\obj_caveentrance</object>
         <object>objects\obj_caveshadow</object>
+        <object>objects\obj_teleportpad</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -792,6 +798,7 @@
         <object>objects\obj_firecannon</object>
         <object>objects\obj_policerapid</object>
         <object>objects\obj_policecyborg</object>
+        <object>objects\obj_moosespawner</object>
         <object>objects\obj_mooseentrance</object>
         <object>objects\obj_moose</object>
         <object>objects\obj_trashbin</object>
@@ -919,6 +926,7 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_stage4_2</room>
       <room>rooms\rm_stage4_1</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage3_1</room>

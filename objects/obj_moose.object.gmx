@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//Set health for enemy
-hp = 12;
+hp = 400;
 
 //set health drops
 minDrops = 3;
@@ -178,10 +178,10 @@ if (shootTimer &lt;= 0)
             audio_stop_sound (snd_enemybullet);
             audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
             var shot = instance_create(x, y, obj_flame_sonii);
-            for (i = 0; i &lt; random_range(2, 6); i++)
+            for (i = 0; i &lt; random_range(4, 8); i++)
             {
                 shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y) + random_range(-30,30);
-                shot.speed = random_range(7,20);
+                shot.speed = random_range(10,20);
             }
             
             if (shotCount mod 15 == 0)
@@ -383,26 +383,6 @@ if (rightmomentum &gt; 0)
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>601</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -445,6 +425,37 @@ if (rightmomentum &gt; 0)
     <event eventtype="4" ename="obj_chizuruicebullet">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+    other.direction += 180;
+    other.direction += random_range(0, 40);
+    other.speed *= 2;
+    
+    var damageNumber = instance_create(x, y, obj_damagenumber);
+    damageNumber.hspeed = random_range(-5, 5);
+    damageNumber.vspeed = random_range(-10, -15);
+    damageNumber.gravity = 1;
+    damageNumber.gravity_direction = 270;
+    damageNumber.damage = -900;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>605</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -460,46 +471,6 @@ if (rightmomentum &gt; 0)
           <argument>
             <kind>1</kind>
             <string>Apply this script for any bullet that can hurt this object</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_enemydamage</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -521,10 +492,17 @@ if (rightmomentum &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_chizuru))
-{
-    draw_sprite_ext(sprite_index, image_index, obj_chizuru.x, obj_chizuru.y + steps, image_xscale, image_yscale, image_angle, c_white, image_alpha);
-}
+            <string>    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+    other.direction += 180;
+    other.direction += random_range(0, 40);
+    other.speed *= 2;
+    
+    var damageNumber = instance_create(x, y, obj_damagenumber);
+    damageNumber.hspeed = random_range(-5, 5);
+    damageNumber.vspeed = random_range(-10, -15);
+    damageNumber.gravity = 1;
+    damageNumber.gravity_direction = 270;
+    damageNumber.damage = -900;
 </string>
           </argument>
         </arguments>
@@ -573,41 +551,32 @@ if (rightmomentum &gt; 0)
       </action>
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>scr_enemydamage</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+    other.direction += 180;
+    other.direction += random_range(0, 40);
+    other.speed *= 2;
+    
+    var damageNumber = instance_create(x, y, obj_damagenumber);
+    damageNumber.hspeed = random_range(-5, 5);
+    damageNumber.vspeed = random_range(-10, -15);
+    damageNumber.gravity = 1;
+    damageNumber.gravity_direction = 270;
+    damageNumber.damage = -900;
+</string>
           </argument>
         </arguments>
       </action>
@@ -652,48 +621,27 @@ if (rightmomentum &gt; 0)
             <string>if (instance_exists(obj_kamuronpc1))
 {
     hp = 0;
+    script_execute(scr_enemydamage);
+}
+else if (other.sprite_index == spr_enemyflame_sonii)
+{
+    script_execute(scr_enemydamage);
+}
+else
+{
+    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+    other.direction += 180;
+    other.direction += random_range(0, 40);
+    other.speed *= 2;
+    
+    var damageNumber = instance_create(x, y, obj_damagenumber);
+    damageNumber.hspeed = random_range(-5, 5);
+    damageNumber.vspeed = random_range(-10, -15);
+    damageNumber.gravity = 1;
+    damageNumber.gravity_direction = 270;
+    damageNumber.damage = -900;
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_enemydamage</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
