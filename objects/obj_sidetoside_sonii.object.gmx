@@ -53,14 +53,15 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.halfSec;    // whole note
+shootBeat = global.quarterSec;    // whole note
 moveBeat = global.halfSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
-shotsBeforeRest = 0;
+shotsBeforeRest = 6;
 shootRestTime = 150;
 action = 1;
+angleHold = 0;
 
 //Do not touch these
 upmomentum = 0;
@@ -278,18 +279,40 @@ if (shootTimer &lt;= 0)
     //Perform shooting
     if (action == 1)
     {   
-        audio_play_sound (snd_enemybullet, 10, false); 
-        //This code segment shoots a huge surrounding circle
-        var shot = instance_create(x, y, obj_enemyenhancedbullet);
-        shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
-        shot.speed = 10;
+        if (shotCount &gt;= shotsBeforeRest/2)
+        {
+            angleHold += 20;
+            if (instance_exists(obj_chizuru) &amp;&amp; shotCount == shotsBeforeRest / 2)
+            {
+                angleHold = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) - 30;
+            }
+            audio_stop_sound (snd_enemybullet);
+            audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
+            
+            //This code segment shoots a huge surrounding circle
+            for (i = -3; i &lt; 3; i++)
+            {
+                shot = instance_create(x, y, obj_enemyenhancedbullet);
+                shot.direction = angleHold + (i * 2);
+                shot.speed = 4;           
+            }
+        }
+        
+        if (shotCount &gt;= shotsBeforeRest)
+        {
+            shotCount = 0;
+        }
+        else
+        {
+            shotCount += 1;
+        }
+    
+        
     }
     
 }
     
-    // Beat indicator
-    var beatIndicator = instance_create(x, y, obj_beatindicator_david);
-    beatIndicator.image_speed = shootBeat;
+    
 
 // ======================================================
 
@@ -299,6 +322,10 @@ if (moveTimer &lt;= 0)
     //Always set the timer again so it loops
     moveTimer = moveBeat;
     
+    // Beat indicator
+    var beatIndicator = instance_create(x, y, obj_beatindicator_david);
+    beatIndicator.image_speed = 1;
+    
     //Action is checked on the step state to see if enemy is hurt or enemy is offscreen
     if(action == 1)
     {
@@ -307,28 +334,12 @@ if (moveTimer &lt;= 0)
         minimumspeed = 5;
         maximumspeed = 10;
         
-        //Do not touch these
-      /*  if (random_range(0, 100) &gt; 50 &amp;&amp; instance_exists(obj_chizuru))
-        {
-            move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
-        }
-        else
-        {*/
+
             hspeed = maximumspeed * directionA;
             if(directionA == 1)
                 directionA = -1;
             else
                 directionA = 1;
-            //vspeed = random_range(minimumspeed, maximumspeed);
-           /* if (random_range(0, 100) &gt; 50)
-            {
-                hspeed = -hspeed;
-            }
-            if (random_range(0, 100) &gt; 50)
-            {
-                vspeed = -vspeed;
-            }*/
-       // }
     }
 }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++

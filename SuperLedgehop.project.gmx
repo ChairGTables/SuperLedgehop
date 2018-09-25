@@ -359,6 +359,8 @@
         <sprite>sprites\spr_enemybasic2hurt</sprite>
         <sprite>sprites\spr_enemybasic3</sprite>
         <sprite>sprites\spr_enemybasic3hurt</sprite>
+        <sprite>sprites\spr_frostenemy</sprite>
+        <sprite>sprites\spr_frostenemyhurt</sprite>
         <sprite>sprites\spr_wooddoor</sprite>
         <sprite>sprites\spr_moose</sprite>
         <sprite>sprites\spr_moosehurt</sprite>
@@ -376,6 +378,8 @@
         <sprite>sprites\spr_policegrenadehurt</sprite>
         <sprite>sprites\spr_policecyborg</sprite>
         <sprite>sprites\spr_policecyborghurt</sprite>
+        <sprite>sprites\spr_frostspike</sprite>
+        <sprite>sprites\spr_snowflake</sprite>
       </sprites>
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>
@@ -744,6 +748,7 @@
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
         <object>objects\obj_enemyenhancedbullet</object>
+        <object>objects\obj_enemyicebullet</object>
         <object>objects\obj_slowspikes</object>
         <object>objects\obj_rightcannonDONOTDUPLICATE</object>
         <object>objects\obj_straightdown</object>
@@ -861,6 +866,7 @@
         <object>objects\obj_enemybasic_sonii</object>
         <object>objects\obj_grenaider_sonii</object>
         <object>objects\obj_lazerCannon_sonii</object>
+        <object>objects\obj_frostspike</object>
         <object>objects\obj_nostop_sonii</object>
         <object>objects\obj_sidetoside_sonii</object>
         <object>objects\obj_spreadcannon_sonii</object>
@@ -914,20 +920,20 @@
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
       <room>rooms\rm_stage4_1</room>
-      <room>rooms\rm_titofight</room>
-      <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_stage1</room>
+      <room>rooms\rm_stage3_1</room>
+      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_louiefight</room>
       <room>rooms\rm_stage1_2</room>
+      <room>rooms\rm_titofight</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_120bpm2</room>
       <room>rooms\rm_stage2_2</room>
       <room>rooms\rm_defaultfight</room>
-      <room>rooms\rm_140bpm_david</room>
-      <room>rooms\rm_louiefight</room>
-      <room>rooms\rm_stage3_1</room>
       <room>rooms\rm_repeat3_1</room>
       <room>rooms\rm_stage3_2</room>
       <room>rooms\rm_165bpmsurvival</room>

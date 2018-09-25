@@ -54,13 +54,14 @@ hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
 shootBeat = global.wholeSec;    // whole note
-moveBeat = global.wholeSec; // half note
+moveBeat = global.halfSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
 shotCount = 0;
-shotsBeforeRest = 0;
+shotsBeforeRest = 720;
 shootRestTime = 150;
 action = 1;
+shooting = 0;
 
 //Do not touch these
 upmomentum = 0;
@@ -270,6 +271,31 @@ moveTimer  -= delta_time / 1000000;
 
 script_execute(scr_resyncenemies_david);
 
+if (shooting == 1)
+{
+    audio_play_sound_on (global.effectsEmitter, snd_enemysmall, false, 10); 
+    shot = instance_create(x, y, obj_rapidbullet);
+    shot.speed = 7;
+    shot.direction = shotCount;
+    shot.targetDirection = shotCount + 20;
+    if (shotCount &gt; 360)
+    {
+        shot.direction -= 360;
+        shot.targetDirection -= 360;
+    }
+    
+    if (shotCount &gt;= shotsBeforeRest)
+    {
+        shotCount = 0;
+        shooting = 0;
+    }
+    else
+    {
+        shotCount += 7;
+    }
+    
+}
+
 if (shootTimer &lt;= 0)
 {
     // ======== SHOOTING ====================
@@ -279,23 +305,7 @@ if (shootTimer &lt;= 0)
     //Perform shooting
     if (action == 1)
     {
-        //This code segment shoots a huge surrounding circle
-        if (currentShots &lt; shotsUntilRest)
-        {
-            audio_play_sound (snd_enemybullet, 10, false); 
-            anglePerShot = 3;
-            for (i = 0; i &lt; 360 / anglePerShot; i++)
-            {
-                var shot = instance_create(x, y, obj_rapidbullet);
-                if (instance_exists(shot))
-                {
-                    shot.direction = i * anglePerShot;
-                    shot.speed = 10;
-                }
-            }
-            
-            shotsUntilRest += 1;
-        }
+        shooting = 1;
         
     }
     

@@ -67,7 +67,6 @@
     <instance objName="obj_lazerCannon_sonii" x="2336" y="1856" name="inst_02149AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="1248" y="1984" name="inst_DD09F0D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="1664" y="811" name="inst_D37670A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadcannon_sonii" x="640" y="3296" name="inst_160DB723" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="2176" y="1952" name="inst_9FA4B0E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="2496" y="1536" name="inst_FCFA1F94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="2528" y="448" name="inst_5BA1A107" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,8 +76,6 @@
     <instance objName="obj_basicenemy3_sonii" x="2624" y="768" name="inst_3988DE60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="1312" y="800" name="inst_DFB222BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="896" y="2336" name="inst_1C82A2E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="2304" y="2272" name="inst_4BAB0DEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="2208" y="2304" name="inst_29951762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="2688" y="1728" name="inst_F0920950" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nextroom" x="2176" y="-224" name="inst_49FFF261" locked="0" code="" scaleX="24" scaleY="5.67741918563843" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="400" y="3328" name="inst_6CED2800" locked="0" code="" scaleX="4" scaleY="21" colour="4294967295" rotation="0"/>
@@ -185,6 +182,8 @@
     <instance objName="obj_basicenemy2_sonii" x="1024" y="2256" name="inst_5AEAFBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cavedialoguespace" x="1024" y="3504" name="inst_9B1A1EAF" locked="0" code="" scaleX="9.80645179748535" scaleY="5.15999984741211" colour="4294967295" rotation="0"/>
     <instance objName="obj_lieddialoguespace" x="1232" y="640" name="inst_32D02C48" locked="0" code="" scaleX="3.5" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="2176" y="2208" name="inst_9F4A7615" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="672" y="3104" name="inst_D8C20343" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_hills" x="416" y="3232" w="32" h="32" xo="0" yo="96" id="10012701" name="inst_D410619A" depth="9999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
