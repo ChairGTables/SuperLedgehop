@@ -36,7 +36,7 @@ maxDrops = 3;
 image_speed = 0.5;
 
 //You must define the hurt sprite as a string
-hurtSprite = "spr_squaremoverhurt_sonii";
+hurtSprite = "spr_squremovehurt_sonii";
 
 //Do not touch this
 sS = sprite_index;
@@ -53,7 +53,7 @@ shineKnockback = 7;
 hitstunTime = 13;
 
 //Define the beat that sets the alarm events to occur
-shootBeat = global.wholeSec;    // whole note
+shootBeat = global.halfSec;    // whole note
 moveBeat = global.quarterSec; // half note
 
 //Use these to shoot x amount of times before the enemy shoots again
@@ -278,11 +278,43 @@ if (shootTimer &lt;= 0)
     //Perform shooting
     if (action == 1)
     {   
-        audio_play_sound (snd_enemybullet, 10, false); 
-        //This code segment shoots a huge surrounding circle
-        var shot = instance_create(x, y, obj_rapidbullet);
-        shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
-        shot.speed = 15;
+        audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
+        
+        for (i = 0; i &lt; 4; i++)
+        {
+            for (j = -3; j &lt; 3; j++)
+            {
+                shot = instance_create(x, y, obj_enemyenhancedbullet);
+                if (i == 0 || i == 4)
+                {
+                    shot.hspeed = 5;
+                    shot.targetHorizontal = -8;
+                    shot.targetVertical = j * 3;
+                    shot.targetVerticalStop = 1;
+                }
+                else if (i == 1)
+                {
+                    shot.vspeed = -5;
+                    shot.targetVertical = 8;
+                    shot.targetHorizontal = j * 3;
+                    shot.targetHorizontalStop = 1;
+                }
+                else if (i == 2)
+                {
+                    shot.hspeed = -5;
+                    shot.targetHorizontal =  8;
+                    shot.targetVertical = j * 3;
+                    shot.targetVerticalStop = 1;
+                }
+                else if (i == 3)
+                {
+                    shot.vspeed = 5;
+                    shot.targetVertical = -8;
+                    shot.targetHorizontal = j * 3;
+                    shot.targetHorizontalStop = 1;
+                }
+            }
+        }
     }
     
     // Beat indicator

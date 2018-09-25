@@ -130,7 +130,6 @@
     <instance objName="obj_spreadcannon_sonii" x="2672" y="720" name="inst_B60BCDBF" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="1840" y="1552" name="inst_304D1C44" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="272" y="2896" name="inst_565244C9" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadmove_sonii" x="960" y="1872" name="inst_5EA74CF6" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="1120" y="1792" name="inst_E6D9F15F" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="2400" y="1744" name="inst_A49EFFC3" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="2976" y="1328" name="inst_F0922874" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -174,8 +173,9 @@
     <instance objName="obj_chizuruspawner" x="352" y="3856" name="inst_22465872" locked="0" code="if (global.stageState == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chizuruspawner" x="3936" y="416" name="inst_3DBC59DA" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;else&#xA;{&#xA;    instance_create(x, y, obj_yuutoassist);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nextroom" x="1520" y="4032" name="inst_84413040" locked="0" code="" scaleX="20" scaleY="5.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dialoguetest" x="48" y="432" name="inst_F03C8EA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutolockdialogue" x="128" y="3872" name="inst_E86DCBB0" locked="0" code="" scaleX="13" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="880" y="1904" name="inst_D5392519" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="2544" y="512" name="inst_1CEC83B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_carpetred" x="128" y="3968" w="32" h="32" xo="128" yo="0" id="10020690" name="inst_C6D4CF51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -109,16 +109,12 @@
     <instance objName="obj_grenaider_sonii" x="1632" y="1744" name="inst_4C218A6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="2208" y="1376" name="inst_4874BA40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="1280" y="1824" name="inst_A51B4866" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadmove_sonii" x="976" y="1856" name="inst_99B43624" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policegrenade" x="3264" y="1744" name="inst_C91C473E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="3744" y="1744" name="inst_973856DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="3040" y="1024" name="inst_C3D34F16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="2912" y="1040" name="inst_83BD0DB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="2976" y="864" name="inst_1D5B9573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="2048" y="544" name="inst_3CB84655" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadmove_sonii" x="2528" y="960" name="inst_8C8CCF30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_charger_sonii" x="2208" y="832" name="inst_D0628F3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spreadmove_sonii" x="2848" y="448" name="inst_4E2B0E5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="3040" y="480" name="inst_A9AC4853" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="2640" y="464" name="inst_E4CD1886" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="3216" y="512" name="inst_D34F2633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -127,7 +123,6 @@
     <instance objName="obj_policecyborg" x="4416" y="1024" name="inst_8D52378C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="3968" y="496" name="inst_3B0E2FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="4384" y="1360" name="inst_8F7E0290" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="4688" y="1328" name="inst_338F3E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="4848" y="1440" name="inst_63A18EFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="4592" y="1568" name="inst_EDBE4315" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="4896" y="1840" name="inst_23C67A1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -279,6 +274,10 @@
     <instance objName="obj_wall" x="4480" y="928" name="inst_BE2F4D0D" locked="0" code="" scaleX="8" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="5088" y="928" name="inst_E85D9700" locked="0" code="" scaleX="12" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="4960" y="1120" name="inst_8000A2EA" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="1056" y="1824" name="inst_656746E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="2848" y="480" name="inst_EEBE31A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="2976" y="896" name="inst_26AC9FBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="4736" y="1344" name="inst_ED27005D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_mrbeast" x="608" y="64" w="32" h="32" xo="0" yo="0" id="10026952" name="inst_D0C18796" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
