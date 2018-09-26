@@ -11,3 +11,4 @@ audio_stop_sound(snd_survivaltheme);
 audio_stop_sound(snd_stagethree);
 audio_stop_sound(snd_minigametheme);
 audio_stop_sound(snd_stage4);
+audio_stop_sound(snd_kamurofight);

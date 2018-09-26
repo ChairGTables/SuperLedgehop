@@ -197,7 +197,12 @@
           <argument>
             <kind>1</kind>
             <string>global.chizuruhp = 99;
-global.chizurump = 99;
+
+if (!(instance_exists(obj_louie) &amp;&amp; instance_exists(obj_survivalmode)))
+{
+    global.chizurump = 99;
+}
+    
 global.chizurushine = 99;
 
 global.isCutscene = false;

@@ -45,8 +45,8 @@ hS = asset_get_index(hurtSprite);
 aS = asset_get_index(attackSprite);
 
 //Set hurt sounds
-hurtSoundOne = snd_hurt5;
-hurtSoundTwo = snd_hurt6;
+hurtSoundOne = snd_hurt15;
+hurtSoundTwo = snd_hurt21;
 deathSound = snd_death7;
 
 //Define the knockback and hitstun

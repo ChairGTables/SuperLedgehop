@@ -28,7 +28,13 @@
             <string>global.shineget = 1;
 
 //Set health for enemy
-hp = 500;
+hp = 100;
+
+global.bossone = 434;
+global.bosstwo = 434;
+global.bossthree = 100;
+
+hpIndex = 3;
 
 //set health drops
 minDrops = 3;
@@ -232,6 +238,33 @@ shootRestTime -= delta_time/100000;
 
 script_execute(scr_resyncenemies_david);
 
+
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &gt; 0 &amp;&amp; global.bossone &gt; 0)
+{
+    global.bossthree = hp;
+}
+
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 3)
+    {
+        hp = global.bosstwo;
+        hpIndex = 2;
+    }
+    global.bosstwo = hp;
+}
+
+if (global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 2)
+    {
+        hp = global.bossone;
+        hpIndex = 1;
+    }
+    global.bossone = hp;
+}
+
+
 if (global.resyncing)
 {
     shootRestTime = global.currentWholeSec * 4;
@@ -245,6 +278,7 @@ if (shotCount == 150)
         newFlame = instance_create(x, y, obj_flame_sonii);
         newFlame.direction = random_range(0, 360);
         newFlame.speed = random_range(3, 7);
+        newFlame.damage = 15;
     }
 }
 
@@ -305,7 +339,7 @@ if (shootTimer &lt;= 0)
                             shot.direction = i;
                         }
                         shot.speed = random_range(7, 8);
-                        
+                        shot.damage = 15;
                     }
                 }
                 else if (shotCount == 2)
@@ -360,6 +394,7 @@ if (shootTimer &lt;= 0)
                             newFlame.speed = 20;
                             newFlame.image_xscale = 1.5;
                             newFlame.image_yscale = 1.5;
+                            newFlame.damage = 15;
                         }
                         
                         
@@ -373,6 +408,7 @@ if (shootTimer &lt;= 0)
                             newFlame.speed = 15;
                             newFlame.image_xscale = 1.5;
                             newFlame.image_yscale = 1.5;
+                            newFlame.damage = 15;
                         
                         shootBeat = global.wholeSec;
                         shootTimer = shootBeat;
@@ -489,9 +525,9 @@ if (shootTimer &lt;= 0)
                     image_index = 0;
                     image_speed = 0.4;
                     speed = 0;
-                    for (i = 416; i &lt; 1264; i+= 96)
+                    for (i = 416; i &lt; 1564; i+= 96)
                     {
-                        myWarn = instance_create(i, 0, obj_warnbox);
+                        myWarn = instance_create(i, 360, obj_warnbox);
                         myWarn.image_yscale = 100;
                         myWarn.alarm[0] = -1;
                         myWarn.fading = 1;
@@ -509,9 +545,9 @@ if (shootTimer &lt;= 0)
                     image_index = 0;
                     image_speed = 0.4;
                     speed = 0;
-                    for (i = 416; i &lt; 1264; i+= 96)
+                    for (i = 416; i &lt; 1564; i+= 96)
                     {
-                        myWarn = instance_create(i, 0, obj_laser_sonii);
+                        myWarn = instance_create(i, 360, obj_laser_sonii);
                         myWarn.sprite_index = spr_flamebeamvert;
                         //myWarn.image_angle = 270;
                         myWarn.image_xscale = 1;
@@ -544,7 +580,7 @@ if (shootTimer &lt;= 0)
                     image_index = 0;
                     image_speed = 0.4;
                     speed = 0;
-                    for (i = 148; i &lt; 796; i+= 96)
+                    for (i = 348; i &lt; 1386; i+= 96)
                     {
                         myWarn = instance_create(0, i, obj_warnbox);
                         myWarn.image_xscale = 100;
@@ -564,7 +600,7 @@ if (shootTimer &lt;= 0)
                     image_index = 0;
                     image_speed = 0.4;
                     speed = 0;
-                    for (i = 148; i &lt; 796; i+= 96)
+                    for (i = 348; i &lt; 1386; i+= 96)
                     {
                         myWarn = instance_create(0, i, obj_laser_sonii);
                         myWarn.sprite_index = spr_flamebeam;
@@ -599,16 +635,16 @@ if (shootTimer &lt;= 0)
                     image_index = 0;
                     image_speed = 0.4;
                     speed = 0;
-                    for (i = 138; i &lt; 796; i+= 96)
+                    for (i = 328; i &lt; 1386; i+= 96)
                     {
                         myWarn = instance_create(0, i, obj_warnbox);
                         myWarn.image_xscale = 100;
                         myWarn.alarm[0] = -1;
                         myWarn.fading = 1;
                     }
-                    for (i = 406; i &lt; 1264; i+= 96)
+                    for (i = 436; i &lt; 1564; i+= 96)
                     {
-                        myWarn = instance_create(i, 0, obj_warnbox);
+                        myWarn = instance_create(i, 360, obj_warnbox);
                         myWarn.image_yscale = 100;
                         myWarn.alarm[0] = -1;
                         myWarn.fading = 1;
@@ -627,16 +663,16 @@ if (shootTimer &lt;= 0)
                     image_index = 0;
                     image_speed = 0.4;
                     speed = 0;
-                    for (i = 138; i &lt; 796; i+= 96)
+                    for (i = 328; i &lt; 1386; i+= 96)
                     {
                         myWarn = instance_create(0, i, obj_laser_sonii);
                         myWarn.sprite_index = spr_flamebeam;
                         myWarn.image_angle = 0;
                         myWarn.image_xscale = 10;
                     }
-                    for (i = 406; i &lt; 1264; i+= 96)
+                    for (i = 436; i &lt; 1564; i+= 96)
                     {
-                        myWarn = instance_create(i, 0, obj_laser_sonii);
+                        myWarn = instance_create(i, 360, obj_laser_sonii);
                         myWarn.sprite_index = spr_flamebeamvert;
                         //myWarn.image_angle = 270;
                         myWarn.image_xscale = 1;
@@ -1186,7 +1222,7 @@ script_execute(scr_enemydamage);
 {
     sekret = instance_create(other.x, other.y, obj_laser_sonii);
     sekret.visible = 0;
-    
+    sekret.damage = 15;
     if(instance_exists(obj_shine))
     {
         instance_destroy(obj_shine);

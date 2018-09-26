@@ -15,7 +15,6 @@ if (passable == 1)
     {
         obj_controller.alarm[0] = 30;
     }
-    
     audio_play_sound_on (global.effectsEmitter, snd_enemydamage, false, 10); 
     var damageNumber = instance_create(x, y, obj_damagenumber);
     damageNumber.hspeed = random_range(-5, 5);

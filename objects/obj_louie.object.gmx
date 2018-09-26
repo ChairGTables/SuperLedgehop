@@ -29,7 +29,7 @@
 {
     if (global.xHolder[0] != 0 &amp;&amp; global.yHolder[0] != 0)
     {
-        obj_chizuru.x = global.xHolder[0];
+        obj_chizuru.x = global.xHolder[0] + 480;
         obj_chizuru.y = global.yHolder[0];
     }
 }
