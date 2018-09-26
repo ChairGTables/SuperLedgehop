@@ -71,6 +71,7 @@ alarm[2] = 2;
     myFire = instance_create(x, y, obj_flame_sonii);
     myFire.alarm[1] = 45;
     alarm[2] = 2;
+    myFire.damage = 15;
 }
 </string>
           </argument>
@@ -171,7 +172,7 @@ if (targetSpeed != 0 &amp;&amp; speed &lt; targetSpeed)
 
 script_execute(scr_destroywhenoutofview);
 
-if (fading == 1)
+if (fading == 1 &amp;&amp; absorbed == 0)
 {
     image_alpha -= 0.1;
 }

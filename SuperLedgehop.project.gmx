@@ -71,12 +71,8 @@
         <sound>sound\snd_winsong</sound>
         <sound>sound\snd_yuutointro</sound>
         <sound>sound\snd_yuutotheme</sound>
+        <sound>sound\snd_kamurofight</sound>
         <sound>sound\snd_stagetwo</sound>
-        <sounds name="tito">
-          <sound>sound\snd_titohey</sound>
-          <sound>sound\snd_titowave</sound>
-          <sound>sound\snd_titorice</sound>
-        </sounds>
         <sound>sound\snd_survivaltheme</sound>
         <sound>sound\snd_stagethree</sound>
         <sound>sound\snd_minigametheme</sound>
@@ -102,6 +98,12 @@
         <sound>sound\snd_death5</sound>
         <sound>sound\snd_death6</sound>
         <sound>sound\snd_death7</sound>
+        <sound>sound\snd_death8</sound>
+        <sound>sound\snd_death9</sound>
+        <sound>sound\snd_death10</sound>
+        <sound>sound\snd_death11</sound>
+        <sound>sound\snd_death12</sound>
+        <sound>sound\snd_death13</sound>
         <sound>sound\snd_hurt1</sound>
         <sound>sound\snd_hurt2</sound>
         <sound>sound\snd_hurt3</sound>
@@ -110,7 +112,21 @@
         <sound>sound\snd_hurt6</sound>
         <sound>sound\snd_hurt7</sound>
         <sound>sound\snd_hurt8</sound>
+        <sound>sound\snd_hurt9</sound>
+        <sound>sound\snd_hurt10</sound>
+        <sound>sound\snd_hurt11</sound>
+        <sound>sound\snd_hurt12</sound>
+        <sound>sound\snd_hurt13</sound>
+        <sound>sound\snd_hurt14</sound>
+        <sound>sound\snd_hurt15</sound>
+        <sound>sound\snd_hurt16</sound>
+        <sound>sound\snd_hurt17</sound>
+        <sound>sound\snd_hurt20</sound>
+        <sound>sound\snd_hurt21</sound>
+        <sound>sound\snd_hurt22</sound>
+        <sound>sound\snd_hurt23</sound>
         <sound>sound\snd_screech1</sound>
+        <sound>sound\snd_laugh1</sound>
       </sounds>
       <sounds name="combo">
         <sound>sound\snd_cool</sound>
@@ -179,6 +195,14 @@
         <sound>sound\snd_louiestaydown1</sound>
         <sound>sound\snd_louiestaydown2</sound>
         <sound>sound\snd_louiedeath</sound>
+      </sounds>
+      <sounds name="tito">
+        <sound>sound\snd_titohey</sound>
+        <sound>sound\snd_titodeath</sound>
+        <sound>sound\snd_titowave</sound>
+        <sound>sound\snd_titooof</sound>
+        <sound>sound\snd_titokch</sound>
+        <sound>sound\snd_titorice</sound>
       </sounds>
     </sounds>
     <sounds name="sonii">
@@ -542,6 +566,7 @@
         <background>background\back_windowwhite</background>
         <background>background\back_laddersblack</background>
         <background>background\back_wallsblack</background>
+        <background>background\back_lavasea</background>
         <background>background\back_treeswhite</background>
         <background>background\back_fancyfloorred</background>
         <background>background\back_fancyfloorblack</background>
@@ -555,6 +580,9 @@
         <background>background\back_rockyfull</background>
         <background>background\back_wallfull</background>
         <background>background\back_laddersfull</background>
+        <background>background\back_buildingfull</background>
+        <background>background\back_doorfull</background>
+        <background>background\back_windowfull</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="sonii">
@@ -700,6 +728,7 @@
         <object>objects\obj_stagetwomusic</object>
         <object>objects\obj_stagethreemusic</object>
         <object>objects\obj_stagefourmusic</object>
+        <object>objects\obj_kamuromusic</object>
         <object>objects\obj_shmupcontroller</object>
         <object>objects\obj_chizuruspawner</object>
       </objects>
@@ -926,28 +955,31 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_stage4_2</room>
-      <room>rooms\rm_stage4_1</room>
-      <room>rooms\rm_stage1</room>
-      <room>rooms\rm_stage3_1</room>
+      <room>rooms\rm_stage5</room>
+      <room>rooms\rm_165bpmsurvival</room>
+      <room>rooms\rm_survivalmode</room>
       <room>rooms\rm_140bpm_david</room>
       <room>rooms\rm_louiefight</room>
+      <room>rooms\rm_kamurofight</room>
+      <room>rooms\rm_stage3_2</room>
+      <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_stage4_2</room>
+      <room>rooms\rm_stage4_1</room>
+      <room>rooms\rm_survivalmodeold</room>
+      <room>rooms\rm_stage1</room>
+      <room>rooms\rm_stage3_1</room>
+      <room>rooms\rm_louiefightold</room>
       <room>rooms\rm_stage1_2</room>
       <room>rooms\rm_titofight</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
-      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_yuutoboss_</room>
       <room>rooms\rm_120bpm2</room>
       <room>rooms\rm_stage2_2</room>
       <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_repeat3_1</room>
-      <room>rooms\rm_stage3_2</room>
-      <room>rooms\rm_165bpmsurvival</room>
-      <room>rooms\rm_survivalmode</room>
       <room>rooms\rm_billfight</room>
-      <room>rooms\rm_kamurofight</room>
       <room>rooms\room9</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>

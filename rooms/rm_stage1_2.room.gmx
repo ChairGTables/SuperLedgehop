@@ -131,8 +131,8 @@
     <instance objName="obj_wall" x="544" y="576" name="inst_EFB4916D" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="416" y="288" name="inst_B3095CBA" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_reflectinstructionspace" x="320" y="576" name="inst_DE9D8F87" locked="0" code="" scaleX="20.6451606750488" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tempwall" x="960" y="2208" name="inst_CDE54C87" locked="0" code="" scaleX="11" scaleY="17" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tempwall" x="320" y="2736" name="inst_0F9247FF" locked="0" code="" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tempwall" x="960" y="2208" name="inst_CDE54C87" locked="0" code="if(global.shineget == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="11" scaleY="17" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tempwall" x="320" y="2736" name="inst_0F9247FF" locked="0" code="if(global.shineget == 1)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="-160" y="2144" name="inst_BC00E939" locked="0" code="" scaleX="5" scaleY="21" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

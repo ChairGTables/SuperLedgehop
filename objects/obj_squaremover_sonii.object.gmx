@@ -43,9 +43,9 @@ sS = sprite_index;
 hS = asset_get_index(hurtSprite);
 
 //Set hurt sounds
-hurtSoundOne = snd_hurt3;
-hurtSoundTwo = snd_hurt4;
-deathSound = snd_death6;
+hurtSoundOne = snd_hurt8;
+hurtSoundTwo = snd_hurt9;
+deathSound = snd_death9;
 
 //Define the knockback and hitstun
 bulletKnockback = 5;

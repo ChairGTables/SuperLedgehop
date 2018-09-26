@@ -116,17 +116,22 @@ if (activateTimer &lt;= 0)
     if (global.remaining &lt; maxSpawn &amp;&amp; !instance_exists(obj_louienpc1))
     {
         myRandom = 0;
-        for (i = 0; i &lt; random_range(50, 100); i++)
+        for (i = 0; i &lt; random_range(2, 4); i++)
         {
             myRandom = random_range(0, 100);
         }
+        
+        xLeft = max(528, view_xview+50);
+        xRight = min(1888, view_xview+900);
+        yAnswer = min(1104, max(700, view_yview+(random_range(0, 400) ) ) );
+        
         if (myRandom &gt; 50)
         {
-            instance_create(view_xview+50, view_yview+(random_range(280, 400)), types[random_range(0, currentTypes)] );
+            instance_create(xLeft, yAnswer, types[random_range(0, currentTypes)] );
         }
         else
         {
-            instance_create(view_xview+900, view_yview+(random_range(280, 400)), types[random_range(0, currentTypes)] );
+            instance_create(xRight, yAnswer, types[random_range(0, currentTypes)] );
         }
         
         spawned += 1;
