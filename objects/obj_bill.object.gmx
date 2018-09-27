@@ -28,7 +28,13 @@
             <string>global.shineget = 1;
 
 //Set health for enemy
-hp = 500;
+hp = 100;
+
+global.bossone = 434;
+global.bosstwo = 434;
+global.bossthree = 100;
+
+hpIndex = 3;
 
 //set health drops
 minDrops = 3;
@@ -78,11 +84,11 @@ warn[3] = instance_create(-300, -300, obj_warnbox);
 alarm[1] = 2;
 startX = x;
 startY = y;
-directionHold[0] = 0;
-directionHold[1] = 0;
-directionHold[2] = 0;
-directionHold[3] = 0;
-directionHold[4] = 0;
+
+for (i = 0; i &lt; 360; i++)
+{
+    directionHold[i] = 0;
+}
  
 
 //Do not touch these
@@ -192,6 +198,31 @@ shootTimer -= delta_time / 1000000;
 moveTimer  -= delta_time / 1000000;
 shootRestTime -= delta_time/100000;
         
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &gt; 0 &amp;&amp; global.bossone &gt; 0)
+{
+    global.bossthree = hp;
+}
+
+if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 3)
+    {
+        hp = global.bosstwo;
+        hpIndex = 2;
+    }
+    global.bosstwo = hp;
+}
+
+if (global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1 &amp;&amp; global.bossone &gt; 0)
+{
+    if(hpIndex == 2)
+    {
+        hp = global.bossone;
+        hpIndex = 1;
+    }
+    global.bossone = hp;
+}
+
 
 script_execute(scr_resyncenemies_david);
 
@@ -200,7 +231,7 @@ if (global.resyncing)
     shootRestTime = global.currentWholeSec * 4;
 }
 
-if (shotCount == 501)
+if (shotCount == 501 || shotCount == 305 || shotCount == 306)
 {
     for (i = 0; i &lt; 3; i++)
     {
@@ -415,8 +446,8 @@ if (shootTimer &lt;= 0)
                     
                     if (shotCount == 304)
                     {
-                        shotCount = 0;
-                        phase = 0;
+                        shotCount += 1;
+                        //phase = 0;
                         shootBeat = global.wholeSec;
                         shootTimer = shootBeat;
                     }
@@ -426,6 +457,70 @@ if (shootTimer &lt;= 0)
                         shootBeat = global.quarterSec;
                         shootTimer = shootBeat;
                     }
+                }
+                else if (shotCount == 305)
+                {
+                    shotCount += 1;
+                    //phase = 0;
+                    shootBeat = global.quarterSec;
+                    shootTimer = shootBeat;
+                }
+                else if (shotCount == 306)
+                {
+                    shotCount += 1;
+                    shootBeat = global.quarterSec;
+                    shootTimer = shootBeat;
+                    audio_play_sound_on (global.effectsEmitter, snd_bombbeep, false, 10); 
+                    audio_play_sound_on (global.voiceEmitter, snd_billcity, false, 10);     
+                    for (i = 0; i &lt; 360; i += 20)
+                    {
+                        randomHold = random_range(-15, 15);
+                        directionHold[i] = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + i + randomHold;
+                        warning = instance_create(x, y, obj_warninglaser_sonii);
+                        warning.image_angle = directionHold[i];
+                    }
+                }
+                else if (shotCount == 307)
+                {
+                    shotCount += 1;
+                    shootBeat = global.quarterSec;
+                    shootTimer = shootBeat;
+                    audio_play_sound_on (global.effectsEmitter, snd_bombbeep, false, 10); 
+                        
+                    for (i = 0; i &lt; 360; i += 20)
+                    {
+                        warning = instance_create(x, y, obj_warninglaser_sonii);
+                        warning.image_angle = directionHold[i];
+                    }
+                }
+                else if (shotCount == 308)
+                {   
+                    shotCount += 1;
+                    shootBeat = global.wholeSec;
+                    shootTimer = shootBeat;
+                    audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
+                    audio_play_sound_on (global.voiceEmitter, snd_billdie, false, 10); 
+                    for (i = 0; i &lt; 360; i += 20)
+                    {
+                        thisBeam = instance_create(x, y, obj_laser_sonii);
+                        thisBeam.targetRotator = 1;
+                        thisBeam.alarm[1] = 40;
+                        thisBeam.fading = 0;
+                        thisBeam.image_angle = directionHold[i];
+                    }
+                }
+                else if (shotCount == 309)
+                {
+                    shotCount += 1;
+                    shootBeat = global.quarterSec;
+                    shootTimer = shootBeat;
+                }
+                else if (shotCount == 310)
+                {
+                    shotCount = 0;
+                    phase = 0;
+                    shootBeat = global.quarterSec;
+                    shootTimer = shootBeat;
                 }
                 else if (shotCount == 301 || shotCount == 303)
                 {
@@ -728,7 +823,7 @@ if (rightmomentum &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150) || (shotCount &gt;= 30 &amp;&amp; shotCount &lt; 315))
 {
     other.timed = 0;
 }
@@ -775,7 +870,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150) || (shotCount &gt;= 30 &amp;&amp; shotCount &lt; 315))
 {
     other.timed = 0;
 }
@@ -822,7 +917,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150) || (shotCount &gt;= 30 &amp;&amp; shotCount &lt; 315))
 {
     other.timed = 0;
 }
@@ -869,7 +964,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150) || (shotCount &gt;= 30 &amp;&amp; shotCount &lt; 315))
 {
     other.timed = 0;
 }
@@ -916,7 +1011,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150) || (shotCount &gt;= 30 &amp;&amp; shotCount &lt; 315))
 {
     other.timed = 0;
 }
@@ -943,7 +1038,7 @@ script_execute(scr_enemydamage);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150))
+            <string>if (shotCount == 1 || shotCount == 2 || (shotCount &gt; 99 &amp;&amp; shotCount &lt; 150) || (shotCount &gt;= 30 &amp;&amp; shotCount &lt; 315))
 {
     other.timed = 0;
 }

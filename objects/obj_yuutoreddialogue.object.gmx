@@ -25,31 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
-dialogue = instance_create(x, y, obj_dialogue);
-
-dialogue.antagonist = "yuuto";
-dialogue.mini = 1;
-//set limit
-global.messageLimit = 2;
-
-global.messageArray[0] = "Chizuru!
+            <string>if (!instance_exists(obj_yuutoassist))
+{
+    instance_destroy(self);
+}
+else
+{
+    //create dialogue
+    dialogue = instance_create(x, y, obj_dialogue);
+    
+    dialogue.antagonist = "yuuto";
+    dialogue.mini = 1;
+    //set limit
+    global.messageLimit = 2;
+    
+    global.messageArray[0] = "Chizuru!
 Why did you shoot the red one!?";
-global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "happy";
-global.emotionAntagonistArray[0] = "sad";
-
-global.messageArray[1] = "That one activates
+    global.categoryArray[0] = "right";
+    global.emotionProtagonistArray[0] = "happy";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "That one activates
 the emergency security force!";
-global.categoryArray[1] = "right";
-global.emotionProtagonistArray[1] = "neutral";
-global.emotionAntagonistArray[1] = "sad";
-
-global.messageArray[2] = "Why the heck are cops
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "Why the heck are cops
 inside a pot anyways?";
-global.categoryArray[2] = "left";
-global.emotionProtagonistArray[2] = "neutral";
-global.emotionAntagonistArray[2] = "happy";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "neutral";
+    global.emotionAntagonistArray[2] = "happy";
+}
 </string>
           </argument>
         </arguments>

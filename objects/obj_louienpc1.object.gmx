@@ -82,7 +82,7 @@ room_goto_next();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (y &gt; (room_height * 2) / 3 &amp;&amp; vspeed &gt; 0)
+            <string>if (y &gt; 848 &amp;&amp; vspeed &gt; 0)
 {
     vspeed = 0;    
 

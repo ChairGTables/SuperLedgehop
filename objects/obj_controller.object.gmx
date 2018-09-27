@@ -872,6 +872,13 @@ if (global.speaking == false || exceptionCheck == 1)
         draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
         draw_sprite_ext(spr_hudbars, 2, view_xview+440+447, yMain+25, -global.bossthree, 26, 0, c_white, 1 );
     }
+    if (instance_exists(obj_bill))
+    {
+        draw_sprite(spr_bosshud, 7, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 2, view_xview+440+447, yMain+25, -global.bossthree, 26, 0, c_white, 1 );
+    }
 }
 
 </string>

@@ -196,6 +196,16 @@
         <sound>sound\snd_louiestaydown2</sound>
         <sound>sound\snd_louiedeath</sound>
       </sounds>
+      <sounds name="bill">
+        <sound>sound\snd_billhurt1</sound>
+        <sound>sound\snd_billhurt2</sound>
+        <sound>sound\snd_billcrimestopper</sound>
+        <sound>sound\snd_billiamthelaw</sound>
+        <sound>sound\snd_billveto</sound>
+        <sound>sound\snd_billlawbreaker</sound>
+        <sound>sound\snd_billcity</sound>
+        <sound>sound\snd_billdie</sound>
+      </sounds>
       <sounds name="tito">
         <sound>sound\snd_titohey</sound>
         <sound>sound\snd_titodeath</sound>
@@ -214,14 +224,6 @@
     </sounds>
     <sounds name="ultran">
       <sound>sound\snd_samplesound_ultran</sound>
-    </sounds>
-    <sounds name="bill">
-      <sound>sound\snd_billhurt1</sound>
-      <sound>sound\snd_billhurt2</sound>
-      <sound>sound\snd_billcrimestopper</sound>
-      <sound>sound\snd_billiamthelaw</sound>
-      <sound>sound\snd_billveto</sound>
-      <sound>sound\snd_billlawbreaker</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -334,6 +336,7 @@
         <sprite>sprites\spr_caveentrance</sprite>
         <sprite>sprites\spr_caveshadow</sprite>
         <sprite>sprites\spr_emptysprite</sprite>
+        <sprite>sprites\spr_vase</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -584,6 +587,7 @@
         <background>background\back_buildingfull</background>
         <background>background\back_doorfull</background>
         <background>background\back_windowfull</background>
+        <background>background\back_blackmist</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="sonii">
@@ -780,6 +784,9 @@
         <object>objects\obj_caveentrance</object>
         <object>objects\obj_caveshadow</object>
         <object>objects\obj_teleportpad</object>
+        <object>objects\obj_breakablevase</object>
+        <object>objects\obj_vasespikes</object>
+        <object>objects\obj_yuutoblocker</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -849,6 +856,7 @@
           <object>objects\obj_yuutogreendialogue</object>
           <object>objects\obj_yuutoreddialogue</object>
           <object>objects\obj_yuutoviolet</object>
+          <object>objects\obj_yuutoleavedialogue</object>
           <object>objects\obj_kamuro</object>
           <object>objects\obj_kamuronpc1</object>
           <object>objects\obj_titonpc1</object>
@@ -956,14 +964,15 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_stage3_2</room>
+      <room>rooms\rm_kamurofight</room>
+      <room>rooms\rm_billfight</room>
       <room>rooms\rm_stage5</room>
       <room>rooms\rm_165bpmsurvival</room>
       <room>rooms\rm_survivalmode</room>
-      <room>rooms\rm_140bpm_david</room>
       <room>rooms\rm_louiefight</room>
-      <room>rooms\rm_kamurofight</room>
-      <room>rooms\rm_stage3_2</room>
-      <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_stage4_2</room>
       <room>rooms\rm_stage4_1</room>
       <room>rooms\rm_survivalmodeold</room>
@@ -980,9 +989,8 @@
       <room>rooms\rm_stage2_2</room>
       <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_repeat3_1</room>
-      <room>rooms\rm_billfight</room>
-      <room>rooms\room9</room>
       <room>rooms\rm_templevelone</room>
+      <room>rooms\room9</room>
       <room>rooms\rm_test_david</room>
     </rooms>
     <rooms name="david">
