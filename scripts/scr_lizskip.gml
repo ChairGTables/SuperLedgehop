@@ -31,17 +31,17 @@ if (state < 2)
     {
         instance_destroy(obj_kamurodialogue2);
     }
-    if (instance_exists(obj_defaultdialogue1))
+    if (instance_exists(obj_lizdialogue1))
     {
-        instance_destroy(obj_defaultdialogue1);
+        instance_destroy(obj_lizdialogue1);
     }
     script_execute(scr_stopmusic);
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10);
     instance_create(x, y, obj_blackfadein);
-    instance_create(x, y, obj_default);
+    instance_create(x, y, obj_liz);
     if (global.bossvirgin == 1)
     {
         instance_create(x, y, obj_skippingcutscene);
     }
-    x = -1000;
+    instance_destroy(self);
 }

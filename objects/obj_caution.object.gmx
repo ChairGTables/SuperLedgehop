@@ -70,6 +70,11 @@ if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(glob
         instance_create(obj_titonpc2.x, obj_titonpc2.y, obj_tito);
         instance_destroy(obj_titonpc2);
     }
+    if (instance_exists(obj_liznpc1))
+    {
+        instance_create(obj_liznpc1.x, obj_liznpc1.y, obj_liz);
+        instance_destroy(obj_liznpc1);
+    }
     if (instance_exists(obj_yuutonpc1))
     {
         global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutotheme, true, 10); 

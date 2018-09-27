@@ -171,7 +171,7 @@ if (shootTimer &lt;= 0)
     
     
     //Perform shooting
-    if (action == 1)
+    if (action == 1 &amp;&amp; absorbed == 0)
     {
         if (instance_exists(obj_chizuru))
         {
