@@ -365,6 +365,7 @@
         <sprite>sprites\spr_lizshoot</sprite>
         <sprite>sprites\spr_lizhurt</sprite>
         <sprite>sprites\spr_lizneutral</sprite>
+        <sprite>sprites\spr_lizsad</sprite>
         <sprite>sprites\spr_lizangry</sprite>
         <sprite>sprites\spr_lizbombexplosion</sprite>
         <sprite>sprites\spr_lizbombwarning</sprite>
@@ -645,6 +646,7 @@
       <script>scripts\scr_mooseskip.gml</script>
       <script>scripts\scr_pretitoskip.gml</script>
       <script>scripts\scr_defaultskip.gml</script>
+      <script>scripts\scr_lizskip.gml</script>
       <script>scripts\scr_yuutodetection.gml</script>
       <script>scripts\scr_yuutodamage.gml</script>
       <script>scripts\scr_yuutoskip1.gml</script>
@@ -810,6 +812,14 @@
           <object>objects\obj_lizbombwarning</object>
           <object>objects\obj_lizexplosion</object>
           <object>objects\obj_lizflashbangblindness</object>
+          <object>objects\obj_lizdialogue1</object>
+          <object>objects\obj_lizdialogue2</object>
+          <object>objects\obj_lizdialogue3</object>
+          <object>objects\obj_lizdialogue4</object>
+          <object>objects\obj_lizdialogue5</object>
+          <object>objects\obj_lizdialogue6</object>
+          <object>objects\obj_lizdialogue7</object>
+          <object>objects\obj_liznpc1</object>
           <object>objects\obj_lizstandby</object>
         </objects>
         <objects name="yuuto">
@@ -964,6 +974,8 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_lizfight</room>
+      <room>rooms\rm_titofight</room>
       <room>rooms\rm_140bpm_david</room>
       <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_stage3_2</room>
@@ -980,7 +992,6 @@
       <room>rooms\rm_stage3_1</room>
       <room>rooms\rm_louiefightold</room>
       <room>rooms\rm_stage1_2</room>
-      <room>rooms\rm_titofight</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_yuutoshmup</room>
@@ -990,7 +1001,6 @@
       <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_repeat3_1</room>
       <room>rooms\rm_templevelone</room>
-      <room>rooms\room9</room>
       <room>rooms\rm_test_david</room>
     </rooms>
     <rooms name="david">
