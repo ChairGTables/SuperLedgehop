@@ -37,7 +37,7 @@ activateBeat = global.halfSec;    // whole note
 
 
 //Set the damage it will deal to players
-damage = 100;
+damage = 20;
 
 //set destroyable to zero if you don't want it deleted after touching player
 destroyable = 0;

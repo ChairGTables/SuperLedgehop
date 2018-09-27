@@ -54,7 +54,7 @@ vspeed = 30;
             <string>if (y &gt; areaY)
 {
     audio_play_sound_on (global.effectsEmitter, snd_crashed, false, 10); 
-    for (i = 0; i &lt; 360; i += 30)
+    for (i = 0; i &lt; 360; i += 25)
     {
         bullet = instance_create(areaX, areaY, obj_spread_sonii);
         bullet.direction = i;

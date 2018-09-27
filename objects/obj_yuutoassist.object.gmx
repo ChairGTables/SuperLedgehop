@@ -35,6 +35,8 @@ detection = instance_create(x, y, obj_yuutodetect);
 rock = instance_create(x, y, obj_yuutorock);
 hitbox = instance_create(x, y, obj_yuutohitbox);
 
+disabled = 0;
+
 alarm[0] = 30;
 image_speed = 0.3;
 </string>
@@ -130,7 +132,7 @@ casting = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (moving == 1)
+            <string>if (moving == 1  &amp;&amp; disabled == 0)
 {
     if (instance_exists(obj_chizuru) &amp;&amp; sprite_index != spr_yuutohurt)
     {
@@ -139,6 +141,11 @@ casting = 0;
     }    
 }
 else
+{
+    speed = 0;
+}
+
+if (disabled == 1)
 {
     speed = 0;
 }

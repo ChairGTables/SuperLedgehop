@@ -29,6 +29,7 @@
 absorbed = 0;
 rotator = 0;
 fading = 1;
+targetRotator = 0;
 //image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y) + random_range(-25,25);
 image_xscale += 5;
 
@@ -91,10 +92,16 @@ amplitude = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (rotator != 0)
+            <string>if (rotator &lt; targetRotator &amp;&amp; targetRotator != 0)
+{
+    rotator += 0.05;
+}
+
+if (rotator != 0)
 {
     image_angle += rotator;
 }
+
 
 if (fading == 1)
 {

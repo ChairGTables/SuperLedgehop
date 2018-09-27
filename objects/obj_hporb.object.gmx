@@ -178,7 +178,10 @@ else
           <argument>
             <kind>1</kind>
             <string>global.chizuruhp += 3;
-global.assisthp += 3;
+if (global.assisthp &gt; 0)
+{
+    global.assisthp += 3;
+}
 instance_create(x, y, obj_hpup);
 audio_stop_sound(snd_hpheal);
 audio_play_sound_on (global.effectsEmitter, snd_hpheal, false, 10); 

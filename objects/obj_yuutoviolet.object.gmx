@@ -25,67 +25,74 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
-dialogue = instance_create(x, y, obj_dialogue);
-
-dialogue.antagonist = "yuuto";
-dialogue.mini = 1;
-//set limit
-global.messageLimit = 2;
-
-global.messageArray[0] = "Phew. So that's the green one...";
-global.categoryArray[0] = "left";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "sad";
-
-global.messageArray[1] = "Erm...what are you so relieved about?
+            <string>if (!instance_exists(obj_yuutoassist))
+{
+    instance_destroy(self);
+}
+else
+{
+    //create dialogue
+    dialogue = instance_create(x, y, obj_dialogue);
+    
+    dialogue.antagonist = "yuuto";
+    dialogue.mini = 1;
+    //set limit
+    global.messageLimit = 7;
+    
+    global.messageArray[0] = "Phew. So that's the green one...";
+    global.categoryArray[0] = "left";
+    global.emotionProtagonistArray[0] = "sad";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Erm...what are you so relieved about?
 Sounds like you never seen green before.";
-global.categoryArray[1] = "right";
-global.emotionProtagonistArray[1] = "neutral";
-global.emotionAntagonistArray[1] = "sad";
-
-global.messageArray[2] = "W-Well, that pot was violet to me!";
-global.categoryArray[2] = "left";
-global.emotionProtagonistArray[2] = "sad";
-global.emotionAntagonistArray[2] = "happy";
-
-global.messageArray[3] = "Hmm, are you perhaps colorblind?";
-global.categoryArray[3] = "right";
-global.emotionProtagonistArray[3] = "neutral";
-global.emotionAntagonistArray[3] = "neutral";
-
-global.messageArray[4] = "How should I know?
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "W-Well, that pot was violet to me!";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "sad";
+    global.emotionAntagonistArray[2] = "happy";
+    
+    global.messageArray[3] = "Hmm, are you perhaps colorblind?";
+    global.categoryArray[3] = "right";
+    global.emotionProtagonistArray[3] = "neutral";
+    global.emotionAntagonistArray[3] = "neutral";
+    
+    global.messageArray[4] = "How should I know?
 This is how the world always looks to me!";
-global.categoryArray[4] = "left";
-global.emotionProtagonistArray[4] = "neutral";
-global.emotionAntagonistArray[4] = "happy";
-
-global.messageArray[4] = "Alright, then what's the color of my dress?";
-global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "neutral";
-global.emotionAntagonistArray[4] = "neutral";
-
-global.messageArray[5] = "Oh, don't tell me it's green.
+    global.categoryArray[4] = "left";
+    global.emotionProtagonistArray[4] = "neutral";
+    global.emotionAntagonistArray[4] = "happy";
+    
+    global.messageArray[4] = "Alright, then what's the color of my dress?";
+    global.categoryArray[4] = "right";
+    global.emotionProtagonistArray[4] = "neutral";
+    global.emotionAntagonistArray[4] = "neutral";
+    
+    global.messageArray[5] = "Oh, don't tell me it's green.
 Because it looks violet to me!";
-global.categoryArray[5] = "left";
-global.emotionProtagonistArray[5] = "angry";
-global.emotionAntagonistArray[5] = "happy";
-
-global.messageArray[6] = "No, it's blue.";
-global.categoryArray[6] = "right";
-global.emotionProtagonistArray[6] = "neutral";
-global.emotionAntagonistArray[6] = "neutral";
-
-global.messageArray[7] = "WHAT!? NO WAY!";
-global.categoryArray[7] = "left";
-global.emotionProtagonistArray[7] = "sad";
-global.emotionAntagonistArray[7] = "happy";
-
-global.messageArray[7] = "Ahahaha! Don't worry about being
+    global.categoryArray[5] = "left";
+    global.emotionProtagonistArray[5] = "angry";
+    global.emotionAntagonistArray[5] = "happy";
+    
+    global.messageArray[6] = "No, it's blue.";
+    global.categoryArray[6] = "right";
+    global.emotionProtagonistArray[6] = "neutral";
+    global.emotionAntagonistArray[6] = "neutral";
+    
+    global.messageArray[7] = "WHAT!? NO WAY!";
+    global.categoryArray[7] = "left";
+    global.emotionProtagonistArray[7] = "sad";
+    global.emotionAntagonistArray[7] = "happy";
+    
+    global.messageArray[8] = "Ahahaha! Don't worry about being
 colorblind! You're still a cool friend!";
-global.categoryArray[7] = "right";
-global.emotionProtagonistArray[7] = "neutral";
-global.emotionAntagonistArray[7] = "neutral";
+    global.categoryArray[8] = "right";
+    global.emotionProtagonistArray[8] = "neutral";
+    global.emotionAntagonistArray[8] = "neutral";
+}
 </string>
           </argument>
         </arguments>
