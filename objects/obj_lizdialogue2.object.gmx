@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
-
+global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_hypeevent, true, 10);
 obj_dialogue.antagonist = "liz";
 
 
@@ -35,7 +35,7 @@ obj_dialogue.antagonist = "liz";
 global.messageLimit = 22;
 
 
-global.messageArray[0] = "Ahh. I'm so gonna get fired for this...";
+global.messageArray[0] = "Ngh! I can't lose my job just yet.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "sad";
@@ -55,19 +55,18 @@ global.emotionAntagonistArray[2] = "sad";
 
 global.messageArray[3] = "Y-You alright?";
 global.categoryArray[3] = "left";
-global.emotionProtagonistArray[3] = "neutral";
+global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "sad";
 
-global.messageArray[4] = "No! You shot me!
-And I'm not old, alright?!";
+global.messageArray[4] = "No! You shot me!";
 global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "neutral";
+global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "sad";
 
-global.messageArray[5] = "Geez! I'm not even on my twenties!
-My blonde hair can't be white this early!";
+global.messageArray[5] = "And I'm not old, alright?! 
+I'm not even on my twenties so my blonde hair can't be white.";
 global.categoryArray[5] = "right";
-global.emotionProtagonistArray[5] = "angry";
+global.emotionProtagonistArray[5] = "sad";
 global.emotionAntagonistArray[5] = "sad";
 
 global.messageArray[6] = "Well, it looks white to me!";
@@ -92,7 +91,7 @@ global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "sad";
 
-global.messageArray[10] = "I'm seriously gonna get fired for this.";
+global.messageArray[10] = "I really hope they don't fire me for this.";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "sad";
@@ -119,11 +118,11 @@ global.categoryArray[14] = "left";
 global.emotionProtagonistArray[14] = "curious";
 global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "The most important thing is that I like you!
-I think you are way cooler and stronger than the other cops I shot!";
+global.messageArray[15] = "The most important thing is that you're super cool!
+I think you are way stronger than THE OTHER COPS I SHOT!";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "happy";
-global.emotionAntagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "sad";
 
 global.messageArray[16] = "...";
 global.categoryArray[16] = "right";
@@ -135,25 +134,25 @@ global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "sad";
 
-global.messageArray[18] = "H-Hey! It's self-defense, so it's legal, right?";
+global.messageArray[18] = "Hey! It's self-defense, so it's legal, right?";
 global.categoryArray[18] = "left";
-global.emotionProtagonistArray[18] = "happy";
+global.emotionProtagonistArray[18] = "curious";
 global.emotionAntagonistArray[18] = "sad";
 
 global.messageArray[19] = "That's not self-defense, you moron!
 You're shooting cops!";
 global.categoryArray[19] = "right";
-global.emotionProtagonistArray[19] = "happy";
+global.emotionProtagonistArray[19] = "curious";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "You're getting me, a police officer, killed!";
+global.messageArray[20] = "You're trying to get me, a police officer, killed!";
 global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "happy";
+global.emotionProtagonistArray[20] = "curious";
 global.emotionAntagonistArray[20] = "sad";
 
 global.messageArray[21] = "Shoot today!
 Friends tomorrow!~";
-global.categoryArray[21] = "right";
+global.categoryArray[21] = "left";
 global.emotionProtagonistArray[21] = "happy";
 global.emotionAntagonistArray[21] = "sad";
 
@@ -183,28 +182,12 @@ global.emotionAntagonistArray[22] = "sad";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if (global.messageNumber &gt; 20)
+            <string>if (instance_exists(dialogue) == 0)
 {
-    if (!instance_exists(obj_whiteenlarge))
-    {
-        instance_create(x, y, obj_whiteenlarge);    
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_wave, false, 10); // Music in rm1, priority 10, looping
-    }
-}
-
-
-if (instance_exists(dialogue) == 0)
-{
-    if (instance_exists(obj_bossdeath))
-    {
-        obj_bossdeath.sprite_index = spr_crossettewalk;
-        obj_bossdeath.image_speed = 0;
-        script_execute(scr_stopmusic);
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_shimmer, false, 10); // Music in rm1, priority 10, looping
-    }
-
+    global.speaking = false;
+    script_execute(scr_stopmusic);
     instance_destroy(self);
-}*/
+}
 </string>
           </argument>
         </arguments>

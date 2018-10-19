@@ -141,7 +141,7 @@ if (mini == 1 || auto == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; gl
     }
     
     //Test if end dialogue is seen
-    if (speaking &gt; global.messageLimit)
+    if (global.messageNumber &gt;= global.messageLimit)
     {
         presenting = 0;
         speaking = 0;
@@ -161,23 +161,25 @@ if (mini == 1 || auto == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; gl
         }
         instance_destroy(self);
     }
-    
-    //Begin next text
-    //global.speaking = true;
-    
-    if (chat == 1)
+    else
     {
-        global.messageNumber += 1
+        //Begin next text
+        //global.speaking = true;
+        
+        if (chat == 1)
+        {
+            global.messageNumber += 1
+        }
+        if (chat == 0)
+        {
+            global.messageNumber = 1
+            chat = 1
+        }
+        
+        global.chr1 = 0
+        
+        speaking += 1;
     }
-    if (chat == 0)
-    {
-        global.messageNumber = 1
-        chat = 1
-    }
-    
-    global.chr1 = 0
-    
-    speaking += 1;
 }
 </string>
           </argument>
@@ -497,6 +499,14 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
             } 
+            if (protagonist == "thug")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
+            } 
+            if (protagonist == "ruffian")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
+            } 
         }
         if (category == 0)
         {
@@ -536,6 +546,14 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             {
                 audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
             }    
+            if (antagonist == "thug")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
+            } 
+            if (antagonist == "ruffian")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
+            } 
         }
     }
 }
@@ -700,6 +718,22 @@ if (portraitsReady == 1)
         antagonistDisplay.curiousSprite = spr_hudbars;
     }
     if (antagonist == "unknown")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_hudbars;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_hudbars;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "thug")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_hudbars;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_hudbars;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "ruffian")
     {
         antagonistDisplay.happySprite = spr_hudbars;
         antagonistDisplay.neutralSprite = spr_hudbars;
@@ -901,7 +935,7 @@ else
             if (protagonist == "thug")
             {
                 draw_set_color($9c92f5);
-                draw_text(view_xview + 10, view_yview+445 + bonusY, "thug");
+                draw_text(view_xview + 10, view_yview+445 + bonusY, "Thug");
             }
             if (protagonist == "crossette")
             {

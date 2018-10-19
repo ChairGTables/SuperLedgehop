@@ -267,9 +267,9 @@ if (sprite_index == spr_billhurt)
 {
     instance_create(x, y, obj_whiteenlarge);
 }
-else if (sprite_index == spr_lizhurt))
+else if (sprite_index == spr_lizhurt)
 {
-    instance_create(x, y, obj_whitefadein);
+    instance_create(x, y, obj_whitefadeinslow);
 }
 else
 {
@@ -296,9 +296,11 @@ else if (sprite_index == spr_billhurt)
 {
     alarm[5] = 80;
 }
-else if (sprite_index == spr_lizhurt))
+else if (sprite_index == spr_lizhurt)
 {
     alarm[5] = 30;
+    instance_create(x, y, obj_liznpc2);
+    instance_destroy(self);
 }
 else
 {
