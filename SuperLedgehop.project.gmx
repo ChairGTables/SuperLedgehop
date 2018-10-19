@@ -80,6 +80,7 @@
         <sound>sound\snd_winsong</sound>
         <sound>sound\snd_yuutointro</sound>
         <sound>sound\snd_yuutotheme</sound>
+        <sound>sound\snd_softevent</sound>
         <sound>sound\snd_kamurofight</sound>
         <sound>sound\snd_stagetwo</sound>
         <sound>sound\snd_survivaltheme</sound>
@@ -359,6 +360,7 @@
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
+        <sprite>sprites\spr_titokneel</sprite>
         <sprite>sprites\spr_titohurt</sprite>
         <sprite>sprites\spr_titoshoot</sprite>
         <sprite>sprites\spr_titoneutral</sprite>
@@ -383,6 +385,8 @@
         <sprite>sprites\spr_lizwalk</sprite>
         <sprite>sprites\spr_lizshoot</sprite>
         <sprite>sprites\spr_lizhurt</sprite>
+        <sprite>sprites\spr_lizkneel</sprite>
+        <sprite>sprites\spr_lizdead</sprite>
         <sprite>sprites\spr_lizneutral</sprite>
         <sprite>sprites\spr_lizsad</sprite>
         <sprite>sprites\spr_lizangry</sprite>
@@ -673,6 +677,7 @@
       <script>scripts\scr_yuutodetection.gml</script>
       <script>scripts\scr_yuutodamage.gml</script>
       <script>scripts\scr_yuutoskip1.gml</script>
+      <script>scripts\scr_musicfadekill.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -763,6 +768,7 @@
         <object>objects\obj_kamuromusic</object>
         <object>objects\obj_shmupcontroller</object>
         <object>objects\obj_chizuruspawner</object>
+        <object>objects\obj_musicfadeout</object>
         <object>objects\obj_creditsbox</object>
       </objects>
       <objects name="effects">
@@ -1044,18 +1050,18 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_lizfight</room>
+      <room>rooms\rm_billfight</room>
+      <room>rooms\rm_titofight</room>
       <room>rooms\rm_stage3_1</room>
       <room>rooms\rm_repeat3_1</room>
       <room>rooms\rm_stage3cutscene_</room>
       <room>rooms\rm_stage3_2</room>
-      <room>rooms\rm_lizfight</room>
-      <room>rooms\rm_billfight</room>
       <room>rooms\rm_165bpm_david</room>
       <room>rooms\rm_end1</room>
       <room>rooms\rm_end2</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
-      <room>rooms\rm_titofight</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_yuutoshmup</room>

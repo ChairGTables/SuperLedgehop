@@ -343,6 +343,7 @@ global.masterVolume  = 1;
 global.musicVolume   = 1;
 global.effectsVolume = 1;
 global.voiceVolume   = 1;
+global.volumeHold = 1;
 
 // Sound emitters
 global.musicEmitter   = audio_emitter_create();

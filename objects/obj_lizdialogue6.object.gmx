@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
+            <string>state = 0;
+
+//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.protagonist = "tito";
@@ -128,20 +130,18 @@ global.emotionProtagonistArray[15] = "angry";
 global.emotionAntagonistArray[15] = "sad";
 
 
-global.messageArray[16] = "WRONG YOU DUUUUUUUUUUUUUUUUUUUUUUUUUUMMMMMMMMMMYYYYYYYYYYYYYYYYY!!!!
-Do you even remember when you were a senator and I was assigned to guard you?";
+global.messageArray[16] = "WRONG YOU DUUUUUUUUUUUUUUUUUUUUUUUUUUMMMMMMMMMMYYYYYYYYYYYYYYYYY!!!!";
 global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "angry";
 global.emotionAntagonistArray[16] = "sad";
 
-global.messageArray[17] = "When there was a thug that tried to assassinate you,
-stopping him was perfect to add up to my cool cop points!";
+global.messageArray[17] = "Do you remember when you were a senator
+and I had to guard you from a thug?";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "angry";
 global.emotionAntagonistArray[17] = "sad";
 
-global.messageArray[18] = "I missed and I was gonna get killed for sure!
-But you shot him. You protected me when it was my duty to protect you.";
+global.messageArray[18] = "I missed and I was gonna get killed for sure!";
 global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "sad";
@@ -223,13 +223,13 @@ global.emotionAntagonistArray[31] = "sad";
 
 
 global.messageArray[32] = "I'm assigned to guard the new senator and all he does
-is shady stuff with the governor!";
+is shady business with the governor!";
 global.categoryArray[32] = "right";
 global.emotionProtagonistArray[32] = "sad";
 global.emotionAntagonistArray[32] = "sad";
 
 
-global.messageArray[33] = "Now his governor buddy told me to hunt down your niece.";
+global.messageArray[33] = "Now the governor told me to hunt down your niece.";
 global.categoryArray[33] = "right";
 global.emotionProtagonistArray[33] = "sad";
 global.emotionAntagonistArray[33] = "sad";
@@ -242,26 +242,26 @@ global.emotionAntagonistArray[34] = "sad";
 
 global.messageArray[35] = "I JUST WANT TO DO THE RIGHT THING LIKE A REAL COP!";
 global.categoryArray[35] = "right";
-global.emotionProtagonistArray[35] = "angry";
+global.emotionProtagonistArray[35] = "sad";
 global.emotionAntagonistArray[35] = "sad";
 
 
 global.messageArray[36] = "Ah, ouch.";
 global.categoryArray[36] = "right";
-global.emotionProtagonistArray[36] = "angry";
+global.emotionProtagonistArray[36] = "sad";
 global.emotionAntagonistArray[36] = "sad";
 
 
 global.messageArray[37] = "Sorry. Ahaha.
 I'm still bleeding hard.";
 global.categoryArray[37] = "right";
-global.emotionProtagonistArray[37] = "angry";
+global.emotionProtagonistArray[37] = "sad";
 global.emotionAntagonistArray[37] = "sad";
 
 global.messageArray[38] = "B-But I'm a cool cop, okay!?
 I'm really strong!";
 global.categoryArray[38] = "right";
-global.emotionProtagonistArray[38] = "angry";
+global.emotionProtagonistArray[38] = "sad";
 global.emotionAntagonistArray[38] = "sad";
 
 
@@ -298,28 +298,39 @@ global.emotionAntagonistArray[40] = "sad";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if (global.messageNumber &gt; 20)
-{
-    if (!instance_exists(obj_whiteenlarge))
-    {
-        instance_create(x, y, obj_whiteenlarge);    
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_wave, false, 10); // Music in rm1, priority 10, looping
-    }
+            <string>if (global.messageNumber = 16 &amp;&amp; state == 0)
+{  
+    instance_create(x, y, obj_musicfadeout);
+    state = 1;
 }
 
+if (global.messageNumber == 17 &amp;&amp; state == 1)
+{
+    state = 2
+    script_execute(scr_musicfadekill);
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_softevent, true, 10); // Music in rm1, priority 10, looping
+
+}
+
+if (global.messageNumber == 39 &amp;&amp; state == 2)
+{
+    instance_create(x, y, obj_musicfadeout);
+    state = 3;
+}
+
+if (global.messageNumber == 40 &amp;&amp; state == 3)
+{
+    state = 4;
+    script_execute(scr_musicfadekill);
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chillevent, true, 10); // Music in rm1, priority 10, looping
+
+}
 
 if (instance_exists(dialogue) == 0)
 {
-    if (instance_exists(obj_bossdeath))
-    {
-        obj_bossdeath.sprite_index = spr_crossettewalk;
-        obj_bossdeath.image_speed = 0;
-        script_execute(scr_stopmusic);
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_shimmer, false, 10); // Music in rm1, priority 10, looping
-    }
-
+    global.speaking = false;
     instance_destroy(self);
-}*/
+}
 </string>
           </argument>
         </arguments>

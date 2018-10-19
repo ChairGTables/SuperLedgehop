@@ -25,14 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
+            <string>state = 0;
+
+//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.antagonist = "ruffian";
 
 
 //set limit
-global.messageLimit = 7;
+global.messageLimit = 8;
 
 
 global.messageArray[0] = "Hands off!";
@@ -53,29 +55,35 @@ global.emotionAntagonistArray[2] = "angry";
 
 global.messageArray[3] = "She's more relevant than you could ever aspire to be, you idiot.";
 global.categoryArray[3] = "left";
-global.emotionProtagonistArray[3] = "angry";
+global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "angry";
 
 global.messageArray[4] = "What do you mean?!
 We could have made your life easier.";
 global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "angry";
+global.emotionProtagonistArray[4] = "neutral";
 global.emotionAntagonistArray[4] = "angry";
 
 global.messageArray[5] = "Actually, what am I saying?";
 global.categoryArray[5] = "right";
-global.emotionProtagonistArray[5] = "angry";
+global.emotionProtagonistArray[5] = "neutral";
 global.emotionAntagonistArray[5] = "angry";
 
 global.messageArray[6] = "We were ordered to kill you, so none of that really matters now.";
 global.categoryArray[6] = "right";
-global.emotionProtagonistArray[6] = "angry";
+global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "So, goodbye, you stupid, noisy, annoying, birdbrained, lousy, stinkin' dirtbag.";
+global.messageArray[7] = "So, goodbye, you stupid, noisy, annoying, birdbrained, lousy, pathetic, 
+worthless, weak, stinkin' dirtbag.";
 global.categoryArray[7] = "right";
-global.emotionProtagonistArray[7] = "angry";
+global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Yeah, whatever.";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
 </string>
           </argument>
         </arguments>
@@ -98,28 +106,25 @@ global.emotionAntagonistArray[7] = "angry";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if (global.messageNumber &gt; 20)
+            <string>if (state == 0 &amp;&amp; global.messageNumber == 7)
 {
-    if (!instance_exists(obj_whiteenlarge))
-    {
-        instance_create(x, y, obj_whiteenlarge);    
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_wave, false, 10); // Music in rm1, priority 10, looping
-    }
+    state = 1;
+    dialogue.alarm[1] = 30;
+    dialogue.auto = 1;
 }
 
+if (state == 1 &amp;&amp; global.messageNumber == 8)
+{
+    state = 2;
+    dialogue.auto = 0;
+    script_execute(scr_stopmusic);
+}
 
 if (instance_exists(dialogue) == 0)
 {
-    if (instance_exists(obj_bossdeath))
-    {
-        obj_bossdeath.sprite_index = spr_crossettewalk;
-        obj_bossdeath.image_speed = 0;
-        script_execute(scr_stopmusic);
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_shimmer, false, 10); // Music in rm1, priority 10, looping
-    }
-
+    global.speaking = false;
     instance_destroy(self);
-}*/
+}
 </string>
           </argument>
         </arguments>

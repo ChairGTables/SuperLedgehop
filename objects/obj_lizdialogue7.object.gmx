@@ -32,7 +32,7 @@ obj_dialogue.antagonist = "tito";
 
 
 //set limit
-global.messageLimit = 12;
+global.messageLimit = 15;
 
 
 global.messageArray[0] = "Hey, Chizuru.";
@@ -150,28 +150,12 @@ global.emotionAntagonistArray[15] = "happy";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if (global.messageNumber &gt; 20)
+            <string>if (instance_exists(dialogue) == 0)
 {
-    if (!instance_exists(obj_whiteenlarge))
-    {
-        instance_create(x, y, obj_whiteenlarge);    
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_wave, false, 10); // Music in rm1, priority 10, looping
-    }
-}
-
-
-if (instance_exists(dialogue) == 0)
-{
-    if (instance_exists(obj_bossdeath))
-    {
-        obj_bossdeath.sprite_index = spr_crossettewalk;
-        obj_bossdeath.image_speed = 0;
-        script_execute(scr_stopmusic);
-        global.musicrm1 = audio_play_sound_on (global.effectsEmitter, snd_shimmer, false, 10); // Music in rm1, priority 10, looping
-    }
-
+    global.speaking = false;
+    instance_create(x, y, obj_musicfadeout);
     instance_destroy(self);
-}*/
+}
 </string>
           </argument>
         </arguments>
