@@ -73,7 +73,7 @@ global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "Uhh, she hates cheesesteaks though. But I guess 
+global.messageArray[7] = "Uhh, she hates cheesesteaks though. But, I guess 
 we'll have to feed her properly while we handle her wounds.";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "happy";
@@ -85,7 +85,7 @@ global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
 
 global.messageArray[9] = "Yeah. Her service to me was priceless anyways.
-It's the least I can repay her.";
+It's the least I can do to repay her.";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "neutral";
@@ -105,7 +105,7 @@ global.emotionAntagonistArray[11] = "angry";
 
 
 global.messageArray[12] = "Well, she actually was different than the rest
-of the cops, so I taught her my skills like I how taught you.";
+of the cops, so I taught her my skills like how I taught you.";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "happy";
 global.emotionAntagonistArray[12] = "neutral";
@@ -113,8 +113,7 @@ global.emotionAntagonistArray[12] = "neutral";
 
 
 
-global.messageArray[13] = "Ahh, it's a long story.
-I sometimes just wish I can adopt her like how I adopted you!";
+global.messageArray[13] = "Ahh, it's a long story.";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";

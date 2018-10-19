@@ -72,7 +72,7 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "angry";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "So, goodbye, you stupid, noisy, annoying, birdbrained, lousy, stinkin' whore.";
+global.messageArray[7] = "So, goodbye, you stupid, noisy, annoying, birdbrained, lousy, stinkin' dirtbag.";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "angry";
 global.emotionAntagonistArray[7] = "angry";

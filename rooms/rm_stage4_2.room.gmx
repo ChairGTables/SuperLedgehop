@@ -228,6 +228,7 @@
     <instance objName="obj_wall" x="2128" y="2992" name="inst_AF688FC2" locked="0" code="" scaleX="10.5" scaleY="9.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2656" y="2992" name="inst_E7727B0A" locked="0" code="" scaleX="18" scaleY="10.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="3392" y="3456" name="inst_143131EF" locked="0" code="" scaleX="4" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nextroom" x="2368" y="3024" name="inst_2AD0FF23" locked="0" code="" scaleX="11" scaleY="6" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_rockywhite" x="2464" y="4864" w="32" h="32" xo="32" yo="0" id="10041780" name="inst_D04D7AF0" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

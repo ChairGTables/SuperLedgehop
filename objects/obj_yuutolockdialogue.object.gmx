@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.stageState == 0)
+            <string>
+if (global.stageState == 0)
 {
     instance_destroy(self);
 }
@@ -59,43 +60,25 @@ dialogue = instance_create(x, y, obj_dialogue);
 dialogue.antagonist = "yuuto";
 dialogue.mini = 1;
 //set limit
-global.messageLimit = 5;
+global.messageLimit = 2;
 
-global.messageArray[0] = "Not there, Chizuru!";
+global.messageArray[0] = "Not there! Escaping through
+the front door is basically suicide!";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "Escaping through the front door
-is basically suicide!";
-global.categoryArray[1] = "right";
-global.emotionProtagonistArray[1] = "neutral";
+global.messageArray[1] = "What do you mean?
+I can take on all of the cops!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[2] = "What do you mean?
-I can take on all of the cops!";
-global.categoryArray[2] = "left";
+global.messageArray[2] = "N-No! I refuse!";
+global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
-global.emotionAntagonistArray[2] = "happy";
-
-global.messageArray[3] = "N-No! Your uncle will kill me
-if something happened to you!";
-global.categoryArray[3] = "right";
-global.emotionProtagonistArray[3] = "happy";
-global.emotionAntagonistArray[3] = "sad";
-
-global.messageArray[4] = "Nah. My uncle's too nice.";
-global.categoryArray[4] = "left";
-global.emotionProtagonistArray[4] = "happy";
-global.emotionAntagonistArray[4] = "curious";
-
-global.messageArray[5] = "Okay, but it's still not safe!
-Let's go elsewhere.";
-global.categoryArray[5] = "right";
-global.emotionProtagonistArray[5] = "neutral";
-global.emotionAntagonistArray[5] = "sad";
-
+global.emotionAntagonistArray[2] = "sad";
 
 instance_destroy(self);
 </string>

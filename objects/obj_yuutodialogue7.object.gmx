@@ -48,7 +48,7 @@ global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[2] = "W-what do you mean?";
+global.messageArray[2] = "W-What do you mean?";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "sad";

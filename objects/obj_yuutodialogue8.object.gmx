@@ -60,8 +60,7 @@ global.categoryArray[2] = "rigyt";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "sad";
 
-global.messageArray[3] = "It already is.
-Don't worry.";
+global.messageArray[3] = "Chill! It already is.";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "sad";
@@ -72,17 +71,18 @@ global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "sad";
 
 global.messageArray[5] = "Well, how would it not be scary
-if you were trying to kill me.";
+if you were trying to kill me, dummy.";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "happy";
 global.emotionAntagonistArray[5] = "sad";
 
-global.messageArray[6] = "B-But you were trying to kill me!";
+global.messageArray[6] = "B-But you were trying to kill me!
+I had to fight back!";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "sad";
 
-global.messageArray[7] = "I wasn't.";
+global.messageArray[7] = "I wasn't trying to kill you.";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "happy";
 global.emotionAntagonistArray[7] = "sad";
@@ -92,7 +92,7 @@ global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "sad";
 
-global.messageArray[9] = "Shooting today!~
+global.messageArray[9] = "Shoot today!~
 Friends tomorrow!~";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "happy";
@@ -134,13 +134,13 @@ global.categoryArray[16] = "left";
 global.emotionProtagonistArray[16] = "happy";
 global.emotionAntagonistArray[16] = "sad";
 
-global.messageArray[17] = "Thanks...";
+global.messageArray[17] = "O-Oh. Thanks...";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "sad";
 
-global.messageArray[18] = "But I still want to be more than that
-and be great as myself!";
+global.messageArray[18] = "But, wait! I still want to be 
+more than that and be great as myself!";
 global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "happy";
 global.emotionAntagonistArray[18] = "neutral";
@@ -150,7 +150,7 @@ global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "sad";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "Oh! I gotta get outta here then!";
+global.messageArray[20] = "Oh! I gotta bust outta here then!";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "sad";
 global.emotionAntagonistArray[20] = "sad";

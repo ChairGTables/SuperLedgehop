@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <datafiles number="1" name="datafiles"/>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\display_mouse_lock</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sounds name="chair">
       <sound>sound\snd_samplesound_chair</sound>
@@ -55,6 +57,11 @@
         <sound>sound\snd_mpready</sound>
         <sound>sound\snd_absorbready</sound>
         <sound>sound\snd_lowhealth</sound>
+        <sound>sound\snd_policesiren</sound>
+        <sound>sound\snd_policesteps</sound>
+        <sound>sound\snd_falling</sound>
+        <sound>sound\snd_fart</sound>
+        <sound>sound\snd_bulletmiss</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -64,6 +71,8 @@
         <sound>sound\snd_coolevent</sound>
         <sound>sound\snd_finalbossintro</sound>
         <sound>sound\snd_finalbosstheme</sound>
+        <sound>sound\snd_escapetheme</sound>
+        <sound>sound\snd_actiontensiontheme</sound>
         <sound>sound\snd_finalloop</sound>
         <sound>sound\snd_gutsman</sound>
         <sound>sound\snd_hypeevent</sound>
@@ -77,6 +86,10 @@
         <sound>sound\snd_stagethree</sound>
         <sound>sound\snd_minigametheme</sound>
         <sound>sound\snd_stage4</sound>
+        <sound>sound\snd_endcutscene1</sound>
+        <sound>sound\snd_endcutscene2</sound>
+        <sound>sound\snd_endcutscene3</sound>
+        <sound>sound\snd_endcutscene4</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -205,6 +218,8 @@
         <sound>sound\snd_billlawbreaker</sound>
         <sound>sound\snd_billcity</sound>
         <sound>sound\snd_billdie</sound>
+        <sound>sound\snd_billfall</sound>
+        <sound>sound\snd_billdeath</sound>
       </sounds>
       <sounds name="tito">
         <sound>sound\snd_titohey</sound>
@@ -263,6 +278,8 @@
           <sprite>sprites\spr_chizurusad</sprite>
           <sprite>sprites\spr_chizuruangry</sprite>
           <sprite>sprites\spr_chizurucurious</sprite>
+          <sprite>sprites\spr_chizururunningend</sprite>
+          <sprite>sprites\obj_chizurustrollingend</sprite>
         </sprites>
         <sprite>sprites\spr_chizuruarrow</sprite>
         <sprite>sprites\spr_chizurubasicbullet</sprite>
@@ -337,6 +354,8 @@
         <sprite>sprites\spr_caveshadow</sprite>
         <sprite>sprites\spr_emptysprite</sprite>
         <sprite>sprites\spr_vase</sprite>
+        <sprite>sprites\spr_creditslist</sprite>
+        <sprite>sprites\spr_creditsbox</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -402,6 +421,7 @@
         <sprite>sprites\spr_curvingplane</sprite>
         <sprite>sprites\spr_straightdown</sprite>
         <sprite>sprites\spr_policerifle</sprite>
+        <sprite>sprites\spr_policechief</sprite>
         <sprite>sprites\spr_policeriflehurt</sprite>
         <sprite>sprites\spr_policegrenade</sprite>
         <sprite>sprites\spr_policegrenadehurt</sprite>
@@ -443,6 +463,7 @@
       <sprites name="chizuma">
         <sprite>sprites\spr_chizumaneutral</sprite>
         <sprite>sprites\spr_chizumaangry</sprite>
+        <sprite>sprites\spr_chizumawalku</sprite>
       </sprites>
       <sprites name="louie">
         <sprite>sprites\spr_louiewalk</sprite>
@@ -589,6 +610,8 @@
         <background>background\back_doorfull</background>
         <background>background\back_windowfull</background>
         <background>background\back_blackmist</background>
+        <background>background\back_end1</background>
+        <background>background\back_end2</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="sonii">
@@ -674,7 +697,9 @@
       <font>fonts\fnt_combo</font>
       <font>fonts\fnt_comboglow</font>
       <font>fonts\fnt_name</font>
+      <font>fonts\fnt_nameforeign</font>
       <font>fonts\fnt_talk</font>
+      <font>fonts\fnt_talkforeign</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -738,6 +763,7 @@
         <object>objects\obj_kamuromusic</object>
         <object>objects\obj_shmupcontroller</object>
         <object>objects\obj_chizuruspawner</object>
+        <object>objects\obj_creditsbox</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -749,8 +775,11 @@
         <object>objects\obj_musicnote</object>
         <object>objects\obj_hitsweat</object>
         <object>objects\obj_whitefadein</object>
+        <object>objects\obj_whitebackground</object>
+        <object>objects\obj_whitefadeinslow</object>
         <object>objects\obj_blackfadein</object>
         <object>objects\obj_blackfadeout</object>
+        <object>objects\obj_blackfadeoutslow</object>
         <object>objects\obj_blackbackground</object>
         <object>objects\obj_chaptercomplete</object>
         <object>objects\obj_siopaoexplosion</object>
@@ -803,7 +832,11 @@
         <object>objects\obj_policegrenade</object>
         <objects name="tito">
           <object>objects\obj_tito</object>
+          <object>objects\obj_titonpc3</object>
+          <object>objects\obj_titonpc4</object>
+          <object>objects\obj_titonpcend</object>
           <object>objects\obj_redrice</object>
+          <object>objects\obj_shinecutscene</object>
         </objects>
         <objects name="liz">
           <object>objects\obj_liz</object>
@@ -820,10 +853,18 @@
           <object>objects\obj_lizdialogue6</object>
           <object>objects\obj_lizdialogue7</object>
           <object>objects\obj_liznpc1</object>
+          <object>objects\obj_liznpc2</object>
+          <object>objects\obj_thugnpc1</object>
+          <object>objects\obj_ruffiannpc1</object>
+          <object>objects\obj_flashbangcutscene</object>
           <object>objects\obj_lizstandby</object>
+          <object>objects\obj_liznpcend</object>
         </objects>
         <objects name="yuuto">
           <object>objects\obj_yuutoboss</object>
+          <object>objects\obj_yuutonpc2</object>
+          <object>objects\obj_yuutonpc3</object>
+          <object>objects\obj_yuutonpcend</object>
           <object>objects\obj_yuutorock</object>
           <object>objects\obj_yuutosillhoute</object>
           <object>objects\obj_yuutodialogue1</object>
@@ -834,10 +875,12 @@
           <object>objects\obj_yuutodialogue6</object>
           <object>objects\obj_yuutodialogue7</object>
           <object>objects\obj_yuutodialogue8</object>
+          <object>objects\obj_yuutodialogue9</object>
           <object>objects\obj_yuutonpc1</object>
           <object>objects\obj_yuutodetect</object>
           <object>objects\obj_yuutoassist</object>
           <object>objects\obj_yuutohitbox</object>
+          <object>objects\obj_rockcutscene</object>
         </objects>
         <object>objects\obj_bossdeath</object>
         <object>objects\obj_musicbox</object>
@@ -853,6 +896,7 @@
           <object>objects\obj_kamurodialogue1</object>
           <object>objects\obj_kamurodialogue2</object>
           <object>objects\obj_kamurodialogue3</object>
+          <object>objects\obj_kamurodialogue4</object>
           <object>objects\obj_titodialogue1</object>
           <object>objects\obj_titodialogue2</object>
           <object>objects\obj_titodialogue3</object>
@@ -869,12 +913,14 @@
           <object>objects\obj_yuutoleavedialogue</object>
           <object>objects\obj_kamuro</object>
           <object>objects\obj_kamuronpc1</object>
+          <object>objects\obj_kamuronpc2</object>
           <object>objects\obj_titonpc1</object>
           <object>objects\obj_titonpc2</object>
         </objects>
         <objects name="default">
           <object>objects\obj_default</object>
           <object>objects\obj_defaultnpc1</object>
+          <object>objects\obj_crossettenpcend</object>
           <object>objects\obj_defaultdialogue1</object>
           <object>objects\obj_defaultdialogue2</object>
           <object>objects\obj_defaultdialogue3</object>
@@ -883,10 +929,34 @@
         </objects>
         <objects name="bill">
           <object>objects\obj_bill</object>
+          <object>objects\obj_billnpc1</object>
+          <object>objects\obj_billnpcend</object>
+          <object>objects\obj_chizumanpcend</object>
+          <object>objects\obj_policenpc1</object>
+          <object>objects\obj_policenpcend</object>
+          <object>objects\obj_chiefnpcend</object>
+          <object>objects\obj_rapidcutscene</object>
+          <object>objects\obj_flamecutscene</object>
           <object>objects\obj_lawbreaker</object>
           <object>objects\obj_lawsmoke</object>
           <object>objects\obj_billball</object>
           <object>objects\obj_billbomb</object>
+          <object>objects\obj_billdialogue1</object>
+          <object>objects\obj_billdialogue2</object>
+          <object>objects\obj_billdialogue3</object>
+          <object>objects\obj_billdialogue4</object>
+          <object>objects\obj_enddialogue1</object>
+          <object>objects\obj_enddialogue2</object>
+          <object>objects\obj_enddialogue3</object>
+          <object>objects\obj_enddialogue4</object>
+          <object>objects\obj_enddialogue5</object>
+          <object>objects\obj_enddialogue6</object>
+          <object>objects\obj_enddialogue7</object>
+          <object>objects\obj_enddialogue8</object>
+          <object>objects\obj_enddialogue9</object>
+          <object>objects\obj_enddialogue10</object>
+          <object>objects\obj_endgraphic1</object>
+          <object>objects\obj_endgraphic2</object>
         </objects>
         <objects name="louie">
           <object>objects\obj_louie</object>
@@ -974,24 +1044,18 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_lizfight</room>
-      <room>rooms\rm_titofight</room>
-      <room>rooms\rm_140bpm_david</room>
-      <room>rooms\rm_165bpm_david</room>
-      <room>rooms\rm_stage3_2</room>
-      <room>rooms\rm_kamurofight</room>
-      <room>rooms\rm_billfight</room>
-      <room>rooms\rm_stage5</room>
-      <room>rooms\rm_165bpmsurvival</room>
-      <room>rooms\rm_survivalmode</room>
-      <room>rooms\rm_louiefight</room>
-      <room>rooms\rm_stage4_2</room>
-      <room>rooms\rm_stage4_1</room>
-      <room>rooms\rm_survivalmodeold</room>
-      <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage3_1</room>
-      <room>rooms\rm_louiefightold</room>
+      <room>rooms\rm_repeat3_1</room>
+      <room>rooms\rm_stage3cutscene_</room>
+      <room>rooms\rm_stage3_2</room>
+      <room>rooms\rm_lizfight</room>
+      <room>rooms\rm_billfight</room>
+      <room>rooms\rm_165bpm_david</room>
+      <room>rooms\rm_end1</room>
+      <room>rooms\rm_end2</room>
+      <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
+      <room>rooms\rm_titofight</room>
       <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_yuutoshmup</room>
@@ -999,7 +1063,19 @@
       <room>rooms\rm_120bpm2</room>
       <room>rooms\rm_stage2_2</room>
       <room>rooms\rm_defaultfight</room>
-      <room>rooms\rm_repeat3_1</room>
+      <room>rooms\rm_120bpmstage3</room>
+      <room>rooms\rm_120bpmliz</room>
+      <room>rooms\rm_stage4_1</room>
+      <room>rooms\rm_stage4_2</room>
+      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_kamurofight</room>
+      <room>rooms\rm_120bpmstage5</room>
+      <room>rooms\rm_stage5</room>
+      <room>rooms\rm_165bpmsurvival</room>
+      <room>rooms\rm_louiefight</room>
+      <room>rooms\rm_survivalmode</room>
+      <room>rooms\rm_survivalmodeold</room>
+      <room>rooms\rm_louiefightold</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
     </rooms>

@@ -26,10 +26,19 @@
           <argument>
             <kind>1</kind>
             <string>global.speaking = false;
-
-if (!audio_is_playing(snd_yuutotheme))
+if (global.stageState == 0)
 {
-    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutotheme, true, 10); // Music in rm1, priority 10, looping
+    audio_stop_sound(snd_yuutotheme);
+    instance_destroy(self);
+}
+else
+{
+
+    if (!audio_is_playing(snd_yuutotheme))
+    {
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutotheme, true, 10); // Music in rm1, priority 10, looping
+    }
+
 }
 </string>
           </argument>

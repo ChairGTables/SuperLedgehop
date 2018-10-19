@@ -101,7 +101,7 @@ global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "neutral";
 
-global.messageArray[12] = "Uhh... murder is a crime you know.";
+global.messageArray[12] = "Uhh... murder is a crime, you know.";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "neutral";

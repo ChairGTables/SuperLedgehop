@@ -53,7 +53,7 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "Heading out to some big government building!";
+global.messageArray[3] = "Heading out to some BIG government building!";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "neutral";

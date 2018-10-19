@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>friendly = 0;
+            <string>missSound = 0;
+
+friendly = 0;
 absorbed = 0;
 targetVertical = 0;
 targetHorizontal = 0;
@@ -207,7 +209,12 @@ script_execute(scr_destroywhenoutofview);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(self);
+            <string>if (missSound == 1)
+{
+    audio_play_sound_on (global.effectsEmitter, snd_bulletmiss, false, 10); 
+}
+
+instance_destroy(self);
 </string>
           </argument>
         </arguments>

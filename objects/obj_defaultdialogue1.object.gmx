@@ -53,7 +53,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "angry";
 
-global.messageArray[3] = "Well, you cheesehead, I'm running out of time.
+global.messageArray[3] = "Well, you CHEESEHEAD, I'm running out of time.
 I gotta save my big bro!";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
@@ -214,12 +214,12 @@ global.categoryArray[32] = "right";
 global.emotionProtagonistArray[32] = "neutral";
 global.emotionAntagonistArray[32] = "angry";
 
-global.messageArray[33] = "I will stop your brother, even with this default moveset!";
+global.messageArray[33] = "I will stop your brother, even with default moves!";
 global.categoryArray[33] = "right";
 global.emotionProtagonistArray[33] = "neutral";
 global.emotionAntagonistArray[33] = "angry";
 
-global.messageArray[34] = "My sis taught me a lot about what I can do with Fire 1!";
+global.messageArray[34] = "Sis taught me a lot about Fire 1!";
 global.categoryArray[34] = "right";
 global.emotionProtagonistArray[34] = "neutral";
 global.emotionAntagonistArray[34] = "angry";

@@ -64,7 +64,7 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
 
-global.messageArray[5] = "What? No, that's a crossaint!";
+global.messageArray[5] = "What? No, that's crossaint!";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "angry";
@@ -166,7 +166,7 @@ global.emotionProtagonistArray[22] = "neutral";
 global.emotionAntagonistArray[22] = "angry";
 
 global.messageArray[23] = "But, thank you.
-I'm really glad we met..";
+I'm really glad we met.";
 global.categoryArray[23] = "right";
 global.emotionProtagonistArray[23] = "neutral";
 global.emotionAntagonistArray[23] = "happy";

@@ -60,8 +60,7 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "Tch...
-Are you saying I'm weak like you?";
+global.messageArray[4] = "I'm not weak!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
@@ -111,7 +110,7 @@ global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "happy";
 global.emotionAntagonistArray[12] = "angry";
 
-global.messageArray[13] = "Oh, I'll also increase your intelligence too
+global.messageArray[13] = "Oh, I'll also increase your intelligence
 so you'll stop being such a cheesehead!";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
