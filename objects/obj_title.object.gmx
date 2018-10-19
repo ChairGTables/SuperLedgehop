@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>script_execute(scr_stopmusic);
 
+
+
 if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.05);
 go = 0;
 joy_z = false;
@@ -179,12 +181,16 @@ index = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.remaining = 0;
+            <string>texture_set_interpolation(false);
+
+global.remaining = 0;
 global.destroyed = 0;
 global.secondsPassed = 0;
 global.titleSelection = 0;
 global.shineget = 0;
 global.bossvirgin = 1;
+
+global.language = 0;
 
 global.lowhp = 0;
 
@@ -217,7 +223,7 @@ global.specialready = 1;
 global.basiccount = 100;
 global.enhancedcount = 0;
 global.rapidcount = 0;
-global.spreadcount = 0;
+global.spreadcount = 100;
 global.firecount = 0;
 global.icecount = 0;
 
@@ -362,7 +368,7 @@ yy = y;
 
 
 //music
-audio_play_sound_on(global.musicEmitter, snd_titlemusic, true, 0);
+global.musicrm1 = audio_play_sound_on(global.musicEmitter, snd_titlemusic, true, 0);
 
 
 //misc
@@ -410,6 +416,8 @@ else
           <argument>
             <kind>1</kind>
             <string>/////////////////////////MOVEMENT////////////////////////////
+
+display_mouse_unlock();
 
 if (gamepad_axis_value(0, gp_axislh) &gt; 0.02 || gamepad_axis_value(0, gp_axislh) &lt; -0.02) 
 {
@@ -590,48 +598,32 @@ y = yy + shift; //vertical wave motion
     <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>612</id>
+        <kind>0</kind>
         <userelative>0</userelative>
-        <isquestion>0</isquestion>
+        <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>audio_stop_sound(snd_titlemusic);
-
-randThing = random_range(0,200);
-
-if (randThing &lt; 75)
-{
-    audio_play_sound_on(global.voiceEmitter, snd_iwillcheeseyouup, false, 0);
-}
-else if (randThing &gt; 74 &amp;&amp; randThing &lt; 125)
-{
-    audio_play_sound_on(global.voiceEmitter, snd_cheeseitup, false, 0);
-}
-else
-{
-    audio_play_sound_on(global.voiceEmitter, snd_imgoingallin, false, 0);
-}
-
-
-if (instance_exists(obj_titlecamera))
-{
-    obj_titlecamera.action = 1;
-}
-</string>
+            <kind>0</kind>
+            <string>global.titleSelection</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>2</string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="9" enumb="1">
       <action>
         <libid>1</libid>
         <id>425</id>
@@ -687,6 +679,108 @@ if (instance_exists(obj_titlecamera))
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="90">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.titleSelection</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_sound(snd_titlemusic);
+
+randThing = random_range(0,200);
+
+if (randThing &lt; 75)
+{
+    audio_play_sound_on(global.voiceEmitter, snd_iwillcheeseyouup, false, 0);
+}
+else if (randThing &gt; 74 &amp;&amp; randThing &lt; 125)
+{
+    audio_play_sound_on(global.voiceEmitter, snd_cheeseitup, false, 0);
+}
+else
+{
+    audio_play_sound_on(global.voiceEmitter, snd_imgoingallin, false, 0);
+}
+
+
+if (instance_exists(obj_titlecamera))
+{
+    obj_titlecamera.action = 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

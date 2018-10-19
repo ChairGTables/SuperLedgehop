@@ -220,7 +220,10 @@ alarm[1] = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>weaponChanged = false;
+            <string>window_mouse_set(clamp(window_mouse_get_x(),0,window_get_width()),clamp(window_mouse_get_y(),0,window_get_height()))
+
+
+weaponChanged = false;
 //Change bullets when out
 if (instance_exists(obj_chizuru))
 {
@@ -263,6 +266,30 @@ if (instance_exists(obj_chizuru))
         instance_create(obj_chizuru.x, obj_chizuru.y + 10, obj_outofammo);
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>window_mouse_set(clamp(window_mouse_get_x(),0,window_get_width()),clamp(window_mouse_get_y(),0,window_get_height()))
+
 </string>
           </argument>
         </arguments>
@@ -488,7 +515,9 @@ if (global.assisthp &lt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_mouse_set(clamp(window_mouse_get_x(),0,window_get_width()),clamp(window_mouse_get_y(),0,window_get_height()))
+            <string>if (window_has_focus() &amp;&amp; !instance_exists(obj_dialogue)) {
+    display_mouse_lock(window_get_x(), window_get_y(), window_get_width(), window_get_height());
+} else display_mouse_unlock();
 
 if (global.chizuruhp &lt; 1)
 {
@@ -802,7 +831,7 @@ if (global.speaking == false || exceptionCheck == 1)
     draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36+ hudshake_yoffset,global.chizurump,myHeight)
     draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47+ hudshake_yoffset,global.chizurushine,myHeight)
     
-    if (instance_exists(obj_yuutoassist))
+    if (instance_exists(obj_yuutoassist) &amp;&amp; !instance_exists(obj_yuutodialogue9))
     {
         draw_sprite(spr_assisthud, 0, xMain, yMain - 100)
         draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+47-100,global.assisthp,myHeight)        

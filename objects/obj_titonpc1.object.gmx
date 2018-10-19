@@ -36,6 +36,8 @@ script_execute(scr_releaseinputs);
 
 if (instance_exists(obj_chizuru))
 {
+    obj_chizuru.hspeed = 0;
+    obj_chizuru.vspeed = 0;
     obj_chizuru.sprite_index = spr_chizurustanddr;
     obj_chizuru.image_xscale = -1;
     obj_chizuru.lookDirection = 1;

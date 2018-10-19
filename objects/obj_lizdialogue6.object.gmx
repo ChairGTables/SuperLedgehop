@@ -33,7 +33,7 @@ obj_dialogue.antagonist = "liz";
 
 
 //set limit
-global.messageLimit = 38;
+global.messageLimit = 40;
 
 
 global.messageArray[0] = "Liz!";
@@ -64,7 +64,7 @@ global.emotionProtagonistArray[4] = "curious";
 global.emotionAntagonistArray[4] = "sad";
 
 global.messageArray[5] = "But cops are trying to kill my niece!
-I gotta make sure she's fine!";
+So I stopped whatever I was doing to make sure she's fine!";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "sad";
@@ -86,7 +86,7 @@ global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "sad";
 
 global.messageArray[9] = "Ehh, whatever. Shoot today. Friends tomorrow!
-I shoot her all the time anyways!";
+I shoot her all the time, anyways!";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "curious";
 global.emotionAntagonistArray[9] = "sad";
@@ -103,7 +103,7 @@ global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "sad";
 global.emotionAntagonistArray[11] = "sad";
 
-global.messageArray[12] = "...I should arrest you for that,
+global.messageArray[12] = "...Part of me really wants to make this arrest,
 but I won't.";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "sad";
@@ -115,8 +115,7 @@ global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "curious";
 global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "Yeah, but after recent events,
-I don't think I'm cut out to be a cop.";
+global.messageArray[14] = "Nah, I don't think I'll get promoted anytime soon.";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "curious";
 global.emotionAntagonistArray[14] = "sad";
@@ -147,124 +146,136 @@ global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "sad";
 
-
-global.messageArray[19] = "The heck kind of senator are you!?
-I'm just some random cop and you were a senator!";
+global.messageArray[19] = "But you shot him.";
 global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "angry";
 global.emotionAntagonistArray[19] = "sad";
 
-
-global.messageArray[20] = "And you're here again helping me out!";
+global.messageArray[20] = "You protected me when it was my duty to protect you.";
 global.categoryArray[20] = "right";
 global.emotionProtagonistArray[20] = "angry";
 global.emotionAntagonistArray[20] = "sad";
 
 
-global.messageArray[21] = "And right now, I'm still a low ranked cop.";
+global.messageArray[21] = "The heck kind of senator are you!?
+I'm just some random cop and you were this big important guy!";
 global.categoryArray[21] = "right";
 global.emotionProtagonistArray[21] = "angry";
 global.emotionAntagonistArray[21] = "sad";
 
-global.messageArray[22] = "Dude, chill.";
-global.categoryArray[22] = "left";
-global.emotionProtagonistArray[22] = "sad";
+
+global.messageArray[22] = "And you're here again helping me out!";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "angry";
 global.emotionAntagonistArray[22] = "sad";
 
-global.messageArray[23] = "The heck you getting all emotional for?";
-global.categoryArray[23] = "left";
-global.emotionProtagonistArray[23] = "curious";
+
+global.messageArray[23] = "And until now, I'm still a low ranked cop.";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
 global.emotionAntagonistArray[23] = "sad";
 
-
-global.messageArray[24] = "You think you suck at being a cop?
-Try being a senator and then becoming labeled as a criminal.";
+global.messageArray[24] = "Dude, chill.";
 global.categoryArray[24] = "left";
-global.emotionProtagonistArray[24] = "angry";
+global.emotionProtagonistArray[24] = "sad";
 global.emotionAntagonistArray[24] = "sad";
 
-global.messageArray[25] = "You're human. I'm human.
-I think you matter as much as I do.";
+global.messageArray[25] = "The heck you getting all emotional for?";
 global.categoryArray[25] = "left";
 global.emotionProtagonistArray[25] = "curious";
 global.emotionAntagonistArray[25] = "sad";
 
-global.messageArray[26] = "What even happened? I think you were a great
-senator that cared about everyone.";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[26] = "curious";
+
+global.messageArray[26] = "You think you suck at being a cop?
+Try being a senator and then becoming labeled as a criminal.";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "angry";
 global.emotionAntagonistArray[26] = "sad";
 
-
-global.messageArray[27] = "I don't know, but that new governor is really suspicious.";
+global.messageArray[27] = "You're human. I'm human.
+I think you matter as much as I do.";
 global.categoryArray[27] = "left";
-global.emotionProtagonistArray[27] = "angry";
+global.emotionProtagonistArray[27] = "curious";
 global.emotionAntagonistArray[27] = "sad";
 
-global.messageArray[28] = "Got me impeached right when he got into office.";
-global.categoryArray[28] = "left";
-global.emotionProtagonistArray[28] = "sad";
+global.messageArray[28] = "But what even happened? I think you were a great
+senator that cared about everyone.";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "curious";
 global.emotionAntagonistArray[28] = "sad";
 
-global.messageArray[29] = "See! This is why I can't be a cop!";
-global.categoryArray[29] = "right";
-global.emotionProtagonistArray[29] = "sad";
+
+global.messageArray[29] = "I don't know, but a few of the new people 
+in the office are really suspicious.";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "angry";
 global.emotionAntagonistArray[29] = "sad";
 
-
-global.messageArray[30] = "I'm assigned to guard the governor and all he does is shady stuff!";
-global.categoryArray[30] = "right";
+global.messageArray[30] = "Got me impeached right when they got into office.";
+global.categoryArray[30] = "left";
 global.emotionProtagonistArray[30] = "sad";
 global.emotionAntagonistArray[30] = "sad";
 
-
-global.messageArray[31] = "Now he made me to hunt down your niece.";
+global.messageArray[31] = "See! This is why I can't be a cop!";
 global.categoryArray[31] = "right";
 global.emotionProtagonistArray[31] = "sad";
 global.emotionAntagonistArray[31] = "sad";
 
-global.messageArray[32] = "I want to get promoted and have money, but I just...";
+
+global.messageArray[32] = "I'm assigned to guard the new senator and all he does
+is shady stuff with the governor!";
 global.categoryArray[32] = "right";
 global.emotionProtagonistArray[32] = "sad";
 global.emotionAntagonistArray[32] = "sad";
 
 
-global.messageArray[33] = "I JUST WANT TO DO THE RIGHT THING!";
+global.messageArray[33] = "Now his governor buddy told me to hunt down your niece.";
 global.categoryArray[33] = "right";
-global.emotionProtagonistArray[33] = "angry";
+global.emotionProtagonistArray[33] = "sad";
 global.emotionAntagonistArray[33] = "sad";
 
-
-global.messageArray[34] = "Ah, ouch.";
+global.messageArray[34] = "I want to get promoted and have money, but I just...";
 global.categoryArray[34] = "right";
-global.emotionProtagonistArray[34] = "angry";
+global.emotionProtagonistArray[34] = "sad";
 global.emotionAntagonistArray[34] = "sad";
 
 
-global.messageArray[35] = "Sorry. Ahaha.
-I'm still bleeding hard.";
+global.messageArray[35] = "I JUST WANT TO DO THE RIGHT THING LIKE A REAL COP!";
 global.categoryArray[35] = "right";
 global.emotionProtagonistArray[35] = "angry";
 global.emotionAntagonistArray[35] = "sad";
 
-global.messageArray[36] = "B-But I'm a cool cop, okay!?
-I'm really strong!";
+
+global.messageArray[36] = "Ah, ouch.";
 global.categoryArray[36] = "right";
 global.emotionProtagonistArray[36] = "angry";
 global.emotionAntagonistArray[36] = "sad";
 
 
-global.messageArray[37] = "You're doing well. Just rest.";
-global.categoryArray[37] = "left";
-global.emotionProtagonistArray[37] = "neutral";
+global.messageArray[37] = "Sorry. Ahaha.
+I'm still bleeding hard.";
+global.categoryArray[37] = "right";
+global.emotionProtagonistArray[37] = "angry";
 global.emotionAntagonistArray[37] = "sad";
 
-
-global.messageArray[38] = "Actually, Yuuto is a cool magician!
-She'll help you heal quick!";
-global.categoryArray[38] = "left";
-global.emotionProtagonistArray[38] = "happy";
+global.messageArray[38] = "B-But I'm a cool cop, okay!?
+I'm really strong!";
+global.categoryArray[38] = "right";
+global.emotionProtagonistArray[38] = "angry";
 global.emotionAntagonistArray[38] = "sad";
+
+
+global.messageArray[39] = "You're doing well. Just rest.";
+global.categoryArray[39] = "left";
+global.emotionProtagonistArray[39] = "neutral";
+global.emotionAntagonistArray[39] = "sad";
+
+
+global.messageArray[40] = "Actually, Yuuto is a cool magician!
+She'll help you heal quick!";
+global.categoryArray[40] = "left";
+global.emotionProtagonistArray[40] = "happy";
+global.emotionAntagonistArray[40] = "sad";
 </string>
           </argument>
         </arguments>

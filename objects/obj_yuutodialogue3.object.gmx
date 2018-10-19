@@ -57,7 +57,7 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "S-Shut up! I studied about that barrier too you know!";
+global.messageArray[4] = "S-Shut up! I studied about that barrier too, you know!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "angry";
@@ -79,18 +79,18 @@ global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "angry";
 
-global.messageArray[8] = "So stay outta my sight!";
+global.messageArray[8] = "So, stay outta my sight!";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "curious";
 global.emotionAntagonistArray[8] = "angry";
 
-global.messageArray[9] = "This time you won't survive!";
+global.messageArray[9] = "This time, you won't survive!";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "curious";
 global.emotionAntagonistArray[9] = "angry";
 
 global.messageArray[10] = "These guys will shoot lasers! And in my studies,
-I know for sure Shines won't work on them!";
+I know for sure Shines won't work on lasers!";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "curious";
 global.emotionAntagonistArray[10] = "angry";

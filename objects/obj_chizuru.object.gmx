@@ -420,7 +420,9 @@ waveshine = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.chizuruhp &lt; 1)
+            <string>depth = -y;
+
+if (global.chizuruhp &lt; 1)
 {
     global.invincibility = 1;
     global.isCutscene = true;

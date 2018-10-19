@@ -27,9 +27,19 @@
             <kind>1</kind>
             <string>global.speaking = false;
 
-if (!audio_is_playing(snd_stagethree))
+if (global.stageState != 0)
 {
-    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_stagethree, true, 10); // Music in rm1, priority 10, looping
+    audio_stop_sound(snd_stagethree);
+    instance_destroy(self);
+}
+else
+{
+
+    if (!audio_is_playing(snd_stagethree))
+    {
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_stagethree, true, 10); // Music in rm1, priority 10, looping
+    }
+
 }
 </string>
           </argument>

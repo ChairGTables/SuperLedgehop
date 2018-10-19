@@ -35,6 +35,9 @@ category = 1;
 sounding = 0;
 boss = 0;
 mini = 0;
+auto = 0;
+
+portraitsReady = 0;
 
 global.message = "";
 global.chr1 = 0;
@@ -55,6 +58,7 @@ alarm[1] = 50;
 
 protagonist = "chizuru";
 antagonist = "tito";
+out = "none";
 </string>
           </argument>
         </arguments>
@@ -111,7 +115,7 @@ if (instance_exists(obj_antagonisttalk))
             <kind>1</kind>
             <string>alarm[1] = 50;
 
-if (instance_exists(obj_yuutonpc1))
+if (instance_exists(obj_yuutonpc1) || instance_exists(obj_yuutodialogue9) || auto == 1)
 {
     alarm[1] = 70;
 }
@@ -121,7 +125,7 @@ if (mini == 1)
     alarm[1] = 85;
 }
 
-if (mini == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4))
+if (mini == 1 || auto == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4))
 {
     depth = -9000;
     
@@ -197,7 +201,9 @@ if (mini == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageL
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>category = 1;
+            <string>display_mouse_unlock();
+
+category = 1;
 presenting = 1;
 global.speaking = true;
 speaking = 1;
@@ -224,6 +230,9 @@ if (boss == 1 &amp;&amp; global.messageNumber == global.messageLimit - 3)
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
 }
 
+portraitsReady = 1;
+
+/*
 //set emotion sprites for characters
 if (protagonist == "chizuru")
 {
@@ -338,6 +347,7 @@ if (antagonist == "unknown")
     antagonistDisplay.angrySprite = spr_hudbars;
     antagonistDisplay.curiousSprite = spr_hudbars;
 }
+*/
 </string>
           </argument>
         </arguments>
@@ -360,22 +370,14 @@ if (antagonist == "unknown")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.message = global.messageArray[global.messageNumber];
-
-global.chr1 += 2;
-global.text = string_copy(global.message,1,global.chr1);
-if (global.speaking == true)
-{
-    bleeping = string_length(global.text);
-}
-else
-{
-    global.text = "";
-    bleeping = 0;
-}
+            <string>
 
 
 image_alpha = 0.0000000000000000001;
+if (global.categoryArray[global.messageNumber] == "out" &amp;&amp; category != 2)
+{
+    category = 2;
+}
 if (global.categoryArray[global.messageNumber] == "left" &amp;&amp; category != 1)
 {
     category = 1;
@@ -385,6 +387,17 @@ if (global.categoryArray[global.messageNumber] == "right" &amp;&amp; category !=
     category = 0;
 }
 
+if (category == 2)
+{
+    if (instance_exists(obj_protagonisttalk))
+    {
+        obj_protagonisttalk.image_alpha = 0.8;
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        obj_antagonisttalk.image_alpha = 0.8;
+    }
+}
 if (category == 1)
 {
     if (instance_exists(obj_protagonisttalk))
@@ -451,9 +464,24 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
     {
         sounding = 0;
         //category 1 = protag   category 2 = antag
+        if (category == 2)
+        {
+            if (out == "chief")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
+            }    
+        }
         if (category == 1)
         {
             if (protagonist == "chizuru")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
+            }    
+            if (protagonist == "yuuto")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
+            }    
+            if (protagonist == "liz")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
             }    
@@ -464,7 +492,11 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             if (protagonist == "tito")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
-            }    
+            }   
+            if (protagonist == "crossette")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
+            } 
         }
         if (category == 0)
         {
@@ -523,6 +555,177 @@ if (instance_exists(obj_antagonisttalk))
         obj_antagonisttalk.emotion = global.emotionAntagonistArray[global.messageNumber];
     }
 }
+
+
+
+
+
+//set emotion sprites for characters
+if (portraitsReady == 1)
+{
+    if (protagonist == "chizuru")
+    {
+        protagonistDisplay.happySprite = spr_chizuruhappy;
+        protagonistDisplay.neutralSprite = spr_chizuruneutral;
+        protagonistDisplay.sadSprite = spr_chizurusad;
+        protagonistDisplay.angrySprite = spr_chizuruangry;
+        protagonistDisplay.curiousSprite = spr_chizurucurious;
+    }
+    if (protagonist == "liz")
+    {
+        protagonistDisplay.happySprite = spr_hudbars;
+        protagonistDisplay.neutralSprite = spr_lizneutral;
+        protagonistDisplay.sadSprite = spr_lizsad;
+        protagonistDisplay.angrySprite = spr_lizangry;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "yuuto")
+    {
+        protagonistDisplay.happySprite = spr_hudbars;
+        protagonistDisplay.neutralSprite = spr_yuutoneutral;
+        protagonistDisplay.sadSprite = spr_yuutosad;
+        protagonistDisplay.angrySprite = spr_hudbars;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "crossette")
+    {
+        protagonistDisplay.happySprite = spr_crossettehappy;
+        protagonistDisplay.neutralSprite = spr_crossetteneutral;
+        protagonistDisplay.sadSprite = spr_hudbars;
+        protagonistDisplay.angrySprite = spr_crossetteangry;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "none")
+    {
+        protagonistDisplay.happySprite = spr_hudbars;
+        protagonistDisplay.neutralSprite = spr_hudbars;
+        protagonistDisplay.sadSprite = spr_hudbars;
+        protagonistDisplay.angrySprite = spr_hudbars;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "thug")
+    {
+        protagonistDisplay.happySprite = spr_hudbars;
+        protagonistDisplay.neutralSprite = spr_hudbars;
+        protagonistDisplay.sadSprite = spr_hudbars;
+        protagonistDisplay.angrySprite = spr_hudbars;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "ruffian")
+    {
+        protagonistDisplay.happySprite = spr_hudbars;
+        protagonistDisplay.neutralSprite = spr_hudbars;
+        protagonistDisplay.sadSprite = spr_hudbars;
+        protagonistDisplay.angrySprite = spr_hudbars;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "tito")
+    {
+        protagonistDisplay.happySprite = spr_titohappy;
+        protagonistDisplay.neutralSprite = spr_titoneutral;
+        protagonistDisplay.sadSprite = spr_titosad;
+        protagonistDisplay.angrySprite = spr_titoangry;
+        protagonistDisplay.curiousSprite = spr_titocurious;
+    }
+    if (antagonist == "tito")
+    {
+        antagonistDisplay.happySprite = spr_titohappy;
+        antagonistDisplay.neutralSprite = spr_titoneutral;
+        antagonistDisplay.sadSprite = spr_titosad;
+        antagonistDisplay.angrySprite = spr_titoangry;
+        antagonistDisplay.curiousSprite = spr_titocurious;
+    }
+    if (antagonist == "default")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_defaultneutral;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_defaultangry;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "crossette")
+    {
+        antagonistDisplay.happySprite = spr_crossettehappy;
+        antagonistDisplay.neutralSprite = spr_crossetteneutral;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_crossetteangry;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "yuuto")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_yuutoneutral;
+        antagonistDisplay.sadSprite = spr_yuutosad;
+        antagonistDisplay.angrySprite = spr_hudbars;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "liz")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_lizneutral;
+        antagonistDisplay.sadSprite = spr_lizsad;
+        antagonistDisplay.angrySprite = spr_lizangry;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "kamuro")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_kamuroneutral;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_kamuroangry;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "bill")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_billneutral;
+        antagonistDisplay.sadSprite = spr_billsad;
+        antagonistDisplay.angrySprite = spr_hudbars;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "chizuma")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_chizumaneutral;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_chizumaangry;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "none")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_hudbars;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_hudbars;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (antagonist == "unknown")
+    {
+        antagonistDisplay.happySprite = spr_hudbars;
+        antagonistDisplay.neutralSprite = spr_hudbars;
+        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.angrySprite = spr_hudbars;
+        antagonistDisplay.curiousSprite = spr_hudbars;
+    }
+}
+
+
+
+
+//Process the talk
+global.message = global.messageArray[global.messageNumber];
+
+global.chr1 += 2;
+global.text = string_copy(global.message,1,global.chr1);
+if (global.speaking == true)
+{
+    bleeping = string_length(global.text);
+}
+else
+{
+    global.text = "";
+    bleeping = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -545,10 +748,10 @@ if (instance_exists(obj_antagonisttalk))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mini == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
+            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
 {
 
-
+    sounding = 2;
 
     depth = -9000;
     alarm[1] = 50;
@@ -652,25 +855,58 @@ if (instance_exists(obj_antagonisttalk))
     {
         draw_set_color(c_black);
         draw_rectangle(view_xview, view_yview+440, view_xview+960, view_yview+540, false);
-        draw_set_font(fnt_name);
+        bonusY = 0;
+        if (global.language == 0)
+        {
+            bonusY = 0;
+            draw_set_font(fnt_name);
+        }
+        else
+        {
+            draw_set_font(fnt_nameforeign);
+            bonusY = 3;
+        }
         draw_set_valign(fa_top);
         draw_set_halign(fa_left);
+        if (category == 2)
+        {
+            if (out == "chief")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview + 10, view_yview+445 + bonusY, "Police Chief");
+            }
+        }
         if (category == 1)
         {
             if (protagonist == "chizuru")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview + 10, view_yview+445, "Chizuru");
+                draw_text(view_xview + 10, view_yview+445 + bonusY, "Chizuru");
+            }
+            if (protagonist == "yuuto")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Yuuto Ichika");
+            }
+            if (protagonist == "liz")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Liz");
             }
             if (protagonist == "tito")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview + 10, view_yview+445, "Tito");
+                draw_text(view_xview + 10, view_yview+445 + bonusY, "Tito");
             }
             if (protagonist == "thug")
             {
                 draw_set_color($9c92f5);
-                draw_text(view_xview + 10, view_yview+445, "thug");
+                draw_text(view_xview + 10, view_yview+445 + bonusY, "thug");
+            }
+            if (protagonist == "crossette")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Crossette");
             }
         }
         if (category == 0)
@@ -679,56 +915,64 @@ if (instance_exists(obj_antagonisttalk))
             if (antagonist == "tito")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Tito");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Tito");
             }
             if (antagonist == "liz")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Liz");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Liz");
             }
             if (antagonist == "kamuro")
             {
                 draw_set_color($9c92f5);
-                draw_text(view_xview+10, view_yview+445, "Kamuro");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Kamuro");
             }
             if (antagonist == "unknown")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "???");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "???");
             }
             if (antagonist == "yuuto")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Yuuto Ichika");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Yuuto Ichika");
             }
             if (antagonist == "default")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Default");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Default");
             }
             if (antagonist == "crossette")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Crossette");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Crossette");
             }
             if (antagonist == "bill")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Bill Steels");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Bill Steels");
             }
             if (antagonist == "chizuma")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Chizuma");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Chizuma");
             }
             if (antagonist == "ruffian")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445, "Ruffian");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Ruffian");
             }
         }
         draw_set_color(16645629);
-        draw_set_font(fnt_talk);
+        if (global.language == 0)
+        {
+            draw_set_font(fnt_talk);
+        }
+        else
+        {
+            draw_set_font(fnt_talkforeign);
+        }
+        
         if (global.speaking == true) 
         {
             draw_text(view_xview[view_current]+10,view_yview[view_current]+485,string(global.text));
@@ -744,14 +988,28 @@ if (instance_exists(obj_antagonisttalk))
             draw_set_color(c_black);
             draw_rectangle(view_xview + 400, view_yview+480, view_xview+960, view_yview+540, false);
             draw_set_color(16645629);
-            draw_set_font(fnt_talk);
+            if (global.language == 0)
+            {
+                draw_set_font(fnt_talk);
+            }
+            else
+            {
+                draw_set_font(fnt_talkforeign);
+            }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);
             if (global.speaking == true) 
             {
                 draw_text(view_xview+410,view_yview+490,string(global.text));
             }
-            draw_set_font(fnt_talk);
+            if (global.language == 0)
+            {
+                draw_set_font(fnt_talk);
+            }
+            else
+            {
+                draw_set_font(fnt_talkforeign);
+            }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);
         }
@@ -761,14 +1019,28 @@ if (instance_exists(obj_antagonisttalk))
             draw_set_color(c_black);
             draw_rectangle(view_xview + 400, view_yview+480, view_xview+760, view_yview+540, false);
             draw_set_color(16645629);
-            draw_set_font(fnt_talk);
+            if (global.language == 0)
+            {
+                draw_set_font(fnt_talk);
+            }
+            else
+            {
+                draw_set_font(fnt_talkforeign);
+            }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);
             if (global.speaking == true) 
             {
                 draw_text(view_xview+210,view_yview+490,string(global.text));
             }
-            draw_set_font(fnt_talk);
+            if (global.language == 0)
+            {
+                draw_set_font(fnt_talk);
+            }
+            else
+            {
+                draw_set_font(fnt_talkforeign);
+            }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);
         }
@@ -797,10 +1069,10 @@ if (instance_exists(obj_antagonisttalk))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mini == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
+            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
 {
 
-
+    sounding = 2;
 
     depth = -9000;
     alarm[1] = 50;

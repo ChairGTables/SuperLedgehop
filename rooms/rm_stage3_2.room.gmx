@@ -4,7 +4,7 @@
   <width>7000</width>
   <height>2600</height>
   <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -100,7 +100,7 @@
     <instance objName="obj_wall" x="6112" y="224" name="inst_777A5688" locked="0" code="" scaleX="25.8064517974854" scaleY="44.3899993896484" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="6272" y="-160" name="inst_6F10C5FE" locked="0" code="" scaleX="21.5" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_nextroom" x="5024" y="-352" name="inst_006FDEBE" locked="0" code="" scaleX="46" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chizuru" x="5840" y="976" name="inst_6EEEED39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizuru" x="816" y="32" name="inst_6EEEED39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="768" y="784" name="inst_B558E630" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadmove_sonii" x="864" y="784" name="inst_EF43E391" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="816" y="1136" name="inst_B3E6E731" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -267,7 +267,7 @@
     <instance objName="obj_slowspikes" x="1056" y="1728" name="inst_B9198215" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slowspikes" x="1088" y="1728" name="inst_4156AFDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grenaider_sonii" x="2112" y="1184" name="inst_0E41AA94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_yuutoassist" x="5744" y="944" name="inst_588F65B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_yuutoassist" x="880" y="32" name="inst_588F65B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutogreendialogue" x="4480" y="976" name="inst_2E5E03E8" locked="0" code="" scaleX="14.9677419662476" scaleY="10.3225803375244" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="4480" y="928" name="inst_BE2F4D0D" locked="0" code="" scaleX="8" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="5088" y="928" name="inst_E85D9700" locked="0" code="" scaleX="12" scaleY="10" colour="4294967295" rotation="0"/>
@@ -290,6 +290,8 @@
     <instance objName="obj_vasespikes" x="4912" y="1456" name="inst_1F31EA15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vasespikes" x="4944" y="1456" name="inst_3168C21F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutoleavedialogue" x="5312" y="48" name="inst_B6DD5F35" locked="0" code="" scaleX="30" scaleY="3.61290311813354" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kamuronpc2" x="656" y="96" name="inst_EA252791" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kamurodialogue4" x="656" y="160" name="inst_18FA3B4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_mrbeast" x="608" y="64" w="32" h="32" xo="0" yo="0" id="10026952" name="inst_D0C18796" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

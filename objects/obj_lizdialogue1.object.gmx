@@ -150,13 +150,13 @@ global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "happy";
 global.emotionAntagonistArray[20] = "sad";
 
-global.messageArray[21] = "SEDUCING SOMEONE AND THEIR MONEY???
+global.messageArray[21] = "SEDUCING SOMEONE WITH THEIR MONEY???
 YOU'RE UNDER ARREST FOR MIND CONTROL!";
 global.categoryArray[21] = "right";
 global.emotionProtagonistArray[21] = "sad";
 global.emotionAntagonistArray[21] = "angry";
 
-global.messageArray[22] = "Also your taste is crap.
+global.messageArray[22] = "Also, your taste is crap.
 It should be curry, not that cheesesteak barf!";
 global.categoryArray[22] = "right";
 global.emotionProtagonistArray[22] = "sad";

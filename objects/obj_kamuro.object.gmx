@@ -746,7 +746,11 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
-    script_execute(scr_enemydeath);
+    audio_stop_sound(snd_kamurofight);
+    audio_play_sound_on (global.voiceEmitter, snd_lizdeath, false, 10); 
+    var death = instance_create(x, y, obj_bossdeath);
+    death.sprite_index = spr_kamurohurt;
+    instance_destroy(self);
 }
 </string>
           </argument>

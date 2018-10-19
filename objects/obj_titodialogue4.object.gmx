@@ -139,7 +139,7 @@ global.categoryArray[19] = "left";
 global.emotionProtagonistArray[19] = "neutral";
 global.emotionAntagonistArray[19] = "angry";
 
-global.messageArray[20] = "I am adult! I don't need you to take care of me!";
+global.messageArray[20] = "I am an adult! I don't need you to take care of me!";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "neutral";
 global.emotionAntagonistArray[20] = "angry";
@@ -164,7 +164,7 @@ global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "neutral";
 global.emotionAntagonistArray[24] = "angry";
 
-global.messageArray[25] = "So please, show me that I don't have anything to worry about!";
+global.messageArray[25] = "Show me that I don't have to worry!";
 global.categoryArray[25] = "right";
 global.emotionProtagonistArray[25] = "neutral";
 global.emotionAntagonistArray[25] = "angry";

@@ -178,7 +178,7 @@ if (hspeed &lt; 0)
 {
     image_xscale = -1;
 }
-else
+else if (hspeed &gt; 0)
 {
     image_xscale = 1;
 }

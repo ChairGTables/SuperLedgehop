@@ -28,11 +28,11 @@
             <string>global.shineget = 1;
 
 //Set health for enemy
-hp = 100;
+hp = 1;
 
-global.bossone = 434;
-global.bosstwo = 434;
-global.bossthree = 100;
+global.bossone = 1//434;
+global.bosstwo = 0//434;
+global.bossthree = 0//100;
 
 hpIndex = 3;
 
@@ -646,9 +646,17 @@ if (moveTimer &lt;= 0)
 /////////////////////////////
 //Death
 /////////////////////////
-if (hp &lt; 1)
+/////////////////////////////
+//Death
+/////////////////////////
+if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 &amp;&amp; global.bossthree &lt; 1)
 {
-    script_execute(scr_enemydeath);
+    script_execute(scr_stopmusic);
+    audio_play_sound_on (global.voiceEmitter, snd_billdeath, false, 10); 
+    death = instance_create(x, y, obj_bossdeath);
+    death.sprite_index = spr_billhurt;
+    death.alarm[4] = 60;
+    instance_destroy(self);
 }
 </string>
           </argument>

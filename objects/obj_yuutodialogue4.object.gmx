@@ -42,7 +42,7 @@ global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "B-Be quiet! I was trying to play mindgames with you okay!?";
+global.messageArray[1] = "B-Be quiet! I was trying to play mindgames with you, okay!?";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
@@ -58,7 +58,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Now you'll pay!";
+global.messageArray[4] = "Now. you'll pay!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";

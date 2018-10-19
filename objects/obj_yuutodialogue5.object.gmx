@@ -42,7 +42,7 @@ global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "That made it easy too!";
+global.messageArray[1] = "That made it easy, too!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
@@ -58,7 +58,7 @@ global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "neutral";
 
 global.messageArray[4] = "I-I'm not done yet!
-Now you'll face my power!";
+Now, you'll face my power!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";

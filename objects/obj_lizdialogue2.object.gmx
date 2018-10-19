@@ -97,18 +97,19 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "sad";
 
-global.messageArray[11] = "What? No!";
+global.messageArray[11] = "Ahh, shaddap! Being colorblind is nothing in battle!";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "sad";
 
-global.messageArray[12] = "If you get fired, then your boss is the blind one!";
+global.messageArray[12] = "Besides, if you get fired for that,
+then your boss is the blind one!";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "happy";
 global.emotionAntagonistArray[12] = "sad";
 
-global.messageArray[13] = "I mean, me being colorblind doesn't really matter
-in a fight like this. Still, we gotta adapt!";
+global.messageArray[13] = "Like, even if it did affect me,
+I can easily adapt just like anyone else!";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";
@@ -134,12 +135,12 @@ global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "sad";
 
-global.messageArray[18] = "H-Hey! It's self defense, so it's legal, right?";
+global.messageArray[18] = "H-Hey! It's self-defense, so it's legal, right?";
 global.categoryArray[18] = "left";
 global.emotionProtagonistArray[18] = "happy";
 global.emotionAntagonistArray[18] = "sad";
 
-global.messageArray[19] = "That's not self defense, you moron!
+global.messageArray[19] = "That's not self-defense, you moron!
 You're shooting cops!";
 global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "happy";

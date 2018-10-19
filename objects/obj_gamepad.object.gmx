@@ -84,7 +84,7 @@ index = 0;
         if (joy_z = true)
         {
             joy_z = false;
-            keyboard_key_release(ord('T'));
+            keyboard_key_release(ord('Z'));
         }
     }    
     
@@ -93,10 +93,9 @@ if gamepad_button_check_pressed(0, gp_face1)
         if (joy_z = false)
         {
             joy_z = true;
-            keyboard_key_press(ord('T'));
+            keyboard_key_press(ord('Z'));
         }
     }
-    
 </string>
           </argument>
         </arguments>
@@ -272,7 +271,7 @@ if gamepad_button_check_released(0, gp_face1)
         if (joy_z = true)
         {
             joy_z = false;
-            keyboard_key_release(ord('T'));
+            keyboard_key_release(ord('Z'));
         }
     }    
     
@@ -281,12 +280,12 @@ if gamepad_button_check_pressed(0, gp_face1)
         if (joy_z = false)
         {
             joy_z = true;
-            keyboard_key_press(ord('T'));
+            keyboard_key_press(ord('Z'));
         }
     }
     
 
-if gamepad_button_check_released(0, gp_face3)
+/*if gamepad_button_check_released(0, gp_face3)
     {
         if (joy_z = true)
         {
@@ -302,7 +301,7 @@ if gamepad_button_check_pressed(0, gp_face3)
             joy_z = true;
             keyboard_key_press(ord('Z'));
         }
-    }
+    }*/
     
 if gamepad_button_check_released(0, gp_face4)
     {
