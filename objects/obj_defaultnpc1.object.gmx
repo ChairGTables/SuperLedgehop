@@ -40,7 +40,7 @@ else
     global.isCutscene = true;
     alarm[0] = 30;
     alarm[1] = 20;
-    
+    instance_create(x, y, obj_musicfadeout);
     if (instance_exists(obj_chizuru))
     {
         obj_chizuru.sprite_index = spr_chizuruwalku;
@@ -124,6 +124,8 @@ else
 
 if (state == 0)
 {
+    script_execute(scr_musicfadekill);
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_prebosstheme, true, 10); // Music in rm1, priority 10, looping
     instance_create(x, y, obj_defaultdialogue1); 
     state = 1;
 }

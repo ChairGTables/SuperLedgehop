@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>startY = y;
 y -= 500;
+drop = 0;
 image_xscale = -1;
 vspeed = 30;
 image_speed = 0;
@@ -62,7 +63,8 @@ if (instance_exists(obj_kamuronpc1))
 }
 else
 {
-    instance_create(x, y, obj_moose);
+    me = instance_create(x, y, obj_moose);
+    me.drop = drop;
     instance_destroy(self);
 }
 

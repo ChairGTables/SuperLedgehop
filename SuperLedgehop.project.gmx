@@ -81,11 +81,14 @@
         <sound>sound\snd_yuutointro</sound>
         <sound>sound\snd_yuutotheme</sound>
         <sound>sound\snd_softevent</sound>
+        <sound>sound\snd_determinationtheme</sound>
+        <sound>sound\snd_prebosstheme</sound>
         <sound>sound\snd_kamurofight</sound>
         <sound>sound\snd_stagetwo</sound>
         <sound>sound\snd_survivaltheme</sound>
         <sound>sound\snd_stagethree</sound>
         <sound>sound\snd_minigametheme</sound>
+        <sound>sound\snd_finalstage</sound>
         <sound>sound\snd_stage4</sound>
         <sound>sound\snd_endcutscene1</sound>
         <sound>sound\snd_endcutscene2</sound>
@@ -330,6 +333,10 @@
         <sprite>sprites\spr_halfshinenotice</sprite>
         <sprite>sprites\spr_mpnotice</sprite>
         <sprite>sprites\spr_rapidadvice</sprite>
+        <sprite>sprites\spr_planetearth</sprite>
+        <sprite>sprites\spr_spaceback</sprite>
+        <sprite>sprites\spr_badend</sprite>
+        <sprite>sprites\spr_laststagefade</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -357,6 +364,12 @@
         <sprite>sprites\spr_vase</sprite>
         <sprite>sprites\spr_creditslist</sprite>
         <sprite>sprites\spr_creditsbox</sprite>
+        <sprite>sprites\spr_reportbook</sprite>
+        <sprite>sprites\spr_opendoor</sprite>
+        <sprite>sprites\spr_doorsignal</sprite>
+        <sprite>sprites\spr_groundsignal</sprite>
+        <sprite>sprites\spr_colorkeys</sprite>
+        <sprite>sprites\spr_laststagebarrier</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -437,6 +450,7 @@
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>
         <sprite>sprites\spr_kamuroangry</sprite>
+        <sprite>sprites\spr_kamurosad</sprite>
         <sprite>sprites\spr_kamurowalk</sprite>
         <sprite>sprites\spr_kamuroshoot</sprite>
         <sprite>sprites\spr_kamurohurt</sprite>
@@ -674,10 +688,14 @@
       <script>scripts\scr_pretitoskip.gml</script>
       <script>scripts\scr_defaultskip.gml</script>
       <script>scripts\scr_lizskip.gml</script>
+      <script>scripts\scr_kamuroskip.gml</script>
+      <script>scripts\scr_billskip.gml</script>
       <script>scripts\scr_yuutodetection.gml</script>
       <script>scripts\scr_yuutodamage.gml</script>
       <script>scripts\scr_yuutoskip1.gml</script>
       <script>scripts\scr_musicfadekill.gml</script>
+      <script>scripts\scr_cautiontiming.gml</script>
+      <script>scripts\scr_laststageswitch.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -765,6 +783,7 @@
         <object>objects\obj_stagetwomusic</object>
         <object>objects\obj_stagethreemusic</object>
         <object>objects\obj_stagefourmusic</object>
+        <object>objects\obj_stagefivemusic</object>
         <object>objects\obj_kamuromusic</object>
         <object>objects\obj_shmupcontroller</object>
         <object>objects\obj_chizuruspawner</object>
@@ -809,6 +828,7 @@
         <object>objects\obj_shinemessage</object>
         <object>objects\obj_warnbox</object>
         <object>objects\obj_whiteenlarge</object>
+        <object>objects\obj_laststagefade</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -824,6 +844,14 @@
         <object>objects\obj_breakablevase</object>
         <object>objects\obj_vasespikes</object>
         <object>objects\obj_yuutoblocker</object>
+        <object>objects\obj_reportbook</object>
+        <object>objects\obj_opendoor</object>
+        <object>objects\obj_doorsignal</object>
+        <object>objects\obj_groundsignal</object>
+        <object>objects\obj_violetkey</object>
+        <object>objects\obj_redkey</object>
+        <object>objects\obj_laststagebarrier</object>
+        <object>objects\obj_laststageswitch</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -858,8 +886,12 @@
           <object>objects\obj_lizdialogue5</object>
           <object>objects\obj_lizdialogue6</object>
           <object>objects\obj_lizdialogue7</object>
+          <object>objects\obj_lizdialogue8</object>
+          <object>objects\obj_lizdialogue9</object>
+          <object>objects\obj_lizdialogue10</object>
           <object>objects\obj_liznpc1</object>
           <object>objects\obj_liznpc2</object>
+          <object>objects\obj_liznpc3</object>
           <object>objects\obj_thugnpc1</object>
           <object>objects\obj_ruffiannpc1</object>
           <object>objects\obj_flashbangcutscene</object>
@@ -903,10 +935,19 @@
           <object>objects\obj_kamurodialogue2</object>
           <object>objects\obj_kamurodialogue3</object>
           <object>objects\obj_kamurodialogue4</object>
+          <object>objects\obj_kamurodialogue5</object>
+          <object>objects\obj_kamurodialogue6</object>
+          <object>objects\obj_kamurodialogue7</object>
+          <object>objects\obj_kamurodialogue8</object>
+          <object>objects\obj_kamurodialogue9</object>
+          <object>objects\obj_kamurodialogue10</object>
+          <object>objects\obj_kamurodialogue11</object>
+          <object>objects\obj_kamurodialogue12</object>
           <object>objects\obj_titodialogue1</object>
           <object>objects\obj_titodialogue2</object>
           <object>objects\obj_titodialogue3</object>
           <object>objects\obj_titodialogue4</object>
+          <object>objects\obj_secretofficedialogue</object>
           <object>objects\obj_titoabsorbdialogue</object>
           <object>objects\obj_titocavedialogue</object>
           <object>objects\obj_titolieddialogue</object>
@@ -920,12 +961,19 @@
           <object>objects\obj_kamuro</object>
           <object>objects\obj_kamuronpc1</object>
           <object>objects\obj_kamuronpc2</object>
+          <object>objects\obj_kamuronpc3</object>
+          <object>objects\obj_kamuronpc4</object>
+          <object>objects\obj_kamuronpc5</object>
           <object>objects\obj_titonpc1</object>
           <object>objects\obj_titonpc2</object>
+          <object>objects\obj_spaceback</object>
+          <object>objects\obj_planetearth</object>
+          <object>objects\obj_badend</object>
         </objects>
         <objects name="default">
           <object>objects\obj_default</object>
           <object>objects\obj_defaultnpc1</object>
+          <object>objects\obj_crossettenpc1</object>
           <object>objects\obj_crossettenpcend</object>
           <object>objects\obj_defaultdialogue1</object>
           <object>objects\obj_defaultdialogue2</object>
@@ -936,9 +984,12 @@
         <objects name="bill">
           <object>objects\obj_bill</object>
           <object>objects\obj_billnpc1</object>
+          <object>objects\obj_billnpc2</object>
+          <object>objects\obj_billnpc3</object>
           <object>objects\obj_billnpcend</object>
           <object>objects\obj_chizumanpcend</object>
           <object>objects\obj_policenpc1</object>
+          <object>objects\obj_poilicenpc2</object>
           <object>objects\obj_policenpcend</object>
           <object>objects\obj_chiefnpcend</object>
           <object>objects\obj_rapidcutscene</object>
@@ -951,6 +1002,7 @@
           <object>objects\obj_billdialogue2</object>
           <object>objects\obj_billdialogue3</object>
           <object>objects\obj_billdialogue4</object>
+          <object>objects\obj_billdialogue5</object>
           <object>objects\obj_enddialogue1</object>
           <object>objects\obj_enddialogue2</object>
           <object>objects\obj_enddialogue3</object>
@@ -1050,8 +1102,15 @@
     <rooms name="master">
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_lizfight</room>
+      <room>rooms\rm_stage4_1</room>
+      <room>rooms\rm_stage42120</room>
+      <room>rooms\rm_stage4_2</room>
+      <room>rooms\rm_140bpm_david</room>
+      <room>rooms\rm_kamurofight</room>
+      <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_billfight</room>
+      <room>rooms\rm_stage5</room>
+      <room>rooms\rm_lizfight</room>
       <room>rooms\rm_titofight</room>
       <room>rooms\rm_stage3_1</room>
       <room>rooms\rm_repeat3_1</room>
@@ -1062,7 +1121,6 @@
       <room>rooms\rm_end2</room>
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_stage1_2</room>
-      <room>rooms\rm_120bpmstage2</room>
       <room>rooms\rm_stage2_1</room>
       <room>rooms\rm_yuutoshmup</room>
       <room>rooms\rm_yuutoboss_</room>
@@ -1071,12 +1129,7 @@
       <room>rooms\rm_defaultfight</room>
       <room>rooms\rm_120bpmstage3</room>
       <room>rooms\rm_120bpmliz</room>
-      <room>rooms\rm_stage4_1</room>
-      <room>rooms\rm_stage4_2</room>
-      <room>rooms\rm_140bpm_david</room>
-      <room>rooms\rm_kamurofight</room>
       <room>rooms\rm_120bpmstage5</room>
-      <room>rooms\rm_stage5</room>
       <room>rooms\rm_165bpmsurvival</room>
       <room>rooms\rm_louiefight</room>
       <room>rooms\rm_survivalmode</room>

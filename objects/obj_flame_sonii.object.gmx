@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>friendly  = 0;
 absorbed = 0;
+absorb = 0;
 targetSpeed = 0;
 fading = 0;
 replicating = 0;

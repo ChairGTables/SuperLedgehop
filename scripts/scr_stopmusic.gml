@@ -22,3 +22,6 @@ audio_stop_sound(snd_endcutscene1);
 audio_stop_sound(snd_endcutscene2);
 audio_stop_sound(snd_endcutscene3);
 audio_stop_sound(snd_endcutscene4);
+audio_stop_sound(snd_finalstage);
+audio_stop_sound(snd_determinationtheme);
+audio_stop_sound(snd_prebosstheme);

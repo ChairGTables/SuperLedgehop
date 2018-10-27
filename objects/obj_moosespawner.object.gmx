@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>drop = 0;
+</string>
           </argument>
         </arguments>
       </action>
@@ -49,7 +50,8 @@
             <kind>1</kind>
             <string>if (!(x &lt; view_xview-200 || x &gt; view_xview+1168 || y &lt; view_yview-200 || y &gt; view_yview+732))
 {
-    instance_create(x, y, obj_mooseentrance);
+    me = instance_create(x, y, obj_mooseentrance);
+    me.drop = drop;
     instance_destroy(self);
 }
 </string>

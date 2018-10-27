@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//Set health for enemy
 hp = 400;
-
+drop = 0;
 //set health drops
 minDrops = 3;
 maxDrops = 5;
@@ -267,6 +267,11 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if (hp &lt; 1)
 {
+    if (drop == 1)
+    {
+        key = instance_create(x, y, obj_violetkey);
+        key.index = 3;
+    }
     script_execute(scr_enemydeath);
 }
 </string>
