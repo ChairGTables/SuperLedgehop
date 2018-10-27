@@ -267,7 +267,7 @@ if (sprite_index == spr_billhurt)
 {
     instance_create(x, y, obj_whiteenlarge);
 }
-else if (sprite_index == spr_lizhurt)
+else if (sprite_index == spr_lizhurt || sprite_index == spr_kamurohurt)
 {
     instance_create(x, y, obj_whitefadeinslow);
 }
@@ -300,6 +300,11 @@ else if (sprite_index == spr_lizhurt)
 {
     alarm[5] = 30;
     instance_create(x, y, obj_liznpc2);
+    instance_destroy(self);
+}
+else if (sprite_index == spr_kamurohurt)
+{
+    instance_create(x, y, obj_kamuronpc4);
     instance_destroy(self);
 }
 else

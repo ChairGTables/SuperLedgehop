@@ -28,14 +28,16 @@
             <string>global.shineget = 1;
 
 //Set health for enemy
-hp = 100;
+hp = 1//100;
 
-global.bossone = 434;
-global.bosstwo = 434;
-global.bossthree = 100;
+global.bossone = 1//434;
+global.bosstwo = 0//434;
+global.bossthree = 0//100;
+global.bossvirgin = 0;
 
 hpIndex = 3;
-
+ready = 0;
+alarm[6] = 60;
 //set health drops
 minDrops = 3;
 maxDrops = 5;
@@ -128,6 +130,29 @@ if (sprite_index == hS)
     image_speed = 0.7
 }
 image_index = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ready = 1;
 </string>
           </argument>
         </arguments>
@@ -293,7 +318,7 @@ if (shootTimer &lt;= 0)
     shootTimer = shootBeat;
     
     //Perform shooting
-        if (1 == 1)
+        if (ready == 1)
         {
             
             if (phase &lt; 3)

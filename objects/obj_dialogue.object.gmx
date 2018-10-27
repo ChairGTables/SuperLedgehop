@@ -115,6 +115,11 @@ if (instance_exists(obj_antagonisttalk))
             <kind>1</kind>
             <string>alarm[1] = 50;
 
+if (instance_exists(obj_billnpc2))
+{
+    alarm[1] = 63;
+}
+
 if (instance_exists(obj_yuutonpc1) || instance_exists(obj_yuutodialogue9) || auto == 1)
 {
     alarm[1] = 70;
@@ -125,7 +130,7 @@ if (mini == 1)
     alarm[1] = 85;
 }
 
-if (mini == 1 || auto == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4))
+if (mini == 1 || auto == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4) || (boss == 2 &amp;&amp; global.messageNumber &gt; global.messageLimit - 6))
 {
     depth = -9000;
     
@@ -689,7 +694,7 @@ if (portraitsReady == 1)
     {
         antagonistDisplay.happySprite = spr_hudbars;
         antagonistDisplay.neutralSprite = spr_kamuroneutral;
-        antagonistDisplay.sadSprite = spr_hudbars;
+        antagonistDisplay.sadSprite = spr_kamurosad;
         antagonistDisplay.angrySprite = spr_kamuroangry;
         antagonistDisplay.curiousSprite = spr_hudbars;
     }
@@ -782,7 +787,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
+            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss != 1 || global.messageNumber &lt; global.messageLimit - 3) &amp;&amp; (boss != 2 || global.messageNumber &lt; global.messageLimit - 5))
 {
 
     sounding = 2;
@@ -853,6 +858,35 @@ else
         if (instance_exists(obj_shmupcontroller))
         {
             global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutointro, false, 10);
+        }
+        else if (instance_exists(obj_kamuronpc3))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_kamurofight, true, 10);
+        }
+        else if (instance_exists(obj_billnpc2))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_finalbossintro, false, 10);
+        }
+        else
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
+        }
+    }
+    else if (boss == 2 &amp;&amp; global.messageNumber == global.messageLimit - 5)
+    {
+        script_execute(scr_stopmusic);
+        // Music in rm1, priority 10, looping
+        if (instance_exists(obj_shmupcontroller))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutointro, false, 10);
+        }
+        else if (instance_exists(obj_kamuronpc3))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_kamurofight, true, 10);
+        }
+        else if (instance_exists(obj_billnpc2))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_finalbossintro, false, 10);
         }
         else
         {
@@ -984,12 +1018,12 @@ else
             if (antagonist == "bill")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Bill Steels");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Governor Bill Steels");
             }
             if (antagonist == "chizuma")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Chizuma");
+                draw_text(view_xview+10, view_yview+445 + bonusY, "Senator Chizuma");
             }
             if (antagonist == "ruffian")
             {

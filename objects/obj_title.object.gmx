@@ -183,6 +183,11 @@ index = 0;
             <kind>1</kind>
             <string>texture_set_interpolation(false);
 
+global.isGamepad = true;
+
+global.isCutscene = false;
+global.stageState = 0;
+
 global.remaining = 0;
 global.destroyed = 0;
 global.secondsPassed = 0;
@@ -236,10 +241,7 @@ global.bosstwo = 434;
 global.bossthree = 434;
 
 
-global.isGamepad = true;
 
-global.isCutscene = false;
-global.stageState = 0;
 
 //Key unlockables
 for (i = 0; i &lt; 100; i++)
@@ -247,6 +249,12 @@ for (i = 0; i &lt; 100; i++)
     global.keyID[i] = 0;
 }
 global.keyIndex = 0;
+
+//Stage indicators
+for (i = 0; i &lt; 5; i++)
+{
+    global.stageIndicator[i] = 0;
+}
 
 //Dialogue variables
 global.message = "";
