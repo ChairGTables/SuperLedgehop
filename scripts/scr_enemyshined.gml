@@ -48,5 +48,6 @@ for (i = 0; i < 9; i++)
     {
         capsule.category = "ice";
     }
+    capsule.category = "spread";
 }
 

@@ -370,6 +370,19 @@
         <sprite>sprites\spr_groundsignal</sprite>
         <sprite>sprites\spr_colorkeys</sprite>
         <sprite>sprites\spr_laststagebarrier</sprite>
+        <sprite>sprites\spr_storymode</sprite>
+        <sprite>sprites\spr_thugwars</sprite>
+        <sprite>sprites\spr_options</sprite>
+        <sprite>sprites\spr_exit</sprite>
+        <sprite>sprites\spr_language</sprite>
+        <sprite>sprites\spr_languagelist</sprite>
+        <sprite>sprites\spr_fullscreen</sprite>
+        <sprite>sprites\spr_cutscenes</sprite>
+        <sprite>sprites\spr_offon</sprite>
+        <sprite>sprites\spr_musicvolume</sprite>
+        <sprite>sprites\spr_voicevolume</sprite>
+        <sprite>sprites\spr_sfxvolume</sprite>
+        <sprite>sprites\spr_settingsarrow</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -772,7 +785,21 @@
         <object>objects\obj_protagonisttalk</object>
         <object>objects\obj_stage1</object>
         <object>objects\obj_stage2</object>
+        <object>objects\obj_storymode</object>
         <object>objects\obj_survivalmenu</object>
+        <object>objects\obj_options</object>
+        <object>objects\obj_quitgame</object>
+        <object>objects\obj_languages</object>
+        <object>objects\obj_fullscreen</object>
+        <object>objects\obj_cutscenes</object>
+        <object>objects\obj_musicvolumetext</object>
+        <object>objects\obj_sfxvolumetext</object>
+        <object>objects\obj_voicevolumetext</object>
+        <object>objects\obj_exitoptions</object>
+        <object>objects\obj_languagelist</object>
+        <object>objects\obj_fullscreenoffon</object>
+        <object>objects\obj_cutscenesoffon</object>
+        <object>objects\obj_settingsarrow</object>
         <object>objects\obj_survivalmode</object>
         <object>objects\obj_title</object>
         <object>objects\obj_titlecamera</object>
@@ -1101,38 +1128,52 @@
   <rooms name="rooms">
     <rooms name="master">
       <room>rooms\rm_title</room>
-      <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_stage4_1</room>
-      <room>rooms\rm_stage42120</room>
-      <room>rooms\rm_stage4_2</room>
-      <room>rooms\rm_140bpm_david</room>
-      <room>rooms\rm_kamurofight</room>
-      <room>rooms\rm_120bpmstage2</room>
-      <room>rooms\rm_billfight</room>
-      <room>rooms\rm_stage5</room>
-      <room>rooms\rm_lizfight</room>
-      <room>rooms\rm_titofight</room>
-      <room>rooms\rm_stage3_1</room>
-      <room>rooms\rm_repeat3_1</room>
-      <room>rooms\rm_stage3cutscene_</room>
-      <room>rooms\rm_stage3_2</room>
-      <room>rooms\rm_165bpm_david</room>
-      <room>rooms\rm_end1</room>
-      <room>rooms\rm_end2</room>
-      <room>rooms\rm_stage1</room>
-      <room>rooms\rm_stage1_2</room>
-      <room>rooms\rm_stage2_1</room>
-      <room>rooms\rm_yuutoshmup</room>
-      <room>rooms\rm_yuutoboss_</room>
-      <room>rooms\rm_120bpm2</room>
-      <room>rooms\rm_stage2_2</room>
-      <room>rooms\rm_defaultfight</room>
-      <room>rooms\rm_120bpmstage3</room>
-      <room>rooms\rm_120bpmliz</room>
-      <room>rooms\rm_120bpmstage5</room>
-      <room>rooms\rm_165bpmsurvival</room>
-      <room>rooms\rm_louiefight</room>
-      <room>rooms\rm_survivalmode</room>
+      <rooms name="stage1">
+        <room>rooms\rm_120bpm_david</room>
+        <room>rooms\rm_stage1_2</room>
+        <room>rooms\rm_stage1</room>
+        <room>rooms\rm_titofight</room>
+      </rooms>
+      <rooms name="stage2">
+        <room>rooms\rm_120bpmstage2</room>
+        <room>rooms\rm_stage2_1</room>
+        <room>rooms\rm_165bpm_david</room>
+        <room>rooms\rm_yuutoshmup</room>
+        <room>rooms\rm_yuutoboss_</room>
+        <room>rooms\rm_120bpm2</room>
+        <room>rooms\rm_stage2_2</room>
+        <room>rooms\rm_defaultfight</room>
+      </rooms>
+      <rooms name="stage3">
+        <room>rooms\rm_120bpmstage3</room>
+        <room>rooms\rm_stage3_1</room>
+        <room>rooms\rm_repeat3_1</room>
+        <room>rooms\rm_stage3cutscene_</room>
+        <room>rooms\rm_stage3_2</room>
+        <room>rooms\rm_120bpmliz</room>
+        <room>rooms\rm_lizfight</room>
+      </rooms>
+      <rooms name="stage4">
+        <room>rooms\rm_120bpmstage4</room>
+        <room>rooms\rm_stage4_1</room>
+        <room>rooms\rm_stage42120</room>
+        <room>rooms\rm_stage4_2</room>
+        <room>rooms\rm_140bpm_david</room>
+        <room>rooms\rm_kamurofight</room>
+      </rooms>
+      <rooms name="stage5">
+        <room>rooms\rm_120bpmstage5</room>
+        <room>rooms\rm_stage5</room>
+        <room>rooms\rm_140bpmfinal</room>
+        <room>rooms\rm_billfight</room>
+        <room>rooms\rm_end1</room>
+        <room>rooms\rm_end2</room>
+      </rooms>
+      <rooms name="survival">
+        <room>rooms\rm_165bpmsurvival</room>
+        <room>rooms\rm_survivalmode</room>
+        <room>rooms\rm_louiefight</room>
+      </rooms>
       <room>rooms\rm_survivalmodeold</room>
       <room>rooms\rm_louiefightold</room>
       <room>rooms\rm_templevelone</room>

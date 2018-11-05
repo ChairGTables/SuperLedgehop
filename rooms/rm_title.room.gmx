@@ -3,7 +3,7 @@
   <caption></caption>
   <width>960</width>
   <height>2700</height>
-  <vsnap>1</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -54,9 +54,22 @@
     <instance objName="obj_title" x="256" y="64" name="inst_B52BEA48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamepad" x="32" y="32" name="inst_09C813A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_titlecamera" x="832" y="192" name="inst_A87C6BE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stage1" x="224" y="430" name="inst_D261FF34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stage2" x="480" y="439" name="inst_5BF2186B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_survivalmenu" x="736" y="436" name="inst_5BA5CD82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_storymode" x="192" y="451" name="inst_D7850D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_survivalmenu" x="384" y="452" name="inst_53FB2682" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_options" x="576" y="458" name="inst_212EE44D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quitgame" x="768" y="458" name="inst_5F36D18F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_languages" x="352" y="64" name="inst_43677AD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_languagelist" x="640" y="64" name="inst_16F117D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fullscreen" x="352" y="128" name="inst_E270F816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fullscreenoffon" x="640" y="128" name="inst_A7D3BE2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cutscenesoffon" x="640" y="192" name="inst_0DE0AE53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cutscenes" x="352" y="192" name="inst_FCB155F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_musicvolumetext" x="352" y="256" name="inst_9EEDF2C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sfxvolumetext" x="352" y="320" name="inst_496AF92F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_voicevolumetext" x="352" y="384" name="inst_47623532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exitoptions" x="480" y="512" name="inst_69C6E319" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_settingsarrow" x="1088" y="400" name="inst_FD808D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_settingsarrow" x="1088" y="320" name="inst_ACB5FAFE" locked="0" code="left = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
