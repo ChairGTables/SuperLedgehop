@@ -35,7 +35,37 @@ obj_dialogue.antagonist = "kamuro";
 //set limit
 global.messageLimit = 4;
 
+if (global.language == 1)           //spanish
+{
+global.messageArray[0] = "Eh!? Quien esta ahí?";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
 
+
+global.messageArray[1] = "Qué estás haciendo aquí?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Solo estoy pasando!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Me dirijo a ese GRAN edificio del gobierno!";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Eh...";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";    
+}
+else                                //defaults to english
+{
 global.messageArray[0] = "Huh!? Who goes there?";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
@@ -62,6 +92,8 @@ global.messageArray[4] = "Huh...";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "neutral";
+}
+
 </string>
           </argument>
         </arguments>
