@@ -33,6 +33,33 @@ dialogue.mini = 1;
 //set limit
 global.messageLimit = 2;
 
+switch( global.language )
+{
+
+case 1:
+
+global.messageArray[0] = "Recuerda, ¡siempre puedes reflejar
+simplemente presionando en lugar de manteniendo!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "happy";
+
+
+global.messageArray[1] = "¡Esto gasta menos tu medidor de SH que absorber!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "¡SI! ¡¡YA LO SE!!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "happy";
+
+break;
+
+default:
+
+
 global.messageArray[0] = "Remember, you can always reflect by just
 pressing instead of holding!";
 global.categoryArray[0] = "right";
@@ -50,6 +77,8 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "happy";
 
+break;
+}
 </string>
           </argument>
         </arguments>
