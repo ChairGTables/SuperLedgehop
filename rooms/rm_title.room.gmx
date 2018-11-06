@@ -3,7 +3,7 @@
   <caption></caption>
   <width>960</width>
   <height>2700</height>
-  <vsnap>16</vsnap>
+  <vsnap>2</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -70,6 +70,7 @@
     <instance objName="obj_exitoptions" x="480" y="512" name="inst_69C6E319" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_settingsarrow" x="1088" y="400" name="inst_FD808D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_settingsarrow" x="1088" y="320" name="inst_ACB5FAFE" locked="0" code="left = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_musicvolumebar" x="544" y="268" name="inst_C558FF28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
