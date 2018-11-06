@@ -183,6 +183,8 @@ index = 0;
             <kind>1</kind>
             <string>texture_set_interpolation(false);
 
+instance_create(x, y, obj_blackfadein);
+
 global.isGamepad = true;
 
 global.titleSelection = 0;
@@ -190,8 +192,7 @@ global.titleState = 0;
 
 global.isCutscene = false;
 global.stageState = 0;
-global.language = 1;
-global.disableCutscenes = 0;
+
 
 global.remaining = 0;
 global.destroyed = 0;
@@ -347,26 +348,7 @@ global.chizuruShootRest = 0;
 // Resync toggle
 global.resyncing = false; // When true all objects will resync
 
-//////////////////////////
-//Sound emitters
-////////////////////////////
-// Volumes
-global.masterVolume  = 1;
-global.musicVolume   = 1;
-global.effectsVolume = 1;
-global.voiceVolume   = 1;
-global.volumeHold = 1;
 
-// Sound emitters
-global.musicEmitter   = audio_emitter_create();
-global.effectsEmitter = audio_emitter_create();
-global.voiceEmitter   = audio_emitter_create();
-
-// Set volumes of emitters
-audio_master_gain (global.masterVolume);
-audio_emitter_gain(global.musicEmitter,   global.musicVolume);
-audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
-audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
 
 
 //Wave
