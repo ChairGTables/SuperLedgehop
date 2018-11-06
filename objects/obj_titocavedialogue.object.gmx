@@ -33,6 +33,54 @@ dialogue.mini = 1;
 //set limit
 global.messageLimit = 6;
 
+switch(global.langauge)
+{
+case 1:
+global.messageArray[0] = "¿¡Qué hizo que tardaras tanto en esa cueva!?
+¡Estaba super preocupado!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "¿¡Q-QUE!?
+¿¡Acaso no te hice estallar!?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = " ¡Pfft! Si hubiese usado
+todo mi poder, TU hubieras estallado.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "curious";
+
+global.messageArray[3] = "¡Pero en serio creí que te había pasado algo!
+¡Escuche a alguien gritar en esa cueva!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "Oh, creo que hay un fugitivo
+que quedó atrapado.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "¡Espera! ¿¡UN CAVERNÍCOLA!? ¡Esta es una rara
+oportunidad que aumentará mis puntos de Tío genial!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "¡Volveré en un momento!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "sad";
+break;
+
+default:
 global.messageArray[0] = "The heck took you so long in that cave!?
 I got super duper worried!";
 global.categoryArray[0] = "right";
@@ -75,6 +123,8 @@ global.messageArray[6] = "I'll be right back!";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "sad";
+break;
+}
 </string>
           </argument>
         </arguments>

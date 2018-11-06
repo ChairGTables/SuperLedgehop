@@ -35,7 +35,39 @@ obj_dialogue.antagonist = "unknown";
 //set limit
 global.messageLimit = 4;
 
+switch(global.language)
+{
 
+case 1:
+global.messageArray[0] = "Sabes, ¡almenos podrias APUNTAR tus lasers!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "¡S-Silencio! Estaba tratando de engañarte, ¿¡está bien!?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Ohhhhhhh...claaaaaro.........";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "¡Está bien! ¡Está bien!
+¡Yo apuntaré esta vez! ¡Tu lo pediste!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "¡Así que ahora pagarás!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+break;
+
+default:
 global.messageArray[0] = "You know, you should at least AIM your lasers!";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "happy";
@@ -62,6 +94,9 @@ global.messageArray[4] = "Now. you'll pay!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
+break;
+
+}
 </string>
           </argument>
         </arguments>

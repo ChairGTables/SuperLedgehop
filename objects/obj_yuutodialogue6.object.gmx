@@ -35,7 +35,37 @@ obj_dialogue.antagonist = "unknown";
 //set limit
 global.messageLimit = 4;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "¿En serio?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
 
+
+global.messageArray[1] = "¿Ni siquiera estás intentando nada nuevo?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "¡Fácil!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "¡Parece que ya capte tus estrategias!";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "¿Vas a seguir escondiéndote?";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+break;
+
+default:
 global.messageArray[0] = "Seriously?";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "happy";
@@ -61,6 +91,8 @@ global.messageArray[4] = "Are you gonna keep hiding around?";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
+break;
+}
 </string>
           </argument>
         </arguments>

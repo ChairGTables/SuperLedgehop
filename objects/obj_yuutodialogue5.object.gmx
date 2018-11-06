@@ -35,7 +35,38 @@ obj_dialogue.antagonist = "unknown";
 //set limit
 global.messageLimit = 4;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Está bien, concentraste todos tus disparos en una sola área.";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
 
+
+global.messageArray[1] = "¡Eso lo hizo muy fácil!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Vamos. ¿Dónde está tu estrategia?";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "¡Arrrghhh!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "¡A-Aún no termino!
+Ahora, ¡te enfrentaras a mi poder!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+break;
+
+default:
 global.messageArray[0] = "Okay, you focused all your shots in one area.";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "happy";
@@ -62,6 +93,8 @@ Now, you'll face my power!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
+break;
+}
 </string>
           </argument>
         </arguments>

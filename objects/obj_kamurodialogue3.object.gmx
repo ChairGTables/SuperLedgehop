@@ -34,6 +34,36 @@ obj_dialogue.boss = 1;
 //set limit
 global.messageLimit = 3;
 
+switch(global.language)
+{
+
+case 1:
+
+global.messageArray[0] = "¿¡QUÉ DEMONIOS ES ESO!?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Ni Siquiera yo lo se.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "angry";
+
+
+global.messageArray[2] = "Pero no puedo desperdiciar mas tiempo contigo.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "¡Hazla pedazos!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+break;
+
+default:
 
 global.messageArray[0] = "WHAT THE HECK IS THAT!?";
 global.categoryArray[0] = "left";
@@ -56,6 +86,10 @@ global.messageArray[3] = "Blast her into smithereens!";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "neutral";
+
+break;
+
+}
 </string>
           </argument>
         </arguments>
