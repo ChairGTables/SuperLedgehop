@@ -81,16 +81,16 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.musicVolume = (mouse_x - x) / 2;
+            <string>global.musicVolume = ( (mouse_x - x) / 2 ) / 100;
 
-if (global.musicVolume &lt; 0)
+if (global.musicVolume &lt; 0.05)
 {
     global.musicVolume = 0;
 }
 
-if (global.musicVolume &gt; 100)
+if (global.musicVolume &gt; 0.95)
 {
-    global.musicVolume = 100;
+    global.musicVolume = 1;
 }
 
 audio_emitter_gain(global.musicEmitter, global.musicVolume);
@@ -117,7 +117,7 @@ audio_emitter_gain(global.musicEmitter, global.musicVolume);
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_sprite(spr_volumecircle, 0, x + (global.musicVolume * 2), y);
+draw_sprite(spr_volumecircle, 0, x + ( (global.musicVolume * 2) * 100), y);
 </string>
           </argument>
         </arguments>

@@ -3,7 +3,7 @@
   <caption></caption>
   <width>960</width>
   <height>2700</height>
-  <vsnap>2</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -70,7 +70,14 @@
     <instance objName="obj_exitoptions" x="480" y="512" name="inst_69C6E319" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_settingsarrow" x="1088" y="400" name="inst_FD808D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_settingsarrow" x="1088" y="320" name="inst_ACB5FAFE" locked="0" code="left = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_musicvolumebar" x="544" y="268" name="inst_C558FF28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_musicvolumebar" x="544" y="256" name="inst_C558FF28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sfxvolumebar" x="544" y="320" name="inst_34445C30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_voicevolumebar" x="544" y="384" name="inst_185E007D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stage1" x="96" y="384" name="inst_33A9F75B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stage2" x="288" y="384" name="inst_73E9C03A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stage3" x="480" y="384" name="inst_C734DED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stage4" x="672" y="384" name="inst_500F4384" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_finale" x="864" y="384" name="inst_E213A289" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

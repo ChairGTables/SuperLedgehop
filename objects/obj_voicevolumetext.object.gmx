@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.titleSelection == 1)
+            <string>if (global.titleSelection == 5)
 {
     image_index = 1;
 }

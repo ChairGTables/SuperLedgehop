@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.titleSelection == 0)
+            <string>if (global.titleSelection == 0 || global.titleState == 2)
 {
     image_index = 1;
 }
@@ -57,7 +57,7 @@ else
     image_index = 0;
 }
 
-if (global.titleState == 0)
+if (global.titleState == 0 || global.titleState == 2)
 {
     visible = 1;
 }
@@ -91,6 +91,39 @@ else
 {
     global.titleSelection = 0;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2)
+{
+    global.titleState = 0;
+    global.titleSelection = 0;
+}
+else if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 0)
+{
+    global.titleState = 2;
+    global.titleSelection = 0;
+}
+
 </string>
           </argument>
         </arguments>

@@ -106,6 +106,7 @@
         <sound>sound\snd_superledgehopone</sound>
         <sound>sound\snd_superledgehoptwo</sound>
         <sound>sound\snd_chizurumissioncomplete</sound>
+        <sound>sound\snd_chizuruvoicesample</sound>
       </sounds>
       <sounds name="generic">
         <sound>sound\snd_death1</sound>
@@ -354,6 +355,10 @@
         <sprite>sprites\spr_wowyoudied</sprite>
         <sprite>sprites\spr_stage1</sprite>
         <sprite>sprites\spr_stage2</sprite>
+        <sprite>sprites\spr_stage3</sprite>
+        <sprite>sprites\spr_stage4</sprite>
+        <sprite>sprites\spr_back</sprite>
+        <sprite>sprites\spr_finale</sprite>
         <sprite>sprites\spr_survivalmenu</sprite>
         <sprite>sprites\sprite142</sprite>
         <sprite>sprites\spr_hporb</sprite>
@@ -711,6 +716,7 @@
       <script>scripts\scr_musicfadekill.gml</script>
       <script>scripts\scr_cautiontiming.gml</script>
       <script>scripts\scr_laststageswitch.gml</script>
+      <script>scripts\scr_titleproceed.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -787,6 +793,10 @@
         <object>objects\obj_protagonisttalk</object>
         <object>objects\obj_stage1</object>
         <object>objects\obj_stage2</object>
+        <object>objects\obj_stage3</object>
+        <object>objects\obj_stage4</object>
+        <object>objects\obj_finale</object>
+        <object>objects\obj_stageback</object>
         <object>objects\obj_storymode</object>
         <object>objects\obj_survivalmenu</object>
         <object>objects\obj_options</object>
@@ -802,6 +812,8 @@
         <object>objects\obj_fullscreenoffon</object>
         <object>objects\obj_cutscenesoffon</object>
         <object>objects\obj_musicvolumebar</object>
+        <object>objects\obj_sfxvolumebar</object>
+        <object>objects\obj_voicevolumebar</object>
         <object>objects\obj_settingsarrow</object>
         <object>objects\obj_survivalmode</object>
         <object>objects\obj_title</object>
