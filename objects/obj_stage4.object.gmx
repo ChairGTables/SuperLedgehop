@@ -113,7 +113,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_titleproceed);
+            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2)
+{
+    script_execute(scr_titleproceed);
+}
 </string>
           </argument>
         </arguments>

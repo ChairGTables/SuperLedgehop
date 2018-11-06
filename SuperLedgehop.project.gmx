@@ -94,6 +94,7 @@
         <sound>sound\snd_endcutscene2</sound>
         <sound>sound\snd_endcutscene3</sound>
         <sound>sound\snd_endcutscene4</sound>
+        <sound>sound\snd_lamedimension</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -338,6 +339,7 @@
         <sprite>sprites\spr_spaceback</sprite>
         <sprite>sprites\spr_badend</sprite>
         <sprite>sprites\spr_laststagefade</sprite>
+        <sprite>sprites\spr_defaultexplosion</sprite>
       </sprites>
       <sprites name="functionality">
         <sprite>sprites\spr_hudbars</sprite>
@@ -390,6 +392,13 @@
         <sprite>sprites\spr_settingsarrow</sprite>
         <sprite>sprites\spr_volumecircle</sprite>
         <sprite>sprites\spr_volumemeter</sprite>
+        <sprite>sprites\spr_ldportal</sprite>
+        <sprite>sprites\spr_ldsillhoute</sprite>
+        <sprite>sprites\spr_ldtext</sprite>
+        <sprite>sprites\spr_firstlanguagecircle</sprite>
+        <sprite>sprites\spr_firstlanguage</sprite>
+        <sprite>sprites\spr_fullscreeninitial</sprite>
+        <sprite>sprites\spr_windowedinitial</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -831,6 +840,17 @@
         <object>objects\obj_chizuruspawner</object>
         <object>objects\obj_musicfadeout</object>
         <object>objects\obj_creditsbox</object>
+        <object>objects\obj_lamelogo</object>
+        <object>objects\obj_ldoutline</object>
+        <object>objects\obj_lametext</object>
+        <object>objects\obj_firstlanguagecircle</object>
+        <object>objects\obj_firstfullscreencircle</object>
+        <object>objects\obj_fullscreeninitial</object>
+        <object>objects\obj_windowedinitial</object>
+        <object>objects\obj_english</object>
+        <object>objects\obj_espanol</object>
+        <object>objects\obj_japanese</object>
+        <object>objects\obj_chamoru</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_smallcircle</object>
@@ -843,6 +863,7 @@
         <object>objects\obj_hitsweat</object>
         <object>objects\obj_whitefadein</object>
         <object>objects\obj_whitebackground</object>
+        <object>objects\obj_whitefadeout</object>
         <object>objects\obj_whitefadeinslow</object>
         <object>objects\obj_blackfadein</object>
         <object>objects\obj_blackfadeout</object>
@@ -871,6 +892,8 @@
         <object>objects\obj_warnbox</object>
         <object>objects\obj_whiteenlarge</object>
         <object>objects\obj_laststagefade</object>
+        <object>objects\obj_defaultexplosion</object>
+        <object>objects\obj_whiteblocker</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -1142,6 +1165,9 @@
   </timelines>
   <rooms name="rooms">
     <rooms name="master">
+      <room>rooms\rm_initiallanguage</room>
+      <room>rooms\rm_initialfullscreen</room>
+      <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
       <rooms name="stage1">
