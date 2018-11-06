@@ -35,8 +35,10 @@ obj_dialogue.antagonist = "kamuro";
 //set limit
 global.messageLimit = 4;
 
-if (global.language == 1)           //spanish
+switch (global.language)
 {
+//Spanish
+case 1:
 global.messageArray[0] = "Eh!? Quien esta ahí?";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
@@ -63,9 +65,11 @@ global.messageArray[4] = "Eh...";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "neutral";    
-}
-else                                //defaults to english
-{
+
+break;
+
+//English
+default:
 global.messageArray[0] = "Huh!? Who goes there?";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
@@ -92,8 +96,9 @@ global.messageArray[4] = "Huh...";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "neutral";
-}
+break;
 
+}
 </string>
           </argument>
         </arguments>

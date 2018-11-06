@@ -383,6 +383,8 @@
         <sprite>sprites\spr_voicevolume</sprite>
         <sprite>sprites\spr_sfxvolume</sprite>
         <sprite>sprites\spr_settingsarrow</sprite>
+        <sprite>sprites\spr_volumecircle</sprite>
+        <sprite>sprites\spr_volumemeter</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -799,6 +801,7 @@
         <object>objects\obj_languagelist</object>
         <object>objects\obj_fullscreenoffon</object>
         <object>objects\obj_cutscenesoffon</object>
+        <object>objects\obj_musicvolumebar</object>
         <object>objects\obj_settingsarrow</object>
         <object>objects\obj_survivalmode</object>
         <object>objects\obj_title</object>
