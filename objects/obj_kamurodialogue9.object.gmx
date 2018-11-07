@@ -33,7 +33,95 @@ obj_dialogue.antagonist = "kamuro";
 //set limit
 global.messageLimit = 14;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Ngh!!
+E-Eres demasiado fuerte!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
 
+
+global.messageArray[1] = "¡P-Pero no puedo perder!
+No quiero que esta ciudad muera.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Kamuro, escucha por una vez.";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "El gobernador está usando al senador como fachada.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Era su plan desde el comienzo que toda la culpa fuera al senador...";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Y salirse con la tuya después de todo.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "¡Estúpida!
+¡Eso no cambia el hecho de que el senador me engañase!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Eh, el senador no sabe nada sobre el plan del gobernador Bill.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Estoy segura de que mi hermano es un senador bueno, pensando que el plan
+de ahorro de energía ayudaría a todo el mundo y por lo tanto estaría de acuerdo.";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Puede que te haya pedido personalmente que tomaras parte,
+pero no sabe nada sobre la verdad.";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Ngh, ¿tal vez me he puesto en ridículo por secuestrar a la persona
+incorrecta?";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = " Aún me cuesta creer todo esto.";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "Tengo toda la evidencia necesaria para demostrarte que mi hermano es una
+buena persona. ¿Quieres echar un vistazo?";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "Sí, está bien.";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "¡ESPERA! ¡CUIDADO!";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "angry";
+
+break;
+
+default:
 global.messageArray[0] = "Nhhh....
 Y-You're too strong...";
 global.categoryArray[0] = "right";
@@ -115,6 +203,9 @@ global.messageArray[14] = "H-HUH!?";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "neutral";
 global.emotionAntagonistArray[14] = "angry";
+
+break;
+}
 </string>
           </argument>
         </arguments>
