@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = window_get_fullscreen() + 1;
+            <string>script_execute(scr_menulanguage);
+
+image_index = window_get_fullscreen() + 1;
 
 if (global.titleState == 1)
 {

@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = global.disableCutscenes;
+            <string>script_execute(scr_menulanguage);
+
+image_index = global.disableCutscenes;
 
 if (global.titleState == 1)
 {

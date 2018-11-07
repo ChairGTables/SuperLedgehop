@@ -76,7 +76,7 @@ if (global.titleSelection == 0)
     if (instance_exists(obj_languagelist))
     {
         y = obj_languagelist.y;
-        x = obj_languagelist.x + (100 * image_xscale);
+        x = obj_languagelist.x + (115 * image_xscale);
     }
 }
 if (global.titleSelection == 1)
@@ -84,7 +84,7 @@ if (global.titleSelection == 1)
     if (instance_exists(obj_fullscreenoffon))
     {
         y = obj_fullscreenoffon.y;
-        x = obj_fullscreenoffon.x + (100 * image_xscale);
+        x = obj_fullscreenoffon.x + (115 * image_xscale);
     }
 }
 if (global.titleSelection == 2)
@@ -92,7 +92,7 @@ if (global.titleSelection == 2)
     if (instance_exists(obj_cutscenesoffon))
     {
         y = obj_cutscenesoffon.y;
-        x = obj_cutscenesoffon.x + (100 * image_xscale);
+        x = obj_cutscenesoffon.x + (115 * image_xscale);
     }
 }
 </string>
