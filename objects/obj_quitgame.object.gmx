@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.titleSelection == 3 &amp;&amp; global.titleState == 0)
+            <string>script_execute(scr_menulanguage);
+
+if (global.titleSelection == 3 &amp;&amp; global.titleState == 0)
 {
     image_index = 1;
 }

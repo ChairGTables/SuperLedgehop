@@ -355,12 +355,6 @@
         <sprite>sprites\spr_controlscheme</sprite>
         <sprite>sprites\spr_caution</sprite>
         <sprite>sprites\spr_wowyoudied</sprite>
-        <sprite>sprites\spr_stage1</sprite>
-        <sprite>sprites\spr_stage2</sprite>
-        <sprite>sprites\spr_stage3</sprite>
-        <sprite>sprites\spr_stage4</sprite>
-        <sprite>sprites\spr_back</sprite>
-        <sprite>sprites\spr_finale</sprite>
         <sprite>sprites\spr_survivalmenu</sprite>
         <sprite>sprites\sprite142</sprite>
         <sprite>sprites\spr_hporb</sprite>
@@ -377,28 +371,56 @@
         <sprite>sprites\spr_groundsignal</sprite>
         <sprite>sprites\spr_colorkeys</sprite>
         <sprite>sprites\spr_laststagebarrier</sprite>
-        <sprite>sprites\spr_storymode</sprite>
-        <sprite>sprites\spr_thugwars</sprite>
-        <sprite>sprites\spr_options</sprite>
-        <sprite>sprites\spr_exit</sprite>
-        <sprite>sprites\spr_language</sprite>
-        <sprite>sprites\spr_languagelist</sprite>
-        <sprite>sprites\spr_fullscreen</sprite>
-        <sprite>sprites\spr_cutscenes</sprite>
-        <sprite>sprites\spr_offon</sprite>
-        <sprite>sprites\spr_musicvolume</sprite>
-        <sprite>sprites\spr_voicevolume</sprite>
-        <sprite>sprites\spr_sfxvolume</sprite>
+        <sprite>sprites\spr_volumemeter</sprite>
         <sprite>sprites\spr_settingsarrow</sprite>
         <sprite>sprites\spr_volumecircle</sprite>
-        <sprite>sprites\spr_volumemeter</sprite>
         <sprite>sprites\spr_ldportal</sprite>
         <sprite>sprites\spr_ldsillhoute</sprite>
         <sprite>sprites\spr_ldtext</sprite>
         <sprite>sprites\spr_firstlanguagecircle</sprite>
         <sprite>sprites\spr_firstlanguage</sprite>
-        <sprite>sprites\spr_fullscreeninitial</sprite>
-        <sprite>sprites\spr_windowedinitial</sprite>
+        <sprites name="mainmenu">
+          <sprites name="default">
+            <sprite>sprites\spr_stage1</sprite>
+            <sprite>sprites\spr_stage2</sprite>
+            <sprite>sprites\spr_stage3</sprite>
+            <sprite>sprites\spr_stage4</sprite>
+            <sprite>sprites\spr_finale</sprite>
+            <sprite>sprites\spr_back</sprite>
+            <sprite>sprites\spr_storymode</sprite>
+            <sprite>sprites\spr_thugwars</sprite>
+            <sprite>sprites\spr_options</sprite>
+            <sprite>sprites\spr_exit</sprite>
+            <sprite>sprites\spr_language</sprite>
+            <sprite>sprites\spr_languagelist</sprite>
+            <sprite>sprites\spr_cutscenes</sprite>
+            <sprite>sprites\spr_fullscreen</sprite>
+            <sprite>sprites\spr_offon</sprite>
+            <sprite>sprites\spr_musicvolume</sprite>
+            <sprite>sprites\spr_sfxvolume</sprite>
+            <sprite>sprites\spr_voicevolume</sprite>
+            <sprite>sprites\spr_fullscreeninitial</sprite>
+            <sprite>sprites\spr_windowedinitial</sprite>
+          </sprites>
+          <sprites name="spanish">
+            <sprite>sprites\spr_stage1spanish</sprite>
+            <sprite>sprites\spr_stage2spanish</sprite>
+            <sprite>sprites\spr_stage3spanish</sprite>
+            <sprite>sprites\spr_stage4spanish</sprite>
+            <sprite>sprites\spr_finalespanish</sprite>
+            <sprite>sprites\spr_storymodespanish</sprite>
+            <sprite>sprites\spr_thugwarsspanish</sprite>
+            <sprite>sprites\spr_optionsspanish</sprite>
+            <sprite>sprites\spr_voicevolumespanish</sprite>
+            <sprite>sprites\spr_exitspanish</sprite>
+            <sprite>sprites\spr_musicvolumespanish</sprite>
+            <sprite>sprites\spr_sfxvolumespanish</sprite>
+            <sprite>sprites\spr_offonspanish</sprite>
+            <sprite>sprites\spr_languagespanish</sprite>
+            <sprite>sprites\spr_cutscenesspanish</sprite>
+            <sprite>sprites\spr_fullscreenspanish</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -726,6 +748,7 @@
       <script>scripts\scr_cautiontiming.gml</script>
       <script>scripts\scr_laststageswitch.gml</script>
       <script>scripts\scr_titleproceed.gml</script>
+      <script>scripts\scr_menulanguage.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
