@@ -62,6 +62,29 @@ dialogue.mini = 1;
 //set limit
 global.messageLimit = 2;
 
+switch (global.language)
+{
+//Spanish
+case 1:
+global.messageArray[0] = "¡Por aqui no! ¡Escapar por la puerta
+principal sería suicidio!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "¿A que refieres? ¡Puedo con todos los policías!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "¡N-No! ¡Me niego!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+break;
+
+default:
 global.messageArray[0] = "Not there! Escaping through
 the front door is basically suicide!";
 global.categoryArray[0] = "right";
@@ -79,6 +102,8 @@ global.messageArray[2] = "N-No! I refuse!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "sad";
+break;
+}
 
 instance_destroy(self);
 </string>

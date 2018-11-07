@@ -776,6 +776,7 @@
       <font>fonts\fnt_nameforeign</font>
       <font>fonts\fnt_talk</font>
       <font>fonts\fnt_talkforeign</font>
+      <font>fonts\fnt_namejapanese</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -1193,6 +1194,7 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_dialoguetest</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1_2</room>
         <room>rooms\rm_stage1</room>
@@ -1249,7 +1251,6 @@
     </rooms>
     <rooms name="sonii">
       <room>rooms\rm_sampleroom_sonii</room>
-      <room>rooms\rm_dialoguetest</room>
     </rooms>
     <rooms name="ultran">
       <room>rooms\rm_sampleroom_ultran</room>

@@ -34,7 +34,65 @@ dialogue.antagonist = "bill";
 //set limit
 global.messageLimit = 9;
 
+switch (global.language)
+{
+case 1:
+global.messageArray[0] = "自家製ドットフォントは ¿¡Dónde está el senador!?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
 
+
+global.messageArray[1] = "Oh-ho.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "¿No debería ser yo quien te pregunte eso, ex-senador?";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "¿¡A-A que te refieres, governador!?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Secuestraste a mi pequeño senador, ¿o no?";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "¿¡Estas demente!?";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "¿Por qué lo haría?";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Una vez más, ¿no debería ser yo quien te pregunte eso?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "¿Acaso quieres venganza después de que te inculpe?";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "¡Como te atreves!";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+break;
+
+default:
 global.messageArray[0] = "Where's the senator!?";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "angry";
@@ -89,6 +147,7 @@ global.messageArray[9] = "Why you piece of trash!";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "angry";
 global.emotionAntagonistArray[9] = "neutral";
+}
 </string>
           </argument>
         </arguments>
