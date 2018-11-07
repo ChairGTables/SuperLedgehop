@@ -33,7 +33,27 @@ obj_dialogue.antagonist = "bill";
 //set limit
 global.messageLimit = 2;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Je je, así que han averiguado la verdad.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
 
+
+global.messageArray[1] = "Lo siento, pero no puedo dejar que el público sepa sobre ésto.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "¡Mueran!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
+default:
 global.messageArray[0] = "Heh, so you both figured out the truth.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "angry";
@@ -49,6 +69,8 @@ global.messageArray[2] = "Die!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
+break;
+}
 </string>
           </argument>
         </arguments>

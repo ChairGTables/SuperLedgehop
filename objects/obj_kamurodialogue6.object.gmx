@@ -33,6 +33,81 @@ state = 0;
 //set limit
 global.messageLimit = 12;
 
+switch(global.language)
+{
+case 1:
+
+global.messageArray[0] = "¡¡Ngh!!
+¡E-Eres demasiado fuerte!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "¡P-Pero no puedo perder!  No quiero que
+esta ciudad muera...";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "¡Cállate! ¡Date prisa y dime dónde
+está mi hermano mayor!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Escucha, te lo he estado diciendo...";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Tu hermano va a dejar la ciudad en ruinas.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "¡No, no es cierto!";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Suelta la lengua de una vez, caraqueso.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Bueno, como honor a mi derrota...";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Te lo diré.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Pero...";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Bajo ninguna circunstancia...";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "Debes dejarle destruir nuestra ciudad...";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "Su posición es...";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "angry";
+break;
+
+default:
 
 global.messageArray[0] = "Nhhh....
 Y-You're too strong...";
@@ -101,6 +176,8 @@ global.messageArray[12] = "His location is...";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "angry";
 global.emotionAntagonistArray[12] = "angry";
+break;
+}
 </string>
           </argument>
         </arguments>

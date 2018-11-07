@@ -33,7 +33,114 @@ obj_dialogue.boss = 1;
 //set limit
 global.messageLimit = 18;
 
+switch(global.language)
+{
+case 1:
 
+global.messageArray[0] = "¡Esto es el fin para tí!
+¡Dame a mi hermano mayor!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "¡Idiotas, no tienen ni idea de lo que están haciendo!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = " ¡No puedo dejar que sus acciones corruptas continúen más!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "¡Eres corrupta por secuestrar al senador!
+¿¡Dónde está!?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "¡Ja! ¡No te lo voy a decir!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = " ¡He encerrado al senador donde se puede pudrir y morir!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "¡Tal y como me hicieron a mí!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "¡Eso es porque eres una mala persona!";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "Una vez más, no tienes ni idea de lo que el gobierno
+está planeando detrás de todo esto.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = " Si tu hermano vive...";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = " ¡Esta ciudad está muerta!";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "¿La ciudad va a morir?";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "sad";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "Exactamente. Todo lo que has visto en la
+televisión es mentira.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "sad";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "Tu hermano quiere que todo el mundo muera.";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "sad";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "¡Ja! ¿Crees que soy lo suficientemente estúpida
+como para escucharte?";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "Bueno, he intentado decirte la verdad.";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "Pero, supongo que nunca aprenderás.";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "angry";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = " ¡Te quemaré a tí y a todos éstos estúpidos!";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "angry";
+global.emotionAntagonistArray[17] = "angry";
+
+global.messageArray[18] = "¡Ahógate en llamas fundentes!";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "angry";
+global.emotionAntagonistArray[18] = "angry";
+
+break;
+
+default:
 global.messageArray[0] = "This is the end of the line for you!
 Give me my big brother!";
 global.categoryArray[0] = "left";
@@ -133,6 +240,9 @@ global.messageArray[18] = "Drown in melting flames!";
 global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "angry";
+
+break;
+}
 </string>
           </argument>
         </arguments>

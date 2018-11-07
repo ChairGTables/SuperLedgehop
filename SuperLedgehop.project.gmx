@@ -1170,6 +1170,7 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_dialoguetest</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1_2</room>
         <room>rooms\rm_stage1</room>
@@ -1226,7 +1227,6 @@
     </rooms>
     <rooms name="sonii">
       <room>rooms\rm_sampleroom_sonii</room>
-      <room>rooms\rm_dialoguetest</room>
     </rooms>
     <rooms name="ultran">
       <room>rooms\rm_sampleroom_ultran</room>

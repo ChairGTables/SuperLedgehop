@@ -38,7 +38,44 @@ dialogue.auto = 1;
 //set limit
 global.messageLimit = 5;
 
+switch(global.language)
+{
+case 1:
 
+global.messageArray[0] = "Señor, Logre atrapar uno.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Hmm, parece que puedes hacer bien tu trabajo por lo menos una vez.";
+global.categoryArray[1] = "out";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = " ¿Dónde está el resto?";
+global.categoryArray[2] = "out";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Señor, lo lamento. El resto escapo.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "¿¡Entonces que esperan!?";
+global.categoryArray[4] = "out";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Todos, ¡dispérsense!";
+global.categoryArray[5] = "out";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+break;
+
+default:
 global.messageArray[0] = "Sir! I managed to catch one!";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
@@ -70,6 +107,8 @@ global.messageArray[5] = "Everyone! Spread out!";
 global.categoryArray[5] = "out";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "neutral";
+break;
+}
 </string>
           </argument>
         </arguments>
