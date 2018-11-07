@@ -38,7 +38,21 @@ dialogue.auto = 1;
 //set limit
 global.messageLimit = 1;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Tito, lo lamento.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
 
+global.messageArray[1] = "Solo hago lo que las personas quieren.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+default:
 global.messageArray[0] = "Sorry, Tito.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
@@ -48,6 +62,8 @@ global.messageArray[1] = "I'm only doing what people wanted.";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
+break;
+}
 </string>
           </argument>
         </arguments>

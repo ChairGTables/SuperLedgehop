@@ -33,7 +33,86 @@ obj_dialogue.antagonist = "bill";
 //set limit
 global.messageLimit = 13;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "A-Aah...";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
 
+
+global.messageArray[1] = "¡Rindete! ¡Ya perdiste!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Aha...";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "¡AHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHA
+AHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHHAAHAHHAAHAHAHAHAHHA!!!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "¿Que demonios?";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "Puede que haya perdido,";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "¡Pero tú también perdiste!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "Sabes que si me matas, ¡estarás cometiendo uno de
+los mayores crímenes en el mundo!";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "sad";
+
+
+global.messageArray[8] = "Pfft, ¿en serio creiste que te mataria?";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "sad";
+
+global.messageArray[9] = "¡Haha! ¡No te atreverias! ¡No tienes las agallas!";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "happy";
+global.emotionAntagonistArray[9] = "sad";
+
+global.messageArray[10] = "¡No! Dispara hoy, Amigos Mañana!";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "sad";
+
+global.messageArray[11] = "De ninguna manera me uniré a ti.";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "happy";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "¡No te debo nada!";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "Es una broma.";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "sad";
+break;
+
+default:
 global.messageArray[0] = "A-Aah...";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "angry";
@@ -108,6 +187,8 @@ global.messageArray[13] = "SIKE!!!";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "angry";
 global.emotionAntagonistArray[13] = "sad";
+break;
+}
 </string>
           </argument>
         </arguments>

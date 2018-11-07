@@ -34,7 +34,21 @@ obj_dialogue.antagonist = "bill";
 //set limit
 global.messageLimit = 1;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Ahh. Por fin he capturado a la muchacha.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
 
+global.messageArray[1] = "Y ahora, ¿dónde está mi senador para mi cubierta?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+default:
 global.messageArray[0] = "Ah! I finally caught the wench.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
@@ -44,6 +58,8 @@ global.messageArray[1] = "Now, where's my senator for my cover up.";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
+break;
+}
 </string>
           </argument>
         </arguments>
