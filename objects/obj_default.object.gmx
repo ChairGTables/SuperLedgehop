@@ -34,6 +34,9 @@ global.bossthree = 0;
 hp = 200;
 hpIndex = 2;
 
+safeX = 0;
+safeY = 0;
+
 ready = 0;
 alarm[6] = 60;
 
@@ -126,6 +129,29 @@ if (sprite_index == hS)
     sprite_index = sS;
 }
 image_index = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_enemymoveback);
 </string>
           </argument>
         </arguments>
@@ -371,8 +397,40 @@ if (shootTimer &lt;= 0)
                     audio_play_sound_on (global.effectsEmitter, snd_defaultdash, false, 10); 
                     direction = point_direction(x, y, warn[0].x, warn[0].y);
                     speed = 20;
-                    shootBeat = global.wholeSec * 2;
+                    shootBeat = global.halfSec;
                     shootTimer = shootBeat;
+                }
+                else if (shotCount &gt; 99 &amp;&amp; shotCount &lt; 104)
+                {
+                    for(i = 0; i &lt; 360; i += 30)
+                    {
+                        fire = instance_create(x, y, obj_flame_sonii);
+                        fire.speed = random_range(7,9);
+                        fire.direction = i;
+                        fire.damage = 15;
+                    }
+                    audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
+                    shotCount = 0;
+                    phase = 0;
+                    shootBeat = global.wholeSec;
+                    shootTimer = shootBeat;
+                    
+                    if (instance_exists(warn[0]))
+                    {
+                        instance_destroy(warn[0]);
+                    }
+                    if (instance_exists(warn[1]))
+                    {
+                        instance_destroy(warn[1]);
+                    }
+                    if (instance_exists(warn[2]))
+                    {
+                        instance_destroy(warn[2]);
+                    }
+                    if (instance_exists(warn[3]))
+                    {
+                        instance_destroy(warn[3]);
+                    }
                 }
             }
         }
@@ -418,6 +476,8 @@ if (moveTimer &lt;= 0)
         }
     }
 }
+
+script_execute(scr_truespeedwallcheck);
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -580,13 +640,16 @@ if (rightmomentum &gt; 0)
         {
             shotCount = 0;
             phase = 0;
+            shootBeat = global.wholeSec * 2;
+            shootTimer = shootBeat;
         }
         else
         {
             shotCount += 1;
+            shootBeat = global.quarterSec;
+            shootTimer = shootBeat;
         }
-        shootBeat = global.wholeSec * 2;
-        shootTimer = shootBeat;
+        
         //audio_play_sound_on (global.voiceEmitter, snd_defaultya1, false, 10); 
         instance_destroy(other);
     }

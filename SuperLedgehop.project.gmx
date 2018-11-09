@@ -766,6 +766,8 @@
       <script>scripts\scr_laststageswitch.gml</script>
       <script>scripts\scr_titleproceed.gml</script>
       <script>scripts\scr_menulanguage.gml</script>
+      <script>scripts\scr_truespeedwallcheck.gml</script>
+      <script>scripts\scr_enemymoveback.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -830,6 +832,7 @@
         <object>objects\obj_smolhitbox</object>
         <object>objects\obj_circleeraser</object>
         <object>objects\obj_healmagnet</object>
+        <object>objects\obj_movementtest</object>
       </objects>
       <objects name="functionality">
         <object>objects\obj_antagonisttalk</object>
@@ -1266,6 +1269,7 @@
       <room>rooms\rm_louiefightold</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
+      <room>rooms\rm_walltest</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>

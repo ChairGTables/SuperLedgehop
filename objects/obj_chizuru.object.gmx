@@ -28,6 +28,8 @@
             <string>global.chizurumovex = 0;
 global.chizurumovey = 0;
 
+previousX = 0;
+previousY = 0;
 
 mySpeed = 7;
 analogBoundary = 0.1;
@@ -319,86 +321,28 @@ waveshine = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="2" enumb="7">
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>scr_speedwallcheck</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_speedwallcheck</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>x -= (x - previousX)/3;
+y -= (y - previousY)/3;
+alarm[7] = 2;
+//instance_create(x, y, obj_redcircle);
+</string>
           </argument>
         </arguments>
       </action>
@@ -421,6 +365,14 @@ waveshine = 0;
           <argument>
             <kind>1</kind>
             <string>depth = -y;
+
+//Fix if stuck in wall
+if (!place_meeting(x, y, obj_wall))
+{
+    previousX = x;
+    previousY = y;
+    alarm[7] = 2;
+}
 
 if (global.chizuruhp &lt; 1)
 {
@@ -590,12 +542,30 @@ if(global.isCutscene == false)
 }
 
 
+//Hspeed Vspeed Collisions
+script_execute(scr_truespeedwallcheck);
+
+
 
 //Move object based on its current momentum
-x -= leftmomentum;
-x += rightmomentum;
-y += downmomentum;
-y -= upmomentum;
+if (!place_meeting(x - leftmomentum, y, obj_wall) &amp;&amp; !place_meeting(x - ( leftmomentum / 2), y, obj_wall) )
+{
+    x -= leftmomentum;
+}
+if (!place_meeting(x + rightmomentum, y, obj_wall) &amp;&amp; !place_meeting(x + ( rightmomentum / 2), y, obj_wall) )
+{
+    x += rightmomentum;
+}
+if (!place_meeting(x, y - upmomentum, obj_wall) &amp;&amp; !place_meeting(x, y - ( upmomentum / 2), obj_wall) )
+{
+    y -= upmomentum;
+}
+if (!place_meeting(x, y + downmomentum, obj_wall) &amp;&amp; !place_meeting(x, y + ( downmomentum / 2), obj_wall) )
+{
+    y += downmomentum;
+}
+
+
 
 
 
@@ -603,7 +573,7 @@ y -= upmomentum;
 /////////////////////////
 //Wall Checks
 ////////////////////////
-script_execute(scr_speedwallcheck);
+//script_execute(scr_speedwallcheck);
 
 ////////////////////////////////
 //Spin Action
@@ -694,8 +664,11 @@ if (action == 1)
     //x movement
     if (global.chizurumovex &gt; analogBoundary || global.chizurumovex &lt; -analogBoundary)
     {
-        if (!instance_position(x + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall) &amp;&amp; !instance_position(x  + global.chizurumovex * mySpeed * speedMultiplier * 2, y, obj_wall) &amp;&amp; !instance_position(x + global.chizurumovex, y, obj_wall) )
+        if (!place_meeting(x + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall) &amp;&amp; !place_meeting(x  + ( (global.chizurumovex * mySpeed * speedMultiplier) / 2), y, obj_wall) )
         {
+            //if issues continue, add in the hspeed as another factor
+        
+            /*
             xWallCheck = 0;
             for (i = 0; i &lt; 16 + abs(hspeed); i++)
             {
@@ -711,19 +684,50 @@ if (action == 1)
                     }
                 }
                 
-            }
+            }*/
+            /*
             if (xWallCheck == 0)
             {
-                x+= global.chizurumovex * mySpeed * speedMultiplier;
+                
             }
-            
+            */
+            x+= global.chizurumovex * mySpeed * speedMultiplier;
         }
+        /*
+        x+= global.chizurumovex * mySpeed * speedMultiplier;
+        
+        if (global.chizurumovex != 0)
+        {
+            if (place_meeting(x + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall) )
+            {
+                if (global.chizurumovex &gt; 0)
+                {
+                    move_contact_all(0, global.chizurumovex * mySpeed * speedMultiplier);
+                }
+                if (global.chizurumovex &lt; 0)
+                {
+                    move_contact_all(180, -(global.chizurumovex * mySpeed * speedMultiplier) );
+                }
+            }
+            else if (place_meeting(x + ((global.chizurumovex * mySpeed * speedMultiplier) / 2), y, obj_wall) )    
+            {
+                if (global.chizurumovex &gt; 0)
+                {
+                    move_contact_all(0, (global.chizurumovex * mySpeed * speedMultiplier) / 2);
+                }
+                if (global.chizurumovex &lt; 0)
+                {
+                    move_contact_all(180, -((global.chizurumovex * mySpeed * speedMultiplier) / 2) );
+                }
+            }
+        }*/
     }
     //y movement
     if (global.chizurumovey &gt; analogBoundary || global.chizurumovey &lt; -analogBoundary)
     {
-        if (!instance_position(x, y + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) &amp;&amp; !instance_position(x, y + global.chizurumovey * mySpeed * speedMultiplier * 2, obj_wall) &amp;&amp; !instance_position(x, y + global.chizurumovey, obj_wall) )
+        if (!place_meeting(x, y + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) &amp;&amp; !place_meeting(x, y + ( (global.chizurumovey * mySpeed * speedMultiplier) / 2), obj_wall) )
         {
+            /*
             yWallCheck = 0;
             for (i = 0; i &lt; 20 + abs(vspeed); i++)
             {
@@ -739,11 +743,41 @@ if (action == 1)
             if (yWallCheck == 0)
             {
                 y += global.chizurumovey * mySpeed * speedMultiplier;
+            }*/
+            y += global.chizurumovey * mySpeed * speedMultiplier;
+        }
+        /*
+        y+= global.chizurumovey * mySpeed * speedMultiplier;
+        
+        if (global.chizurumovey != 0)
+        {
+            if (place_meeting(x, y + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) )
+            {
+                if (global.chizurumovey &gt; 0)
+                {
+                    move_contact_all(270, global.chizurumovey * mySpeed * speedMultiplier);
+                }
+                if (global.chizurumovey &lt; 0)
+                {
+                    move_contact_all(90, -(global.chizurumovey * mySpeed * speedMultiplier) );
+                }
+            }
+            else if (place_meeting(x, y + ((global.chizurumovey * mySpeed * speedMultiplier) / 2), obj_wall) )    
+            {
+                if (global.chizurumovey &gt; 0)
+                {
+                    move_contact_all(270, (global.chizurumovey * mySpeed * speedMultiplier) / 2);
+                }
+                if (global.chizurumovey &lt; 0)
+                {
+                    move_contact_all(90, -((global.chizurumovey * mySpeed * speedMultiplier) / 2) );
+                }
             }
         }
+        */
     }
     
-    script_execute(scr_playerwallfix);
+    //script_execute(scr_playerwallfix);
     
     if (abs(global.chizurumovex) &gt; analogBoundary || abs(global.chizurumovey) &gt; analogBoundary)
     {
@@ -988,6 +1022,8 @@ if (action == 1)
     }
 
 }
+
+
 
 
 

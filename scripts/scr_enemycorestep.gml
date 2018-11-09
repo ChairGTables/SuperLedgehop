@@ -1,4 +1,11 @@
-script_execute(scr_enemywallfix);
+//script_execute(scr_enemywallfix);
+//Fix if stuck in wall
+if (!place_meeting(x, y, obj_wall))
+{
+    safeX = x;
+    safeY = y;
+    alarm[7] = 2;
+}
 
 //Look to left or right depending on direction
 if (hspeed > 0)
@@ -90,13 +97,25 @@ if (downmomentum > 0)
 
 
 //Check walls
-script_execute(scr_enemywallfix);
+//script_execute(scr_enemywallfix);
 
 //Move object based on its current momentum
-x -= leftmomentum;
-x += rightmomentum;
-y += downmomentum;
-y -= upmomentum;
+if (!place_meeting(x - leftmomentum, y, obj_wall) && !place_meeting(x - ( leftmomentum / 2), y, obj_wall) )
+{
+    x -= leftmomentum;
+}
+if (!place_meeting(x + rightmomentum, y, obj_wall) && !place_meeting(x + ( rightmomentum / 2), y, obj_wall) )
+{
+    x += rightmomentum;
+}
+if (!place_meeting(x, y - upmomentum, obj_wall) && !place_meeting(x, y - ( upmomentum / 2), obj_wall) )
+{
+    y -= upmomentum;
+}
+if (!place_meeting(x, y + downmomentum, obj_wall) && !place_meeting(x, y + ( downmomentum / 2), obj_wall) )
+{
+    y += downmomentum;
+}
 
 
 //Correct sprite layer ordering

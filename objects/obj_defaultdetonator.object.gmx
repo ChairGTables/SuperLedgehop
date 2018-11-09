@@ -51,7 +51,7 @@ phase = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (y &gt; view_yview + view_hview + 60)
+            <string>if (y &gt; view_yview + view_hview + 60 &amp;&amp; y &gt; 1088)
 {
     if (phase == 4)
     {
