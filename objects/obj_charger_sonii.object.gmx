@@ -32,6 +32,9 @@ hp = 10;
 minDrops = 0;
 maxDrops = 2;
 
+safeX = 0;
+safeY = 0;
+
 //set animation speed
 image_speed = 0.2;
 
@@ -152,6 +155,32 @@ if (sprite_index == aS)
     sprite_index = sS;
 }
 image_index = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x -= (x - safeX)/3;
+y -= (y - safeY)/3;
+alarm[7] = 2;
+//instance_create(x, y, obj_redcircle);
 </string>
           </argument>
         </arguments>
@@ -377,6 +406,7 @@ if (moveTimer &lt;= 0)
                 vspeed = -vspeed;
             }
         }*/
+        script_execute(scr_truespeedwallcheck);
     }
 }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++

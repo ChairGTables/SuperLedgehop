@@ -28,6 +28,8 @@
             <string>//Set health for enemy
 hp = 20;
 
+safeX = 0;
+safeY = 0;
 
 //set health drops
 minDrops = 1;
@@ -102,6 +104,29 @@ if (sprite_index == hS)
     sprite_index = sS;
 }
 image_index = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_enemymoveback);
 </string>
           </argument>
         </arguments>
@@ -314,7 +339,8 @@ if (moveTimer &lt;= 0)
         minimumspeed = 5;
         maximumspeed = 10;
         
-            move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
+        move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
+        script_execute(scr_truespeedwallcheck);
     }
 }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++

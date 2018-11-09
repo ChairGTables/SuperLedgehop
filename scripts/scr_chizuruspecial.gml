@@ -11,6 +11,7 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5)
         
         //Check if there's a wall nearby
         xWallCheck = 0;
+        /*
         for (i = 0; i < 64; i++)
         {
             for (j = -64; j < 64; j++)
@@ -24,6 +25,11 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5)
                     xWallCheck = 1;    
                 }
             }                
+        }
+        */
+        if (place_meeting(obj_chizuru.x + (global.chizurumovex * 30), obj_chizuru.y, obj_wall) && place_meeting(obj_chizuru.x + (global.chizurumovex * 25), obj_chizuru.y, obj_wall) && place_meeting(obj_chizuru.x + (global.chizurumovex * 13), obj_chizuru.y, obj_wall) )
+        {
+            xWallCheck = 1;
         }
         if (xWallCheck == 0)
         {
@@ -43,10 +49,16 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5)
         }
         else
         {
+            obj_chizuru.hspeed += global.chizurumovex * 10;
+            with (obj_chizuru)
+            {
+                script_execute(scr_truespeedwallcheck);
+            }
             obj_chizuru.hspeed = 0;
         }
         
         yWallCheck = 0;
+        /*
         for (i = 0; i < 64; i++)
         {
             for (j = -64 * 2; j < 64; j++)
@@ -60,6 +72,10 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5)
                     yWallCheck = 1;    
                 }
             }                
+        }*/
+        if (place_meeting(obj_chizuru.x, obj_chizuru.y + (global.chizurumovey * 30), obj_wall) && place_meeting(obj_chizuru.x, obj_chizuru.y + (global.chizurumovey * 25), obj_wall) && place_meeting(obj_chizuru.x, obj_chizuru.y + (global.chizurumovey * 13), obj_wall) )
+        {
+            xWallCheck = 1;
         }
         if (yWallCheck == 0)
         {
@@ -79,6 +95,11 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5)
         }
         else
         {
+            obj_chizuru.hspeed += global.chizurumovey * 10;
+            with (obj_chizuru)
+            {
+                script_execute(scr_truespeedwallcheck);
+            }
             obj_chizuru.vspeed = 0;
         }
    

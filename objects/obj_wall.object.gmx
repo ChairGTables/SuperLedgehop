@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_transparentbluesquare</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -27,36 +27,44 @@
             <kind>1</kind>
             <string>if (other.vspeed &lt; 0)
 {
-    other.y += other.vspeed * 2;
+    //other.y += other.vspeed * 2;
+    other.vspeed = 0;
 }
 if (other.vspeed &gt; 0)
 {
-    other.y += other.speed * 2;
+    //other.y += other.speed * 2;
+    other.vspeed = 0;
 }
 if (other.hspeed &gt; 0)
 {
-    other.x += other.hspeed * 2;
+    //other.x += other.hspeed * 2;
+    other.hspeed = 0;
 }
 if (other.hspeed &lt; 0)
 {
-    other.x += other.hspeed * 2;
+    //other.x += other.hspeed * 2;
+    other.hspeed = 0;
 }
 
 if(other.upmomentum &gt; 0)
 {
-    other.y += other.upmomentum;
+    //other.y += other.upmomentum;
+    other.upmomentum = 0;
 }
 if(other.downmomentum &gt; 0)
 {
-    other.y -= other.downmomentum;
+    //other.y -= other.downmomentum;
+    other.downmomentum = 0;
 }
 if(other.rightmomentum &gt; 0)
 {
-    other.x += other.rightmomentum;
+    //other.x += other.rightmomentum;
+    other.rightmomentum = 0;
 }
 if(other.leftmomentum &gt; 0)
 {
-    other.x -= other.leftmomentum;
+    //other.x -= other.leftmomentum;
+    other.rightmomentum = 0;
 }
 
 other.upmomentum = 0;
