@@ -52,9 +52,13 @@ wall.image_yscale = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.stageState &gt; 8)
+            <string>if (global.stageState &gt; 8 &amp;&amp; global.stageState &lt; 10)
 {
     visible = 1;
+}
+else if (global.stageState == 10)
+{
+    visible = 0;
 }
 
 if (visible == 1)

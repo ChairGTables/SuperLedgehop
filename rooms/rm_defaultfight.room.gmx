@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2000</width>
   <height>2000</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_chizuru" x="1088" y="1120" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizuru" x="1072" y="768" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controller" x="96" y="32" name="inst_E0109ADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamepad" x="96" y="96" name="inst_70CF5B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_chair" x="256" y="32" name="inst_146D2DA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -124,7 +124,11 @@
     <instance objName="obj_wall" x="480" y="1056" name="inst_74154E43" locked="0" code="" scaleX="3" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="992" y="1120" name="inst_B91BAC11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagetwomusic" x="128" y="352" name="inst_C2548190" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_defaultnpc1" x="1088" y="832" name="inst_BA57042F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_defaultnpc1" x="1072" y="608" name="inst_BA57042F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="352" y="448" name="inst_0F8BA8D8" locked="0" code="xPush = 4;&#xA;" scaleX="8.5" scaleY="27" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="448" y="288" name="inst_E7921504" locked="0" code="yPush = 4;&#xA;" scaleX="38" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="1520" y="576" name="inst_9088F008" locked="0" code="xPush = -4;&#xA;" scaleX="11" scaleY="19" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="320" y="1136" name="inst_8119D475" locked="0" code="yPush = -4;&#xA;" scaleX="48" scaleY="9" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background13" x="-32" y="896" w="32" h="32" xo="224" yo="160" id="10002756" name="inst_F19E3EDB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

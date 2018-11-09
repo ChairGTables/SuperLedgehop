@@ -618,6 +618,16 @@ if (rightmomentum &gt; 0)
 {
     script_execute(scr_enemydamage);
     script_execute(scr_enemyshined);
+    
+    if (shotCount == 0 || shotCount == 1 || shotCount == 2 || shotCount == 99 || shotCount == 100 || shotCount == 101 || shotCount == 102 || shotCount == 103)
+    {
+        shotCount = 0;
+        phase = 1;
+        if (instance_exists(obj_warnbox))
+        {
+            instance_destroy(obj_warnbox);
+        }
+    }
 }
 </string>
           </argument>

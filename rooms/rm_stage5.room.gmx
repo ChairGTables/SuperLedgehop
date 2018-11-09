@@ -147,6 +147,7 @@
     <instance objName="obj_wall" x="4064" y="240" name="inst_141985AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="4096" y="240" name="inst_BFB6D711" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagefivemusic" x="272" y="192" name="inst_821B51C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_billsign" x="2544" y="1968" name="inst_E4DB6C10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_grassfull" x="2144" y="2848" w="32" h="32" xo="32" yo="0" id="10051182" name="inst_D98A79AF" depth="1000007" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

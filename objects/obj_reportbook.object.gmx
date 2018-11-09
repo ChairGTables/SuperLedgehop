@@ -27,6 +27,69 @@
             <kind>1</kind>
             <string>instance_create(x, y, obj_secretofficedialogue);
 global.stageState = 10;
+
+audio_play_sound_on (global.effectsEmitter, snd_pickup, false, 10);
+
+if (instance_exists(obj_chizuru))
+{
+    obj_chizuru.sprite_index = spr_chizurustandd;
+}
+
+
+if (instance_exists(obj_rapidbullet))
+{
+    instance_destroy(obj_rapidbullet);
+}
+if (instance_exists(obj_spread_sonii))
+{
+    instance_destroy(obj_spread_sonii);
+}
+
+if (instance_exists(obj_squaremover_sonii))
+{
+    instance_destroy(obj_squaremover_sonii);
+}
+if (instance_exists(obj_spreadmove_sonii))
+{
+    instance_destroy(obj_spreadmove_sonii);
+}
+if (instance_exists(obj_cannonaim_sonii))
+{
+    instance_destroy(obj_cannonaim_sonii);
+}
+if (instance_exists(obj_spreadcannon_sonii))
+{
+    instance_destroy(obj_spreadcannon_sonii);
+}
+if (instance_exists(obj_policegrenade))
+{
+    instance_destroy(obj_policegrenade);
+}
+if (instance_exists(obj_policecyborg))
+{
+    instance_destroy(obj_policecyborg);
+}
+if (instance_exists(obj_policerapid))
+{
+    instance_destroy(obj_policerapid);
+}
+if (instance_exists(obj_boombox_sonii))
+{
+    instance_destroy(obj_boombox_sonii);
+}
+if (instance_exists(obj_waterhider_sonii))
+{
+    instance_destroy(obj_waterhider_sonii);
+}
+if (instance_exists(obj_grenaider_sonii))
+{
+    instance_destroy(obj_grenaider_sonii);
+}
+if (instance_exists(obj_lazerCannon_sonii))
+{
+    instance_destroy(obj_lazerCannon_sonii);
+}
+
 instance_destroy(self);
 </string>
           </argument>

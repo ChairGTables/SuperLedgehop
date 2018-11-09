@@ -25,8 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
+            <string>disabled = 0;
+image_speed = 0;
 image_index = global.language;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (instance_exists(obj_ldoutline))
+{
+    disabled = 1;
+}
 </string>
           </argument>
         </arguments>
@@ -72,10 +99,13 @@ image_index = global.language;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_ldoutline);
-window_set_fullscreen(true);
-instance_create(x, y, obj_whitefadeout);
-obj_firstfullscreencircle.alarm[0] = 100;
+            <string>if (disabled == 0)
+{
+    instance_create(x, y, obj_ldoutline);
+    window_set_fullscreen(true);
+    instance_create(x, y, obj_whitefadeout);
+    obj_firstfullscreencircle.alarm[0] = 100;
+}
 </string>
           </argument>
         </arguments>

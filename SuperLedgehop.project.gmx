@@ -62,6 +62,8 @@
         <sound>sound\snd_falling</sound>
         <sound>sound\snd_fart</sound>
         <sound>sound\snd_bulletmiss</sound>
+        <sound>sound\snd_pickup</sound>
+        <sound>sound\snd_switch</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -359,6 +361,8 @@
         <sprite>sprites\sprite142</sprite>
         <sprite>sprites\spr_hporb</sprite>
         <sprite>sprites\spr_mporb</sprite>
+        <sprite>sprites\spr_cheesesteak</sprite>
+        <sprite>sprites\spr_kingtruck</sprite>
         <sprite>sprites\spr_caveentrance</sprite>
         <sprite>sprites\spr_caveshadow</sprite>
         <sprite>sprites\spr_emptysprite</sprite>
@@ -419,6 +423,18 @@
             <sprite>sprites\spr_languagespanish</sprite>
             <sprite>sprites\spr_cutscenesspanish</sprite>
             <sprite>sprites\spr_fullscreenspanish</sprite>
+          </sprites>
+          <sprites name="japanese">
+            <sprite>sprites\spr_storymodejapanese</sprite>
+            <sprite>sprites\spr_thugwarsjapanese</sprite>
+            <sprite>sprites\spr_optionsjapanese</sprite>
+            <sprite>sprites\spr_exitjapanese</sprite>
+            <sprite>sprites\spr_languagejapanese</sprite>
+            <sprite>sprites\spr_fullscreenjapanese</sprite>
+            <sprite>sprites\spr_cutscenesjapanese</sprite>
+            <sprite>sprites\spr_musicvolumejapanese</sprite>
+            <sprite>sprites\spr_sfxvolumejapanese</sprite>
+            <sprite>sprites\spr_voicevolumejapanese</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -527,6 +543,7 @@
         <sprite>sprites\spr_billwalk</sprite>
         <sprite>sprites\spr_billshoot</sprite>
         <sprite>sprites\spr_billhurt</sprite>
+        <sprite>sprites\spr_billsign</sprite>
         <sprite>sprites\spr_billball</sprite>
       </sprites>
       <sprites name="chizuma">
@@ -776,7 +793,10 @@
       <font>fonts\fnt_nameforeign</font>
       <font>fonts\fnt_talk</font>
       <font>fonts\fnt_talkforeign</font>
+      <font>fonts\fnt_talkdefault</font>
+      <font>fonts\fnt_namedefault</font>
       <font>fonts\fnt_namejapanese</font>
+      <font>fonts\fnt_talkjapanese</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -941,6 +961,8 @@
         <object>objects\obj_redkey</object>
         <object>objects\obj_laststagebarrier</object>
         <object>objects\obj_laststageswitch</object>
+        <object>objects\obj_bosspusher</object>
+        <object>objects\obj_billsign</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -1196,8 +1218,8 @@
       <room>rooms\rm_120bpm_david</room>
       <room>rooms\rm_dialoguetest</room>
       <rooms name="stage1">
-        <room>rooms\rm_stage1_2</room>
         <room>rooms\rm_stage1</room>
+        <room>rooms\rm_stage1_2</room>
         <room>rooms\rm_titofight</room>
       </rooms>
       <rooms name="stage2">

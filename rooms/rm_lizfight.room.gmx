@@ -67,6 +67,10 @@
     <instance objName="obj_wall" x="1248" y="192" name="inst_D22A5F9D" locked="0" code="" scaleX="2" scaleY="18" colour="4294967295" rotation="0"/>
     <instance objName="obj_liznpc1" x="832" y="416" name="inst_DA1AF3C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutothememusic_david" x="160" y="320" name="inst_C4ADBE18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="256" y="128" name="inst_CBBFBEB8" locked="0" code="xPush = 4;" scaleX="6" scaleY="23" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="224" y="768" name="inst_B1D57134" locked="0" code="yPush = -4;" scaleX="36" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="1248" y="128" name="inst_2CEB6B15" locked="0" code="xPush = -4;" scaleX="12" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="320" y="64" name="inst_27F85221" locked="0" code="yPush = 4;" scaleX="34" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_mrbeast" x="480" y="768" w="32" h="32" xo="32" yo="96" id="10003430" name="inst_8F292BA8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

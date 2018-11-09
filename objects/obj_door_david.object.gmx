@@ -127,6 +127,7 @@ else
     {
         open = !open;
         myEraser = instance_create(x, y, obj_keyeraser);
+        audio_play_sound_on (global.effectsEmitter, snd_switch, false, 10);
         myEraser.unlockID = unlockID;
     }
 }
