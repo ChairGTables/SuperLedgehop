@@ -37,7 +37,7 @@ global.messageLimit = 9;
 switch (global.language)
 {
 case 1:
-global.messageArray[0] = "自家製ドットフォントは ¿¡Dónde está el senador!?";
+global.messageArray[0] = "¿¡Dónde está el senador!?";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "neutral";

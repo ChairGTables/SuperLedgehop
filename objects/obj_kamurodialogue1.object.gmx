@@ -68,9 +68,40 @@ global.emotionAntagonistArray[4] = "neutral";
 
 break;
 
+//Japanese
+case 2:
+global.messageArray[0] = "おいお前";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "そこで何をしてる！？";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "ただの通り掛かり、";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "あそこのでっかい政府の建物に行く途中だ！";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "フン...";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";    
+
+break;
+
 //English
 default:
-global.messageArray[0] = "フルスクリーン Huh!? Who goes there?";
+global.messageArray[0] = "Huh!? Who goes there?";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "neutral";

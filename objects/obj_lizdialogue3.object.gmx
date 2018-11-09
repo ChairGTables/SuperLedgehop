@@ -35,7 +35,28 @@ obj_dialogue.antagonist = "ruffian";
 //set limit
 global.messageLimit = 2;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "¡Oh, rayos! ¡Fallé!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
 
+
+global.messageArray[1] = "Bueno, al menos le diste a ese policía.
+No importa; ambos son enemigos.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Solo acaba con el policía de una vez.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+break;
+
+default:
 global.messageArray[0] = "Oh, shoot! I missed!";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "angry";
@@ -52,6 +73,8 @@ global.messageArray[2] = "Just finish the cop off already.";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "angry";
+break;
+}
 </string>
           </argument>
         </arguments>
