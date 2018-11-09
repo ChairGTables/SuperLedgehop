@@ -33,7 +33,174 @@ obj_dialogue.boss = 1;
 //set limit
 global.messageLimit = 29;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Disculpe, señorita.
+¿Ha visto a una chica llamada Chizuru?";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
 
+
+global.messageArray[1] = "Pero claro. ¡Esa soy yo!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "¿¿¿ASI QUE TU ERES ESA ZORRA???";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "¡ARRIBA LAS MANOS!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Que demonios, hombre. Que no he hecho nada.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "¡CALLATEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "¡TIENES DERECHO A MANTENER
+SILENCIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Hombre vamos, Lo único que hice fue entrar al
+edificio y el gobernador me acusó.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "¡HA! ¡NO ME SUBESTIMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "¿Dónde está el senador entonces, eh?";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "¡Eso es lo que trato de averiguar,
+2cabeza de queso!";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "El senador es mi hermano mayor,
+¡así que estoy de tu lado!";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "happy";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "¡COMO SEA ZORRA AMANTE DEL
+INCESTOOOOOOOOOOOOOOOOOOOOOOOOOO!";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "sad";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "¡Hablo en serio!";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "sad";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "¿Tu misión es matarme o salvar al senador?";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "E-ehh...";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "Bueno...";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "sad";
+
+global.messageArray[17] = "T-Tienes derecho a guardar silencio, ¿¡está bien!?";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "neutral";
+global.emotionAntagonistArray[17] = "angry";
+
+global.messageArray[18] = "¡Solo déjame ganarme mi aumento de una buena vez!";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "angry";
+
+global.messageArray[19] = "Me he quedado sin dinero y quiero comida de verdad...";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "sad";
+
+global.messageArray[20] = "Mira que, si me dejas ir, ¡le pediré a mi hermano que nos compre
+unos deliciosos bocadillos de filete con queso!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "sad";
+
+global.messageArray[21] = "¿¿¿SEDUCIENDO A ALGUIEN CON DINERO???
+¡ESTAS BAJO ARRESTO POR CONTROL MENTAL!";
+global.categoryArray[21] = "right";
+global.emotionProtagonistArray[21] = "sad";
+global.emotionAntagonistArray[21] = "angry";
+
+global.messageArray[22] = " Además, tu gusto es basura. Debería ser curry,
+¡no esa basura de filete con queso!";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "sad";
+global.emotionAntagonistArray[22] = "sad";
+
+global.messageArray[23] = "¡Así que tendré que arrestarte por obligar a
+la gente a comer mala comida!";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "sad";
+global.emotionAntagonistArray[23] = "angry";
+
+global.messageArray[24] = "¿¡Estás demente!?";
+global.categoryArray[24] = "left";
+global.emotionProtagonistArray[24] = "angry";
+global.emotionAntagonistArray[24] = "angry";
+
+global.messageArray[25] = "Estás arrestando a alguien que está haciendo tu
+trabajo más fácil salvando al senador.";
+global.categoryArray[25] = "left";
+global.emotionProtagonistArray[25] = "angry";
+global.emotionAntagonistArray[25] = "angry";
+
+global.messageArray[26] = "¡C-Callate!";
+global.categoryArray[26] = "right";
+global.emotionProtagonistArray[26] = "angry";
+global.emotionAntagonistArray[26] = "angry";
+
+global.messageArray[27] = "¡Nosotros somos los profesionales aquí!";
+global.categoryArray[27] = "right";
+global.emotionProtagonistArray[27] = "angry";
+global.emotionAntagonistArray[27] = "angry";
+
+global.messageArray[28] = "¡No te metas en nuestros asuntos!";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "angry";
+global.emotionAntagonistArray[28] = "angry";
+
+global.messageArray[29] = "¡Eres una zorra TOOOOOONTAAAAAAAAAAAAAAA!";
+global.categoryArray[29] = "right";
+global.emotionProtagonistArray[29] = "angry";
+global.emotionAntagonistArray[29] = "angry";
+break;
+
+default:
 global.messageArray[0] = "Excuse me, miss.
 Have you seen a girl named Chizuru?";
 global.categoryArray[0] = "right";
@@ -199,6 +366,8 @@ ooooooooooooooooooooooooooooooooooooooooOOOOOOOOOOOOOOOoooooooooooooooooooooooor
 global.categoryArray[29] = "right";
 global.emotionProtagonistArray[29] = "angry";
 global.emotionAntagonistArray[29] = "angry";
+break;
+}
 </string>
           </argument>
         </arguments>

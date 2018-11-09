@@ -36,6 +36,58 @@ obj_dialogue.antagonist = "ruffian";
 //set limit
 global.messageLimit = 8;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "¡Manos arriba!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "¿¡Que demonios!?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Le apuntábamos a esa irrelevante policía.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Ella es más relevante que a lo que tu aspiras idiota.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "¿¡A que te refieres!?
+Pudimos haber hecho tu vida más fácil.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Un momento, ¿que estoy diciendo?";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Nos ordenaron matarte, así que nada de eso importa ahora.";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Adios, tonta, ruidosa, molesta, y apestosa escoria.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Lo que sea.";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+break;
+
+default:
 
 global.messageArray[0] = "Hands off!";
 global.categoryArray[0] = "left";
@@ -84,6 +136,7 @@ global.messageArray[8] = "Yeah, whatever.";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "angry";
 global.emotionAntagonistArray[8] = "angry";
+}
 </string>
           </argument>
         </arguments>
