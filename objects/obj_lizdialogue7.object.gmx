@@ -34,6 +34,103 @@ obj_dialogue.antagonist = "tito";
 //set limit
 global.messageLimit = 15;
 
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Oye, Chizuru.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Gracias por preocuparte por Liz.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "Oh, ¿Ya se conocían?";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "UUmm... ¿no estuviste escuchando?";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "Nah, ¡estaba ocupada pensando en cómo podría
+pedirle unos bocadillos de filete con queso a mi hermano!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "curious";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "Chizuru, que demonios...";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "curious";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "“¡Pero Liz dijo que es pobre y que está hambrienta!
+¡Pero yo estoy AÚN MÁS HAMBRIENTA! ¡QUIERO UN FILETE CON QUESO!";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Uhh, de hecho ella odia los filetes con queso.
+Pero, supongo que la alimentaremos apropiadamente mientras tratamos sus heridas.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "¿Ehh? ¿Seguro que tienes el dinero para eso ahora mismo?";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Si. De cualquier manera para mi su servicio no tuvo precio.
+It's the lEs lo mínimo que puedo hacer por ella.";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "¿Servicio?
+¡Eso suena sospechoso!";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+
+global.messageArray[11] = "¿Que? ¡No!
+Durante mis años como senador, ella me protegió. ¡Eso es todo!";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "happy";
+global.emotionAntagonistArray[11] = "angry";
+
+
+global.messageArray[12] = "Bueno, en verdad fue por que ella era diferente a los demás
+policías, le enseñé mis habilidades tal como te las enseñe a ti.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "neutral";
+
+
+global.messageArray[13] = "Ahh, es una larga historia.";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = " ¡Solo ve y salva a tu hermano!
+¡Yo le explicaré todo cuando ganes!";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "¡Filetes con queso y curry en casa después!";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "happy";
+break;
+
+default:
 
 global.messageArray[0] = "Hey, Chizuru.";
 global.categoryArray[0] = "right";
@@ -111,8 +208,6 @@ global.emotionProtagonistArray[12] = "happy";
 global.emotionAntagonistArray[12] = "neutral";
 
 
-
-
 global.messageArray[13] = "Ahh, it's a long story.";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "happy";
@@ -128,6 +223,7 @@ global.messageArray[15] = "Cheesesteaks and curry on the house afterwards!";
 global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "happy";
 global.emotionAntagonistArray[15] = "happy";
+}
 </string>
           </argument>
         </arguments>

@@ -39,6 +39,38 @@ else
     //set limit
     global.messageLimit = 4;
     
+    switch(global.language)
+    {
+    case 1:
+    global.messageArray[0] = "Phew. Así que esa es la verde...";
+    global.categoryArray[0] = "left";
+    global.emotionProtagonistArray[0] = "sad";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Erm... suenas como si nunca hubieras visto
+el color verde. ¿Acaso eres daltonica?";
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "¡No! B-Bueno, ¡esa olla se miraba violeta!
+¡Justo como el color de tu vestido!";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "sad";
+    global.emotionAntagonistArray[2] = "happy";
+    
+    global.messageArray[3] = "No, es azul.";
+    global.categoryArray[3] = "right";
+    global.emotionProtagonistArray[3] = "neutral";
+    global.emotionAntagonistArray[3] = "neutral";
+    
+    global.messageArray[4] = "¿¡Que!? ¡No puede ser!";
+    global.categoryArray[4] = "left";
+    global.emotionProtagonistArray[4] = "sad";
+    global.emotionAntagonistArray[4] = "happy";
+    break;
+    
+    default:
     global.messageArray[0] = "Phew. So that's the green one...";
     global.categoryArray[0] = "left";
     global.emotionProtagonistArray[0] = "sad";
@@ -65,6 +97,8 @@ Just like the color of your dress!";
     global.categoryArray[4] = "left";
     global.emotionProtagonistArray[4] = "sad";
     global.emotionAntagonistArray[4] = "happy";
+    break;
+    }
 }
 </string>
           </argument>

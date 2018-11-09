@@ -97,6 +97,67 @@ global.emotionProtagonistArray[10] = "sad";
 global.emotionAntagonistArray[10] = "angry";
 break;
 
+case 2:
+global.messageArray[0] = "うわぁぁぁっ！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "何だよ！？";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "痛いじゃないか、
+訴えて保険金もらうぞ！？";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "すまないが、その仕事はアタイのもんだ。";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "上司の所まで連れていきな！";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "上司？";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "curious";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "アンタ、仕事に行く途中じゃないのか？";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "いや…　別に俺仕事なんてしてないけど…";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "かかったね！アタイの計画を知ったからには、
+どっちみちアンタには消えてもらう！";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "計画？そんな話聞いてないぞ！？";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "黙りな！";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "sad";
+global.emotionAntagonistArray[10] = "angry";
+break;
+
 default:
 global.messageArray[0] = "GAAAAH!";
 global.categoryArray[0] = "left";

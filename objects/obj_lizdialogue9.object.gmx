@@ -33,13 +33,21 @@ dialogue.antagonist = "none";
 //set limit
 global.messageLimit = 0;
 
-
+switch(global.language)
+{
+case 1:
+global.messageArray[0] = "Oh, esto es malo...";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+break;
+default:
 global.messageArray[0] = "Oh, this is really bad...";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
-
-
+break;
+}
 </string>
           </argument>
         </arguments>
