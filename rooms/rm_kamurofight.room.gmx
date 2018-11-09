@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2000</width>
   <height>1700</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -67,6 +67,10 @@
     <instance objName="obj_wall" x="1344" y="544" name="inst_DE7CC8D7" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="315"/>
     <instance objName="obj_kamuronpc3" x="992" y="640" name="inst_AFCCE133" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagefourmusic" x="128" y="224" name="inst_C8544ECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="320" y="320" name="inst_4D5A48D5" locked="0" code="xPush = 4;&#xA;" scaleX="7.5" scaleY="30.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="528" y="1232" name="inst_52DE0DB2" locked="0" code="yPush = -4;&#xA;" scaleX="33.5" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="288" y="352" name="inst_50390DD2" locked="0" code="yPush = 4;&#xA;" scaleX="39.5" scaleY="6.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="1424" y="320" name="inst_E578ED9D" locked="0" code="xPush = -4;&#xA;" scaleX="9.5" scaleY="37.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_buildingblack2" x="576" y="672" w="32" h="32" xo="224" yo="32" id="10044715" name="inst_387C1843" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

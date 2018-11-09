@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>global.language = 1;
 global.disableCutscenes = 0;
-
+disabled = 0;
 instance_create(x, y, obj_whitefadein);
 </string>
           </argument>
@@ -74,7 +74,9 @@ instance_create(x, y, obj_whitefadein);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (global.language)
+            <string>
+
+switch (global.language)
 {
     case 3:
         if (instance_exists(obj_chamoru))

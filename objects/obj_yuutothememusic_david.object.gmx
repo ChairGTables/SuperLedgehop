@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.speaking = false;
-if (global.stageState == 0)
+if (global.stageState == 0 &amp;&amp; !instance_exists(obj_yuutoboss))
 {
     audio_stop_sound(snd_yuutotheme);
     instance_destroy(self);

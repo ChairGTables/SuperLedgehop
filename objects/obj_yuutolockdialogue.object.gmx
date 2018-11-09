@@ -93,12 +93,12 @@ global.emotionAntagonistArray[0] = "sad";
 
 
 global.messageArray[1] = "What do you mean?
-I can take on all of the cops!";
+Just hop over the ledge and double your bullets with me!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[2] = "N-No! I refuse!";
+global.messageArray[2] = "N-No! That's not safe!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "sad";

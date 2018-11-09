@@ -101,7 +101,8 @@ yy = y;
             <string>if (collected == 0)
 {
     collected = 1;
-    
+    audio_play_sound_on (global.effectsEmitter, snd_pickup, false, 10);
+    instance_create(x, y, obj_smallcircle);
     global.keyID[global.keyIndex] = unlockID;
     global.keyIndex += 1;
 }

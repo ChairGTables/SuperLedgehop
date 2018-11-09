@@ -927,8 +927,8 @@ else
         
         if (global.language == 2)
         {
+            bonusY = 0;
             draw_set_font(fnt_namejapanese);
-            bonusY = 3;
         }
         else if (global.language == 1)
         {
@@ -938,7 +938,7 @@ else
         else
         {
             bonusY = 0;
-            draw_set_font(fnt_name);
+            draw_set_font(fnt_namedefault);
         }
         draw_set_valign(fa_top);
         draw_set_halign(fa_left);
@@ -1040,15 +1040,16 @@ else
         draw_set_color(16645629);
         if (global.language == 2)
         {
-            //draw_set_font(fnt_talkjapanese);
+            bonusY = 0;
+            draw_set_font(fnt_talkjapanese);
         }
         else if (global.language == 1)
         {
-            draw_set_font(fnt_namejapanese)//(fnt_talkforeign);
+            draw_set_font(fnt_talkforeign);
         }
         else
         {
-            draw_set_font(fnt_talk);
+            draw_set_font(fnt_talkdefault);
         }
         
         if (global.speaking == true) 
@@ -1066,13 +1067,19 @@ else
             draw_set_color(c_black);
             draw_rectangle(view_xview + 400, view_yview+480, view_xview+960, view_yview+540, false);
             draw_set_color(16645629);
-            if (global.language == 0)
+            
+            if (global.language == 2)
             {
-                draw_set_font(fnt_talk);
+                bonusY = 0;
+                draw_set_font(fnt_talkjapanese);
+            }
+            else if (global.language == 1)
+            {
+                draw_set_font(fnt_talkforeign);
             }
             else
             {
-                draw_set_font(fnt_talkforeign);
+                draw_set_font(fnt_talkdefault);
             }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);
@@ -1080,13 +1087,18 @@ else
             {
                 draw_text(view_xview+410,view_yview+490,string(global.text));
             }
-            if (global.language == 0)
+            if (global.language == 2)
             {
-                draw_set_font(fnt_talk);
+                bonusY = 0;
+                draw_set_font(fnt_talkjapanese);
+            }
+            else if (global.language == 1)
+            {
+                draw_set_font(fnt_talkforeign);
             }
             else
             {
-                draw_set_font(fnt_talkforeign);
+                draw_set_font(fnt_talkdefault);
             }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);
@@ -1097,13 +1109,18 @@ else
             draw_set_color(c_black);
             draw_rectangle(view_xview + 400, view_yview+480, view_xview+760, view_yview+540, false);
             draw_set_color(16645629);
-            if (global.language == 0)
+            if (global.language == 2)
             {
-                draw_set_font(fnt_talk);
+                bonusY = 0;
+                draw_set_font(fnt_talkjapanese);
+            }
+            else if (global.language == 1)
+            {
+                draw_set_font(fnt_talkforeign);
             }
             else
             {
-                draw_set_font(fnt_talkforeign);
+                draw_set_font(fnt_talkdefault);
             }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);
@@ -1111,13 +1128,18 @@ else
             {
                 draw_text(view_xview+210,view_yview+490,string(global.text));
             }
-            if (global.language == 0)
+            if (global.language == 2)
             {
-                draw_set_font(fnt_talk);
+                bonusY = 0;
+                draw_set_font(fnt_talkjapanese);
+            }
+            else if (global.language == 1)
+            {
+                draw_set_font(fnt_talkforeign);
             }
             else
             {
-                draw_set_font(fnt_talkforeign);
+                draw_set_font(fnt_talkdefault);
             }
             draw_set_valign(fa_top);
             draw_set_halign(fa_left);

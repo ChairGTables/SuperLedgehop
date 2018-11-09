@@ -63,6 +63,10 @@
     <instance objName="obj_wall" x="992" y="32" name="inst_34054445" locked="0" code="" scaleX="6" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutoboss" x="448" y="160" name="inst_0D93755E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutothememusic_david" x="160" y="480" name="inst_6BA2FBF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="-320" y="-128" name="inst_DF8013A7" locked="0" code="xPush = 4;&#xA;" scaleX="11" scaleY="28" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="-160" y="-320" name="inst_E2E5AD1F" locked="0" code="yPush = 4;&#xA;" scaleX="42" scaleY="11" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="992" y="-384" name="inst_AA224C00" locked="0" code="xPush = -4;" scaleX="10" scaleY="38" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="-416" y="576" name="inst_84175658" locked="0" code="yPush = -4;&#xA;" scaleX="55" scaleY="10" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

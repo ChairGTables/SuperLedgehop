@@ -77,6 +77,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>global.stageIndicator[index] = 1;
 instance_create(other.x, other.y, obj_smallcircle);
+audio_play_sound_on (global.effectsEmitter, snd_pickup, false, 10);
 instance_destroy(self);
 </string>
           </argument>

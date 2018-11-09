@@ -70,7 +70,7 @@ break;
 
 //English
 default:
-global.messageArray[0] = "Huh!? Who goes there?";
+global.messageArray[0] = "フルスクリーン Huh!? Who goes there?";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "neutral";

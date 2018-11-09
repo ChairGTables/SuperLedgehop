@@ -73,6 +73,8 @@ image_index = 1;
             <kind>1</kind>
             <string>global.stageState = 9;
 instance_create(other.x, other.y, obj_smallcircle);
+instance_create(other.x, other.y, obj_whitefadein);
+audio_play_sound_on (global.effectsEmitter, snd_pickup, false, 10);
 instance_destroy(self);
 </string>
           </argument>
