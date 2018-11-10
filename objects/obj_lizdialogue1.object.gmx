@@ -92,7 +92,7 @@ global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "angry";
 
 global.messageArray[10] = "¡Eso es lo que trato de averiguar,
-2cabeza de queso!";
+cabeza de queso!";
 global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "angry";
@@ -129,7 +129,7 @@ global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "sad";
 
-global.messageArray[17] = "T-Tienes derecho a guardar silencio, ¿¡está bien!?";
+global.messageArray[17] = "T-Tienes derecho a guardar silencio, ¿¡Está bien!?";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "angry";
@@ -144,7 +144,7 @@ global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "neutral";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "Mira que, si me dejas ir, ¡le pediré a mi hermano que nos compre
+global.messageArray[20] = "Mira que, si me dejas ir, ¡Le pediré a mi hermano que nos compre
 unos deliciosos bocadillos de filete con queso!";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "happy";
@@ -156,8 +156,8 @@ global.categoryArray[21] = "right";
 global.emotionProtagonistArray[21] = "sad";
 global.emotionAntagonistArray[21] = "angry";
 
-global.messageArray[22] = " Además, tu gusto es basura. Debería ser curry,
-¡no esa basura de filete con queso!";
+global.messageArray[22] = "Además, tu gusto es basura. Debería ser curry,
+¡No esa basura de filete con queso!";
 global.categoryArray[22] = "right";
 global.emotionProtagonistArray[22] = "sad";
 global.emotionAntagonistArray[22] = "sad";

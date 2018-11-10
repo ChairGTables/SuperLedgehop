@@ -96,24 +96,24 @@ global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "angry";
 
-global.messageArray[10] = "¡No! ¡me niego!";
+global.messageArray[10] = "¡No! ¡Me niego!";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "angry";
 
-global.messageArray[11] = "¡Está bien! ¡hora de definir tus estadísticas!";
+global.messageArray[11] = "¡Está bien! ¡Hora de definir tus estadísticas!";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "curious";
 global.emotionAntagonistArray[11] = "angry";
 
-global.messageArray[12] = "¡¡¡le pondré todo en velocidad!!!
+global.messageArray[12] = "¡¡¡Le pondré todo en velocidad!!!
 ¡Si! ¡Mira tus estadísticas!";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "happy";
 global.emotionAntagonistArray[12] = "angry";
 
 global.messageArray[13] = "Oh, también aumentaré tu inteligencia,
-¡para que no seas una cabeza de queso!";
+¡Para que no seas una cabeza de queso!";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "angry";
@@ -123,7 +123,7 @@ global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "happy";
 global.emotionAntagonistArray[14] = "angry";
 
-global.messageArray[15] = "Cielos, ¿acaso no quieres que tus flamas
+global.messageArray[15] = "Cielos, ¿Acaso no quieres que tus flamas
 sean más fuertes?";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "neutral";

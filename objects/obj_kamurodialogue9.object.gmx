@@ -28,7 +28,7 @@
             <string>//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 obj_dialogue.antagonist = "kamuro";
-
+global.bossvirgin = 1;
 
 //set limit
 global.messageLimit = 14;
@@ -92,13 +92,13 @@ global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "angry";
 
-global.messageArray[10] = "Ngh, ¿tal vez me he puesto en ridículo por secuestrar a la persona
+global.messageArray[10] = "Ngh, ¿Tal vez me he puesto en ridículo por secuestrar a la persona
 incorrecta?";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "angry";
 
-global.messageArray[11] = " Aún me cuesta creer todo esto.";
+global.messageArray[11] = "Aún me cuesta creer todo esto.";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "angry";

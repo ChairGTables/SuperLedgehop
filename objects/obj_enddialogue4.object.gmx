@@ -47,7 +47,7 @@ global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "Chizuma, ¡detén esta locura ahora mismo!";
+global.messageArray[1] = "Chizuma, ¡Detén esta locura ahora mismo!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "angry";
@@ -97,7 +97,7 @@ global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "angry";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = " Él no quería salvar nuestra ciudad.";
+global.messageArray[10] = "Él no quería salvar nuestra ciudad.";
 global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "angry";
 global.emotionAntagonistArray[10] = "neutral";
@@ -155,7 +155,7 @@ global.categoryArray[19] = "out";
 global.emotionProtagonistArray[19] = "angry";
 global.emotionAntagonistArray[19] = "neutral";
 
-global.messageArray[20] = "P-Pero, señor! ¡es verdad!";
+global.messageArray[20] = "P-Pero, señor! ¡Es verdad!";
 global.categoryArray[20] = "right";
 global.emotionProtagonistArray[20] = "angry";
 global.emotionAntagonistArray[20] = "sad";
@@ -192,7 +192,7 @@ global.categoryArray[25] = "out";
 global.emotionProtagonistArray[25] = "angry";
 global.emotionAntagonistArray[25] = "sad";
 
-global.messageArray[26] = "¡Ay..!";
+global.messageArray[26] = "¡Ay...!";
 global.categoryArray[26] = "right";
 global.emotionProtagonistArray[26] = "angry";
 global.emotionAntagonistArray[26] = "sad";

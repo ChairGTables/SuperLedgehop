@@ -66,7 +66,7 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "neutral";
 global.emotionAntagonistArray[4] = "angry";
 
-global.messageArray[5] = "Un momento, ¿que estoy diciendo?";
+global.messageArray[5] = "Un momento, ¿Que estoy diciendo?";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "neutral";
 global.emotionAntagonistArray[5] = "angry";

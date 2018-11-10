@@ -43,7 +43,7 @@ global.messageLimit = 20;
 switch(global.language)
 {
 case 1:
-global.messageArray[0] = "Cielos, ¡tranquilizate!
+global.messageArray[0] = "Cielos, ¡Tranquilizate!
 ¡Solo bromeaba acerca de ser el cobrador de impuestos!";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "angry";
@@ -57,7 +57,7 @@ global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "sad";
 
 global.messageArray[2] = "¡P-Pero ya verás! Un dia,
-¡mis poderes serán muy aterradores!";
+¡Mis poderes serán muy aterradores!";
 global.categoryArray[2] = "rigyt";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "sad";
@@ -105,7 +105,7 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "happy";
 global.emotionAntagonistArray[10] = "sad";
 
-global.messageArray[11] = "Bueno, ¡tu eres una mala copia pirata!";
+global.messageArray[11] = "Bueno, ¡Tu eres una mala copia pirata!";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "sad";
@@ -131,7 +131,7 @@ global.emotionProtagonistArray[15] = "curious";
 global.emotionAntagonistArray[15] = "sad";
 
 global.messageArray[16] = "No serás tan buena como tu original,
-¡pero aun asi eres divertida para mi!";
+¡Pero aun asi eres divertida para mi!";
 global.categoryArray[16] = "left";
 global.emotionProtagonistArray[16] = "happy";
 global.emotionAntagonistArray[16] = "sad";
@@ -141,8 +141,8 @@ global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "sad";
 
-global.messageArray[18] = "Pero, ¡espera! quiero ser mas que eso,
-¡quiero ser buena por mi misma!";
+global.messageArray[18] = "Pero, ¡Espera! Quiero ser mas que eso,
+¡Quiero ser buena por mi misma!";
 global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "happy";
 global.emotionAntagonistArray[18] = "neutral";
@@ -152,7 +152,7 @@ global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "sad";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "¡Oh! ¡entonces debo salir de este lugar!";
+global.messageArray[20] = "¡Oh! ¡Entonces debo salir de este lugar!";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "sad";
 global.emotionAntagonistArray[20] = "sad";

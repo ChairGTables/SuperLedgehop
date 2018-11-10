@@ -33,7 +33,7 @@ dialogue.mini = 1;
 //set limit
 global.messageLimit = 6;
 
-switch(global.langauge)
+switch(global.language)
 {
 case 1:
 global.messageArray[0] = "¿¡Qué hizo que tardaras tanto en esa cueva!?
@@ -62,7 +62,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "sad";
 
-global.messageArray[4] = "Oh, creo que hay un fugitivo
+global.messageArray[4] = "Oh, creo que alguien
 que quedó atrapado.";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "neutral";

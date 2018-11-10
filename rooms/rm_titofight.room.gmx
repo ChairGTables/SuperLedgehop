@@ -73,7 +73,7 @@
     <instance objName="obj_bosspusher" x="1024" y="-32" name="inst_A6A594F6" locked="0" code="xPush = -4;" scaleX="6" scaleY="25.8064517974854" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="192" y="-96" name="inst_7DB1E176" locked="0" code="yPush = 4;&#xA;" scaleX="31" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="160" y="0" name="inst_C549EB28" locked="0" code="xPush = 4;&#xA;" scaleX="5" scaleY="24" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bosspusher" x="160" y="640" name="inst_96E536A4" locked="0" code="yPush = -4;&#xA;" scaleX="30" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="160" y="640" name="inst_96E536A4" locked="0" code="yPush = -4;" scaleX="30" scaleY="6" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_levelone" x="288" y="480" w="32" h="32" xo="64" yo="192" id="10000181" name="inst_E697882F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

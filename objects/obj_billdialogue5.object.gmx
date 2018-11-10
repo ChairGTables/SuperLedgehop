@@ -44,7 +44,7 @@ global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "Pero creo que esta será la última vez que nos vemos,";
+global.messageArray[1] = "Pero creo que esta será la última vez que nos vemos...";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
@@ -171,7 +171,7 @@ global.emotionProtagonistArray[22] = "angry";
 global.emotionAntagonistArray[22] = "neutral";
 
 global.messageArray[23] = "¡AHAHAHAA! ¡No me interesa! Estoy seguro de que si vuelo en pedazos
-las áreas con más pandillas, ¡todos esos rufianes estarán asustados el resto de sus vidas!";
+las áreas con más pandillas, ¡Todos esos rufianes estarán asustados el resto de sus vidas!";
 global.categoryArray[23] = "right";
 global.emotionProtagonistArray[23] = "angry";
 global.emotionAntagonistArray[23] = "neutral";
@@ -181,13 +181,13 @@ global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "angry";
 global.emotionAntagonistArray[24] = "neutral";
 
-global.messageArray[25] = "Piensa en cuánto dinero usarás para restaurar la ciudad, ¿¡huh!? ¿¡Y qué
+global.messageArray[25] = "Piensa en cuánto dinero usarás para restaurar la ciudad, ¿¡Huh!? ¿¡Y qué
 hay de todos los pandilleros que sobornaste!? ¡Eres un hipócrita!";
 global.categoryArray[25] = "left";
 global.emotionProtagonistArray[25] = "angry";
 global.emotionAntagonistArray[25] = "neutral";
 
-global.messageArray[26] = "No necesito pagarles, ¡porque morirán de todos modos!";
+global.messageArray[26] = "No necesito pagarles, ¡Porque morirán de todos modos!";
 global.categoryArray[26] = "right";
 global.emotionProtagonistArray[26] = "angry";
 global.emotionAntagonistArray[26] = "neutral";

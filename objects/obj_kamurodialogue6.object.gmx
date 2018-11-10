@@ -29,7 +29,7 @@
 dialogue = instance_create(x, y, obj_dialogue);
 obj_dialogue.antagonist = "kamuro";
 state = 0;
-
+global.bossvirgin = 1;
 //set limit
 global.messageLimit = 12;
 
@@ -44,7 +44,7 @@ global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "¡P-Pero no puedo perder!  No quiero que
+global.messageArray[1] = "¡P-Pero no puedo perder! No quiero que
 esta ciudad muera...";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "angry";

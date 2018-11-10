@@ -43,7 +43,7 @@ global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "Bueno,  ¿ahora si me escucharás, anciana pelo blanco?";
+global.messageArray[1] = "Bueno, ¿Ahora si me escucharás, anciana pelo blanco?";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "sad";
@@ -64,13 +64,13 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "sad";
 
-global.messageArray[5] = "¡y no estoy vieja, ¿entendido?! Cielos, ¡ni siquiera tengo veinte!
+global.messageArray[5] = "¡Y no estoy vieja, ¿Entendido?! Cielos, ¡Ni siquiera tengo veinte!
 ¡Mi cabello rubio no puede estar blanco siendo tan joven!";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "sad";
 global.emotionAntagonistArray[5] = "sad";
 
-global.messageArray[6] = "Bueno, ¡yo lo veo blanco!";
+global.messageArray[6] = "Bueno, ¡Yo lo veo blanco!";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "sad";
@@ -97,19 +97,19 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "sad";
 
-global.messageArray[11] = "Ahh, ¡callate! ¡Ser daltónica no significa nada en batalla!";
+global.messageArray[11] = "Ahh, ¡Callate! ¡Ser daltónica no significa nada en batalla!";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "sad";
 
-global.messageArray[12] = " Además, si te despiden por eso,
-¡entonces tu jefe es el ciego!";
+global.messageArray[12] = "Además, si te despiden por eso,
+¡Entonces tu jefe es el ciego!";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "happy";
 global.emotionAntagonistArray[12] = "sad";
 
 global.messageArray[13] = "Por que, incluso si me afecta,
-¡puedo adaptarme fácilmente como cualquier otra persona!";
+¡Puedo adaptarme fácilmente como cualquier otra persona!";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";
@@ -119,7 +119,7 @@ global.categoryArray[14] = "left";
 global.emotionProtagonistArray[14] = "curious";
 global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "¡Lo más importante es que me agradas! ¡pienso que eres más fuerte y
+global.messageArray[15] = "¡Lo más importante es que me agradas! ¡Pienso que eres más fuerte y
 genial que los otros policías a los que les disparé!";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "happy";
@@ -135,7 +135,7 @@ global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "sad";
 
-global.messageArray[18] = "¡O-Oye! fue defensa personal, así que fue legal, ¿está bien?";
+global.messageArray[18] = "¡O-Oye! Fue defensa personal, así que fue legal, ¿Está bien?";
 global.categoryArray[18] = "left";
 global.emotionProtagonistArray[18] = "curious";
 global.emotionAntagonistArray[18] = "sad";
@@ -146,7 +146,7 @@ global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "curious";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = " ¡Y estas matandome a mi, un oficial de policía!";
+global.messageArray[20] = "¡Y estas matandome a mi, un oficial de policía!";
 global.categoryArray[20] = "right";
 global.emotionProtagonistArray[20] = "curious";
 global.emotionAntagonistArray[20] = "sad";

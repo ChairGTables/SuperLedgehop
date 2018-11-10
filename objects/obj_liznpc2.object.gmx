@@ -169,6 +169,9 @@ image_xscale = -1;
     global.bossvirgin = 1;
     global.stageState = 0;
     global.isCutscene = false;
+    global.chizuruhp = 99;
+    global.chizurump = 99;
+    global.chizurushine = 99;
     room_goto_next();
 }
 

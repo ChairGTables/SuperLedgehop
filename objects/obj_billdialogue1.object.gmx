@@ -59,7 +59,7 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Secuestraste a mi pequeño senador, ¿o no?";
+global.messageArray[4] = "Secuestraste a mi pequeño senador, ¿O no?";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
@@ -74,7 +74,7 @@ global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
-global.messageArray[7] = "Una vez más, ¿no debería ser yo quien te pregunte eso?";
+global.messageArray[7] = "Una vez más, ¿No debería ser yo quien te pregunte eso?";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "neutral";

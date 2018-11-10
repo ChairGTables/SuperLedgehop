@@ -97,13 +97,13 @@ case 1:
 
 if (global.isGamepad == true)
 {
-    global.messageArray[0] = "¡No lo olvides!
-    ¡Mantén X despues sueltalo y absorbe balas!";
+    global.messageArray[0] = "¡No lo olvides! ¡Mantén X
+despues sueltalo y absorbe balas!";
 }
 else
 {
-    global.messageArray[0] = "¡No lo olvides!
-    ¡Mantén el Click derecho y suéltalo para absorber balas!";
+    global.messageArray[0] = "¡No lo olvides! ¡Mantén
+el click derecho y suéltalo para absorber balas!";
 }
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
@@ -130,18 +130,19 @@ global.emotionAntagonistArray[3] = "happy";
 if (global.isGamepad == true)
 {
     global.messageArray[4] = "¡Hazlo! ¡Mantén X luego
-    suéltalo para absorber balas!";
+suéltalo para absorber balas!";
 }
 else
 {
-    global.messageArray[4] = "¡Hazlo! ¡Manten el Click
-    derecho y despues sueltalo para absorber balas!";
+    global.messageArray[4] = "¡Hazlo! ¡Manten el click
+derecho y despues sueltalo para absorber balas!";
 }
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "sad";
 
-global.messageArray[5] = "Si, si ya me lo dijiste un millón de veces.";
+global.messageArray[5] = "Si como sea,
+ya me lo dijiste un millón de veces.";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "neutral";
 global.emotionAntagonistArray[5] = "angry";

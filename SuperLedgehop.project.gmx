@@ -204,6 +204,7 @@
         <sound>sound\snd_kamuroya2</sound>
         <sound>sound\snd_kamuroroman</sound>
         <sound>sound\snd_kamurovolcano</sound>
+        <sound>sound\snd_kamurodeath</sound>
       </sounds>
       <sounds name="louie">
         <sound>sound\snd_louieready1</sound>

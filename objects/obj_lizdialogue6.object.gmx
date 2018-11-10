@@ -73,7 +73,7 @@ global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "sad";
 
-global.messageArray[6] = "Espera, ¿entonces ella es la sobrina de la que siempre me hablaste?";
+global.messageArray[6] = "Espera, ¿Entonces ella es la sobrina de la que siempre me hablaste?";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "angry";
 global.emotionAntagonistArray[6] = "sad";
@@ -101,7 +101,7 @@ global.emotionProtagonistArray[10] = "curious";
 global.emotionAntagonistArray[10] = "sad";
 
 
-global.messageArray[11] = "...U-Uhh, ¡por motivos de práctica!
+global.messageArray[11] = "...U-Uhh, ¡Por motivos de práctica!
 ¡La estoy entrenando para que sea genial como yo!";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "sad";
@@ -166,7 +166,7 @@ global.emotionProtagonistArray[21] = "angry";
 global.emotionAntagonistArray[21] = "sad";
 
 
-global.messageArray[22] = " ¡Y una vez más estás ayudándome!";
+global.messageArray[22] = "¡Y una vez más estás ayudándome!";
 global.categoryArray[22] = "right";
 global.emotionProtagonistArray[22] = "angry";
 global.emotionAntagonistArray[22] = "sad";
@@ -200,7 +200,7 @@ global.categoryArray[27] = "left";
 global.emotionProtagonistArray[27] = "curious";
 global.emotionAntagonistArray[27] = "sad";
 
-global.messageArray[28] = "¿Pero que es lo que en realidad pasó? yo creo que fuiste un
+global.messageArray[28] = "¿Pero que es lo que en realidad pasó? Yo creo que fuiste un
 gran senador que se preocupaba por las personas.";
 global.categoryArray[28] = "right";
 global.emotionProtagonistArray[28] = "curious";
@@ -231,7 +231,7 @@ global.emotionProtagonistArray[32] = "sad";
 global.emotionAntagonistArray[32] = "sad";
 
 
-global.messageArray[33] = " Y ahora el gobernador me ordenó matar a tu sobrina.";
+global.messageArray[33] = "Y ahora el gobernador me ordenó matar a tu sobrina.";
 global.categoryArray[33] = "right";
 global.emotionProtagonistArray[33] = "sad";
 global.emotionAntagonistArray[33] = "sad";
@@ -248,7 +248,7 @@ global.emotionProtagonistArray[35] = "sad";
 global.emotionAntagonistArray[35] = "sad";
 
 
-global.messageArray[36] = "Ah, ouch.";
+global.messageArray[36] = "G-Gaaahh...";
 global.categoryArray[36] = "right";
 global.emotionProtagonistArray[36] = "sad";
 global.emotionAntagonistArray[36] = "sad";
@@ -260,7 +260,7 @@ global.categoryArray[37] = "right";
 global.emotionProtagonistArray[37] = "sad";
 global.emotionAntagonistArray[37] = "sad";
 
-global.messageArray[38] = "P-Pero soy un policía, ¿¡está bien!?
+global.messageArray[38] = "P-Pero soy un policía, ¿¡Está bien!?
 ¡Soy muy fuerte!";
 global.categoryArray[38] = "right";
 global.emotionProtagonistArray[38] = "sad";

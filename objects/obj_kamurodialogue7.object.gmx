@@ -42,7 +42,7 @@ global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
-global.messageArray[1] = "Y ahora, ¿dónde está mi senador para mi cubierta?";
+global.messageArray[1] = "Y ahora, ¿Dónde está mi senador para mi cubierta?";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";

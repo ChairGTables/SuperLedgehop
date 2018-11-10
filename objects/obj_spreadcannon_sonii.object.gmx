@@ -375,8 +375,10 @@ script_execute(scr_enemycorestep);
 //Add additional step features here
 ////////////////////////////
 
-
-image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
+if (instance_exists(obj_chizuru))
+{
+    image_angle = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
+}
 
 // Trying out deltaTime
 timer -= delta_time / 1000000; // delta time is in microsec
@@ -398,7 +400,10 @@ if (timer &lt;= 0)
         for (i = 0; i &lt; 45 / anglePerShot; i++)
         {
             shot = instance_create(x, y, obj_spread_sonii);
-            shot.direction = (i * anglePerShot) + point_direction(x,y,obj_chizuru.x,obj_chizuru.y) - 25;
+            if (instance_exists(obj_chizuru))
+            {
+                shot.direction = (i * anglePerShot) + point_direction(x,y,obj_chizuru.x,obj_chizuru.y) - 25;
+            }
             shot.speed = 5;
         }
         script_execute(scr_truespeedwallcheck);

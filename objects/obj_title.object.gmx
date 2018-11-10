@@ -233,7 +233,7 @@ global.specialready = 1;
 global.basiccount = 100;
 global.enhancedcount = 0;
 global.rapidcount = 0;
-global.spreadcount = 100;
+global.spreadcount = 0;
 global.firecount = 0;
 global.icecount = 0;
 
