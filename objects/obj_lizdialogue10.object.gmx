@@ -79,7 +79,7 @@ global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "happy";
 global.emotionAntagonistArray[7] = "neutral";
 
-global.messageArray[8] = " Encuentra cuatro llaves verdes, y la barrera verde desaparecerá.";
+global.messageArray[8] = "Encuentra cuatro llaves verdes, y la barrera verde desaparecerá.";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "neutral";
@@ -94,18 +94,18 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "angry";
 
-global.messageArray[11] = " Sé que es esfuerzo extra y que quieres tanto a tu hermano mayor,
-¿pero podrías hacer un búsqueda ilegal en una de las oficinas secretas del gobierno?";
+global.messageArray[11] = "Sé que es esfuerzo extra y que quieres tanto a tu hermano mayor, ¿Pero podrías
+hacer un búsqueda ilegal en una de las oficinas secretas del gobierno?";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "neutral";
 
-global.messageArray[12] = " Lo encontrarás debajo de las escaleras una vez hayas encontrado la llave roja.";
+global.messageArray[12] = "Lo encontrarás debajo de las escaleras una vez hayas encontrado la llave roja.";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "neutral";
 
-global.messageArray[13] = " No te arrestaré por hacerlo, pero de verdad necesitamos investigar
+global.messageArray[13] = "No te arrestaré por hacerlo, pero de verdad necesitamos investigar
 qué está pasando en el gobierno.";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "neutral";

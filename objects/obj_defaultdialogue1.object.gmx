@@ -74,12 +74,12 @@ global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "angry";
 
 global.messageArray[6] = "¡O-Oye detente!
-¡Mi hermana es una buena persona ¿sabes?!";
+¡Mi hermana es una buena persona ¿Sabes?!";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "angry";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "Puede que sea temperamental, ¡pero es muy buena!";
+global.messageArray[7] = "Puede que sea temperamental, ¡Pero es muy buena!";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "angry";
 global.emotionAntagonistArray[7] = "neutral";
@@ -90,7 +90,7 @@ global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Bueno, ella me dijo que tu eras peligrosa
+global.messageArray[9] = "Bueno, ella me dijo que tu eras peligrosa.
 ¡Así que supongo que solo trataba de defenderse!";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "sad";
@@ -133,13 +133,14 @@ global.categoryArray[16] = "left";
 global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "neutral";
 
-global.messageArray[17] = "¡N-No es como que pueda hacer algo al respecto! Estoy atorada con este horrible
-peinado por defecto. Mi cara es aburrida y por defecto.";
+global.messageArray[17] = "¡N-No es como que pueda hacer algo al respecto! 
+Estoy atorada con este horrible peinado por defecto.";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "angry";
 
-global.messageArray[18] = "¡E incluso mi nombre está en la opción por defecto!";
+global.messageArray[18] = "Mi cara es aburrida y por defecto.
+¡E incluso mi nombre está en la opción por defecto!";
 global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "angry";
@@ -165,7 +166,7 @@ global.categoryArray[22] = "right";
 global.emotionProtagonistArray[22] = "angry";
 global.emotionAntagonistArray[22] = "angry";
 
-global.messageArray[23] = " ¡Es claramente verde!";
+global.messageArray[23] = "¡Es claramente verde!";
 global.categoryArray[23] = "right";
 global.emotionProtagonistArray[23] = "angry";
 global.emotionAntagonistArray[23] = "angry";
@@ -187,7 +188,7 @@ global.categoryArray[26] = "left";
 global.emotionProtagonistArray[26] = "sad";
 global.emotionAntagonistArray[26] = "angry";
 
-global.messageArray[27] = "Bueno, ¡tu hermano mayor es un gran tonto!";
+global.messageArray[27] = "Bueno, ¡Tu hermano mayor es un gran tonto!";
 global.categoryArray[27] = "right";
 global.emotionProtagonistArray[27] = "sad";
 global.emotionAntagonistArray[27] = "angry";
@@ -219,12 +220,12 @@ global.categoryArray[32] = "right";
 global.emotionProtagonistArray[32] = "neutral";
 global.emotionAntagonistArray[32] = "angry";
 
-global.messageArray[33] = "Voy a detener a tu hermano, ¡incluso con movimientos por defecto!";
+global.messageArray[33] = "¡Voy a detener a tu hermano!";
 global.categoryArray[33] = "right";
 global.emotionProtagonistArray[33] = "neutral";
 global.emotionAntagonistArray[33] = "angry";
 
-global.messageArray[34] = "Mi hermana me enseñó mucho sobre Fuego,";
+global.messageArray[34] = "Mi hermana me enseñó mucho sobre Fuego.";
 global.categoryArray[34] = "right";
 global.emotionProtagonistArray[34] = "neutral";
 global.emotionAntagonistArray[34] = "angry";

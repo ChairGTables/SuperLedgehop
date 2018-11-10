@@ -44,7 +44,7 @@ global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "Ni Siquiera yo lo se.";
+global.messageArray[1] = "Ni siquiera yo lo se.";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "angry";

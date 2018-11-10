@@ -88,7 +88,7 @@ global.categoryArray[8] = "out";
 global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Nosotros lo salvamos, ¡no ella!";
+global.messageArray[9] = "Nosotros lo salvamos, ¡No ella!";
 global.categoryArray[9] = "out";
 global.emotionProtagonistArray[9] = "sad";
 global.emotionAntagonistArray[9] = "neutral";

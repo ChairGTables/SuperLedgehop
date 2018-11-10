@@ -195,19 +195,21 @@ if (instance_exists(obj_chizuru))
                 tempAngle = -3;
                 for (i = 0; i < 3; i++)
                 {
-                    var iceShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizuruicebullet);
+                    iceShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizuruicebullet);
                     iceShot.direction = global.aimangle + tempAngle;
                     iceShot.speed = bulletSpeed;
                     iceShot.timed = 1;
+                    iceShot.damage = 8;
                     tempAngle += 3;
                 }
-                global.firecount -= 3;
+                global.icecount -= 3;
             }
             else
             {
-                var iceShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizuruicebullet);
+                iceShot = instance_create(obj_chizuru.x, obj_chizuru.y, obj_chizuruicebullet);
                 iceShot.direction = global.aimangle;
                 iceShot.speed = bulletSpeed;
+                
                 global.icecount -= 5;
             }
         }

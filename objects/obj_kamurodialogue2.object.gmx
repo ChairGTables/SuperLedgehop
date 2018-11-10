@@ -55,12 +55,12 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "Lo Siento, Pero yo soy quien da las ordenes aqui.";
+global.messageArray[3] = "Lo siento, pero yo soy quien da las ordenes aqui.";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = " ¡llévame hacia tu jefe ahora!";
+global.messageArray[4] = "¡Llévame hacia tu jefe ahora!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "angry";
@@ -70,12 +70,12 @@ global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "curious";
 global.emotionAntagonistArray[5] = "angry";
 
-global.messageArray[6] = "¿No te dirigías hacia ese edificio del gobierno para trabajar?";
+global.messageArray[6] = "¿No te dirigías trabajar en ese edificio del gobierno?";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "Uhh…no. Estoy desempleada.";
+global.messageArray[7] = "Uhh...no. Estoy desempleada.";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";

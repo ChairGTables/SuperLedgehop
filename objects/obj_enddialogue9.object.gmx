@@ -52,7 +52,7 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
 
 global.messageArray[2] = "Lo único que quería era conocer a mi hermano,
-¡pero ahora piensa que soy una criminal!";
+¡Pero ahora piensa que soy una criminal!";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "neutral";

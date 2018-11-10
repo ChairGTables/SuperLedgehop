@@ -25,7 +25,41 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_titolieddialogue);
+            <string>    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
+    if (instance_exists(obj_protagonisttalk))
+    {
+        instance_destroy(obj_protagonisttalk);
+    }
+    if (instance_exists(obj_dialogue))
+    {
+        instance_destroy(obj_dialogue);
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
+    if (instance_exists(obj_mooseentrance))
+    {
+        instance_destroy(obj_mooseentrance);
+    }
+    if (instance_exists(obj_billdialogue5))
+    {
+        instance_destroy(obj_billdialogue5);
+    }
+    if (instance_exists(obj_kamurodialogue8))
+    {
+        instance_destroy(obj_kamurodialogue8);
+    }
+    if (instance_exists(obj_titocavedialogue))
+    {
+        instance_destroy(obj_titocavedialogue);
+    }
+
+
+instance_create(x, y, obj_titolieddialogue);
 instance_destroy(self);
 </string>
           </argument>

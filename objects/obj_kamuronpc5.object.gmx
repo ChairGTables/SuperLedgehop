@@ -109,6 +109,7 @@ image_angle = 0;
     state = 12;
     alarm[0] = 40;
     global.chizuruhp = 100;
+    global.isCutscene = false;
     room_goto_next();
 }
 

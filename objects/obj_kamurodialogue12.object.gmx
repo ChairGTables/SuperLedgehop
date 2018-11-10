@@ -125,7 +125,7 @@ global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "angry";
 global.emotionAntagonistArray[15] = "angry";
 
-global.messageArray[16] = " ¡Chizuru, haz lo que debas hacer!
+global.messageArray[16] = "¡Chizuru, haz lo que debas hacer!
 Te doy mi permiso para disparar a mis hombres.";
 global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "happy";
@@ -137,8 +137,8 @@ global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "neutral";
 
-global.messageArray[18] = "“¡Eh! ¡Aún estás aprendiendo!
-Cuida de Kamuro por mí, ¿está bien?";
+global.messageArray[18] = "¡Eh! ¡Aún estás aprendiendo!
+Cuida de Kamuro por mí, ¿Está bien?";
 global.categoryArray[18] = "left";
 global.emotionProtagonistArray[18] = "happy";
 global.emotionAntagonistArray[18] = "neutral";

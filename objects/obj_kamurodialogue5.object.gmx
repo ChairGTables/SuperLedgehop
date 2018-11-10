@@ -49,7 +49,7 @@ global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "neutral";
 
-global.messageArray[2] = " ¡No puedo dejar que sus acciones corruptas continúen más!";
+global.messageArray[2] = "¡No puedo dejar que sus acciones corruptas continúen más!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
@@ -65,7 +65,7 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = " ¡He encerrado al senador donde se puede pudrir y morir!";
+global.messageArray[5] = "¡He encerrado al senador donde se puede pudrir y morir!";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "neutral";
@@ -86,12 +86,12 @@ global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "angry";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = " Si tu hermano vive...";
+global.messageArray[9] = "Si tu hermano vive...";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "angry";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = " ¡Esta ciudad está muerta!";
+global.messageArray[10] = "¡Esta ciudad está muerta!";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "angry";
 global.emotionAntagonistArray[10] = "angry";
@@ -128,7 +128,7 @@ global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "angry";
 global.emotionAntagonistArray[16] = "angry";
 
-global.messageArray[17] = " ¡Te quemaré a tí y a todos éstos estúpidos!";
+global.messageArray[17] = "¡Te quemaré a tí y a todos éstos estúpidos!";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "angry";
 global.emotionAntagonistArray[17] = "angry";

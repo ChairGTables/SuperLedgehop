@@ -66,12 +66,12 @@ global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "angry";
 
 global.messageArray[5] = "Se supone que es un hechizo de reflección 
-llamado Shine, ¡pero parece que el tuyo también absorbe!";
+llamado Shine, ¡Pero parece que el tuyo también absorbe!";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "angry";
 
-global.messageArray[6] = "Oh, ¿también sabes del Shine?
+global.messageArray[6] = "Oh, ¿También sabes del Shine?
 ¿Entonces tal vez conozcas a mi tío, Tito?";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
@@ -82,7 +82,7 @@ global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "angry";
 
-global.messageArray[8] = "Así que, ¡mantente fuera de mi vista!";
+global.messageArray[8] = "Así que, ¡Mantente fuera de mi vista!";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "curious";
 global.emotionAntagonistArray[8] = "angry";
@@ -93,12 +93,12 @@ global.emotionProtagonistArray[9] = "curious";
 global.emotionAntagonistArray[9] = "angry";
 
 global.messageArray[10] = "¡Estos chicos disparan lasers! Y en mis
-estudios, ¡se por seguro que los Shine no reflejan lasers!";
+estudios, ¡Se por seguro que los Shine no reflejan lasers!";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "curious";
 global.emotionAntagonistArray[10] = "angry";
 
-global.messageArray[11] = "Así que, ¡me temo que se 
+global.messageArray[11] = "Así que, ¡Me temo que se 
 acabo tu tiempo! ¡Hasta nunca!";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "curious";

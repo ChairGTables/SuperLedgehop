@@ -55,7 +55,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "happy";
 
-global.messageArray[3] = "Como sea, ¿ya te estas sintiendo mejor?";
+global.messageArray[3] = "Como sea, ¿Ya te estas sintiendo mejor?";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
@@ -71,7 +71,7 @@ global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "happy";
 global.emotionAntagonistArray[5] = "curious";
 
-global.messageArray[6] = "¡no sabria que hacer si perdiese a mi única hija!";
+global.messageArray[6] = "¡No sabria que hacer si perdiese a mi única hija!";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "angry";
@@ -81,8 +81,8 @@ global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";
 
-global.messageArray[8] = "¡Como sea! adoptada o no, 
-¡te protegeré como si fueras mi hija!";
+global.messageArray[8] = "¡Como sea! Adoptada o no, 
+¡Te protegeré como si fueras mi hija!";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "angry";
@@ -102,7 +102,7 @@ global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "angry";
 
-global.messageArray[12] = "¡Tu luchando con tan solo una  pistola de perdigon!";
+global.messageArray[12] = "¡Tu luchando con tan solo una pistola de perdigon!";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "angry";

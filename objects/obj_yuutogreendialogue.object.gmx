@@ -145,9 +145,8 @@ global.messageArray[4] = "Yeah. So shoot the green one.";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "neutral";
-break;
 }
-instance_destroy(self);
+instance_destroy(obj_yuutogreendialogue);
 </string>
           </argument>
         </arguments>

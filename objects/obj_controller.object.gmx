@@ -432,6 +432,36 @@ if (global.icecount &gt; 99)
 
 
 
+
+//shot below 0
+if (global.enhancedcount &lt; 0)
+{
+    global.enhancedcount = 0;
+}
+
+if (global.spreadcount &lt; 0)
+{
+    global.spreadcount = 0;
+}
+
+if (global.rapidcount &lt; 0)
+{
+    global.rapidcount = 0;
+}
+
+if (global.firecount &lt; 0)
+{
+    global.firecount = 0;
+}
+
+
+if (global.icecount &lt; 0)
+{
+    global.icecount = 0;
+}
+
+
+
 if (global.bossone &lt; 0)
 {
     global.bossone = 0;

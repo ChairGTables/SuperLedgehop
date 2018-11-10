@@ -50,7 +50,7 @@ global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
 
-global.messageArray[2] = "¿Mi nombre es…Crossette?";
+global.messageArray[2] = "¿Mi nombre es... Crossette?";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "angry";
@@ -61,7 +61,7 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "ueno, aun me nombraste basándose en comida...";
+global.messageArray[4] = "Bueno, aun me nombraste basándose en comida...";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
@@ -105,13 +105,13 @@ global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "angry";
 
-global.messageArray[12] = " incluso te dí un nombre como el de tu hermana.
+global.messageArray[12] = "Incluso te dí un nombre como el de tu hermana.
 Ambas tienen nombres basados en fuegos artificiales.";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "angry";
 global.emotionAntagonistArray[12] = "angry";
 
-global.messageArray[13] = " ¿O preferirias que te cambiara el nombre 
+global.messageArray[13] = "¿O preferirias que te cambiara el nombre 
 a QUESOMAESTRO9000?";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "angry";
@@ -122,7 +122,7 @@ global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "angry";
 global.emotionAntagonistArray[14] = "angry";
 
-global.messageArray[15] = "...de verdad me gusta este nombre.
+global.messageArray[15] = "De verdad me gusta este nombre.
 Gracias.";
 global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "angry";
@@ -140,7 +140,7 @@ global.categoryArray[17] = "left";
 global.emotionProtagonistArray[17] = "curious";
 global.emotionAntagonistArray[17] = "neutral";
 
-global.messageArray[18] = " ¡Pero la forma en que usaba sus
+global.messageArray[18] = "¡Pero la forma en que usaba sus
 habilidades la hacía única!";
 global.categoryArray[18] = "left";
 global.emotionProtagonistArray[18] = "happy";

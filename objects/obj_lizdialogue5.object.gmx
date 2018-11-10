@@ -46,12 +46,12 @@ global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "Si. lo estoy.";
+global.messageArray[1] = "Si. Lo estoy.";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[2] = " Pero ella no.";
+global.messageArray[2] = "Pero ella no.";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "sad";

@@ -95,7 +95,8 @@ if (currentview &gt; 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next();
+            <string>script_execute(scr_stopmusic);
+room_goto(rm_logo);
 </string>
           </argument>
         </arguments>

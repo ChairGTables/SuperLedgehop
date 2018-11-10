@@ -42,7 +42,7 @@ switch(global.language)
 {
 case 1:
 
-global.messageArray[0] = "Señor, Logre atrapar uno.";
+global.messageArray[0] = "Señor, logré atrapar uno.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
@@ -54,7 +54,7 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = " ¿Dónde está el resto?";
+global.messageArray[2] = "¿Dónde está el resto?";
 global.categoryArray[2] = "out";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
@@ -69,7 +69,7 @@ global.categoryArray[4] = "out";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Todos, ¡dispérsense!";
+global.messageArray[5] = "Todos, ¡Dispérsense!";
 global.categoryArray[5] = "out";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "neutral";

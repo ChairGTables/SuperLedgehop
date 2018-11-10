@@ -53,7 +53,7 @@ el color verde. ¿Acaso eres daltonica?";
     global.emotionProtagonistArray[1] = "neutral";
     global.emotionAntagonistArray[1] = "sad";
     
-    global.messageArray[2] = "¡No! B-Bueno, ¡esa olla se miraba violeta!
+    global.messageArray[2] = "¡No! B-Bueno, ¡Esa olla se miraba violeta!
 ¡Justo como el color de tu vestido!";
     global.categoryArray[2] = "left";
     global.emotionProtagonistArray[2] = "sad";

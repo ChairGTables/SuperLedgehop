@@ -52,7 +52,7 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "No, ¡no debes!";
+global.messageArray[2] = "No, ¡No debes!";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
@@ -67,7 +67,7 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Necesitamos  al menos a un policía haciendo
+global.messageArray[5] = "Necesitamos al menos a un policía haciendo
 lo correcto en este mundo.";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "angry";
@@ -115,7 +115,7 @@ global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "angry";
 global.emotionAntagonistArray[13] = "neutral";
 
-global.messageArray[14] = "No puedo hacer eso, ¿¡acaso estas demente!?";
+global.messageArray[14] = "No puedo hacer eso, ¿¡Acaso estas demente!?";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "angry";
 global.emotionAntagonistArray[14] = "neutral";

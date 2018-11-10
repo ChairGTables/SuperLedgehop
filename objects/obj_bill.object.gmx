@@ -28,14 +28,14 @@
             <string>global.shineget = 1;
 
 //Set health for enemy
-hp = 1;
+hp = 200;
 
 safeX = 0;
 safeY = 0;
 
-global.bossone = 1//434;
-global.bosstwo = 0//434;
-global.bossthree = 0//100;
+global.bossone = 434;
+global.bosstwo = 434;
+global.bossthree = 200;
 global.bossvirgin = 0;
 hpIndex = 3;
 

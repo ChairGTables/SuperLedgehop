@@ -72,13 +72,16 @@ if (sprite_index == spr_yuutokneel)
     sprite_index = spr_yuutohurt;
     image_alpha = 0;
 }
-else if (sprite_index == spr_titohurt)//spr_louiehurt)//(sprite_index == spr_crossettewalk|| sprite_index == spr_louiehurt)
+else if (sprite_index == spr_louiehurt)
 {
     room_goto(rm_title);
 }
 else
 {
     global.isCutscene = false;
+    global.chizuruhp = 99;
+    global.chizurump = 99;
+    global.chizurushine = 99;
     room_goto_next();
 }
 

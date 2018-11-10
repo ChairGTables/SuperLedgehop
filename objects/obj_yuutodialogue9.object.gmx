@@ -307,7 +307,7 @@ global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "sad";
 global.emotionAntagonistArray[15] = "sad";
 
-global.messageArray[16] = "Yuuto! The guards are after us";
+global.messageArray[16] = "Yuuto! The guards are after us!";
 global.categoryArray[16] = "left";
 global.emotionProtagonistArray[16] = "sad";
 global.emotionAntagonistArray[16] = "sad";

@@ -31,11 +31,11 @@ safeX = 0;
 safeY = 0;
 
 //Set health for enemy
-hp = 1//100;
+hp = 100//100;
 
-global.bossone = 1//434;
-global.bosstwo = 0//434;
-global.bossthree = 0//100;
+global.bossone = 434;
+global.bosstwo = 434;
+global.bossthree = 100;
 global.bossvirgin = 0;
 
 hpIndex = 3;
@@ -800,7 +800,7 @@ script_execute(scr_truespeedwallcheck);
 if (hp &lt; 1)
 {
     audio_stop_sound(snd_kamurofight);
-    audio_play_sound_on (global.voiceEmitter, snd_lizdeath, false, 10); 
+    audio_play_sound_on (global.voiceEmitter, snd_kamurodeath, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_kamurohurt;
     instance_destroy(self);

@@ -48,26 +48,26 @@ global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "Pfft, ¡por supuesto!
+global.messageArray[1] = "Pfft, ¡Por supuesto!
 ¡Tengo una dimensión menos de que preocuparme!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
 
 
-global.messageArray[2] = "B-Bueno, ¡no sobreviviras la siguiente!";
+global.messageArray[2] = "B-Bueno, ¡No sobreviviras la siguiente!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = " ¡Su armadura es tan fuerte que
-lo único capaz de herirlo con su propias llamas!";
+global.messageArray[3] = "¡Su armadura es tan fuerte que
+lo único capaz de herirlo son sus propias llamas!";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "neutral";
 
 global.messageArray[4] = "¿¡Ahora me temes!?
-¡Ahahaha!";
+¡Ajajaja!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";

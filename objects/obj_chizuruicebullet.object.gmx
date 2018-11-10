@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>damage = 20;
+            <string>damage = 10;
 destroyable = 1;
 image_angle = direction;
 vortex = 0;
