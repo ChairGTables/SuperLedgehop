@@ -44,8 +44,8 @@ global.emotionAntagonistArray[0] = "sad";
 
 
 
-global.messageArray[1] = " ¡No había cavernicola!
-¡Solo una niña pequeña!";
+global.messageArray[1] = " ¡No había cavernícola!
+¡Sólo una niña pequeña!";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "sad";

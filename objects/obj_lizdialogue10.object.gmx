@@ -94,7 +94,7 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "angry";
 
-global.messageArray[11] = "Sé que es esfuerzo extra y que quieres tanto a tu hermano mayor, ¿Pero podrías
+global.messageArray[11] = "Sé que es esfuerzo extra y que quieres tanto a tu hermano mayor, ¿pero podrías
 hacer un búsqueda ilegal en una de las oficinas secretas del gobierno?";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";

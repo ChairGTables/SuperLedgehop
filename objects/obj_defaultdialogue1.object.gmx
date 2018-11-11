@@ -44,7 +44,7 @@ global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "¿Que es lo que quieres, cabeza de queso?";
+global.messageArray[1] = "¿Qué es lo que quieres, cabeza de queso?";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "angry";
@@ -56,7 +56,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "angry";
 
-global.messageArray[3] = "Bueno, tu CABEZA DE QUESO, me quedo sin tiempo.
+global.messageArray[3] = "Bueno, tú, CABEZA DE QUESO, me quedo sin tiempo.
 ¡Debo salvar a mi hermano!";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
@@ -68,18 +68,18 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
 
-global.messageArray[5] = "¡U-Un momento! ¿¡Estas con esa rara cabeza de flama!?";
+global.messageArray[5] = "¡U-Un momento! ¿¡Estas con esa rara cabeza de llama!?";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "angry";
 
 global.messageArray[6] = "¡O-Oye detente!
-¡Mi hermana es una buena persona ¿Sabes?!";
+¡Mi hermana es una buena persona, ¿sabes?!";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "angry";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "Puede que sea temperamental, ¡Pero es muy buena!";
+global.messageArray[7] = "Puede que sea temperamental, ¡pero es muy buena!";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "angry";
 global.emotionAntagonistArray[7] = "neutral";
@@ -91,7 +91,7 @@ global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "neutral";
 
 global.messageArray[9] = "Bueno, ella me dijo que tu eras peligrosa.
-¡Así que supongo que solo trataba de defenderse!";
+¡Así que supongo que sólo trataba de defenderse!";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "sad";
 global.emotionAntagonistArray[9] = "angry";
@@ -210,7 +210,7 @@ global.categoryArray[30] = "right";
 global.emotionProtagonistArray[30] = "angry";
 global.emotionAntagonistArray[30] = "angry";
 
-global.messageArray[31] = "¡Pero en serio! ¡El es como un héroe para mi!";
+global.messageArray[31] = "¡Pero en serio! ¡Él es como un héroe para mi!";
 global.categoryArray[31] = "left";
 global.emotionProtagonistArray[31] = "neutral";
 global.emotionAntagonistArray[31] = "angry";
@@ -225,7 +225,7 @@ global.categoryArray[33] = "right";
 global.emotionProtagonistArray[33] = "neutral";
 global.emotionAntagonistArray[33] = "angry";
 
-global.messageArray[34] = "Mi hermana me enseñó mucho sobre Fuego.";
+global.messageArray[34] = "Mi hermana me enseñó mucho sobre fuego.";
 global.categoryArray[34] = "right";
 global.emotionProtagonistArray[34] = "neutral";
 global.emotionAntagonistArray[34] = "angry";

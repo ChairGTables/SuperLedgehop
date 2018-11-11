@@ -45,7 +45,7 @@ global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "¡No hay de que, hermana!";
+global.messageArray[1] = "¡No hay de qué, hermana!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
@@ -132,7 +132,7 @@ global.emotionProtagonistArray[16] = "happy";
 global.emotionAntagonistArray[16] = "angry";
 
 global.messageArray[17] = "¡Sí!
-¡Dispara hoy, Amigos mañana!";
+¡Dispara hoy, amigos mañana!";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "neutral";

@@ -42,7 +42,7 @@ global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "¡Rindete! ¡Ya perdiste!";
+global.messageArray[1] = "¡Ríndete! ¡Ya perdiste!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "sad";
@@ -59,7 +59,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "sad";
 
-global.messageArray[4] = "¿Que demonios?";
+global.messageArray[4] = "¿Qué demonios?";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "sad";
@@ -81,17 +81,17 @@ global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "sad";
 
 
-global.messageArray[8] = "Pfft, ¿En serio creiste que te mataria?";
+global.messageArray[8] = "Pfft, ¿En serio creiste que te mataría?";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "sad";
 
-global.messageArray[9] = "¡Haha! ¡No te atreverias! ¡No tienes las agallas!";
+global.messageArray[9] = "¡Haha! ¡No te atreverías! ¡No tienes agallas!";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "happy";
 global.emotionAntagonistArray[9] = "sad";
 
-global.messageArray[10] = "¡No! Dispara hoy, Amigos Mañana!";
+global.messageArray[10] = "¡No! ¡Dispara hoy, amigos mañana!";
 global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "happy";
 global.emotionAntagonistArray[10] = "sad";

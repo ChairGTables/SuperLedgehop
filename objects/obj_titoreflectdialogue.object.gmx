@@ -50,7 +50,7 @@ global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 
-global.messageArray[2] = "¡SI! ¡¡YA LO SE!!";
+global.messageArray[2] = "¡SÍ! ¡¡YA LO SE!!";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "happy";

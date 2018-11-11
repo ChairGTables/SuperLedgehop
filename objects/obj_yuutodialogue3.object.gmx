@@ -39,28 +39,28 @@ switch( global.language )
 {
 case 1:
 
-global.messageArray[0] = "¿¡QUE!? ¿¡En serio les robaste sus llamas!?";
+global.messageArray[0] = "¿¡QUÉ!? ¿¡En serio les robaste sus llamas!?";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "¿A-Acaso tu tambien eres una hechicera?";
+global.messageArray[1] = "¿A-Acaso tú tambien eres una hechicera?";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
 
-global.messageArray[2] = "Nah. Solo use algo llamado tecnología.";
+global.messageArray[2] = "Nah. Solo usé algo llamado tecnología.";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "¡Adaptate a los tiempos, anciana!";
+global.messageArray[3] = "¡Adáptate a los tiempos, anciana!";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "¡C-Callate! ¡Estudié mucho sobre esa barrera sabes!";
+global.messageArray[4] = "¡C-Cállate! ¡Estudié mucho sobre esa barrera, sabes!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "angry";
@@ -77,7 +77,7 @@ global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "¡No! ¡Ni siquiera se quien eres!";
+global.messageArray[7] = "¡No! ¡Ni siquiera sé quién eres!";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "angry";
@@ -93,13 +93,13 @@ global.emotionProtagonistArray[9] = "curious";
 global.emotionAntagonistArray[9] = "angry";
 
 global.messageArray[10] = "¡Estos chicos disparan lasers! Y en mis
-estudios, ¡Se por seguro que los Shine no reflejan lasers!";
+estudios, ¡Sé por seguro que los Shine no reflejan lasers!";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "curious";
 global.emotionAntagonistArray[10] = "angry";
 
 global.messageArray[11] = "Así que, ¡Me temo que se 
-acabo tu tiempo! ¡Hasta nunca!";
+acabó tu tiempo! ¡Hasta nunca!";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "curious";
 global.emotionAntagonistArray[11] = "angry";

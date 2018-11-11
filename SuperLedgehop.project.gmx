@@ -490,42 +490,42 @@
         <sprite>sprites\spr_flashbangblindness</sprite>
       </sprites>
       <sprites name="enemies">
-        <sprite>sprites\spr_enemyenhancedbullet</sprite>
-        <sprite>sprites\spr_oldbasicenemy</sprite>
-        <sprite>sprites\spr_roundcannon</sprite>
-        <sprite>sprites\spr_roundcannonhurt</sprite>
-        <sprite>sprites\spr_spiketiles</sprite>
-        <sprite>sprites\spr_oldbasicenemyhurt</sprite>
-        <sprite>sprites\spr_bigredtree</sprite>
-        <sprite>sprites\spr_musicbox</sprite>
-        <sprite>sprites\spr_musicboxhurt</sprite>
         <sprite>sprites\snd_gatestopper</sprite>
+        <sprite>sprites\spr_beamboy</sprite>
+        <sprite>sprites\spr_beamrotate</sprite>
+        <sprite>sprites\spr_bigredtree</sprite>
+        <sprite>sprites\spr_curvingplane</sprite>
+        <sprite>sprites\spr_dooradvice</sprite>
         <sprite>sprites\spr_enemybasic2</sprite>
         <sprite>sprites\spr_enemybasic2hurt</sprite>
         <sprite>sprites\spr_enemybasic3</sprite>
         <sprite>sprites\spr_enemybasic3hurt</sprite>
+        <sprite>sprites\spr_enemyenhancedbullet</sprite>
         <sprite>sprites\spr_frostenemy</sprite>
         <sprite>sprites\spr_frostenemyhurt</sprite>
-        <sprite>sprites\spr_wooddoor</sprite>
+        <sprite>sprites\spr_frostspike</sprite>
         <sprite>sprites\spr_moose</sprite>
         <sprite>sprites\spr_moosehurt</sprite>
-        <sprite>sprites\spr_totempole</sprite>
-        <sprite>sprites\spr_dooradvice</sprite>
-        <sprite>sprites\spr_trashbin</sprite>
+        <sprite>sprites\spr_musicbox</sprite>
         <sprite>sprites\spr_musicboxadvice</sprite>
-        <sprite>sprites\spr_beamboy</sprite>
-        <sprite>sprites\spr_beamrotate</sprite>
-        <sprite>sprites\spr_curvingplane</sprite>
-        <sprite>sprites\spr_straightdown</sprite>
-        <sprite>sprites\spr_policerifle</sprite>
+        <sprite>sprites\spr_musicboxhurt</sprite>
+        <sprite>sprites\spr_oldbasicenemy</sprite>
+        <sprite>sprites\spr_oldbasicenemyhurt</sprite>
         <sprite>sprites\spr_policechief</sprite>
-        <sprite>sprites\spr_policeriflehurt</sprite>
-        <sprite>sprites\spr_policegrenade</sprite>
-        <sprite>sprites\spr_policegrenadehurt</sprite>
         <sprite>sprites\spr_policecyborg</sprite>
         <sprite>sprites\spr_policecyborghurt</sprite>
-        <sprite>sprites\spr_frostspike</sprite>
+        <sprite>sprites\spr_policegrenade</sprite>
+        <sprite>sprites\spr_policegrenadehurt</sprite>
+        <sprite>sprites\spr_policerifle</sprite>
+        <sprite>sprites\spr_policeriflehurt</sprite>
+        <sprite>sprites\spr_roundcannon</sprite>
+        <sprite>sprites\spr_roundcannonhurt</sprite>
         <sprite>sprites\spr_snowflake</sprite>
+        <sprite>sprites\spr_spiketiles</sprite>
+        <sprite>sprites\spr_straightdown</sprite>
+        <sprite>sprites\spr_totempole</sprite>
+        <sprite>sprites\spr_trashbin</sprite>
+        <sprite>sprites\spr_wooddoor</sprite>
       </sprites>
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>

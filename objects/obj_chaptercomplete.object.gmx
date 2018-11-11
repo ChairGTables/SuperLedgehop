@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>x = view_xview + view_wview / 2;
 y = view_yview + view_hview / 2;
+
+image_speed = 0;
+image_index = global.language;
 </string>
           </argument>
         </arguments>

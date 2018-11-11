@@ -82,12 +82,12 @@ global.emotionProtagonistArray[7] = "angry";
 global.emotionAntagonistArray[7] = "neutral";
 
 
-global.messageArray[8] = "¿¡Como se supone que sepa eso!?";
+global.messageArray[8] = "¿¡Cómo se supone que sepa eso!?";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "No planeo volar la ciudad en pedazos solo por mi mismo,
+global.messageArray[9] = "No planeo volar la ciudad en pedazos sólo por mi mismo,
 sino por el futuro de la humanidad.";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "sad";
@@ -104,12 +104,12 @@ global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "neutral";
 
-global.messageArray[12] = "Todos ustedes quieren esto. Solo que aún no se dan cuenta.";
+global.messageArray[12] = "Todos ustedes quieren esto. Sólo que aún no se dan cuenta.";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "angry";
 global.emotionAntagonistArray[12] = "neutral";
 
-global.messageArray[12] = "¿Alguna vez has considerado el problema que sufren
+global.messageArray[12] = "¿Alguna vez has considerado el problema de que sufren
 múltiples ciudades por culpa de pandilleros?";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "angry";
@@ -120,14 +120,14 @@ global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "neutral";
 global.emotionAntagonistArray[13] = "neutral";
 
-global.messageArray[14] = "Oh, es cierto. Tu eres amiga de otros
+global.messageArray[14] = "Oh, es cierto. Tú eres amiga de otros
 pandilleros, no lo entenderias.";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "neutral";
 global.emotionAntagonistArray[14] = "neutral";
 
-global.messageArray[15] = "No, en serio. Honestamente no me interesa.
-Solo quiero comida y amigos.";
+global.messageArray[15] = "No, en serio. Honestamente, no me interesa.
+Sólo quiero comida y amigos.";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "neutral";
@@ -138,7 +138,7 @@ global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "neutral";
 
-global.messageArray[17] = "Eso es solo un PEQUEÑO problema sobre cuánto dinero debemos.";
+global.messageArray[17] = "Eso es sólo un PEQUEÑO problema sobre cuánto dinero debemos.";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "neutral";
@@ -171,7 +171,7 @@ global.emotionProtagonistArray[22] = "angry";
 global.emotionAntagonistArray[22] = "neutral";
 
 global.messageArray[23] = "¡AHAHAHAA! ¡No me interesa! Estoy seguro de que si vuelo en pedazos
-las áreas con más pandillas, ¡Todos esos rufianes estarán asustados el resto de sus vidas!";
+las áreas con más pandillas, ¡todos esos rufianes estarán asustados el resto de sus vidas!";
 global.categoryArray[23] = "right";
 global.emotionProtagonistArray[23] = "angry";
 global.emotionAntagonistArray[23] = "neutral";
@@ -181,18 +181,18 @@ global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "angry";
 global.emotionAntagonistArray[24] = "neutral";
 
-global.messageArray[25] = "Piensa en cuánto dinero usarás para restaurar la ciudad, ¿¡Huh!? ¿¡Y qué
+global.messageArray[25] = "Piensa en cuánto dinero usarás para restaurar la ciudad, ¿¡huh!? ¿¡Y qué
 hay de todos los pandilleros que sobornaste!? ¡Eres un hipócrita!";
 global.categoryArray[25] = "left";
 global.emotionProtagonistArray[25] = "angry";
 global.emotionAntagonistArray[25] = "neutral";
 
-global.messageArray[26] = "No necesito pagarles, ¡Porque morirán de todos modos!";
+global.messageArray[26] = "No necesito pagarles, ¡porque morirán de todos modos!";
 global.categoryArray[26] = "right";
 global.emotionProtagonistArray[26] = "angry";
 global.emotionAntagonistArray[26] = "neutral";
 
-global.messageArray[27] = "Bueno, haré esto sin importar el costo. Ya sabes lo que dicen.";
+global.messageArray[27] = "Bueno, haré esto sin importar el coste. Ya sabes lo que dicen.";
 global.categoryArray[27] = "right";
 global.emotionProtagonistArray[27] = "angry";
 global.emotionAntagonistArray[27] = "neutral";
@@ -213,7 +213,7 @@ global.categoryArray[30] = "right";
 global.emotionProtagonistArray[30] = "angry";
 global.emotionAntagonistArray[30] = "neutral";
 
-global.messageArray[31] = "¡Un mundo sin ustedes imbeciles!";
+global.messageArray[31] = "¡Un mundo sin ustedes imbéciles!";
 global.categoryArray[31] = "right";
 global.emotionProtagonistArray[31] = "angry";
 global.emotionAntagonistArray[31] = "neutral";

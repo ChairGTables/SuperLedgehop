@@ -108,7 +108,7 @@ if (disappearing == 1 &amp;&amp; invisibility &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index, global.isGamepad, view_xview+ (view_wview / 2), view_yview + (view_hview / 2) + 100, 1, 1, 0, c_white, invisibility);
+            <string>draw_sprite_ext(sprite_index, global.language, view_xview+ (view_wview / 2), view_yview + (view_hview / 2) + 100, 1, 1, 0, c_white, invisibility);
 </string>
           </argument>
         </arguments>

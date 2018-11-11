@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_menulanguage);
+            <string>sprite_index = spr_absorbinstruction;
+script_execute(scr_menulanguage);
 
 invisibility = 0;
 disappearing = 0;
@@ -51,7 +52,9 @@ disappearing = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (disappearing == 0 &amp;&amp; invisibility &lt; 1)
+            <string>script_execute(scr_menulanguage);
+
+if (disappearing == 0 &amp;&amp; invisibility &lt; 1)
 {
     invisibility += 0.1;
 }
@@ -82,7 +85,7 @@ if (disappearing == 1 &amp;&amp; invisibility &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_absorbinstruction, global.isGamepad, view_xview+ (view_wview / 2), view_yview + (view_hview / 2) + 100, 1, 1, 0, c_white, invisibility);
+            <string>draw_sprite_ext(sprite_index, global.isGamepad, view_xview+ (view_wview / 2), view_yview + (view_hview / 2) + 100, 1, 1, 0, c_white, invisibility);
 </string>
           </argument>
         </arguments>

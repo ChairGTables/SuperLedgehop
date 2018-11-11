@@ -90,7 +90,7 @@ else
     switch (global.language)
     {
     case 1:
-    global.messageArray[0] = "E-En seguida vuelvo!";
+    global.messageArray[0] = "¡E-En seguida vuelvo!";
     global.categoryArray[0] = "right";
     global.emotionProtagonistArray[0] = "sad";
     global.emotionAntagonistArray[0] = "sad";
@@ -102,7 +102,7 @@ else
     global.emotionAntagonistArray[1] = "sad";
     
     global.messageArray[2] = "¡Imposible!
-Es demasiado alto para flotar sobre.";
+Es demasiado alto como para flotar sobre ello.";
     global.categoryArray[2] = "right";
     global.emotionProtagonistArray[2] = "sad";
     global.emotionAntagonistArray[2] = "sad";

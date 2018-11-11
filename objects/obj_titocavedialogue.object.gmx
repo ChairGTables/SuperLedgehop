@@ -43,7 +43,7 @@ global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "¿¡Q-QUE!?
+global.messageArray[1] = "¿¡Q-QUÉ!?
 ¿¡Acaso no te hice estallar!?";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "sad";
@@ -51,13 +51,13 @@ global.emotionAntagonistArray[1] = "neutral";
 
 
 global.messageArray[2] = " ¡Pfft! Si hubiese usado
-todo mi poder, TU hubieras estallado.";
+todo mi poder, TÚ hubieras estallado.";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "curious";
 
 global.messageArray[3] = "¡Pero en serio creí que te había pasado algo!
-¡Escuche a alguien gritar en esa cueva!";
+¡Escuché a alguien gritar en esa cueva!";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "sad";

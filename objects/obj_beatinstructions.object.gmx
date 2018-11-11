@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>invisibility = 0;
+            <string>image_speed = 0;
+image_index = global.language;
+
+invisibility = 0;
 disappearing = 0;
 </string>
           </argument>
@@ -80,7 +83,7 @@ if (disappearing == 1 &amp;&amp; invisibility &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index, global.isGamepad, view_xview+ (view_wview / 2), view_yview + 75, 1, 1, 0, c_white, invisibility);
+            <string>draw_sprite_ext(sprite_index, image_index, view_xview+ (view_wview / 2), view_yview + 75, 1, 1, 0, c_white, invisibility);
 </string>
           </argument>
         </arguments>

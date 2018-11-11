@@ -72,7 +72,7 @@ global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "sad";
 global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "¡Vine a salvarte cabeza de queso!";
+global.messageArray[6] = "¡Vine a salvarte, cabeza de queso!";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
@@ -88,7 +88,7 @@ global.categoryArray[8] = "out";
 global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Nosotros lo salvamos, ¡No ella!";
+global.messageArray[9] = "Nosotros lo salvamos, ¡no ella!";
 global.categoryArray[9] = "out";
 global.emotionProtagonistArray[9] = "sad";
 global.emotionAntagonistArray[9] = "neutral";
@@ -118,7 +118,7 @@ global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "sad";
 global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "¿Liz? ¡Liz! Acaso estás con esta maniaca?";
+global.messageArray[15] = "¿Liz? ¡Liz! Acaso estás con esta maníaca?";
 global.categoryArray[15] = "out";
 global.emotionProtagonistArray[15] = "sad";
 global.emotionAntagonistArray[15] = "sad";

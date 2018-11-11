@@ -114,7 +114,7 @@ global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "¿Qué demonios hacen tu y mi tio aqui?";
+global.messageArray[1] = "¿Qué demonios hacéis tú y mi tío aquí?";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "sad";
@@ -131,12 +131,12 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Oh vamos, ¡Ya no soy una niña!";
+global.messageArray[4] = "Oh vamos, ¡ya no soy una niña!";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "¡Esta es mi misión, no la suya!";
+global.messageArray[5] = "¡Esta es mi misión, no la tuya!";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "neutral";
 global.emotionAntagonistArray[5] = "neutral";
@@ -146,13 +146,13 @@ global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "neutral";
 
-global.messageArray[7] = "No creo que este siendo acosador.";
+global.messageArray[7] = "No creo que esté siendo acosador.";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "neutral";
 
 
-global.messageArray[8] = "¡¡Si, lo es!!";
+global.messageArray[8] = "¡¡Sí, lo eres!!";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "angry";
 global.emotionAntagonistArray[8] = "neutral";
@@ -179,8 +179,8 @@ global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "happy";
 global.emotionAntagonistArray[12] = "sad";
 
-global.messageArray[13] = "Esta siendo raro, como de costumbre.
-El es asi.";
+global.messageArray[13] = "Está siendo raro, como de costumbre.
+Él es asi.";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";

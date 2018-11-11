@@ -59,17 +59,17 @@ global.categoryArray[2] = "out";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "Señor, lo lamento. El resto escapo.";
+global.messageArray[3] = "Señor, lo lamento. El resto escapó.";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "¿¡Entonces que esperan!?";
+global.messageArray[4] = "¿¡Entonces qué esperan!?";
 global.categoryArray[4] = "out";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Todos, ¡Dispérsense!";
+global.messageArray[5] = "Todos, ¡dispérsense!";
 global.categoryArray[5] = "out";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "neutral";

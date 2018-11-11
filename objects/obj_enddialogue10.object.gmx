@@ -66,7 +66,7 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Si es un crimen hacer lo correcto, ¡Entonces lo seguiré haciendo!";
+global.messageArray[4] = "Si es un crimen hacer lo correcto, ¡entonces lo seguiré haciendo!";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "neutral";
@@ -76,12 +76,12 @@ global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "sad";
 global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "¡Solo obsérvame Tito!";
+global.messageArray[6] = "¡Tan sólo obsérvame, Tito!";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
-global.messageArray[7] = "¡Hare que te enorgullezcas de mi!";
+global.messageArray[7] = "¡Haré que te enorgullezcas de mi!";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "neutral";

@@ -44,7 +44,7 @@ global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "¡Y tu eres mi sobrina favorita!";
+global.messageArray[1] = "¡Y tú eres mi sobrina favorita!";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "happy";
@@ -55,7 +55,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "angry";
 
-global.messageArray[3] = "Con esto, ¡Podrás reflejar las balas de tus enemigos!";
+global.messageArray[3] = "Con esto, ¡podrás reflejar las balas de tus enemigos!";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "neutral";
@@ -67,11 +67,11 @@ global.emotionAntagonistArray[4] = "neutral";
 
 if (global.isGamepad == true)
 {
-    global.messageArray[5] = "¡Si! ¡Solo tienes que PRESIONAR EL BOTÓN X!";
+    global.messageArray[5] = "¡Sí! ¡Sólo tienes que PRESIONAR EL BOTÓN X!";
 }
 else
 {
-    global.messageArray[5] = "¡Si! ¡Solo debes USAR EL CLICK DERECHO!";
+    global.messageArray[5] = "¡Sí! ¡Sólo debes USAR EL CLICK DERECHO!";
 }
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "happy";
@@ -90,11 +90,11 @@ global.emotionAntagonistArray[7] = "neutral";
 
 if (global.isGamepad == true)
 {
-    global.messageArray[8] = "¡Claro! Solo carga tu shine manteniendo EL BOTÓN X.";
+    global.messageArray[8] = "¡Claro! Sólo carga tu shine manteniendo EL BOTÓN X.";
 }
 else
 {
-    global.messageArray[8] = "¡Claro! Solo carga tu shine manteniendo tu CLICK DERECHO.";
+    global.messageArray[8] = "¡Claro! Sólo carga tu shine manteniendo tu CLICK DERECHO.";
 }
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "happy";
@@ -105,13 +105,13 @@ global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "happy";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = "¿Me estas diciendo que puedo usar balas de enemigos?";
+global.messageArray[10] = "¿Me estás diciendo que puedo usar balas de enemigos?";
 global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "happy";
 global.emotionAntagonistArray[10] = "neutral";
 
 global.messageArray[11] = "¡Exacto! Claro que robar está mal,
-¡Pero prefiero que sobrevivas!";
+¡pero prefiero que sobrevivas!";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "happy";
 global.emotionAntagonistArray[11] = "curious";
@@ -132,18 +132,18 @@ global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "sad";
 global.emotionAntagonistArray[14] = "happy";
 
-global.messageArray[15] = "¿Esta bieeeeeeen?";
+global.messageArray[15] = "¿Está bieeeeeeen?";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "happy";
 
-global.messageArray[16] = "¡Muy bien! se que eres lista así que te dejare ir.";
+global.messageArray[16] = "¡Muy bien! Sé que eres lista así que te dejare ir.";
 global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "neutral";
 
 global.messageArray[17] = "Dirígete hacia aquella puerta.
-¡Absorbe las llamas y quemala!";
+¡Absorbe las llamas y quémala!";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "angry";

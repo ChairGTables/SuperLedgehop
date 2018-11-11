@@ -40,13 +40,13 @@ global.messageLimit = 6;
 switch(global.language)
 {
 case 1:
-global.messageArray[0] = "¡GAH! ¿¡Esta bien, Chizuru!?";
+global.messageArray[0] = "¡GAH! ¿¡Está bien, Chizuru!?";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "Si. Lo estoy.";
+global.messageArray[1] = "Sí. Lo estoy.";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "sad";
@@ -56,7 +56,7 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "sad";
 
-global.messageArray[3] = "¿Quien?";
+global.messageArray[3] = "¿Quién?";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "angry";
