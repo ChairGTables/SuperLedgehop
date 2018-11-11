@@ -137,6 +137,10 @@ alarm[1] = 15;
         instance_destroy(self);
     }
 }
+else
+{
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

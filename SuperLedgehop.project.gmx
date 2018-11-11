@@ -97,6 +97,7 @@
         <sound>sound\snd_endcutscene3</sound>
         <sound>sound\snd_endcutscene4</sound>
         <sound>sound\snd_lamedimension</sound>
+        <sound>sound\snd_minigameintro</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -910,6 +911,7 @@
         <object>objects\obj_voicevolumetext</object>
         <object>objects\obj_windowedinitial</object>
         <object>objects\obj_wowyoudied</object>
+        <object>objects\obj_stagefourdeleter</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -1080,6 +1082,7 @@
           <object>objects\obj_titoweaponsdialogue</object>
           <object>objects\obj_titoreflectdialogue</object>
           <object>objects\obj_yuutolockdialogue</object>
+          <object>objects\obj_yuutokeydialogue</object>
           <object>objects\obj_yuutogreendialogue</object>
           <object>objects\obj_yuutoreddialogue</object>
           <object>objects\obj_yuutoviolet</object>

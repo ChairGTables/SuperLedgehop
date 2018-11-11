@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>friendly = 0;
+            <string>equip = "fire";
+
+friendly = 0;
 absorbed = 0;
 targetSpeed = 0;
 targetDirection = 0;

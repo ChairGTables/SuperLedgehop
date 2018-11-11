@@ -31,6 +31,8 @@ hp = 20;
 safeX = 0;
 safeY = 0;
 
+equip = "enhanced";
+
 //set health drops
 minDrops = 0;
 maxDrops = 2;

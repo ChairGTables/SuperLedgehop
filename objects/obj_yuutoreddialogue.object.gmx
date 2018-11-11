@@ -104,7 +104,14 @@ inside a pot anyways?";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(dialogue) == 0)
+            <string>if (!instance_exists(obj_yuutoassist))
+{
+    instance_destroy(self);
+}
+
+
+
+if (instance_exists(dialogue) == 0)
 {
     global.speaking = false;
     instance_destroy(self);

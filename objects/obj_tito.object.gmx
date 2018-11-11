@@ -35,6 +35,8 @@ global.bossvirgin = 0;
 safeX = 0;
 safeY = 0;
 
+equip = "rapid";
+
 circleWarn = instance_create(-9999, -9999, obj_circlewarn);
 circleWarn.visible = 0;
 

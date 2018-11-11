@@ -33,6 +33,8 @@ hp = 200;
 safeX = 0;
 safeY = 0;
 
+equip = "spread";
+
 global.bossone = 434;
 global.bosstwo = 434;
 global.bossthree = 200;

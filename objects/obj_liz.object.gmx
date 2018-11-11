@@ -37,6 +37,8 @@ global.shineget = 1;
 safeX = 0;
 safeY = 0;
 
+equip = "rapid";
+
 //set animation speed
 image_speed = 0.2;
 

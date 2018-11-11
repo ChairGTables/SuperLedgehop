@@ -30,8 +30,10 @@
 safeX = 0;
 safeY = 0;
 
+equip = "fire";
+
 //Set health for enemy
-hp = 100//100;
+hp = 100;//100;
 
 global.bossone = 434;
 global.bosstwo = 434;
@@ -272,6 +274,14 @@ alarm[2] = 2;
 
 script_execute(scr_enemycorestep);
 
+if (audio_is_playing(snd_bosstheme))
+{
+    audio_stop_sound(snd_bosstheme);
+    if(!audio_is_playing(snd_kamurofight)) 
+    {
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_kamurofight, true, 10);
+    }    
+}
 
 
 ////////////////////////////

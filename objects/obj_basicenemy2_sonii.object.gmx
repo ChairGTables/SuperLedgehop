@@ -35,6 +35,8 @@ maxDrops = 3;
 safeX = 0;
 safeY = 0;
 
+equip = "enhanced";
+
 //set animation speed
 image_speed = 0.1;
 

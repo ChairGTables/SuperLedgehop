@@ -38,6 +38,8 @@ targetAngle = 0;
 //Set health for enemy
 hp = 9;
 
+equip = "spread";
+
 //set health drops
 minDrops = 4;
 maxDrops = 6;
