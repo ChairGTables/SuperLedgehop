@@ -163,7 +163,7 @@ script_execute(scr_destroywhenoutofview);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_yuutoboss))
+            <string>if (!instance_exists(obj_yuutoboss) &amp;&amp; !instance_exists(obj_bill))
 {    
     instance_destroy(self);
 }

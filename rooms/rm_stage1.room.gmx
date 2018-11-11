@@ -128,6 +128,7 @@
     <instance objName="obj_wall" x="192" y="608" name="inst_F1BF512F" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="448" name="inst_F44FFCF1" locked="0" code="" scaleX="22" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_musicboxadvice" x="493" y="2194" name="inst_4A006A45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_waterhider_sonii" x="589" y="1164" name="inst_DF9FFA4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_levelone" x="448" y="160" w="32" h="32" xo="64" yo="192" id="10000184" name="inst_56343F37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

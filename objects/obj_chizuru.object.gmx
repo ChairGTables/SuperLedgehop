@@ -31,6 +31,9 @@ global.chizurumovey = 0;
 previousX = 0;
 previousY = 0;
 
+safeX = 0;
+safeY = 0;
+
 mySpeed = 7;
 analogBoundary = 0.1;
 aimBoundary = 0.01;
@@ -347,6 +350,36 @@ alarm[7] = 2;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Emergency softlock
+if (place_meeting(x, y, obj_wall))
+{
+    x = safeX;
+    y = safeY;
+    alarm[7] = 5;
+    //instance_create(x, y, obj_redcircle);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -373,6 +406,15 @@ if (!place_meeting(x, y, obj_wall))
     previousY = y;
     alarm[7] = 2;
 }
+
+//Second fix if stuck in wall
+if (!place_meeting(x, y, obj_wall))
+{
+    safeX = x;
+    safeY = y;
+    alarm[6] = 15;
+}
+
 
 if (global.chizuruhp &lt; 1)
 {
@@ -660,11 +702,12 @@ if (action == 1)
         }
         
     }
+    script_execute(scr_truespeedwallcheck);
     
     //x movement
     if (global.chizurumovex &gt; analogBoundary || global.chizurumovex &lt; -analogBoundary)
     {
-        if (!place_meeting(x + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall) &amp;&amp; !place_meeting(x  + ( (global.chizurumovex * mySpeed * speedMultiplier) / 2), y, obj_wall) )
+        if (!place_meeting(x + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall) &amp;&amp; !place_meeting(x  + ( (global.chizurumovex * mySpeed * speedMultiplier) / 2), y, obj_wall ) &amp;&amp; !place_meeting(x + hspeed + global.chizurumovex * mySpeed * speedMultiplier, y, obj_wall ) )
         {
             //if issues continue, add in the hspeed as another factor
         
@@ -725,7 +768,7 @@ if (action == 1)
     //y movement
     if (global.chizurumovey &gt; analogBoundary || global.chizurumovey &lt; -analogBoundary)
     {
-        if (!place_meeting(x, y + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) &amp;&amp; !place_meeting(x, y + ( (global.chizurumovey * mySpeed * speedMultiplier) / 2), obj_wall) )
+        if (!place_meeting(x, y + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) &amp;&amp; !place_meeting(x, y + ( (global.chizurumovey * mySpeed * speedMultiplier) / 2), obj_wall ) &amp;&amp; !place_meeting(x, y + vspeed + global.chizurumovey * mySpeed * speedMultiplier, obj_wall) )
         {
             /*
             yWallCheck = 0;
