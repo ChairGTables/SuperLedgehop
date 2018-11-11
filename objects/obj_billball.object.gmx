@@ -106,33 +106,36 @@ alarm[1] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle += spin;
-flame.image_angle = image_angle;
-flame.x = x;
-flame.y = y;
-
-if (combat == 1 &amp;&amp; flame.image_xscale &lt; 0.7)
+            <string>if (instance_exists(flame))
 {
-    flame.image_xscale += 0.05;
-    flame.image_yscale += 0.05;
-}
-
-if (following == 1 &amp;&amp; instance_exists(obj_chizuru))
-{
-    speed = 3;
-    direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
-}
-
-if (fading == 1)
-{
-    image_alpha -= 0.1;
-}
-flame.image_alpha = image_alpha;
-
-if (image_alpha &lt; 0.1)
-{
-    instance_destroy(flame);
-    instance_destroy(self);
+    image_angle += spin;
+    flame.image_angle = image_angle;
+    flame.x = x;
+    flame.y = y;
+    
+    if (combat == 1 &amp;&amp; flame.image_xscale &lt; 0.7)
+    {
+        flame.image_xscale += 0.05;
+        flame.image_yscale += 0.05;
+    }
+    
+    if (following == 1 &amp;&amp; instance_exists(obj_chizuru))
+    {
+        speed = 3;
+        direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
+    }
+    
+    if (fading == 1)
+    {
+        image_alpha -= 0.1;
+    }
+    flame.image_alpha = image_alpha;
+    
+    if (image_alpha &lt; 0.1)
+    {
+        instance_destroy(flame);
+        instance_destroy(self);
+    }
 }
 </string>
           </argument>

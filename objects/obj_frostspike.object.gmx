@@ -41,6 +41,7 @@ disappearing = 0;
 alarm[5] = 150;
 
 wall = instance_create(-9999, -9999, obj_wall);
+wall.ice = 1;
 </string>
           </argument>
         </arguments>

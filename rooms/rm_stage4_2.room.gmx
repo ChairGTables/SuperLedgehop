@@ -87,7 +87,7 @@
     <instance objName="obj_sidetoside_sonii" x="3488" y="480" name="inst_D13F94A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sidetoside_sonii" x="3648" y="224" name="inst_F919E513" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sidetoside_sonii" x="3744" y="480" name="inst_15262E4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_squaremover_sonii" x="4288" y="384" name="inst_51D584B3" locked="0" code="drop = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_squaremover_sonii" x="4240" y="371" name="inst_51D584B3" locked="0" code="drop = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moosespawner" x="1120" y="1424" name="inst_18BE7091" locked="0" code="drop = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="2736" y="3600" name="inst_83F5981C" locked="0" code="teleportID = 3;&#xA;visible = 0;&#xA;xOffset = 16;&#xA;yOffset = 48;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="2112" y="656" name="inst_6F625171" locked="0" code="visible = 0;&#xA;teleportID = 3;&#xA;xOffset = 16;&#xA;yOffset = -48;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -263,6 +263,7 @@
     <instance objName="obj_policerapid" x="4568" y="1608" name="inst_9478F47D" locked="0" code="dropKey = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laststagefade" x="2461" y="3397" name="inst_DFA69C81" locked="0" code="" scaleX="0.933962285518646" scaleY="1.89999997615814" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2450" y="3285" name="inst_F7FF40C8" locked="0" code="" scaleX="6.84000015258789" scaleY="3.65625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_violetkey" x="4400" y="363" name="inst_67FDAC59" locked="0" code="index = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_rockywhite" x="2464" y="4864" w="32" h="32" xo="32" yo="0" id="10041780" name="inst_D04D7AF0" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

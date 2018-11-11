@@ -14,7 +14,7 @@ if (instance_exists(obj_louie))
 }
 if (instance_exists(obj_bill))
 {
-    cancel = 1;
+    cancel = 2;
 }
 if (instance_exists(obj_kamuro))
 {
@@ -37,6 +37,14 @@ if (instance_exists(obj_liz))
 if (cancel == 0)
 {
     if (x < view_xview-10 || x > view_xview+969 || y > view_yview+549 || y < view_yview-10)
+    {
+        instance_destroy(self);
+    }
+}
+
+if (cancel == 2)
+{
+    if (x < 0 || y < 0 || x > room_width || y > room_height)
     {
         instance_destroy(self);
     }

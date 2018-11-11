@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Turn off animation speed because sprite changes with timer
+            <string>global.shineget = 0;
+
+//Turn off animation speed because sprite changes with timer
 image_speed = 0;
 
 //set health drops
