@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 1;
+            <string>image_speed = 0;
+image_index = global.language;
+
+vspeed = 1;
 disappearing = 0;
 alarm[0] = 20;
 steps = 0;

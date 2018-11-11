@@ -127,6 +127,9 @@
             <kind>1</kind>
             <string>script_execute(scr_stopmusic);
 
+image_speed = 0;
+image_index = global.language;
+
 global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_gutsman, false, 10); // Music in rm1, priority 10, looping
 </string>
           </argument>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>invisibility = 0;
+            <string>script_execute(scr_menulanguage);
+
+invisibility = 0;
 disappearing = 0;
 
 alarm[0] = 200;

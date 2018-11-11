@@ -30,6 +30,9 @@ disappearing = 0;
 alarm[0] = 20;
 steps = 0;
 
+image_speed = 0;
+image_index = global.language;
+
 if (instance_exists(obj_absorbready))
 {
     instance_destroy(obj_absorbready);

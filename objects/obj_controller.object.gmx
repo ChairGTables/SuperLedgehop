@@ -797,7 +797,7 @@ if (global.chizurushinecharge &gt; 5 &amp;&amp; instance_exists(obj_chizuru))
 {
     if (global.isCutscene == false &amp;&amp; global.chizurushine &lt; 40)
     {
-        draw_sprite(spr_halfshinenotice, 0, obj_chizuru.x, obj_chizuru.y + 15);
+        draw_sprite(spr_halfshinenotice, global.language, obj_chizuru.x, obj_chizuru.y + 15);
     }       
 }
 

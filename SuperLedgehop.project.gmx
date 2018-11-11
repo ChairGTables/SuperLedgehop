@@ -305,85 +305,54 @@
         <sprite>sprites\spr_absorbparticle</sprite>
         <sprite>sprites\spr_smolhitbox</sprite>
         <sprite>sprites\spr_healmagnet</sprite>
+        <sprites name="spanish">
+          <sprite>sprites\spr_chizurucurrentbulletspanish</sprite>
+        </sprites>
       </sprites>
       <sprites name="effects">
-        <sprite>sprites\spr_smallcircle</sprite>
-        <sprite>sprites\spr_redcircle</sprite>
-        <sprite>sprites\spr_whitedot</sprite>
-        <sprite>sprites\spr_explosion</sprite>
-        <sprite>sprites\spr_mediumwhitecircle</sprite>
-        <sprite>sprites\spr_combotext</sprite>
-        <sprite>sprites\spr_comborush</sprite>
-        <sprite>sprites\spr_musicnote</sprite>
-        <sprite>sprites\spr_hitsweat</sprite>
-        <sprite>sprites\spr_bigwhite</sprite>
-        <sprite>sprites\spr_bigblack</sprite>
-        <sprite>sprites\spr_siopaoexplosion</sprite>
-        <sprite>sprites\spr_chaptercomplete</sprite>
-        <sprite>sprites\spr_hpup</sprite>
-        <sprite>sprites\spr_mpup</sprite>
+        <sprites name="spanish">
+          <sprite>sprites\spr_absorbinstructionspanish</sprite>
+          <sprite>sprites\spr_mpnoticespanish</sprite>
+          <sprite>sprites\spr_skipinstructionsspanish</sprite>
+        </sprites>
         <sprite>sprites\spr_absorbinstruction</sprite>
+        <sprite>sprites\spr_absorbready</sprite>
+        <sprite>sprites\spr_badend</sprite>
         <sprite>sprites\spr_beatinstruction</sprite>
-        <sprite>sprites\spr_outofammo</sprite>
-        <sprite>sprites\spr_skipinstructions</sprite>
-        <sprite>sprites\spr_cutsceneskip</sprite>
-        <sprite>sprites\spr_shinemessage</sprite>
-        <sprite>sprites\spr_warnbox</sprite>
-        <sprite>sprites\spr_warnboxcenter</sprite>
+        <sprite>sprites\spr_bigblack</sprite>
+        <sprite>sprites\spr_bigwhite</sprite>
         <sprite>sprites\spr_bubbleexplosion</sprite>
+        <sprite>sprites\spr_chaptercomplete</sprite>
+        <sprite>sprites\spr_comborush</sprite>
+        <sprite>sprites\spr_combotext</sprite>
+        <sprite>sprites\spr_cutsceneskip</sprite>
+        <sprite>sprites\spr_defaultexplosion</sprite>
+        <sprite>sprites\spr_explosion</sprite>
+        <sprite>sprites\spr_halfshinenotice</sprite>
+        <sprite>sprites\spr_hitsweat</sprite>
+        <sprite>sprites\spr_hpup</sprite>
+        <sprite>sprites\spr_laststagefade</sprite>
+        <sprite>sprites\spr_mediumwhitecircle</sprite>
+        <sprite>sprites\spr_mpnotice</sprite>
+        <sprite>sprites\spr_mprecharged</sprite>
+        <sprite>sprites\spr_mpup</sprite>
+        <sprite>sprites\spr_musicnote</sprite>
         <sprite>sprites\spr_noshine</sprite>
         <sprite>sprites\spr_outofabsorbs</sprite>
-        <sprite>sprites\spr_mprecharged</sprite>
-        <sprite>sprites\spr_absorbready</sprite>
-        <sprite>sprites\spr_halfshinenotice</sprite>
-        <sprite>sprites\spr_mpnotice</sprite>
-        <sprite>sprites\spr_rapidadvice</sprite>
+        <sprite>sprites\spr_outofammo</sprite>
         <sprite>sprites\spr_planetearth</sprite>
+        <sprite>sprites\spr_rapidadvice</sprite>
+        <sprite>sprites\spr_redcircle</sprite>
+        <sprite>sprites\spr_shinemessage</sprite>
+        <sprite>sprites\spr_siopaoexplosion</sprite>
+        <sprite>sprites\spr_skipinstructions</sprite>
+        <sprite>sprites\spr_smallcircle</sprite>
         <sprite>sprites\spr_spaceback</sprite>
-        <sprite>sprites\spr_badend</sprite>
-        <sprite>sprites\spr_laststagefade</sprite>
-        <sprite>sprites\spr_defaultexplosion</sprite>
+        <sprite>sprites\spr_warnbox</sprite>
+        <sprite>sprites\spr_warnboxcenter</sprite>
+        <sprite>sprites\spr_whitedot</sprite>
       </sprites>
       <sprites name="functionality">
-        <sprite>sprites\spr_hudbars</sprite>
-        <sprite>sprites\spr_chizuruhud</sprite>
-        <sprite>sprites\spr_assisthud</sprite>
-        <sprite>sprites\spr_bosshud</sprite>
-        <sprite>sprites\spr_ammohud</sprite>
-        <sprite>sprites\spr_transparentbluesquare</sprite>
-        <sprite>sprites\spr_titlelogo</sprite>
-        <sprite>sprites\spr_titleselection</sprite>
-        <sprite>sprites\spr_yellowbox</sprite>
-        <sprite>sprites\spr_whitebox</sprite>
-        <sprite>sprites\spr_controlscheme</sprite>
-        <sprite>sprites\spr_caution</sprite>
-        <sprite>sprites\spr_wowyoudied</sprite>
-        <sprite>sprites\spr_survivalmenu</sprite>
-        <sprite>sprites\sprite142</sprite>
-        <sprite>sprites\spr_hporb</sprite>
-        <sprite>sprites\spr_mporb</sprite>
-        <sprite>sprites\spr_cheesesteak</sprite>
-        <sprite>sprites\spr_kingtruck</sprite>
-        <sprite>sprites\spr_caveentrance</sprite>
-        <sprite>sprites\spr_caveshadow</sprite>
-        <sprite>sprites\spr_emptysprite</sprite>
-        <sprite>sprites\spr_vase</sprite>
-        <sprite>sprites\spr_creditslist</sprite>
-        <sprite>sprites\spr_creditsbox</sprite>
-        <sprite>sprites\spr_reportbook</sprite>
-        <sprite>sprites\spr_opendoor</sprite>
-        <sprite>sprites\spr_doorsignal</sprite>
-        <sprite>sprites\spr_groundsignal</sprite>
-        <sprite>sprites\spr_colorkeys</sprite>
-        <sprite>sprites\spr_laststagebarrier</sprite>
-        <sprite>sprites\spr_volumemeter</sprite>
-        <sprite>sprites\spr_settingsarrow</sprite>
-        <sprite>sprites\spr_volumecircle</sprite>
-        <sprite>sprites\spr_ldportal</sprite>
-        <sprite>sprites\spr_ldsillhoute</sprite>
-        <sprite>sprites\spr_ldtext</sprite>
-        <sprite>sprites\spr_firstlanguagecircle</sprite>
-        <sprite>sprites\spr_firstlanguage</sprite>
         <sprites name="mainmenu">
           <sprites name="default">
             <sprite>sprites\spr_stage1</sprite>
@@ -438,6 +407,48 @@
             <sprite>sprites\spr_voicevolumejapanese</sprite>
           </sprites>
         </sprites>
+        <sprites name="spanish">
+          <sprite>sprites\spr_controlschemespanish</sprite>
+        </sprites>
+        <sprite>sprites\spr_ammohud</sprite>
+        <sprite>sprites\spr_assisthud</sprite>
+        <sprite>sprites\spr_bosshud</sprite>
+        <sprite>sprites\spr_caution</sprite>
+        <sprite>sprites\spr_caveentrance</sprite>
+        <sprite>sprites\spr_caveshadow</sprite>
+        <sprite>sprites\spr_cheesesteak</sprite>
+        <sprite>sprites\spr_chizuruhud</sprite>
+        <sprite>sprites\spr_colorkeys</sprite>
+        <sprite>sprites\spr_controlscheme</sprite>
+        <sprite>sprites\spr_creditsbox</sprite>
+        <sprite>sprites\spr_creditslist</sprite>
+        <sprite>sprites\spr_doorsignal</sprite>
+        <sprite>sprites\spr_emptysprite</sprite>
+        <sprite>sprites\spr_firstlanguage</sprite>
+        <sprite>sprites\spr_firstlanguagecircle</sprite>
+        <sprite>sprites\spr_groundsignal</sprite>
+        <sprite>sprites\spr_hporb</sprite>
+        <sprite>sprites\spr_hudbars</sprite>
+        <sprite>sprites\spr_kingtruck</sprite>
+        <sprite>sprites\spr_laststagebarrier</sprite>
+        <sprite>sprites\spr_ldportal</sprite>
+        <sprite>sprites\spr_ldsillhoute</sprite>
+        <sprite>sprites\spr_ldtext</sprite>
+        <sprite>sprites\spr_mporb</sprite>
+        <sprite>sprites\spr_opendoor</sprite>
+        <sprite>sprites\spr_reportbook</sprite>
+        <sprite>sprites\spr_settingsarrow</sprite>
+        <sprite>sprites\spr_survivalmenu</sprite>
+        <sprite>sprites\spr_titlelogo</sprite>
+        <sprite>sprites\spr_titleselection</sprite>
+        <sprite>sprites\spr_transparentbluesquare</sprite>
+        <sprite>sprites\spr_vase</sprite>
+        <sprite>sprites\spr_volumecircle</sprite>
+        <sprite>sprites\spr_volumemeter</sprite>
+        <sprite>sprites\spr_whitebox</sprite>
+        <sprite>sprites\spr_wowyoudied</sprite>
+        <sprite>sprites\spr_yellowbox</sprite>
+        <sprite>sprites\sprite142</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -840,108 +851,108 @@
         <object>objects\obj_bossmusic</object>
         <object>objects\obj_camera_chair</object>
         <object>objects\obj_caution</object>
+        <object>objects\obj_chamoru</object>
+        <object>objects\obj_chizuruspawner</object>
         <object>objects\obj_controller</object>
         <object>objects\obj_controlscheme</object>
+        <object>objects\obj_creditsbox</object>
+        <object>objects\obj_cutscenes</object>
+        <object>objects\obj_cutscenesoffon</object>
         <object>objects\obj_dialoguetest</object>
+        <object>objects\obj_english</object>
+        <object>objects\obj_espanol</object>
+        <object>objects\obj_exitoptions</object>
+        <object>objects\obj_finale</object>
+        <object>objects\obj_firstfullscreencircle</object>
+        <object>objects\obj_firstlanguagecircle</object>
+        <object>objects\obj_fullscreen</object>
+        <object>objects\obj_fullscreeninitial</object>
+        <object>objects\obj_fullscreenoffon</object>
         <object>objects\obj_gamepad</object>
+        <object>objects\obj_hporb</object>
+        <object>objects\obj_japanese</object>
+        <object>objects\obj_kamuromusic</object>
         <object>objects\obj_keyeraser</object>
+        <object>objects\obj_lamelogo</object>
+        <object>objects\obj_lametext</object>
+        <object>objects\obj_languagelist</object>
+        <object>objects\obj_languages</object>
+        <object>objects\obj_ldoutline</object>
+        <object>objects\obj_mporb</object>
+        <object>objects\obj_musicfadeout</object>
         <object>objects\obj_musictransition</object>
+        <object>objects\obj_musicvolumebar</object>
+        <object>objects\obj_musicvolumetext</object>
         <object>objects\obj_nextroom</object>
+        <object>objects\obj_options</object>
         <object>objects\obj_protagonisttalk</object>
+        <object>objects\obj_quitgame</object>
+        <object>objects\obj_settingsarrow</object>
+        <object>objects\obj_sfxvolumebar</object>
+        <object>objects\obj_sfxvolumetext</object>
+        <object>objects\obj_shmupcontroller</object>
         <object>objects\obj_stage1</object>
         <object>objects\obj_stage2</object>
         <object>objects\obj_stage3</object>
         <object>objects\obj_stage4</object>
-        <object>objects\obj_finale</object>
         <object>objects\obj_stageback</object>
+        <object>objects\obj_stagefivemusic</object>
+        <object>objects\obj_stagefourmusic</object>
+        <object>objects\obj_stagethreemusic</object>
+        <object>objects\obj_stagetwomusic</object>
         <object>objects\obj_storymode</object>
         <object>objects\obj_survivalmenu</object>
-        <object>objects\obj_options</object>
-        <object>objects\obj_quitgame</object>
-        <object>objects\obj_languages</object>
-        <object>objects\obj_fullscreen</object>
-        <object>objects\obj_cutscenes</object>
-        <object>objects\obj_musicvolumetext</object>
-        <object>objects\obj_sfxvolumetext</object>
-        <object>objects\obj_voicevolumetext</object>
-        <object>objects\obj_exitoptions</object>
-        <object>objects\obj_languagelist</object>
-        <object>objects\obj_fullscreenoffon</object>
-        <object>objects\obj_cutscenesoffon</object>
-        <object>objects\obj_musicvolumebar</object>
-        <object>objects\obj_sfxvolumebar</object>
-        <object>objects\obj_voicevolumebar</object>
-        <object>objects\obj_settingsarrow</object>
         <object>objects\obj_survivalmode</object>
         <object>objects\obj_title</object>
         <object>objects\obj_titlecamera</object>
         <object>objects\obj_titleselection</object>
-        <object>objects\obj_wowyoudied</object>
-        <object>objects\obj_hporb</object>
-        <object>objects\obj_mporb</object>
-        <object>objects\obj_stagetwomusic</object>
-        <object>objects\obj_stagethreemusic</object>
-        <object>objects\obj_stagefourmusic</object>
-        <object>objects\obj_stagefivemusic</object>
-        <object>objects\obj_kamuromusic</object>
-        <object>objects\obj_shmupcontroller</object>
-        <object>objects\obj_chizuruspawner</object>
-        <object>objects\obj_musicfadeout</object>
-        <object>objects\obj_creditsbox</object>
-        <object>objects\obj_lamelogo</object>
-        <object>objects\obj_ldoutline</object>
-        <object>objects\obj_lametext</object>
-        <object>objects\obj_firstlanguagecircle</object>
-        <object>objects\obj_firstfullscreencircle</object>
-        <object>objects\obj_fullscreeninitial</object>
+        <object>objects\obj_voicevolumebar</object>
+        <object>objects\obj_voicevolumetext</object>
         <object>objects\obj_windowedinitial</object>
-        <object>objects\obj_english</object>
-        <object>objects\obj_espanol</object>
-        <object>objects\obj_japanese</object>
-        <object>objects\obj_chamoru</object>
+        <object>objects\obj_wowyoudied</object>
       </objects>
       <objects name="effects">
-        <object>objects\obj_smallcircle</object>
-        <object>objects\obj_redcircle</object>
-        <object>objects\obj_circlewarn</object>
-        <object>objects\obj_damagenumber</object>
-        <object>objects\obj_explosion</object>
-        <object>objects\obj_combotext</object>
-        <object>objects\obj_musicnote</object>
-        <object>objects\obj_hitsweat</object>
-        <object>objects\obj_whitefadein</object>
-        <object>objects\obj_whitebackground</object>
-        <object>objects\obj_whitefadeout</object>
-        <object>objects\obj_whitefadeinslow</object>
+        <object>objects\obj_absorbinstructions</object>
+        <object>objects\obj_absorbinstructionsspace</object>
+        <object>objects\obj_absorbready</object>
+        <object>objects\obj_beatinstructions</object>
+        <object>objects\obj_beatinstructionspace</object>
+        <object>objects\obj_blackbackground</object>
         <object>objects\obj_blackfadein</object>
         <object>objects\obj_blackfadeout</object>
         <object>objects\obj_blackfadeoutslow</object>
-        <object>objects\obj_blackbackground</object>
-        <object>objects\obj_chaptercomplete</object>
-        <object>objects\obj_siopaoexplosion</object>
-        <object>objects\obj_hpup</object>
-        <object>objects\obj_mpup</object>
-        <object>objects\obj_absorbinstructions</object>
-        <object>objects\obj_mpnotice</object>
-        <object>objects\obj_rapidadvice</object>
-        <object>objects\obj_beatinstructions</object>
-        <object>objects\obj_absorbinstructionsspace</object>
-        <object>objects\obj_reflectinstructionspace</object>
         <object>objects\obj_cavedialoguespace</object>
-        <object>objects\obj_lieddialoguespace</object>
-        <object>objects\obj_beatinstructionspace</object>
-        <object>objects\obj_outofammo</object>
-        <object>objects\obj_outofabsorbs</object>
-        <object>objects\obj_absorbready</object>
-        <object>objects\obj_mprecharged</object>
-        <object>objects\obj_skippingcutscene</object>
-        <object>objects\obj_skipinstructions</object>
-        <object>objects\obj_shinemessage</object>
-        <object>objects\obj_warnbox</object>
-        <object>objects\obj_whiteenlarge</object>
-        <object>objects\obj_laststagefade</object>
+        <object>objects\obj_chaptercomplete</object>
+        <object>objects\obj_circlewarn</object>
+        <object>objects\obj_combotext</object>
+        <object>objects\obj_damagenumber</object>
         <object>objects\obj_defaultexplosion</object>
+        <object>objects\obj_explosion</object>
+        <object>objects\obj_hitsweat</object>
+        <object>objects\obj_hpup</object>
+        <object>objects\obj_laststagefade</object>
+        <object>objects\obj_lieddialoguespace</object>
+        <object>objects\obj_mpnotice</object>
+        <object>objects\obj_mprecharged</object>
+        <object>objects\obj_mpup</object>
+        <object>objects\obj_musicnote</object>
+        <object>objects\obj_outofabsorbs</object>
+        <object>objects\obj_outofammo</object>
+        <object>objects\obj_rapidadvice</object>
+        <object>objects\obj_redcircle</object>
+        <object>objects\obj_reflectinstructionspace</object>
+        <object>objects\obj_shinemessage</object>
+        <object>objects\obj_siopaoexplosion</object>
+        <object>objects\obj_skipinstructions</object>
+        <object>objects\obj_skippingcutscene</object>
+        <object>objects\obj_smallcircle</object>
+        <object>objects\obj_warnbox</object>
+        <object>objects\obj_whitebackground</object>
         <object>objects\obj_whiteblocker</object>
+        <object>objects\obj_whiteenlarge</object>
+        <object>objects\obj_whitefadein</object>
+        <object>objects\obj_whitefadeinslow</object>
+        <object>objects\obj_whitefadeout</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -1212,6 +1223,7 @@
     <timelines name="ultran">
       <timeline>timelines\time_sampletimeline_ultran</timeline>
     </timelines>
+    <timeline>timelines\timeline4</timeline>
   </timelines>
   <rooms name="rooms">
     <rooms name="master">
