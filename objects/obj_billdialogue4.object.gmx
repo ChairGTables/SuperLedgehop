@@ -38,7 +38,7 @@ switch (global.language)
 {
 //Spanish
 case 1:
-global.messageArray[0] = "Ahh, asi que esa chica es la secuestradora.";
+global.messageArray[0] = "Ahh, así que esa chica es la secuestradora.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
@@ -93,7 +93,7 @@ global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "angry";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = "¡Te matare!";
+global.messageArray[10] = "¡Te mataré!";
 global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "angry";
 global.emotionAntagonistArray[10] = "neutral";
@@ -113,7 +113,7 @@ global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "angry";
 global.emotionAntagonistArray[12] = "neutral";
 
-global.messageArray[13] = "¡TU ERES LA RAZÓN POR LA QUE EL GOBIERNO ES CORRUPTO!";
+global.messageArray[13] = "¡TÚ ERES LA RAZÓN POR LA QUE EL GOBIERNO ES CORRUPTO!";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "angry";
 global.emotionAntagonistArray[13] = "neutral";

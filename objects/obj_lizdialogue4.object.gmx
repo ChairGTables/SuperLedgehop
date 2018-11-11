@@ -45,7 +45,7 @@ global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "¿¡Que demonios!?";
+global.messageArray[1] = "¿¡Qué demonios!?";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "angry";
@@ -60,13 +60,13 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "¿¡A que te refieres!?
+global.messageArray[4] = "¿¡A qué te refieres!?
 Pudimos haber hecho tu vida más fácil.";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "neutral";
 global.emotionAntagonistArray[4] = "angry";
 
-global.messageArray[5] = "Un momento, ¿Que estoy diciendo?";
+global.messageArray[5] = "Un momento, ¿Qué estoy diciendo?";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "neutral";
 global.emotionAntagonistArray[5] = "angry";
@@ -76,7 +76,7 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "Adios, tonta, ruidosa, molesta, y apestosa escoria.";
+global.messageArray[7] = "Adiós, tonta, ruidosa, molesta, y apestosa escoria.";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";

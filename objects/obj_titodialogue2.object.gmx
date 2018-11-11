@@ -55,7 +55,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "happy";
 
-global.messageArray[3] = "Como sea, ¿Ya te estas sintiendo mejor?";
+global.messageArray[3] = "Como sea, ¿ya te estás sintiendo mejor?";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
@@ -102,18 +102,18 @@ global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "angry";
 
-global.messageArray[12] = "¡Tu luchando con tan solo una pistola de perdigon!";
+global.messageArray[12] = "¡Tú luchando con tan solo una pistola de perdigones!";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "angry";
 
-global.messageArray[13] = "¿¡Acaso estas demente!? ¿En verdad
-crees poder enfrentarte a ellos con una pistola de perdigon?";
+global.messageArray[13] = "¿¡Acaso estás demente!? ¿En verdad
+crees poder enfrentarte a ellos con una pistola de perdigones?";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "neutral";
 global.emotionAntagonistArray[13] = "angry";
 
-global.messageArray[14] = "Pero Tito, tu usas una pistola de perdigon también.";
+global.messageArray[14] = "Pero Tito, tú usas una pistola de perdigones también.";
 global.categoryArray[14] = "left";
 global.emotionProtagonistArray[14] = "neutral";
 global.emotionAntagonistArray[14] = "angry";
@@ -123,7 +123,7 @@ global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
 
-global.messageArray[16] = "Sabes que, deberia darte esto de una vez.";
+global.messageArray[16] = "Sabes qué, debería darte esto de una vez.";
 global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "angry";

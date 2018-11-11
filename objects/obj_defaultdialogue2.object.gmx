@@ -52,7 +52,7 @@ global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "angry";
 
 global.messageArray[2] = "¡Eso no importa!
-¡Ni Siquiera pude contra una perdedora como tu!";
+¡Ni Siquiera pude contra una perdedora como tú!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "angry";
@@ -67,8 +67,8 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
 
-global.messageArray[5] = "Nah, me refiero a que yo soy super fuerte y tu
-estas solo un poco más abajo de mi.";
+global.messageArray[5] = "Nah, me refiero a que yo soy super fuerte y tú
+estás solo un poco más abajo de mi.";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "happy";
 global.emotionAntagonistArray[5] = "angry";
@@ -84,7 +84,7 @@ global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "happy";
 global.emotionAntagonistArray[7] = "angry";
 
-global.messageArray[8] = "¿¡Que!? ¡No!
+global.messageArray[8] = "¿¡Qué!? ¡No!
 ¡No quiero que alguien como tú sea mi dueña!";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "happy";
@@ -123,7 +123,7 @@ global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "happy";
 global.emotionAntagonistArray[14] = "angry";
 
-global.messageArray[15] = "Cielos, ¿Acaso no quieres que tus flamas
+global.messageArray[15] = "Cielos, ¿Acaso no quieres que tus llamas
 sean más fuertes?";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "neutral";

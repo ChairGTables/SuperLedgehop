@@ -45,7 +45,7 @@ global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "¿¡Q-Quien esta ahi!?";
+global.messageArray[1] = "¿¡Q-Quien está ahi!?";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "angry";
@@ -82,7 +82,7 @@ global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";
 
-global.messageArray[8] = "¡A-Alejate!";
+global.messageArray[8] = "¡A-Aléjate!";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
@@ -107,7 +107,7 @@ global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "neutral";
 
-global.messageArray[13] = "¡Esta bien! ¡Tu lo pediste!
+global.messageArray[13] = "¡Está bien! ¡Tu lo pediste!
 Acabo de ¡BLOQUEAR tu MIRA DIRECCIONAL!";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "neutral";

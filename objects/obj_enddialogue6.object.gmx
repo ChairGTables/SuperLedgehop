@@ -79,7 +79,7 @@ global.emotionProtagonistArray[6] = "angry";
 global.emotionAntagonistArray[6] = "neutral";
 
 global.messageArray[7] = "Si hay alguien que no apoye a pesar de estar
-en el lado de nuestros enemigos.";
+en el lado de nuestros enemigos...";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "angry";
 global.emotionAntagonistArray[7] = "neutral";
@@ -100,27 +100,27 @@ global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "angry";
 global.emotionAntagonistArray[10] = "neutral";
 
-global.messageArray[11] = "¿A que te refieres?";
+global.messageArray[11] = "¿A qué te refieres?";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "neutral";
 
-global.messageArray[12] = "Arestame.";
+global.messageArray[12] = "Arréstame.";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "angry";
 global.emotionAntagonistArray[12] = "neutral";
 
-global.messageArray[13] = "¿¡QUE!?";
+global.messageArray[13] = "¿¡QUÉ!?";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "angry";
 global.emotionAntagonistArray[13] = "neutral";
 
-global.messageArray[14] = "No puedo hacer eso, ¿¡Acaso estas demente!?";
+global.messageArray[14] = "No puedo hacer eso, ¿¡acaso estás demente!?";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "angry";
 global.emotionAntagonistArray[14] = "neutral";
 
-global.messageArray[15] = "¡Ja! ¿Desde cuando no lo estuve?";
+global.messageArray[15] = "¡Ja! ¿Desde cuándo no lo estuve?";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "angry";
 global.emotionAntagonistArray[15] = "neutral";
@@ -136,12 +136,12 @@ global.emotionProtagonistArray[17] = "angry";
 global.emotionAntagonistArray[17] = "neutral";
 
 global.messageArray[18] = "Eso te lo dejo a ti.
-Asegurate de que los policías no la encuentren.";
+Asegúrate de que los policías no la encuentren.";
 global.categoryArray[18] = "left";
 global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "neutral";
 
-global.messageArray[19] = "Aun asi no quiero arrestarte
+global.messageArray[19] = "Aún asi no quiero arrestarte,
 ¡IDIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTA!";
 global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "angry";
@@ -157,7 +157,7 @@ global.categoryArray[21] = "left";
 global.emotionProtagonistArray[21] = "angry";
 global.emotionAntagonistArray[21] = "neutral";
 
-global.messageArray[22] = "Hazlo y conservaras tu empleo.";
+global.messageArray[22] = "Hazlo y conservarás tu empleo.";
 global.categoryArray[22] = "left";
 global.emotionProtagonistArray[22] = "angry";
 global.emotionAntagonistArray[22] = "neutral";

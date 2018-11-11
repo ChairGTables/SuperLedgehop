@@ -54,17 +54,17 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "¿¡A-A que te refieres, governador!?";
+global.messageArray[3] = "¿¡A-A que te refieres, gobernador!?";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Secuestraste a mi pequeño senador, ¿O no?";
+global.messageArray[4] = "Secuestraste a mi pequeño senador, ¿o no?";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "¿¡Estas demente!?";
+global.messageArray[5] = "¿¡Estás demente!?";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "sad";
 global.emotionAntagonistArray[5] = "neutral";
@@ -74,7 +74,7 @@ global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
-global.messageArray[7] = "Una vez más, ¿No debería ser yo quien te pregunte eso?";
+global.messageArray[7] = "Una vez más, ¿no debería ser yo quien te pregunte eso?";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "neutral";
@@ -85,7 +85,7 @@ global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "¡Como te atreves!";
+global.messageArray[9] = "¡Cómo te atreves!";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "angry";
 global.emotionAntagonistArray[9] = "neutral";

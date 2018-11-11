@@ -45,12 +45,12 @@ global.emotionAntagonistArray[0] = "angry";
 
 
 global.messageArray[1] = "Bueno, al menos le diste a ese policía.
-No importa; ambos son enemigos.";
+No importa, ambos son enemigos.";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "angry";
 
-global.messageArray[2] = "Solo acaba con el policía de una vez.";
+global.messageArray[2] = "Sólo acaba con el policía de una vez.";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "angry";

@@ -46,7 +46,7 @@ global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "¿¡E-Eres tu, Liz!?";
+global.messageArray[1] = "¿¡E-Eres tú, Liz!?";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "sad";
@@ -83,8 +83,8 @@ global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "happy";
 global.emotionAntagonistArray[7] = "sad";
 
-global.messageArray[8] = "¡AAAAHHHHH! ¡Disculpame!
-¡Le dispare a tu sobrina!";
+global.messageArray[8] = "¡AAAAHHHHH! ¡Discúlpame!
+¡Le disparé a tu sobrina!";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "sad";
@@ -108,7 +108,7 @@ global.emotionProtagonistArray[11] = "sad";
 global.emotionAntagonistArray[11] = "sad";
 
 global.messageArray[12] = "...Parte de mi en verdad quiere arrestarte,
-pero no lo hare.";
+pero no lo haré.";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "sad";
 global.emotionAntagonistArray[12] = "sad";
@@ -125,7 +125,7 @@ global.emotionProtagonistArray[14] = "curious";
 global.emotionAntagonistArray[14] = "sad";
 
 
-global.messageArray[15] = "¿Que? ¡No!
+global.messageArray[15] = "¿Qué? ¡No!
 Eres la mejor oficial que he visto.  ¡EN SERIO!";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "angry";
@@ -159,8 +159,8 @@ global.emotionProtagonistArray[20] = "angry";
 global.emotionAntagonistArray[20] = "sad";
 
 
-global.messageArray[21] = "¿¡Que clase de senador eras tu!?
-¡Yo era simplemente una oficial sin importancia y tú era una persona muy importante!";
+global.messageArray[21] = "¿¡Que clase de senador eras tú!?
+¡Yo era simplemente una oficial sin importancia y tú eras una persona muy importante!";
 global.categoryArray[21] = "right";
 global.emotionProtagonistArray[21] = "angry";
 global.emotionAntagonistArray[21] = "sad";
@@ -177,7 +177,7 @@ global.categoryArray[23] = "right";
 global.emotionProtagonistArray[23] = "angry";
 global.emotionAntagonistArray[23] = "sad";
 
-global.messageArray[24] = "Cielos tranquilizate.";
+global.messageArray[24] = "Cielos tranquilízate.";
 global.categoryArray[24] = "left";
 global.emotionProtagonistArray[24] = "sad";
 global.emotionAntagonistArray[24] = "sad";
@@ -200,7 +200,7 @@ global.categoryArray[27] = "left";
 global.emotionProtagonistArray[27] = "curious";
 global.emotionAntagonistArray[27] = "sad";
 
-global.messageArray[28] = "¿Pero que es lo que en realidad pasó? Yo creo que fuiste un
+global.messageArray[28] = "¿Pero qué es lo que en realidad pasó? Yo creo que fuiste un
 gran senador que se preocupaba por las personas.";
 global.categoryArray[28] = "right";
 global.emotionProtagonistArray[28] = "curious";
@@ -267,7 +267,7 @@ global.emotionProtagonistArray[38] = "sad";
 global.emotionAntagonistArray[38] = "sad";
 
 
-global.messageArray[39] = "Lo estas haciendo bien. Solo descansa.";
+global.messageArray[39] = "Lo estás haciendo bien. Solo descansa.";
 global.categoryArray[39] = "left";
 global.emotionProtagonistArray[39] = "neutral";
 global.emotionAntagonistArray[39] = "sad";

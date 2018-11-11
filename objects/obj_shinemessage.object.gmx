@@ -115,7 +115,7 @@ y = view_yview + 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_shinemessage, 0, view_xview + view_wview/2, view_yview+130, 1, 1, 0, c_white, image_alpha);
+            <string>draw_sprite_ext(sprite_index, image_index, view_xview + view_wview/2, view_yview+130, 1, 1, 0, c_white, image_alpha);
 </string>
           </argument>
         </arguments>

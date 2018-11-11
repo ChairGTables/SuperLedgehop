@@ -55,7 +55,7 @@ global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
 
 
-global.messageArray[2] = "B-Bueno, ¡No sobreviviras la siguiente!";
+global.messageArray[2] = "B-Bueno, ¡No sobrevivirás la siguiente!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";

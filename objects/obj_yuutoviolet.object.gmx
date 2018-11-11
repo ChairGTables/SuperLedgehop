@@ -48,12 +48,12 @@ else
     global.emotionAntagonistArray[0] = "sad";
     
     global.messageArray[1] = "Erm... suenas como si nunca hubieras visto
-el color verde. ¿Acaso eres daltonica?";
+el color verde. ¿Acaso eres daltónica?";
     global.categoryArray[1] = "right";
     global.emotionProtagonistArray[1] = "neutral";
     global.emotionAntagonistArray[1] = "sad";
     
-    global.messageArray[2] = "¡No! B-Bueno, ¡Esa olla se miraba violeta!
+    global.messageArray[2] = "¡No! B-Bueno, ¡esa olla se miraba violeta!
 ¡Justo como el color de tu vestido!";
     global.categoryArray[2] = "left";
     global.emotionProtagonistArray[2] = "sad";
@@ -64,7 +64,7 @@ el color verde. ¿Acaso eres daltonica?";
     global.emotionProtagonistArray[3] = "neutral";
     global.emotionAntagonistArray[3] = "neutral";
     
-    global.messageArray[4] = "¿¡Que!? ¡No puede ser!";
+    global.messageArray[4] = "¿¡Qué!? ¡No puede ser!";
     global.categoryArray[4] = "left";
     global.emotionProtagonistArray[4] = "sad";
     global.emotionAntagonistArray[4] = "happy";

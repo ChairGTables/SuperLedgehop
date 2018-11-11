@@ -64,7 +64,7 @@ global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "curious";
 global.emotionAntagonistArray[4] = "sad";
 
-global.messageArray[5] = "Chizuru, que demonios...";
+global.messageArray[5] = "Chizuru, qué demonios...";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "curious";
 global.emotionAntagonistArray[5] = "angry";
@@ -86,7 +86,7 @@ global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Si. De cualquier manera para mi su servicio no tuvo precio.
+global.messageArray[9] = "Sí. De cualquier manera para mi su servicio no tuvo precio.
 Es lo mínimo que puedo hacer por ella.";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "neutral";
@@ -99,7 +99,7 @@ global.emotionProtagonistArray[10] = "happy";
 global.emotionAntagonistArray[10] = "neutral";
 
 
-global.messageArray[11] = "¿Que? ¡No!
+global.messageArray[11] = "¿Qué? ¡No!
 Durante mis años como senador, ella me protegió. ¡Eso es todo!";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "happy";

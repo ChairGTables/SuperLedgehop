@@ -37,7 +37,7 @@ global.messageLimit = 22;
 switch(global.language)
 {
 case 1:
-global.messageArray[0] = "Ahh. Así que me emocione tanto por esto...";
+global.messageArray[0] = "Ahh. Así que me emocioné tanto por esto...";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "sad";
@@ -48,13 +48,13 @@ global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[2] = "CALLATEEEEEEEEEEEEE-
-*cough cough*";
+global.messageArray[2] = "CÁLLATEEEEEEEEEEEEE-
+*tos tos*";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "sad";
 
-global.messageArray[3] = "¿E-Estas bien?";
+global.messageArray[3] = "¿E-Estás bien?";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "sad";
@@ -82,12 +82,12 @@ global.emotionProtagonistArray[7] = "happy";
 global.emotionAntagonistArray[7] = "sad";
 
 global.messageArray[8] = "De hecho, si.
-Recien me entere que soy daltónica...";
+Recién me enteré que soy daltónica...";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "sad";
 
-global.messageArray[9] = "¿Asi que perdi contra alguien discapacitada?";
+global.messageArray[9] = "¿Asi que perdzií contra alguien discapacitada?";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "sad";
@@ -97,7 +97,7 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "sad";
 
-global.messageArray[11] = "Ahh, ¡Callate! ¡Ser daltónica no significa nada en batalla!";
+global.messageArray[11] = "Ahh, ¡Cállate! ¡Ser daltónica no significa nada en batalla!";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "sad";
@@ -146,18 +146,18 @@ global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "curious";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "¡Y estas matandome a mi, un oficial de policía!";
+global.messageArray[20] = "¡Y estas matándome a mi, un oficial de policía!";
 global.categoryArray[20] = "right";
 global.emotionProtagonistArray[20] = "curious";
 global.emotionAntagonistArray[20] = "sad";
 
-global.messageArray[21] = "Dispara hoy,
-amigos mañana!~";
+global.messageArray[21] = "¡Dispara hoy,
+amigos mañana!";
 global.categoryArray[21] = "left";
 global.emotionProtagonistArray[21] = "happy";
 global.emotionAntagonistArray[21] = "sad";
 
-global.messageArray[22] = "¡Asi no es como funciona!";
+global.messageArray[22] = "¡Así no es como funciona!";
 global.categoryArray[22] = "right";
 global.emotionProtagonistArray[22] = "happy";
 global.emotionAntagonistArray[22] = "sad";

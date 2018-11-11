@@ -83,7 +83,7 @@ global.emotionProtagonistArray[7] = "angry";
 global.emotionAntagonistArray[7] = "angry";
 
 global.messageArray[8] = "¡¡¡UN BOCADILLO DE FILETE Y QUESO!!!
-¡¡¡¡MMMMMMMM!!!! ¡¡¡¡SIIII!!!!";
+¡¡¡¡MMMMMMMM!!!! ¡¡¡¡SÍÍÍÍ!!!!";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "angry";
@@ -111,7 +111,7 @@ global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "angry";
 global.emotionAntagonistArray[12] = "angry";
 
-global.messageArray[13] = "¿O preferirias que te cambiara el nombre 
+global.messageArray[13] = "¿O preferirías que te cambiara el nombre 
 a QUESOMAESTRO9000?";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "angry";
@@ -146,7 +146,7 @@ global.categoryArray[18] = "left";
 global.emotionProtagonistArray[18] = "happy";
 global.emotionAntagonistArray[18] = "neutral";
 
-global.messageArray[19] = "¡Como tu!";
+global.messageArray[19] = "¡Como tú!";
 global.categoryArray[19] = "left";
 global.emotionProtagonistArray[19] = "happy";
 global.emotionAntagonistArray[19] = "neutral";

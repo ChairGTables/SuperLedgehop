@@ -42,7 +42,7 @@ global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "¿¡Que demonios!? 
+global.messageArray[1] = "¿¡Qué demonios!? 
 ¡Eso en verdad duele!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "sad";
@@ -55,7 +55,7 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "Lo siento, pero yo soy quien da las ordenes aqui.";
+global.messageArray[3] = "Lo siento, pero yo soy quien da las órdenes aqui.";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "angry";
@@ -91,7 +91,7 @@ global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "sad";
 global.emotionAntagonistArray[9] = "angry";
 
-global.messageArray[10] = "¡Callate!";
+global.messageArray[10] = "¡Cállate!";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "sad";
 global.emotionAntagonistArray[10] = "angry";

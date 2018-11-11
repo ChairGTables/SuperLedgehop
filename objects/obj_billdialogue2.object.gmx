@@ -50,7 +50,7 @@ global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "¡Y qué rayos haces tu aqui, Tito!";
+global.messageArray[2] = "¡Y qué rayos haces tú aqui, Tito!";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "neutral";
