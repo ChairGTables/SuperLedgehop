@@ -33,6 +33,8 @@ stop[3] = 192;
 selectedStop = 96;
 fighting = 0;
 
+equip = "spread";
+
 //Set health for enemy
 hp = 9;
 

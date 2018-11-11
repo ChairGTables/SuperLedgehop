@@ -28,6 +28,8 @@
             <string>//Set health for enemy
 hp = 4;
 
+equip = "enhanced";
+
 //set health drops
 minDrops = 3;
 maxDrops = 5;

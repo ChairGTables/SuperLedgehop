@@ -29,6 +29,8 @@
 hp = 400;
 drop = 0;
 
+equip = "fire";
+
 safeX = 0;
 safeY = 0;
 

@@ -975,7 +975,14 @@ else
             if (protagonist == "thug")
             {
                 draw_set_color($9c92f5);
-                draw_text(view_xview + 10, view_yview+445 + bonusY, "Thug");
+                if (global.language == 1)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Pandillero");
+                }
+                else
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Thug");
+                }
             }
             if (protagonist == "crossette")
             {
@@ -1024,17 +1031,40 @@ else
             if (antagonist == "bill")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Governor Bill Steels");
+                if (global.language == 1)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Gobernador Bill Steels");
+                }
+                else
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Thug");
+                }
             }
             if (antagonist == "chizuma")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Senator Chizuma");
+                if (global.language == 1)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Senador Chizuma");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Senator Chizuma");
+                }
+                
             }
             if (antagonist == "ruffian")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Ruffian");
+                if (global.language == 1)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Rufian");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Ruffian");
+                }
+                
             }
         }
         draw_set_color(16645629);

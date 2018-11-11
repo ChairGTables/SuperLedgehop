@@ -196,8 +196,9 @@ if (instance_exists(obj_smolhitbox))
 {
     if (x &lt; obj_smolhitbox.x)
     {
-        x = obj_smolhitbox.x;
-        speed = 0;
+        x = obj_smolhitbox.x + 30;
+        vspeed = 0;
+        hspeed = -30;
     }
 }
 
@@ -339,6 +340,10 @@ if (state == 2 &amp;&amp; instance_number(obj_straightdown) == 0)
     state = 3;
 }
 
+if ( (state == 2 || state == 3) &amp;&amp; !audio_is_playing(snd_minigametheme) &amp;&amp; (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(global.musicrm1) - 0.07 || (!audio_is_playing(snd_minigameintro) ) ) )
+{
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_minigametheme, true, 10); 
+}
 if (state == 1 &amp;&amp; instance_number(obj_yuutodialogue1) == 0)
 {
     //instance_create(0, -32, obj_straightdown);
@@ -350,7 +355,7 @@ if (state == 1 &amp;&amp; instance_number(obj_yuutodialogue1) == 0)
     state = 2;
     if (!audio_is_playing(snd_minigametheme))
     {
-        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_minigametheme, true, 10); // Music in rm1, priority 10, looping
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_minigameintro, false, 10); // Music in rm1, priority 10, looping
     }
 }
 

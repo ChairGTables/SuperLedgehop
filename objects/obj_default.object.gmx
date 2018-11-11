@@ -34,6 +34,8 @@ global.bossthree = 0;
 hp = 200;
 hpIndex = 2;
 
+equip = "fire";
+
 safeX = 0;
 safeY = 0;
 

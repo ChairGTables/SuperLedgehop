@@ -115,6 +115,7 @@ else
             <kind>1</kind>
             <string>if (phase == 1)
 {
+    audio_stop_sound(snd_bulletget);
     audio_play_sound_on (global.effectsEmitter, snd_bulletget, false, 10); 
     
     if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)

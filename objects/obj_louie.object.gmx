@@ -39,6 +39,8 @@ global.shineget = 1;
 //Set health for enemy
 hp = 100;
 
+equip = "spread";
+
 safeX = 0;
 safeY = 0;
 

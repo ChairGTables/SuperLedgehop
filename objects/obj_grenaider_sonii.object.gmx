@@ -35,6 +35,8 @@ safeY = 0;
 minDrops = 1;
 maxDrops = 4;
 
+equip = "spread";
+
 //set animation speed
 image_speed = 0.1;
 

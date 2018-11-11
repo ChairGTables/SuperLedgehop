@@ -6,15 +6,26 @@ if (instance_exists(obj_chizuru))
 {
     if (obj_chizuru.action == 1)
     {
-        secondBoolCheck = audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter < 0.1 || audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter > 0.4;
-        firstBoolCheck = global.chizuruShootRest < global.chizuruShootBeat - global.chizuruShootBeat;
+        myHold1 = 0.1;
+        myHold2 = 0;
+        myHold3 = 2;
+        
+        if (global.bpm == 165)
+        {
+            myHold1 = 0.2;
+            myHold2 = 0;
+            myHold3 = 2;
+        }
+        
+        secondBoolCheck = audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter < myHold1 || audio_sound_get_track_position(global.musicrm1) mod global.playerQuarter > 0.4;
+        firstBoolCheck = global.chizuruShootRest - myHold2  < global.chizuruShootBeat - global.chizuruShootBeat;
         //secondBoolCheck = global.chizuruShootTimer < 0.1 || global.chizuruShootTimer > global.chizuruShootBeat - 0.1;
     
         //Basic
         if (global.shottype == 0)
         {
             audio_play_sound_on (global.effectsEmitter, snd_basicbullet, false, 10); 
-            global.chizuruShootRest = global.chizuruShootBeat / 2;
+            global.chizuruShootRest = global.chizuruShootBeat / myHold3;
             if ( firstBoolCheck == 1 && secondBoolCheck == 1)
             {
                 tempAngle = -2;
@@ -52,7 +63,7 @@ if (instance_exists(obj_chizuru))
         if (global.shottype == 1 && global.enhancedcount > 0)
         {
             audio_play_sound_on (global.effectsEmitter, snd_enhancedbullet, false, 10); 
-            global.chizuruShootRest = global.chizuruShootBeat / 2;
+            global.chizuruShootRest = global.chizuruShootBeat / myHold3;
             if ( firstBoolCheck == 1 && secondBoolCheck == 1)
             {
                 audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 
@@ -91,7 +102,7 @@ if (instance_exists(obj_chizuru))
         if (global.shottype == 2 && global.spreadcount > 0)
         {
             audio_play_sound_on (global.effectsEmitter, snd_spreadbullet, false, 10); 
-            global.chizuruShootRest = global.chizuruShootBeat / 2;
+            global.chizuruShootRest = global.chizuruShootBeat / myHold3;
             
             if ( firstBoolCheck == 1 && secondBoolCheck == 1)
             {
@@ -147,7 +158,7 @@ if (instance_exists(obj_chizuru))
         //Fire
         if (global.shottype == 4 && global.firecount > 0)
         {
-            global.chizuruShootRest = global.chizuruShootBeat / 2;
+            global.chizuruShootRest = global.chizuruShootBeat / myHold3;
             
             audio_play_sound_on (global.effectsEmitter, snd_firebullet, false, 10); 
             if ( firstBoolCheck == 1 && secondBoolCheck == 1)
@@ -182,7 +193,7 @@ if (instance_exists(obj_chizuru))
         if (global.shottype == 5 && global.icecount > 0)
         {
             audio_play_sound_on (global.effectsEmitter, snd_icebullet, false, 10); 
-             global.chizuruShootRest = global.chizuruShootBeat / 2;
+             global.chizuruShootRest = global.chizuruShootBeat / myHold3;
             if ( firstBoolCheck == 1 && secondBoolCheck == 1)
             {
                 audio_play_sound_on (global.effectsEmitter, snd_rhythmconfirm, false, 10); 

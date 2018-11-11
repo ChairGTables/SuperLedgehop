@@ -40,9 +40,9 @@ alarm[0] = 12;
 // Volumes
 global.masterVolume  = 1;
 global.musicVolume   = 0.75;
-global.effectsVolume = 0.75;
+global.effectsVolume = 0.55;
 global.voiceVolume   = 0.75;
-global.volumeHold = 0.75;
+global.volumeHold = 0.55;
 
 // Sound emitters
 global.musicEmitter   = audio_emitter_create();

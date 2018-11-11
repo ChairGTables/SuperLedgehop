@@ -28,6 +28,8 @@
             <string>//Set health for enemy
 hp = 10;
 
+equip = "rapid";
+
 safeX = 0;
 safeY = 0;
 

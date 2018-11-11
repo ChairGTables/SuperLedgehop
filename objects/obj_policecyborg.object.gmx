@@ -32,6 +32,8 @@ drop = 0;
 safeX = 0;
 safeY = 0;
 
+equip = "ice";
+
 //set health drops
 minDrops = 3;
 maxDrops = 5;

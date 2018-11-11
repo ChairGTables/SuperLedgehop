@@ -31,6 +31,8 @@ hp = 20;
 safeX = 0;
 safeY = 0;
 
+equip = "spread";
+
 //set health drops
 minDrops = 1;
 maxDrops = 4;

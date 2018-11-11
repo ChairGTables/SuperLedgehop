@@ -49,7 +49,10 @@
           <argument>
             <kind>1</kind>
             <string>global.isCutscene = false;
-room_goto_next();
+if (!instance_exists(obj_wowyoudied))
+{
+    room_goto_next();
+}
 </string>
           </argument>
         </arguments>

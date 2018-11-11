@@ -28,6 +28,8 @@
             <string>//Set health for enemy
 hp = 20;
 
+equip = "spread";
+
 //set animation speed
 image_speed = 0.2;
 
