@@ -46,7 +46,7 @@ hurtSprite = "spr_oldbasicenemyhurt";
 //Set hurt sounds
 hurtSoundOne = snd_hurt22;
 hurtSoundTwo = snd_hurt23;
-deathSound = snd_death3;
+deathSound = snd_death14;
 
 //Do not touch this
 sS = sprite_index;

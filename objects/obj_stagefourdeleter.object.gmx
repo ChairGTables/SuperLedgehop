@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>delete = 0;
+            <string>destroy = 0;
 </string>
           </argument>
         </arguments>
