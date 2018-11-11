@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>script_execute(scr_menulanguage);
+
+
 disappearing = 0;
 alarm[0] = 90;
 

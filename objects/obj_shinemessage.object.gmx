@@ -29,6 +29,8 @@
 disappearing = 0;
 alarm[0] = 90;
 
+image_speed = 0;
+image_index = global.language;
 
 x = view_xview + view_wview/2;
 y = view_yview + 100;

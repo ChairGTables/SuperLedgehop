@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = global.shottype;
+            <string>script_execute(scr_menulanguage);
+
+image_index = global.shottype;
 image_speed = 0;
 
 

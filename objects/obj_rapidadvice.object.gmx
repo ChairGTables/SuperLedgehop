@@ -28,6 +28,9 @@
             <string>invisibility = 0;
 disappearing = 0;
 
+image_speed = 0;
+image_index = global.language;
+
 alarm[0] = 200;
 </string>
           </argument>
