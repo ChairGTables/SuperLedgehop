@@ -108,19 +108,22 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.effectsVolume = ( (mouse_x - x) / 2 ) / 100;
-
-if (global.effectsVolume &lt; 0.05)
+            <string>if (global.titleState == 1)
 {
-    global.effectsVolume = 0;
+    global.effectsVolume = ( (mouse_x - x) / 2 ) / 100;
+    
+    if (global.effectsVolume &lt; 0.05)
+    {
+        global.effectsVolume = 0;
+    }
+    
+    if (global.effectsVolume &gt; 0.95)
+    {
+        global.effectsVolume = 1;
+    }
+    
+    audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
 }
-
-if (global.effectsVolume &gt; 0.95)
-{
-    global.effectsVolume = 1;
-}
-
-audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
 </string>
           </argument>
         </arguments>

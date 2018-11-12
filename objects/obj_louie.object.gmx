@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_chizuru))
+            <string>audio_stop_sound(snd_survivaltheme);
+
+if (instance_exists(obj_chizuru))
 {
     if (global.xHolder[0] != 0 &amp;&amp; global.yHolder[0] != 0)
     {

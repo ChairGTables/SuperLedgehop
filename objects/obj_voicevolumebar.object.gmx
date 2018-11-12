@@ -108,19 +108,23 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.voiceVolume = ( (mouse_x - x) / 2 ) / 100;
-
-if (global.voiceVolume &lt; 0.05)
+            <string>if (global.titleState == 1)
 {
-    global.voiceVolume = 0;
+    
+    global.voiceVolume = ( (mouse_x - x) / 2 ) / 100;
+    
+    if (global.voiceVolume &lt; 0.05)
+    {
+        global.voiceVolume = 0;
+    }
+    
+    if (global.voiceVolume &gt; 0.95)
+    {
+        global.voiceVolume = 1;
+    }
+    
+    audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
 }
-
-if (global.voiceVolume &gt; 0.95)
-{
-    global.voiceVolume = 1;
-}
-
-audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
 </string>
           </argument>
         </arguments>

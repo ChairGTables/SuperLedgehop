@@ -63,11 +63,11 @@
     <instance objName="obj_wall" x="1920" y="608" name="inst_D49E1B96" locked="0" code="" scaleX="3" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="1232" name="inst_A25499D0" locked="0" code="" scaleX="79" scaleY="6.19354820251465" colour="4294967295" rotation="0"/>
     <instance objName="obj_louie" x="1216" y="832" name="inst_F7436766" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_finalbossmusic_david" x="272" y="336" name="inst_2819A8A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="-64" y="336" name="inst_43B3F519" locked="0" code="yPush = 4;" scaleX="80.5" scaleY="8.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="1920" y="288" name="inst_6713D617" locked="0" code="xPush = -4;" scaleX="20" scaleY="33" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="-64" y="1232" name="inst_C7D77BB0" locked="0" code="yPush = -4;" scaleX="79.5" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="-448" y="448" name="inst_475BD6CA" locked="0" code="xPush = 4;" scaleX="29.5" scaleY="26.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_louiemusic" x="368" y="208" name="inst_4B73DA54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_grasswhite" x="576" y="1024" w="32" h="32" xo="32" yo="0" id="10047320" name="inst_EBCEDB5D" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

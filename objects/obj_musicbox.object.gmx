@@ -82,9 +82,9 @@ shootTimer = shootBeat;
 moveBeat = global.quarterSec;    // whole note
 moveTimer = moveBeat;
 
-myWall = instance_create(x-16, y-16, obj_wall);
-myWall.image_xscale = 0.5;
-myWall.image_yscale = 0.5;
+myWall = instance_create(x-22, y-24, obj_wall);
+myWall.image_xscale = 0.7;
+myWall.image_yscale = 1.5;
 </string>
           </argument>
         </arguments>
@@ -306,8 +306,8 @@ if (shootTimer &lt;= 0)
 
 }
 */
-myWall.x = x;
-myWall.y = y;
+myWall.x = x-15;
+myWall.y = y-24;
 
 
 

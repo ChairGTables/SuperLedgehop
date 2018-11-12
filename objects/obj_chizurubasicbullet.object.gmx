@@ -131,7 +131,10 @@ if (x &lt; view_xview-10 || x &gt; view_xview+969 || y &gt; view_yview+549 || y 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(self);
+            <string>if (!place_meeting(other.x, other.y, obj_musicbox))
+{
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>
