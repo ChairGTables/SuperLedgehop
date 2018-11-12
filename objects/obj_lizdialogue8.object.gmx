@@ -41,6 +41,12 @@ global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
 break;
+case 2:
+global.messageArray[0] = "こりゃまずいわね...";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+break;
 default:
 global.messageArray[0] = "Oh, this is really bad...";
 global.categoryArray[0] = "left";

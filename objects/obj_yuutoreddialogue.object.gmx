@@ -61,6 +61,25 @@ hay policías en las ollas?";
     global.emotionAntagonistArray[2] = "happy";
     break;
     
+    case 2:
+    global.messageArray[0] = "チズル、
+緑の壺って言ったわよね！？";
+    global.categoryArray[0] = "right";
+    global.emotionProtagonistArray[0] = "happy";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "赤い壺は警備隊が
+緊急出動するスイッチよ！？";
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "そもそも何で壺の中に警官が隠れてるんだ？";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "neutral";
+    global.emotionAntagonistArray[2] = "happy";
+    break;
+    
     default:
     global.messageArray[0] = "Chizuru!
 Why did you shoot the red one!?";

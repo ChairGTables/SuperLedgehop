@@ -112,6 +112,26 @@ global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "sad";
 break;
 
+case 2:
+global.messageArray[0] = "ここじゃダメ、
+正面玄関から脱出なんて自殺行為よ！";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "何言ってんんだ、
+俺なら警官なんていくらでも相手できるぜ！";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "私はまっぴらごめんよ！";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+break;
+
 default:
 global.messageArray[0] = "Not there! Escaping through
 the front door is basically suicide!";
