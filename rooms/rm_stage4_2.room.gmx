@@ -265,6 +265,8 @@
     <instance objName="obj_wall" x="2450" y="3285" name="inst_F7FF40C8" locked="0" code="" scaleX="6.84000015258789" scaleY="3.65625" colour="4294967295" rotation="0"/>
     <instance objName="obj_violetkey" x="4400" y="363" name="inst_67FDAC59" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagefourdeleter" x="2939" y="1001" name="inst_1B5B16AC" locked="0" code="" scaleX="61.9000015258789" scaleY="62.1300010681152" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stagefourdeleter2" x="20" y="2663" name="inst_02948998" locked="0" code="" scaleX="31.3400001525879" scaleY="35.2258071899414" colour="4294967295" rotation="0"/>
+    <instance objName="obj_downarrow" x="2560" y="3880" name="inst_92713A47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_rockywhite" x="2464" y="4864" w="32" h="32" xo="32" yo="0" id="10041780" name="inst_D04D7AF0" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -98,6 +98,7 @@
         <sound>sound\snd_endcutscene4</sound>
         <sound>sound\snd_lamedimension</sound>
         <sound>sound\snd_minigameintro</sound>
+        <sound>sound\snd_louietheme</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -353,6 +354,7 @@
         <sprite>sprites\spr_warnbox</sprite>
         <sprite>sprites\spr_warnboxcenter</sprite>
         <sprite>sprites\spr_whitedot</sprite>
+        <sprite>sprites\spr_downarrow</sprite>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -782,6 +784,13 @@
       <script>scripts\scr_menulanguage.gml</script>
       <script>scripts\scr_truespeedwallcheck.gml</script>
       <script>scripts\scr_enemymoveback.gml</script>
+      <scripts name="cutsceneskips">
+        <script>scripts\scr_yuutoskipgov.gml</script>
+        <script>scripts\scr_kamuroskipgov.gml</script>
+        <script>scripts\scr_lizdefeatskip.gml</script>
+        <script>scripts\scr_lizbetrayskip.gml</script>
+        <script>scripts\script54.gml</script>
+      </scripts>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -902,6 +911,7 @@
         <object>objects\obj_stagefourmusic</object>
         <object>objects\obj_stagethreemusic</object>
         <object>objects\obj_stagetwomusic</object>
+        <object>objects\obj_louiemusic</object>
         <object>objects\obj_storymode</object>
         <object>objects\obj_survivalmenu</object>
         <object>objects\obj_survivalmode</object>
@@ -913,6 +923,7 @@
         <object>objects\obj_windowedinitial</object>
         <object>objects\obj_wowyoudied</object>
         <object>objects\obj_stagefourdeleter</object>
+        <object>objects\obj_stagefourdeleter2</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -956,6 +967,7 @@
         <object>objects\obj_whitefadein</object>
         <object>objects\obj_whitefadeinslow</object>
         <object>objects\obj_whitefadeout</object>
+        <object>objects\obj_downarrow</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>

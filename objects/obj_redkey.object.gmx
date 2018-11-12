@@ -27,6 +27,33 @@
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = 1;
+
+state = 0;
+yHold = 0;
+alarm[0] = 15;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = 1;
 </string>
           </argument>
         </arguments>
@@ -49,7 +76,17 @@ image_index = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if (state == 2)
+{
+    image_angle = 8;
+    image_xscale += 0.1;
+    image_yscale += 0.1;
+}
+if (state == 2 &amp;&amp; y &gt; yHold)
+{
+    instance_destroy(self);
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -71,11 +108,56 @@ image_index = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.stageState = 9;
-instance_create(other.x, other.y, obj_smallcircle);
-instance_create(other.x, other.y, obj_whitefadein);
-audio_play_sound_on (global.effectsEmitter, snd_pickup, false, 10);
-instance_destroy(self);
+            <string>if (state == 1)
+{
+    global.stageState = 9;
+    instance_create(other.x, other.y, obj_smallcircle);
+    instance_create(other.x, other.y, obj_whitefadein);
+    audio_play_sound_on (global.effectsEmitter, snd_pickup, false, 10);
+    state = 2;
+    yHold = y;
+    vspeed = -15;
+    gravity = 1.7;
+    gravity_direction = 270;
+    if (instance_exists(obj_stagefourdeleter2))
+    {
+        obj_stagefourdeleter2.destroy = 1;
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (state &lt; 2)
+{
+    draw_self();
+}
+else
+{
+    if (instance_exists(obj_chizuru))
+    {
+        draw_sprite_ext(sprite_index, image_index, obj_chizuru.x, obj_chizuru.y - (yHold - y), image_xscale, image_yscale, image_angle, c_white, image_alpha )
+    }
+}
 </string>
           </argument>
         </arguments>
