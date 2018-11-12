@@ -35,6 +35,62 @@ global.messageLimit = 5;
 
 switch(global.language)
 {
+case 1:
+
+if (global.isGamepad == true)
+{
+    global.messageArray[0] = "¡No lo olvides! ¡Mantén X,
+después suéltalo y absorbe balas!";
+}
+else
+{
+    global.messageArray[0] = "¡No lo olvides! ¡Mantén
+el click derecho y suéltalo para absorber balas!";
+}
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "happy";
+
+
+global.messageArray[1] = "Absorber gasta tu medidor SH,
+pero no te preocupes por ahora. ";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Sólo asegurate de que mantienes y sueltas.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "curious";
+
+global.messageArray[3] = "Presionar sólo hace que reflejes.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "happy";
+
+if (global.isGamepad == true)
+{
+    global.messageArray[4] = "¡Hazlo! ¡Mantén X, luego
+suéltalo para absorber balas!";
+}
+else
+{
+    global.messageArray[4] = "¡Hazlo! ¡Manten el click
+derecho y después suéltalo para absorber balas!";
+}
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "Sí como sea,
+ya me lo dijiste un millón de veces.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+break;
+
 case 2:
 
 
@@ -92,66 +148,7 @@ global.emotionAntagonistArray[5] = "angry";
 
 break;
 
-
-case 1:
-
-if (global.isGamepad == true)
-{
-    global.messageArray[0] = "¡No lo olvides! ¡Mantén X,
-después suéltalo y absorbe balas!";
-}
-else
-{
-    global.messageArray[0] = "¡No lo olvides! ¡Mantén
-el click derecho y suéltalo para absorber balas!";
-}
-global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "happy";
-global.emotionAntagonistArray[0] = "happy";
-
-
-global.messageArray[1] = "Absorber gasta tu medidor SH,
-pero no te preocupes por ahora. ";
-global.categoryArray[1] = "right";
-global.emotionProtagonistArray[1] = "happy";
-global.emotionAntagonistArray[1] = "neutral";
-
-
-global.messageArray[2] = "Sólo asegurate de que mantienes y sueltas.";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "happy";
-global.emotionAntagonistArray[2] = "curious";
-
-global.messageArray[3] = "Presionar sólo hace que reflejes.";
-global.categoryArray[3] = "right";
-global.emotionProtagonistArray[3] = "neutral";
-global.emotionAntagonistArray[3] = "happy";
-
-if (global.isGamepad == true)
-{
-    global.messageArray[4] = "¡Hazlo! ¡Mantén X, luego
-suéltalo para absorber balas!";
-}
-else
-{
-    global.messageArray[4] = "¡Hazlo! ¡Manten el click
-derecho y después suéltalo para absorber balas!";
-}
-global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "sad";
-global.emotionAntagonistArray[4] = "sad";
-
-global.messageArray[5] = "Sí como sea,
-ya me lo dijiste un millón de veces.";
-global.categoryArray[5] = "left";
-global.emotionProtagonistArray[5] = "neutral";
-global.emotionAntagonistArray[5] = "angry";
-
-break;
-
 default:
-
-
 if (global.isGamepad == true)
 {
     global.messageArray[0] = "Now don't forget! Hold X then

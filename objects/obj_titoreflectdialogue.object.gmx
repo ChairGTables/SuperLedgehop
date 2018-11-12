@@ -57,6 +57,26 @@ global.emotionAntagonistArray[2] = "happy";
 
 break;
 
+case 2:
+
+global.messageArray[0] = "押しっぱなしにしなければ弾を反射できる！";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "happy";
+
+
+global.messageArray[1] = "反射はSHメーターの消費量が少ないぞ！";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "だーかーら！わかってるって！";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "happy";
+
+break;
+
 default:
 
 

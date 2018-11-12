@@ -130,6 +130,100 @@ global.emotionAntagonistArray[16] = "angry";
 
 break;
 
+case 2:
+
+global.messageArray[0] = "うーん…チーズステーキがよかったなぁ。";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "そんな事したら...";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "curious";
+
+
+global.messageArray[2] = "俺のインベントリポケットがチーズまみれになるだろ！";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "happy";
+
+global.messageArray[3] = "ところで大丈夫か？";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "うん！大丈夫！";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "はぁ...　
+本当に心配したぞ、";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "curious";
+
+global.messageArray[6] = "お前は唯一無二の俺の娘なんだからな。";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "えー...でも俺本当の娘じゃないし...`";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "どちらにせよ、
+お前の事は娘のように守る！";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "いいな？";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "happy";
+
+global.messageArray[10] = "おっけー...";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "happy";
+
+global.messageArray[11] = "でもお前がBB銃で戦っていた";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "という事実は良くない！";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "本物の銃にそれで太刀打ち できると思ってるのか？
+お前の頭はハッピーセットか！？";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "でもティトおじさんもBB銃使ってるよね？";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "ぐぬぬ...";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "そうだ、お前にはこれをやろう。";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "angry";
+
+break;
+
 default:
 
 global.messageArray[0] = "Aww... I wish you brought me cheesesteak instead.";

@@ -83,6 +83,9 @@ if (global.stageState == 0)
           <argument>
             <kind>1</kind>
             <string>//create dialogue
+
+//locked door event (not to be confused with yuutolockdialouge)
+
 dialogue = instance_create(x, y, obj_dialogue);
 
 dialogue.antagonist = "yuuto";
@@ -94,42 +97,57 @@ switch (global.language)
 {
 //Spanish
 case 1:
-global.messageArray[0] = "¡Por aqui no! ¡Escapar por la puerta
-principal sería suicidio!";
-global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "happy";
+global.messageArray[0] = "¡Demonios! ¡Está cerrada!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "¿A que refieres? ¡Puedo con todos los policías!";
-global.categoryArray[1] = "left";
-global.emotionProtagonistArray[1] = "angry";
-global.emotionAntagonistArray[1] = "sad";
+global.messageArray[1] = "Estoy segura de que uno de los policías tiene la llave.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
 
-global.messageArray[2] = "¡N-No! ¡Me niego!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "angry";
-global.emotionAntagonistArray[2] = "sad";
+global.messageArray[2] = "¡Si! ¡Regresemos a darle una paliza a más policías!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+//japanese
+case 2:
+global.messageArray[0] = "しまった！鍵がかかってる！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "きっと警備の誰かが鍵を持ってるはずよ。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "それなら一旦戻ってもっと警官倒さねぇとな！";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
 break;
 
 default:
-global.messageArray[0] = "Not there! Escaping through
-the front door is basically suicide!";
-global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "happy";
+global.messageArray[0] = "Dang it! It’s locked!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "What do you mean?
-Just hop over the ledge and double your bullets with me!";
-global.categoryArray[1] = "left";
-global.emotionProtagonistArray[1] = "angry";
-global.emotionAntagonistArray[1] = "sad";
+global.messageArray[1] = "I’m sure one of these guards have the key.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
 
-global.messageArray[2] = "N-No! That's not safe!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "angry";
-global.emotionAntagonistArray[2] = "sad";
+global.messageArray[2] = "Yeah! Let’s go back and beat up more cops!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
 break;
 }
 

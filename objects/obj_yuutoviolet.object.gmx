@@ -70,6 +70,35 @@ el color verde. ¿Acaso eres daltónica?";
     global.emotionAntagonistArray[4] = "happy";
     break;
     
+    case 2:
+    global.messageArray[0] = "ふぅ、今のが「緑」の壺か...";
+    global.categoryArray[0] = "left";
+    global.emotionProtagonistArray[0] = "sad";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "なんだか緑色を見たことないような口ぶりだったけど...
+あなたもしかして色覚障害持ち？";
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "そんな訳ないぜ！
+あの壺は明らかに紫だったぞ、お前の服と同じだ！";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "sad";
+    global.emotionAntagonistArray[2] = "happy";
+    
+    global.messageArray[3] = "いや、これは青だけど...";
+    global.categoryArray[3] = "right";
+    global.emotionProtagonistArray[3] = "neutral";
+    global.emotionAntagonistArray[3] = "neutral";
+    
+    global.messageArray[4] = "はぁ！？そんな訳ないだろ！";
+    global.categoryArray[4] = "left";
+    global.emotionProtagonistArray[4] = "sad";
+    global.emotionAntagonistArray[4] = "happy";
+    break;
+    
     default:
     global.messageArray[0] = "Phew. So that's the green one...";
     global.categoryArray[0] = "left";
