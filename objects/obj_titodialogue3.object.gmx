@@ -152,13 +152,13 @@ break;
 
 case 2:
 
-global.messageArray[0] = "でもこれっておじさんのお気に入りの...！";
+global.messageArray[0] = "でもこれっておじさんのお気に入りの…！";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "俺が訳もなく俺のお気に入りを他人に...";
+global.messageArray[1] = "俺が訳もなく俺のお気に入りを他人に…";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "happy";

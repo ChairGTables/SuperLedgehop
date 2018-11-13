@@ -141,7 +141,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "happy";
 
-global.messageArray[4] = "頭痛くなってきたぁ...";
+global.messageArray[4] = "頭痛くなってきたぁ…";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "curious";
