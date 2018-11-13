@@ -33,6 +33,15 @@ dialogue = instance_create(x, y, obj_dialogue);
 obj_dialogue.antagonist = "yuuto";
 obj_dialogue.boss = 1;
 
+if (global.disableCutscenes == 1)
+{
+    script_execute(scr_stopmusic);
+    global.isCutscene = false;
+    instance_create(x, y, obj_skippingcutscene);
+    instance_create(x, y, obj_blackfadein);
+    room_goto_next();
+}
+
 //set limit
 global.messageLimit = 7;
 

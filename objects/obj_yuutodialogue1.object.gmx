@@ -32,6 +32,11 @@ dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.antagonist = "unknown";
 
+if (global.disableCutscenes == 1)
+{
+    script_execute(scr_yuutoskip1);
+}
+
 //set limit
 global.messageLimit = 14;
 

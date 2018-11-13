@@ -128,7 +128,7 @@ else
             <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2)
 {
     global.titleState = 0;
-    global.titleSelection = 0;
+    global.titleSelection = 3;
 }
 else if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 0)
 {

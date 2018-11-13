@@ -38,7 +38,7 @@ else
     global.isCutscene = true;
     alarm[0] = 30;
     alarm[1] = 20;
-    
+    instance_create(x, y, obj_musicfadeout);
     if (instance_exists(obj_chizuru))
     {
         obj_chizuru.sprite_index = spr_chizuruwalku;
@@ -122,6 +122,7 @@ else
 
 if (state == 0)
 {
+    script_execute(scr_musicfadekill);
     instance_create(x, y, obj_titodialogue4);
     audio_stop_sound(snd_testtrack_david);
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chillevent, true, 10); 

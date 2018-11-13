@@ -25,9 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.language = 1;
+            <string>global.language = 0;
 global.disableCutscenes = 0;
+
+global.titleSelection = 0;
+global.titleState = 1;
+
 disabled = 0;
+
 instance_create(x, y, obj_whitefadein);
 </string>
           </argument>

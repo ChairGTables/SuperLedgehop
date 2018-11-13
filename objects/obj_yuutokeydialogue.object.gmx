@@ -86,6 +86,28 @@ if (global.stageState == 0)
 
 //locked door event (not to be confused with yuutolockdialouge)
 
+if (global.keyID[0] != 1)
+{
+
+    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
+    if (instance_exists(obj_protagonisttalk))
+    {
+        instance_destroy(obj_protagonisttalk);
+    }
+    if (instance_exists(obj_dialogue))
+    {
+        instance_destroy(obj_dialogue);
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
+
+
+
 dialogue = instance_create(x, y, obj_dialogue);
 
 dialogue.antagonist = "yuuto";
@@ -133,7 +155,7 @@ global.emotionAntagonistArray[2] = "neutral";
 break;
 
 default:
-global.messageArray[0] = "Dang it! It’s locked!";
+global.messageArray[0] = "Ai adai! It’s locked!";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
@@ -149,6 +171,8 @@ global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 break;
+}
+
 }
 
 instance_destroy(self);

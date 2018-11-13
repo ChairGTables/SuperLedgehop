@@ -125,6 +125,22 @@ if (activateTimer &lt;= 0)
         xRight = min(1888, view_xview+900);
         yAnswer = min(1104, max(700, view_yview+(random_range(0, 400) ) ) );
         
+        if (place_meeting(xLeft, yAnswer, obj_wall))
+        {
+            xLeft += 60;
+            yAnswer += 60;
+        }
+        if (place_meeting(xRight, yAnswer, obj_wall))
+        {
+            xRight -= 60;
+            yAnswer += 60;
+        }
+        
+        if (yAnswer &gt; 1104)
+        {
+            yAnswer = 1104;
+        }
+        
         if (myRandom &gt; 50)
         {
             instance_create(xLeft, yAnswer, types[random_range(0, currentTypes)] );

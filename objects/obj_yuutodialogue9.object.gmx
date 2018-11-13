@@ -36,6 +36,7 @@ else
     alarm[1] = 1;
 }
 
+
 </string>
           </argument>
         </arguments>
@@ -95,6 +96,14 @@ if(instance_exists(obj_chizuru))
     obj_chizuru.image_xscale = 1;
 }
 
+if (global.disableCutscenes == 1)
+{
+    state = 1;
+    script_execute(scr_yuutoskipgov);
+}
+else
+{
+
 //create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 state = 1;
@@ -103,6 +112,8 @@ dialogue.antagonist = "yuuto";
 
 //set limit
 global.messageLimit = 19;
+
+
 
 switch (global.language)
 {
@@ -327,6 +338,8 @@ global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "sad";
 global.emotionAntagonistArray[19] = "neutral";
 break;
+}
+
 }
 </string>
           </argument>

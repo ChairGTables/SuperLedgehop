@@ -93,9 +93,8 @@
     <instance objName="obj_squaremover_sonii" x="2528" y="480" name="inst_AA9B8565" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_squaremover_sonii" x="2656" y="544" name="inst_9C2B3C42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_squaremover_sonii" x="2368" y="608" name="inst_950AA6E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policecyborg" x="3104" y="352" name="inst_BE8728F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policecyborg" x="3136" y="416" name="inst_ED811647" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policecyborg" x="3168" y="480" name="inst_E8131F03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policecyborg" x="3072" y="288" name="inst_BE8728F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policecyborg" x="3088" y="320" name="inst_ED811647" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shooterdude_david" x="3328" y="384" name="inst_1B9B1F79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boombox_sonii" x="4064" y="320" name="inst_B5832233" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grenaider_sonii" x="1984" y="2368" name="inst_5C7F9F67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -148,6 +147,15 @@
     <instance objName="obj_wall" x="4096" y="240" name="inst_BFB6D711" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagefivemusic" x="272" y="192" name="inst_821B51C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_billsign" x="2544" y="1968" name="inst_E4DB6C10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="4096" y="592" name="inst_F7736E73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="4160" y="1808" name="inst_CCC7E986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="1696" y="1824" name="inst_C9A1515B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="3152" y="2752" name="inst_094F9017" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="3104" y="2752" name="inst_D3E9F567" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="1968" y="2736" name="inst_C1177CB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2080" y="128" name="inst_8D68AAA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2112" y="128" name="inst_E60F7083" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2096" y="160" name="inst_CAC275DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_grassfull" x="2144" y="2848" w="32" h="32" xo="32" yo="0" id="10051182" name="inst_D98A79AF" depth="1000007" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

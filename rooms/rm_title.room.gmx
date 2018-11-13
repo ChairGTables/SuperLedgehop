@@ -78,6 +78,7 @@
     <instance objName="obj_stage3" x="480" y="384" name="inst_C734DED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stage4" x="672" y="384" name="inst_500F4384" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_finale" x="864" y="384" name="inst_E213A289" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_languagedisclaimer" x="512" y="448" name="inst_1CA8E635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

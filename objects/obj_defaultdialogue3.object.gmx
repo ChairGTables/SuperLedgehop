@@ -309,6 +309,11 @@ global.emotionProtagonistArray[23] = "neutral";
 global.emotionAntagonistArray[23] = "happy";
 break;
 }
+
+if (global.disableCutscenes == 1)
+    {
+        instance_destroy(dialogue);
+    }
 </string>
           </argument>
         </arguments>

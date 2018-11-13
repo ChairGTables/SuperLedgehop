@@ -1,6 +1,6 @@
 if (instance_exists(obj_chizuru))
 {
-    if (global.shineget == 1)
+    if (global.shineget == 1 && obj_chizuru.sprite_index != spr_chizuruhurtd)
     {
         if (global.chizurushinecharge > 5 && global.chizurushine > 40)
         {

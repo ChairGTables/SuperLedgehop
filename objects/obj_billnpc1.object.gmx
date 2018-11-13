@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(snd_stagethree);
+            <string>if (global.disableCutscenes == 1)
+{
+    room_goto(rm_stage3_1);
+}
+
+audio_stop_sound(snd_stagethree);
 global.stageState = 1;
 
 alarm[0] = 20;
