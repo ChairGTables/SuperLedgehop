@@ -138,7 +138,7 @@ global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "そんな事したら...";
+global.messageArray[1] = "そんな事したら…";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "curious";
@@ -159,7 +159,7 @@ global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "はぁ...　
+global.messageArray[5] = "はぁ…　
 本当に心配したぞ、";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "happy";
@@ -170,7 +170,7 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "えー...でも俺本当の娘じゃないし...`";
+global.messageArray[7] = "えー…でも俺本当の娘じゃないし…";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";
@@ -186,12 +186,12 @@ global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "happy";
 
-global.messageArray[10] = "おっけー...";
+global.messageArray[10] = "おっけー…";
 global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "happy";
 
-global.messageArray[11] = "でもお前がBB銃で戦っていた";
+global.messageArray[11] = "でもお前がBB銃で戦っていた…";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "angry";
@@ -212,7 +212,7 @@ global.categoryArray[14] = "left";
 global.emotionProtagonistArray[14] = "neutral";
 global.emotionAntagonistArray[14] = "angry";
 
-global.messageArray[15] = "ぐぬぬ...";
+global.messageArray[15] = "ぐぬぬ…";
 global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
