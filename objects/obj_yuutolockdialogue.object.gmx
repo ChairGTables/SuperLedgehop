@@ -82,7 +82,25 @@ if (global.stageState == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//create dialogue
+            <string>    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
+    if (instance_exists(obj_protagonisttalk))
+    {
+        instance_destroy(obj_protagonisttalk);
+    }
+    if (instance_exists(obj_dialogue))
+    {
+        instance_destroy(obj_dialogue);
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
+
+
+//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
 dialogue.antagonist = "yuuto";
@@ -140,8 +158,8 @@ global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "What do you mean?
-Just hop over the ledge and double your bullets with me!";
+global.messageArray[1] = "What? Just hop over the ledge
+and double your bullets with me!";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "sad";

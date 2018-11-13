@@ -1,4 +1,4 @@
-if (1 == 1)
+if (state > 0)
 {
     global.isCutscene = false;
     room_speed = 30;

@@ -326,6 +326,11 @@ if (global.lowhp == 1 &amp;&amp; global.chizuruhp &gt; 20)
     global.lowhp = 0;
 }
 
+if (global.disableCutscenes == 1)
+{
+    global.bossvirgin = 0;
+}
+
 
 //Reduce intensity over time
 hudintensity -= 1;

@@ -181,7 +181,7 @@ if (state == 15)
     audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
     state = 16;
 
-    alarm[0] = 120;
+    alarm[0] = 60;
 }
 
 if (state == 14)
@@ -190,7 +190,7 @@ if (state == 14)
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_winsong, false, 10);
     state = 15;
     
-    alarm[0] = 80;
+    alarm[0] = 168;
 }
 
 if (state == 12)
@@ -250,8 +250,15 @@ if (state == 2)
 
 if (state == 0)
 {
-    state = 1;
-    instance_create(x, y, obj_lizdialogue2);
+    if (global.disableCutscenes == 1)
+    {
+        script_execute(scr_lizdefeatskip);
+    }
+    else
+    {
+        state = 1;
+        instance_create(x, y, obj_lizdialogue2);
+    }
 }
 
 </string>
@@ -422,6 +429,7 @@ if (state == 2)
 
 if (state == 1 &amp;&amp; !instance_exists(obj_lizdialogue2))
 {
+    
     state = 2;
     
     alarm[0] = 20;

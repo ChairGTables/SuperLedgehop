@@ -378,6 +378,7 @@
             <sprite>sprites\spr_sfxvolume</sprite>
             <sprite>sprites\spr_voicevolume</sprite>
             <sprite>sprites\spr_fullscreeninitial</sprite>
+            <sprite>sprites\spr_languagedisclaimer</sprite>
             <sprite>sprites\spr_windowedinitial</sprite>
           </sprites>
           <sprites name="spanish">
@@ -523,6 +524,8 @@
         <sprite>sprites\spr_policeriflehurt</sprite>
         <sprite>sprites\spr_roundcannon</sprite>
         <sprite>sprites\spr_roundcannonhurt</sprite>
+        <sprite>sprites\spr_redcannon</sprite>
+        <sprite>sprites\spr_redcannonhurt</sprite>
         <sprite>sprites\spr_snowflake</sprite>
         <sprite>sprites\spr_spiketiles</sprite>
         <sprite>sprites\spr_straightdown</sprite>
@@ -678,6 +681,7 @@
         <background>background\back_fancywallviolet</background>
         <background>background\back_buildingwhite1</background>
         <background>background\back_buildingwhite2</background>
+        <background>background\back_pillar</background>
       </backgrounds>
       <backgrounds name="stage4">
         <background>background\back_buildingblack1</background>
@@ -876,6 +880,7 @@
         <object>objects\obj_finale</object>
         <object>objects\obj_firstfullscreencircle</object>
         <object>objects\obj_firstlanguagecircle</object>
+        <object>objects\obj_languagedisclaimer</object>
         <object>objects\obj_fullscreen</object>
         <object>objects\obj_fullscreeninitial</object>
         <object>objects\obj_fullscreenoffon</object>
@@ -1096,6 +1101,7 @@
           <object>objects\obj_titoreflectdialogue</object>
           <object>objects\obj_yuutolockdialogue</object>
           <object>objects\obj_yuutokeydialogue</object>
+          <object>objects\obj_badendwarnspace</object>
           <object>objects\obj_yuutogreendialogue</object>
           <object>objects\obj_yuutoreddialogue</object>
           <object>objects\obj_yuutoviolet</object>
@@ -1248,7 +1254,6 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_dialoguetest</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>
@@ -1299,6 +1304,7 @@
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
       <room>rooms\rm_walltest</room>
+      <room>rooms\rm_dialoguetest</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>

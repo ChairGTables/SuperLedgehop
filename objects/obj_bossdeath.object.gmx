@@ -151,7 +151,7 @@ else
     audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
 
 
-    alarm[7] = 120;
+    alarm[7] = 60;
 }
 </string>
           </argument>
@@ -241,7 +241,7 @@ else
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_winsong, false, 10);
     
     
-    alarm[6] = 80;
+    alarm[6] = 168;
 }
 </string>
           </argument>

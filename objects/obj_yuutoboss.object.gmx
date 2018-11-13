@@ -37,7 +37,7 @@
 }
 
 myRock = instance_create(x, y, obj_yuutorock);
-
+global.isCutscene = false;
 safeX = 0;
 safeY = 0;
 

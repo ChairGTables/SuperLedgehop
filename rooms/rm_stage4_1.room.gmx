@@ -244,6 +244,12 @@
     <instance objName="obj_wall" x="2087" y="923" name="inst_0E8EE34B" locked="0" code="" scaleX="1.10000002384186" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2166" y="924" name="inst_1510B057" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_laststageswitch" x="1951" y="1002" name="inst_A34D4159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="1010" y="1437" name="inst_88EA2F58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="1961" y="2147" name="inst_97844812" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2952" y="1876" name="inst_577058A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="3147" y="3809" name="inst_EF035104" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="4232" y="3585" name="inst_368C8B01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2074" y="1481" name="inst_F892FF4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_bricksblack" x="1920" y="3520" w="32" h="32" xo="32" yo="0" id="10036878" name="inst_DC964C70" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

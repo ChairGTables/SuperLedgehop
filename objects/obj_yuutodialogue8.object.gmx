@@ -25,7 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.messageNumber = 0;
+            <string>if (global.disableCutscenes == 1)
+{
+    audio_stop_sound(snd_quake);
+    global.isCutscene = false;
+    instance_create(x, y, obj_skippingcutscene);
+    instance_create(x, y, obj_blackfadein);
+    room_goto_next();
+}
+else
+{
+
+global.messageNumber = 0;
 
 //create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
@@ -36,6 +47,9 @@ if (instance_exists(obj_wall))
 {
     instance_destroy(obj_wall);
 }
+
+
+
 
 //set limit
 global.messageLimit = 20;
@@ -386,6 +400,8 @@ global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "sad";
 global.emotionAntagonistArray[20] = "sad";
 break;
+}
+
 }
 </string>
           </argument>

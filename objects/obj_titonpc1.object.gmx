@@ -115,6 +115,10 @@ if (state == 1)
     image_index = 0;
     alarm[0] = 10;
     state = 2;
+    if (global.disableCutscenes == 1)
+    {
+        script_execute(scr_pretitoskip);
+    }
 }
 if (state == 0)
 {

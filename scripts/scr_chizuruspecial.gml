@@ -2,7 +2,7 @@ speedCap = 30;
 
 if (instance_exists(obj_chizuru) && global.chizurump > 5)
 {
-    if (obj_chizuru.spinning == 0)
+    if (obj_chizuru.spinning == 0 && obj_chizuru.sprite_index != spr_chizuruhurtd)
     {
         obj_chizuru.spinning = 1;
         obj_chizuru.action = 0;

@@ -157,7 +157,7 @@
     <instance objName="obj_policerapid" x="1136" y="1584" name="inst_58F02764" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="976" y="1680" name="inst_F49E1842" locked="0" code="dropKey = 1;&#xA;if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="912" y="1936" name="inst_CE879167" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policerapid" x="192" y="3376" name="inst_BA8EE5AF" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policerapid" x="224" y="3376" name="inst_BA8EE5AF" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="400" y="3536" name="inst_A995B170" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="1264" y="3616" name="inst_F894BE48" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="1328" y="3232" name="inst_ABDCA008" locked="0" code="if (global.stageState == 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -177,6 +177,23 @@
     <instance objName="obj_waterhider_sonii" x="880" y="1904" name="inst_D5392519" locked="0" code="if (global.stageState != 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterhider_sonii" x="2544" y="512" name="inst_1CEC83B7" locked="0" code="if (global.stageState != 0)&#xA;{&#xA;    instance_destroy(self);&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_yuutodialogue9" x="3952" y="448" name="inst_3D925ECC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_yuutokeydialogue" x="1744" y="3504" name="inst_44673153" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1440" y="3184" name="inst_988F86F1" locked="0" code="" scaleX="1" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1440" y="3360" name="inst_B296A478" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="160" y="3200" name="inst_6B658C80" locked="0" code="" scaleX="1" scaleY="2.57999992370605" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="160" y="3360" name="inst_9C442ACF" locked="0" code="" scaleX="1" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="480" y="3200" name="inst_12A82444" locked="0" code="" scaleX="1" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="480" y="3360" name="inst_92A54BCC" locked="0" code="" scaleX="1" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="480" y="3008" name="inst_D8858DEC" locked="0" code="" scaleX="1" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="160" y="3008" name="inst_1C4A4460" locked="0" code="" scaleX="1" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="2368" y="544" name="inst_B3BDB9CB" locked="0" code="" scaleX="1.03225803375244" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="2720" y="544" name="inst_F18B820F" locked="0" code="" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="512" y="2864" name="inst_6FA23AAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="800" y="1808" name="inst_E28EDA0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="1568" y="1520" name="inst_0E72C5F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2064" y="1696" name="inst_1D7A53C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2304" y="2144" name="inst_E6833055" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="2384" y="400" name="inst_EB4EAE4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_carpetred" x="128" y="3968" w="32" h="32" xo="128" yo="0" id="10020690" name="inst_C6D4CF51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -5233,6 +5250,16 @@
     <tile bgName="back_vase" x="1664" y="1472" w="32" h="32" xo="32" yo="0" id="10026886" name="inst_8F3D56C5" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="back_vase" x="1120" y="1472" w="32" h="32" xo="32" yo="0" id="10026888" name="inst_10F3C810" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="back_barrierviolet" x="832" y="1760" w="32" h="32" xo="64" yo="64" id="10026889" name="inst_3F3F7AA0" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="480" y="3008" w="32" h="96" xo="0" yo="0" id="10061043" name="inst_E6CD8DF3" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="160" y="3008" w="32" h="96" xo="0" yo="0" id="10061044" name="inst_F9070941" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="480" y="3200" w="32" h="96" xo="0" yo="0" id="10061045" name="inst_C396479E" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="160" y="3200" w="32" h="96" xo="0" yo="0" id="10061046" name="inst_C41824C7" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="480" y="3360" w="32" h="96" xo="0" yo="0" id="10061047" name="inst_4BC015F9" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="160" y="3360" w="32" h="96" xo="0" yo="0" id="10061048" name="inst_6D3C4F3A" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="2720" y="544" w="32" h="96" xo="0" yo="0" id="10061049" name="inst_6FAC57D9" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="2368" y="544" w="32" h="96" xo="0" yo="0" id="10061050" name="inst_380ABFC3" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="1440" y="3136" w="32" h="96" xo="0" yo="0" id="10061052" name="inst_9AA14FB2" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="back_pillar" x="1440" y="3360" w="32" h="96" xo="0" yo="0" id="10061053" name="inst_09BE959F" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

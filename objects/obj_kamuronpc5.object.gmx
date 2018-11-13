@@ -153,14 +153,24 @@ if (state == 2)
 
 if (state == 0)
 {
-    if (instance_exists(obj_chizuru))
+    if (global.disableCutscenes == 1)
     {
-        xHold = obj_chizuru.x;
-        yHold = obj_chizuru.y;
+        global.chizuruhp = 100;
+        global.isCutscene = false;
+        script_execute(scr_stopmusic);
+        room_goto_next();
     }
-    state = 1;
-    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_determinationtheme, true, 10); // Music in rm1, priority 10, looping
-    instance_create(x, y, obj_kamurodialogue9);
+    else
+    {
+        if (instance_exists(obj_chizuru))
+        {
+            xHold = obj_chizuru.x;
+            yHold = obj_chizuru.y;
+        }
+        state = 1;
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_determinationtheme, true, 10); // Music in rm1, priority 10, looping
+        instance_create(x, y, obj_kamurodialogue9);
+    }
 }
 </string>
           </argument>

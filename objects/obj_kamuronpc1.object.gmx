@@ -46,6 +46,11 @@ else
     global.isCutscene = false;
     instance_destroy(self);
 }
+
+if (global.disableCutscenes == 1)
+{
+    script_execute(scr_mooseskip);
+}
 </string>
           </argument>
         </arguments>
