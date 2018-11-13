@@ -284,6 +284,9 @@
         <sprites name="spin">
           <sprite>sprites\spr_chizuruspin</sprite>
         </sprites>
+        <sprites name="japanese">
+          <sprite>sprites\spr_chizurucurrentbulletjapanese</sprite>
+        </sprites>
         <sprites name="dialogue">
           <sprite>sprites\spr_chizuruhappy</sprite>
           <sprite>sprites\spr_chizuruneutral</sprite>
@@ -317,6 +320,9 @@
           <sprite>sprites\spr_absorbinstructionspanish</sprite>
           <sprite>sprites\spr_mpnoticespanish</sprite>
           <sprite>sprites\spr_skipinstructionsspanish</sprite>
+        </sprites>
+        <sprites name="japanese">
+          <sprite>sprites\spr_skipinstructionsjapanese</sprite>
         </sprites>
         <sprite>sprites\spr_absorbinstruction</sprite>
         <sprite>sprites\spr_absorbready</sprite>
@@ -1092,6 +1098,8 @@
           <object>objects\obj_titodialogue1</object>
           <object>objects\obj_titodialogue2</object>
           <object>objects\obj_titodialogue3</object>
+          <object>objects\obj_prisondialogue1</object>
+          <object>objects\obj_prisiondialouge2</object>
           <object>objects\obj_titodialogue4</object>
           <object>objects\obj_secretofficedialogue</object>
           <object>objects\obj_titoabsorbdialogue</object>
@@ -1254,6 +1262,7 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_dialoguetest</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>
@@ -1304,7 +1313,6 @@
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
       <room>rooms\rm_walltest</room>
-      <room>rooms\rm_dialoguetest</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>
