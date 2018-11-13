@@ -28,6 +28,14 @@
             <string>x = room_width / 2;
 y = 0;
 
+global.isCutscene = 1;
+if (instance_exists(obj_chizuru))
+{
+    obj_chizuru.image_speed = 0;
+    obj_chizuru.image_index = 0;
+    global.chizuruhp = 99;
+}
+
 vspeed = 50;
 image_index = 1;
 image_speed = 0;
@@ -59,7 +67,7 @@ image_speed = 0;
     global.yHolder[0] = obj_chizuru.y;
 }
 
-room_goto_next();
+instance_create(x, y, obj_louieportrait);
 </string>
           </argument>
         </arguments>
@@ -82,7 +90,9 @@ room_goto_next();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (y &gt; 848 &amp;&amp; vspeed &gt; 0)
+            <string>depth = -y;
+
+if (y &gt; 848 &amp;&amp; vspeed &gt; 0)
 {
     vspeed = 0;    
 
@@ -92,6 +102,7 @@ room_goto_next();
     }
     script_execute(scr_stopmusic);
     audio_play_sound_on (global.effectsEmitter, snd_enemymedium, false, 10); 
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_louieintro, false, 10); 
     instance_create(x, y, obj_circleeraser);
     killer = instance_create(x, y, obj_chizuruflame);
     killer.image_xscale = 400;

@@ -99,6 +99,7 @@
         <sound>sound\snd_lamedimension</sound>
         <sound>sound\snd_minigameintro</sound>
         <sound>sound\snd_louietheme</sound>
+        <sound>sound\snd_louieintro</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -354,6 +355,7 @@
         <sprite>sprites\spr_warnbox</sprite>
         <sprite>sprites\spr_warnboxcenter</sprite>
         <sprite>sprites\spr_whitedot</sprite>
+        <sprite>sprites\spr_eyeshine</sprite>
         <sprite>sprites\spr_downarrow</sprite>
       </sprites>
       <sprites name="functionality">
@@ -578,6 +580,7 @@
         <sprite>sprites\spr_louiespear</sprite>
         <sprite>sprites\spr_masterspark</sprite>
         <sprite>sprites\spr_louiedisc</sprite>
+        <sprite>sprites\spr_louieportrait</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -938,6 +941,7 @@
         <object>objects\obj_beatinstructionspace</object>
         <object>objects\obj_blackbackground</object>
         <object>objects\obj_blackfadein</object>
+        <object>objects\obj_blacktransparentbackground</object>
         <object>objects\obj_blackfadeout</object>
         <object>objects\obj_blackfadeoutslow</object>
         <object>objects\obj_cavedialoguespace</object>
@@ -1169,6 +1173,7 @@
           <object>objects\obj_louieslash</object>
           <object>objects\obj_louiespear</object>
           <object>objects\obj_louiedisc</object>
+          <object>objects\obj_louieportrait</object>
           <object>objects\obj_louienpc1</object>
         </objects>
       </objects>

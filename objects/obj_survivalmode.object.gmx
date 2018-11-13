@@ -103,7 +103,8 @@ if (global.resyncing)
     activateTimer = global.currentQuarterSec;
 }
 
-if (global.destroyed &gt; 99 &amp;&amp; !instance_exists(obj_louienpc1))
+//set global.destroyed to &gt; 99 for the default kill 100 enemies
+if (global.destroyed &gt; 1 &amp;&amp; !instance_exists(obj_louienpc1))
 {
     instance_create(room_width / 2, 0, obj_louienpc1);
 }
