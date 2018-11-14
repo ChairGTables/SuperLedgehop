@@ -29,3 +29,4 @@ audio_stop_sound(snd_determinationtheme);
 audio_stop_sound(snd_prebosstheme);
 audio_stop_sound(snd_louietheme);
 audio_stop_sound(snd_louieintro);
+audio_stop_sound(snd_creditstheme);

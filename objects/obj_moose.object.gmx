@@ -527,7 +527,8 @@ if (rightmomentum &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+            <string>    audio_stop_sound(snd_ricochet);
+    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
     other.direction += 180;
     other.direction += random_range(0, 40);
     other.speed *= 2;
@@ -698,7 +699,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
+            <string>    audio_stop_sound(snd_ricochet);
+    audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
     other.direction += 180;
     other.direction += random_range(0, 40);
     other.speed *= 2;

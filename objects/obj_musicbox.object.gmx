@@ -593,6 +593,7 @@ if(other.timed == 1)
 }
 else
 {
+    audio_stop_sound(snd_ricochet);
     audio_play_sound_on (global.effectsEmitter, snd_ricochet, false, 10); 
     other.direction += 180;
     other.direction += random_range(0, 40);

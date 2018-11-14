@@ -33,7 +33,9 @@ else
 {
     global.isCutscene = true;
     state = 0;
-    
+    global.volumeHold = global.voiceVolume;
+    global.voiceVolume = global.voiceVolume / 2;
+    audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
     if (instance_exists(obj_chizuru))
     {
         obj_chizuru.sprite_index = spr_chizuruwalku;
@@ -147,6 +149,8 @@ if (state == 0)
     global.stageState = 1;
     state = 7;
     alarm[0] = 40;
+    global.voiceVolume = global.volumeHold;
+    audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
 }
 
 if (state == 4)

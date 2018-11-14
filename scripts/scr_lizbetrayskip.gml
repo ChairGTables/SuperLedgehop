@@ -1,5 +1,7 @@
 if (state > 0 && state < 7)
 {
+    global.voiceVolume = global.volumeHold;
+    audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
     global.isCutscene = false;
     room_speed = 30;
     if (instance_exists(obj_antagonisttalk))

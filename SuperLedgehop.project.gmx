@@ -22,12 +22,15 @@
         <sound>sound\snd_enemymedium</sound>
         <sound>sound\snd_enemydamage</sound>
         <sound>sound\snd_enhancedbullet</sound>
+        <sound>sound\snd_enhancedlower</sound>
         <sound>sound\snd_firebullet</sound>
         <sound>sound\snd_gatling</sound>
         <sound>sound\snd_icebullet</sound>
         <sound>sound\snd_playerhit</sound>
         <sound>sound\snd_reflect</sound>
         <sound>sound\snd_ricebullet</sound>
+        <sound>sound\snd_mediumlower</sound>
+        <sound>sound\snd_ricelower</sound>
         <sound>sound\snd_spreadbullet</sound>
         <sound>sound\snd_waveblast</sound>
         <sound>sound\snd_rhythmconfirm</sound>
@@ -370,6 +373,12 @@
         <sprite>sprites\spr_mousetutorial</sprite>
         <sprite>sprites\spr_gamepadtutorial</sprite>
         <sprite>sprites\spr_clocktutorial</sprite>
+        <sprite>sprites\spr_endcgtito</sprite>
+        <sprite>sprites\spr_endcgcrossette</sprite>
+        <sprite>sprites\spr_endcgchizuru</sprite>
+        <sprite>sprites\spr_endcgcops</sprite>
+        <sprite>sprites\spr_endcgfloor</sprite>
+        <sprite>sprites\spr_endcgspace</sprite>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -996,6 +1005,7 @@
         <object>objects\obj_whitefadeout</object>
         <object>objects\obj_downarrow</object>
         <object>objects\obj_betatext</object>
+        <object>objects\obj_endcg</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
