@@ -331,6 +331,10 @@ if (hp &lt; 1)
     {
         instance_destroy(obj_titoabsorbdialogue);
     }
+    if (instance_exists(obj_absorbtutorial))
+    {
+        instance_destroy(obj_absorbtutorial);
+    }
     
     instance_create(x, y, obj_titoweaponsdialogue);
     

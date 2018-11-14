@@ -1,5 +1,7 @@
 multiplier = 15;
 
+audio_play_sound_on (global.effectsEmitter, snd_enemyshined, false, 10);
+
 if (global.chizurumovex < 0)
 {
     leftmomentum = -global.chizurumovex * multiplier;
