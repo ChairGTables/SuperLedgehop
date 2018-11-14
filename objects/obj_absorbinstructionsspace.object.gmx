@@ -184,6 +184,7 @@ alarm[1] = 5;
     {
         instance_create(x, y, obj_absorbinstructions);
     }*/
+    
     instance_create(x, y, obj_titoabsorbdialogue);
     instance_destroy(self);
 }

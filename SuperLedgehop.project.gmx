@@ -64,6 +64,7 @@
         <sound>sound\snd_bulletmiss</sound>
         <sound>sound\snd_pickup</sound>
         <sound>sound\snd_switch</sound>
+        <sound>sound\snd_enemyshined</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -100,6 +101,7 @@
         <sound>sound\snd_minigameintro</sound>
         <sound>sound\snd_louietheme</sound>
         <sound>sound\snd_louieintro</sound>
+        <sound>sound\snd_creditstheme</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -364,6 +366,9 @@
         <sprite>sprites\spr_eyeshine</sprite>
         <sprite>sprites\spr_downarrow</sprite>
         <sprite>sprites\spr_betatext</sprite>
+        <sprite>sprites\spr_mousetutorial</sprite>
+        <sprite>sprites\spr_gamepadtutorial</sprite>
+        <sprite>sprites\spr_clocktutorial</sprite>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -940,6 +945,7 @@
         <object>objects\obj_stagefourdeleter</object>
         <object>objects\obj_stagefourdeleter2</object>
         <object>objects\obj_timeend</object>
+        <object>objects\obj_absorbtutorial</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>

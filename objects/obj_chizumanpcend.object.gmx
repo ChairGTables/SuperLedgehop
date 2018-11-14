@@ -123,7 +123,8 @@ if (state == 11)
 {
     state = 12;
     instance_create(x, y, obj_enddialogue7);
-    
+    script_execute(scr_musicfadekill);
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_creditstheme, false, 10); // Music in rm1, priority 10, looping
     instance_create(view_xview + view_wview - 300, view_yview, obj_creditsbox);
 }
 
