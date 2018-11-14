@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-9998</depth>
+  <depth>-5000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,18 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y = view_yview+40;
-hspeed = 30;
-image_speed = 0;
+            <string>chizuru = -160;
+tito = -200;
+crossette = -200;
+cops = -400;
+space1 = -960;
+space2 = 0;
+space3 = 960;
 
-emotion = "neutral";
-happySprite = spr_chizuruhappy;
-neutralSprite = spr_chizuruneutral;
-sadSprite = spr_chizurusad;
-angrySprite = spr_chizuruangry;
-curiousSprite = spr_chizurucurious;
+speed1 = 10;
+speed2 = 5;
+speed3 = 4;
+speed4 = 1;
 
-mini = 0;
+alpha = 0;
+state = 0;
 </string>
           </argument>
         </arguments>
@@ -59,61 +62,60 @@ mini = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y = view_yview+40;
-if (x &gt; view_xview-30)
+            <string>if (state == 0)
 {
-    hspeed = 0;
-}
-
-if (emotion == "none" )
-{
-    sprite_index = spr_emptysprite;
+    if (alpha &lt; 1)
+    {
+        alpha += 0.05;
+    }
 }
 
 
-if (emotion == "neutral" &amp;&amp; sprite_index != neutralSprite)
+if (chizuru &lt; 0)
 {
-    sprite_index = neutralSprite;
+    chizuru += speed3;
 }
-if (emotion == "happy" &amp;&amp; sprite_index != happySprite)
+if (tito &lt; 0)
 {
-    sprite_index = happySprite;
+    tito += speed2;
 }
-if (emotion == "sad" &amp;&amp; sprite_index != sadSprite)
+if (crossette &lt; 0)
 {
-    sprite_index = sadSprite;
+    crossette += speed2;
 }
-if (emotion == "angry" &amp;&amp; sprite_index != angrySprite)
+if (cops &lt; 0)
 {
-    sprite_index = angrySprite;
+    cops += speed1;
 }
-if (emotion == "curious" &amp;&amp; sprite_index != curiousSprite)
+
+space1 += speed4;
+space2 += speed4;
+space3 += speed4;
+
+if (space3 &gt; 960)
 {
-    sprite_index = curiousSprite;
+    space3 = space1 - 960;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_index = 0;
+if (space2 &gt; 960)
+{
+    space2 = space3 - 960;    
+}
+if (space1 &gt; 960)
+{
+    space1 = space2 - 960;
+}
+
+if (state == 1)
+{
+    if (alpha &gt; 0)
+    {
+        alpha -= 0.05;
+    }
+    else
+    {
+        instance_destroy(self);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -136,10 +138,19 @@ if (emotion == "curious" &amp;&amp; sprite_index != curiousSprite)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mini == 0 &amp;&amp; visible == 1)
-{
-    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
-}
+            <string>draw_sprite_ext(spr_endcgspace, 0, view_xview + space1, view_yview, 1, 1, 0, c_white, alpha);
+draw_sprite_ext(spr_endcgspace, 1, view_xview + space2, view_yview, 1, 1, 0, c_white, alpha);
+draw_sprite_ext(spr_endcgspace, 2, view_xview + space3, view_yview, 1, 1, 0, c_white, alpha);
+
+draw_sprite_ext(spr_endcgfloor, 0, view_xview, view_yview, 1, 1, 0, c_white, alpha);
+
+
+draw_sprite_ext(spr_endcgchizuru, 0, view_xview + chizuru, view_yview, 1, 1, 0, c_white, alpha);
+draw_sprite_ext(spr_endcgcrossette, 0, view_xview + crossette, view_yview, 1, 1, 0, c_white, alpha);
+draw_sprite_ext(spr_endcgtito, 0, view_xview + tito, view_yview, 1, 1, 0, c_white, alpha);
+
+draw_sprite_ext(spr_endcgcops, 0, view_xview + cops, view_yview, 1, 1, 0, c_white, alpha);
+draw_sprite_ext(spr_endcgcops, 0, view_xview + cops + 960, view_yview, 1, 1, 0, c_white, alpha);
 </string>
           </argument>
         </arguments>

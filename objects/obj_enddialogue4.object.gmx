@@ -446,6 +446,16 @@ break;
     obj_protagonisttalk.x = view_xview-200;
     obj_protagonisttalk.hspeed = 30;
     dialogue.protagonist = "tito";
+    instance_create(x, y, obj_endcg);
+    
+    if (instance_exists(obj_protagonisttalk))
+    {
+        obj_protagonisttalk.visible = 0;
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        obj_antagonisttalk.visible = 0;
+    }
 }
 
 if (global.messageNumber == 2 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
@@ -454,35 +464,65 @@ if (global.messageNumber == 2 &amp;&amp; state == 1 &amp;&amp; instance_exists(o
     obj_antagonisttalk.x = view_xview+1060;
     obj_antagonisttalk.hspeed = -30;
     dialogue.antagonist = "chizuma";
+    
 }
 
-if (global.messageNumber == 12 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_protagonisttalk))
+if (global.messageNumber == 9 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_protagonisttalk))
 {
     state = 3;
     obj_protagonisttalk.x = view_xview-200;
     obj_protagonisttalk.hspeed = 30;
     dialogue.protagonist = "crossette";
+    
+    //obj_antagonisttalk.x = view_xview+1060;
+    //obj_antagonisttalk.hspeed = -30;
+    //dialogue.antagonist = "chizuma";
 }
 
-if (global.messageNumber == 17 &amp;&amp; state == 3 &amp;&amp; instance_exists(obj_protagonisttalk))
+if (global.messageNumber == 16 &amp;&amp; state == 3 &amp;&amp; instance_exists(obj_protagonisttalk))
 {
     state = 4;
     obj_protagonisttalk.x = view_xview-200;
     obj_protagonisttalk.hspeed = 30;
     dialogue.protagonist = "tito";
+    if (instance_exists(obj_endcg))
+    {
+        obj_endcg.state = 1;
+    }
 }
 
-if (global.messageNumber == 20 &amp;&amp; state == 4 &amp;&amp; instance_exists(obj_antagonisttalk))
+if (global.messageNumber == 17 &amp;&amp; state == 4 &amp;&amp; instance_exists(obj_protagonisttalk))
 {
     state = 5;
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "tito";
+    
+    obj_antagonisttalk.x = view_xview+1060;
+    obj_antagonisttalk.hspeed = -30;
+    dialogue.antagonist = "chizuma";
+    
+    if (instance_exists(obj_protagonisttalk))
+    {
+        obj_protagonisttalk.visible = 1;
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        obj_antagonisttalk.visible = 1;
+    }
+}
+
+if (global.messageNumber == 20 &amp;&amp; state == 5 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 6;
     obj_antagonisttalk.x = view_xview+1060;
     obj_antagonisttalk.hspeed = -30;
     dialogue.antagonist = "liz";
 }
 
-if (global.messageNumber == 27 &amp;&amp; state == 5 &amp;&amp; instance_exists(obj_antagonisttalk))
+if (global.messageNumber == 27 &amp;&amp; state == 6 &amp;&amp; instance_exists(obj_antagonisttalk))
 {
-    state = 6;
+    state = 7;
     obj_antagonisttalk.x = view_xview+1060;
     obj_antagonisttalk.hspeed = -30;
     dialogue.antagonist = "chizuma";

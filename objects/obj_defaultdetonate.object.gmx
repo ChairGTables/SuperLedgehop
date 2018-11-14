@@ -110,7 +110,7 @@ alarm[0] = 3;
             <string>if (other.phase == detonation &amp;&amp; visible == 0)
 {
     visible = 1;
-    audio_play_sound_on (global.effectsEmitter, snd_enemymedium, false, 10); 
+    audio_play_sound_on (global.effectsEmitter, snd_mediumlower, false, 10); 
     alarm[6] = 200;
 }
 if (other.phase == detonation + 1 &amp;&amp; created == 0)
@@ -119,7 +119,7 @@ if (other.phase == detonation + 1 &amp;&amp; created == 0)
     created = 1;
     fire = instance_create(x + 16, y + 16, obj_flame_sonii);      
     fire.damage = 20;
-    audio_play_sound_on (global.effectsEmitter, snd_ricebullet, false, 10);     
+    audio_play_sound_on (global.effectsEmitter, snd_ricelower, false, 10);     
     alarm[6] = 30;
 }
 </string>
