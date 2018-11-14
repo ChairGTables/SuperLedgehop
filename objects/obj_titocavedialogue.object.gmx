@@ -80,6 +80,51 @@ global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "sad";
 break;
 
+case 2:
+global.messageArray[0] = "お前何でずっと洞窟にいたんだ！？
+心配してたんだぞ！";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "おじさん！？
+消し炭になったはずじゃ？";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "あの時俺が全力を出していたらむしろ
+お前が消し炭になってたはずだぜ。";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "curious";
+
+global.messageArray[3] = "それで、ものすごい叫び声が
+聞こえたから死んだかと思ってたんだぞ！";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "それだったら、
+洞窟が崩れた時に巻き込まれた人がいるんだけど…";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "待て！もしかして原始人か！？
+イカすおじさんポイントを上げる絶好のチャンスだ！";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "ここで待ってろ！";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "sad";
+break;
+
 default:
 global.messageArray[0] = "The heck took you so long in that cave!?
 I got super duper worried!";

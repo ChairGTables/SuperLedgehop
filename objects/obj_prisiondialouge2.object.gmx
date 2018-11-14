@@ -32,546 +32,548 @@ dialogue.protagonist = "tito"
 dialogue.antagonist = "liz";
 
 //set limit
-global.messageLimit = 31;
+global.messageLimit = 30;
 
 switch(global.language)
 {
 
 case 1:
-
-global.messageArray[0] = "Psst! Hey!";
-global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "neutral";
-
-
-global.messageArray[1] = "Liz?";
-global.categoryArray[1] = "left";
-global.emotionProtagonistArray[1] = "neutral";
-global.emotionAntagonistArray[1] = "neutral";
+global.messageArray[0] = "¡¡¡¡QUE ASCOOOOO!!!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[2] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "neutral";
-global.emotionAntagonistArray[2] = "angry";
+global.messageArray[1] = "¿¡Que!?
+¡Pero si tu adoras los filetes con queso!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[3] = "Hungry?";
+
+global.messageArray[2] = "Si,
+¡¡¡Pero este da ASCO!!!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "P-Pero que
+¡DESAGRADECIDOOOOOOOOOOOOOOOOOOOOOOO!";
 global.categoryArray[3] = "right";
-global.emotionProtagonistArray[3] = "neutral";
-global.emotionAntagonistArray[3] = "neutral";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "Nah, I’m getting tired of prison food...";
+global.messageArray[4] = "No, ¡En serio!
+Pruébalo, ¡Da asco!";
 global.categoryArray[4] = "left";
-global.emotionProtagonistArray[4] = "neutral";
+global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "...but free food is always good food I guess.";
-global.categoryArray[5] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.messageArray[5] = "¡Eww No!
+¡Odio el filete con queso!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
 
-global.messageArray[6] = "Ta-da! It’s your favorite!";
-global.categoryArray[6] = "right";
+global.messageArray[6] = "¡No me sorprende!
+¡Los que compras son pesimos!";
+global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "sad";
 
-global.messageArray[7] = "CHEESESTEAK!?";
-global.categoryArray[7] = "left";
-global.emotionProtagonistArray[7] = "happy";
+global.messageArray[7] = "¿E-En serio?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "neutral";
 
-global.messageArray[8] = "Yup!
-Eat it!";
-global.categoryArray[8] = "right";
+global.messageArray[8] = "“¡Si!
+¡Algún día deberías probar los filetes con queso que preparo en casa!";
+global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Whoa!
-Thanks!";
+global.messageArray[9] = "¡Chizuru los adora tanto que parece como si fuese a estallar!";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "happy";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = "Psst! Hey!";
+global.messageArray[10] = "Seguro que Chizuru los extraña, ¿verdad?";
 global.categoryArray[10] = "right";
-global.emotionProtagonistArray[10] = "sad";
-global.emotionAntagonistArray[10] = "neutral";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "sad";
 
 
-global.messageArray[11] = "Liz?";
+global.messageArray[11] = "Si, apuesto que sí.
+A este punto debe estar comiendo queso de los basureros.";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "neutral";
-global.emotionAntagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "sad";
 
 
-global.messageArray[12] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "neutral";
-global.emotionAntagonistArray[2] = "angry";
+global.messageArray[12] = "Yo lo haría si no me hubiesen dado un aumento.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "curious";
+global.emotionAntagonistArray[12] = "sad";
 
-global.messageArray[13] = "Hungry?";
-global.categoryArray[13] = "right";
-global.emotionProtagonistArray[13] = "neutral";
-global.emotionAntagonistArray[13] = "neutral";
+global.messageArray[13] = "Oh, ¿te dieron un aumento? ¡Felicidades!";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "Nah, I’m getting tired of prison food...";
+global.messageArray[14] = "¡Serás la mejor policía en poco tiempo!";
 global.categoryArray[14] = "left";
-global.emotionProtagonistArray[4] = "neutral";
-global.emotionAntagonistArray[4] = "neutral";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "...but free food is always good food I guess.";
-global.categoryArray[15] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.messageArray[15] = "Sí, pero el aumento fue de unos cuantos centavos,
+jajaja...";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "neutral";
 
-global.messageArray[16] = "Ta-da! It’s your favorite!";
-global.categoryArray[16] = "right";
-global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.messageArray[16] = "¡Oye! ¡Al Menos sigues siendo policía!";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "curious";
+global.emotionAntagonistArray[16] = "neutral";
 
-global.messageArray[17] = "CHEESESTEAK!?";
+global.messageArray[17] = "¿Alguno de tus compañeros tiene alguna pista de lo que
+ha hecho Chizuru últimamente?";
 global.categoryArray[17] = "left";
-global.emotionProtagonistArray[17] = "happy";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "neutral";
 
-global.messageArray[18] = "Yup!
-Eat it!";
+global.messageArray[18] = "Dejame ver, hubo un reporte de que derribó a más
+de cien pandilleros además de un príncipe soberano.";
 global.categoryArray[18] = "right";
-global.emotionProtagonistArray[18] = "happy";
-global.emotionAntagonistArray[18] = "neutral";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "sad";
 
-global.messageArray[19] = "Whoa!
-Thanks!";
-global.categoryArray[19] = "left";
-global.emotionProtagonistArray[19] = "happy";
-global.emotionAntagonistArray[19] = "neutral";
+global.messageArray[19] = "Los hospitales esta muy ocupados atendiendolos.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "Psst! Hey!";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "sad";
-global.emotionAntagonistArray[20] = "neutral";
+global.messageArray[20] = "¿¡UN PRINCIPE!?
+¡SI!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "sad";
 
 
-global.messageArray[21] = "Liz?";
+global.messageArray[21] = "¡SABÍA QUE CHIZURU ERA MUY FUERTE!
+¡ME SIENTO MUY ORGULLOSO!";
 global.categoryArray[21] = "left";
-global.emotionProtagonistArray[21] = "neutral";
-global.emotionAntagonistArray[21] = "neutral";
+global.emotionProtagonistArray[21] = "happy";
+global.emotionAntagonistArray[21] = "sad";
 
 
-global.messageArray[22] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
+global.messageArray[22] = "Si, la recompensa por atraparla es muy alta...";
 global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "neutral";
-global.emotionAntagonistArray[22] = "angry";
+global.emotionProtagonistArray[22] = "happy";
+global.emotionAntagonistArray[22] = "sad";
 
-global.messageArray[23] = "Hungry?";
-global.categoryArray[23] = "right";
+global.messageArray[23] = "Hmm, creo que deberías ser tú quien la atrape.";
+global.categoryArray[23] = "left";
 global.emotionProtagonistArray[23] = "neutral";
-global.emotionAntagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "sad";
 
-global.messageArray[24] = "Nah, I’m getting tired of prison food...";
-global.categoryArray[24] = "left";
+global.messageArray[24] = "¿¡Q-Qué hay contigo y tus locos planes!?";
+global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "neutral";
-global.emotionAntagonistArray[24] = "neutral";
+global.emotionAntagonistArray[24] = "angry";
 
-global.messageArray[25] = "...but free food is always good food I guess.";
+global.messageArray[25] = "Vamos,
+piénsalo un poco.";
 global.categoryArray[25] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.emotionProtagonistArray[25] = "neutral";
+global.emotionAntagonistArray[25] = "angry";
 
-global.messageArray[26] = "Ta-da! It’s your favorite!";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.messageArray[26] = "Si hay alguien que debería arrestar a Chizuru...";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "neutral";
+global.emotionAntagonistArray[26] = "neutral";
 
-global.messageArray[27] = "CHEESESTEAK!?";
+global.messageArray[27] = "...deberías ser tú, si es alguien más estamos acabados.";
 global.categoryArray[27] = "left";
-global.emotionProtagonistArray[7] = "happy";
-global.emotionAntagonistArray[7] = "neutral";
+global.emotionProtagonistArray[27] = "curous";
+global.emotionAntagonistArray[27] = "sad";
 
-global.messageArray[28] = "Yup!
-Eat it!";
+global.messageArray[28] = "¿Quieres que arresten a tu sobrina?";
 global.categoryArray[28] = "right";
-global.emotionProtagonistArray[28] = "happy";
-global.emotionAntagonistArray[28] = "neutral";
+global.emotionProtagonistArray[28] = "curious";
+global.emotionAntagonistArray[28] = "sad";
 
-global.messageArray[29] = "Whoa!
-Thanks!";
+global.messageArray[29] = "Solo quiero que sea arrestada por ti.
+Todo es parte del plan.";
 global.categoryArray[29] = "left";
-global.emotionProtagonistArray[29] = "happy";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
-global.messageArray[30] = "Ta-da! It’s your favorite!";
-global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "curious";
+global.messageArray[30] = "Confía en mí, nos sacaré a todos de
+aquí y arreglaré este desastre.";
+global.categoryArray[30] = "left";
+global.emotionProtagonistArray[30] = "neutral";
 global.emotionAntagonistArray[30] = "neutral";
-
-global.messageArray[31] = "CHEESESTEAK!?";
-global.categoryArray[31] = "left";
-global.emotionProtagonistArray[31] = "happy";
-global.emotionAntagonistArray[31] = "neutral";
-break;
 break;
 
 
 case 2:
-
-global.messageArray[0] = "Psst! Hey!";
-global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "neutral";
-
-
-global.messageArray[1] = "Liz?";
-global.categoryArray[1] = "left";
-global.emotionProtagonistArray[1] = "neutral";
-global.emotionAntagonistArray[1] = "neutral";
+global.messageArray[0] = "EUUUUUUUUUURGGHHHHHHHHHHH!!!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[2] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "neutral";
-global.emotionAntagonistArray[2] = "angry";
+global.messageArray[1] = "What!?
+But you love cheesesteak!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[3] = "Hungry?";
+
+global.messageArray[2] = "Yeah!
+But this one SUCKS!!!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "W-Why you ungrateful WHOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOREEEE!";
 global.categoryArray[3] = "right";
-global.emotionProtagonistArray[3] = "neutral";
-global.emotionAntagonistArray[3] = "neutral";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "Nah, I’m getting tired of prison food...";
+global.messageArray[4] = "No! I’m serious!
+Try it! It sucks!";
 global.categoryArray[4] = "left";
-global.emotionProtagonistArray[4] = "neutral";
+global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "...but free food is always good food I guess.";
-global.categoryArray[5] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.messageArray[5] = "Eww! No!
+I hate cheesesteak!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
 
-global.messageArray[6] = "Ta-da! It’s your favorite!";
-global.categoryArray[6] = "right";
+global.messageArray[6] = "No wonder you hate cheesesteak! 
+You’re getting the bad ones!";
+global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "sad";
 
-global.messageArray[7] = "CHEESESTEAK!?";
-global.categoryArray[7] = "left";
-global.emotionProtagonistArray[7] = "happy";
+global.messageArray[7] = "R-Really?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "neutral";
 
-global.messageArray[8] = "Yup!
-Eat it!";
-global.categoryArray[8] = "right";
+global.messageArray[8] = "Yeah!
+You gotta try my homemade cheesesteaks one day!";
+global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Whoa!
-Thanks!";
+global.messageArray[9] = "Chizuru loves them so much that she explodes her pants!";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "happy";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = "Psst! Hey!";
+global.messageArray[10] = "Chizuru must miss your cheesesteaks by now, huh?";
 global.categoryArray[10] = "right";
-global.emotionProtagonistArray[10] = "sad";
-global.emotionAntagonistArray[10] = "neutral";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "sad";
 
 
-global.messageArray[11] = "Liz?";
+global.messageArray[11] = "Yeah, I bet.
+She’s probably eating the rotten cheese inside trash cans at this point.";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "neutral";
-global.emotionAntagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "sad";
 
 
-global.messageArray[12] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "neutral";
-global.emotionAntagonistArray[2] = "angry";
+global.messageArray[12] = "That would have been me too if they didn’t give me a raise.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "curious";
+global.emotionAntagonistArray[12] = "sad";
 
-global.messageArray[13] = "Hungry?";
-global.categoryArray[13] = "right";
-global.emotionProtagonistArray[13] = "neutral";
-global.emotionAntagonistArray[13] = "neutral";
+global.messageArray[13] = "Oh, they gave you a raise? Congratulations!";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "Nah, I’m getting tired of prison food...";
+global.messageArray[14] = "You’ll be the best cop out there soon enough!";
 global.categoryArray[14] = "left";
-global.emotionProtagonistArray[4] = "neutral";
-global.emotionAntagonistArray[4] = "neutral";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "...but free food is always good food I guess.";
-global.categoryArray[15] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.messageArray[15] = "Yeah, but it’s only a few cents raise, ahaha.";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "neutral";
 
-global.messageArray[16] = "Ta-da! It’s your favorite!";
-global.categoryArray[16] = "right";
-global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.messageArray[16] = "Well, hey! At least you’re still a cop!";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "curious";
+global.emotionAntagonistArray[16] = "neutral";
 
-global.messageArray[17] = "CHEESESTEAK!?";
+global.messageArray[17] = "Did any of your cop buddies get a lead on Chizuru yet?";
 global.categoryArray[17] = "left";
-global.emotionProtagonistArray[17] = "happy";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "neutral";
 
-global.messageArray[18] = "Yup!
-Eat it!";
+global.messageArray[18] = "Well, there was a report that she took down
+a hundred gang members as well as a sovereign prince.";
 global.categoryArray[18] = "right";
-global.emotionProtagonistArray[18] = "happy";
-global.emotionAntagonistArray[18] = "neutral";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "sad";
 
-global.messageArray[19] = "Whoa!
-Thanks!";
-global.categoryArray[19] = "left";
-global.emotionProtagonistArray[19] = "happy";
-global.emotionAntagonistArray[19] = "neutral";
+global.messageArray[19] = "Hospitals are very busy right now attending them.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "Psst! Hey!";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "sad";
-global.emotionAntagonistArray[20] = "neutral";
+global.messageArray[20] = "A PRINCE!?
+YEAH!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "sad";
 
 
-global.messageArray[21] = "Liz?";
+global.messageArray[21] = "I KNEW CHIZURU IS SUPER STRONG!
+I’M SO PROUD!";
 global.categoryArray[21] = "left";
-global.emotionProtagonistArray[21] = "neutral";
-global.emotionAntagonistArray[21] = "neutral";
+global.emotionProtagonistArray[21] = "happy";
+global.emotionAntagonistArray[21] = "sad";
 
 
-global.messageArray[22] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
+global.messageArray[22] = "Yeah, her bounty is pretty big right now...";
 global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "neutral";
-global.emotionAntagonistArray[22] = "angry";
+global.emotionProtagonistArray[22] = "happy";
+global.emotionAntagonistArray[22] = "sad";
 
-global.messageArray[23] = "Hungry?";
-global.categoryArray[23] = "right";
+global.messageArray[23] = "Hmm, I think you should catch her yourself.";
+global.categoryArray[23] = "left";
 global.emotionProtagonistArray[23] = "neutral";
-global.emotionAntagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "sad";
 
-global.messageArray[24] = "Nah, I’m getting tired of prison food...";
-global.categoryArray[24] = "left";
+global.messageArray[24] = "W-What’s with you and crazy ideas!?";
+global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "neutral";
-global.emotionAntagonistArray[24] = "neutral";
+global.emotionAntagonistArray[24] = "angry";
 
-global.messageArray[25] = "...but free food is always good food I guess.";
+global.messageArray[25] = "Come on.
+Think about it.";
 global.categoryArray[25] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.emotionProtagonistArray[25] = "neutral";
+global.emotionAntagonistArray[25] = "angry";
 
-global.messageArray[26] = "Ta-da! It’s your favorite!";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.messageArray[26] = "If there’s anyone that would get Chizuru
+arrested, it should be you.";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "neutral";
+global.emotionAntagonistArray[26] = "neutral";
 
-global.messageArray[27] = "CHEESESTEAK!?";
+global.messageArray[27] = "If it’s anyone else, then we’re screwed.";
 global.categoryArray[27] = "left";
-global.emotionProtagonistArray[7] = "happy";
-global.emotionAntagonistArray[7] = "neutral";
+global.emotionProtagonistArray[27] = "curous";
+global.emotionAntagonistArray[27] = "sad";
 
-global.messageArray[28] = "Yup!
-Eat it!";
+global.messageArray[28] = "You want your niece arrested?";
 global.categoryArray[28] = "right";
-global.emotionProtagonistArray[28] = "happy";
-global.emotionAntagonistArray[28] = "neutral";
+global.emotionProtagonistArray[28] = "curious";
+global.emotionAntagonistArray[28] = "sad";
 
-global.messageArray[29] = "Whoa!
-Thanks!";
+global.messageArray[29] = "I want her to be arrested only by you.
+It’s all in the mind games.";
 global.categoryArray[29] = "left";
-global.emotionProtagonistArray[29] = "happy";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
-global.messageArray[30] = "Ta-da! It’s your favorite!";
-global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "curious";
+global.messageArray[30] = "Trust me on this.
+We’ll all get out of here and fix this mess after that.";
+global.categoryArray[30] = "left";
+global.emotionProtagonistArray[30] = "neutral";
 global.emotionAntagonistArray[30] = "neutral";
-
-global.messageArray[31] = "CHEESESTEAK!?";
-global.categoryArray[31] = "left";
-global.emotionProtagonistArray[31] = "happy";
-global.emotionAntagonistArray[31] = "neutral";
 break;
+
 
 default:
-
-global.messageArray[0] = "Psst! Hey!";
-global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "neutral";
-
-
-global.messageArray[1] = "Liz?";
-global.categoryArray[1] = "left";
-global.emotionProtagonistArray[1] = "neutral";
-global.emotionAntagonistArray[1] = "neutral";
+global.messageArray[0] = "EUUUUUUUUUURGGHHHHHHHHHHH!!!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[2] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "neutral";
-global.emotionAntagonistArray[2] = "angry";
+global.messageArray[1] = "What!?
+But you love cheesesteak!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[3] = "Hungry?";
+
+global.messageArray[2] = "Yeah!
+But this one SUCKS!!!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "W-Why you ungrateful WHOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOREEEE!";
 global.categoryArray[3] = "right";
-global.emotionProtagonistArray[3] = "neutral";
-global.emotionAntagonistArray[3] = "neutral";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "Nah, I’m getting tired of prison food...";
+global.messageArray[4] = "No! I’m serious!
+Try it! It sucks!";
 global.categoryArray[4] = "left";
-global.emotionProtagonistArray[4] = "neutral";
+global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "...but free food is always good food I guess.";
-global.categoryArray[5] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.messageArray[5] = "Eww! No!
+I hate cheesesteak!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
 
-global.messageArray[6] = "Ta-da! It’s your favorite!";
-global.categoryArray[6] = "right";
+global.messageArray[6] = "No wonder you hate cheesesteak! 
+You’re getting the bad ones!";
+global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "sad";
 
-global.messageArray[7] = "CHEESESTEAK!?";
-global.categoryArray[7] = "left";
-global.emotionProtagonistArray[7] = "happy";
+global.messageArray[7] = "R-Really?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "neutral";
 
-global.messageArray[8] = "Yup!
-Eat it!";
-global.categoryArray[8] = "right";
+global.messageArray[8] = "Yeah!
+You gotta try my homemade cheesesteaks one day!";
+global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Whoa!
-Thanks!";
+global.messageArray[9] = "Chizuru loves them so much that she explodes her pants!";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "happy";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = "Psst! Hey!";
+global.messageArray[10] = "Chizuru must miss your cheesesteaks by now, huh?";
 global.categoryArray[10] = "right";
-global.emotionProtagonistArray[10] = "sad";
-global.emotionAntagonistArray[10] = "neutral";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "sad";
 
 
-global.messageArray[11] = "Liz?";
+global.messageArray[11] = "Yeah, I bet.
+She’s probably eating the rotten cheese inside trash cans at this point.";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "neutral";
-global.emotionAntagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "sad";
 
 
-global.messageArray[12] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
-global.categoryArray[2] = "right";
-global.emotionProtagonistArray[2] = "neutral";
-global.emotionAntagonistArray[2] = "angry";
+global.messageArray[12] = "That would have been me too if they didn’t give me a raise.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "curious";
+global.emotionAntagonistArray[12] = "sad";
 
-global.messageArray[13] = "Hungry?";
-global.categoryArray[13] = "right";
-global.emotionProtagonistArray[13] = "neutral";
-global.emotionAntagonistArray[13] = "neutral";
+global.messageArray[13] = "Oh, they gave you a raise? Congratulations!";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "Nah, I’m getting tired of prison food...";
+global.messageArray[14] = "You’ll be the best cop out there soon enough!";
 global.categoryArray[14] = "left";
-global.emotionProtagonistArray[4] = "neutral";
-global.emotionAntagonistArray[4] = "neutral";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "...but free food is always good food I guess.";
-global.categoryArray[15] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.messageArray[15] = "Yeah, but it’s only a few cents raise, ahaha.";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "neutral";
 
-global.messageArray[16] = "Ta-da! It’s your favorite!";
-global.categoryArray[16] = "right";
-global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.messageArray[16] = "Well, hey! At least you’re still a cop!";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "curious";
+global.emotionAntagonistArray[16] = "neutral";
 
-global.messageArray[17] = "CHEESESTEAK!?";
+global.messageArray[17] = "Did any of your cop buddies get a lead on Chizuru yet?";
 global.categoryArray[17] = "left";
-global.emotionProtagonistArray[17] = "happy";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "neutral";
 
-global.messageArray[18] = "Yup!
-Eat it!";
+global.messageArray[18] = "Well, there was a report that she took down
+a hundred gang members as well as a sovereign prince.";
 global.categoryArray[18] = "right";
-global.emotionProtagonistArray[18] = "happy";
-global.emotionAntagonistArray[18] = "neutral";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "sad";
 
-global.messageArray[19] = "Whoa!
-Thanks!";
-global.categoryArray[19] = "left";
-global.emotionProtagonistArray[19] = "happy";
-global.emotionAntagonistArray[19] = "neutral";
+global.messageArray[19] = "Hospitals are very busy right now attending them.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "Psst! Hey!";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "sad";
-global.emotionAntagonistArray[20] = "neutral";
+global.messageArray[20] = "A PRINCE!?
+YEAH!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "sad";
 
 
-global.messageArray[21] = "Liz?";
+global.messageArray[21] = "I KNEW CHIZURU IS SUPER STRONG!
+I’M SO PROUD!";
 global.categoryArray[21] = "left";
-global.emotionProtagonistArray[21] = "neutral";
-global.emotionAntagonistArray[21] = "neutral";
+global.emotionProtagonistArray[21] = "happy";
+global.emotionAntagonistArray[21] = "sad";
 
 
-global.messageArray[22] = "Yup! It’s me, you
-DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
+global.messageArray[22] = "Yeah, her bounty is pretty big right now...";
 global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "neutral";
-global.emotionAntagonistArray[22] = "angry";
+global.emotionProtagonistArray[22] = "happy";
+global.emotionAntagonistArray[22] = "sad";
 
-global.messageArray[23] = "Hungry?";
-global.categoryArray[23] = "right";
+global.messageArray[23] = "Hmm, I think you should catch her yourself.";
+global.categoryArray[23] = "left";
 global.emotionProtagonistArray[23] = "neutral";
-global.emotionAntagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "sad";
 
-global.messageArray[24] = "Nah, I’m getting tired of prison food...";
-global.categoryArray[24] = "left";
+global.messageArray[24] = "W-What’s with you and crazy ideas!?";
+global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "neutral";
-global.emotionAntagonistArray[24] = "neutral";
+global.emotionAntagonistArray[24] = "angry";
 
-global.messageArray[25] = "...but free food is always good food I guess.";
+global.messageArray[25] = "Come on.
+Think about it.";
 global.categoryArray[25] = "left";
-global.emotionProtagonistArray[5] = "curious";
-global.emotionAntagonistArray[5] = "neutral";
+global.emotionProtagonistArray[25] = "neutral";
+global.emotionAntagonistArray[25] = "angry";
 
-global.messageArray[26] = "Ta-da! It’s your favorite!";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[6] = "curious";
-global.emotionAntagonistArray[6] = "neutral";
+global.messageArray[26] = "If there’s anyone that would get Chizuru
+arrested, it should be you.";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "neutral";
+global.emotionAntagonistArray[26] = "neutral";
 
-global.messageArray[27] = "CHEESESTEAK!?";
+global.messageArray[27] = "If it’s anyone else, then we’re screwed.";
 global.categoryArray[27] = "left";
-global.emotionProtagonistArray[7] = "happy";
-global.emotionAntagonistArray[7] = "neutral";
+global.emotionProtagonistArray[27] = "curous";
+global.emotionAntagonistArray[27] = "sad";
 
-global.messageArray[28] = "Yup!
-Eat it!";
+global.messageArray[28] = "You want your niece arrested?";
 global.categoryArray[28] = "right";
-global.emotionProtagonistArray[28] = "happy";
-global.emotionAntagonistArray[28] = "neutral";
+global.emotionProtagonistArray[28] = "curious";
+global.emotionAntagonistArray[28] = "sad";
 
-global.messageArray[29] = "Whoa!
-Thanks!";
+global.messageArray[29] = "I want her to be arrested only by you.
+It’s all in the mind games.";
 global.categoryArray[29] = "left";
-global.emotionProtagonistArray[29] = "happy";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
-global.messageArray[30] = "Ta-da! It’s your favorite!";
-global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "curious";
+global.messageArray[30] = "Trust me on this.
+We’ll all get out of here and fix this mess after that.";
+global.categoryArray[30] = "left";
+global.emotionProtagonistArray[30] = "neutral";
 global.emotionAntagonistArray[30] = "neutral";
-
-global.messageArray[31] = "CHEESESTEAK!?";
-global.categoryArray[31] = "left";
-global.emotionProtagonistArray[31] = "happy";
-global.emotionAntagonistArray[31] = "neutral";
 break;
+
 
 }
 </string>
