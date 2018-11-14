@@ -1,14 +1,17 @@
-for( var i = 0; i < instance_number( obj_door_david ); i++ )
+if (!active)
 {
-    door = instance_find( obj_door_david, i );
-    
-    if( door.unlockID == self.unlockID && cooldown < 1)
+    for( var i = 0; i < instance_number( obj_door_david ); i++ )
     {
-        door.open = !door.open;
-        active = !active;
-        cooldown = 6;
-        audio_play_sound_on (global.effectsEmitter, snd_switch, false, 10);
-        break;
+        door = instance_find( obj_door_david, i );
+        
+        if( door.unlockID == self.unlockID && cooldown < 1)
+        {
+            door.open = !door.open;
+            active = !active;
+            cooldown = 6;
+            audio_play_sound_on (global.effectsEmitter, snd_switch, false, 10);
+            break;
+        }
     }
 }
 

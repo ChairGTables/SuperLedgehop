@@ -101,7 +101,12 @@ if (global.disableCutscenes == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == 5)
+            <string>if (state == 7)
+{
+    instance_destroy(self);
+}
+
+if (state == 5)
 {
     instance_create(x, y, obj_kamurodialogue3);
     state = 6;
@@ -163,6 +168,7 @@ if (state == 0)
     image_xscale = -1;
     hspeed = 20;
     state = 7;
+    alarm[0] = 60;
 }
 
 if (state == 1 &amp;&amp; instance_number(obj_kamurodialogue1) == 0)
@@ -228,6 +234,29 @@ if (state == 4 &amp;&amp; instance_number(obj_kamurodialogue2) == 0)
             <string>sprite_index = spr_kamurowalk;
 image_speed = 0;
 image_index = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>script_execute(scr_mooseskip);
 </string>
           </argument>
         </arguments>

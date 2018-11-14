@@ -1,5 +1,6 @@
 if (state < 2)
 {
+    script_execute(scr_musicfadekill);
     global.isCutscene = false;
     state = 2;
     room_speed = 30;
@@ -44,4 +45,5 @@ if (state < 2)
         instance_create(x, y, obj_skippingcutscene);
     }
     x = -1000;
+    instance_destroy(self);
 }

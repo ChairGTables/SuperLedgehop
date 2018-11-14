@@ -2,16 +2,16 @@
 <room>
   <caption></caption>
   <width>1024</width>
-  <height>604</height>
+  <height>768</height>
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>0</colour>
+  <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
-  <enableViews>-1</enableViews>
+  <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -31,9 +31,9 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="back_yuutospace" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="1" stretch="0"/>
-    <background visible="-1" foreground="0" name="back_yuutospace" x="50" y="30" htiled="-1" vtiled="-1" hspeed="0" vspeed="2" stretch="0"/>
-    <background visible="-1" foreground="0" name="back_yuutospace" x="80" y="60" htiled="-1" vtiled="-1" hspeed="0" vspeed="3" stretch="0"/>
+    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_camera_chair" xview="32" yview="32" wview="960" hview="540" xport="0" yport="0" wport="960" hport="540" hborder="960" vborder="540" hspeed="60" vspeed="60"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,22 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_controller" x="128" y="160" name="inst_A82B5AFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_camera_chair" x="160" y="160" name="inst_44049C4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gamepad" x="192" y="160" name="inst_4E2CE248" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rhythmcontroller_david" x="192" y="288" name="inst_F24FFDFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_beat_david" x="320" y="64" name="inst_3500C4D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chizuru" x="448" y="448" name="inst_0872842A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="-64" y="-32" name="inst_2C800BD8" locked="0" code="" scaleX="38" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="-64" y="0" name="inst_8D99671B" locked="0" code="" scaleX="3" scaleY="19" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="-32" y="608" name="inst_0BAF0596" locked="0" code="" scaleX="35" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="992" y="32" name="inst_34054445" locked="0" code="" scaleX="6" scaleY="17" colour="4294967295" rotation="0"/>
-    <instance objName="obj_yuutoboss" x="448" y="160" name="inst_0D93755E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_yuutothememusic_david" x="160" y="480" name="inst_6BA2FBF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bosspusher" x="-320" y="-128" name="inst_DF8013A7" locked="0" code="xPush = 4;&#xA;" scaleX="11" scaleY="28" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bosspusher" x="-160" y="-320" name="inst_E2E5AD1F" locked="0" code="yPush = 4;" scaleX="42" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bosspusher" x="992" y="-384" name="inst_AA224C00" locked="0" code="xPush = -4;" scaleX="10" scaleY="38" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bosspusher" x="0" y="608" name="inst_465BAE20" locked="0" code="yPush = -4;&#xA;" scaleX="32" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tempotransition_david" x="64" y="32" name="inst_CD7D995C" locked="0" code="global.bpm = 165;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

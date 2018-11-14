@@ -197,6 +197,8 @@ global.stageState = 0;
 global.remaining = 0;
 global.destroyed = 0;
 global.secondsPassed = 0;
+global.minutesPassed = 0;
+global.hoursPassed = 0;
 global.shineget = 1;
 global.bossvirgin = 1;
 
@@ -437,37 +439,123 @@ if (gamepad_axis_value(0, gp_axislh) &gt; 0.02 || gamepad_axis_value(0, gp_axisl
     global.isGamepad = true;
 }
 
-if (global.isGamepad == true)
+if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
 {
-
-    if (gamepad_axis_value(0, gp_axislh) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislh) &gt; -0.1 &amp;&amp; dpad = 0)
+    if (!gamepad_button_check(0, gp_padr) &amp;&amp; !gamepad_button_check(0, gp_padl) &amp;&amp; !gamepad_button_check(0, gp_padu) &amp;&amp; !gamepad_button_check(0, gp_padd))
     {
-        global.chizurumovex = 0;
-        go = 0;
-        /*
-        if (joy_right = true)
-        {
-            joy_right = false;
-            keyboard_key_release(vk_right);
-        }    
-        if (joy_left = true)
-        {
-            joy_left = false;
-            keyboard_key_release(vk_left);
-        }
-        */
-    }   
+        dpad = 0;
+    }
     else
     {
-        if gamepad_axis_value(0, gp_axislh) &gt; 0.8
+        dpad = 1;
+    }
+    if (gamepad_axis_value(0, gp_axislh) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislh) &gt; -0.1 &amp;&amp; gamepad_axis_value(0, gp_axislv) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislv) &gt; -0.1 &amp;&amp; dpad = 0)
+    {
+        go = 0;
+    }
+
+
+    
+        if (gamepad_axis_value(0, gp_axislh) &gt; 0.8 || gamepad_button_check(0, gp_padr))
         {
-            global.chizurumovex = gamepad_axis_value(0, gp_axislh);
             global.isGamepad = true;
             
             if (go == 0 )
             {
                 go = 1;
-                global.titleSelection += 1;
+                if (global.titleState == 0 &amp;&amp; global.titleSelection &lt; 3)
+                {
+                    global.titleSelection += 1;
+                }
+                if (global.titleSelection &lt; 4 &amp;&amp; global.titleState == 2)
+                {
+                    global.titleSelection += 1;
+                }
+                if (global.titleSelection == 0 &amp;&amp; global.titleState == 1)
+                {
+                    
+                    if (global.language == 3)
+                    {
+                        global.language = 0;
+                    }
+                    else
+                    {
+                        global.language += 1;
+                    }
+                }
+                if (global.titleSelection == 1 &amp;&amp; global.titleState == 1)
+                {
+                    if ( window_get_fullscreen() )
+                    {
+                        window_set_fullscreen(false);
+                    }
+                    else
+                    {
+                        window_set_fullscreen(true);
+                    }
+                }
+                if (global.titleSelection == 2 &amp;&amp; global.titleState == 1)
+                {
+                    if (global.disableCutscenes == 0)
+                    {
+                        global.disableCutscenes = 1;   
+                    }
+                    else
+                    {
+                        global.disableCutscenes = 0;
+                    }
+                }
+            }
+            
+            if (global.titleSelection == 3 &amp;&amp; global.titleState == 1)
+            {
+                global.musicVolume += 0.01;
+    
+                if (global.musicVolume &lt; 0.05)
+                {
+                    global.musicVolume = 0;
+                }
+                
+                if (global.musicVolume &gt; 0.95)
+                {
+                    global.musicVolume = 1;
+                }
+                
+                audio_emitter_gain(global.musicEmitter, global.musicVolume);
+            }
+            
+            if (global.titleSelection == 4 &amp;&amp; global.titleState == 1)
+            {
+                global.effectsVolume += 0.01;
+    
+                if (global.effectsVolume &lt; 0.05)
+                {
+                    global.effectsVolume = 0;
+                }
+                
+                if (global.effectsVolume &gt; 0.95)
+                {
+                    global.effectsVolume = 1;
+                }
+                
+                audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
+            }
+            
+            if (global.titleSelection == 5 &amp;&amp; global.titleState == 1)
+            {
+                global.voiceVolume += 0.01;
+    
+                if (global.voiceVolume &lt; 0.05)
+                {
+                    global.voiceVolume = 0;
+                }
+                
+                if (global.voiceVolume &gt; 0.95)
+                {
+                    global.voiceVolume = 1;
+                }
+                
+                audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
             }
             /*
             if (joy_right = false)
@@ -483,15 +571,105 @@ if (global.isGamepad == true)
             */
         }
         
-        if gamepad_axis_value(0, gp_axislh) &lt; -0.8
+        if (gamepad_axis_value(0, gp_axislh) &lt; -0.8  || gamepad_button_check(0, gp_padl))
         {
-            global.chizurumovex = gamepad_axis_value(0, gp_axislh);
             global.isGamepad = true;
+            
+            
+            
             
             if (go == 0)
             {
                 go = 1;
-                global.titleSelection -= 1;
+                if (global.titleSelection &gt; 0 &amp;&amp; (global.titleState == 0 || global.titleState == 2))
+                {
+                    global.titleSelection -= 1;
+                }
+                if (global.titleSelection == 0 &amp;&amp; global.titleState == 1)
+                {
+                    if (global.language == 0)
+                    {
+                        global.language = 3;
+                    }
+                    else
+                    {
+                        global.language -= 1;
+                    }
+                }
+                if (global.titleSelection == 1 &amp;&amp; global.titleState == 1)
+                {
+                    if ( window_get_fullscreen() )
+                    {
+                        window_set_fullscreen(false);
+                    }
+                    else
+                    {
+                        window_set_fullscreen(true);
+                    }
+                }
+                if (global.titleSelection == 2 &amp;&amp; global.titleState == 1)
+                {
+                    if (global.disableCutscenes == 0)
+                    {
+                        global.disableCutscenes = 1;   
+                    }
+                    else
+                    {
+                        global.disableCutscenes = 0;
+                    }
+                }
+                
+            }
+            
+            if (global.titleSelection == 3 &amp;&amp; global.titleState == 1)
+            {
+                global.musicVolume -= 0.01;
+    
+                if (global.musicVolume &lt; 0.05)
+                {
+                    global.musicVolume = 0;
+                }
+                
+                if (global.musicVolume &gt; 0.95)
+                {
+                    global.musicVolume = 1;
+                }
+                
+                audio_emitter_gain(global.musicEmitter, global.musicVolume);
+            }
+            
+            if (global.titleSelection == 4 &amp;&amp; global.titleState == 1)
+            {
+                global.effectsVolume -= 0.01;
+    
+                if (global.effectsVolume &lt; 0.05)
+                {
+                    global.effectsVolume = 0;
+                }
+                
+                if (global.effectsVolume &gt; 0.95)
+                {
+                    global.effectsVolume = 1;
+                }
+                
+                audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
+            }
+            
+            if (global.titleSelection == 5 &amp;&amp; global.titleState == 1)
+            {
+                global.voiceVolume -= 0.01;
+    
+                if (global.voiceVolume &lt; 0.05)
+                {
+                    global.voiceVolume = 0;
+                }
+                
+                if (global.voiceVolume &gt; 0.95)
+                {
+                    global.voiceVolume = 1;
+                }
+                
+                audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
             }
             /*
             if (joy_left = false)
@@ -506,11 +684,12 @@ if (global.isGamepad == true)
             } 
             */
         }
-    } 
+    
         
     if (gamepad_axis_value(0, gp_axislv) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislv) &gt; -0.1 &amp;&amp; dpad = 0)
     {
         global.chizurumovey = 0;
+        global.chizurumovex = 0;
         /*
         if (joy_up = true)
         {
@@ -525,10 +704,19 @@ if (global.isGamepad == true)
         */
     }
     
-    if gamepad_axis_value(0, gp_axislv) &lt; -0.1
+    if (gamepad_axis_value(0, gp_axislv) &lt; -0.8  || gamepad_button_check(0, gp_padu))
     {
-        global.chizurumovey = gamepad_axis_value(0, gp_axislv);
         global.isGamepad = true;
+        
+        if (go == 0)
+        {
+            go = 1;
+            if (global.titleState == 1 &amp;&amp; global.titleSelection &gt; 0)
+            {
+                global.titleSelection -= 1;
+            }
+            
+        }
         /*
         if (joy_up = false)
         {
@@ -543,10 +731,17 @@ if (global.isGamepad == true)
         */
     }
     
-    if gamepad_axis_value(0, gp_axislv) &gt; 0.1
+    if (gamepad_axis_value(0, gp_axislv) &gt; 0.8  || gamepad_button_check(0, gp_padd))
     {
-        global.chizurumovey = gamepad_axis_value(0, gp_axislv);
         global.isGamepad = true;
+        if (go == 0)
+        {
+            go = 1;
+            if (global.titleState == 1 &amp;&amp; global.titleSelection &lt; 6)
+            {
+                global.titleSelection += 1;
+            }
+        }
         /*
         if (joy_down = false)
         {
@@ -562,9 +757,76 @@ if (global.isGamepad == true)
     }
 
 
+if gamepad_button_check_released(0, gp_face2)
+    {
+        if (joy_x = true)
+        {
+            joy_x = false;
+            
+        }
+    }    
+    
+if gamepad_button_check_pressed(0, gp_face2)
+    {
+        if (joy_x = false)
+        {
+            joy_x = true;
+            if (global.titleState != 0)
+            {
+                global.titleSelection = 0;
+                global.titleState = 0;
+            }
+        }
+    }
+    
+    
+if gamepad_button_check_released(0, gp_face1)
+    {
+        if (joy_z = true)
+        {
+            joy_z = false;
+            
+        }
+    }    
+    
+if gamepad_button_check_pressed(0, gp_face1)
+    {
+        if (joy_z = false)
+        {
+            joy_z = true;
+            if (global.titleState == 2)
+            {
+                script_execute(scr_titleproceed);
+            }
+            if (global.titleState == 0 &amp;&amp; global.titleSelection == 0)
+            {
+                global.titleState = 2;
+                global.titleSelection = 0;
+            }
+            if (global.titleState == 0 &amp;&amp; global.titleSelection == 1)
+            {
+                script_execute(scr_titleproceed);
+            }
+            if (global.titleState == 0 &amp;&amp; global.titleSelection == 2)
+            {
+                global.titleState = 1;
+                global.titleSelection = 0;
+            }
+            if (global.titleState == 0 &amp;&amp; global.titleSelection = 3)
+            {
+                game_end();
+            }
+            if (global.titleState == 1 &amp;&amp; global.titleSelection == 6)
+            {
+                global.titleState = 0;
+                global.titleSelection = 2;
+            }
+        }
+    }
 
+    
+    
 }
-
 
 
 

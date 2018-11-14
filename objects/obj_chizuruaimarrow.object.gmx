@@ -79,13 +79,13 @@ else
     }
     else
     {
-        if (global.chizuruaimx != 0 &amp;&amp; global.chizuruaimx != 0)
+        if (global.chizuruaimx != 0 || global.chizuruaimy != 0)
         {
             global.aimangle = point_direction(0, 0, global.chizuruaimx, global.chizuruaimy);
         }
         else
         {
-            if (global.chizurumovex != 0 &amp;&amp; global.chizurumovex != 0)
+            if (global.chizurumovex != 0 || global.chizurumovey != 0)
             {
                 global.aimangle = point_direction(0, 0, global.chizurumovex, global.chizurumovey);
             }

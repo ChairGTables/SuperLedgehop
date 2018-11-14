@@ -42,4 +42,5 @@ if (state < 7)
     instance_create(x, y, obj_moose);
     instance_create(x, y, obj_skippingcutscene);
     x = -1000;
+    instance_destroy(self);
 }

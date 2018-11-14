@@ -66,6 +66,11 @@
     <instance objName="obj_wall" x="1120" y="960" name="inst_1038E003" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1600" y="864" name="inst_07BD4BB4" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_survivalmode" x="560" y="304" name="inst_A6250A80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sampleobject_chair" x="1600" y="1168" name="inst_9D765556" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="528" y="656" name="inst_5ECAF69A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="528" y="1200" name="inst_7F2E3084" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="1888" y="1200" name="inst_BC09ACCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trashbin" x="1904" y="656" name="inst_87C86514" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_grasswhite" x="576" y="1024" w="32" h="32" xo="32" yo="0" id="10047320" name="inst_EBCEDB5D" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

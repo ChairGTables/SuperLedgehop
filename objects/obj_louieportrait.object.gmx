@@ -61,8 +61,8 @@ break;
 
 default:
 message1 = "The hero has arrived.";
-message2 = "However, it is not your cry for help that he is answering.";
-message3 = "Because YOU are the criminal.";
+message2 = "However, it is not you who will be saved by him.";
+message3 = "That is because YOU are the criminal.";
 
 }
 scroll = 0;

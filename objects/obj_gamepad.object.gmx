@@ -84,7 +84,7 @@ index = 0;
         if (joy_z = true)
         {
             joy_z = false;
-            keyboard_key_release(ord('Z'));
+            keyboard_key_release(ord('E'));
         }
     }    
     
@@ -93,9 +93,27 @@ if gamepad_button_check_pressed(0, gp_face1)
         if (joy_z = false)
         {
             joy_z = true;
-            keyboard_key_press(ord('Z'));
+            keyboard_key_press(ord('E'));
         }
     }
+    
+if gamepad_button_check_released(0, gp_start)
+    {
+        if (joy_s = true)
+        {
+            joy_s = false;
+            keyboard_key_release(vk_escape);
+        }
+    }    
+    
+if gamepad_button_check_pressed(0, gp_start)
+    {
+        if (joy_s = false)
+        {
+            joy_s = true;
+            keyboard_key_press(vk_escape);
+        }
+    }  
 </string>
           </argument>
         </arguments>
@@ -173,97 +191,7 @@ if gamepad_button_check_pressed(0, gp_face1)
 }
 
 
-if gamepad_button_check_released(0, gp_padu)
-    {
-        if (joy_up = true)
-        {
-            joy_up = false;
-            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
-            {
-                dpad = 0;
-            }
-            keyboard_key_release(vk_up);
-        }
-    }
 
-if gamepad_button_check(0, gp_padu)
-    {
-        if (joy_up = false)
-        {
-            joy_up = true;
-            dpad = 1;
-            keyboard_key_press(vk_up);
-        }
-    }
-    
-if gamepad_button_check_released(0, gp_padd)
-    {
-        if (joy_down = true)
-        {
-            joy_down = false;
-            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
-            {
-                dpad = 0;
-            }
-            keyboard_key_release(vk_down);
-        }
-    }
-
-if gamepad_button_check(0, gp_padd)
-    {
-        if (joy_down = false)
-        {
-            joy_down = true;
-            dpad = 1;
-            keyboard_key_press(vk_down);
-        }
-    }
-    
-if gamepad_button_check_released(0, gp_padr)
-    {
-        if (joy_right = true)
-        {
-            joy_right = false;
-            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
-            {
-                dpad = 0;
-            }
-            keyboard_key_release(vk_right);
-        }
-    }
-
-if gamepad_button_check(0, gp_padr)
-    {
-        if (joy_right = false)
-        {
-            joy_right = true;
-            dpad = 1;
-            keyboard_key_press(vk_right);
-        }
-    }
-
-if gamepad_button_check_released(0, gp_padl)
-    {
-        if (joy_left = true)
-        {
-            joy_left = false;
-            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
-            {
-                dpad = 0;
-            }
-            keyboard_key_release(vk_left);
-        }
-    }
-
-if gamepad_button_check(0, gp_padl)
-    {
-        if (joy_left = false)
-        {
-            joy_left = true;
-            dpad = 1;
-            keyboard_key_press(vk_left);
-        }
-    }
     
 
 if gamepad_button_check_released(0, gp_face1)
@@ -271,7 +199,7 @@ if gamepad_button_check_released(0, gp_face1)
         if (joy_z = true)
         {
             joy_z = false;
-            keyboard_key_release(ord('Z'));
+            keyboard_key_release(ord('E'));
         }
     }    
     
@@ -280,7 +208,7 @@ if gamepad_button_check_pressed(0, gp_face1)
         if (joy_z = false)
         {
             joy_z = true;
-            keyboard_key_press(ord('Z'));
+            keyboard_key_press(ord('E'));
         }
     }
     
@@ -346,7 +274,7 @@ if gamepad_button_check_released(0, gp_start)
         if (joy_s = true)
         {
             joy_s = false;
-            keyboard_key_release(ord('P'));
+            keyboard_key_release(vk_escape);
         }
     }    
     
@@ -355,7 +283,7 @@ if gamepad_button_check_pressed(0, gp_start)
         if (joy_s = false)
         {
             joy_s = true;
-            keyboard_key_press(ord('P'));
+            keyboard_key_press(vk_escape);
         }
     }  
     
@@ -604,50 +532,149 @@ if (global.isGamepad == true)
         }
         */
     }
-    
-    if gamepad_axis_value(0, gp_axislv) &lt; -0.1
+    else
     {
-        global.chizurumovey = gamepad_axis_value(0, gp_axislv);
-        global.isGamepad = true;
-        /*
-        if (joy_up = false)
+    
+        if gamepad_axis_value(0, gp_axislv) &lt; -0.1
         {
-            joy_up = true;
-            keyboard_key_press(vk_up);
-        }    
-        if (joy_down = true)
-        {
-            joy_down = false;
-            keyboard_key_release(vk_down);
+            global.chizurumovey = gamepad_axis_value(0, gp_axislv);
+            global.isGamepad = true;
+            /*
+            if (joy_up = false)
+            {
+                joy_up = true;
+                keyboard_key_press(vk_up);
+            }    
+            if (joy_down = true)
+            {
+                joy_down = false;
+                keyboard_key_release(vk_down);
+            }
+            */
         }
-        */
-    }
-    
-    if gamepad_axis_value(0, gp_axislv) &gt; 0.1
-    {
-        global.chizurumovey = gamepad_axis_value(0, gp_axislv);
-        global.isGamepad = true;
-        /*
-        if (joy_down = false)
+        
+        if gamepad_axis_value(0, gp_axislv) &gt; 0.1
         {
-            joy_down = true;
-            keyboard_key_press(vk_down);
-        }    
-        if (joy_up = true)
-        {
-            joy_up = false;
-            keyboard_key_release(vk_up);
-        }    
-        */
+            global.chizurumovey = gamepad_axis_value(0, gp_axislv);
+            global.isGamepad = true;
+            /*
+            if (joy_down = false)
+            {
+                joy_down = true;
+                keyboard_key_press(vk_down);
+            }    
+            if (joy_up = true)
+            {
+                joy_up = false;
+                keyboard_key_release(vk_up);
+            }    
+            */
+        }
+
     }
-
-
 
 }
       
 
 
 
+if gamepad_button_check_released(0, gp_padu)
+    {
+        if (joy_up = true)
+        {
+            joy_up = false;
+            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
+            {
+                dpad = 0;
+            }
+            global.chizurumovey = 0;
+        }
+    }
+
+if gamepad_button_check(0, gp_padu)
+    {
+        if (joy_up = false)
+        {
+            joy_up = true;
+            dpad = 1;
+            global.chizurumovey = -1;
+            global.isGamepad = true;
+        }
+    }
+    
+if gamepad_button_check_released(0, gp_padd)
+    {
+        if (joy_down = true)
+        {
+            joy_down = false;
+            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
+            {
+                dpad = 0;
+            }
+            global.chizurumovey = 0;
+        }
+    }
+
+if gamepad_button_check(0, gp_padd)
+    {
+        if (joy_down = false)
+        {
+            joy_down = true;
+            dpad = 1;
+            global.chizurumovey = 1;
+            global.isGamepad = true;
+        }
+    }
+    
+if gamepad_button_check_released(0, gp_padr)
+    {
+        if (joy_right = true)
+        {
+            joy_right = false;
+            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
+            {
+                dpad = 0;
+            }
+            global.chizurumovex = 0;
+        }
+        
+    }
+
+if gamepad_button_check(0, gp_padr)
+    {
+        if (joy_right = false)
+        {
+            joy_right = true;
+            dpad = 1;
+            global.chizurumovex = 1;
+            global.isGamepad = true;
+        }
+    }
+
+if gamepad_button_check_released(0, gp_padl)
+    {
+        if (joy_left = true)
+        {
+            joy_left = false;
+            if (joy_up = false &amp;&amp; joy_down = false &amp;&amp; joy_right = false &amp;&amp; joy_left = false)
+            {
+                dpad = 0;
+            }
+            global.chizurumovex = 0;
+        }
+        
+    }
+
+if gamepad_button_check(0, gp_padl)
+    {
+        if (joy_left = false)
+        {
+            joy_left = true;
+            dpad = 1;
+            global.chizurumovex = -1;
+            global.isGamepad = true;
+        }
+    }
 
 
 
@@ -656,32 +683,31 @@ if (global.isGamepad == true)
 
 
 
-
-if (gamepad_axis_value(0, gp_axisrh) &gt; 0.02 || gamepad_axis_value(0, gp_axisrh) &lt; -0.02) 
+if (gamepad_axis_value(0, gp_axisrh) &gt; 0.013 || gamepad_axis_value(0, gp_axisrh) &lt; -0.013) 
 {
     global.isGamepad = true;
 }
 
 if (global.isGamepad == true)
 {
-    if (gamepad_axis_value(0, gp_axisrh) &lt; 0.02 &amp;&amp; gamepad_axis_value(0, gp_axisrh) &gt; -0.02 &amp;&amp; dpad = 0)
+    if (gamepad_axis_value(0, gp_axisrh) &lt; 0.013 &amp;&amp; gamepad_axis_value(0, gp_axisrh) &gt; -0.013 &amp;&amp; dpad = 0)
     {
         global.chizuruaimx = 0;
     }   
     else
     {
-        if (gamepad_axis_value(0, gp_axisrh) &gt; 0.02 || gamepad_axis_value(0, gp_axisrh) &lt; -0.02) 
+        if (gamepad_axis_value(0, gp_axisrh) &gt; 0.013 || gamepad_axis_value(0, gp_axisrh) &lt; -0.013) 
         {
             global.chizuruaimx = gamepad_axis_value(0, gp_axisrh);
         }
     } 
         
-    if (gamepad_axis_value(0, gp_axisrv) &lt; 0.02 &amp;&amp; gamepad_axis_value(0, gp_axisrv) &gt; -0.02 &amp;&amp; dpad = 0)
+    if (gamepad_axis_value(0, gp_axisrv) &lt; 0.013 &amp;&amp; gamepad_axis_value(0, gp_axisrv) &gt; -0.013 &amp;&amp; dpad = 0)
     {
         global.chizuruaimy = 0;
     }
     
-    if (gamepad_axis_value(0, gp_axisrv) &lt; -0.02 || gamepad_axis_value(0, gp_axisrv) &gt; 0.02)
+    if (gamepad_axis_value(0, gp_axisrv) &lt; -0.013 || gamepad_axis_value(0, gp_axisrv) &gt; 0.013)
     {
         global.chizuruaimy = gamepad_axis_value(0, gp_axisrv);
     }
