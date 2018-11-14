@@ -31,7 +31,12 @@ global.disableCutscenes = 0;
 global.titleSelection = 0;
 global.titleState = 1;
 
+go = 0;
+joy_z = false;
+joy_up = false;
+joy_down = false;
 disabled = 0;
+dpad = 0;
 
 instance_create(x, y, obj_whitefadein);
 </string>
@@ -79,7 +84,144 @@ instance_create(x, y, obj_whitefadein);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (gamepad_axis_value(0, gp_axislh) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislh) &gt; -0.1 &amp;&amp; gamepad_axis_value(0, gp_axislv) &lt; 0.1 &amp;&amp; gamepad_axis_value(0, gp_axislv) &gt; -0.1 &amp;&amp; dpad = 0)
+{
+    go = 0;
+}
+
+if gamepad_button_check_released(0, gp_padu)
+    {
+        if (joy_up = true)
+        {
+            joy_up = false;
+            if (joy_up = false &amp;&amp; joy_down = false)
+            {
+                dpad = 0;
+            }
+            
+        }
+    }
+
+if gamepad_button_check(0, gp_padu)
+    {
+        if (joy_up = false)
+        {
+            joy_up = true;
+            dpad = 1;
+            global.chizurumovey = gamepad_axis_value(0, -1);
+            global.isGamepad = true;
+            
+            if (global.language == 0)
+            {
+                global.language = 3;
+            }
+            else
+            {
+                global.language -= 1;
+            }
+        }
+    }
+    
+if gamepad_button_check_released(0, gp_padd)
+    {
+        if (joy_down = true)
+        {
+            joy_down = false;
+            if (joy_up = false &amp;&amp; joy_down = false)
+            {
+                dpad = 0;
+            }
+            global.chizurumovey = gamepad_axis_value(0, 0);
+        }
+    }
+
+if gamepad_button_check(0, gp_padd)
+    {
+        if (joy_down = false)
+        {
+            joy_down = true;
+            dpad = 1;
+            global.chizurumovey = gamepad_axis_value(0, 1);
+            global.isGamepad = true;
+            
+            if (go == 0 )
+            {
+                go = 1;
+                if (global.language == 3)
+                {
+                    global.language = 0;
+                }
+                else
+                {
+                    global.language += 1;
+                }
+            }
+        }
+    }
+
+if gamepad_axis_value(0, gp_axislv) &gt; 0.8
+{
+    global.chizurumovey = gamepad_axis_value(0, gp_axislh);
+    global.isGamepad = true;
+            
+    if (go == 0 )
+    {
+        go = 1;
+        if (global.language == 3)
+        {
+            global.language = 0;
+        }
+        else
+        {
+            global.language += 1;
+        }
+    }
+}
+
+if gamepad_axis_value(0, gp_axislv) &lt; -0.8
+{
+    global.chizurumovey = gamepad_axis_value(0, gp_axislh);
+    global.isGamepad = true;
+            
+    if (go == 0 )
+    {
+        go = 1;
+        if (global.language == 0)
+        {
+            global.language = 3;
+        }
+        else
+        {
+            global.language -= 1;
+        }
+    }
+}
+
+
+
+if gamepad_button_check_released(0, gp_face1)
+    {
+        if (joy_z = true)
+        {
+            joy_z = false;
+            
+        }
+    }    
+    
+if gamepad_button_check_pressed(0, gp_face1)
+    {
+        if (joy_z = false)
+        {
+            joy_z = true;
+            if (disabled == 0)
+            {
+                disabled = 1;
+                instance_create(x, y, obj_ldoutline);
+                instance_create(x, y, obj_whitefadeout);
+                alarm[0] = 30;
+            }
+        }
+    }
 
 switch (global.language)
 {

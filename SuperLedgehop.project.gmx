@@ -99,6 +99,7 @@
         <sound>sound\snd_lamedimension</sound>
         <sound>sound\snd_minigameintro</sound>
         <sound>sound\snd_louietheme</sound>
+        <sound>sound\snd_louieintro</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -360,7 +361,9 @@
         <sprite>sprites\spr_warnbox</sprite>
         <sprite>sprites\spr_warnboxcenter</sprite>
         <sprite>sprites\spr_whitedot</sprite>
+        <sprite>sprites\spr_eyeshine</sprite>
         <sprite>sprites\spr_downarrow</sprite>
+        <sprite>sprites\spr_betatext</sprite>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -584,6 +587,7 @@
         <sprite>sprites\spr_louiespear</sprite>
         <sprite>sprites\spr_masterspark</sprite>
         <sprite>sprites\spr_louiedisc</sprite>
+        <sprite>sprites\spr_louieportrait</sprite>
       </sprites>
     </sprites>
     <sprites name="sonii">
@@ -935,6 +939,7 @@
         <object>objects\obj_wowyoudied</object>
         <object>objects\obj_stagefourdeleter</object>
         <object>objects\obj_stagefourdeleter2</object>
+        <object>objects\obj_timeend</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -944,6 +949,7 @@
         <object>objects\obj_beatinstructionspace</object>
         <object>objects\obj_blackbackground</object>
         <object>objects\obj_blackfadein</object>
+        <object>objects\obj_blacktransparentbackground</object>
         <object>objects\obj_blackfadeout</object>
         <object>objects\obj_blackfadeoutslow</object>
         <object>objects\obj_cavedialoguespace</object>
@@ -979,6 +985,7 @@
         <object>objects\obj_whitefadeinslow</object>
         <object>objects\obj_whitefadeout</object>
         <object>objects\obj_downarrow</object>
+        <object>objects\obj_betatext</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -1177,6 +1184,7 @@
           <object>objects\obj_louieslash</object>
           <object>objects\obj_louiespear</object>
           <object>objects\obj_louiedisc</object>
+          <object>objects\obj_louieportrait</object>
           <object>objects\obj_louienpc1</object>
         </objects>
       </objects>
@@ -1262,7 +1270,6 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_dialoguetest</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>
@@ -1306,6 +1313,7 @@
       <rooms name="survival">
         <room>rooms\rm_165bpmsurvival</room>
         <room>rooms\rm_survivalmode</room>
+        <room>rooms\rm_140bpmlouie</room>
         <room>rooms\rm_louiefight</room>
       </rooms>
       <room>rooms\rm_survivalmodeold</room>
@@ -1313,6 +1321,7 @@
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
       <room>rooms\rm_walltest</room>
+      <room>rooms\rm_dialoguetest</room>
     </rooms>
     <rooms name="david">
       <room>rooms\rm_title_david</room>

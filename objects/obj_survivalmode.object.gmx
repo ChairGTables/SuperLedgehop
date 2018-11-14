@@ -42,6 +42,10 @@ types[4] = obj_cannonaim_sonii;
 types[5] = obj_spreadcannon_sonii;
 types[6] = obj_shooterdude_david;
 types[7] = obj_grenaider_sonii;
+types[8] = obj_policecyborg;
+types[9] = obj_policerapid;
+types[10] = obj_boombox_sonii;
+types[11] = obj_squaremover_sonii;
 
 global.chizuruhp = 99;
 global.chizurump = 0;
@@ -103,6 +107,7 @@ if (global.resyncing)
     activateTimer = global.currentQuarterSec;
 }
 
+//set global.destroyed to &gt; 99 for the default kill 100 enemies
 if (global.destroyed &gt; 99 &amp;&amp; !instance_exists(obj_louienpc1))
 {
     instance_create(room_width / 2, 0, obj_louienpc1);
@@ -136,9 +141,24 @@ if (activateTimer &lt;= 0)
             yAnswer += 60;
         }
         
-        if (yAnswer &gt; 1104)
+        if (xLeft &gt; 704 &amp;&amp; xLeft &lt; 784)
         {
-            yAnswer = 1104;
+            xLeft = 784;
+        }
+        
+        if (xRight &gt; 1552 &amp;&amp; xRight &lt; 1648)
+        {
+            xRight = 1552;
+        } 
+        
+        if (yAnswer &gt; 1164)
+        {
+            yAnswer = 1164;
+        }
+        
+        if (yAnswer &gt; 912 &amp;&amp; yAnswer &lt; 1024)
+        {
+            yAnswer = 905;
         }
         
         if (myRandom &gt; 50)
@@ -180,12 +200,28 @@ if (spawned == 15)
 }
 if (spawned == 20)
 {
-    maxSpawn = 4;
     currentTypes = 6;
 }
-if (spawned == 25)
+if (spawned == 30)
 {
     currentTypes = 7;
+}
+if (spawned == 40)
+{
+    currentTypes = 8;
+}
+if (spawned == 50)
+{
+    currentTypes = 9;
+}
+if (spawned == 60)
+{
+    currentTypes = 10;
+}
+if (spawned == 80)
+{
+    maxSpawn = 6;
+    currentTypes = 11;
 }
 </string>
           </argument>
@@ -193,78 +229,6 @@ if (spawned == 25)
       </action>
     </event>
     <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>526</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_font</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>12</kind>
-            <font>fnt_combo</font>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>514</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_text</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>Enemies until superboss:</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>view_xview+400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>view_yview+480</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>16316664</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -281,9 +245,43 @@ if (spawned == 25)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_combo);
-killCount = 100 - global.destroyed;        
-draw_text_color(view_xview+ 900,view_yview + 480,killCount,c_white,c_white,c_white,c_white,1)
+            <string>killCount = 100 - global.destroyed;
+
+draw_set_valign(fa_top);
+draw_set_halign(fa_right);
+
+switch (global.language)
+{
+    case 2:
+    draw_set_color(c_black);
+    draw_set_alpha(0.5);
+    draw_rectangle(view_xview+670, view_yview+499, view_xview+960, view_yview+540, 0);
+    draw_set_alpha(1);
+    draw_set_font(fnt_talkjapanese);
+    draw_text_color(view_xview+ 950,view_yview + 510, "ヒーロー到着までの敵数 " + string(killCount),c_white,c_white,c_white,c_white,1);
+    break;
+
+    case 1:
+    draw_set_color(c_black);
+    draw_set_alpha(0.5);
+    draw_rectangle(view_xview+650, view_yview+499, view_xview+960, view_yview+540, 0);
+    draw_set_alpha(1);
+    draw_set_font(fnt_talkforeign);
+    draw_text_color(view_xview+ 950,view_yview + 510, "Enemigos antes del Heroe: " + string(killCount),c_white,c_white,c_white,c_white,1);
+    break;
+    
+    
+    default:
+    draw_set_color(c_black);
+    draw_set_alpha(0.5);
+    draw_rectangle(view_xview+570, view_yview+499, view_xview+960, view_yview+540, 0);
+    draw_set_alpha(1);
+    draw_set_font(fnt_talkdefault);
+    draw_text_color(view_xview+ 950,view_yview + 510, "Enemies until hero arrives: " + string(killCount),c_white,c_white,c_white,c_white,1);
+}
+
+draw_set_valign(fa_top);
+draw_set_halign(fa_left);
 </string>
           </argument>
         </arguments>

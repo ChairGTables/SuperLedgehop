@@ -653,7 +653,7 @@ if (rightmomentum &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_kamuronpc1))
+            <string>if (instance_exists(obj_dooradvice))
 {
     hp = 0;
     script_execute(scr_enemydamage);

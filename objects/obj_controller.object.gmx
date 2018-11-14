@@ -148,6 +148,18 @@ yyy = 0;
             <kind>1</kind>
             <string>global.secondsPassed += 1;
 
+if (global.secondsPassed &gt; 59)
+{
+    global.secondsPassed = 0;
+    global.minutesPassed += 1;
+}
+
+if (global.minutesPassed &gt; 59)
+{
+    global.minutesPassed = 0;
+    global.hoursPassed += 1;
+}
+
 alarm[5] = room_speed;
 </string>
           </argument>
@@ -312,7 +324,16 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.lowhp == 0 &amp;&amp; global.chizuruhp &lt;= 20)
+            <string>if (audio_is_playing(snd_billdeath))
+{
+    alarm[5] = -1;
+}
+if (audio_is_playing(snd_kamurodeath) &amp;&amp; global.stageState != 10)
+{
+    alarm[5] = -1;
+}
+
+if (global.lowhp == 0 &amp;&amp; global.chizuruhp &lt;= 20)
 {
     global.lowhp = 1;
     if (global.isCutscene == false)
@@ -589,162 +610,6 @@ global.playerQuarter = (60000 / global.bpm) / 1000;
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>404</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_number</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>obj_survivalmode</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>526</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_font</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>12</kind>
-            <font>fnt_combo</font>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>514</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_text</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>Time: </string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>view_xview+20</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>view_yview+20</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>16316664</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>613</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>global.secondsPassed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>view_xview+ 150</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>view_yview + 20</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -788,7 +653,28 @@ myHeight = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>exceptionCheck = 0;
+            <string>timeString = string(global.hoursPassed) + ":";
+if (global.minutesPassed &lt; 10)
+{
+    timeString = timeString + "0";
+}
+timeString = timeString + string(global.minutesPassed) + ":";
+if (global.secondsPassed &lt; 10)
+{
+    timeString = timeString + "0";
+}
+timeString = timeString + string(global.secondsPassed);
+
+draw_set_valign(fa_top);
+draw_set_halign(fa_left);
+draw_set_color(c_black);
+draw_set_alpha(0.3);
+draw_rectangle(view_xview, view_yview, view_xview+160, view_yview+30, 0);
+draw_set_alpha(1);
+draw_set_font(fnt_talkjapanese);
+draw_text_color(view_xview+5,view_yview + 5, "Time: " + string(timeString),c_white,c_white,c_white,c_white,1);
+
+exceptionCheck = 0;
 if (instance_exists(obj_dialogue))
 {
     if (obj_dialogue.mini == 1)
@@ -1205,121 +1091,156 @@ if (global.speaking == false || exceptionCheck == 1)
     <event eventtype="9" enumb="27">
       <action>
         <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>snd_testtrack_david</sound>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_chillevent</sound>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_hypeevent</sound>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_coolevent</sound>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_bosstheme</sound>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>rm_title</room>
+            <kind>1</kind>
+            <string>pauseException = 0;
+
+
+if (instance_exists(obj_billnpc1))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_titonpc1))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_titonpc2))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_liznpc1))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_liznpc2))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_liznpc3))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_secretofficedialogue))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_kamuronpc3))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_kamuronpc5))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_billnpc2))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_defaultnpc1))
+{
+    pauseException = 1;
+}
+
+
+if (instance_exists(obj_defaultdialogue2))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_defaultdialogue3))
+{
+    pauseException = 1;
+}
+
+
+
+if (instance_exists(obj_yuutodialogue1))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue2))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue3))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue4))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue5))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue6))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue7))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue8))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_yuutodialogue9))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_kamurodialogue4))
+{
+    pauseException = 1;
+}
+
+
+
+
+
+if (instance_exists(obj_kamuronpc1))
+{
+    pauseException = 1;
+}
+
+if (pauseException == 0)
+{
+    script_execute(scr_stopmusic);
+    room_goto(rm_title);
+}
+</string>
           </argument>
         </arguments>
       </action>

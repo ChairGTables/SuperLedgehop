@@ -1037,7 +1037,7 @@ else
                 }
                 else
                 {
-                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Thug");
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Governor Bill Steels");
                 }
             }
             if (antagonist == "chizuma")
@@ -1182,7 +1182,7 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="1">
+    <event eventtype="9" enumb="69">
       <action>
         <libid>1</libid>
         <id>603</id>

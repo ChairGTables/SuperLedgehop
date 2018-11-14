@@ -83,6 +83,11 @@ if (intensity &lt; 0)
 shake_xoffset = round(random_range(-intensity, intensity));
 shake_yoffset = round(random_range(-intensity, intensity));
 
+if (instance_exists(obj_louienpc1))
+{
+    exception = 3;
+}
+
 if (instance_exists(obj_chizuru) &amp;&amp; exception == 0)
 {
     x = obj_chizuru.x + shake_xoffset;
@@ -104,6 +109,12 @@ if (exception == 2)
     {
         exception = 0;
     }
+}
+
+if (instance_exists(obj_louienpc1) &amp;&amp; exception == 3)
+{
+    x = obj_louienpc1.x + shake_xoffset;
+    y = obj_louienpc1.y + shake_yoffset;
 }
 </string>
           </argument>

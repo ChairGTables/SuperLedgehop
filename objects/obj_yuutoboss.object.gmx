@@ -536,9 +536,9 @@ script_execute(scr_truespeedwallcheck);
 
 
 //PREVENT OUT OF BOUNDS
-if (y &gt; 544)
+if (y &gt; 504)
 {
-    y = 559;
+    y = 500;
 }
 
 

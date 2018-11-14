@@ -422,7 +422,7 @@ if (global.chizuruhp &lt; 1)
     global.isCutscene = true;
 }
 
-if (global.chizurushinecharge &gt; 5)
+if (global.chizurushinecharge &gt; 5 &amp;&amp; global.shineget == 1)
 {
     if (global.chizurushine &gt; 40)
     {
