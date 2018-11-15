@@ -76,7 +76,7 @@ if (sprite_index == spr_yuutokneel)
 }
 else if (sprite_index == spr_louiehurt)
 {
-    room_goto(rm_title);
+    room_goto(rm_bonusroom);
 }
 else
 {

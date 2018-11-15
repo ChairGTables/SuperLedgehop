@@ -28,6 +28,8 @@
             <string>global.isCutscene = true;
 image_speed = 0;
 image_index = 0;
+
+script_execute(scr_menulanguage);
 </string>
           </argument>
         </arguments>
@@ -84,11 +86,11 @@ else
             <kind>1</kind>
             <string>if (image_index &gt;= image_number - 1)
 {
+    global.isCutscene = false;
     instance_destroy(self);
 }
 else
 {
-    global.isCutscene = false;
     image_index += 1;
 }
 </string>

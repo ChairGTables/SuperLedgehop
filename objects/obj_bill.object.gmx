@@ -699,6 +699,13 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_billhurt;
     death.alarm[4] = 60;
+    
+    if (global.highestLevel &lt; 5)
+    {
+        global.highestLevel = 5;
+    }
+    script_execute(scr_autosave);
+    
     instance_destroy(self);
 }
 </string>

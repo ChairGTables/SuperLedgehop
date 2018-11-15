@@ -185,6 +185,11 @@ index = 0;
 
 instance_create(x, y, obj_blackfadein);
 
+if (global.misc1 &gt; 50)
+{
+    instance_create(960, 0, obj_titlecorruption);
+}
+
 global.isGamepad = true;
 
 global.titleSelection = 0;
@@ -365,8 +370,10 @@ yy = y;
 
 
 //music
-global.musicrm1 = audio_play_sound_on(global.musicEmitter, snd_titlemusic, true, 0);
-
+if (global.misc1 &lt; 50)
+{
+    global.musicrm1 = audio_play_sound_on(global.musicEmitter, snd_titlemusic, true, 0);
+}
 
 //misc
 global.shmupPosition = 480;
@@ -378,17 +385,20 @@ for (i = 0; i &lt; 5; i++)
 
 randThing = random_range(0,200);
 
-if (randThing &lt; 75)
+if (global.misc1 &lt; 50)
 {
-    audio_play_sound_on(global.voiceEmitter, snd_superledgehopone, false, 0);
-}
-else if (randThing &gt; 74 &amp;&amp; randThing &lt; 125)
-{
-    audio_play_sound_on(global.voiceEmitter, snd_superledgehopone, false, 0);
-}
-else
-{
-    audio_play_sound_on(global.voiceEmitter, snd_superledgehoptwo, false, 0);
+    if (randThing &lt; 75)
+    {
+        audio_play_sound_on(global.voiceEmitter, snd_superledgehopone, false, 0);
+    }
+    else if (randThing &gt; 74 &amp;&amp; randThing &lt; 125)
+    {
+        audio_play_sound_on(global.voiceEmitter, snd_superledgehopone, false, 0);
+    }
+    else
+    {
+        audio_play_sound_on(global.voiceEmitter, snd_superledgehoptwo, false, 0);
+    }
 }
 </string>
           </argument>
@@ -416,7 +426,7 @@ else
 
 display_mouse_unlock();
 
-if (global.titleState == 1)
+if (global.titleState == 1 || global.misc1 &gt; 50)
 {
     visible = 0;
 }
@@ -465,11 +475,22 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                 go = 1;
                 if (global.titleState == 0 &amp;&amp; global.titleSelection &lt; 3)
                 {
+                    
                     global.titleSelection += 1;
+                    
+                    
                 }
                 if (global.titleSelection &lt; 4 &amp;&amp; global.titleState == 2)
                 {
-                    global.titleSelection += 1;
+                    preventRight = 0;
+                    if (global.titleState == 2 &amp;&amp; global.titleSelection &gt;= global.highestLevel)
+                    {
+                        preventRight = 1;    
+                    }
+                    if (preventRight == 0)
+                    {
+                        global.titleSelection += 1;
+                    }
                 }
                 if (global.titleSelection == 0 &amp;&amp; global.titleState == 1)
                 {
@@ -775,6 +796,7 @@ if gamepad_button_check_pressed(0, gp_face2)
             {
                 global.titleSelection = 0;
                 global.titleState = 0;
+                script_execute(scr_autosave);
             }
         }
     }
@@ -800,10 +822,17 @@ if gamepad_button_check_pressed(0, gp_face1)
             }
             if (global.titleState == 0 &amp;&amp; global.titleSelection == 0)
             {
-                global.titleState = 2;
-                global.titleSelection = 0;
+                if (global.highestLevel == 0)
+                {
+                    script_execute(scr_titleproceed);
+                }
+                else
+                {
+                    global.titleState = 2;
+                    global.titleSelection = 0;
+                }
             }
-            if (global.titleState == 0 &amp;&amp; global.titleSelection == 1)
+            if (global.titleState == 0 &amp;&amp; global.titleSelection == 1 &amp;&amp; global.highestLevel &gt;= 5)
             {
                 script_execute(scr_titleproceed);
             }
@@ -820,6 +849,7 @@ if gamepad_button_check_pressed(0, gp_face1)
             {
                 global.titleState = 0;
                 global.titleSelection = 2;
+                script_execute(scr_autosave);
             }
         }
     }
@@ -1079,17 +1109,33 @@ y = yy + shift; //vertical wave motion
     <event eventtype="9" enumb="27">
       <action>
         <libid>1</libid>
-        <id>332</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_game</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.titleState != 0)
+{
+    global.titleSelection = 0;
+    global.titleState = 0;
+    script_execute(scr_autosave);
+}
+else
+{
+    game_end();
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

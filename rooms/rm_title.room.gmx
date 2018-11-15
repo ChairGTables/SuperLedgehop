@@ -79,6 +79,7 @@
     <instance objName="obj_finale" x="864" y="384" name="inst_E213A289" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_languagedisclaimer" x="512" y="448" name="inst_1CA8E635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_betatext" x="800" y="16" name="inst_234106B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_thugwarsinfo" x="480" y="512" name="inst_6E628B53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

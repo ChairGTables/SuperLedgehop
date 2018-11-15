@@ -130,7 +130,7 @@ else
     global.titleState = 0;
     global.titleSelection = 1;
 }
-else if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 0)
+else if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 0 &amp;&amp; global.highestLevel &gt;= 5)
 {
     script_execute(scr_titleproceed);
 }

@@ -660,6 +660,13 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     audio_play_sound_on (global.voiceEmitter, snd_lizdeath, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_lizhurt;
+    
+    if (global.highestLevel &lt; 3)
+    {
+        global.highestLevel = 3;
+    }
+    script_execute(scr_autosave);
+    
     instance_destroy(self);
 }
 </string>

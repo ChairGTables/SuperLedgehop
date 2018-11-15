@@ -34,26 +34,6 @@ image_xscale = 0.1;
 image_yscale = 0.1;
 alarm[0] = 12;
 
-//////////////////////////
-//Sound emitters
-////////////////////////////
-// Volumes
-global.masterVolume  = 1;
-global.musicVolume   = 0.75;
-global.effectsVolume = 0.45;
-global.voiceVolume   = 0.75;
-global.volumeHold = 0.55;
-
-// Sound emitters
-global.musicEmitter   = audio_emitter_create();
-global.effectsEmitter = audio_emitter_create();
-global.voiceEmitter   = audio_emitter_create();
-
-// Set volumes of emitters
-audio_master_gain (global.masterVolume);
-audio_emitter_gain(global.musicEmitter,   global.musicVolume);
-audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
-audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
 
 
 
@@ -64,6 +44,22 @@ audio_play_sound_on (global.musicEmitter, snd_lamedimension, false, 10);
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="2" enumb="1">
@@ -168,6 +164,13 @@ if (image_xscale &lt; 1)
 
 switch(state)
 {
+    case 9:
+        if (x &lt; 0)
+        {
+            audio_stop_sound(snd_lamedimension);
+        }
+        break;
+
     case 4:
         state = 5;
         alarm[1] = 80;
@@ -212,6 +215,13 @@ switch(state)
         if (hspeed &lt; -20)
         {
             state = 1;
+            
+            if (global.misc1 &gt; 50)
+            {
+                state = 9;
+                hspeed = -25;
+                alarm[2] = 90;
+            }
         }
         break;
 }

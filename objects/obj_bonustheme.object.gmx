@@ -27,9 +27,49 @@
             <kind>1</kind>
             <string>global.speaking = false;
 
-if (!audio_is_playing(snd_bonusroom))
+if (!audio_is_playing(snd_bonusroom) &amp;&amp; global.stageState != 100)
 {
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bonusroom, true, 10); // Music in rm1, priority 10, looping
+}
+
+if (global.stageState &lt; 100)
+{
+    global.volumeHold = global.musicVolume;
+}
+
+instance_create(x, y, obj_darkfog);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.stageState &lt; 100)
+{
+    if (instance_exists(obj_chizuru))
+    {
+        if (obj_chizuru.y &lt; 3800 &amp;&amp; obj_chizuru.y &gt; 1000)
+        {
+            global.musicVolume = ( (obj_chizuru.y - 1000) /3800) * global.volumeHold;
+            audio_emitter_gain(global.musicEmitter, global.musicVolume);
+        }
+    }
 }
 </string>
           </argument>
