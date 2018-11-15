@@ -488,6 +488,7 @@
         <sprite>sprites\spr_wowyoudied</sprite>
         <sprite>sprites\spr_yellowbox</sprite>
         <sprite>sprites\sprite142</sprite>
+        <sprite>sprites\spr_pausemenu</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>

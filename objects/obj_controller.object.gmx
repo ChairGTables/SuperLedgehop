@@ -86,6 +86,8 @@
     instance_create(x, y, obj_blackfadein);
 }
 
+yuutoCheck = 0;
+
 //hud shake
 hudintensity = 0;
 hudshake_yoffset = 0;
@@ -324,7 +326,23 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (audio_is_playing(snd_billdeath))
+            <string>if (global.pause == 10 || global.pause == 20)
+{
+    if (global.chizurumovey &gt; 0.7)
+    {
+        global.pause += 1;
+    }
+}
+
+if (global.pause == 11 || global.pause == 21)
+{
+    if (global.chizurumovey &lt; -0.7)
+    {
+        global.pause -= 1;
+    }
+}
+
+if (audio_is_playing(snd_billdeath))
 {
     alarm[5] = -1;
 }
@@ -834,6 +852,17 @@ if (global.speaking == false || exceptionCheck == 1)
     }
 }
 
+if(global.pause &gt; 9)
+{
+    if (yuutoCheck == 0)
+    {
+        draw_sprite(spr_pausemenu, global.pause - 10, view_xview, view_yview);
+    }
+    else
+    {
+        draw_sprite(spr_pausemenu, global.pause - 18, view_xview, view_yview);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -1116,6 +1145,40 @@ global.bossthree = 0;
         <isnot>0</isnot>
       </action>
     </event>
+    <event eventtype="9" enumb="69">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.pause == 10 || global.pause == 20)
+{
+    instance_activate_all();
+    global.pause = 0;
+    
+}
+
+if (global.pause == 11 || global.pause == 21)
+{
+    script_execute(scr_stopmusic);
+    room_goto(rm_title);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="9" enumb="27">
       <action>
         <libid>1</libid>
@@ -1267,9 +1330,17 @@ if (pauseException == 0)
 {
     if (global.pause == 0)
     {
+        global.pause = 10;
+        yuutoCheck = 0;
+        if (instance_exists(obj_yuutoassist))
+        {
+            global.pause = 20;
+            yuutoCheck = 1;
+        }
         instance_deactivate_all(true);
         instance_activate_object(obj_gamepad);
-        global.pause = 10;
+        
+        
     }
     else
     {
