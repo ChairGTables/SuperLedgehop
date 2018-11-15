@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>global.speaking = false;
 
-if (!audio_is_playing(snd_stagetwo))
+if (!audio_is_playing(snd_louietheme))
 {
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_louietheme, true, 10); // Music in rm1, priority 10, looping
 }

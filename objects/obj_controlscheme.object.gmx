@@ -105,7 +105,9 @@ y = view_yview + 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (fadeout == 0 &amp;&amp; image_alpha &lt; 1)
+            <string>script_execute(scr_menulanguage);
+
+if (fadeout == 0 &amp;&amp; image_alpha &lt; 1)
 {
     image_alpha += 0.1;
 }

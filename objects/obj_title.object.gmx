@@ -193,7 +193,7 @@ global.titleState = 0;
 global.isCutscene = false;
 global.stageState = 0;
 
-
+global.pause = 0;
 global.remaining = 0;
 global.destroyed = 0;
 global.secondsPassed = 0;

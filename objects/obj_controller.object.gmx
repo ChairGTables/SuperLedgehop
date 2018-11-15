@@ -721,6 +721,11 @@ if (global.speaking == false || exceptionCheck == 1)
         {
             draw_sprite(spr_chizuruhud, 0, xMain, yMain + hudshake_yoffset)
         }
+        
+        
+        draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25+ hudshake_yoffset,global.chizuruhp,myHeight)
+        draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36+ hudshake_yoffset,global.chizurump,myHeight)
+        draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47+ hudshake_yoffset,global.chizurushine,myHeight)
     }
     if (global.shottype != 0)
     {
@@ -748,9 +753,7 @@ if (global.speaking == false || exceptionCheck == 1)
         draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.icecount,myHeight)
     }
     
-    draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25+ hudshake_yoffset,global.chizuruhp,myHeight)
-    draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36+ hudshake_yoffset,global.chizurump,myHeight)
-    draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47+ hudshake_yoffset,global.chizurushine,myHeight)
+    
     
     if (instance_exists(obj_yuutoassist) &amp;&amp; !instance_exists(obj_yuutodialogue9))
     {
@@ -1262,8 +1265,19 @@ if (instance_exists(obj_kamuronpc1))
 
 if (pauseException == 0)
 {
-    script_execute(scr_stopmusic);
-    room_goto(rm_title);
+    if (global.pause == 0)
+    {
+        instance_deactivate_all(true);
+        instance_activate_object(obj_gamepad);
+        global.pause = 10;
+    }
+    else
+    {
+        instance_activate_all();
+        global.pause = 0;
+    }
+    //script_execute(scr_stopmusic);
+    //room_goto(rm_title);
 }
 </string>
           </argument>

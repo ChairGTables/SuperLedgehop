@@ -105,6 +105,7 @@
         <sound>sound\snd_louietheme</sound>
         <sound>sound\snd_louieintro</sound>
         <sound>sound\snd_creditstheme</sound>
+        <sound>sound\snd_bonusroom</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -373,12 +374,18 @@
         <sprite>sprites\spr_mousetutorial</sprite>
         <sprite>sprites\spr_gamepadtutorial</sprite>
         <sprite>sprites\spr_clocktutorial</sprite>
+        <sprite>sprites\spr_buttona</sprite>
+        <sprite>sprites\spr_keyboarde</sprite>
         <sprite>sprites\spr_endcgtito</sprite>
         <sprite>sprites\spr_endcgcrossette</sprite>
         <sprite>sprites\spr_endcgchizuru</sprite>
         <sprite>sprites\spr_endcgcops</sprite>
         <sprite>sprites\spr_endcgfloor</sprite>
         <sprite>sprites\spr_endcgspace</sprite>
+        <sprites name="books">
+          <sprite>sprites\spr_openbook</sprite>
+          <sprite>sprites\spr_chizurubook</sprite>
+        </sprites>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -945,6 +952,7 @@
         <object>objects\obj_stagethreemusic</object>
         <object>objects\obj_stagetwomusic</object>
         <object>objects\obj_louiemusic</object>
+        <object>objects\obj_bonustheme</object>
         <object>objects\obj_storymode</object>
         <object>objects\obj_survivalmenu</object>
         <object>objects\obj_survivalmode</object>
@@ -959,6 +967,10 @@
         <object>objects\obj_stagefourdeleter2</object>
         <object>objects\obj_timeend</object>
         <object>objects\obj_absorbtutorial</object>
+        <objects name="bonusroom">
+          <object>objects\obj_chizurucheck</object>
+          <object>objects\obj_bonusread</object>
+        </objects>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -1295,6 +1307,7 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_bonusroom</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>
