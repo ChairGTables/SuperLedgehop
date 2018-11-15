@@ -59,7 +59,7 @@ else
     image_index = 0;
 }
 
-if (global.titleState == 2)
+if (global.titleState == 2 &amp;&amp; global.highestLevel &gt;= 1)
 {
     visible = 1;
 }
@@ -89,7 +89,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2)
+            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2 &amp;&amp; global.highestLevel &gt;= 1)
 {
     global.titleSelection = 1;
 }
@@ -115,7 +115,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2)
+            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2 &amp;&amp; global.highestLevel &gt;= 1)
 {
     script_execute(scr_titleproceed);
 }

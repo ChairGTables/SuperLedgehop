@@ -614,6 +614,13 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     audio_play_sound_on (global.voiceEmitter, snd_titodeath, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_titohurt;
+    
+    if (global.highestLevel &lt; 1)
+    {
+        global.highestLevel = 1;
+    }
+    script_execute(scr_autosave);
+    
     instance_destroy(self);
 }
 </string>

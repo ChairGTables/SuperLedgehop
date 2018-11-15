@@ -383,6 +383,7 @@
         <sprite>sprites\spr_endcgfloor</sprite>
         <sprite>sprites\spr_endcgspace</sprite>
         <sprites name="books">
+          <sprite>sprites\spr_photoframe</sprite>
           <sprite>sprites\spr_openbook</sprite>
           <sprite>sprites\spr_chizurubook</sprite>
           <sprite>sprites\spr_chizurubookspanish</sprite>
@@ -410,7 +411,22 @@
           <sprite>sprites\spr_billbookjapanese</sprite>
           <sprite>sprites\spr_moosebook</sprite>
           <sprite>sprites\spr_louiebook</sprite>
+          <sprite>sprites\spr_localbook</sprite>
+          <sprite>sprites\spr_usersbook</sprite>
+          <sprite>sprites\spr_superbook</sprite>
+          <sprite>sprites\spr_youbook</sprite>
+          <sprite>sprites\spr_appdatabook</sprite>
+          <sprite>sprites\spr_existbook</sprite>
+          <sprite>sprites\spr_existbookspanish</sprite>
+          <sprite>sprites\spr_halloweencomic</sprite>
+          <sprite>sprites\spr_introcomic</sprite>
+          <sprite>sprites\spr_gangmeme</sprite>
+          <sprite>sprites\spr_pencilmeme</sprite>
+          <sprite>sprites\spr_evolutionmeme</sprite>
+          <sprite>sprites\spr_copiesmeme</sprite>
         </sprites>
+        <sprite>sprites\spr_darkfog</sprite>
+        <sprite>sprites\spr_titlecorruption</sprite>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -514,6 +530,12 @@
         <sprite>sprites\spr_yellowbox</sprite>
         <sprite>sprites\sprite142</sprite>
         <sprite>sprites\spr_pausemenu</sprite>
+        <sprite>sprites\spr_shadowwalk</sprite>
+        <sprite>sprites\spr_shadowdie</sprite>
+        <sprite>sprites\spr_shadowportrait</sprite>
+        <sprite>sprites\spr_hoodfigure</sprite>
+        <sprite>sprites\spr_lampstand</sprite>
+        <sprite>sprites\spr_thugwarsinfo</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -770,6 +792,7 @@
         <background>background\back_bricksfull</background>
         <background>background\back_roadfull</background>
         <background>background\back_grassfull</background>
+        <background>background\back_graygrass</background>
         <background>background\back_rockyfull</background>
         <background>background\back_wallfull</background>
         <background>background\back_laddersfull</background>
@@ -848,6 +871,7 @@
       <script>scripts\scr_titleproceed.gml</script>
       <script>scripts\scr_menulanguage.gml</script>
       <script>scripts\scr_truespeedwallcheck.gml</script>
+      <script>scripts\scr_autosave.gml</script>
       <script>scripts\scr_enemymoveback.gml</script>
       <scripts name="cutsceneskips">
         <script>scripts\scr_yuutoskipgov.gml</script>
@@ -934,6 +958,18 @@
           <object>objects\obj_billcheck</object>
           <object>objects\obj_moosecheck</object>
           <object>objects\obj_louiecheck</object>
+          <object>objects\obj_halloweenframe</object>
+          <object>objects\obj_introframe</object>
+          <object>objects\obj_gangmeme</object>
+          <object>objects\obj_pencilmeme</object>
+          <object>objects\obj_evolutionmeme</object>
+          <object>objects\obj_copiesmeme</object>
+          <object>objects\obj_usershood</object>
+          <object>objects\obj_youhood</object>
+          <object>objects\obj_appdatahood</object>
+          <object>objects\spr_localhood</object>
+          <object>objects\spr_superhood</object>
+          <object>objects\obj_friendcheck</object>
           <object>objects\obj_bonusread</object>
         </objects>
         <object>objects\obj_antagonisttalk</object>
@@ -974,6 +1010,7 @@
         <object>objects\obj_musicvolumebar</object>
         <object>objects\obj_musicvolumetext</object>
         <object>objects\obj_nextroom</object>
+        <object>objects\obj_roomwarp</object>
         <object>objects\obj_options</object>
         <object>objects\obj_protagonisttalk</object>
         <object>objects\obj_quitgame</object>
@@ -1006,6 +1043,12 @@
         <object>objects\obj_stagefourdeleter2</object>
         <object>objects\obj_timeend</object>
         <object>objects\obj_absorbtutorial</object>
+        <object>objects\obj_thugwarsinfo</object>
+        <object>objects\obj_yourbestfriend</object>
+        <object>objects\obj_bestfriendchase</object>
+        <object>objects\obj_lampstand</object>
+        <object>objects\obj_titlecorruption</object>
+        <object>objects\obj_textoncontact</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -1052,6 +1095,7 @@
         <object>objects\obj_whitefadeout</object>
         <object>objects\obj_downarrow</object>
         <object>objects\obj_betatext</object>
+        <object>objects\obj_darkfog</object>
         <object>objects\obj_endcg</object>
       </objects>
       <objects name="map">
@@ -1343,6 +1387,7 @@
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
       <room>rooms\rm_bonusroom</room>
+      <room>rooms\rm_bestfriendencounter</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>

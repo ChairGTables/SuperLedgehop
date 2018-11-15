@@ -27,6 +27,12 @@
             <kind>1</kind>
             <string>depth = -y;
 image_speed = 0.3;
+
+
+if (global.stageState &gt; 99)
+{
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

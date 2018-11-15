@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (action == 1)
+            <string>if (action == 1 &amp;&amp; global.misc1 &lt; 50)
 {
     gravity = 1;
     gravity_direction = 270;

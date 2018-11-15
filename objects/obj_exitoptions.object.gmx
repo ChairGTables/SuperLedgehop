@@ -119,6 +119,7 @@ else
 {
     global.titleState = 0;
     global.titleSelection = 0;
+    script_execute(scr_autosave);
 }
 </string>
           </argument>

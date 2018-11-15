@@ -326,7 +326,30 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.pause == 10 || global.pause == 20)
+            <string>//chamorro prevention
+if (global.language == 3)
+{
+    global.language = 0;
+}
+
+if (global.pause &gt; 9)
+{
+    if (global.isGamepad == false)
+    {
+        mouseX = mouse_x;// + view_xview;
+        mouseY = mouse_y;// + view_yview;
+        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 267 &amp;&amp; mouseY &lt; view_yview + 369)
+        {
+            global.pause = 10 * (yuutoCheck + 1);
+        }
+        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 379 &amp;&amp; mouseY &lt; view_yview + 492)
+        {
+            global.pause = 1 + (10 * (yuutoCheck + 1));
+        }
+    }
+}
+
+if (global.pause == 10 || global.pause == 20)
 {
     if (global.chizurumovey &gt; 0.7)
     {
@@ -620,6 +643,46 @@ global.wholeSec = global.quarterSec * 4; // Also duration of a measure
 global.halfSec = global.quarterSec * 2;
 global.eighthSec = global.quarterSec / 2;
 global.playerQuarter = (60000 / global.bpm) / 1000;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="50">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.pause &gt; 9)
+{
+    if (global.isGamepad == false)
+    {
+        mouseX = mouse_x;// + view_xview;
+        mouseY = mouse_y;// + view_yview;
+        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 267 &amp;&amp; mouseY &lt; view_yview + 369)
+        {
+            instance_activate_all();
+            global.pause = 0;
+        }
+        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 379 &amp;&amp; mouseY &lt; view_yview + 492)
+        {
+            script_execute(scr_stopmusic);
+            room_goto(rm_title);
+        }
+    }
+}
 </string>
           </argument>
         </arguments>

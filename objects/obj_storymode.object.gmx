@@ -122,8 +122,15 @@ else
 }
 else if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 0)
 {
-    global.titleState = 2;
-    global.titleSelection = 0;
+    if (global.highestLevel &gt; 0)
+    {
+        global.titleState = 2;
+        global.titleSelection = 0;
+    }
+    else
+    {
+        script_execute(scr_titleproceed);
+    }
 }
 
 </string>
