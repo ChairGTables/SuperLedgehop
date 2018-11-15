@@ -385,6 +385,31 @@
         <sprites name="books">
           <sprite>sprites\spr_openbook</sprite>
           <sprite>sprites\spr_chizurubook</sprite>
+          <sprite>sprites\spr_chizurubookspanish</sprite>
+          <sprite>sprites\spr_chizurubookjapanese</sprite>
+          <sprite>sprites\spr_titobook</sprite>
+          <sprite>sprites\spr_titobookspanish</sprite>
+          <sprite>sprites\spr_titobookjapanese</sprite>
+          <sprite>sprites\spr_yuutobook</sprite>
+          <sprite>sprites\spr_yuutobookspanish</sprite>
+          <sprite>sprites\spr_yuutobookjapanese</sprite>
+          <sprite>sprites\spr_crossettebook</sprite>
+          <sprite>sprites\spr_crossettebookspanish</sprite>
+          <sprite>sprites\spr_crossettejapanese</sprite>
+          <sprite>sprites\spr_kamurobook</sprite>
+          <sprite>sprites\spr_kamurobookspanish</sprite>
+          <sprite>sprites\spr_kamurobookjapanese</sprite>
+          <sprite>sprites\spr_lizbook</sprite>
+          <sprite>sprites\spr_lizbookspanish</sprite>
+          <sprite>sprites\spr_lizbookjapanese</sprite>
+          <sprite>sprites\spr_chizumabook</sprite>
+          <sprite>sprites\spr_chizumabookspanish</sprite>
+          <sprite>sprites\spr_chizumabookjapanese</sprite>
+          <sprite>sprites\spr_billbook</sprite>
+          <sprite>sprites\spr_billbookspanish</sprite>
+          <sprite>sprites\spr_billbookjapanese</sprite>
+          <sprite>sprites\spr_moosebook</sprite>
+          <sprite>sprites\spr_louiebook</sprite>
         </sprites>
       </sprites>
       <sprites name="functionality">
@@ -897,6 +922,19 @@
         <object>objects\obj_movementtest</object>
       </objects>
       <objects name="functionality">
+        <objects name="bonusroom">
+          <object>objects\obj_chizurucheck</object>
+          <object>objects\obj_lizcheck</object>
+          <object>objects\obj_titocheck</object>
+          <object>objects\obj_yuutocheck</object>
+          <object>objects\obj_crossettebook</object>
+          <object>objects\obj_kamurocheck</object>
+          <object>objects\obj_chizumacheck</object>
+          <object>objects\obj_billcheck</object>
+          <object>objects\obj_moosecheck</object>
+          <object>objects\obj_louiecheck</object>
+          <object>objects\obj_bonusread</object>
+        </objects>
         <object>objects\obj_antagonisttalk</object>
         <object>objects\obj_bossmusic</object>
         <object>objects\obj_camera_chair</object>
@@ -967,10 +1005,6 @@
         <object>objects\obj_stagefourdeleter2</object>
         <object>objects\obj_timeend</object>
         <object>objects\obj_absorbtutorial</object>
-        <objects name="bonusroom">
-          <object>objects\obj_chizurucheck</object>
-          <object>objects\obj_bonusread</object>
-        </objects>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
