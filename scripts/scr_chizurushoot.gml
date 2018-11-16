@@ -2,7 +2,7 @@ bulletSpeed = 15;
 
 
 
-if (instance_exists(obj_chizuru))
+if (instance_exists(obj_chizuru) && !instance_exists(obj_bonustheme))
 {
     if (obj_chizuru.action == 1)
     {

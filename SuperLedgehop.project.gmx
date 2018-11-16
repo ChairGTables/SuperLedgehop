@@ -424,6 +424,8 @@
           <sprite>sprites\spr_pencilmeme</sprite>
           <sprite>sprites\spr_evolutionmeme</sprite>
           <sprite>sprites\spr_copiesmeme</sprite>
+          <sprite>sprites\spr_creditsbonus</sprite>
+          <sprite>sprites\spr_paperstack</sprite>
         </sprites>
         <sprite>sprites\spr_darkfog</sprite>
         <sprite>sprites\spr_titlecorruption</sprite>
@@ -971,6 +973,10 @@
           <object>objects\spr_superhood</object>
           <object>objects\obj_friendcheck</object>
           <object>objects\obj_bonusread</object>
+          <object>objects\obj_creditspapers</object>
+          <object>objects\obj_creditsbonus</object>
+          <object>objects\obj_creditsbonusright</object>
+          <object>objects\obj_creditsbonusleft</object>
         </objects>
         <object>objects\obj_antagonisttalk</object>
         <object>objects\obj_bossmusic</object>

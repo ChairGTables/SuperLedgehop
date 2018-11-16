@@ -1,6 +1,6 @@
 speedCap = 30;
 
-if (instance_exists(obj_chizuru) && global.chizurump > 5)
+if (instance_exists(obj_chizuru) && global.chizurump > 5 && !instance_exists(obj_bonustheme))
 {
     if (obj_chizuru.spinning == 0 && obj_chizuru.sprite_index != spr_chizuruhurtd)
     {

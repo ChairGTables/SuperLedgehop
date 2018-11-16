@@ -1,6 +1,6 @@
 if (instance_exists(obj_chizuru))
 {
-    if (obj_chizuru.sprite_index != spr_chizuruhurtd)
+    if (obj_chizuru.sprite_index != spr_chizuruhurtd && !instance_exists(obj_bonustheme))
     {
         if (global.shineget == 1)
         {

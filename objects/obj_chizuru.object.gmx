@@ -620,7 +620,7 @@ if (!place_meeting(x, y + downmomentum, obj_wall) &amp;&amp; !place_meeting(x, y
 ////////////////////////////////
 //Spin Action
 ///////////////////////////////
-if (spinning == 1 &amp;&amp; instance_exists(obj_gamepad))
+if (spinning == 1 &amp;&amp; instance_exists(obj_gamepad) &amp;&amp; !instance_exists(obj_bonustheme))
 {
     if (obj_gamepad.spinning == true &amp;&amp; global.chizurump &gt; 0)
     {
@@ -838,7 +838,10 @@ if (action == 1)
     {
         isAiming = 0;
     }
-    
+    if (instance_exists(obj_bonustheme))
+    {
+        isAiming = 0;
+    }
     
     ////////////////////////////
     //aim look

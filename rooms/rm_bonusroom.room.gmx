@@ -107,6 +107,7 @@
     <instance objName="obj_pencilmeme" x="2103" y="4344" name="inst_E44193EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_copiesmeme" x="2400" y="4344" name="inst_9A1DC40D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1956" y="4352" name="inst_7BFE7278" locked="0" code="" scaleX="2.88000011444092" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_creditspapers" x="1970" y="4352" name="inst_C006841A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_carpetred" x="1088" y="5472" w="32" h="32" xo="128" yo="32" id="10061093" name="inst_A932DE01" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
