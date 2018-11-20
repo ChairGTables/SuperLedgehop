@@ -100,4 +100,5 @@ if (instance_exists(obj_chizuru))
             obj_chizuru.sprite_index = spr_chizuruwaveur;
         }
     }
+    global.chizurushinecharge = 0;
 }

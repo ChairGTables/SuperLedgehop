@@ -38,12 +38,12 @@ types[0] = obj_basicenemy2_sonii;
 types[1] = obj_basicenemy3_sonii;
 types[2] = obj_spreadmove_sonii;
 types[3] = obj_charger_sonii;
-types[4] = obj_cannonaim_sonii;
-types[5] = obj_spreadcannon_sonii;
+types[4] = obj_spreadcannon_sonii;
+types[5] = obj_cannonaim_sonii;
 types[6] = obj_shooterdude_david;
 types[7] = obj_grenaider_sonii;
-types[8] = obj_policecyborg;
-types[9] = obj_policerapid;
+types[8] = obj_policerapid;
+types[9] = obj_policecyborg;
 types[10] = obj_boombox_sonii;
 types[11] = obj_squaremover_sonii;
 
@@ -214,7 +214,7 @@ if (spawned == 50)
 {
     currentTypes = 9;
 }
-if (spawned == 60)
+if (spawned == 65)
 {
     currentTypes = 10;
 }
@@ -249,37 +249,38 @@ if (spawned == 80)
 
 draw_set_valign(fa_top);
 draw_set_halign(fa_right);
-
-switch (global.language)
+if (!instance_exists(obj_louienpc1))
 {
-    case 2:
-    draw_set_color(c_black);
-    draw_set_alpha(0.5);
-    draw_rectangle(view_xview+670, view_yview+499, view_xview+960, view_yview+540, 0);
-    draw_set_alpha(1);
-    draw_set_font(fnt_talkjapanese);
-    draw_text_color(view_xview+ 950,view_yview + 510, "ヒーロー到着までの敵数 " + string(killCount),c_white,c_white,c_white,c_white,1);
-    break;
-
-    case 1:
-    draw_set_color(c_black);
-    draw_set_alpha(0.5);
-    draw_rectangle(view_xview+650, view_yview+499, view_xview+960, view_yview+540, 0);
-    draw_set_alpha(1);
-    draw_set_font(fnt_talkforeign);
-    draw_text_color(view_xview+ 950,view_yview + 510, "Enemigos antes del Heroe: " + string(killCount),c_white,c_white,c_white,c_white,1);
-    break;
+    switch (global.language)
+    {
+        case 2:
+        draw_set_color(c_black);
+        draw_set_alpha(0.5);
+        draw_rectangle(view_xview+670, view_yview+499, view_xview+960, view_yview+540, 0);
+        draw_set_alpha(1);
+        draw_set_font(fnt_talkjapanese);
+        draw_text_color(view_xview+ 950,view_yview + 510, "ヒーロー到着までの敵数 " + string(killCount),c_white,c_white,c_white,c_white,1);
+        break;
     
-    
-    default:
-    draw_set_color(c_black);
-    draw_set_alpha(0.5);
-    draw_rectangle(view_xview+570, view_yview+499, view_xview+960, view_yview+540, 0);
-    draw_set_alpha(1);
-    draw_set_font(fnt_talkdefault);
-    draw_text_color(view_xview+ 950,view_yview + 510, "Enemies until hero arrives: " + string(killCount),c_white,c_white,c_white,c_white,1);
+        case 1:
+        draw_set_color(c_black);
+        draw_set_alpha(0.5);
+        draw_rectangle(view_xview+650, view_yview+499, view_xview+960, view_yview+540, 0);
+        draw_set_alpha(1);
+        draw_set_font(fnt_talkforeign);
+        draw_text_color(view_xview+ 950,view_yview + 510, "Enemigos antes del Heroe: " + string(killCount),c_white,c_white,c_white,c_white,1);
+        break;
+        
+        
+        default:
+        draw_set_color(c_black);
+        draw_set_alpha(0.5);
+        draw_rectangle(view_xview+570, view_yview+499, view_xview+960, view_yview+540, 0);
+        draw_set_alpha(1);
+        draw_set_font(fnt_talkdefault);
+        draw_text_color(view_xview+ 950,view_yview + 510, "Enemies until hero arrives: " + string(killCount),c_white,c_white,c_white,c_white,1);
+    }
 }
-
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 </string>

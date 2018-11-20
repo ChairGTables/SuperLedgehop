@@ -135,6 +135,34 @@ image_index = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (spinning == 0)
+{
+    fighting = 1;
+}
+
+alarm[4] = 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
@@ -227,6 +255,8 @@ if (fighting == 1)
     }
     spinning = 1;
     fighting = 0;
+    
+    alarm[4] = -1;
 }
 </string>
           </argument>
@@ -331,6 +361,7 @@ if (spinning &gt; 0)
             speed = 0;
             direction = 270;
             y = view_yview-32;
+            alarm[4] = 60;
         }
     }   
 }

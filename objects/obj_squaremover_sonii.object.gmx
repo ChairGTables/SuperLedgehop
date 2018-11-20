@@ -307,6 +307,7 @@ if (shootTimer &lt;= 0)
     //Perform shooting
     if (action == 1)
     {   
+        audio_stop_sound(snd_enemybullet);
         audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
         
         for (i = 0; i &lt; 4; i++)

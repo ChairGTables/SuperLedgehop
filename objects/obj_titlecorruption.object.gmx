@@ -29,7 +29,7 @@
 background_visible[1] = false;
 background_visible[2] = false;
 background_visible[3] = false;
-
+global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_isuzu, true, 10); // Music in rm1, priority 10, looping
 alarm[0] = 60;
 </string>
           </argument>

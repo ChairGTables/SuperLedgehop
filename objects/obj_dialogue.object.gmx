@@ -484,6 +484,10 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
             }    
+            if (protagonist == "unknown")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
+            }    
             if (protagonist == "yuuto")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
@@ -619,6 +623,14 @@ if (portraitsReady == 1)
         protagonistDisplay.curiousSprite = spr_hudbars;
     }
     if (protagonist == "none")
+    {
+        protagonistDisplay.happySprite = spr_hudbars;
+        protagonistDisplay.neutralSprite = spr_hudbars;
+        protagonistDisplay.sadSprite = spr_hudbars;
+        protagonistDisplay.angrySprite = spr_hudbars;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "unknown")
     {
         protagonistDisplay.happySprite = spr_hudbars;
         protagonistDisplay.neutralSprite = spr_hudbars;
@@ -947,7 +959,15 @@ else
             if (out == "chief")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview + 10, view_yview+445 + bonusY, "Police Chief");
+                if (global.language == 1)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Jefe de Policia");
+                }
+                else
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Police Chief");
+                }
+                
             }
         }
         if (category == 1)
@@ -956,6 +976,11 @@ else
             {
                 draw_set_color($ea8a89);
                 draw_text(view_xview + 10, view_yview+445 + bonusY, "Chizuru");
+            }
+            if (protagonist == "unknown")
+            {
+                draw_set_color($ea8a89);
+                draw_text(view_xview + 10, view_yview+445 + bonusY, "???");
             }
             if (protagonist == "yuuto")
             {

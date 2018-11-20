@@ -104,7 +104,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>sprite_index = spr_billhurt;
 alarm[1] = 10;
-audio_play_sound_on (global.effectsEmitter, snd_enemydamage, false, 10)
+audio_play_sound_on (global.effectsEmitter, snd_enemydamagelower, false, 10); 
 vspeed = 1;
 image_angle = random_range(0, 10);
 instance_create(other.x, other.y, obj_smallcircle);

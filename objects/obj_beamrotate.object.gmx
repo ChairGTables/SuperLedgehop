@@ -144,6 +144,7 @@ image_index = 0;
         audio_stop_sound (snd_waveblast);
         audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
         beam = instance_create(x, y, obj_laser_sonii);
+        beam.damage = 15;
         beam.direction = targetAngle;
         beam.image_angle = targetAngle;
 </string>

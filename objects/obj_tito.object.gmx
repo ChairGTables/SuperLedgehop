@@ -381,7 +381,7 @@ if (shootTimer &lt;= 0)
         {
             chosenAttack = 3;
             normalAttack += 1;
-            audio_play_sound (snd_titohey, 10, false); 
+            audio_play_sound_on (global.voiceEmitter, snd_titohey, false, 10);
             sprite_index = spr_titoshoot;
             image_index = 0;
             image_speed = 1;
@@ -404,14 +404,14 @@ if (shootTimer &lt;= 0)
                 chosenAttack = 1;
                 shotsBeforeRest = 5;
                 circleWarn = instance_create(x, y, obj_circlewarn);
-                audio_play_sound (snd_titorice, 10, false); 
+                audio_play_sound_on (global.voiceEmitter, snd_titorice, false, 10);
             }
             else
             {
                 shotsBeforeRest = 4;
                 chosenAttack = 2;
                 circleWarn = instance_create(x, y, obj_circlewarn);
-                audio_play_sound (snd_titowave, 10, false); 
+                audio_play_sound_on (global.voiceEmitter, snd_titowave, false, 10);
             }
         }
     }
@@ -466,7 +466,7 @@ if (shootTimer &lt;= 0)
             sprite_index = spr_titoshoot;
             image_index = 0;
             image_speed = 1;
-            audio_play_sound (snd_ricebullet, 10, false); 
+            audio_play_sound_on (global.effectsEmitter, snd_ricebullet, false, 10);
             for (i = 0; i &lt; 5; i++)
             {         
                 var shot = instance_create(x, y, obj_redrice);
@@ -494,7 +494,7 @@ if (shootTimer &lt;= 0)
         }
         else
         {
-            audio_play_sound (snd_waveblast, 10, false); 
+            audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10);
             script_execute(scr_fliptoplayer);
             sprite_index = spr_titoshoot;
             image_index = 0;
@@ -543,7 +543,7 @@ if (shootTimer &lt;= 0)
 //Gatling Shot
 if (gatlingShot == 1)
 {
-    audio_play_sound (snd_gatling, 10, false); 
+    audio_play_sound_on (global.effectsEmitter, snd_gatling, false, 10);
     var gatling = instance_create(x, y, obj_rapidbullet);
     sprite_index = spr_titoshoot;
     image_index = 0;
@@ -614,6 +614,11 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     audio_play_sound_on (global.voiceEmitter, snd_titodeath, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_titohurt;
+    
+    if (!steam_get_achievement("BOSS1"))
+    {
+        steam_set_achievement("BOSS1");
+    }
     
     if (global.highestLevel &lt; 1)
     {

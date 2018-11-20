@@ -346,6 +346,7 @@ if (shootTimer &lt;= 0)
         else if( beatCount == 3)
         {
             //shooting
+            audio_stop_sound (snd_enemybullet);
             audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
             audio_play_sound_on (global.effectsEmitter, snd_icebullet, false, 10); 
             for (i = 0; i &lt; 2; i++)
@@ -376,6 +377,7 @@ if (shootTimer &lt;= 0)
         else if( beatCount &gt;= 8 &amp;&amp; beatCount &lt;= 12 )
         {
             randomAngle = random_range(-20, 20);
+            audio_stop_sound (snd_enemybullet);
             audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10); 
             for (i = 0; i &lt; 2; i++)
             {

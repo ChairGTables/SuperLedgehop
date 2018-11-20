@@ -90,7 +90,7 @@
     <instance objName="obj_squaremover_sonii" x="4240" y="371" name="inst_51D584B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moosespawner" x="1120" y="1424" name="inst_18BE7091" locked="0" code="drop = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="2736" y="3600" name="inst_83F5981C" locked="0" code="teleportID = 3;&#xA;visible = 0;&#xA;xOffset = 16;&#xA;yOffset = 48;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teleportpad" x="2112" y="656" name="inst_6F625171" locked="0" code="visible = 0;&#xA;teleportID = 3;&#xA;xOffset = 16;&#xA;yOffset = -48;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teleportpad" x="2112" y="656" name="inst_6F625171" locked="0" code="visible = 0;&#xA;teleportID = 3;&#xA;xOffset = 16;&#xA;yOffset = -48;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="3084" y="3722" name="inst_FFA9ADBF" locked="0" code="teleportID = 4;&#xA;visible = 0;&#xA;xOffset = -48;&#xA;yOffset = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="528" y="1408" name="inst_0016B063" locked="0" code="teleportID = 4;&#xA;xOffset = 48;&#xA;yOffset = 16;&#xA;visible = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sidetoside_sonii" x="2624" y="464" name="inst_F8CC61C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -142,7 +142,6 @@
     <instance objName="obj_wall" x="2096" y="48" name="inst_794E36C2" locked="0" code="" scaleX="13" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2096" y="688" name="inst_3AB051F8" locked="0" code="" scaleX="9.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2160" y="464" name="inst_4A26E819" locked="0" code="" scaleX="11" scaleY="7" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="2512" y="16" name="inst_29816519" locked="0" code="" scaleX="43" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="3040" y="2144" name="inst_CE70ED0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="3056" y="2272" name="inst_60DB3E08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lazerCannon_sonii" x="4416" y="1440" name="inst_A87D8B6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -274,6 +273,8 @@
     <instance objName="obj_trashbin" x="2864" y="3650" name="inst_EFA0A256" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trashbin" x="1744" y="4098" name="inst_1CFBC97B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trashbin" x="3423" y="4091" name="inst_790F2E63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="2488" y="-83" name="inst_4BA40350" locked="0" code="" scaleX="44.8400001525879" scaleY="8.10000038146973" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizurupusher" x="2036" y="-164" name="inst_A500124E" locked="0" code="" scaleX="84.0599975585938" scaleY="10.75" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_rockywhite" x="2464" y="4864" w="32" h="32" xo="32" yo="0" id="10041780" name="inst_D04D7AF0" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -305,7 +305,8 @@ if (shootTimer &lt;= 0)
     if (action == 1)
     {
         //This code segment shoots a huge surrounding circle
-        audio_play_sound (snd_enemybullet, 10, false); 
+        audio_stop_sound(snd_enemybullet);
+        audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10);
         
         var grenade1 = instance_create(x,y, obj_grenadespread2_sonii);
         var grenade2 = instance_create(x,y, obj_grenadespread2_sonii);

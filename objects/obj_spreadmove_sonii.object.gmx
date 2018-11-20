@@ -317,7 +317,7 @@ if (shootTimer &lt;= 0)
         {
         //This code segment shoots a huge surrounding circle
             audio_stop_sound(snd_enemybullet);
-            audio_play_sound (snd_enemybullet, 10, false); 
+            audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10);
             anglePerShot = 29;
             for (i = 0; i &lt; 87 / anglePerShot; i++)
             {

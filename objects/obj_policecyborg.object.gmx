@@ -335,7 +335,8 @@ if (shootTimer &lt;= 0)
         {
             if (shotCount == 0 &amp;&amp; instance_exists(obj_chizuru))
             {
-                currentAngle = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + 15;     
+                currentAngle = point_direction(x, y, obj_chizuru.x, obj_chizuru.y) + 15; 
+                audio_stop_sound(snd_bombbeep);    
                 audio_play_sound_on (global.effectsEmitter, snd_bombbeep, false, 10); 
                 warner = instance_create(x, y, obj_warninglaser_sonii);
                 warner.image_angle = currentAngle;
@@ -347,9 +348,11 @@ if (shootTimer &lt;= 0)
             
             if (shotCount == shotsBeforeRest/2 &amp;&amp; instance_exists(obj_chizuru))
             {
+                audio_stop_sound(snd_waveblast);
                 audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
                 beam = instance_create(x, y, obj_laser_sonii);
                 beam.image_angle = currentAngle;
+                beam.damage = 10;
                 beam.rotator = -1.2;
                 beam.fading = 0;
                 beam.alarm[1] = 5;

@@ -48,8 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 10;
-audio_play_sound (snd_waveblast, 10, false); 
+            <string>alarm[0] = 12;
+audio_stop_sound(snd_waveblast);
+audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
 openArc = random_range(0, 50)
             for (i = 0; i &lt; 60; i++)
             {         

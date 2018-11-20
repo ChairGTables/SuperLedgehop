@@ -157,6 +157,10 @@ global.chizuruaimy = -1;
             <kind>1</kind>
             <string>//You must reset the alarm so it always loops
 activateTimer  -= delta_time / 1000000;
+if (global.chizurushine &lt; 70)
+{
+    global.chizurushine += 0.2;
+}
 
 if (playerY != 0 &amp;&amp; instance_exists(obj_chizuru))
 {

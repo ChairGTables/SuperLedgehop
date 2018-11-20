@@ -95,7 +95,12 @@ if (currentview &gt; 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_stopmusic);
+            <string>if (!steam_get_achievement("CREDITS"))
+{
+    steam_set_achievement("CREDITS");
+}
+
+script_execute(scr_stopmusic);
 room_goto(rm_logo);
 </string>
           </argument>

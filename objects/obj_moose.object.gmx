@@ -211,6 +211,7 @@ if (shootTimer &lt;= 0)
             {
                 shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y) + random_range(-30,30);
                 shot.speed = random_range(10,20);
+                shot.damage = 40;
             }
             
             if (shotCount mod 15 == 0)
@@ -223,6 +224,7 @@ if (shootTimer &lt;= 0)
                     {
                         shot.direction = i * anglePerShot;
                         shot.speed = 7;
+                        shot.damage = 40;
                     }
                 }
             }

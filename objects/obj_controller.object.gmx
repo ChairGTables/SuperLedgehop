@@ -326,7 +326,22 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//chamorro prevention
+            <string>if (global.totalReflected &gt; 200)
+{
+    if (!steam_get_achievement("REFLECT"))
+    {
+        steam_set_achievement("REFLECT");
+    }
+}
+if (global.totalAbsorbed &gt; 200)
+{
+    if (!steam_get_achievement("ABSORB"))
+    {
+        steam_set_achievement("ABSORB");
+    }
+}
+
+//chamorro prevention
 if (global.language == 3)
 {
     global.language = 0;
@@ -618,7 +633,7 @@ if (global.assisthp &lt; 0)
 
 if (global.chizuruhp &lt; 1)
 {
-    if (!instance_exists(obj_wowyoudied))
+    if (!instance_exists(obj_wowyoudied) &amp;&amp; instance_exists(obj_chizuru))
     {
         instance_create(obj_chizuru.x, obj_chizuru.y, obj_explosion);
         instance_create(0, 0, obj_wowyoudied);
@@ -893,7 +908,7 @@ if (global.speaking == false || exceptionCheck == 1)
         draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
         draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
     }
-    if (instance_exists(obj_moose) &amp;&amp; instance_exists(obj_kamuronpc1))
+    if (instance_exists(obj_moose) &amp;&amp; instance_exists(obj_dooradvice))
     {
         draw_sprite(spr_bosshud, 2, view_xview+440, yMain);
         draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
@@ -932,6 +947,20 @@ if(global.pause &gt; 9)
       </action>
     </event>
     <event eventtype="9" enumb="122">
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -1081,6 +1110,20 @@ global.bossthree = 0;
     <event eventtype="9" enumb="119">
       <action>
         <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>223</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -1095,6 +1138,20 @@ global.bossthree = 0;
       </action>
     </event>
     <event eventtype="9" enumb="118">
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -1142,6 +1199,20 @@ global.bossthree = 0;
     <event eventtype="9" enumb="114">
       <action>
         <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>221</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -1158,6 +1229,20 @@ global.bossthree = 0;
     <event eventtype="9" enumb="113">
       <action>
         <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>222</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -1172,6 +1257,20 @@ global.bossthree = 0;
       </action>
     </event>
     <event eventtype="9" enumb="112">
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>

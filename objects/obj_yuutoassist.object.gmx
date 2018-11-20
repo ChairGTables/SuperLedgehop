@@ -132,7 +132,9 @@ casting = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (moving == 1  &amp;&amp; disabled == 0)
+            <string>depth = -y;
+
+if (moving == 1  &amp;&amp; disabled == 0)
 {
     if (instance_exists(obj_chizuru) &amp;&amp; sprite_index != spr_yuutohurt)
     {

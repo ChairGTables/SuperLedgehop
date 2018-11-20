@@ -51,24 +51,30 @@
             <string>if (ice == 1)
 {
     eskimo = instance_nearest(x, y, obj_waterhider_sonii);
-    if (x &lt; eskimo.x)
+    
+    if (instance_exists(eskimo))
     {
-        other.x += 4;
+    
+        if (x &lt; eskimo.x)
+        {
+            other.x += 4;
+        }
+        if (x &gt; eskimo.x)
+        {
+            other.x -= 4;
+        }
+        if (y &lt; eskimo.y)
+        {
+            other.y += 4;
+        }
+        if (y &gt; eskimo.y)
+        {
+            other.y -= 4;
+        }
+        other.alarm[7] = 5;
+        other.alarm[6] = 15;
+
     }
-    if (x &gt; eskimo.x)
-    {
-        other.x -= 4;
-    }
-    if (y &lt; eskimo.y)
-    {
-        other.y += 4;
-    }
-    if (y &gt; eskimo.y)
-    {
-        other.y -= 4;
-    }
-    other.alarm[7] = 5;
-    other.alarm[6] = 15;
 }
 
 if (other.vspeed &lt; 0)

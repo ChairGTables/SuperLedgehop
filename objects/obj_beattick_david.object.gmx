@@ -129,7 +129,7 @@ if (timer &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!global.isCutscene)
+            <string>if (!global.isCutscene &amp;&amp; !instance_exists(obj_bonustheme))
 {
     draw_sprite(sprite_index, image_index, view_xview + x, view_yview + yoffset);
 }

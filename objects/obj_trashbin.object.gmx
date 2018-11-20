@@ -188,6 +188,14 @@ if (moveTimer &lt;= 0)
 if (hp &lt; 1)
 {
     script_execute(scr_enemydeath);
+    
+    if (!instance_exists(obj_survivalmode))
+    {
+        for (i = 0; i &lt; 5; i++)
+        {
+            instance_create(x, y, obj_hporb);
+        }
+    }
 }
 </string>
           </argument>

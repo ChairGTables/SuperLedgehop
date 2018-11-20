@@ -32,6 +32,11 @@ if (!audio_is_playing(snd_bonusroom) &amp;&amp; global.stageState != 100)
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bonusroom, true, 10); // Music in rm1, priority 10, looping
 }
 
+if (!audio_is_playing(snd_isuzu) &amp;&amp; global.stageState &gt;= 100)
+{
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_isuzu, true, 10); // Music in rm1, priority 10, looping
+}
+
 if (global.stageState &lt; 100)
 {
     global.volumeHold = global.musicVolume;
@@ -60,7 +65,7 @@ instance_create(x, y, obj_darkfog);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.stageState &lt; 100)
+            <string>if (1 == 1)//global.stageState &lt; 100)
 {
     if (instance_exists(obj_chizuru))
     {

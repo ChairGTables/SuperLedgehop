@@ -126,7 +126,6 @@ if (shootTimer &lt;= 0)
     if (action == 1)
     {
         //This code segment shoots a huge surrounding circle
-        audio_play_sound (snd_enemybullet, 10, false); 
         anglePerShot = 10;
         for (i = 0; i &lt; 360 / anglePerShot; i++)
         {
@@ -176,7 +175,8 @@ if (moveTimer &lt;= 0)
 /////////////////////////
 if( hp &lt; 1 )
 {
-    instance_create(x, y, obj_explosion);
+    audio_stop_sound(snd_crashed);
+    instance_create(x, y, obj_grenadeexplosion);
     instance_destroy(self);
     
 }

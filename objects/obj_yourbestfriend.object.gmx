@@ -40,8 +40,8 @@ global.stageState = 100;
 instance_create(x, y, obj_darkfog);
 
 script_execute(scr_stopmusic);
-global.musicVolume = global.volumeHold;
-audio_emitter_gain(global.musicEmitter, global.musicVolume);
+//global.musicVolume = global.volumeHold;
+//audio_emitter_gain(global.musicEmitter, global.musicVolume);
 </string>
           </argument>
         </arguments>

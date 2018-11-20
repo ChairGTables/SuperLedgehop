@@ -28,8 +28,8 @@
             <string>//create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
 
-dialogue.protagonist = "none"
-dialogue.antagonist = "none";
+dialogue.protagonist = "unknown"
+dialogue.antagonist = "unknown";
 
 //set limit
 global.messageLimit = 2;

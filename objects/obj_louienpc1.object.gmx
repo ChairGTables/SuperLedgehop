@@ -29,6 +29,12 @@
 y = 0;
 
 global.isCutscene = 1;
+
+if (!steam_get_achievement("THUG"))
+    {
+        steam_set_achievement("THUG");
+    }
+
 if (instance_exists(obj_chizuru))
 {
     obj_chizuru.image_speed = 0;

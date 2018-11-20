@@ -184,6 +184,7 @@
     <instance objName="obj_lieddialoguespace" x="1232" y="640" name="inst_32D02C48" locked="0" code="" scaleX="3.5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterhider_sonii" x="2176" y="2208" name="inst_9F4A7615" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterhider_sonii" x="672" y="3104" name="inst_D8C20343" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1184" y="880" name="inst_59804C1E" locked="0" code="" scaleX="10.5" scaleY="3.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_hills" x="416" y="3232" w="32" h="32" xo="0" yo="96" id="10012701" name="inst_D410619A" depth="9999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
