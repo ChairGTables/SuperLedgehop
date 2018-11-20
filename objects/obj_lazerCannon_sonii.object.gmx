@@ -343,9 +343,11 @@ if (timer &lt;= 0)
     if (action == 1)
     {   
         //This code segment shoots a huge surrounding circle
-        audio_play_sound (snd_waveblast, 10, false); 
+        audio_stop_sound(snd_waveblast);
+        audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10);
         var shot = instance_create(x, y, obj_laser_sonii);
         shot.image_angle = warningLaser;
+        shot.damage = 15;
         //shot.direction = point_direction(x,y,obj_chizuru.x,obj_chizuru.y);
         script_execute(scr_truespeedwallcheck);
     }

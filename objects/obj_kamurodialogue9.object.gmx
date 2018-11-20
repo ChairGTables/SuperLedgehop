@@ -126,33 +126,33 @@ global.messageArray[0] = "Nhhh....
 Y-You're too strong...";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "angry";
-global.emotionAntagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
 
 
 global.messageArray[1] = "B-But I can't lose!";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "angry";
-global.emotionAntagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
 
 global.messageArray[2] = "Hey, can you listen to me for once?";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
-global.emotionAntagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
 
 global.messageArray[3] = "The governor is using the senator as a front.";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "angry";
-global.emotionAntagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "sad";
 
 global.messageArray[4] = "It's his plan to ensure that all the blame will go to the senator.";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "angry";
-global.emotionAntagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "sad";
 
 global.messageArray[5] = "With this, he would be able to get away with everything.";
 global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "angry";
-global.emotionAntagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
 
 global.messageArray[6] = "You fool!
 That doesn't change the fact that the senator tricked me!";

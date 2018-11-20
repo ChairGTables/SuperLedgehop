@@ -129,7 +129,7 @@
 
 image_speed = 0;
 image_index = global.language;
-
+global.totalDeaths += 1;
 global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_gutsman, false, 10); // Music in rm1, priority 10, looping
 </string>
           </argument>
@@ -193,23 +193,13 @@ if (instance_exists(obj_survivalmode))
 {
     room_goto(rm_title);
 }
+else
+{
+    room_restart();
+}
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>223</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_current_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="3" enumb="0">

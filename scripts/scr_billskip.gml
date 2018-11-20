@@ -1,6 +1,7 @@
 if (state < 2)
 {
     script_execute(scr_musicfadekill);
+    
     global.isCutscene = false;
     state = 2;
     room_speed = 30;

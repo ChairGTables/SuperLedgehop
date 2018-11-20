@@ -177,18 +177,29 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprite_index == spr_yuutokneel)
+            <string>if (sprite_index == spr_yuutokneel &amp;&amp; instance_exists(obj_chizuru))
 {
     dialogue = instance_create(x, y, obj_yuutodialogue8);
     alarm[6] = 5;
+    obj_chizuru.vspeed = 0;
+    obj_chizuru.hspeed = 0;
+    obj_chizuru.upmomentum = 0;
+    obj_chizuru.rightmomentum = 0;
+    obj_chizuru.leftmomentum = 0;
+    obj_chizuru.downmomentum = 0;
     global.isCutscene = true;
 }
 else if (sprite_index == spr_defaultkneel)
 {
-    if (!instance_exists(obj_defaultdialogue2))
+    if (!instance_exists(obj_defaultdialogue2) &amp;&amp; instance_exists(obj_chizuru) )
     {
         dialogue = instance_create(x, y, obj_defaultdialogue2);
-        
+        obj_chizuru.vspeed = 0;
+        obj_chizuru.hspeed = 0;
+        obj_chizuru.upmomentum = 0;
+        obj_chizuru.rightmomentum = 0;
+        obj_chizuru.leftmomentum = 0;
+        obj_chizuru.downmomentum = 0;
         global.isCutscene = true;
     }
     alarm[5] = 5;
@@ -232,6 +243,12 @@ else if (sprite_index == spr_billhurt)
         obj_chizuru.x = 1312;
         obj_chizuru.y = 896;
         obj_chizuru.sprite_index = spr_chizurustandu;
+        obj_chizuru.vspeed = 0;
+        obj_chizuru.hspeed = 0;
+        obj_chizuru.upmomentum = 0;
+        obj_chizuru.rightmomentum = 0;
+        obj_chizuru.leftmomentum = 0;
+        obj_chizuru.downmomentum = 0;
     }
     x = 1312;
     y = 736;
@@ -351,8 +368,6 @@ if (disappear == 0)
     if (sprite_index = spr_billhurt)
     {
         obj_camera_chair.intensity = 25;
-        instance_create(x + random_range(-40,40), y + random_range(-40,40), obj_explosion);
-        alarm[1] = 2;
         image_angle = random_range(-5, 5);
     }
 }

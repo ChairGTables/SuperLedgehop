@@ -21,6 +21,7 @@
         <sound>sound\snd_enemysmall</sound>
         <sound>sound\snd_enemymedium</sound>
         <sound>sound\snd_enemydamage</sound>
+        <sound>sound\snd_enemydamagelower</sound>
         <sound>sound\snd_enhancedbullet</sound>
         <sound>sound\snd_enhancedlower</sound>
         <sound>sound\snd_firebullet</sound>
@@ -106,6 +107,7 @@
         <sound>sound\snd_louieintro</sound>
         <sound>sound\snd_creditstheme</sound>
         <sound>sound\snd_bonusroom</sound>
+        <sound>sound\snd_isuzu</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -424,9 +426,14 @@
           <sprite>sprites\spr_pencilmeme</sprite>
           <sprite>sprites\spr_evolutionmeme</sprite>
           <sprite>sprites\spr_copiesmeme</sprite>
+          <sprite>sprites\spr_creditsbonus</sprite>
+          <sprite>sprites\spr_paperstack</sprite>
+          <sprite>sprites\spr_babycrt</sprite>
         </sprites>
         <sprite>sprites\spr_darkfog</sprite>
         <sprite>sprites\spr_titlecorruption</sprite>
+        <sprite>sprites\spr_prisonbars</sprite>
+        <sprite>sprites\spr_tvstatic</sprite>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -747,6 +754,7 @@
       <background>background\back_diagonalbrickswhite</background>
       <background>background\back_wallswhite</background>
       <background>background\back_ladderswhite</background>
+      <background>background\back_prisontiles</background>
       <background>background\back_laddersviolet</background>
       <backgrounds name="stage3">
         <background>background\back_barrierred</background>
@@ -964,6 +972,8 @@
           <object>objects\obj_pencilmeme</object>
           <object>objects\obj_evolutionmeme</object>
           <object>objects\obj_copiesmeme</object>
+          <object>objects\obj_prisoncrt</object>
+          <object>objects\obj_waveshinecrt</object>
           <object>objects\obj_usershood</object>
           <object>objects\obj_youhood</object>
           <object>objects\obj_appdatahood</object>
@@ -971,6 +981,10 @@
           <object>objects\spr_superhood</object>
           <object>objects\obj_friendcheck</object>
           <object>objects\obj_bonusread</object>
+          <object>objects\obj_creditspapers</object>
+          <object>objects\obj_creditsbonus</object>
+          <object>objects\obj_creditsbonusright</object>
+          <object>objects\obj_creditsbonusleft</object>
         </objects>
         <object>objects\obj_antagonisttalk</object>
         <object>objects\obj_bossmusic</object>
@@ -1068,6 +1082,7 @@
         <object>objects\obj_damagenumber</object>
         <object>objects\obj_defaultexplosion</object>
         <object>objects\obj_explosion</object>
+        <object>objects\obj_grenadeexplosion</object>
         <object>objects\obj_hitsweat</object>
         <object>objects\obj_hpup</object>
         <object>objects\obj_laststagefade</object>
@@ -1121,7 +1136,9 @@
         <object>objects\obj_laststagebarrier</object>
         <object>objects\obj_laststageswitch</object>
         <object>objects\obj_bosspusher</object>
+        <object>objects\obj_chizurupusher</object>
         <object>objects\obj_billsign</object>
+        <object>objects\obj_prisonbars</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -1141,6 +1158,7 @@
           <object>objects\obj_titonpcend</object>
           <object>objects\obj_redrice</object>
           <object>objects\obj_shinecutscene</object>
+          <object>objects\obj_titonpc5</object>
         </objects>
         <objects name="liz">
           <object>objects\obj_liz</object>
@@ -1162,6 +1180,7 @@
           <object>objects\obj_liznpc1</object>
           <object>objects\obj_liznpc2</object>
           <object>objects\obj_liznpc3</object>
+          <object>objects\obj_liznpc4</object>
           <object>objects\obj_thugnpc1</object>
           <object>objects\obj_ruffiannpc1</object>
           <object>objects\obj_flashbangcutscene</object>
@@ -1248,6 +1267,7 @@
           <object>objects\obj_spaceback</object>
           <object>objects\obj_planetearth</object>
           <object>objects\obj_badend</object>
+          <object>objects\obj_waveshinestaticdialogue</object>
         </objects>
         <objects name="default">
           <object>objects\obj_default</object>
@@ -1386,8 +1406,6 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_bonusroom</room>
-      <room>rooms\rm_bestfriendencounter</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>
@@ -1431,13 +1449,17 @@
       <rooms name="survival">
         <room>rooms\rm_165bpmsurvival</room>
         <room>rooms\rm_survivalmode</room>
-        <room>rooms\rm_140bpmlouie</room>
         <room>rooms\rm_louiefight</room>
       </rooms>
+      <room>rooms\rm_bonusroom</room>
+      <room>rooms\rm_bestfriendencounter</room>
+      <room>rooms\rm_prisonscene</room>
       <room>rooms\rm_survivalmodeold</room>
+      <room>rooms\rm_waveshinescene</room>
       <room>rooms\rm_louiefightold</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>
+      <room>rooms\rm_140bpmlouie</room>
       <room>rooms\rm_walltest</room>
       <room>rooms\rm_dialoguetest</room>
     </rooms>

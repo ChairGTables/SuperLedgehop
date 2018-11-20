@@ -397,7 +397,7 @@ if (timer &lt;= 0)
     if (action == 1)
     {   
         audio_stop_sound(snd_enemybullet);
-        audio_play_sound (snd_enemybullet, 10, false); 
+        audio_play_sound_on (global.effectsEmitter, snd_enemybullet, false, 10);
         anglePerShot = 9;
         for (i = 0; i &lt; 45 / anglePerShot; i++)
         {

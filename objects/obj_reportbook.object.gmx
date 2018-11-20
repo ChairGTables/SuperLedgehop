@@ -25,15 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_secretofficedialogue);
+            <string>if (instance_exists(obj_chizuru))
+{
+    obj_chizuru.sprite_index = spr_chizurustandd;
+    obj_chizuru.upmomentum = 0;
+    obj_chizuru.rightmomentum = 0;
+    obj_chizuru.leftmomentum = 0;
+    obj_chizuru.downmomentum = 0;
+    obj_chizuru.hspeed = 0;
+    obj_chizuru.vspeed = 0;
+}
+
+instance_create(x, y, obj_secretofficedialogue);
 global.stageState = 10;
 
 audio_play_sound_on (global.effectsEmitter, snd_pickup, false, 10);
 
-if (instance_exists(obj_chizuru))
-{
-    obj_chizuru.sprite_index = spr_chizurustandd;
-}
+
 
 if (instance_exists(obj_stagefourdeleter))
 {

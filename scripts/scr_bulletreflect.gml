@@ -1,6 +1,8 @@
 if (other.absorb == 0 && friendly == 0 && absorbed == 0)
 {
     friendly = 1;
+    global.totalReflected += 1;
+    audio_stop_sound(snd_reflect);
     audio_play_sound_on (global.effectsEmitter, snd_reflect, false, 10); 
     if (speed != 0)
     {

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.shineget = 0;
+global.beginningStart = 1;
 
 //Turn off animation speed because sprite changes with timer
 image_speed = 0;

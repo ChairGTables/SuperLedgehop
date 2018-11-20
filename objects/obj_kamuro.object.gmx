@@ -813,6 +813,12 @@ if (hp &lt; 1)
     audio_play_sound_on (global.voiceEmitter, snd_kamurodeath, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_kamurohurt;
+    
+    if (!steam_get_achievement("BOSS4"))
+    {
+        steam_set_achievement("BOSS4");
+    }
+    
     instance_destroy(self);
 }
 </string>

@@ -567,7 +567,14 @@ if (shootTimer &lt;= 0)
                     audio_play_sound_on (global.effectsEmitter, snd_crashed, false, 10); 
                     spark = instance_create(x, y, obj_laser_sonii);
                     spark.sprite_index = spr_masterspark;
-                    spark.image_angle = directionHold;
+                    if (instance_exists(obj_blackbackground) &amp;&amp; instance_exists(obj_chizuru) )
+                    {
+                        spark.image_angle = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);    
+                    }
+                    else
+                    {
+                        spark.image_angle = directionHold;
+                    }
                     spark.image_xscale = 1;
                     
                     if (instance_exists(obj_camera_chair))
@@ -665,6 +672,12 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     audio_play_sound_on (global.voiceEmitter, deathSound, false, 10); 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_louiehurt;
+    
+    if (!steam_get_achievement("BOSS6"))
+    {
+        steam_set_achievement("BOSS6");
+    }
+    
     instance_destroy(self);
 }
 </string>

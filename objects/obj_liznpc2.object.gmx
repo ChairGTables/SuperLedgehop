@@ -40,6 +40,12 @@ if (instance_exists(obj_chizuru))
     obj_chizuru.image_xscale = 1;
     view_xview = obj_chizuru.x - (view_wview/2);
     view_yview = obj_chizuru.y - (view_hview/2);
+    obj_chizuru.vspeed = 0;
+    obj_chizuru.hspeed = 0;
+    obj_chizuru.upmomentum = 0;
+    obj_chizuru.rightmomentum = 0;
+    obj_chizuru.leftmomentum = 0;
+    obj_chizuru.downmomentum = 0;
 }
 
 if (instance_exists(obj_wall))
@@ -252,6 +258,7 @@ if (state == 0)
 {
     if (global.disableCutscenes == 1)
     {
+        state = 1;
         script_execute(scr_lizdefeatskip);
     }
     else
@@ -459,7 +466,7 @@ if (state == 1 &amp;&amp; !instance_exists(obj_lizdialogue2))
             <string>sprite_index = spr_lizhurt;
 alarm[1] = 10;
 image_angle = random_range(0, 10);
-audio_play_sound_on (global.effectsEmitter, snd_enemydamage, false, 10); 
+audio_play_sound_on (global.effectsEmitter, snd_enemydamagelower, false, 10); 
 instance_create(other.x, other.y, obj_smallcircle);
 direction = other.direction;
 speed = 1;

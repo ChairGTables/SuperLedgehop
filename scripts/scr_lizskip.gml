@@ -1,6 +1,7 @@
 if (state < 2)
 {
     global.isCutscene = false;
+    script_execute(scr_musicfadekill);
     state = 2;
     room_speed = 30;
     if (instance_exists(obj_antagonisttalk))

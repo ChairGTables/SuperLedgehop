@@ -240,7 +240,7 @@ global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "angry";
 global.emotionAntagonistArray[11] = "angry";
 
-global.messageArray[12] = "I even gave you cool name themed after your sister.
+global.messageArray[12] = "I even gave you a cool name themed after your sister.
 You're both named after firework types.";
 global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "angry";

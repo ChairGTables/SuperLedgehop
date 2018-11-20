@@ -552,6 +552,12 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_yuutohurt;
     death.name = "yuuto";
+    
+    if (!steam_get_achievement("YUUTO"))
+    {
+        steam_set_achievement("YUUTO");
+    }
+    
     if (instance_exists(obj_yuutorock))
     {
         instance_destroy(obj_yuutorock);

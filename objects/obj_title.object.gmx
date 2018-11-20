@@ -194,7 +194,9 @@ global.isGamepad = true;
 
 global.titleSelection = 0;
 global.titleState = 0;
-
+global.totalReflected = 0;
+global.totalAbsorbed = 0;
+global.totalDeaths = 0;
 global.isCutscene = false;
 global.stageState = 0;
 
@@ -207,7 +209,7 @@ global.hoursPassed = 0;
 global.shineget = 1;
 global.bossvirgin = 1;
 
-
+global.beginningStart = 0;
 
 global.lowhp = 0;
 
@@ -869,6 +871,49 @@ if (global.titleSelection &lt; 0 &amp;&amp; global.titleState == 0)
     global.titleSelection = 3;
 }
       
+//audio fix
+
+if (global.musicVolume &lt; 0)
+{
+    global.musicVolume = 0;
+    audio_emitter_gain(global.musicEmitter, global.musicVolume);
+    script_execute(scr_autosave);
+}
+
+if (global.musicVolume &gt; 1)
+{
+    global.musicVolume = 1;
+    audio_emitter_gain(global.musicEmitter, global.musicVolume);
+    script_execute(scr_autosave);
+}
+
+if (global.effectsVolume &lt; 0)
+{
+    global.effectsVolume = 0;
+    audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
+    script_execute(scr_autosave);
+}
+
+if (global.effectsVolume &gt; 1)
+{
+    global.effectsVolume = 1;
+    audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
+    script_execute(scr_autosave);
+}
+
+if (global.voiceVolume &lt; 0)
+{
+    global.voiceVolume = 0;
+    audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
+    script_execute(scr_autosave);
+}
+
+if (global.voiceVolume &gt; 1)
+{
+    global.voiceVolume = 0;
+    audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
+    script_execute(scr_autosave);
+}
 </string>
           </argument>
         </arguments>

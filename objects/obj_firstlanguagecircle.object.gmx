@@ -129,6 +129,27 @@ file_text_readln(fileId);
 
 
 file_text_close(fileId);
+
+if (global.musicVolume &lt; 0 || global.musicVolume &gt; 1)
+{
+    global.musicVolume = 0.75;
+    audio_emitter_gain(global.musicEmitter, global.musicVolume);
+    script_execute(scr_autosave);
+}
+
+if (global.effectsVolume &lt; 0 || global.effectsVolume &gt; 1)
+{
+    global.effectsVolume = 0.45;
+    audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
+    script_execute(scr_autosave);
+}
+
+if (global.voiceVolume &lt; 0 || global.voiceVolume &gt; 1)
+{
+    global.voiceVolume = 0.70;
+    audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
+    script_execute(scr_autosave);
+}
 </string>
           </argument>
         </arguments>

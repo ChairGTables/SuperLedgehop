@@ -9,10 +9,10 @@ if (other.absorb == 1 && absorbed == 0)
     else if (instance_number(obj_absorbbubble) < 100)
     {
     
-    
+        
         absorbed = 1;
         friendly = 1;
-        
+        global.totalAbsorbed += 1;
         alarm[0] = global.chizurupoptime;
         audio_stop_sound(snd_absorb);
         audio_play_sound_on (global.effectsEmitter, snd_absorb, false, 10); 

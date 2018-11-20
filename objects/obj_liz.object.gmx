@@ -661,6 +661,11 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     var death = instance_create(x, y, obj_bossdeath);
     death.sprite_index = spr_lizhurt;
     
+    if (!steam_get_achievement("BOSS3"))
+    {
+        steam_set_achievement("BOSS3");
+    }
+    
     if (global.highestLevel &lt; 3)
     {
         global.highestLevel = 3;

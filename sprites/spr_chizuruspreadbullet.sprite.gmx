@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>1</bbox_left>
-  <bbox_right>10</bbox_right>
+  <bbox_left>0</bbox_left>
+  <bbox_right>11</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>9</bbox_bottom>
+  <bbox_bottom>11</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>12</width>
-  <height>10</height>
+  <height>12</height>
   <frames>
     <frame index="0">images\spr_chizuruspreadbullet_0.png</frame>
   </frames>
