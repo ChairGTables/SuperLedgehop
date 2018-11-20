@@ -64,7 +64,7 @@ break;
 
 case 2:
 
-global.messageArray[0] = "なんだこれぇ！？";
+global.messageArray[0] = "なんだこいつ！？";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "angry";
@@ -76,7 +76,7 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "angry";
 
 
-global.messageArray[2] = "でもアンタと付き合ってる時間はないんだ、";
+global.messageArray[2] = "アンタと付き合ってる時間はないんだ、";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "neutral";

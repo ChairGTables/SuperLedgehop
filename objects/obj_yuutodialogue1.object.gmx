@@ -196,12 +196,12 @@ global.categoryArray[12] = "left";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "neutral";
 
-global.messageArray[13] = "言ってくれるわね！";
+global.messageArray[13] = "言ってくれるわね！売られた喧嘩は買うわよ！";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "neutral";
 global.emotionAntagonistArray[13] = "neutral";
 
-global.messageArray[14] = "あなたの方向転換を封印したわ、売られた喧嘩は買うわよ！";
+global.messageArray[14] = "方向転換できない中でどれだけ戦えるか、見せてみなさい！";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "neutral";
 global.emotionAntagonistArray[14] = "neutral";

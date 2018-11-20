@@ -106,11 +106,11 @@ global.emotionAntagonistArray[0] = "happy";
 
 if (global.isGamepad == true)
 {
-    global.messageArray[1] = " L・Rボタンで他の武器も使えるからな。";
+    global.messageArray[1] = "L・Rボタンで他の弾も使えるからな。";
 }
 else
 {
-    global.messageArray[1] = "マウスのスクロールかTabキーで他の武器も使えるからな。";
+    global.messageArray[1] = "マウスのスクロールかTabキーで他の弾も使えるからな。";
 }
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";

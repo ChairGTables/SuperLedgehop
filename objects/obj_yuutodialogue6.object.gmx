@@ -75,28 +75,28 @@ global.emotionAntagonistArray[4] = "angry";
 break;
 
 case 2:
-global.messageArray[0] = "今度は何も...";
+global.messageArray[0] = "どうした？";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
 
 
-global.messageArray[1] = "新しい事して...";
+global.messageArray[1] = "今度は何も新しい事して...";
 global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
 
-global.messageArray[2] = "こなかったじゃないか、";
+global.messageArray[2] = "...こなかったじゃねえか！";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "それでまだ";
+global.messageArray[3] = "楽勝だな！";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "隠れてるつもりか？";
+global.messageArray[4] = "それでまだ隠れてるつもりか？";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";

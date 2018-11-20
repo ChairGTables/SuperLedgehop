@@ -242,44 +242,45 @@ global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "angry";
 global.emotionAntagonistArray[12] = "sad";
 
-global.messageArray[13] = "Erm, I meant you're bad at being a bootleg.";
+global.messageArray[13] = "その、パチモンでいるのが下手だなって。";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "What's that even supposed to mean?";
+global.messageArray[14] = "どういうこと？";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "happy";
 global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "Well, a bootleg is a bad copy of something.";
+global.messageArray[15] = "パチモンってのは人をだますためにあるんだろ？";
 global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "curious";
 global.emotionAntagonistArray[15] = "sad";
 
-global.messageArray[16] = "You might not be as good as your original,
-but you're still fun to me!";
+global.messageArray[16] = "本物程じゃないかもしれないけど、
+楽しかったぜ！";
 global.categoryArray[16] = "left";
 global.emotionProtagonistArray[16] = "happy";
 global.emotionAntagonistArray[16] = "sad";
 
-global.messageArray[17] = "O-Oh. Thanks...";
+global.messageArray[17] = "あ、ありがとう。";
 global.categoryArray[17] = "right";
 global.emotionProtagonistArray[17] = "happy";
 global.emotionAntagonistArray[17] = "sad";
 
-global.messageArray[18] = "But, wait! I still want to be 
-more than that and be great as myself!";
+global.messageArray[18] = "でも、
+私は私として…";
 global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "happy";
 global.emotionAntagonistArray[18] = "neutral";
 
-global.messageArray[19] = "Kyah! The ground's shaking!";
+global.messageArray[19] = "きゃあっ！
+揺れてる！？";
 global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "sad";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "Oh! I gotta bust outta here then!";
+global.messageArray[20] = "ここから出ねぇと！";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "sad";
 global.emotionAntagonistArray[20] = "sad";

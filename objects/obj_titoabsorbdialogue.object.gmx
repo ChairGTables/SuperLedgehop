@@ -110,7 +110,7 @@ global.emotionAntagonistArray[0] = "happy";
 
 
 global.messageArray[1] = "今は心配しなくていいが、
-敵弾を吸収するとSHメーターが減る。";
+敵弾を吸収するとSH(シャイン)メーターが減る。";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "neutral";

@@ -201,7 +201,7 @@ global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "neutral";
 global.emotionAntagonistArray[12] = "angry";
 
-global.messageArray[13] = "本物の銃にそれで太刀打ち できると思ってるのか？
+global.messageArray[13] = "本物の銃にそれで太刀打ちできると思ってるのか？
 お前の頭はハッピーセットか！？";
 global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "neutral";

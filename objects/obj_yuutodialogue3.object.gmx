@@ -112,7 +112,7 @@ break;
 
 case 2:
 
-global.messageArray[0] = "ええっ！？火を奪った...！";
+global.messageArray[0] = "ええっ！？火を奪った...！？";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
 global.emotionAntagonistArray[0] = "angry";
@@ -150,22 +150,22 @@ global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "¡No! ¡Ni siquiera sé quién eres!";
+global.messageArray[7] = "あなたとも初対面なのに！";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "angry";
 
-global.messageArray[8] = "あなたとも初対面なのに！";
+global.messageArray[8] = "知ってるわけないじゃない！";
 global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "curious";
 global.emotionAntagonistArray[8] = "angry";
 
-global.messageArray[9] = "知ってるわけないじゃない！";
+global.messageArray[9] = "さっさと消えなさい！";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "curious";
 global.emotionAntagonistArray[9] = "angry";
 
-global.messageArray[10] = "さっさと消えなさい！シャインの効かないレーザーで...";
+global.messageArray[10] = "シャインの効かないレーザーで...";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "curious";
 global.emotionAntagonistArray[10] = "angry";

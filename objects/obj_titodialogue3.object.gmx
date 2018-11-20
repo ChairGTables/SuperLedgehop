@@ -214,7 +214,7 @@ global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "すると敵の弾を吸収できる！";
+global.messageArray[9] = "そして離すと触れた敵弾を吸収できる！";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "happy";
 global.emotionAntagonistArray[9] = "neutral";
