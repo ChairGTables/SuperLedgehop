@@ -228,7 +228,7 @@ global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "angry";
 
 global.messageArray[9] = "今あの変な政府の建物に行かないと、
-もう二度と本物の家族に会えないかもしれないだぞ！";
+もう二度と本物の家族に会えないかもしれないんだぞ！";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "sad";
 global.emotionAntagonistArray[9] = "angry";
@@ -249,7 +249,7 @@ global.emotionProtagonistArray[12] = "sad";
 global.emotionAntagonistArray[12] = "sad";
 
 global.messageArray[13] = "さっき変な奴に会って、
-そいつが言うには、そこに向かってるらしい。";
+そいつが言うには、そいつもそこに向かってるらしい。";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "sad";
 global.emotionAntagonistArray[13] = "sad";
@@ -264,7 +264,7 @@ global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "sad";
 global.emotionAntagonistArray[15] = "angry";
 
-global.messageArray[16] = "でもお兄さんの顔なんて覚えてるのか？";
+global.messageArray[16] = "でもお前の兄貴の顔なんて覚えてるのか？";
 global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "sad";
 global.emotionAntagonistArray[16] = "angry";

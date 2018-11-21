@@ -173,6 +173,139 @@ global.emotionProtagonistArray[23] = "neutral";
 global.emotionAntagonistArray[23] = "happy";
 break;
 
+case 2:
+global.messageArray[0] = "いい加減頭来た！
+ブッ殺してやるわ！！";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "…あれ？";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "「クロセット」？";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "おいおい、俺が本当に
+CHEESEMASTER9000なんてつけると思ったか？";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "でも結局食べ物の名前から取ってるし…";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "そりゃあクロワッサンだろ？";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "たっ、確かに…";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "でもそんな名前にするぐらいならもっといい食べ物にするぜ？
+例えば…";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "チーズステーキ！
+んん～っ！！いいねぇ！！";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "でもかしこさ上げたのにこれじゃあ結局脳味噌
+チーズのまんまだな…";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "だから私の脳味噌はチーズ
+なんかじゃないって言ってるでしょ！";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "おいおい、せっかく呪いを解いて...";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "お前の姉貴に合わせて花火の種類から取った名前まで付けてやったのに、
+少しは感謝しろよな？";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "それともCHEESEMASTER9000に戻る方がいいか？";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "やめてよ！";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "私…　この名前、気に入ったかも。
+ありがとう。";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "お前、デフォルトのモブにしては結構強かったし...";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "今後の事を考えると恐ろしいぐらいだ。";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "curious";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "さっきも見たな、一見弱そうだけど機転を
+効かせて個性を出してた奴…";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "happy";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "ちょうどお前みたいな！";
+global.categoryArray[19] = "left";
+global.emotionProtagonistArray[19] = "happy";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "なんで急にそんなに優しくなっちゃってるの？";
+global.categoryArray[20] = "right";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "angry";
+
+global.messageArray[21] = "姉さんはまだあなたを殺す気でいるはずよ。";
+global.categoryArray[21] = "right";
+global.emotionProtagonistArray[21] = "happy";
+global.emotionAntagonistArray[21] = "angry";
+
+global.messageArray[22] = "あっ、ああ…";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "neutral";
+global.emotionAntagonistArray[22] = "angry";
+
+global.messageArray[23] = "でもありがとう。
+あなたに逢えて良かったわ。";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "happy";
+break;
+
 default:
 global.messageArray[0] = "I'M GONNA KILL YOU!!!";
 global.categoryArray[0] = "right";
