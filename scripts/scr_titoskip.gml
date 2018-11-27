@@ -36,6 +36,10 @@ if (state < 2)
     {
         instance_destroy(obj_kamurodialogue3);
     }
+    if (instance_exists(obj_tempwall))
+    {
+        instance_destroy(obj_tempwall);
+    }
     script_execute(scr_stopmusic);
     global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10);
     instance_create(x, y, obj_blackfadein);

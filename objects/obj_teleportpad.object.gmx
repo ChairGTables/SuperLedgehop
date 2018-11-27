@@ -80,6 +80,12 @@ yOffset = 0;
     
     if(pad.teleportID == teleportID &amp;&amp; canTeleport == 1 &amp;&amp; pad.x != x)
     {
+        other.upmomentum = 0;
+        other.rightmomentum = 0;
+        other.leftmomentum = 0;
+        other.downmomentum = 0;
+        other.hspeed = 0;
+        other.vspeed = 0;
         other.x = pad.x + pad.xOffset;
         other.y = pad.y + pad.yOffset;
         canTeleport = 0;
@@ -87,12 +93,6 @@ yOffset = 0;
         view_xview = other.x - view_wview/2;
         view_yview = other.y - view_hview/2;
         instance_create(x, y, obj_blackfadein);
-        other.upmomentum = 0;
-        other.rightmomentum = 0;
-        other.leftmomentum = 0;
-        other.downmomentum = 0;
-        other.hspeed = 0;
-        other.vspeed = 0;
         break;
     }
 }

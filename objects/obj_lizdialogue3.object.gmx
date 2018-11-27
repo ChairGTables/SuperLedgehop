@@ -37,6 +37,24 @@ global.messageLimit = 2;
 
 switch(global.language)
 {
+case 2:
+global.messageArray[0] = "いけねっ！ミスった！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "でも警官じゃねえか。関係ねえよ、どっちも敵だろ？";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "とどめ刺せばいいじゃん。";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+break;
+
 case 1:
 global.messageArray[0] = "¡Oh, rayos! ¡Fallé!";
 global.categoryArray[0] = "left";

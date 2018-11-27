@@ -110,7 +110,7 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "痛いじゃないか、
+global.messageArray[2] = "痛いじゃねえか、
 訴えて保険金もらうぞ！？";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
@@ -136,7 +136,7 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "いや…　別に俺仕事なんてしてないけど…";
+global.messageArray[7] = "いや…　別に俺仕事なんてしてねえけど…";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";
@@ -147,7 +147,7 @@ global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "angry";
 
-global.messageArray[9] = "計画？そんな話聞いてないぞ！？";
+global.messageArray[9] = "計画？そんな話一度も聞いてねえぞ！？";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "sad";
 global.emotionAntagonistArray[9] = "angry";

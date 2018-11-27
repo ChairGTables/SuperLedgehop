@@ -190,6 +190,9 @@ if (global.misc1 &gt; 50)
     instance_create(960, 0, obj_titlecorruption);
 }
 
+global.musicVolume = global.volumeHold;
+audio_emitter_gain(global.musicEmitter,   global.musicVolume);
+
 global.isGamepad = true;
 
 global.titleSelection = 0;
@@ -693,6 +696,8 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                 }
                 
                 audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
+                
+                
             }
             /*
             if (joy_left = false)
@@ -860,6 +865,30 @@ if gamepad_button_check_pressed(0, gp_face1)
     
 }
 
+
+if (global.titleSelection == 5 &amp;&amp; global.titleState == 1)
+{
+    if (!audio_is_playing(snd_chizuruvoicesample) )
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_chizuruvoicesample, true, 10); 
+    }
+}
+else
+{
+    audio_stop_sound(snd_chizuruvoicesample);
+}
+
+if (global.titleSelection == 4 &amp;&amp; global.titleState == 1)
+{
+    if (!audio_is_playing(snd_waveblast) )
+    {
+        audio_play_sound_on (global.effectsEmitter, snd_waveblast, true, 10); 
+    }
+}
+else
+{
+    audio_stop_sound(snd_waveblast);
+}
 
 
 if (global.titleSelection &gt; 3 &amp;&amp; global.titleState == 0)

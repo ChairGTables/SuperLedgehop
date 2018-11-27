@@ -52,7 +52,7 @@ image_xscale = -1;
           <argument>
             <kind>1</kind>
             <string>x = view_xview + (view_wview/2) - 105;
-y = view_yview + (view_hview/2) + 174;
+y = view_yview + (view_hview/2) + 188;
 </string>
           </argument>
         </arguments>

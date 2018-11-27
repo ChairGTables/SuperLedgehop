@@ -429,7 +429,14 @@ if (gamepad_button_check_pressed(0, gp_shoulderl) &amp;&amp; joy_lb == false)
     global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
-        global.shottype -= 1;
+        if (global.shottype == 0)
+        {
+            global.shottype = global.maxshottype;
+        }
+        else
+        {
+            global.shottype -= 1;
+        }
         script_execute(scr_checkbulletreverse);
         if !(instance_exists(obj_chizurucurrentbullet))
         {

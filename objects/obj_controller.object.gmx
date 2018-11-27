@@ -250,22 +250,50 @@ if (instance_exists(obj_chizuru))
         }
         if (global.spreadcount &lt;= 0 &amp;&amp; global.shottype == 2)
         {
-            global.shottype = 0;
+            if (global.enhancedcount &gt; 0)
+            {
+                global.shottype = 1;
+            }
+            else
+            {
+                global.shottype = 0;
+            }
             weaponChanged = true;
         }
         if (global.rapidcount &lt;= 0 &amp;&amp; global.shottype == 3)
         {
-            global.shottype = 0;
+            if (global.enhancedcount &gt; 0)
+            {
+                global.shottype = 1;
+            }
+            else
+            {
+                global.shottype = 0;
+            }
             weaponChanged = true;
         }
         if (global.firecount &lt;= 0 &amp;&amp; global.shottype == 4)
         {
-            global.shottype = 0;
+            if (global.enhancedcount &gt; 0)
+            {
+                global.shottype = 1;
+            }
+            else
+            {
+                global.shottype = 0;
+            }
             weaponChanged = true;
         }
         if (global.icecount &lt;= 0 &amp;&amp; global.shottype == 5)
         {
-            global.shottype = 0;
+            if (global.enhancedcount &gt; 0)
+            {
+                global.shottype = 1;
+            }
+            else
+            {
+                global.shottype = 0;
+            }
             weaponChanged = true;
         }
     }

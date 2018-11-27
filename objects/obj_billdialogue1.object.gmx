@@ -36,6 +36,62 @@ global.messageLimit = 9;
 
 switch (global.language)
 {
+case 2:
+global.messageArray[0] = "チズマ議員をどこにやった！？";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "おおっと。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "それはあなたが答えるべき質問ではないでしょうか、「元」議員殿？";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "何のつもりだ？何が言いたいんだ！";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "私のチズマ議員をさらったのはあなたでしょう？";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "俺が！？";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "どうして？";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "ですから、それは あ な た が 答えるべき話でしょう？";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "もしかして議員の座を追われた復讐のつもりでしょうか？";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "このド腐れ野郎が！！";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+break;
+
 case 1:
 global.messageArray[0] = "¿¡Dónde está el senador!?";
 global.categoryArray[0] = "left";

@@ -44,5 +44,5 @@ if (state < 2)
     {
         instance_create(x, y, obj_skippingcutscene);
     }
-    x = -1000;
+    instance_destroy(self);
 }

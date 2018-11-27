@@ -95,7 +95,7 @@ global.effectsVolume = file_text_read_real(fileId);
 file_text_readln(fileId);
 global.voiceVolume   = file_text_read_real(fileId);
 file_text_readln(fileId);
-global.volumeHold = 1;
+global.volumeHold = global.musicVolume;
 
 // Sound emitters
 global.musicEmitter   = audio_emitter_create();

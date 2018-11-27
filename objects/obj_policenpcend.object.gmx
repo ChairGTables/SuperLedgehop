@@ -123,20 +123,20 @@ if (hFinish == 1 &amp;&amp; vFinish == 1 &amp;&amp; state == 0)
             <string>if (visible == 1)
 {
 
-
+    //audio_stop_sound(snd_crashed);
     instance_create(x, y, obj_explosion);
     
     if (sprite_index == spr_policerifle)
     {
-        audio_play_sound_on (global.voiceEmitter, snd_death12, false, 10);
+        audio_play_sound_on (global.voiceEmitter, snd_death12lower, false, 10);
     }
     else if (sprite_index == spr_policegrenade)
     {
-        audio_play_sound_on (global.voiceEmitter, snd_death13, false, 10);
+        audio_play_sound_on (global.voiceEmitter, snd_death13lower, false, 10);
     }
     else
     {
-        audio_play_sound_on (global.voiceEmitter, snd_death10, false, 10);
+        audio_play_sound_on (global.voiceEmitter, snd_death10lower, false, 10);
     }
 
     visible = 0;

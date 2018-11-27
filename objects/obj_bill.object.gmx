@@ -715,14 +715,14 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
                 steam_set_achievement("QUARTER");
             }
         }
-        if (global.minutesPassed &lt; 15)
+        if (global.minutesPassed &lt; 15 &amp;&amp; global.hoursPassed &lt; 1)
         {
             if (!steam_get_achievement("FIFTEEN"))
             {
                 steam_set_achievement("FIFTEEN");
             }
         }
-        if (global.minutesPassed &lt; 30)
+        if (global.minutesPassed &lt; 30 &amp;&amp; global.hoursPassed &lt; 1)
         {
             if (!steam_get_achievement("THIRTY"))
             {

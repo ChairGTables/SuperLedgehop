@@ -39,6 +39,245 @@ global.messageLimit = 40;
 
 switch(global.language)
 {
+case 2:
+global.messageArray[0] = "リズ！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "お前か？お前なのか！？";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "ティトさん…？";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "どうしてあなたがここに…？";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "助けに来たと言ってイカしたおじさんポイントを貯めたい所だが…";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "curious";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "警察が俺の姪を殺しにかかってるんだ！
+それで俺は助けるために…！";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "待って、まさかあの子がいつも話してくれた…？";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "ああ！イカす奴だと思わないか？";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "sad";
+
+global.messageArray[8] = "ああっ！ごめんなさい！
+あなたの姪を撃ってしまうなんて！";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "sad";
+
+global.messageArray[9] = "いいんだよ。撃つのが先、友達は後だ。
+俺だっていつもチズルのことを撃ってる。";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "curious";
+global.emotionAntagonistArray[9] = "sad";
+
+global.messageArray[10] = "...";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "curious";
+global.emotionAntagonistArray[10] = "sad";
+
+
+global.messageArray[11] = "ほら、練習だよ練習！
+俺みたいにイカした奴になるように訓練してるんだ！";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "sad";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "この件であなたを逮捕したいのは山々だけど…。";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "sad";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "逮捕するならしろよ、昇進したいんだろ？";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "curious";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "いいえ、当分昇進なんて無いわ。";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "curious";
+global.emotionAntagonistArray[14] = "sad";
+
+
+global.messageArray[15] = "そんな訳ないだろ、
+俺が今までに見た中で一番の警官だ、冗談抜きでな！";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "sad";
+
+
+global.messageArray[16] = "ンな訳あるか愚か者
+がァァァァァァァァァァァァァァァァァァァァァァァァァァァァァァァ！！！";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "angry";
+global.emotionAntagonistArray[16] = "sad";
+
+global.messageArray[17] = "あなたが議員だった頃、
+チンピラからあなたを守らないといけなかった時の事覚えてるの？";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "angry";
+global.emotionAntagonistArray[17] = "sad";
+
+global.messageArray[18] = "私は弾を外して、殺されかけた。";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "angry";
+global.emotionAntagonistArray[18] = "sad";
+
+global.messageArray[19] = "でもそこであなたがそいつを撃った！";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "angry";
+global.emotionAntagonistArray[19] = "sad";
+
+global.messageArray[20] = "私があなたを守らないといけないのに！";
+global.categoryArray[20] = "right";
+global.emotionProtagonistArray[20] = "angry";
+global.emotionAntagonistArray[20] = "sad";
+
+
+global.messageArray[21] = "そんな議員がどこにいるってのよ！？";
+global.categoryArray[21] = "right";
+global.emotionProtagonistArray[21] = "angry";
+global.emotionAntagonistArray[21] = "sad";
+
+
+global.messageArray[22] = "あなたの方がずっと重要人物なのに！";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "angry";
+global.emotionAntagonistArray[22] = "sad";
+
+
+global.messageArray[23] = "それでまたこんな事になって、
+私は下っ端警官のままで…。";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
+global.emotionAntagonistArray[23] = "sad";
+
+global.messageArray[24] = "まあまあ、落ち着けよ。";
+global.categoryArray[24] = "left";
+global.emotionProtagonistArray[24] = "sad";
+global.emotionAntagonistArray[24] = "sad";
+
+global.messageArray[25] = "何でそんなに泣いてるんだよ？";
+global.categoryArray[25] = "left";
+global.emotionProtagonistArray[25] = "curious";
+global.emotionAntagonistArray[25] = "sad";
+
+
+global.messageArray[26] = "警官失格だってか？
+俺なんか議員だったはずが今では犯罪者だ。";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "angry";
+global.emotionAntagonistArray[26] = "sad";
+
+global.messageArray[27] = "俺も人間、お前も人間。
+そこに違いは無いんだぜ。";
+global.categoryArray[27] = "left";
+global.emotionProtagonistArray[27] = "curious";
+global.emotionAntagonistArray[27] = "sad";
+
+global.messageArray[28] = "でもどうしたのよ？
+皆の事を大事にする素晴らしい政治家だったはずなのに…。";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "curious";
+global.emotionAntagonistArray[28] = "sad";
+
+
+global.messageArray[29] = "俺にも分からねえ。だが、
+新しく入って来た議員の中に怪しい奴らがいてな。";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "angry";
+global.emotionAntagonistArray[29] = "sad";
+
+global.messageArray[30] = "来て早々に俺の事を告発して俺は議員の座を追われたって訳さ。";
+global.categoryArray[30] = "left";
+global.emotionProtagonistArray[30] = "sad";
+global.emotionAntagonistArray[30] = "sad";
+
+global.messageArray[31] = "これだから私も警官失格なのよ！";
+global.categoryArray[31] = "right";
+global.emotionProtagonistArray[31] = "sad";
+global.emotionAntagonistArray[31] = "sad";
+
+
+global.messageArray[32] = "新しい議員の警備を任されたけど...";
+global.categoryArray[32] = "right";
+global.emotionProtagonistArray[32] = "sad";
+global.emotionAntagonistArray[32] = "sad";
+
+
+global.messageArray[33] = "そいつはずっとスティールズ長官のうさんくさい
+アレコレに付き合わされてるだけ！";
+global.categoryArray[33] = "right";
+global.emotionProtagonistArray[33] = "sad";
+global.emotionAntagonistArray[33] = "sad";
+
+global.messageArray[34] = "それで今度は長官があなたの姪を捕まえろだなんて…。";
+global.categoryArray[34] = "right";
+global.emotionProtagonistArray[34] = "sad";
+global.emotionAntagonistArray[34] = "sad";
+
+
+global.messageArray[35] = "私は昇進してもっと給料が欲しかっただけなのに…
+私は警官らしく正しい事をしたかっただけなのに…！！";
+global.categoryArray[35] = "right";
+global.emotionProtagonistArray[35] = "sad";
+global.emotionAntagonistArray[35] = "sad";
+
+
+global.messageArray[36] = "うぐっ…。";
+global.categoryArray[36] = "right";
+global.emotionProtagonistArray[36] = "sad";
+global.emotionAntagonistArray[36] = "sad";
+
+
+global.messageArray[37] = "ごめんなさい。あははっ…。";
+global.categoryArray[37] = "right";
+global.emotionProtagonistArray[37] = "sad";
+global.emotionAntagonistArray[37] = "sad";
+
+global.messageArray[38] = "まだ血が出てる…。でも私は…イカした警官だから…。
+本当に強いんだから…！";
+global.categoryArray[38] = "right";
+global.emotionProtagonistArray[38] = "sad";
+global.emotionAntagonistArray[38] = "sad";
+
+
+global.messageArray[39] = "お前はよくやったよ。今は休め。";
+global.categoryArray[39] = "left";
+global.emotionProtagonistArray[39] = "neutral";
+global.emotionAntagonistArray[39] = "sad";
+
+
+global.messageArray[40] = "治療のことなら優朋に任せろ。
+イカした魔法使いなんだぜ。";
+global.categoryArray[40] = "left";
+global.emotionProtagonistArray[40] = "happy";
+global.emotionAntagonistArray[40] = "sad";
+break;
+
 case 1:
 global.messageArray[0] = "¡Liz!";
 global.categoryArray[0] = "left";
