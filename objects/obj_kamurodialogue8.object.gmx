@@ -129,7 +129,7 @@ global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "angry";
 
 global.messageArray[18] = "¡No! ¡Lo vi con mis propios ojos!";
-global.categoryArray[18] = "left";
+global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "angry";
 
@@ -271,7 +271,7 @@ global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "angry";
 
 global.messageArray[18] = "No! I saw it with my own eyes!";
-global.categoryArray[18] = "left";
+global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "angry";
 

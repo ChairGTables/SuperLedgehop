@@ -156,6 +156,7 @@
     <instance objName="obj_trashbin" x="2080" y="128" name="inst_8D68AAA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trashbin" x="2112" y="128" name="inst_E60F7083" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trashbin" x="2096" y="160" name="inst_CAC275DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="2176" y="3520" name="inst_1A390584" locked="0" code="" scaleX="22.5" scaleY="8.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_grassfull" x="2144" y="2848" w="32" h="32" xo="32" yo="0" id="10051182" name="inst_D98A79AF" depth="1000007" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

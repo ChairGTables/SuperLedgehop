@@ -60,11 +60,11 @@ else
     
     if (image_xscale &lt; 0)
     {
-        audio_play_sound_on (global.voiceEmitter, snd_death13, false, 10);
+        audio_play_sound_on (global.voiceEmitter, snd_death13lower, false, 10);
     }
     else
     {
-        audio_play_sound_on (global.voiceEmitter, snd_death12, false, 10);
+        audio_play_sound_on (global.voiceEmitter, snd_death12lower, false, 10);
     }
 
     visible = 0;

@@ -36,6 +36,128 @@ global.messageLimit = 22;
 
 switch(global.language)
 {
+case 2:
+global.messageArray[0] = "ぬぅ…まだこの仕事を辞めるわけには…";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "これで俺の話を聞く気になったか、白髪ババア？";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "だぁまりなさァァァァァァァァァァァ…
+ゲホッゲホッ";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "大丈夫か？";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "撃たれて平気な訳ないでしょ！";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "それにババアなんて歳でもないわ！
+まだ二十歳でもないのに金髪が白髪になる訳ないでしょ！？";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "でも俺には白に見えるぜ！";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "冗談じゃないわ！
+あなた本当に目が見えてるの！？";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "sad";
+
+global.messageArray[8] = "半分合ってるのかな？
+ちょうど今日自分が色覚障害持ちってことに気づいたから…。";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "sad";
+
+global.messageArray[9] = "つまり私は障害者に負けたって訳？";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "sad";
+
+global.messageArray[10] = "これで警察を首にならなきゃいいけど。";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "sad";
+
+global.messageArray[11] = "あーもう！色覚障害なんて戦うのに何も関係ないだろ！？";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "それでお前が首になるんならお前の上司が何も「見えてない」ってことになるぜ！";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "もし関係があったとしても、俺は適応するし他の奴らみたいに戦える！";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "とにかく、それはいいんだ。一番重要なのはお前がイカしてたって事だ。";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "curious";
+global.emotionAntagonistArray[14] = "sad";
+
+global.messageArray[15] = "お前、俺が撃った他の警官よりも何倍も強かったぜ！";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "...";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "happy";
+global.emotionAntagonistArray[16] = "sad";
+
+global.messageArray[17] = "それなら本当に逮捕しないと…。";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "happy";
+global.emotionAntagonistArray[17] = "sad";
+
+global.messageArray[18] = "待てよ！正当防衛だって、大丈夫だろ？";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "curious";
+global.emotionAntagonistArray[18] = "sad";
+
+global.messageArray[19] = "警官を撃ってるのよ！警官の私を殺しかけたのよ！";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "curious";
+global.emotionAntagonistArray[19] = "sad";
+
+global.messageArray[20] = "正当防衛な訳ないわ、バカ！";
+global.categoryArray[20] = "right";
+global.emotionProtagonistArray[20] = "curious";
+global.emotionAntagonistArray[20] = "sad";
+
+global.messageArray[21] = "撃つのが先、友達は後ってね！";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "happy";
+global.emotionAntagonistArray[21] = "sad";
+
+global.messageArray[22] = "そんな考えで許される訳ないわ！";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "happy";
+global.emotionAntagonistArray[22] = "sad";
+break;
+
 case 1:
 global.messageArray[0] = "Ahh. Así que me emocioné tanto por esto...";
 global.categoryArray[0] = "right";

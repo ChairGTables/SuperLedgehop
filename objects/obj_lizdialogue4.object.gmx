@@ -38,6 +38,54 @@ global.messageLimit = 8;
 
 switch(global.language)
 {
+case 2:
+global.messageArray[0] = "手ェ出すんじゃねえ！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "何だぁ！？";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "俺たちはそこの無関係な警官をだな…。";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "それが関係あるんだよ、バカ。";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "何様のつもりだ？お前を助けに来たってのによ。";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "って待てよ、俺何言ってるんだ？";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "俺たちはお前を殺せって言われたんだから言う意味ないな…。";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "って事であばよ、このクソウザやかまし脳味噌芋虫野郎。";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "ハッ、好きにしろ。";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+break;
+
 case 1:
 global.messageArray[0] = "¡Manos arriba!";
 global.categoryArray[0] = "left";

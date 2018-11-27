@@ -36,6 +36,99 @@ global.messageLimit = 15;
 
 switch(global.language)
 {
+case 2:
+global.messageArray[0] = "チズル。";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "リズのこと心配してくれてありがとな。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "あれ、知り合いなの？";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "あの…お前話聞いてたか？";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "いや、ずっとどうやったら兄貴にチーズステーキ
+奢ってもらえるか考えてた！";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "curious";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "チズル、お前なぁ…。";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "curious";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "でもリズは貧乏でお腹が空いてるんだってな。でも俺のほうが
+もっとお腹が空いてるぞ！チーズステーキ！チーズステーキ！";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "それが、リズはチーズステーキ大嫌いでな…。
+でも手当てのついでにちゃんと飯を食わせてやらないとな。";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "えー？お金大丈夫なの？";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "それは大丈夫だ。それにリズは俺のために尽くしてくれた。
+今はその恩返しがしたいんだ。";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "「尽くした」？なーんか怪しいなぁ…。";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+
+global.messageArray[11] = "おいおい。
+リズは俺が議員だったころに警備をしてくれてただけだって！";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "happy";
+global.emotionAntagonistArray[11] = "angry";
+
+
+global.messageArray[12] = "でもまあ、他の警官と違うところがあったから、
+お前に教えたみたいに、俺の技を教えてやったのさ。";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "neutral";
+
+
+global.messageArray[13] = "これ以上は長くなるからやめておこう。";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "さあ、早く兄貴を助けに行け！
+すべて終わったら残りの話もするさ！";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "チーズステーキとカレーが待ってるぞ！";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "happy";
+break;
+
 case 1:
 global.messageArray[0] = "Oye, Chizuru.";
 global.categoryArray[0] = "right";

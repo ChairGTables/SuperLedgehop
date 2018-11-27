@@ -959,7 +959,11 @@ else
             if (out == "chief")
             {
                 draw_set_color($ea8a89);
-                if (global.language == 1)
+                if (global.language == 2)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "警察署長");
+                }
+                else if (global.language == 1)
                 {
                     draw_text(view_xview + 10, view_yview+445 + bonusY, "Jefe de Policia");
                 }
@@ -975,7 +979,14 @@ else
             if (protagonist == "chizuru")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview + 10, view_yview+445 + bonusY, "Chizuru");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "チズル");
+                }
+                else
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Chizuru");
+                }
             }
             if (protagonist == "unknown")
             {
@@ -985,22 +996,47 @@ else
             if (protagonist == "yuuto")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Yuuto Ichika");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "一華優朋");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Yuuto Ichika");
+                }
             }
             if (protagonist == "liz")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Liz");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "リズ");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Liz");
+                }
             }
             if (protagonist == "tito")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview + 10, view_yview+445 + bonusY, "Tito");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "ティト");
+                }
+                else
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Tito");
+                }
             }
             if (protagonist == "thug")
             {
                 draw_set_color($9c92f5);
-                if (global.language == 1)
+                if (global.language == 2)
+                {
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "チンピラ");
+                }
+                else if (global.language == 1)
                 {
                     draw_text(view_xview + 10, view_yview+445 + bonusY, "Pandillero");
                 }
@@ -1012,7 +1048,14 @@ else
             if (protagonist == "crossette")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Crossette");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "クロセット");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Crossette");
+                }
             }
         }
         if (category == 0)
@@ -1021,17 +1064,39 @@ else
             if (antagonist == "tito")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Tito");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "ティト");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Tito");
+                }
+                
             }
             if (antagonist == "liz")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Liz");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "リズ");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Liz");
+                }
             }
             if (antagonist == "kamuro")
             {
                 draw_set_color($9c92f5);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Kamuro");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "カムロ");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Kamuro");
+                }
             }
             if (antagonist == "unknown")
             {
@@ -1041,22 +1106,47 @@ else
             if (antagonist == "yuuto")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Yuuto Ichika");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "一華優朋");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Yuuto Ichika");
+                }
             }
             if (antagonist == "default")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Default");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "デフォルト");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Default");
+                }
             }
             if (antagonist == "crossette")
             {
                 draw_set_color($ea8a89);
-                draw_text(view_xview+10, view_yview+445 + bonusY, "Crossette");
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "クロセット");
+                }
+                else
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Crossette");
+                }
             }
             if (antagonist == "bill")
             {
                 draw_set_color($ea8a89);
-                if (global.language == 1)
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "ビル・スティールズ");
+                }
+                else if (global.language == 1)
                 {
                     draw_text(view_xview+10, view_yview+445 + bonusY, "Gobernador Bill Steels");
                 }
@@ -1068,7 +1158,11 @@ else
             if (antagonist == "chizuma")
             {
                 draw_set_color($ea8a89);
-                if (global.language == 1)
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "チズマ");
+                }
+                else if (global.language == 1)
                 {
                     draw_text(view_xview+10, view_yview+445 + bonusY, "Senador Chizuma");
                 }
@@ -1081,7 +1175,11 @@ else
             if (antagonist == "ruffian")
             {
                 draw_set_color($ea8a89);
-                if (global.language == 1)
+                if (global.language == 2)
+                {
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "ゴロツキ");
+                }
+                else if (global.language == 1)
                 {
                     draw_text(view_xview+10, view_yview+445 + bonusY, "Rufian");
                 }
@@ -1224,7 +1322,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss == 0 || global.messageNumber &lt; global.messageLimit - 3))
+            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss != 1 || global.messageNumber &lt; global.messageLimit - 3) &amp;&amp; (boss != 2 || global.messageNumber &lt; global.messageLimit - 5))
 {
 
     sounding = 2;
@@ -1295,6 +1393,35 @@ else
         if (instance_exists(obj_shmupcontroller))
         {
             global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutointro, false, 10);
+        }
+        else if (instance_exists(obj_kamuronpc3))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_kamurofight, true, 10);
+        }
+        else if (instance_exists(obj_billnpc2))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_finalbossintro, false, 10);
+        }
+        else
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
+        }
+    }
+    else if (boss == 2 &amp;&amp; global.messageNumber == global.messageLimit - 5)
+    {
+        script_execute(scr_stopmusic);
+        // Music in rm1, priority 10, looping
+        if (instance_exists(obj_shmupcontroller))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutointro, false, 10);
+        }
+        else if (instance_exists(obj_kamuronpc3))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_kamurofight, true, 10);
+        }
+        else if (instance_exists(obj_billnpc2))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_finalbossintro, false, 10);
         }
         else
         {

@@ -76,7 +76,7 @@
 
     }
 }
-
+/*
 if (other.vspeed &lt; 0)
 {
     //other.y += other.vspeed * 2;
@@ -97,7 +97,7 @@ if (other.hspeed &lt; 0)
     //other.x += other.hspeed * 2;
     other.hspeed = 0;
 }
-
+*/
 if(other.upmomentum &gt; 0)
 {
     //other.y += other.upmomentum;

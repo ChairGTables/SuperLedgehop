@@ -55,7 +55,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(snd_chizuruvoicesample);
+            <string>//audio_stop_sound(snd_chizuruvoicesample);
 </string>
           </argument>
         </arguments>
@@ -81,10 +81,10 @@ else
             <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 1)
 {
     global.titleSelection = 5;
-    if (!audio_is_playing(snd_chizuruvoicesample) )
-    {
-        audio_play_sound_on (global.effectsEmitter, snd_chizuruvoicesample, true, 10); 
-    }
+    //if (!audio_is_playing(snd_chizuruvoicesample) )
+    //{
+        //audio_play_sound_on (global.voiceEmitter, snd_chizuruvoicesample, true, 10); 
+    //}
 }
 </string>
           </argument>

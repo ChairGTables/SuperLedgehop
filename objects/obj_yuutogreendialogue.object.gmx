@@ -158,7 +158,7 @@ global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[2] = "チズル、そこにある壺の数は間違いなく2つで、
+global.messageArray[2] = "チズル、そこに2つ壺が見えるでしょ？
 片方は緑よ。";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";

@@ -117,6 +117,113 @@ global.messageLimit = 19;
 
 switch (global.language)
 {
+case 2:
+global.messageArray[0] = "はぁ、危なかったぜ…。";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "おじさんとお前はここで何してたんだ？";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "その、あの人はあなたの事が心配で助けようとしていたの。";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "それで私も助けてくれたお礼に一緒に行くって…。";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "全く、俺はガキじゃねえっての！";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "これは俺の問題であって、おじさんには何も関係ないんだって！";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "アイツ、マジでストーカーだよなぁ…。";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "別にあの人はストーカーとは思わないけど…。";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "絶対ストーカーだって！";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "チズルは生き別れのお兄さんを探してるのよね？";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "うん！";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "きっとあなたがお兄さんを見つけたら自分から離れてしまうって思って
+最後の最後まで助けてあげようとしてるんだと思うけど…。";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "happy";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "んな訳ないだろ。";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "アイツはいつも通りだって。";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "いや、ティトさんは本当にあなたの事が…";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
+
+global.messageArray[15] = "しまった！";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "sad";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "警備員に見つかった！";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "sad";
+global.emotionAntagonistArray[16] = "sad";
+
+global.messageArray[17] = "私も戦うわ！";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "sad";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "今度こそ本当に強いって所...";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "sad";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "見せてあげる！";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "sad";
+global.emotionAntagonistArray[19] = "neutral";
+break;
+
+
 //Spanish
 case 1:
 global.messageArray[0] = "¡Phew! ¡Eso estuvo cerca!";
@@ -391,7 +498,7 @@ if (state == 1)
         obj_dialogue.auto = 1;
         if (!audio_is_playing(snd_yuutointro))
         {
-            audio_stop_sound(snd_escapetheme);
+            script_execute(scr_stopmusic);
             global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutointro, false, 10);
             obj_dialogue.alarm[1] = 67;
         }

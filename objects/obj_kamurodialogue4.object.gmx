@@ -155,6 +155,61 @@ global.messageLimit = 9;
 
 switch(global.language)
 {
+case 2:
+global.messageArray[0] = "おっ！アンタか！";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "まだ死んでいないようで良かったぜ。
+警官共の気を引いてくれてありがとよ！";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "兄貴はどこだ！！";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "もちろんアタイが捕まえたよ！";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "全ては腐敗を止めるためさ！";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "そんな！兄貴は何もしてねえっての！";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "アタイを殺そうとしたんだぞ！？";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "それはお前が悪い奴だからだろ！";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "違うね！アタイ達がヒーローだ！アンタ達じゃあない！";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "アタイたちに手ぇ出すんじゃないよ！";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "angry";
+break;
+
 case 1:
 global.messageArray[0] = "Oh, ¡oye! ¡Eres tú!";
 global.categoryArray[0] = "right";
