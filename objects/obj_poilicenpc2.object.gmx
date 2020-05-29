@@ -57,6 +57,8 @@ else
           <argument>
             <kind>1</kind>
             <string>instance_create(x, y, obj_explosion);
+audio_stop_sound(snd_crashed);
+audio_play_sound_on (global.effectsEmitter, snd_crashedlower, false, 10);
     
     if (image_xscale &lt; 0)
     {

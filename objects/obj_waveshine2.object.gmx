@@ -58,20 +58,59 @@ global.emotionAntagonistArray[2] = "angry";
 break;
 
 case 2:
-global.messageArray[0] = "Kyaaaahhh! Noooo!!!";
+global.messageArray[0] = "イスズーーーーッ！！";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "Alright. That’s it,
-I’m cutting you down!";
+global.messageArray[1] = "そこまでだ！ここで斬らせてもらう！";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "SHE SAID TO FIGHT!";
+global.messageArray[2] = "でも戦えって言ったのはアイツの方だろ！？";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "angry";
+break;
+
+
+case 3:
+global.messageArray[0] = "Aaaaaaaahh! Nãooo!!!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Tá. Já chega, vou te fatiar!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "ELA QUEM FALOU PRA LUTAR!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "angry";
+break;
+
+case 4:
+global.messageArray[0] = "Aaaaaahhh ! Noooon !!!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "C'est bon.
+Tu l'as fait, j'vais te découper !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "MAIS ELLE A DIT DE SE BATTRE !";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "angry";

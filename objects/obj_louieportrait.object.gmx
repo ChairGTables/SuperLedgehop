@@ -45,11 +45,22 @@ instance_create(x, y, obj_blacktransparentbackground);
 
 switch (global.language)
 {
+case 4:
+message1 = "Le héros est arrivé.";
+message2 = "Cependant, il n´est pas là pour te sauver.";
+message3 = "Parce que c'est TOI le criminel.";
+break;
+
+case 3:
+message1 = "O herói chegou.";
+message2 = "Porém, ele não está aqui para te salvar.";
+message3 = "Porque o criminoso é VOCÊ.";
+break;
 
 case 2:
-message1 = "ヒーローが到着しましたが...";
-message2 = "あなたを助けに来た訳ではありません。";
-message3 = "なぜならあなたが犯罪者だからです。";
+message1 = "ヒーローが到着しました！";
+message2 = "ただし、あなたを助けに来た訳ではありません。";
+message3 = "なぜなら あ な た も犯罪者だからです。";
 break;
 
 case 1:
@@ -270,11 +281,11 @@ if (eyeshineAlpha &lt; 1)
         draw_set_valign(fa_top);
         draw_set_halign(fa_left);
 
-        if (global.language == 2)
+        if (global.language == 2 || global.language == 4)
         {
             draw_set_font(fnt_talkjapanese);
         }
-        else if (global.language == 1)
+        else if (global.language == 1 || global.language == 3)
         {
             draw_set_font(fnt_talkforeign);
         }

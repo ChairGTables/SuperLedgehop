@@ -138,7 +138,14 @@ if (emotion == "curious" &amp;&amp; sprite_index != curiousSprite)
             <kind>1</kind>
             <string>if (mini == 0 &amp;&amp; visible == 1)
 {
-    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
+    if (global.language == 2 &amp;&amp; instance_exists(obj_defaultdialogue1) &amp;&amp; global.messageNumber == 16)
+    {
+        draw_sprite_ext(sprite_index, image_index, x, y-15, image_xscale, image_yscale, image_angle, c_white, image_alpha);
+    }
+    else
+    {
+        draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
+    }
 }
 </string>
           </argument>

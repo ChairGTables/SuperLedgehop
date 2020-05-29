@@ -256,6 +256,24 @@ if (!instance_exists(obj_louienpc1))
 {
     switch (global.language)
     {
+        case 4:
+        draw_set_color(c_black);
+        draw_set_alpha(0.5);
+        draw_rectangle(view_xview+525, view_yview+499, view_xview+960, view_yview+540, 0);
+        draw_set_alpha(1);
+        draw_set_font(fnt_talkjapanese);
+        draw_text_color(view_xview+ 950,view_yview + 510, "Ennemis avant que le Héros arrive: " + string(killCount),c_white,c_white,c_white,c_white,1);
+        break;
+    
+        case 3:
+        draw_set_color(c_black);
+        draw_set_alpha(0.5);
+        draw_rectangle(view_xview+625, view_yview+499, view_xview+960, view_yview+540, 0);
+        draw_set_alpha(1);
+        draw_set_font(fnt_talkforeign);
+        draw_text_color(view_xview+ 950,view_yview + 510, "Inimigos até o herói chegar: " + string(killCount),c_white,c_white,c_white,c_white,1);
+        break;
+    
         case 2:
         draw_set_color(c_black);
         draw_set_alpha(0.5);

@@ -132,7 +132,7 @@ if (state == 0)
     if (!instance_exists(obj_enddialogue10))
     {
         instance_create(x, y, obj_blackfadeoutslow);
-        alarm[0] = 150;
+        alarm[0] = 190;
         state = 1;
     }
 }

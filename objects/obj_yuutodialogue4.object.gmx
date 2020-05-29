@@ -101,6 +101,70 @@ global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
 break;
 
+case 3:
+global.messageArray[0] = "Sabe, você devia ao menos MIRAR os seus lasers!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "F-Fique quieta!
+Eu estava tentando fazer um jogo psicológico, ok!?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Ahaaaaam......Tá boooooom......";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Tudo bem! Eu vou MIRAR dessa vez! Você pediu! ";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Agora. Você vai pagar!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+break;
+
+
+
+//French
+
+case 4:
+global.messageArray[0] = "Tu pourrais au moins, tu sais, DIRIGER tes lasers !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "S-silence !
+Je cherchais à te manoeuvrer psychologiquement, d'accord !?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Ohhhhhhh......Maaaiiiiis oui......";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "D'accord ! D'accord ! Je vais VISER cette fois-ci !
+Tu l'as cherché !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Maintenant, tu vas le payer !";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+break;
+
+
 default:
 global.messageArray[0] = "You know, you should at least AIM your lasers!";
 global.categoryArray[0] = "left";
@@ -124,7 +188,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "happy";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Now. you'll pay!";
+global.messageArray[4] = "Now. You'll pay!";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";

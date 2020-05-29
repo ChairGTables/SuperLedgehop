@@ -301,6 +301,23 @@ if (state == 8 &amp;&amp; instance_number(obj_straightdown) == 0 &amp;&amp; inst
 {
     alarm[0] = 30;
     state = 9;
+    
+    if (instance_exists(obj_dialogue))
+    {
+        instance_destroy(obj_dialogue);
+    }
+    if (instance_exists(obj_yuutoabsorbdialogue))
+    {
+        instance_destroy(obj_yuutoabsorbdialogue);
+    }
+    if (instance_exists(obj_protagonisttalk))
+    {
+        instance_destroy(obj_protagonisttalk);
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
 }
 
 if (state == 7 &amp;&amp; instance_number(obj_yuutodialogue3) == 0)
@@ -312,6 +329,7 @@ if (state == 7 &amp;&amp; instance_number(obj_yuutodialogue3) == 0)
     instance_create(-192, -32, obj_curvingplane);
     instance_create(256, -32, obj_beamboy);
     instance_create(-256, -32, obj_beamboy);
+    instance_create(-192, -32, obj_yuutoabsorbdialogue);
     global.isCutscene = false;
     state = 8;
 }
@@ -320,6 +338,23 @@ if (state == 5 &amp;&amp; instance_number(obj_straightdown) == 0 &amp;&amp; inst
 {
     alarm[0] = 30;
     state = 6;
+    
+    if (instance_exists(obj_dialogue))
+    {
+        instance_destroy(obj_dialogue);
+    }
+    if (instance_exists(obj_yuutoabsorbdialogue))
+    {
+        instance_destroy(obj_yuutoabsorbdialogue);
+    }
+    if (instance_exists(obj_protagonisttalk))
+    {
+        instance_destroy(obj_protagonisttalk);
+    }
+    if (instance_exists(obj_antagonisttalk))
+    {
+        instance_destroy(obj_antagonisttalk);
+    }
 }
 
 if (state == 4 &amp;&amp; instance_number(obj_yuutodialogue2) == 0)
@@ -329,6 +364,7 @@ if (state == 4 &amp;&amp; instance_number(obj_yuutodialogue2) == 0)
     instance_create(192, -32, obj_straightdown);
     instance_create(-64, -32, obj_curvingplane);
     instance_create(-192, -32, obj_straightdown);
+    instance_create(-192, -32, obj_yuutoabsorbdialogue);
     global.isCutscene = false;
     state = 5;
 }

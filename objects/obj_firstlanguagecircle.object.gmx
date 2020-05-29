@@ -226,7 +226,7 @@ if gamepad_button_check(0, gp_padu)
             
             if (global.language == 0)
             {
-                global.language = 3;
+                global.language = 4;
             }
             else
             {
@@ -260,7 +260,7 @@ if gamepad_button_check(0, gp_padd)
             if (go == 0 )
             {
                 go = 1;
-                if (global.language == 3)
+                if (global.language == 4)
                 {
                     global.language = 0;
                 }
@@ -280,7 +280,7 @@ if gamepad_axis_value(0, gp_axislv) &gt; 0.8
     if (go == 0 )
     {
         go = 1;
-        if (global.language == 3)
+        if (global.language == 4)
         {
             global.language = 0;
         }
@@ -301,7 +301,7 @@ if gamepad_axis_value(0, gp_axislv) &lt; -0.8
         go = 1;
         if (global.language == 0)
         {
-            global.language = 3;
+            global.language = 4;
         }
         else
         {
@@ -338,10 +338,18 @@ if gamepad_button_check_pressed(0, gp_face1)
 
 switch (global.language)
 {
+    case 4:
+        if (instance_exists(obj_french))
+        {
+            x = obj_french.x - 290;
+            y = obj_french.y;
+        }
+        break;   
+
     case 3:
         if (instance_exists(obj_chamoru))
         {
-            x = obj_chamoru.x - 230;
+            x = obj_chamoru.x - 290;
             y = obj_chamoru.y;
         }
         break;    
@@ -349,7 +357,7 @@ switch (global.language)
     case 2:
         if (instance_exists(obj_japanese))
         {
-            x = obj_japanese.x - 230;
+            x = obj_japanese.x - 290;
             y = obj_japanese.y;
         }
         break;
@@ -357,7 +365,7 @@ switch (global.language)
     case 1:
         if (instance_exists(obj_espanol))
         {
-            x = obj_espanol.x - 230;
+            x = obj_espanol.x - 290;
             y = obj_espanol.y;
         }
         break;
@@ -365,7 +373,7 @@ switch (global.language)
     default:
         if (instance_exists(obj_english))
         {
-            x = obj_english.x - 230;
+            x = obj_english.x - 290;
             y = obj_english.y;
         }
 }

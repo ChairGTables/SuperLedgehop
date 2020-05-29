@@ -2,15 +2,15 @@
 <sprite>
   <type>0</type>
   <xorig>302</xorig>
-  <yorigin>31</yorigin>
+  <yorigin>44</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>50</bbox_left>
-  <bbox_right>519</bbox_right>
-  <bbox_top>16</bbox_top>
-  <bbox_bottom>46</bbox_bottom>
+  <bbox_left>70</bbox_left>
+  <bbox_right>527</bbox_right>
+  <bbox_top>1</bbox_top>
+  <bbox_bottom>86</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>604</width>
-  <height>62</height>
+  <height>89</height>
   <frames>
     <frame index="0">images\spr_mpnoticejapanese_0.png</frame>
   </frames>

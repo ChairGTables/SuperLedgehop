@@ -123,7 +123,7 @@ global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
 global.emotionAntagonistArray[1] = "angry";
 
-global.messageArray[2] = "いやいや、こいつは「科学」ってやつですよ、";
+global.messageArray[2] = "いやいや、こいつは「科学」ってやつですよ...";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
@@ -170,11 +170,151 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "curious";
 global.emotionAntagonistArray[10] = "angry";
 
-global.messageArray[11] = "...今度こそゲームオーバーよ！";
+global.messageArray[11] = "今度こそゲームオーバーよ！";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "curious";
 global.emotionAntagonistArray[11] = "angry";
 break;
+
+
+
+case 3:
+
+global.messageArray[0] = "QUÊ!? Você roubou o fogo deles!?";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "V-Você também é uma feiticeira?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Não, eu usei uma coisinha chamada tecnologia.";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Tá na hora de se modernizar, coroa!";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "C-Cale-se! Eu estudei essa barreira também, sabe!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "É uma magia refletora chamada Shine,
+mas parece que a sua também pode absorver!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Ah, você conhece o Shine?
+Então talvez você também conheça o meu tio Tito?";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Não! Não sei nem quem você é!";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "curious";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Então, saia da minha frente!";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "curious";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Dessa vez, você não vai sobreviver!";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "curious";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Esses aqui vão atirar lasers!
+E pelo meu estudo, eu sei que Shines não funcionam em lasers!";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "curious";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "Parece que sua hora chegou! Adeus!";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "curious";
+global.emotionAntagonistArray[11] = "angry";
+break;
+
+
+//French
+case 4:
+
+global.messageArray[0] = "QUOI !? T'es parvenu à voler leurs flammes !?";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "S-serais-tu une camarade magicienne ?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Nah, j'ai utilisé un truc qu'on appelle “technologie”.";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Vis avec ton temps, vieille de la vieille !";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "F-ferme-la !
+J'ai étudié au sujet de cette barrière aussi, tu sais!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "C'est censé être un sort de réflection appelé “Shine”,
+mais il semble que le tiens puisse absorber !";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Oh, tu connais le Shine ?
+Alors tu connais peut-être mon oncle Tito ?";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Non ! Je te connais même pas !";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "curious";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Donc reste hors de ma vue !";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "curious";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Cette fois, tu ne survivras pas !";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "curious";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Ces gars tirent des lasers ! Et d'après mes études, je sais que les
+Shines ne fonctionnent pas contre les lasers !";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "curious";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "En somme, je crains bien que ton heure soit venue ! Adieu !";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "curious";
+global.emotionAntagonistArray[11] = "angry";
+break;
+
 
 default:
 

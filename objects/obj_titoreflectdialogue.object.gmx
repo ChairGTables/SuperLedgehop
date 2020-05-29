@@ -38,7 +38,7 @@ switch( global.language )
 
 case 1:
 
-global.messageArray[0] = "Recuerda, ¡siempre puedes reflejar
+global.messageArray[0] = "Recuerda, ¡Siempre puedes reflejar
 simplemente presionando en lugar de manteniendo!";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "happy";
@@ -76,6 +76,50 @@ global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "happy";
 
 break;
+
+case 3:
+
+global.messageArray[0] = "Lembre-se, você pode sempre refletir
+se só apertar ao invés de segurar!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "happy";
+
+
+global.messageArray[1] = "Isso gasta menos do seu medidor de SH que absorver!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "TÁ BOM! EU JÁ SEI!!!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "happy";
+
+break;
+
+//French
+case 4:
+
+global.messageArray[0] = "Rappelle-toi, tu peux toujours les renvoyer
+juste en pressant au lieu de maintenir !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "happy";
+
+
+global.messageArray[1] = "Cela use moins de ta jauge SH que d'absorber !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "OUI, JE LE SAVAIS DÉJÀ !!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "happy";
+
+break;
+
 
 default:
 

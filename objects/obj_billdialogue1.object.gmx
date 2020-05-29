@@ -36,6 +36,122 @@ global.messageLimit = 9;
 
 switch (global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "Où est le sénateur !?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Oh-ho.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "N'est-ce pas une question que je devrais plutôt vous poser, ex-sénateur ?";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Q-qu'est-ce que vous voulez dire, gouverneur ?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Vous avez kidnappé mon cher sénateur, pas vrai ?";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Vous êtes cinglé !?";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Pourquoi je ferais ça !?";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Encore une fois, ne serait-ce pas une question que je devrais
+vous poser ?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "N'essaierez-vous pas de vous offrir une petite vengeance après
+vous être fait destitué ?";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Sale fumier !";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+break;
+
+
+case 3:
+global.messageArray[0] = "Cadê o senador!?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Hoho!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Não devia ser eu quem pergunto isso, ex-senador?";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "C-Como assim, governador!?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Você sequestrou o meu senador, não sequestrou?";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Tá maluco!?";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Por que eu faria isso!?";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Novamente, não devia ser eu quem pergunto isso?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "Está tentando se vingar depois que eu fiz você ser cassado?";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Ora, seu salafrário!";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+break;
+
 case 2:
 global.messageArray[0] = "チズマ議員をどこにやった！？";
 global.categoryArray[0] = "left";
@@ -115,7 +231,7 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Secuestraste a mi pequeño senador, ¿o no?";
+global.messageArray[4] = "Secuestraste a mi pequeño senador, ¿O no?";
 global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
@@ -130,7 +246,7 @@ global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
-global.messageArray[7] = "Una vez más, ¿no debería ser yo quien te pregunte eso?";
+global.messageArray[7] = "Una vez más, ¿No debería ser yo quien te pregunte eso?";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "neutral";

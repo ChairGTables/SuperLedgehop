@@ -35,6 +35,27 @@ global.messageLimit = 0;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "POPOPOH COMMENT J'T'AI BAISÉ !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+break;
+
+case 3:
+global.messageArray[0] = "ENGANEI O BOBO!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+break;
+
+case 2:
+global.messageArray[0] = "引っかかったァ！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+break;
+
 case 1:
 global.messageArray[0] = "¡¡¡CAÍSTE!!!";
 global.categoryArray[0] = "left";

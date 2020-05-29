@@ -50,13 +50,13 @@
             <kind>1</kind>
             <string>image_index = global.language;
 
-if (global.language &gt; 3)
+if (global.language &gt; 4)
 {
     global.language = 0;
 }
 if (global.language &lt; 0)
 {
-    global.language = 3;
+    global.language = 4;
 }
 
 if (global.titleState == 1)

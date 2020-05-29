@@ -144,9 +144,16 @@ if (state == 5)
         dialogue = instance_create(obj_chizuru.x, obj_chizuru.y, obj_textoncontact);
         switch (global.language)
         {
+            case 4:
+            dialogue.message = "As-tu oublié ?";
+            break;
+        
+            case 3:
+            dialogue.message = "Você se esqueceu?";
+            break;
         
             case 2:
-            dialogue.message = "Have you forgotten?";
+            dialogue.message = "「忘れたの？」";
             break;
             
             case 1:

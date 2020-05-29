@@ -36,9 +36,59 @@ global.messageLimit = 3;
 
 switch (global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "FRANGIN ! CHUIS ICI POUR CASSER DES...";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "HÉ ! Où est mon grand frère !?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Et qu'est-ce que tu fous là, Tito !?";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "J't'avais dit que j'pouvais gérer ça toute seule !";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+break;
+
+//Brazil
+case 3:
+global.messageArray[0] = "MEU IRMÃO! EU VIM TE SALVAR...";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Uai!? Cadê meu irmão!?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "E o que raios você tá fazendo aqui, Tito? ";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Eu disse que posso lidar com isso eu mesma!";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+break;
+
 //Japanese
 case 2:
-global.messageArray[0] = "兄貴！助けに来たぞ…";
+global.messageArray[0] = "兄貴！助けに来たぞ...";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "neutral";

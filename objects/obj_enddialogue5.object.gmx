@@ -39,6 +39,94 @@ global.messageLimit = 4;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "S'il vous plaît, arrêtez ! Vous commettez une grave erreur !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "J-je...";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "CONTINUEZ DE TIRER !!!";
+global.categoryArray[2] = "out";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Arh !";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Grenade Paralysante !";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+break;
+
+case 3:
+global.messageArray[0] = "Por favor, pare! Você está cometendo um erro enorme!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "E-Eu...";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "ATIREM SEM PARAR!!!";
+global.categoryArray[2] = "out";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Hng...";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Granada de luz!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+break;
+
+
+case 2:
+global.messageArray[0] = "やめてください！何かの間違いです！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "あっ...。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "撃て！撃ち続けろーっ！！";
+global.categoryArray[2] = "out";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "閃光弾！";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "こっ、これで！";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+break;
+
 case 1:
 global.messageArray[0] = "¡Deténganse! ¡Están cometiendo un error!";
 global.categoryArray[0] = "left";

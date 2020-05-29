@@ -111,6 +111,72 @@ global.emotionAntagonistArray[4] = "angry";
 
 break;
 
+case 3:
+global.messageArray[0] = "K-Kyaaaaa!
+Você se adaptou aos controles novos muito rápido!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Pff, é claro!
+Eu tenho uma dimensão a menos pra me preocupar!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+
+global.messageArray[2] = "B-Bom, você não vai sobreviver à próxima!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "A armadura deles é tão forte que a única coisa
+capaz de destruí-los é o seu próprio fogo!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Está com medo agora!? Hahaha!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+
+break;
+
+
+//French
+case 4:
+global.messageArray[0] = "AAAAAAA ! T'as assimilé les nouveaux contrôles si rapidement !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Pfff, évidemment ! Ça me fait une dimension en moins à gérer !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+
+global.messageArray[2] = "E-eh bien, tu ne pourras pas survivre à la prochaine !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Leurs armures sont tellement résistantes que seules leurs propres
+flammes peuvent les tuer !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Tu as peur de moi, maintenant !? Ahahaha !";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+
+break;
+
 
 default:
 

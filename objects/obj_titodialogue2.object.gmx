@@ -55,7 +55,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "happy";
 
-global.messageArray[3] = "Como sea, ¿ya te estás sintiendo mejor?";
+global.messageArray[3] = "Como sea, ¿Ya te estás sintiendo mejor?";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
@@ -132,13 +132,13 @@ break;
 
 case 2:
 
-global.messageArray[0] = "うーん…チーズステーキがよかったなぁ。";
+global.messageArray[0] = "うーん...チーズステーキがよかったなぁ。";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "そんな事したら…";
+global.messageArray[1] = "そんな事したら...";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "curious";
@@ -159,8 +159,8 @@ global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "はぁ…　
-本当に心配したぞ、";
+global.messageArray[5] = "はぁ...
+本当に心配したぞ...";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "happy";
 global.emotionAntagonistArray[5] = "curious";
@@ -170,7 +170,7 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "えー…でも俺本当の娘じゃないし…";
+global.messageArray[7] = "えー...でも俺本当の娘じゃないし...";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";
@@ -186,12 +186,12 @@ global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "happy";
 
-global.messageArray[10] = "おっけー…";
+global.messageArray[10] = "おっけー...";
 global.categoryArray[10] = "left";
 global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "happy";
 
-global.messageArray[11] = "でもお前がBB銃で戦っていた…";
+global.messageArray[11] = "でもお前がBB銃で戦っていた...";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "angry";
@@ -212,7 +212,7 @@ global.categoryArray[14] = "left";
 global.emotionProtagonistArray[14] = "neutral";
 global.emotionAntagonistArray[14] = "angry";
 
-global.messageArray[15] = "ぐぬぬ…";
+global.messageArray[15] = "ぐぬぬ...";
 global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
@@ -223,6 +223,197 @@ global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "angry";
 
 break;
+
+case 3:
+
+global.messageArray[0] = "Ahh... Queria que você tivesse me trazido um cheesesteak ao invés.";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Pff. Como se eu tivesse espaço o suficiente
+no meu inventário dos bolsos pra isso!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "curious";
+
+
+global.messageArray[2] = "Isso vai arruinar meus shorts!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "happy";
+
+global.messageArray[3] = "Mas e aí, está se sentindo melhor?";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "É! Estou melhor!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Ufa...
+Você me deixou bem preocupado!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "curious";
+
+global.messageArray[6] = "Eu não ia saber o que fazer se eu tivesse perdido a minha única filha!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Err... mas eu não sou a sua filha.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Que seja! Adotada ou não,
+vou te proteger como se fosse minha filha de verdade!";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Não sou um cara maneiro?";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "happy";
+
+global.messageArray[10] = "Tá bom...";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "happy";
+
+global.messageArray[11] = "Mas sabe o que não é legal?";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "Você aí lutando com só uma arma de ar comprimido!";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "Tá louca!? Você acha mesmo que pode combater as
+armas deles com uma arma de pressão?";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "Mas Tito, você tá usando uma arma de pressão também.";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "Bem, err... ";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "Sabe, eu vou aproveitar e te dar isso aqui.";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "angry";
+
+break;
+
+
+case 4:
+
+global.messageArray[0] = "Oww... J'aurais préféré que tu me passes un cheesesteak plutôt.";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Pfff, comme si mes poches rikiki pouvaient contenir des bicyclettes !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "curious";
+
+
+global.messageArray[2] = "Ça aurait fondu dans mon short !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "happy";
+
+global.messageArray[3] = "Bon bref, tu te sens mieux maintenant ?";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Yep ! Largement mieux !";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Pfiouuuuu...
+Tu m'as fait peur là !";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "curious";
+
+global.messageArray[6] = "Je ne saurais que faire si je perdais ma fille unique.";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Euhh...J'suis pas ta fille par contre.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Qu'importe !
+Adoptée ou non, je te protègerai comme si t'étais ma vraie fille !";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Alors, c'est pas moi l'plus cool ?";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "happy";
+
+global.messageArray[10] = "Maaiiis oui...";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "happy";
+
+global.messageArray[11] = "Mais tu sais c'qu'est pas cool ?";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "Se battre dans le coin avec juste un pistolet Airsoft !";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "Mais t'es timbrée !? Tu croyais vraiment pouvoir te frotter à de
+vrais flingues avec ton lance-bille ?";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "Mais Tito, toi aussi t'utilises un pistolet Airsoft.";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "Eh bien, umm... ";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "Tu sais quoi, je pourrais au moins te donner ceci.";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "angry";
+
+break;
+
 
 default:
 

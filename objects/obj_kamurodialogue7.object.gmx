@@ -36,6 +36,43 @@ global.messageLimit = 1;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "Ahh. J'ai finalement attrapé la vermine.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "Maintenant, où est le sénateur pour ma couverture.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+case 3:
+global.messageArray[0] = "Ah! Finalmente peguei essa sirigaita.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "Agora, onde é que está o senador para mim encobrir tudo.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+case 2:
+global.messageArray[0] = "あぁ。ついにネズミを捕まえましたよ。";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "さて、チズマ議員の居場所を教えてもらいますよ。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+
 case 1:
 global.messageArray[0] = "Ahh. Por fin he capturado a la muchacha.";
 global.categoryArray[0] = "right";

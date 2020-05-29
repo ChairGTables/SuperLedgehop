@@ -188,10 +188,10 @@ if (previousBullet = 1 &amp;&amp; global.enhancedcount &lt;= 0)
             <kind>1</kind>
             <string>draw_self();
 
-draw_sprite_ext(spr_chizurucurrentbullet, nextBullet, x+50, y+10, 0.5, 0.5, 0, c_white, 1);
-draw_sprite_ext(spr_chizurucurrentbullet, previousBullet, x-50, y+10, 0.5, 0.5, 0, c_white, 1);
-draw_sprite_ext(spr_chizurucurrentbullet, global.maxshottype+1, x+75, y+20, 0.5, 0.5, 0, c_white, 1);
-draw_sprite_ext(spr_chizurucurrentbullet, global.maxshottype+2, x-75, y+20, 0.5, 0.5, 0, c_white, 1);
+draw_sprite_ext(sprite_index, nextBullet, x+50, y+10, 0.5, 0.5, 0, c_white, 1);
+draw_sprite_ext(sprite_index, previousBullet, x-50, y+10, 0.5, 0.5, 0, c_white, 1);
+draw_sprite_ext(sprite_index, global.maxshottype+1, x+75, y+20, 0.5, 0.5, 0, c_white, 1);
+draw_sprite_ext(sprite_index, global.maxshottype+2, x-75, y+20, 0.5, 0.5, 0, c_white, 1);
 </string>
           </argument>
         </arguments>

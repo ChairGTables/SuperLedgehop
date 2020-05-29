@@ -87,6 +87,7 @@
 }
 
 yuutoCheck = 0;
+showShineNotice = 0;
 
 //hud shake
 hudintensity = 0;
@@ -234,9 +235,7 @@ alarm[1] = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_mouse_set(clamp(window_mouse_get_x(),0,window_get_width()),clamp(window_mouse_get_y(),0,window_get_height()))
-
-
+            <string>
 weaponChanged = false;
 //Change bullets when out
 if (instance_exists(obj_chizuru))
@@ -330,9 +329,7 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_mouse_set(clamp(window_mouse_get_x(),0,window_get_width()),clamp(window_mouse_get_y(),0,window_get_height()))
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -354,7 +351,16 @@ if (instance_exists(obj_chizuru))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.totalReflected &gt; 200)
+            <string>
+
+if (steam_is_screenshot_requested() )
+{
+   var file = "meme" + string(round(random_range(0,9999))) + ".png";
+   screen_save(file)
+   steam_send_screenshot(file, window_get_width(), window_get_height());
+}
+
+if (global.totalReflected &gt; 200)
 {
     if (!steam_get_achievement("REFLECT"))
     {
@@ -369,11 +375,12 @@ if (global.totalAbsorbed &gt; 200)
     }
 }
 
-//chamorro prevention
-if (global.language == 3)
-{
-    global.language = 0;
-}
+
+
+
+
+
+
 
 if (global.pause &gt; 9)
 {
@@ -407,6 +414,30 @@ if (global.pause == 11 || global.pause == 21)
         global.pause -= 1;
     }
 }
+
+
+
+
+if (global.chizurushinecharge &gt; 3 &amp;&amp; instance_exists(obj_chizuru))
+{
+    if (global.isCutscene == false &amp;&amp; global.chizurushine &lt; 40)
+    {
+        showShineNotice = 100;
+    }       
+}
+if (showShineNotice &gt; 0)
+{
+    showShineNotice -= 1;
+}
+
+
+if (global.chizurushine &gt; 40)
+{
+    showShineNotice = 0;
+}
+
+
+
 
 if (audio_is_playing(snd_billdeath))
 {
@@ -714,15 +745,23 @@ global.playerQuarter = (60000 / global.bpm) / 1000;
     {
         mouseX = mouse_x;// + view_xview;
         mouseY = mouse_y;// + view_yview;
-        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 267 &amp;&amp; mouseY &lt; view_yview + 369)
+        if (global.stageState &gt; 99)
         {
             instance_activate_all();
             global.pause = 0;
         }
-        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 379 &amp;&amp; mouseY &lt; view_yview + 492)
+        else
         {
-            script_execute(scr_stopmusic);
-            room_goto(rm_title);
+            if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 267 &amp;&amp; mouseY &lt; view_yview + 369)
+            {
+                instance_activate_all();
+                global.pause = 0;
+            }
+            if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 379 &amp;&amp; mouseY &lt; view_yview + 492)
+            {
+                script_execute(scr_stopmusic);
+                room_goto(rm_title);
+            }
         }
     }
 }
@@ -796,7 +835,16 @@ draw_set_alpha(0.3);
 draw_rectangle(view_xview, view_yview, view_xview+160, view_yview+30, 0);
 draw_set_alpha(1);
 draw_set_font(fnt_talkjapanese);
-draw_text_color(view_xview+5,view_yview + 5, "Time: " + string(timeString),c_white,c_white,c_white,c_white,1);
+if (global.language == 4)
+{
+    draw_text_color(view_xview+2,view_yview + 5, "Temps: " + string(timeString),c_white,c_white,c_white,c_white,1);
+
+}
+else
+{
+    draw_text_color(view_xview+5,view_yview + 5, "Time: " + string(timeString),c_white,c_white,c_white,c_white,1);
+
+}
 
 exceptionCheck = 0;
 if (instance_exists(obj_dialogue))
@@ -807,13 +855,9 @@ if (instance_exists(obj_dialogue))
     }
 }
 
-
-if (global.chizurushinecharge &gt; 5 &amp;&amp; instance_exists(obj_chizuru))
+if (showShineNotice &gt; 0 &amp;&amp; instance_exists(obj_chizuru))
 {
-    if (global.isCutscene == false &amp;&amp; global.chizurushine &lt; 40)
-    {
-        draw_sprite(spr_halfshinenotice, global.language, obj_chizuru.x, obj_chizuru.y + 15);
-    }       
+    draw_sprite(spr_halfshinenotice, global.language, obj_chizuru.x, obj_chizuru.y + 15);
 }
 
 
@@ -829,7 +873,7 @@ if (global.chizurushine &lt; 40 &amp;&amp; instance_exists(obj_chizuru))
     draw_sprite(spr_noshine, 0, obj_chizuru.x + 17, yy);    
 }
 
-if (global.speaking == false || exceptionCheck == 1)
+if (!instance_exists(obj_bonusread) &amp;&amp; (global.speaking == false || exceptionCheck == 1))
 {
     if (instance_exists(obj_chizuru))
     {
@@ -850,40 +894,44 @@ if (global.speaking == false || exceptionCheck == 1)
         draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25+ hudshake_yoffset,global.chizuruhp,myHeight)
         draw_sprite_stretched(spr_hudbars,1,xMain+72,yMain+36+ hudshake_yoffset,global.chizurump,myHeight)
         draw_sprite_stretched(spr_hudbars,2,xMain+72,yMain+47+ hudshake_yoffset,global.chizurushine,myHeight)
-    }
-    if (global.shottype != 0)
-    {
-        draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo + hudshake_yoffset);
+        
+        
+        
+        if (global.shottype != 0)
+        {
+            draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo + hudshake_yoffset);
+        }
+        
+        if (global.shottype == 1)
+        {
+            draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.enhancedcount,myHeight)
+        }
+        if (global.shottype == 2)
+        {
+            draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.spreadcount,myHeight)
+        }
+        if (global.shottype == 3)
+        {
+            draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.rapidcount,myHeight)
+        }
+        if (global.shottype == 4)
+        {
+            draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.firecount,myHeight)
+        }
+        if (global.shottype == 5)
+        {
+            draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.icecount,myHeight)
+        }
+        
+        
+        
+        if (instance_exists(obj_yuutoassist) &amp;&amp; !instance_exists(obj_yuutodialogue9))
+        {
+            draw_sprite(spr_assisthud, 0, xMain, yMain - 100)
+            draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+47-100,global.assisthp,myHeight)        
+        }
     }
     
-    if (global.shottype == 1)
-    {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.enhancedcount,myHeight)
-    }
-    if (global.shottype == 2)
-    {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.spreadcount,myHeight)
-    }
-    if (global.shottype == 3)
-    {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.rapidcount,myHeight)
-    }
-    if (global.shottype == 4)
-    {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.firecount,myHeight)
-    }
-    if (global.shottype == 5)
-    {
-        draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.icecount,myHeight)
-    }
-    
-    
-    
-    if (instance_exists(obj_yuutoassist) &amp;&amp; !instance_exists(obj_yuutodialogue9))
-    {
-        draw_sprite(spr_assisthud, 0, xMain, yMain - 100)
-        draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+47-100,global.assisthp,myHeight)        
-    }
 
     
     
@@ -960,13 +1008,20 @@ if (global.speaking == false || exceptionCheck == 1)
 
 if(global.pause &gt; 9)
 {
-    if (yuutoCheck == 0)
+    if (global.stageState &gt; 99)
     {
-        draw_sprite(spr_pausemenu, global.pause - 10, view_xview, view_yview);
+        draw_sprite(spr_pausemenu, 4, view_xview, view_yview);
     }
     else
     {
-        draw_sprite(spr_pausemenu, global.pause - 18, view_xview, view_yview);
+        if (yuutoCheck == 0)
+        {
+            draw_sprite(spr_pausemenu, global.pause - 10, view_xview, view_yview);
+        }
+        else
+        {
+            draw_sprite(spr_pausemenu, global.pause - 18, view_xview, view_yview);
+        }
     }
 }
 </string>
@@ -1352,17 +1407,26 @@ global.bossthree = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.pause == 10 || global.pause == 20)
+            <string>if (global.stageState &gt; 99)
 {
     instance_activate_all();
     global.pause = 0;
-    
 }
-
-if (global.pause == 11 || global.pause == 21)
+else
 {
-    script_execute(scr_stopmusic);
-    room_goto(rm_title);
+
+    if (global.pause == 10 || global.pause == 20 || global.pause == 30 || global.pause == 31)
+    {
+        instance_activate_all();
+        global.pause = 0;
+        
+    }
+    
+    if (global.pause == 11 || global.pause == 21)
+    {
+        script_execute(scr_stopmusic);
+        room_goto(rm_title);
+    }
 }
 </string>
           </argument>
@@ -1529,7 +1593,10 @@ if (pauseException == 0)
         }
         instance_deactivate_all(true);
         instance_activate_object(obj_gamepad);
-        
+        if (instance_exists(obj_darkfog))
+        {
+            instance_activate_object(obj_darkfog);
+        }
         
     }
     else

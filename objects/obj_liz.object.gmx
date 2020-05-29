@@ -578,12 +578,14 @@ if (gatlingShot == 1)
     {
         gatling.direction = aimCenter + aimDirection;
         gatling.speed = 9;
+        gatling.damage = 12;
     }
     var gatling2 = instance_create(x, y, obj_rapidbullet);
     if (instance_exists(gatling2))
     {
         gatling2.direction = aimCenter - aimDirection;
         gatling2.speed = 9;
+        gatling2.damage = 12;
     }
     
     aimDirection += 5;

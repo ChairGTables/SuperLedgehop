@@ -17,6 +17,7 @@
         <sound>sound\snd_bulletcollect</sound>
         <sound>sound\snd_bulletget</sound>
         <sound>sound\snd_crashed</sound>
+        <sound>sound\snd_crashedlower</sound>
         <sound>sound\snd_enemybullet</sound>
         <sound>sound\snd_enemysmall</sound>
         <sound>sound\snd_enemymedium</sound>
@@ -326,6 +327,12 @@
         <sprites name="spanish">
           <sprite>sprites\spr_chizurucurrentbulletspanish</sprite>
         </sprites>
+        <sprites name="brazil">
+          <sprite>sprites\spr_chizurucurrentbulletbrazil</sprite>
+        </sprites>
+        <sprites name="french">
+          <sprite>sprites\spr_chizurucurrentbulletfrench</sprite>
+        </sprites>
       </sprites>
       <sprites name="effects">
         <sprites name="spanish">
@@ -336,6 +343,14 @@
         <sprites name="japanese">
           <sprite>sprites\spr_skipinstructionsjapanese</sprite>
           <sprite>sprites\spr_mpnoticejapanese</sprite>
+        </sprites>
+        <sprites name="brazil">
+          <sprite>sprites\spr_mpnoticebrazil</sprite>
+          <sprite>sprites\spr_skipinstructionsbrazil</sprite>
+        </sprites>
+        <sprites name="french">
+          <sprite>sprites\spr_mpnoticefrench</sprite>
+          <sprite>sprites\spr_skipinstructionsfrench</sprite>
         </sprites>
         <sprite>sprites\spr_absorbinstruction</sprite>
         <sprite>sprites\spr_absorbready</sprite>
@@ -393,27 +408,43 @@
           <sprite>sprites\spr_chizurubook</sprite>
           <sprite>sprites\spr_chizurubookspanish</sprite>
           <sprite>sprites\spr_chizurubookjapanese</sprite>
+          <sprite>sprites\spr_chizurubookbrazil</sprite>
+          <sprite>sprites\spr_chizurubookfrench</sprite>
           <sprite>sprites\spr_titobook</sprite>
           <sprite>sprites\spr_titobookspanish</sprite>
           <sprite>sprites\spr_titobookjapanese</sprite>
+          <sprite>sprites\spr_titobookbrazil</sprite>
+          <sprite>sprites\spr_titobookfrench</sprite>
           <sprite>sprites\spr_yuutobook</sprite>
           <sprite>sprites\spr_yuutobookspanish</sprite>
           <sprite>sprites\spr_yuutobookjapanese</sprite>
+          <sprite>sprites\spr_yuutobookbrazil</sprite>
+          <sprite>sprites\spr_yuutobookfrench</sprite>
           <sprite>sprites\spr_crossettebook</sprite>
           <sprite>sprites\spr_crossettebookspanish</sprite>
-          <sprite>sprites\spr_crossettejapanese</sprite>
+          <sprite>sprites\spr_crossettebookjapanese</sprite>
+          <sprite>sprites\spr_crossettebookbrazil</sprite>
+          <sprite>sprites\spr_crossettebookfrench</sprite>
           <sprite>sprites\spr_kamurobook</sprite>
           <sprite>sprites\spr_kamurobookspanish</sprite>
           <sprite>sprites\spr_kamurobookjapanese</sprite>
+          <sprite>sprites\spr_kamurobookbrazil</sprite>
+          <sprite>sprites\spr_kamurobookfrench</sprite>
           <sprite>sprites\spr_lizbook</sprite>
           <sprite>sprites\spr_lizbookspanish</sprite>
           <sprite>sprites\spr_lizbookjapanese</sprite>
+          <sprite>sprites\spr_lizbookbrazil</sprite>
+          <sprite>sprites\spr_lizbookfrench</sprite>
           <sprite>sprites\spr_chizumabook</sprite>
           <sprite>sprites\spr_chizumabookspanish</sprite>
           <sprite>sprites\spr_chizumabookjapanese</sprite>
+          <sprite>sprites\spr_chizumabookbrazil</sprite>
+          <sprite>sprites\spr_chizumabookfrench</sprite>
           <sprite>sprites\spr_billbook</sprite>
           <sprite>sprites\spr_billbookspanish</sprite>
           <sprite>sprites\spr_billbookjapanese</sprite>
+          <sprite>sprites\spr_billbookbrazil</sprite>
+          <sprite>sprites\spr_billbookfrench</sprite>
           <sprite>sprites\spr_moosebook</sprite>
           <sprite>sprites\spr_louiebook</sprite>
           <sprite>sprites\spr_localbook</sprite>
@@ -422,14 +453,44 @@
           <sprite>sprites\spr_youbook</sprite>
           <sprite>sprites\spr_appdatabook</sprite>
           <sprite>sprites\spr_existbook</sprite>
+          <sprite>sprites\spr_existbookbrazil</sprite>
           <sprite>sprites\spr_existbookspanish</sprite>
+          <sprite>sprites\spr_existbookjapanese</sprite>
+          <sprite>sprites\spr_existbookfrench</sprite>
           <sprite>sprites\spr_halloweencomic</sprite>
+          <sprite>sprites\spr_halloweencomicspanish</sprite>
+          <sprite>sprites\spr_halloweencomicjapanese</sprite>
+          <sprite>sprites\spr_halloweencomicbrazil</sprite>
+          <sprite>sprites\spr_halloweencomicfrench</sprite>
           <sprite>sprites\spr_introcomic</sprite>
+          <sprite>sprites\spr_introcomicjapanese</sprite>
+          <sprite>sprites\spr_introcomicspanish</sprite>
+          <sprite>sprites\spr_introcomicbrazil</sprite>
+          <sprite>sprites\spr_introcomicfrench</sprite>
           <sprite>sprites\spr_gangmeme</sprite>
+          <sprite>sprites\spr_gangmemejapanese</sprite>
+          <sprite>sprites\spr_gangmemespanish</sprite>
+          <sprite>sprites\spr_gangmemebrazil</sprite>
           <sprite>sprites\spr_pencilmeme</sprite>
+          <sprite>sprites\spr_pencilmemejapanese</sprite>
+          <sprite>sprites\spr_pencilmemespanish</sprite>
+          <sprite>sprites\spr_pencilmemebrazil</sprite>
+          <sprite>sprites\spr_pencilmemefrench</sprite>
           <sprite>sprites\spr_evolutionmeme</sprite>
+          <sprite>sprites\spr_evolutionmemespanish</sprite>
+          <sprite>sprites\spr_evolutionmemejapanese</sprite>
+          <sprite>sprites\spr_evolutionmemebrazil</sprite>
+          <sprite>sprites\spr_evolutionmemefrench</sprite>
           <sprite>sprites\spr_copiesmeme</sprite>
+          <sprite>sprites\spr_copiesmemespanish</sprite>
+          <sprite>sprites\spr_copiesmemejapanese</sprite>
+          <sprite>sprites\spr_copiesmemebrazil</sprite>
+          <sprite>sprites\spr_copiesmemefrench</sprite>
           <sprite>sprites\spr_creditsbonus</sprite>
+          <sprite>sprites\spr_creditsbonusjapanese</sprite>
+          <sprite>sprites\spr_creditsbonusbrazil</sprite>
+          <sprite>sprites\spr_creditsbonusspanish</sprite>
+          <sprite>sprites\spr_creditsbonusfrench</sprite>
           <sprite>sprites\spr_paperstack</sprite>
           <sprite>sprites\spr_babycrt</sprite>
         </sprites>
@@ -462,6 +523,8 @@
             <sprite>sprites\spr_fullscreeninitial</sprite>
             <sprite>sprites\spr_languagedisclaimer</sprite>
             <sprite>sprites\spr_windowedinitial</sprite>
+            <sprite>sprites\spr_absorbmenu</sprite>
+            <sprite>sprites\spr_holdmenu</sprite>
           </sprites>
           <sprites name="spanish">
             <sprite>sprites\spr_stage1spanish</sprite>
@@ -480,6 +543,8 @@
             <sprite>sprites\spr_languagespanish</sprite>
             <sprite>sprites\spr_cutscenesspanish</sprite>
             <sprite>sprites\spr_fullscreenspanish</sprite>
+            <sprite>sprites\spr_absorbmenuspanish</sprite>
+            <sprite>sprites\spr_holdmenuspanish</sprite>
           </sprites>
           <sprites name="japanese">
             <sprite>sprites\spr_storymodejapanese</sprite>
@@ -492,6 +557,49 @@
             <sprite>sprites\spr_musicvolumejapanese</sprite>
             <sprite>sprites\spr_sfxvolumejapanese</sprite>
             <sprite>sprites\spr_voicevolumejapanese</sprite>
+            <sprite>sprites\spr_absorbmenujapanese</sprite>
+            <sprite>sprites\spr_holdmenujapanese</sprite>
+          </sprites>
+          <sprites name="brazil">
+            <sprite>sprites\spr_stage1brazil</sprite>
+            <sprite>sprites\spr_stage2brazil</sprite>
+            <sprite>sprites\spr_stage3brazil</sprite>
+            <sprite>sprites\spr_stage4brazil</sprite>
+            <sprite>sprites\spr_finalebrazil</sprite>
+            <sprite>sprites\spr_storymodebrazil</sprite>
+            <sprite>sprites\spr_thugwarsbrazil</sprite>
+            <sprite>sprites\spr_optionsbrazil</sprite>
+            <sprite>sprites\spr_exitbrazil</sprite>
+            <sprite>sprites\spr_languagebrazil</sprite>
+            <sprite>sprites\spr_cutscenesbrazil</sprite>
+            <sprite>sprites\spr_offonbrazil</sprite>
+            <sprite>sprites\spr_musicvolumebrazil</sprite>
+            <sprite>sprites\spr_sfxvolumebrazil</sprite>
+            <sprite>sprites\spr_voicevolumebrazil</sprite>
+            <sprite>sprites\spr_fullscreenbrazil</sprite>
+            <sprite>sprites\spr_absorbmenubrazil</sprite>
+            <sprite>sprites\spr_holdmenubrazil</sprite>
+          </sprites>
+          <sprites name="french">
+            <sprite>sprites\spr_stage1french</sprite>
+            <sprite>sprites\spr_stage2french</sprite>
+            <sprite>sprites\spr_stage3french</sprite>
+            <sprite>sprites\spr_stage4french</sprite>
+            <sprite>sprites\spr_finalefrench</sprite>
+            <sprite>sprites\spr_storymodefrench</sprite>
+            <sprite>sprites\spr_thugwarsfrench</sprite>
+            <sprite>sprites\spr_optionsfrench</sprite>
+            <sprite>sprites\spr_exitfrench</sprite>
+            <sprite>sprites\spr_languagefrench</sprite>
+            <sprite>sprites\spr_cutscenesfrench</sprite>
+            <sprite>sprites\spr_fullscreenfrench</sprite>
+            <sprite>sprites\spr_offonfrench</sprite>
+            <sprite>sprites\spr_musicvolumefrench</sprite>
+            <sprite>sprites\spr_sfxvolumefrench</sprite>
+            <sprite>sprites\spr_voicevolumefrench</sprite>
+            <sprite>sprites\spr_backfrench</sprite>
+            <sprite>sprites\spr_absorbmenufrench</sprite>
+            <sprite>sprites\spr_holdmenufrench</sprite>
           </sprites>
         </sprites>
         <sprites name="spanish">
@@ -499,6 +607,12 @@
         </sprites>
         <sprites name="japanese">
           <sprite>sprites\spr_controlschemejapanese</sprite>
+        </sprites>
+        <sprites name="brazil">
+          <sprite>sprites\spr_controlschemebrazil</sprite>
+        </sprites>
+        <sprites name="french">
+          <sprite>sprites\spr_controlschemefrench</sprite>
         </sprites>
         <sprite>sprites\spr_ammohud</sprite>
         <sprite>sprites\spr_assisthud</sprite>
@@ -512,6 +626,10 @@
         <sprite>sprites\spr_controlscheme</sprite>
         <sprite>sprites\spr_creditsbox</sprite>
         <sprite>sprites\spr_creditslist</sprite>
+        <sprite>sprites\spr_creditslistjapanese</sprite>
+        <sprite>sprites\spr_creditslistspanish</sprite>
+        <sprite>sprites\spr_creditslistbrazil</sprite>
+        <sprite>sprites\spr_creditslistfrench</sprite>
         <sprite>sprites\spr_doorsignal</sprite>
         <sprite>sprites\spr_emptysprite</sprite>
         <sprite>sprites\spr_firstlanguage</sprite>
@@ -546,6 +664,7 @@
         <sprite>sprites\spr_hoodfigure</sprite>
         <sprite>sprites\spr_lampstand</sprite>
         <sprite>sprites\spr_thugwarsinfo</sprite>
+        <sprite>sprites\spr_savedicon</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -922,6 +1041,7 @@
       <font>fonts\fnt_namedefault</font>
       <font>fonts\fnt_namejapanese</font>
       <font>fonts\fnt_talkjapanese</font>
+      <font>fonts\fnt_talkfurigana</font>
     </fonts>
     <fonts name="sonii">
       <font>fonts\fnt_samplefont_sonii</font>
@@ -999,10 +1119,13 @@
         <object>objects\obj_controlscheme</object>
         <object>objects\obj_creditsbox</object>
         <object>objects\obj_cutscenes</object>
+        <object>objects\obj_absorbmenu</object>
         <object>objects\obj_cutscenesoffon</object>
+        <object>objects\obj_holdreleasemenu</object>
         <object>objects\obj_dialoguetest</object>
         <object>objects\obj_english</object>
         <object>objects\obj_espanol</object>
+        <object>objects\obj_french</object>
         <object>objects\obj_exitoptions</object>
         <object>objects\obj_finale</object>
         <object>objects\obj_firstfullscreencircle</object>
@@ -1066,6 +1189,7 @@
         <object>objects\obj_lampstand</object>
         <object>objects\obj_titlecorruption</object>
         <object>objects\obj_textoncontact</object>
+        <object>objects\obj_savedicon</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -1252,6 +1376,7 @@
           <object>objects\obj_titolieddialogue</object>
           <object>objects\obj_titoweaponsdialogue</object>
           <object>objects\obj_titoreflectdialogue</object>
+          <object>objects\obj_yuutoabsorbdialogue</object>
           <object>objects\obj_yuutolockdialogue</object>
           <object>objects\obj_yuutokeydialogue</object>
           <object>objects\obj_badendwarnspace</object>

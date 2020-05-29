@@ -50,6 +50,7 @@ website[16] = 'https://twitter.com/nashirasauce';
 website[17] = 'https://twitter.com/Juqavies_P';
 website[18] = 'https://twitter.com/Danicky98';
 website[19] = 'https://www.pexels.com/search/dog/';
+website[20] = 'https://twitter.com/_StargazerG';
 
 left = instance_create(x, y, obj_creditsbonusleft);
 right = instance_create(x, y, obj_creditsbonusright);
@@ -75,11 +76,13 @@ right = instance_create(x, y, obj_creditsbonusright);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index &lt; 0)
+            <string>script_execute(scr_menulanguage);
+
+if (image_index &lt; 0)
 {
-    image_index = 20;
+    image_index = 21;
 }
-if (image_index &gt; 20)
+if (image_index &gt; 21)
 {
     image_index = 0;
 }
@@ -172,7 +175,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index == 20)
+            <string>if (image_index == 21)
 {
     global.isCutscene = false;
     instance_destroy(left);

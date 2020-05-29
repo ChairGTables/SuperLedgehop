@@ -99,6 +99,65 @@ el color verde. ¿Acaso eres daltónica?";
     global.emotionAntagonistArray[4] = "happy";
     break;
     
+    case 3:
+    global.messageArray[0] = "Ufa. Então esse é o vaso verde.";
+    global.categoryArray[0] = "left";
+    global.emotionProtagonistArray[0] = "sad";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Err... parece que você nunca viu a cor
+verde antes. Você é daltônica?";
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "Não! B-Bem, aquele vaso parecia violeta!
+Que nem o seu vestido!";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "sad";
+    global.emotionAntagonistArray[2] = "happy";
+    
+    global.messageArray[3] = "Mas é azul.";
+    global.categoryArray[3] = "right";
+    global.emotionProtagonistArray[3] = "neutral";
+    global.emotionAntagonistArray[3] = "neutral";
+    
+    global.messageArray[4] = "QUÊ!? NÃO PODE SER!";
+    global.categoryArray[4] = "left";
+    global.emotionProtagonistArray[4] = "sad";
+    global.emotionAntagonistArray[4] = "happy";
+    break;
+    
+    case 4:
+    global.messageArray[0] = "Pfiou. Donc celui-là, c'était le vert.";
+    global.categoryArray[0] = "left";
+    global.emotionProtagonistArray[0] = "sad";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Hum...On dirait que tu n'as jamais vu du
+vert avant. Ne serais-tu pas daltonienne ?";
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "Non ! E-enfin, ce pot avait l'air violet !
+Comme la couleur de ta robe !";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "sad";
+    global.emotionAntagonistArray[2] = "happy";
+    
+    global.messageArray[3] = "Non, c'est du bleu.";
+    global.categoryArray[3] = "right";
+    global.emotionProtagonistArray[3] = "neutral";
+    global.emotionAntagonistArray[3] = "neutral";
+    
+    global.messageArray[4] = "Quoi !? C'est pas vrai !";
+    global.categoryArray[4] = "left";
+    global.emotionProtagonistArray[4] = "sad";
+    global.emotionAntagonistArray[4] = "happy";
+    break;
+    
+    
     default:
     global.messageArray[0] = "Phew. So that's the green one...";
     global.categoryArray[0] = "left";

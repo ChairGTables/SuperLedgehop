@@ -65,31 +65,79 @@ global.emotionAntagonistArray[3] = "neutral";
 break;
 
 case 2:
-global.messageArray[0] = "Ha!
-That’s just a cheap skeleton from the supermarket!";
+global.messageArray[0] = "もう、お店で買ったおもちゃのガイコツだってば！";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "YOU’RE ALIVE!";
+global.messageArray[1] = "イスズ！生きてた！";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "You dummy!
-I meant fight in fighting games!";
+global.messageArray[2] = "馬鹿！戦うって素手のつもりだったんだけど？";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "angry";
 
-global.messageArray[3] = "Oh, oops.
-Well, yeah, I’ll beat you up there.";
+global.messageArray[3] = "ああ、ごめん。まあいい、ボコボコにしてやるぜ！";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
 break;
+
+case 3:
+global.messageArray[0] = "Rá! Isso é só um esqueleto barato do mercado!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "VOCÊ TÁ VIVA!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Sua besta! Eu quis dizer me derrotar num jogo de luta!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Ah, opa. Bom, tá, vou te derrotar então..";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+break;
+
+
+
+case 4:
+global.messageArray[0] = "Ha ! C'est juste un squelette en plastique du supermarché !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "T'ES VIVANTE !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Crétine ! J´ai dit me battre comme dans un jeu de baston !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Oh, oups. Eh ben, ouais, je vais te battre là-dessus alors.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+break;
+
 
 default:
 global.messageArray[0] = "Ha!

@@ -131,6 +131,31 @@ image_speed = 0;
 image_index = global.language;
 global.totalDeaths += 1;
 global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_gutsman, false, 10); // Music in rm1, priority 10, looping
+
+if (instance_exists(obj_chizurubasicbullet))
+{
+    instance_destroy(obj_chizurubasicbullet);
+}
+if (instance_exists(obj_chizuruenhancedbullet))
+{
+    instance_destroy(obj_chizuruenhancedbullet);
+}
+if (instance_exists(obj_chizuruspreadbullet))
+{
+    instance_destroy(obj_chizuruspreadbullet);
+}
+if (instance_exists(obj_chizuruicebullet))
+{
+    instance_destroy(obj_chizuruicebullet);
+}
+if (instance_exists(obj_chizurufirebullet))
+{
+    instance_destroy(obj_chizurufirebullet);
+}
+if (instance_exists(obj_chizuruflame))
+{
+    instance_destroy(obj_chizuruflame);
+}
 </string>
           </argument>
         </arguments>

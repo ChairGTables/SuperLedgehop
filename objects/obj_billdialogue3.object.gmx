@@ -36,6 +36,22 @@ global.messageLimit = 0;
 
 switch (global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "CHIZURU ! YUUTO ! COURREZ !!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+break;
+
+//Brazil
+case 3:
+global.messageArray[0] = "CHIZURU! YUUTO! CORRAM!!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+break;
+
 case 2:
 global.messageArray[0] = "チズルッ！優朋ォ！逃げろォ！！";
 global.categoryArray[0] = "left";

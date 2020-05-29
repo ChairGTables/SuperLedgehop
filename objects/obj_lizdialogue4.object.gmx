@@ -38,6 +38,107 @@ global.messageLimit = 8;
 
 switch(global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "Mains en l'air !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "De quoi !?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "On visait la flic sans importance là.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Elle est plus importante que tu n'arriveras
+jamais à le devenir, imbécile.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Qu'est-ce que tu veux dire !? On aurait pu te rendre la vie facile.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "En vrai, qu'est-ce que j'dis ?";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "On nous a ordonné de te tuer alors on s'en moque de tout ça.";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Donc au revoir, inutile, stupide, bruyant, nuisible, pourri,
+puant sac à foutre.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Mouais, osef.";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+break;
+
+case 3:
+global.messageArray[0] = "Sai fora!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "O que é isso!?";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Estavamos mirando naquela policial inútil ali.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Ela é mais útil que você jamais poderia querer ser, idiota.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Como assim!? Poderíamos ter feito a sua vida mais fácil.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Mas o que eu estou falando?";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Fomos ordenados a te matar, então não importa agora.";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Então adeus, sua calhorda idiota, barulhenta, irritante, burra, fedida
+e lazarenta.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Tá, que seja.";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+break;
+
+
 case 2:
 global.messageArray[0] = "手ェ出すんじゃねえ！";
 global.categoryArray[0] = "left";
@@ -50,7 +151,7 @@ global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "angry";
 
-global.messageArray[2] = "俺たちはそこの無関係な警官をだな…。";
+global.messageArray[2] = "俺たちはそこの無関係な警官をだな...。";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "angry";
@@ -70,7 +171,7 @@ global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "neutral";
 global.emotionAntagonistArray[5] = "angry";
 
-global.messageArray[6] = "俺たちはお前を殺せって言われたんだから言う意味ないな…。";
+global.messageArray[6] = "俺たちはお前を殺せって言われたんだから言う意味ないな...。";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "angry";

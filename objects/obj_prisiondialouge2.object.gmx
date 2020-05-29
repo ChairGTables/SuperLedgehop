@@ -86,7 +86,7 @@ global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "neutral";
 
-global.messageArray[8] = "“¡Si!
+global.messageArray[8] = "¡Si!
 ¡Algún día deberías probar los filetes con queso que preparo en casa!";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "happy";
@@ -218,182 +218,519 @@ break;
 
 
 case 2:
-global.messageArray[0] = "EUUUUUUUUUURGGHHHHHHHHHHH!!!!";
+global.messageArray[0] = "オエエエエエエエエエエエッ！！";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "sad";
 
 
-global.messageArray[1] = "What!?
-But you love cheesesteak!";
+global.messageArray[1] = "ええっ？でもチーズステーキ好きなんじゃないの！？";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "sad";
 
 
-global.messageArray[2] = "Yeah!
-But this one SUCKS!!!";
+global.messageArray[2] = "ああ！でもコイツはゲロマズだぜ！";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "sad";
 
-global.messageArray[3] = "W-Why you ungrateful WHOOOOOOOOOOOOOOOOOOOOOOOOOOO
-OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOREEEE!";
+global.messageArray[3] = "何でよ！？感謝しなさいよ馬鹿ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーッ！！";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "No! I’m serious!
-Try it! It sucks!";
+global.messageArray[4] = "いやマジだって！これ滅茶苦茶マズいぞ！";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Eww! No!
-I hate cheesesteak!";
+global.messageArray[5] = "オエッ！嫌よ！チーズステーキ大嫌いだもの！";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "sad";
 
-global.messageArray[6] = "No wonder you hate cheesesteak! 
-You’re getting the bad ones!";
+global.messageArray[6] = "無理ねえよ！お前が普段食べてる奴がマズいんだからな！";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "sad";
 
-global.messageArray[7] = "R-Really?";
+global.messageArray[7] = "本当に？";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "curious";
 global.emotionAntagonistArray[7] = "neutral";
 
-global.messageArray[8] = "Yeah!
-You gotta try my homemade cheesesteaks one day!";
+global.messageArray[8] = "ああ！今度俺の手作りのを食わせてやるよ！";
 global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "happy";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "Chizuru loves them so much that she explodes her pants!";
+global.messageArray[9] = "チズルは好きすぎてズボン爆発したからな！";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "happy";
 global.emotionAntagonistArray[9] = "neutral";
 
-global.messageArray[10] = "Chizuru must miss your cheesesteaks by now, huh?";
+global.messageArray[10] = "チズルもあなたのチーズステーキ、恋しいんじゃない？";
 global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "happy";
 global.emotionAntagonistArray[10] = "sad";
 
 
-global.messageArray[11] = "Yeah, I bet.
-She’s probably eating the rotten cheese inside trash cans at this point.";
+global.messageArray[11] = "ああ、そうだろうな。
+多分あいつごみ箱の腐ったやつでも食ってるだろうな。";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "sad";
 
 
-global.messageArray[12] = "That would have been me too if they didn’t give me a raise.";
+global.messageArray[12] = "上が給料上げてくれなかったら私だってそうなってたわよ。";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "curious";
 global.emotionAntagonistArray[12] = "sad";
 
-global.messageArray[13] = "Oh, they gave you a raise? Congratulations!";
+global.messageArray[13] = "おっ、給料上がったのか？よかったな！";
 global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "You’ll be the best cop out there soon enough!";
+global.messageArray[14] = "最高の警官も夢じゃないな！";
 global.categoryArray[14] = "left";
 global.emotionProtagonistArray[14] = "happy";
 global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "Yeah, but it’s only a few cents raise, ahaha.";
+global.messageArray[15] = "でも2、3セントぐらいだったけどね、ハハッ。";
 global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "happy";
 global.emotionAntagonistArray[15] = "neutral";
 
-global.messageArray[16] = "Well, hey! At least you’re still a cop!";
+global.messageArray[16] = "でもまあお前がまだ警官でよかった！";
 global.categoryArray[16] = "left";
 global.emotionProtagonistArray[16] = "curious";
 global.emotionAntagonistArray[16] = "neutral";
 
-global.messageArray[17] = "Did any of your cop buddies get a lead on Chizuru yet?";
+global.messageArray[17] = "ところでそっちはチズルの行方は掴めてるのか？";
 global.categoryArray[17] = "left";
 global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "neutral";
 
-global.messageArray[18] = "Well, there was a report that she took down
-a hundred gang members as well as a sovereign prince.";
+global.messageArray[18] = "報告によれば、ギャング100人と王子を倒したって話よ。";
 global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "sad";
 
-global.messageArray[19] = "Hospitals are very busy right now attending them.";
+global.messageArray[19] = "近所の病院が大忙しって話。";
 global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "neutral";
 global.emotionAntagonistArray[19] = "sad";
 
-global.messageArray[20] = "A PRINCE!?
-YEAH!";
+global.messageArray[20] = "王子！？最高だな！";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "happy";
 global.emotionAntagonistArray[20] = "sad";
 
 
-global.messageArray[21] = "I KNEW CHIZURU IS SUPER STRONG!
-I’M SO PROUD!";
+global.messageArray[21] = "チズル信じてたぞ！俺も誇らしいぜ！";
 global.categoryArray[21] = "left";
 global.emotionProtagonistArray[21] = "happy";
 global.emotionAntagonistArray[21] = "sad";
 
 
-global.messageArray[22] = "Yeah, her bounty is pretty big right now...";
+global.messageArray[22] = "ええ、でも懸賞金も膨れ上がってる...。";
 global.categoryArray[22] = "right";
 global.emotionProtagonistArray[22] = "happy";
 global.emotionAntagonistArray[22] = "sad";
 
-global.messageArray[23] = "Hmm, I think you should catch her yourself.";
+global.messageArray[23] = "お前が捕まえに行くべきなんじゃないか？";
 global.categoryArray[23] = "left";
 global.emotionProtagonistArray[23] = "neutral";
 global.emotionAntagonistArray[23] = "sad";
 
-global.messageArray[24] = "W-What’s with you and crazy ideas!?";
+global.messageArray[24] = "ちょ、ちょっと急に何よその発想！？";
 global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "neutral";
 global.emotionAntagonistArray[24] = "angry";
 
-global.messageArray[25] = "Come on.
-Think about it.";
+global.messageArray[25] = "おいおい、考えてみろよ。";
 global.categoryArray[25] = "left";
 global.emotionProtagonistArray[25] = "neutral";
 global.emotionAntagonistArray[25] = "angry";
 
-global.messageArray[26] = "If there’s anyone that would get Chizuru
-arrested, it should be you.";
+global.messageArray[26] = "チズルが誰かに捕まるとしたら、お前だ。";
 global.categoryArray[26] = "left";
 global.emotionProtagonistArray[26] = "neutral";
 global.emotionAntagonistArray[26] = "neutral";
 
-global.messageArray[27] = "If it’s anyone else, then we’re screwed.";
+global.messageArray[27] = "そうじゃなきゃどうしようもなくなるだろ？";
 global.categoryArray[27] = "left";
 global.emotionProtagonistArray[27] = "curous";
 global.emotionAntagonistArray[27] = "sad";
 
-global.messageArray[28] = "You want your niece arrested?";
+global.messageArray[28] = "自分の姪が捕まってほしいって？";
 global.categoryArray[28] = "right";
 global.emotionProtagonistArray[28] = "curious";
 global.emotionAntagonistArray[28] = "sad";
 
-global.messageArray[29] = "I want her to be arrested only by you.
-It’s all in the mind games.";
+global.messageArray[29] = "チズルはお前以外にしか捕まってほしくないんだ。
+全部考えてのことだ。";
 global.categoryArray[29] = "left";
 global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
-global.messageArray[30] = "Trust me on this.
-We’ll all get out of here and fix this mess after that.";
+global.messageArray[30] = "信じてくれ。
+それが終わったらここから出て、後をなんとかしよう。";
 global.categoryArray[30] = "left";
 global.emotionProtagonistArray[30] = "neutral";
 global.emotionAntagonistArray[30] = "neutral";
 break;
+
+
+
+case 3:
+global.messageArray[0] = "AAAAAAAARRRRRRRGHHHHHH!!!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Que foi!? Você ama cheesesteak!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Sim! Mas esse aqui é uma PORCARIA!!!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "O-Ora, seu INGRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Não! É sério! Experimenta! É horrível!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Credo! Não! Eu odeio cheesesteak!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "Não me surpreende que você odeia! Você só pega os ruins!";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "S-Sério?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "curious";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "É! Você tem que experimentar os meus cheesesteaks caseiros um dia!";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "A Chizuru ama eles tanto que as calças dela explodem!";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "happy";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "A Chizuru deve sentir falta dos seus cheesesteaks agora, hein?";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "sad";
+
+
+global.messageArray[11] = "É, aposto que sim.
+Ela provavelmente tá comendo queijo podre das latas de lixo a esse ponto.";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "sad";
+
+
+global.messageArray[12] = "Eu também estaria se não me tivessem dado um aumento.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "curious";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "Ah, te deram um aumento? Parabéns!";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "Você vai ser a melhor policial que existe logo, logo!";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
+
+global.messageArray[15] = "É, mas foi um aumento de só alguns centavos, hahaha.";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "Bem, é! Pelo menos você ainda é uma policial!";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "curious";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "Algum dos seus colegas policiais já descobriu algo sobre a Chizuru?";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "neutral";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Bem, há rumores que ela derrotou cem membros de uma gangue e um
+príncipe estrangeiro.";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "sad";
+
+global.messageArray[19] = "Os hospitais estão muito ocupados agora atendendo eles.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "sad";
+
+global.messageArray[20] = "UM PRÍNCIPE!? É!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "sad";
+
+
+global.messageArray[21] = "EU SABIA QUE A CHIZURU ERA FORTONA! ESTOU TÃO ORGULHOSO!";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "happy";
+global.emotionAntagonistArray[21] = "sad";
+
+
+global.messageArray[22] = "É, a recompensa por capturar ela está enorme...";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "happy";
+global.emotionAntagonistArray[22] = "sad";
+
+global.messageArray[23] = "Hmm, eu acho que você devia capturar ela você mesma.";
+global.categoryArray[23] = "left";
+global.emotionProtagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "sad";
+
+global.messageArray[24] = "Q-Qual é a dessas suas ideias loucas!?";
+global.categoryArray[24] = "right";
+global.emotionProtagonistArray[24] = "neutral";
+global.emotionAntagonistArray[24] = "angry";
+
+global.messageArray[25] = "Vamos. Pense.";
+global.categoryArray[25] = "left";
+global.emotionProtagonistArray[25] = "neutral";
+global.emotionAntagonistArray[25] = "angry";
+
+global.messageArray[26] = "Se tem alguém que poderia prender a Chizuru, deveria ser você.";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "neutral";
+global.emotionAntagonistArray[26] = "neutral";
+
+global.messageArray[27] = "Se fosse qualquer outra pessoa, estaríamos ferrados.";
+global.categoryArray[27] = "left";
+global.emotionProtagonistArray[27] = "curous";
+global.emotionAntagonistArray[27] = "sad";
+
+global.messageArray[28] = "Você quer a sua sobrinha presa?";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "curious";
+global.emotionAntagonistArray[28] = "sad";
+
+global.messageArray[29] = "Eu quero que ela seja presa por você apenas.
+É tudo um jogo psicológico.";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "neutral";
+global.emotionAntagonistArray[29] = "neutral";
+
+global.messageArray[30] = "Confie em mim.
+Vamos sair daqui e arrumar essa bagunça depois disso.";
+global.categoryArray[30] = "left";
+global.emotionProtagonistArray[30] = "neutral";
+global.emotionAntagonistArray[30] = "neutral";
+break;
+
+
+
+//French
+case 4:
+global.messageArray[0] = "EUUUUUUUUUURGGHHHHHHHHHHH !!!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Quoi !? Mais tu aimes les cheesesteaks !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Ouais ! Mais celui-là il CRAINT !!!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Q-quoi ?! T'es rien qu'un COUILLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Non ! J'suis sérieux !
+Essaye ! Il pue !";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Uww ! Non !
+Je déteste les cheesesteaks !";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "Tu m'étonnes que tu détestes les cheesesteaks !
+Tu prends que les mauvais !";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "V-vraiment ?";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "curious";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "Ouais ! Tu dois essayer mes chessesteaks fait-maison un de ces jours !";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Chizuru les aime tellement qu'elle en mouille sa culotte !";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "happy";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Tes cheesesteaks doivent lui manquer maintenant, pas vrai ?";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "sad";
+
+
+global.messageArray[11] = "Ouais, je parie. Elle est sûrement en train de manger le fromage
+pourri dans les poubelles en ce moment.";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "sad";
+
+
+global.messageArray[12] = "Ça aurait été pareil pour moi, si j'avais pas eu une augmentation.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "curious";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "Oh, ils t'ont accordé une augmentation ? Félicitations !";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "Tu seras la meilleure flic du coin dans peu de temps !";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
+
+global.messageArray[15] = "Ouais, mais c'est juste une augmentation
+de quelques centimes, ahaha.";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "happy";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "Ben, hey ! Au moins, t'es toujours flic !";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "curious";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "Est-ce que les autres flics ont des nouvelles de Chizuru ?";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "neutral";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Ben, il y a eu des rapports comme quoi, elle aurait exterminé une
+centaine de membres de gang ainsi qu'un souverain étranger.";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "sad";
+
+global.messageArray[19] = "Les hôpitaux sont surpeuplés en ce moment.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "sad";
+
+global.messageArray[20] = "UN SOUVERAIN !? OUAIS !";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "sad";
+
+
+global.messageArray[21] = "JE SAVAIS QUE CHIZURU DEVIENDRAIT SUPER BALÈZE !
+J'SUIS TELLEMENT FIER !";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "happy";
+global.emotionAntagonistArray[21] = "sad";
+
+
+global.messageArray[22] = "Ouais, sa prime est plutôt élevée maintenant...";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "happy";
+global.emotionAntagonistArray[22] = "sad";
+
+global.messageArray[23] = "Hum, je crois que tu devrais l'attraper toi-même.";
+global.categoryArray[23] = "left";
+global.emotionProtagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "sad";
+
+global.messageArray[24] = "Q-qu'est-ce c'est que ces idées givrées ?";
+global.categoryArray[24] = "right";
+global.emotionProtagonistArray[24] = "neutral";
+global.emotionAntagonistArray[24] = "angry";
+
+global.messageArray[25] = "Vas-y. Réfléchis-y.";
+global.categoryArray[25] = "left";
+global.emotionProtagonistArray[25] = "neutral";
+global.emotionAntagonistArray[25] = "angry";
+
+global.messageArray[26] = "S'il y a une personne qui devrait arrêter Chizuru, ce serait toi.";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "neutral";
+global.emotionAntagonistArray[26] = "neutral";
+
+global.messageArray[27] = "Si c'est quelqu'un d'autre, il finirait en gruyère.";
+global.categoryArray[27] = "left";
+global.emotionProtagonistArray[27] = "curous";
+global.emotionAntagonistArray[27] = "sad";
+
+global.messageArray[28] = "Tu veux qu'elle se fasse arrêter ?";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "curious";
+global.emotionAntagonistArray[28] = "sad";
+
+global.messageArray[29] = "Il n'y a que toi qui ait le droit de l'arrêter.
+Tout est dans la tête.";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "neutral";
+global.emotionAntagonistArray[29] = "neutral";
+
+global.messageArray[30] = "Crois-moi là-dessus. On va tous sortir d'ici puis on va tout
+remettre en ordre.";
+global.categoryArray[30] = "left";
+global.emotionProtagonistArray[30] = "neutral";
+global.emotionAntagonistArray[30] = "neutral";
+break;
+
+
 
 
 default:

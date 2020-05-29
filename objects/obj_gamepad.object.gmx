@@ -46,6 +46,7 @@ leftClick = false;
 spinning = false;
 dpad = 0;
 index = 0;
+shined = 0;
 
         keyboard_key_release(ord('Z'));
         keyboard_key_release(ord('X'));
@@ -500,7 +501,19 @@ if (gamepad_button_check_released(0, gp_face3) &amp;&amp; joy_x == true)
     global.isGamepad = true;
     if (instance_exists(obj_chizuru))
     {
-        script_execute(scr_chizurushine);
+        if (global.misc4 == 0)
+        {
+            if (shined == 0)
+            {
+                script_execute(scr_chizurushine);
+            }
+            
+        }
+        else
+        {
+            script_execute(scr_chizurushine);
+        }
+        shined = 0;
     }
 }
     
@@ -509,7 +522,19 @@ if (gamepad_button_check(0, gp_face3))
     joy_x = true;
     if (instance_exists(obj_chizuru))
     {
-        global.chizurushinecharge += 1;
+        if (global.misc4 == 0)
+        {
+            if (global.chizurushinecharge &gt; 3)
+            {
+                script_execute(scr_chizurushine);
+                shined = 1;
+            }
+        }
+        if (shined == 0)
+        {
+            global.chizurushinecharge += 1;
+        }
+        
     }
 }    
 
@@ -1331,7 +1356,19 @@ if (instance_exists(obj_chizuru))
             <string>global.isGamepad = false;
 if (instance_exists(obj_chizuru))
 {
-    script_execute(scr_chizurushine);
+    if (global.misc4 == 0)
+    {
+        if (shined == 0)
+        {
+            script_execute(scr_chizurushine);
+        }
+        
+    }
+    else
+    {
+        script_execute(scr_chizurushine);
+    }
+    shined = 0;
 }
 </string>
           </argument>
@@ -1537,7 +1574,19 @@ if (instance_exists(obj_chizuru))
             <kind>1</kind>
             <string>if (instance_exists(obj_chizuru))
 {
-    global.chizurushinecharge += 1;
+    if (global.misc4 == 0)
+    {
+        if (global.chizurushinecharge &gt; 3)
+        {
+            script_execute(scr_chizurushine);
+            shined = 1;
+        }
+    }
+    if (shined == 0)
+    {
+        global.chizurushinecharge += 1;
+    }
+    
 }
 </string>
           </argument>

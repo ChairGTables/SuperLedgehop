@@ -125,7 +125,8 @@ if (hFinish == 1 &amp;&amp; vFinish == 1 &amp;&amp; state == 0)
 
     //audio_stop_sound(snd_crashed);
     instance_create(x, y, obj_explosion);
-    
+    audio_stop_sound(snd_crashed);
+    audio_play_sound_on (global.effectsEmitter, snd_crashedlower, false, 10);
     if (sprite_index == spr_policerifle)
     {
         audio_play_sound_on (global.voiceEmitter, snd_death12lower, false, 10);
