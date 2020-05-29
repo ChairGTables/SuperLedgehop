@@ -674,6 +674,7 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     death.sprite_index = spr_louiehurt;
     global.musicVolume = global.volumeHold;
     audio_emitter_gain(global.musicEmitter,   global.musicVolume);
+    
     if (!steam_get_achievement("BOSS6"))
     {
         steam_set_achievement("BOSS6");

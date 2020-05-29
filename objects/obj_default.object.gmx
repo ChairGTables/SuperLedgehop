@@ -409,7 +409,7 @@ if (shootTimer &lt;= 0)
                         fire = instance_create(x, y, obj_flame_sonii);
                         fire.speed = random_range(7,9);
                         fire.direction = i;
-                        fire.damage = 15;
+                        fire.damage = 12;
                     }
                     audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10); 
                     shotCount = 0;
@@ -994,7 +994,7 @@ script_execute(scr_enemydamage);
 {
     sekret = instance_create(other.x, other.y, obj_laser_sonii);
     sekret.visible = 0;
-    sekret.damage = 15;
+    sekret.damage = 12;
     
     if(instance_exists(obj_shine))
     {

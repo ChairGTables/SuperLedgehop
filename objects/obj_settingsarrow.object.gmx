@@ -51,7 +51,7 @@ left = 0;
             <kind>1</kind>
             <string>if (global.titleState == 1)
 {
-    if (global.titleSelection &lt; 3)
+    if (global.titleSelection &lt; 3 || global.titleSelection == 6)
     {
         visible = 1;    
     }
@@ -93,6 +93,15 @@ if (global.titleSelection == 2)
     {
         y = obj_cutscenesoffon.y;
         x = obj_cutscenesoffon.x + (115 * image_xscale);
+    }
+}
+
+if (global.titleSelection == 6)
+{
+    if (instance_exists(obj_holdreleasemenu))
+    {
+        y = obj_holdreleasemenu.y;
+        x = obj_holdreleasemenu.x + (115 * image_xscale);
     }
 }
 </string>
@@ -196,6 +205,17 @@ if (global.titleSelection == 2)
         else
         {
             global.disableCutscenes = 0;
+        }
+    }
+    if (global.titleSelection == 6)
+    {
+        if (global.misc4 == 0)
+        {
+            global.misc4 = 1;   
+        }
+        else
+        {
+            global.misc4 = 0;
         }
     }
 }

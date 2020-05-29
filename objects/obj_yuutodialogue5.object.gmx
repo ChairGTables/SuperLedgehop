@@ -100,6 +100,68 @@ global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "angry";
 break;
 
+case 3:
+global.messageArray[0] = "Tá, você focou todos os seus tiros numa área só.";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Assim ficou fácil!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Qual é. Tenta dar uma variada!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Arrrrghhhhh!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "E-Eu não acabei ainda!
+Agora você vai ver meu verdadeiro poder!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+break;
+
+
+
+//French
+case 4:
+global.messageArray[0] = "Okay, donc t'as concentré tous tes tirs à un seul endroit.";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "C'était trop facile !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Alors, il est passé où ton méli-mélo ?";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Raaaaahhhhh !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "J-j'ai pas encore fini !
+Maintenant, tu vas tater de ma puissance !";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+break;
+
+
 default:
 global.messageArray[0] = "Okay, you focused all your shots in one area.";
 global.categoryArray[0] = "left";

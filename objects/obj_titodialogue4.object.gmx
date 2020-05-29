@@ -129,7 +129,7 @@ global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "sad";
 global.emotionAntagonistArray[16] = "angry";
 
-global.messageArray[17] = "No lo sé, ¡pero debo averiguarlo!";
+global.messageArray[17] = "No lo sé, ¡Pero debo averiguarlo!";
 global.categoryArray[17] = "left";
 global.emotionProtagonistArray[17] = "sad";
 global.emotionAntagonistArray[17] = "angry";
@@ -196,7 +196,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "angry";
 
-global.messageArray[3] = "うーん…まだ探検してたいんだけど…";
+global.messageArray[3] = "うーん...まだ探検してたいんだけど...";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "angry";
@@ -284,12 +284,12 @@ global.categoryArray[19] = "left";
 global.emotionProtagonistArray[19] = "neutral";
 global.emotionAntagonistArray[19] = "angry";
 
-global.messageArray[20] = "これぐらい…";
+global.messageArray[20] = "これぐらい...";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "neutral";
 global.emotionAntagonistArray[20] = "angry";
 
-global.messageArray[21] = "…自分でなんとかなるぜ！";
+global.messageArray[21] = "...自分でなんとかなるぜ！";
 global.categoryArray[21] = "left";
 global.emotionProtagonistArray[21] = "neutral";
 global.emotionAntagonistArray[21] = "angry";
@@ -304,12 +304,298 @@ global.categoryArray[23] = "right";
 global.emotionProtagonistArray[23] = "neutral";
 global.emotionAntagonistArray[23] = "curious";
 
-global.messageArray[24] = "大人になった事、俺が心配しなくていい事、…";
+global.messageArray[24] = "大人になった事、俺が心配しなくていい事...";
 global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "neutral";
 global.emotionAntagonistArray[24] = "angry";
 
-global.messageArray[25] = "…証明してみせな！";
+global.messageArray[25] = "証明してみせな！";
+global.categoryArray[25] = "right";
+global.emotionProtagonistArray[25] = "neutral";
+global.emotionAntagonistArray[25] = "angry";
+
+break;
+
+
+case 3:
+
+global.messageArray[0] = "Peraí! Eu fiz besteira.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Só agora me toquei que você tá indo pra algum
+lugar e tem esses caras todos tentando te matar.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Você precisa vir pra casa. Já.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Err... Mas eu quero continuar explorando?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Explorar!?";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "Então por que você tá indo pras montanhas!?";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Para explorar, uai.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Bom, tá muito perigoso agora. Espere até amanhã.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Não dá pra esperar!";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Se eu não for até aquele prédio estranho do governo
+agora, eu talvez nunca veja minha família de novo!";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Mas eu sou da sua família!";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "sad";
+global.emotionAntagonistArray[10] = "sad";
+
+global.messageArray[11] = "Mas Tito! Você não entende!";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "sad";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "Como assim?";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "sad";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "Tem uma mulher esquisita que eu vi mais
+cedo e ela tá indo lá também!";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "sad";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "E o que uma mulher esquisita tem a ver com isso?";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "sad";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "ELA PODE MATAR MEU IRMÃO!";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "sad";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "E você lá sabe quem é o seu irmão?";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "sad";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = "Não sei, mas tenho que descobrir!";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "sad";
+global.emotionAntagonistArray[17] = "angry";
+
+global.messageArray[18] = "Volte para casa, eu resolvo isso.";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "sad";
+global.emotionAntagonistArray[18] = "angry";
+
+global.messageArray[19] = "Não!";
+global.categoryArray[19] = "left";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "angry";
+
+global.messageArray[20] = "Eu sou uma adulta!
+Eu não preciso que você tome conta de mim!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "neutral";
+global.emotionAntagonistArray[20] = "angry";
+
+global.messageArray[21] = "Eu posso dar um jeito nisso eu mesma!";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "neutral";
+global.emotionAntagonistArray[21] = "angry";
+
+global.messageArray[22] = "Uma fase rebelde com vinte e poucos anos de idade!?";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "neutral";
+global.emotionAntagonistArray[22] = "angry";
+
+global.messageArray[23] = "Bom, você é uma adulta agora.";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "curious";
+
+global.messageArray[24] = "Mas não posso só deixar você ir que nem um pai num RPG!";
+global.categoryArray[24] = "right";
+global.emotionProtagonistArray[24] = "neutral";
+global.emotionAntagonistArray[24] = "angry";
+
+global.messageArray[25] = "Mostre que eu não tenho que me preocupar!";
+global.categoryArray[25] = "right";
+global.emotionProtagonistArray[25] = "neutral";
+global.emotionAntagonistArray[25] = "angry";
+
+break;
+
+
+
+//French
+
+case 4:
+
+global.messageArray[0] = "Attends, je me suis gourré.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "J'viens juste de réaliser que tu t'aventurais toute
+seule là-bas et que tous ces gars essaient de te tuer.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Tu dois rentrer à la maison. Maintenant.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Mais... je veux encore explorer ?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Explorer !?";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "Pourquoi vas-tu donc vers les montagnes !?";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Devine. Pour explorer.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Eh bah là tout de suite, c'est trop dangereux. Attends jusqu'à demain.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Non, ça peut pas attendre !";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Si je ne vais pas maintenant à ce bâtiment gouvernemental tout bizarre,
+je pourrais ne jamais revoir ma vraie famille !";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Mais, je suis ta vraie famille !";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "sad";
+global.emotionAntagonistArray[10] = "sad";
+
+global.messageArray[11] = "Mais Tito, tu piges pas !";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "sad";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "Qu'est-ce que tu veux dire ?";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "sad";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "Il y a cette femme louche que j'ai rencontré avant et elle
+s'y dirige aussi !";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "sad";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "Qu'est-ce que cette femme louche a à voir avec ça ?";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "sad";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "ELLE VA PEUT-ÊTRE TUER MON FRÈRE !";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "sad";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "Est-ce que tu sais déja qui est ton frère ?";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "sad";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = "Chais pas mais j'ai besoin d'le savoir !";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "sad";
+global.emotionAntagonistArray[17] = "angry";
+
+global.messageArray[18] = "Rentre à la maison, je vais régler ça.";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "sad";
+global.emotionAntagonistArray[18] = "angry";
+
+global.messageArray[19] = "Non !";
+global.categoryArray[19] = "left";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "angry";
+
+global.messageArray[20] = "J'suis une adulte !
+Tu n'as pas à prendre soin de moi !";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "neutral";
+global.emotionAntagonistArray[20] = "angry";
+
+global.messageArray[21] = "Je peux régler ça moi-même !";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "neutral";
+global.emotionAntagonistArray[21] = "angry";
+
+global.messageArray[22] = "Une phase rebelle à tes vingt ans !?";
+global.categoryArray[22] = "right";
+global.emotionProtagonistArray[22] = "neutral";
+global.emotionAntagonistArray[22] = "angry";
+
+global.messageArray[23] = "Eh bien, je suppose que tu es une adulte maintenant.";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "neutral";
+global.emotionAntagonistArray[23] = "curious";
+
+global.messageArray[24] = "Mais je vais pas te laisser y aller comme n'importe
+quel parent typique d'RPG !";
+global.categoryArray[24] = "right";
+global.emotionProtagonistArray[24] = "neutral";
+global.emotionAntagonistArray[24] = "angry";
+
+global.messageArray[25] = "Prouve-moi que je n'ai pas à m'inquiéter !";
 global.categoryArray[25] = "right";
 global.emotionProtagonistArray[25] = "neutral";
 global.emotionAntagonistArray[25] = "angry";
@@ -368,7 +654,7 @@ global.categoryArray[8] = "left";
 global.emotionProtagonistArray[8] = "sad";
 global.emotionAntagonistArray[8] = "angry";
 
-global.messageArray[9] = "If I don't go that weird government building now,
+global.messageArray[9] = "If I don't go to that weird government building now,
 I might never see my real family again!";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "sad";

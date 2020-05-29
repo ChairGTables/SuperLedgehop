@@ -35,6 +35,60 @@ global.messageLimit = 2;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "Heh, donc vous avez toutes les deux appris la vérité.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Désolé, mais je ne peux pas la laisser éclater au grand jour.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "Mourrez !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
+case 3:
+global.messageArray[0] = "Hehe, então vocês descobriram a verdade.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Perdão, mas não posso deixar que o povo saiba.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "Morram!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
+case 2:
+global.messageArray[0] = "どうやら二人とも私の計画を知ってしまったようですね...。";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "この事を世間に漏らす訳にはいかないのでね...。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "死ねェ！！";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
 case 1:
 global.messageArray[0] = "Je je, así que han averiguado la verdad.";
 global.categoryArray[0] = "right";

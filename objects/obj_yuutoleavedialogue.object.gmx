@@ -110,19 +110,61 @@ else
     break;
     
     case 1:
-    global.messageArray[0] = "¡E-En seguida vuelvo!";
+    global.messageArray[0] = "¡Um... adelántate!
+Ya averiguare que hacer.";
     global.categoryArray[0] = "right";
     global.emotionProtagonistArray[0] = "sad";
     global.emotionAntagonistArray[0] = "sad";
     
-    global.messageArray[1] = "¡Anda ya!
-¡Tú puedes hacerlo!";
+    global.messageArray[1] = "¿Acaso no estas flotando?
+Solo flota sobre eso y ya.";
     global.categoryArray[1] = "left";
     global.emotionProtagonistArray[1] = "neutral";
     global.emotionAntagonistArray[1] = "sad";
     
-    global.messageArray[2] = "¡Imposible!
-Es demasiado alto como para flotar sobre ello.";
+    global.messageArray[2] = "¡N-No puedo flotar tan alto
+aun! ¡Sigo aprendiendo!";
+    global.categoryArray[2] = "right";
+    global.emotionProtagonistArray[2] = "sad";
+    global.emotionAntagonistArray[2] = "sad";
+    break;
+    
+    case 3:
+    global.messageArray[0] = "Hum... pode ir!
+Eu me viro aqui!";
+    global.categoryArray[0] = "right";
+    global.emotionProtagonistArray[0] = "sad";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Cara, você não tá flutuando?
+É só passar por cima.";
+    global.categoryArray[1] = "left";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "E-Eu não consigo flutuar tão
+alto! Estou aprendendo ainda!";
+    global.categoryArray[2] = "right";
+    global.emotionProtagonistArray[2] = "sad";
+    global.emotionAntagonistArray[2] = "sad";
+    break;
+    
+    //French
+    case 4:
+    global.messageArray[0] = "Hum… Vas-y ! J'essaierai
+de trouver une autre issue !";
+    global.categoryArray[0] = "right";
+    global.emotionProtagonistArray[0] = "sad";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Meuf, genre, tu peux flotter ?
+Juste flotte par-dessus.";
+    global.categoryArray[1] = "left";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "J-je peux pas flotter aussi haut !
+J'apprends encore !";
     global.categoryArray[2] = "right";
     global.emotionProtagonistArray[2] = "sad";
     global.emotionAntagonistArray[2] = "sad";

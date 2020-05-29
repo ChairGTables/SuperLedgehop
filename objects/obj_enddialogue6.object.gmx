@@ -39,6 +39,397 @@ global.messageLimit = 23;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "Tout le monde, fuyez !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "J-je viens avec vous les gars !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Non, tu ne dois pas !";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "M-mais pourquoi !?";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Je ne peux plus supporter ça ! Je veux servir le bien !";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "On a besoin au moins d'un flic dans ce monde pour servir le bien.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Mais y a plus rien à faire ! Ils vont tellement me virer !";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Il doit y avoir quelqu´un de notre côté suffisament
+proche de nos ennemis.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "Et c'est toi.";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Je ne peux pas ! Je te dis que je vais me faire virer pour tout
+ce que je viens de faire !";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Bon... Je suppose qu'il n'y a plus le choix.";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "Quoi ?";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "Arrête-moi.";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "QUOI !?";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Non, je ne peux pas ! T'es malade !";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "Ha ! Depuis quand je ne l'étais pas ?";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "Derrière chaque malade, y a un plan de malade !";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "angry";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "Mais au sujet ta nièce !?";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "angry";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "C'est précisément ce que je te laisse. Fais en sorte que les
+flics la trouvent pas.";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "angry";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "Je vais quand même pas t'arrêter espèce d'IDIIIIIIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT !";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "angry";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "Mes rêves de devenir un sénateur ont déja disparus.";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "angry";
+global.emotionAntagonistArray[20] = "neutral";
+
+global.messageArray[21] = "Je peux pas laisser ton rêve de devenir la
+meilleure flic s'évaporer aussi.";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "angry";
+global.emotionAntagonistArray[21] = "neutral";
+
+global.messageArray[22] = "Fais-le, et tu garderas ton emploi.";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "angry";
+global.emotionAntagonistArray[22] = "neutral";
+
+global.messageArray[23] = "Guh...";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
+global.emotionAntagonistArray[23] = "neutral";
+break; 
+
+
+
+case 3:
+global.messageArray[0] = "Corre, pessoal!!!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "E-Estou indo com vocês!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Não! Não venha!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Por quê!?";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Não aguento mais! Quero fazer o que é certo!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Escuta! Precisamos de no mínimo um policial nesse mundo
+fazendo o que é certo.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Mas ainda vão me demitir com certeza!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Mas tem que ter alguém do nosso lado pra ficar perto dos que
+estão contra nós.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "E essa é você.";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Estou falando!
+Eu ainda vou ser demitida por ter feito besteira hoje!";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Bom, acho que eu não tenho escolha.";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "Hein?";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "Me prenda.";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "QUÊ!?";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Você é burro!? Sua vida é mais importante que meu emprego!
+Você está louco!";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "Pfft! E desde quando eu não sou louco?";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "Por trás de todo cara louco tem um plano louco!";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "angry";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "Mas e a sua sobrinha!?";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "angry";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Vou deixar isso com você. Não deixe a polícia achar ela.";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "angry";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "Esse plano é ESTÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚ
+ÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚÚPIDO!";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "angry";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "Bom, é estúpido que meu sonho de ser senador morreu
+por causa desse governador.";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "angry";
+global.emotionAntagonistArray[20] = "neutral";
+
+global.messageArray[21] = "Não posso deixar o seu sonho de ser a melhor policial
+de todas morrer também.";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "angry";
+global.emotionAntagonistArray[21] = "neutral";
+
+global.messageArray[22] = "Então vá logo, cabeça de queijo!";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "angry";
+global.emotionAntagonistArray[22] = "neutral";
+
+global.messageArray[23] = "Aff...";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
+global.emotionAntagonistArray[23] = "neutral";
+break; 
+
+case 2:
+global.messageArray[0] = "チズル！逃げろォ！！";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "わ、私も行くわ！";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "いや、お前は残れ！";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "何でよ！？";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "もう堪えられないわ！私だって正しいことをしたいの！";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "世界には警官が必要だ。正しいことができる警官が。";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "でもここにいる理由なんてもうないわ！
+絶対クビにされるもの！";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "俺たちの敵の中にも、味方が必要なんだよ。";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "それがお前だ！";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "無理よ！
+こんな事したのよ、絶対クビだって言ってるでしょ！";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "...それなら他に道はねえな。";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "えっ？";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "俺を逮捕しろ。";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "ハァ！？";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "無理よ！イカれてるわ！";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "ヘッ、俺は元からイカれてるさ。";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "それに、イカれた奴にはイカれた計画があるってな！";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "angry";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "でもチズルは...！";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "angry";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "そこはお前に任せる。アイツが見つからないように頼むぞ。";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "angry";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "でも逮捕なんてしたくないわよ！この馬鹿ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーッ！！！";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "angry";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "俺の「議員になる」という夢はとうに潰えた。";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "angry";
+global.emotionAntagonistArray[20] = "neutral";
+
+global.messageArray[21] = "でもお前の「最高の警官になる」という夢だけは、潰えさせない。";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "angry";
+global.emotionAntagonistArray[21] = "neutral";
+
+global.messageArray[22] = "ずっと警官でいてくれ。頼むぞ。";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "angry";
+global.emotionAntagonistArray[22] = "neutral";
+
+global.messageArray[23] = "ううっ....。";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
+global.emotionAntagonistArray[23] = "neutral";
+break; 
+
+
+
 case 1:
 global.messageArray[0] = "¡¡Chizuru, corre!!";
 global.categoryArray[0] = "left";
@@ -115,7 +506,7 @@ global.categoryArray[13] = "right";
 global.emotionProtagonistArray[13] = "angry";
 global.emotionAntagonistArray[13] = "neutral";
 
-global.messageArray[14] = "No puedo hacer eso, ¿¡acaso estás demente!?";
+global.messageArray[14] = "No puedo hacer eso, ¿¡Acaso estás demente!?";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "angry";
 global.emotionAntagonistArray[14] = "neutral";

@@ -155,6 +155,119 @@ global.messageLimit = 9;
 
 switch(global.language)
 {
+//FRENCH
+case 4:
+global.messageArray[0] = "Oh, mais c'est toi !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Ravie de voir que tu sois pas encore morte, puisque tous les
+flics te courent après à ma place.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "OU EST MON GRAND FRÈRE !?";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Je l'ai avec moi, bien sûr !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Il est temps d'en finir avec sa corruption du monde !";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Quoi ? Mais il a rien fait !";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Il a essayé de me tuer, okay ?!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "C'est parce que t'es une mauvaise personne !";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Non ! Les héros c'est nous, pas toi et ton frère !";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Alors dégage, débile !";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "angry";
+break;
+
+
+case 3:
+global.messageArray[0] = "Ah, ei! É você!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Que bom que você não morreu ainda,
+já que a polícia tá atrás de você ao invés de mim.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "CADÊ O MEU IRMÃO!?";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Eu estou com ele, é claro!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Tá na hora de acabar com a corrupção dele nesse mundo!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Quê!? Ele não fez nada!";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Ele tentou me matar, tá!?";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "É porque você é uma pessoa má!";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Não! Nós somos os heróis aqui, não você ou o seu irmão!";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Então fique longe de nós, otária!";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "angry";
+break;
+
+
 case 2:
 global.messageArray[0] = "おっ！アンタか！";
 global.categoryArray[0] = "right";
@@ -211,7 +324,7 @@ global.emotionAntagonistArray[9] = "angry";
 break;
 
 case 1:
-global.messageArray[0] = "Oh, ¡oye! ¡Eres tú!";
+global.messageArray[0] = "Oh, ¡Oye! ¡Eres tú!";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "neutral";
@@ -260,7 +373,7 @@ global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "angry";
 global.emotionAntagonistArray[8] = "angry";
 
-global.messageArray[9] = "Así que, ¡más te vale mantenerte alejada!";
+global.messageArray[9] = "Así que, ¡Más te vale mantenerte alejada!";
 global.categoryArray[9] = "right";
 global.emotionProtagonistArray[9] = "angry";
 global.emotionAntagonistArray[9] = "angry";

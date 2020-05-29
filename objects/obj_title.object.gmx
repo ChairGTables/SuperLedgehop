@@ -194,6 +194,7 @@ global.musicVolume = global.volumeHold;
 audio_emitter_gain(global.musicEmitter,   global.musicVolume);
 
 global.isGamepad = true;
+global.bossJustDefeated = false;
 
 global.titleSelection = 0;
 global.titleState = 0;
@@ -427,7 +428,15 @@ if (global.misc1 &lt; 50)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/////////////////////////MOVEMENT////////////////////////////
+            <string>if (steam_is_screenshot_requested() )
+{
+   var file = "meme" + string(round(random_range(0,9999))) + ".png";
+   screen_save(file)
+   steam_send_screenshot(file, window_get_width(), window_get_height());
+}
+
+
+/////////////////////////MOVEMENT////////////////////////////
 
 display_mouse_unlock();
 
@@ -500,7 +509,7 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                 if (global.titleSelection == 0 &amp;&amp; global.titleState == 1)
                 {
                     
-                    if (global.language == 3)
+                    if (global.language == 4)
                     {
                         global.language = 0;
                     }
@@ -531,16 +540,22 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                         global.disableCutscenes = 0;
                     }
                 }
+                if (global.titleSelection == 6 &amp;&amp; global.titleState == 1)
+                {
+                    if (global.misc4 == 0)
+                    {
+                        global.misc4 = 1;   
+                    }
+                    else
+                    {
+                        global.misc4 = 0;
+                    }
+                }
             }
             
             if (global.titleSelection == 3 &amp;&amp; global.titleState == 1)
             {
                 global.musicVolume += 0.01;
-    
-                if (global.musicVolume &lt; 0.05)
-                {
-                    global.musicVolume = 0;
-                }
                 
                 if (global.musicVolume &gt; 0.95)
                 {
@@ -553,11 +568,6 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
             if (global.titleSelection == 4 &amp;&amp; global.titleState == 1)
             {
                 global.effectsVolume += 0.01;
-    
-                if (global.effectsVolume &lt; 0.05)
-                {
-                    global.effectsVolume = 0;
-                }
                 
                 if (global.effectsVolume &gt; 0.95)
                 {
@@ -570,11 +580,6 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
             if (global.titleSelection == 5 &amp;&amp; global.titleState == 1)
             {
                 global.voiceVolume += 0.01;
-    
-                if (global.voiceVolume &lt; 0.05)
-                {
-                    global.voiceVolume = 0;
-                }
                 
                 if (global.voiceVolume &gt; 0.95)
                 {
@@ -583,6 +588,8 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                 
                 audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
             }
+            
+ 
             /*
             if (joy_right = false)
             {
@@ -615,7 +622,7 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                 {
                     if (global.language == 0)
                     {
-                        global.language = 3;
+                        global.language = 4;
                     }
                     else
                     {
@@ -644,7 +651,17 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                         global.disableCutscenes = 0;
                     }
                 }
-                
+                if (global.titleSelection == 6 &amp;&amp; global.titleState == 1)
+                {
+                    if (global.misc4 == 0)
+                    {
+                        global.misc4 = 1;   
+                    }
+                    else
+                    {
+                        global.misc4 = 0;
+                    }
+                }
             }
             
             if (global.titleSelection == 3 &amp;&amp; global.titleState == 1)
@@ -654,11 +671,6 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                 if (global.musicVolume &lt; 0.05)
                 {
                     global.musicVolume = 0;
-                }
-                
-                if (global.musicVolume &gt; 0.95)
-                {
-                    global.musicVolume = 1;
                 }
                 
                 audio_emitter_gain(global.musicEmitter, global.musicVolume);
@@ -673,11 +685,6 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                     global.effectsVolume = 0;
                 }
                 
-                if (global.effectsVolume &gt; 0.95)
-                {
-                    global.effectsVolume = 1;
-                }
-                
                 audio_emitter_gain(global.effectsEmitter, global.effectsVolume);
             }
             
@@ -688,11 +695,6 @@ if (global.isGamepad == true &amp;&amp; obj_titlecamera.action == 0)
                 if (global.voiceVolume &lt; 0.05)
                 {
                     global.voiceVolume = 0;
-                }
-                
-                if (global.voiceVolume &gt; 0.95)
-                {
-                    global.voiceVolume = 1;
                 }
                 
                 audio_emitter_gain(global.voiceEmitter, global.voiceVolume);
@@ -852,7 +854,7 @@ if gamepad_button_check_pressed(0, gp_face1)
             {
                 game_end();
             }
-            if (global.titleState == 1 &amp;&amp; global.titleSelection == 6)
+            if (global.titleState == 1 &amp;&amp; global.titleSelection == 7)
             {
                 global.titleState = 0;
                 global.titleSelection = 2;

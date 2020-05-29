@@ -37,6 +37,46 @@ global.messageLimit = 2;
 
 switch(global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "Oh, bordel ! J'ai raté !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Eh bah, t'as touché la flic dans tous les cas.
+Ca n'a pas d'importance ; c'est des ennemies.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Dépêche-toi de finir la flic.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+break;
+
+
+case 3:
+global.messageArray[0] = "Ah, droga! Errei!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Tá bom, você atingiu a policial mesmo.
+Não importa, ambos são inimigos.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Acabe com a policial agora.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+break;
+
 case 2:
 global.messageArray[0] = "いけねっ！ミスった！";
 global.categoryArray[0] = "left";

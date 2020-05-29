@@ -40,6 +40,115 @@ global.messageLimit = 5;
 
 switch(global.language)
 {
+case 4:
+
+global.messageArray[0] = "Monsieur, j'ai réussi à en attraper un.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Eh ben, faut croire que tu sais réfléchir, pour une fois.";
+global.categoryArray[1] = "out";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Où est le reste ?";
+global.categoryArray[2] = "out";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Monsieur, je suis navrée. Les autres ont réussi à s'enfuir.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Alors qu'est-ce que tu fais plantée là !?";
+global.categoryArray[4] = "out";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Tout le monde, séparez-vous !";
+global.categoryArray[5] = "out";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+break;
+
+
+
+case 3:
+
+global.messageArray[0] = "Senhor! Consegui pegar um deles!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Hum, parece que você conseguiu usar a cabeça pelo menos uma vez.";
+global.categoryArray[1] = "out";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Cadê o resto?";
+global.categoryArray[2] = "out";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Senhor, me desculpe, mas o resto fugiu.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Então está parada por quê!?";
+global.categoryArray[4] = "out";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Homens, se espalhem!";
+global.categoryArray[5] = "out";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+break;
+
+
+case 2:
+
+global.messageArray[0] = "署長、捕まえました。";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "ちゃんと考えられるだけの頭はあったようだな。";
+global.categoryArray[1] = "out";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "他はどこだ？";
+global.categoryArray[2] = "out";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "すみません。逃げられました。";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "お前達、何をしている！？";
+global.categoryArray[4] = "out";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "総員散開、早く探せ！";
+global.categoryArray[5] = "out";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+break;
+
+
 case 1:
 
 global.messageArray[0] = "Señor, logré atrapar uno.";
@@ -69,7 +178,7 @@ global.categoryArray[4] = "out";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Todos, ¡dispérsense!";
+global.messageArray[5] = "Todos, ¡Dispérsense!";
 global.categoryArray[5] = "out";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "neutral";

@@ -40,6 +40,42 @@ global.messageLimit = 1;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "Tito, je suis navré.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "Je fais juste ce que demande le peuple.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+case 3:
+global.messageArray[0] = "Tito, me perdoe.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "Só estou fazendo o que o povo queria.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+case 2:
+global.messageArray[0] = "ティトさん、すみません。";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "これが人々の求めていた事なので...。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
 case 1:
 global.messageArray[0] = "Tito, lo lamento.";
 global.categoryArray[0] = "right";

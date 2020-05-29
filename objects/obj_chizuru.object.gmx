@@ -422,7 +422,14 @@ if (global.chizuruhp &lt; 1)
     global.isCutscene = true;
 }
 
-if (global.chizurushinecharge &gt; 5 &amp;&amp; global.shineget == 1 &amp;&amp; !instance_exists(obj_bonustheme))
+necessaryCharge = 5;
+
+if (global.misc4 == 0)
+{
+    necessaryCharge = 0;
+}
+
+if (global.chizurushinecharge &gt; necessaryCharge &amp;&amp; global.shineget == 1 &amp;&amp; !instance_exists(obj_bonustheme))
 {
     if (global.chizurushine &gt; 40)
     {

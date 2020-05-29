@@ -4,7 +4,7 @@ if (instance_exists(obj_chizuru))
     {
         if (global.shineget == 1)
         {
-            if (global.chizurushinecharge > 5 && global.chizurushine > 40)
+            if (global.chizurushinecharge > 3 && global.chizurushine >= 40)
             {
                 instance_create(x, y, obj_healmagnet);
                 audio_play_sound_on (global.effectsEmitter, snd_absorbing, false, 10); 

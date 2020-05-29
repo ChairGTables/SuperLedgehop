@@ -80,6 +80,46 @@ hay policías en las ollas?";
     global.emotionAntagonistArray[2] = "happy";
     break;
     
+    case 3:
+    global.messageArray[0] = "Chizuru! Por que você atirou
+no vaso vermelho!? ";
+    global.categoryArray[0] = "right";
+    global.emotionProtagonistArray[0] = "happy";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Esse ativa a força de
+segurança de emergência!";
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "E por que raios tem
+policiais dentro de um vaso?";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "neutral";
+    global.emotionAntagonistArray[2] = "happy";
+    break;
+
+    case 4:
+    global.messageArray[0] = "Chizuru ! Pourquoi tu as
+tiré sur le rouge !?";
+    global.categoryArray[0] = "right";
+    global.emotionProtagonistArray[0] = "happy";
+    global.emotionAntagonistArray[0] = "sad";
+    
+    global.messageArray[1] = "Celui-ci active les forces
+de sécurité d'urgence !";
+    global.categoryArray[1] = "right";
+    global.emotionProtagonistArray[1] = "neutral";
+    global.emotionAntagonistArray[1] = "sad";
+    
+    global.messageArray[2] = "Pourquoi des flics se cacheraient
+dans des pots de toutes façons ?";
+    global.categoryArray[2] = "left";
+    global.emotionProtagonistArray[2] = "neutral";
+    global.emotionAntagonistArray[2] = "happy";
+    break;
+    
     default:
     global.messageArray[0] = "Chizuru!
 Why did you shoot the red one!?";

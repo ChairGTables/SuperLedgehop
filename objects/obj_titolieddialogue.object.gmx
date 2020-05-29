@@ -44,7 +44,7 @@ global.emotionAntagonistArray[0] = "sad";
 
 
 
-global.messageArray[1] = " ¡No había cavernícola!
+global.messageArray[1] = "¡No había cavernícola!
 ¡Sólo una niña pequeña!";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
@@ -89,8 +89,8 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "sad";
 
-global.messageArray[3] = "うーん…ごめん？
-洞窟が崩れてたからパニクってて…";
+global.messageArray[3] = "うーん...ごめん？
+洞窟が崩れてたからパニクってて...";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "angry";
@@ -101,6 +101,80 @@ global.categoryArray[4] = "right";
 global.emotionProtagonistArray[4] = "neutral";
 global.emotionAntagonistArray[4] = "curious";
 break;
+
+
+case 3:
+global.messageArray[0] = "Você me enganou!!!
+AEEEEEEEEEEEGHHGHGGHGHHHHHHHHHHHH! ";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+
+global.messageArray[1] = "Não tem homem das cavernas nenhum!
+Tem só uma menininha!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Ela tá chorando! Você devia ter
+sido maneira e salvado ela!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Bom, é... desculpa, então. O lugar
+tava desabando, aí eu entrei em pânico.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Que seja. Vou ir curar ela.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "curious";
+break;
+
+
+//French
+case 4:
+global.messageArray[0] = "Tu t'es foutu de ma troooooonche !!
+ARRRRRRRRRRRGHHGHGGHGHHHHHHHHHHHH !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+
+global.messageArray[1] = "Y a pas d'homme des cavernes !
+Il y a juste cette petite fille !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Elle pleure ! T'aurais dû faire
+le truc cool pour la sauver !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Eh bahh, euhh, désolée j'suppose.
+L'endroit s'écroulait alors j'ai paniqué.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Peu importe, j'vais aller la soigner.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "curious";
+break;
+
+
+
 
 default:
 global.messageArray[0] = "You friggin lieeeeeed!!

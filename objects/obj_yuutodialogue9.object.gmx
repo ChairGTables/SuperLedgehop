@@ -117,8 +117,225 @@ global.messageLimit = 19;
 
 switch (global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "Pfiou ! C'était moins une !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Qu'est-ce que toi et mon oncle foutent ici ?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Eh bien, Tito était inquiet que tu sois blessée alors il voulait
+t'aider en arrière-plan.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "J'ai décidé de l'aider afin de le remercier de m'avoir sauvée.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Mais crotte, chuis plus une gamine !";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "C'est mes affaires, pas les siennes !";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Purée, c'est trop un stalker.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Je ne pense pas que ce soit un stalker...";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "Si, c'en est un !";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Enfin, il m'avait dit que tu voulais retrouver ta vraie famille,
+pas vrai ?";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "C'est vrai !
+J'vais aller voir mon vrai frangin pour la première fois !";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "Il voulait sûrement t'aider jusqu'à la fin, avant que tu le quittes. ";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "happy";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "N-non...";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "Il se comporte toujours bizarrement. C'est lui tout craché.";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "Non, je suis sûre qu'il pense beaucoup à toi.";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
+
+global.messageArray[15] = "Aaaaahhhhhh !";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "sad";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "Yuuto, les gardes sont après nous !";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "sad";
+global.emotionAntagonistArray[16] = "sad";
+
+global.messageArray[17] = "Ne t'en fais pas, Chizuru !";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "sad";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Ton amie bootleg de haute qualité te soutient !";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "sad";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "Cette fois, j'vais te montrer que j'suis forte !";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "sad";
+global.emotionAntagonistArray[19] = "neutral";
+break;
+
+
+
+//Brazil
+case 3:
+global.messageArray[0] = "Ufa! Foi por pouco!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "E o que raios você e o meu tio estavam fazendo aqui?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "sad";
+
+
+global.messageArray[2] = "Bem, o Tito estava preocupado que você ia se machucar e queria te ajudar.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Eu só vim junto desde que ele me salvou naquela caverna.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Poxa, eu não sou criança!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Isso é problema meu, não do meu tio!";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Caramba, ele parece um stalker.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Hum, eu não acho.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "Ele está agindo muito como um stalker!";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Bem, você não está aqui para encontrar a sua verdadeira família?";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Isso mesmo! Vou ver meu irmão de verdade pela primeira vez!";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "Acho que o Tito só queria muito te ajudar até você deixar ele.";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "happy";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "Pfff! Nem!";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "sad";
+
+global.messageArray[13] = "Ele está sendo estranho como sempre. Ele é assim mesmo.";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "sad";
+
+global.messageArray[14] = "Não sei. Mas parece que ele se importa bastante com você.";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "sad";
+
+global.messageArray[15] = "Gaaaaahhh!";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "sad";
+global.emotionAntagonistArray[15] = "sad";
+
+global.messageArray[16] = "Yuuto! Os guardas estão atrás da gente!";
+global.categoryArray[16] = "left";
+global.emotionProtagonistArray[16] = "sad";
+global.emotionAntagonistArray[16] = "sad";
+
+global.messageArray[17] = "Não se preocupe, Chizuru!";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "sad";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Sua amiga pirata de alta qualidade te protege!";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "sad";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "Vou te mostrar que sou forte dessa vez.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "sad";
+global.emotionAntagonistArray[19] = "neutral";
+break;
+
 case 2:
-global.messageArray[0] = "はぁ、危なかったぜ…。";
+global.messageArray[0] = "はぁ、危なかったぜ...。";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
@@ -135,7 +352,7 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "sad";
 
-global.messageArray[3] = "それで私も助けてくれたお礼に一緒に行くって…。";
+global.messageArray[3] = "それで私も助けてくれたお礼に一緒に行くって...。";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
@@ -150,12 +367,12 @@ global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "neutral";
 global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "アイツ、マジでストーカーだよなぁ…。";
+global.messageArray[6] = "アイツ、マジでストーカーだよなぁ...。";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "neutral";
 
-global.messageArray[7] = "別にあの人はストーカーとは思わないけど…。";
+global.messageArray[7] = "別にあの人はストーカーとは思わないけど...。";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "neutral";
@@ -177,7 +394,7 @@ global.emotionProtagonistArray[10] = "happy";
 global.emotionAntagonistArray[10] = "neutral";
 
 global.messageArray[11] = "きっとあなたがお兄さんを見つけたら自分から離れてしまうって思って
-最後の最後まで助けてあげようとしてるんだと思うけど…。";
+最後の最後まで助けてあげようとしてるんだと思うけど...。";
 global.categoryArray[11] = "right";
 global.emotionProtagonistArray[11] = "happy";
 global.emotionAntagonistArray[11] = "sad";
@@ -192,7 +409,7 @@ global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "いや、ティトさんは本当にあなたの事が…";
+global.messageArray[14] = "いや、ティトさんは本当にあなたの事が...";
 global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "happy";
 global.emotionAntagonistArray[14] = "sad";

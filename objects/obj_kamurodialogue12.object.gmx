@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = 0;
+            <string>global.bossJustDefeated = true;
+
+state = 0;
 
 //create dialogue
 dialogue = instance_create(x, y, obj_dialogue);
@@ -38,6 +40,341 @@ global.messageLimit = 20;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "Merci pour m'avoir sortie de ce pétrin.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Pas de problème, soeurette !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Défaut ? C'est toi ?";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Ouais ! J'ai pas l'air géniale maintenant ?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Mais comment as-tu brisé la malédiction ?";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Chizuru m'a aidé.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "En fait, elle est sympa quand on est amis avec, tu sais.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Hey, Chizuru. Eum, désolée de m'être planté sur toute la ligne.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "J'ai été aveuglée.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Tranquille. Tu savais pas.";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "happy";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Et puis moi non plus j'en savais rien.";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "Je voulais juste sauver mon frangin,
+mais on a des problèmes plus gros à régler.";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "Ouais. Là, t'as intéret à te dépêcher avant qu'il s´échappe.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "Oh, on a un autre gros problème par contre.";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Il a un peu soudoyé nos thugs pour se battre contre nous.";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "Gah! Qu'est-ce qu'il est détestable !";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "Chizuru, fais ce que t'as à faire !
+Je te donne la permission de tirer sur mes hommes.";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "happy";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = "Ouais ! Shoote aujourd'hui ! Amis le lendemain !";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "happy";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Hey ! Tu apprends vite !
+Surveille Kamuro pour moi, tu veux bien ?";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "happy";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "J'm'en occupe !";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "happy";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "Niquel ! J'vous rejoins plus tard !";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "happy";
+break;
+
+case 3:
+global.messageArray[0] = "Obrigada por me salvar.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Sem problema, minha irmã!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Default? É você?";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "É! Eu não tô super maneira agora?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Mas como você se livrou da maldição?";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "A Chizuru quem me salvou.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "É, ela é burrinha, mas é bem legal se você virar amiga dela.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Ei, Chizuru. Acho que tenho que agradecer por salvar minha irmã.";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "E desculpa por ser estúpida sobre tudo. Eu estava errada.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Relaxa! Você não sabia!";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "happy";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Nem eu não sabia de nada!";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "Eu só queria salvar o meu irmão,
+mas acho que temos problemas maiores agora.";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "Seu irmão está seguro em algum lugar.
+Mas é melhor você correr antes que o governador fuja!";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "Ah! Mas temos um problemão.";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Ele subornou um monte dos nossos comparsas para se juntarem a ele.";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "Ahh! Eu odeio aquele otário!";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "Chizuru, faça o que você deve!
+Te dou permissão pra atirar nos meus homens.";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "happy";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = "É! Atire hoje! Amigos amanhã!";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "happy";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Ei! Você tá aprendendo! Cuida da Kamuro pra mim, tá bom?";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "happy";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "Bom, você é a minha dona, então pode contar comigo.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "happy";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "Beleza, até logo!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "happy";
+break;
+
+
+case 2:
+global.messageArray[0] = "ありがとう...。";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "これぐらいどうってことないって、姉さん！";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "デフォルト？お前なのか？";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "うん！どうこの服、イカしてない？";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "でも呪いは...？";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "チズルさんが助けてくれたの。";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "本当はいい人なんだから！";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "なあ、チズル。
+その、いろいろとごめんな。";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "neutral";
+
+global.messageArray[8] = "アタシが悪かったよ。";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "いいんだよ。お前は何も知らなかった。";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "happy";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "俺だって何も知らなかった。";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "happy";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "俺はただ兄貴を助けたかっただけだったけど、
+今となってはもっと大きな問題がある。";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "neutral";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "ああ。早く行きな、ヤツが逃げる前に。";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "neutral";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "でも気を付けて。";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "アイツうちの下っ端を雇ってって警備に回してるの。";
+global.categoryArray[14] = "left";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "ますますアイツが許せねえ！";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "チズル、頼んだぞ！
+うちの奴らも好きなだけ撃っていい。";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "happy";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = "「撃つのが先、友達は後」、でしょ？";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "happy";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "わかってんじゃねえか！カムロの事は任せたぜ？";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "happy";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "もちろん！";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "happy";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "じゃあな！それじゃ後で！";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "happy";
+break;
+
+
 case 1:
 global.messageArray[0] = "Gracias por salvarme.";
 global.categoryArray[0] = "right";
@@ -71,13 +408,13 @@ global.emotionProtagonistArray[5] = "happy";
 global.emotionAntagonistArray[5] = "neutral";
 
 global.messageArray[6] = "De verdad es linda
-cuando te haces amiga de ella, ¿sabes?";
+cuando te haces amiga de ella, ¿Sabes?";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "neutral";
 
 global.messageArray[7] = "Eh, Chizuru.
-Emm, perdón por ser ingenua sobre todo este asunto";
+Emm, perdón por ser ingenua sobre todo este asunto.";
 global.categoryArray[7] = "right";
 global.emotionProtagonistArray[7] = "happy";
 global.emotionAntagonistArray[7] = "neutral";
@@ -220,7 +557,7 @@ global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "neutral";
 
-global.messageArray[12] = "You're brother is safe somewhere.
+global.messageArray[12] = "Your brother is safe somewhere.
 You better hurry along now before the governor gets away though!";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "neutral";

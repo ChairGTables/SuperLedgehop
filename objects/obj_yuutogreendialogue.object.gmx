@@ -175,6 +175,73 @@ global.emotionProtagonistArray[4] = "happy";
 global.emotionAntagonistArray[4] = "neutral";
 break;
 
+case 3:
+global.messageArray[0] = "Seu tio disse que você tem que atirar no vaso
+verde para abrir as saídas de emergência.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Verde?? Só tem um violeta e um vermelho!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "Chizuru, há claramente dois vasos e um é verde.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Q-Quê!? S-Sério?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "É. Então atire no que é verde.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+break;
+
+
+
+
+//French
+
+case 4:
+global.messageArray[0] = "Ton oncle m'a dit que tu devais tirer sur
+le pot vert pour les issues de secours.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Vert ?? Il y a seulement une violette et
+une rouge !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "Chizuru, il y a clairement deux pots et
+l'un d'eux est vert.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Qu-quoi !? Vraiment ?";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "Ouais. Donc tire sur le vert.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "neutral";
+break;
+
+
+
 default:
 global.messageArray[0] = "Your uncle said that you have to
 shoot the green pot to open emergency exits.";

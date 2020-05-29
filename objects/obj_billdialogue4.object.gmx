@@ -36,6 +36,185 @@ global.messageLimit = 15;
 
 switch (global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "Ahh, donc cette fille est la kidnappeuse.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "!!!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "GARDES ! ATTENTION !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "DÉTENEZ LA FILLE FUYANT DANS LE BÂTIMENT NOMMÉE CHIZURU !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Pourquoi tu fais ça ?! Ma nièce n'a rien fait !";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Oh, et elle est donc ta nièce.";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Je vois pourquoi la kidnappeuse est la malfaisante nièce
+du destitué ex-sénateur.";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Ne l'implique pas dans toute cette affaire !";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "Mais n'avait-elle pas dit qu'elle s'en occuperait toute seule ?
+Elle EST impliquée !";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Si tu poses la main sur elle...";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Je te tue !";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "Je me moque de ce que dit la loi !";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "HAHAHAHA !";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "TU TE MOQUES DES LOIS MAINTENANT ?";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "TU ES VRAIMENT CELUI QUI A CAUSÉ LA CORRUPTION DU GOUVERNEMENT !";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "MAINTENANT, CRÈVE !!";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "neutral";
+break;
+
+
+
+//Brazil
+case 3:
+global.messageArray[0] = "Ahh, então essa garota é a sequestradora.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Não!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "ATENÇÃO, GUARDAS!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "DETENHAM A MENINA CHAMADA CHIZURU QUE ESTÁ CORRENDO PELO PRÉDIO!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Oxe! Minha sobrinha não fez nada!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Tinha que ser sua sobrinha!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Nenhum criminoso seria tão baderneiro quanto a sobrinha do
+ex-senador cassado!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Não ouse meter ela nisso!";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "Mas ela não disse que podia lidar com isso ela mesma?
+Ela ESTÁ envolvida!";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Se você encostar nela...";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Eu vou te MATAR!";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "E eu não ligo pro que a lei disser!";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "AHAHAHA!";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "Não liga para a lei, é?";
+global.categoryArray[13] = "right";
+global.emotionProtagonistArray[13] = "angry";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Você realmente é a razão que o governo ficou tão corrupto!";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "angry";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "Parece que vou ter que PUNIR VOCÊ!!!";
+global.categoryArray[15] = "right";
+global.emotionProtagonistArray[15] = "angry";
+global.emotionAntagonistArray[15] = "neutral";
+break;
+
+
 case 2:
 global.messageArray[0] = "あぁ、あの子がチズマ議員をさらった犯人でしたか。";
 global.categoryArray[0] = "right";
@@ -49,12 +228,12 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "チズ総員に告ぐ！";
+global.messageArray[2] = "総員に次ぐ！";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "ルという少女を確保せよ！
+global.messageArray[3] = "チズルという少女を確保せよ！
 まだ建物内にいるはずだ！";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
@@ -88,7 +267,7 @@ global.categoryArray[8] = "right";
 global.emotionProtagonistArray[8] = "angry";
 global.emotionAntagonistArray[8] = "neutral";
 
-global.messageArray[9] = "...";
+global.messageArray[9] = ".........。";
 global.categoryArray[9] = "left";
 global.emotionProtagonistArray[9] = "angry";
 global.emotionAntagonistArray[9] = "neutral";

@@ -39,6 +39,84 @@ global.messageLimit = 6;
 
 switch(global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "AH ! Tout va bien, Chizuru ?";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Ouais. Ça va.";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "Mais elle ça va pas.";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Qui ?";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "La flic.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Pfff. Qu'est-ce que tu veux dire ?
+On essaie littéralement de s´échapper des flics.";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "curious";
+
+global.messageArray[6] = "ATTENDS DEUX SECONDES ! E-est-ce...";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "sad";
+break;
+
+case 3:
+global.messageArray[0] = "AH! Você está bem, Chizuru!?";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Sim, eu estou.";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "Mas ela não.";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Quem?";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Aquela policial.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Pff. Como assim? Estamos tentando fugir da polícia.";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "curious";
+
+global.messageArray[6] = "OPA! ESPERA! E-Essa é...";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "sad";
+break;
+
 case 2:
 global.messageArray[0] = "おい！大丈夫か、チズル！？";
 global.categoryArray[0] = "right";
@@ -51,7 +129,7 @@ global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "sad";
 
-global.messageArray[2] = "コイツが…。";
+global.messageArray[2] = "コイツが...。";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "sad";
@@ -71,7 +149,7 @@ global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "sad";
 global.emotionAntagonistArray[5] = "curious";
 
-global.messageArray[6] = "…ちょっと待て！こいつは、まさか…。";
+global.messageArray[6] = "...ちょっと待て！こいつは、まさか...。";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "sad";

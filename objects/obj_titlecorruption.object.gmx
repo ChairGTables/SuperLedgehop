@@ -83,13 +83,20 @@ game_end();
 dialogue.state = 1;
 switch (global.language)
 {
+case 4:
+dialogue.message = "Rapporte les Âmes dans une décennie.";
+break;
+
+case 3:
+dialogue.message = "Traga as almas dentro de uma década.";
+break;
 
 case 2:
-dialogue.message = "Return the souls in a decade.";
+dialogue.message = "「魂を返して、10年以内に」";
 break;
 
 case 1:
-dialogue.message = "Return the souls in a decade.";
+dialogue.message = "Regresa las almas en una decada.";
 break;
 
 default:

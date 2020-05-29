@@ -30,6 +30,8 @@ y = view_yview + view_hview / 2;
 
 image_speed = 0;
 image_index = global.language;
+
+global.bossJustDefeated = true;
 </string>
           </argument>
         </arguments>

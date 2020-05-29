@@ -79,7 +79,7 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "Bien, ¡entonces yo seré tu dueña!";
+global.messageArray[7] = "Bien, ¡Entonces yo seré tu dueña!";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "happy";
 global.emotionAntagonistArray[7] = "angry";
@@ -163,7 +163,7 @@ global.emotionAntagonistArray[21] = "none";
 break;
 
 case 2:
-global.messageArray[0] = "結局私はただの没個性なモブなのね…";
+global.messageArray[0] = "結局私はただの没個性なモブなのね...";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "angry";
 global.emotionAntagonistArray[0] = "angry";
@@ -198,7 +198,7 @@ global.emotionProtagonistArray[5] = "happy";
 global.emotionAntagonistArray[5] = "angry";
 
 global.messageArray[6] = "もし私がちゃんとしたキャラクターになれるなら、
-デフォルトの呪いから解き放たれるし、もっと強くなるんだけど…";
+デフォルトの呪いから解き放たれるし、もっと強くなるんだけど...";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "happy";
 global.emotionAntagonistArray[6] = "angry";
@@ -253,7 +253,7 @@ global.categoryArray[15] = "left";
 global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "angry";
 
-global.messageArray[16] = "ぐぬぬ…";
+global.messageArray[16] = "ぐぬぬ...";
 global.categoryArray[16] = "right";
 global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "angry";
@@ -274,7 +274,7 @@ global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "happy";
 global.emotionAntagonistArray[19] = "angry";
 
-global.messageArray[20] = "名前は…ＣＨＥＥＳＥＭＡＳＴＥＲ９０００！！！";
+global.messageArray[20] = "名前は...ＣＨＥＥＳＥＭＡＳＴＥＲ９０００！！！";
 global.categoryArray[20] = "left";
 global.emotionProtagonistArray[20] = "happy";
 global.emotionAntagonistArray[20] = "angry";
@@ -284,6 +284,248 @@ global.categoryArray[21] = "right";
 global.emotionProtagonistArray[21] = "none";
 global.emotionAntagonistArray[21] = "none";
 break;
+
+case 3:
+global.messageArray[0] = "Parece que sou só uma personagem padrão inútil.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Para de ser tão borocoxô! Foi uma luta divertida!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Não importa! Eu nem consigo matar uma fraca que nem você!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Vá treinar então, querida!";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Não sou uma fracota!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Não, tô falando que eu sou forte pra caramba e você
+tá um pouco abaixo do meu nível.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Se eu tivesse um dono de verdade, eu teria me livrado dessa
+maldição e não seria tão fraca.";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Beleza! Então vou ser sua dona!";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Quê!? Não! Eu não quero uma dona otária que nem você!";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Hum, eu te dominei. Então sou sua dona agora.";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Não! Eu não quero!";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "Tá! Hora de configurar suas estatísticas!";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "curious";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "Vou focar na velocidade!!! É! Olha só isso!";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "Ah, e vou aumentar a sua inteligência pra você parar
+de ser uma cabeça de queijo!";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "Para, paaaaara!";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "Uai, você não quer que as suas chamas sejam mais fortes?";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "Grr...";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = "Bom! Agora o toque final! Hora de te dar... ";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "curious";
+global.emotionAntagonistArray[17] = "angry";
+
+global.messageArray[18] = "UM NOME!";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "happy";
+global.emotionAntagonistArray[18] = "angry";
+
+global.messageArray[19] = "N-Não escolha algo estúpido.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "happy";
+global.emotionAntagonistArray[19] = "angry";
+
+global.messageArray[20] = "QUEIJOMASTER8000!!!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "angry";
+
+global.messageArray[21] = "NÃOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!";
+global.categoryArray[21] = "right";
+global.emotionProtagonistArray[21] = "none";
+global.emotionAntagonistArray[21] = "none";
+break;
+
+
+
+//French
+case 4:
+global.messageArray[0] = "On dirait que je ne suis qu'un personnage inutile par défaut.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Arrête de te morfondre ! Ce combat était chouette !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "angry";
+
+global.messageArray[2] = "Le résultat est le même ! J'ai même pas réussi à tuer une naze comme toi.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Eh ben améliore-toi !";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "happy";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Je ne suis pas faible !";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "happy";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Nan, ce que je veux dire, c'est que chuis super balèze et que
+t'es un p'tit peu en-dessous de mon niveau.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "happy";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Si j'avais un vrai propriétaire, je pourrais briser cette
+malédiction par défaut et arréter d'être si faible.";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "happy";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Eh bah c'est d´accord ! Je suppose que c'est moi ta nouvelle
+propriétaire maintenant !";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "happy";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Quoi !? Non ! Je ne veux pas d'une débile comme propriétaire !";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "happy";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Hum, je viens pourtant de te maitriser pendant ce combat.
+Ce qui fait de moi ta maîtresse.";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Non ! Je refuse !";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "neutral";
+global.emotionAntagonistArray[10] = "angry";
+
+global.messageArray[11] = "D'accord ! Il est temps de régler tes stats !";
+global.categoryArray[11] = "left";
+global.emotionProtagonistArray[11] = "curious";
+global.emotionAntagonistArray[11] = "angry";
+
+global.messageArray[12] = "Je mise tout sur la vitesse !!! Ouais ! Regarde tes stats !";
+global.categoryArray[12] = "left";
+global.emotionProtagonistArray[12] = "happy";
+global.emotionAntagonistArray[12] = "angry";
+
+global.messageArray[13] = "Oh, j'vais aussi améliorer ton intelligence pour que t'arrêtes
+d'être une aussi grosse tête de gruyère !";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "happy";
+global.emotionAntagonistArray[13] = "angry";
+
+global.messageArray[14] = "Arrêêêêêêêêtttttte !!";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "happy";
+global.emotionAntagonistArray[14] = "angry";
+
+global.messageArray[15] = "Rooh, tu veux pas rendre tes flammes plus efficaces ?";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "angry";
+
+global.messageArray[16] = "Meh...";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "angry";
+
+global.messageArray[17] = "Parfait ! Et maintenant la touche finale !
+Il est temps de te donner...";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "curious";
+global.emotionAntagonistArray[17] = "angry";
+
+global.messageArray[18] = "UN NOM !";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "happy";
+global.emotionAntagonistArray[18] = "angry";
+
+global.messageArray[19] = "M-m'en donne pas un stupide.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "happy";
+global.emotionAntagonistArray[19] = "angry";
+
+global.messageArray[20] = "DARKFROMAGE8000 !!!";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "happy";
+global.emotionAntagonistArray[20] = "angry";
+
+global.messageArray[21] = "NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON !!!";
+global.categoryArray[21] = "right";
+global.emotionProtagonistArray[21] = "none";
+global.emotionAntagonistArray[21] = "none";
+break;
+
+
 
 default:
 global.messageArray[0] = "Guess I am just a default character that has no use.";

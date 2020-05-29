@@ -164,8 +164,49 @@ global.categoryArray[1] = "left";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 
-global.messageArray[2] = "あいつはマジな感じだったけど…
-でも兄貴が…";
+global.messageArray[2] = "あいつはマジな感じだったけど...
+でも兄貴が...";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
+//Brazil
+case 3:
+global.messageArray[0] = "Peraí. Eu devia ir agora?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "A Liz não tinha dito pra pegar uma chave vermelha de um inimigo 
+e encontrar informações importantes nos escritórios secretos do governo?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "Ela parecia estar falando sério. Mas... meu irmão...";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
+//French
+case 4:
+global.messageArray[0] = "Attends. Devrais-je y aller maintenant ?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Liz a dit qu'un ennemi a la clef rouge et qu'il y a des infos
+épicés aux bureaux secrets du gouvernement.";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "Elle avait l'air sérieuse à ce propos.
+Mais...mon frangin...";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "neutral";

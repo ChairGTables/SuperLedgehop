@@ -66,32 +66,79 @@ global.emotionAntagonistArray[3] = "neutral";
 break;
 
 case 2:
-global.messageArray[0] = "Ouch!
-What was that for!?";
+global.messageArray[0] = "熱ッ！今の何だよ！？";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "Well, you hit me,
-so I might as well attack you too!";
+global.messageArray[1] = "やられたからにはやり返さないとね！";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "That’s no fair!
-You can use magic!";
+global.messageArray[2] = "魔法使えるのかよ！汚いぞ！";
 global.categoryArray[2] = "left";
 global.emotionProtagonistArray[2] = "neutral";
 global.emotionAntagonistArray[2] = "angry";
 
-global.messageArray[3] = "No johns!
-Let’s go!!";
+global.messageArray[3] = "問答無用！行くわよ！";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
 break;
+
+case 3:
+global.messageArray[0] = "Ai ai! Pra que isso!?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Bom, você me bateu, então eu deveria te atacar também!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Não é justo! Você pode usar mágica!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "Sem essa! Vamos lá!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+break;
+
+
+
+case 4:
+global.messageArray[0] = "Aie ! C'était pourquoi ça !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Bah tu m'as touché, alors je me permets de t'attaquer aussi !";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "C'est pas du jeu ! Tu peux faire de la magie !";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "angry";
+
+global.messageArray[3] = "No johns ! Let's go !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+break;
+
 
 default:
 global.messageArray[0] = "Ouch!

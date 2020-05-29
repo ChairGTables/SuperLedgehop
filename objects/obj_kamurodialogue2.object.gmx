@@ -136,7 +136,7 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "angry";
 
-global.messageArray[7] = "いや…　別に俺仕事なんてしてねえけど…";
+global.messageArray[7] = "いや...　別に俺仕事なんてしてねえけど...";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "angry";
@@ -157,6 +157,132 @@ global.categoryArray[10] = "right";
 global.emotionProtagonistArray[10] = "sad";
 global.emotionAntagonistArray[10] = "angry";
 break;
+
+case 3:
+global.messageArray[0] = "AAAAIII!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Qual é!? Isso dói!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Vou te processar! Me dá o dinheiro do seguro!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Desculpa, mas vai ser eu quem dá as ordens aqui.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Me leve ao seu chefe agora!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Chefe?";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "curious";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Você não tava indo trabalhar no prédio do governo?";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Err... não. Eu estou desempregada.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "Fui ludibriada de novo!
+Bom, já que você sabe o meu plano agora, vou te matar.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Plano? Mas você nem falou nada!";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "Cala a boca!";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "sad";
+global.emotionAntagonistArray[10] = "angry";
+break;
+
+
+
+
+//French
+case 4:
+global.messageArray[0] = "AAAAAH pardon !?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Ca fait super mal !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "J'vais te faire un procès ! Donne-moi l'argent du procès !";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Désolée mais c'est moi qui donne les ordres ici.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "angry";
+
+global.messageArray[4] = "Ramène-moi à ton patron, tout de suite !";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "angry";
+
+global.messageArray[5] = "Patron ?";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "curious";
+global.emotionAntagonistArray[5] = "angry";
+
+global.messageArray[6] = "Tu n'es pas en route vers ce bâtiment gouvernemental ?";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "angry";
+
+global.messageArray[7] = "Euh...nah. J'suis au chômage.";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
+global.emotionAntagonistArray[7] = "angry";
+
+global.messageArray[8] = "J'me suis encore faite avoir !
+Maintenant que tu connais mon plan, je dois te tuer.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "neutral";
+global.emotionAntagonistArray[8] = "angry";
+
+global.messageArray[9] = "Un plan ? Mais t'as rien dit du tout !";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "angry";
+
+global.messageArray[10] = "La ferme !";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "sad";
+global.emotionAntagonistArray[10] = "angry";
+break;
+
+
 
 default:
 global.messageArray[0] = "GAAAAH!";

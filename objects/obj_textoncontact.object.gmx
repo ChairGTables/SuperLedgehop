@@ -29,9 +29,12 @@
 alpha = 1;
 switch (global.language)
 {
+case 3:
+message = "Você se esqueceu?";
+break;
 
 case 2:
-message = "Have you forgotten?";
+message = "「忘れましたか？」";
 break;
 
 case 1:
@@ -157,11 +160,11 @@ if (state == 2)
         draw_set_valign(fa_top);
         draw_set_halign(fa_left);
 
-        if (global.language == 2)
+        if (global.language == 2 || global.language == 4)
         {
             draw_set_font(fnt_talkjapanese);
         }
-        else if (global.language == 1)
+        else if (global.language == 1 || global.language == 3)
         {
             draw_set_font(fnt_talkforeign);
         }

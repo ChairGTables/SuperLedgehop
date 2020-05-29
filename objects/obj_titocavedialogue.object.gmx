@@ -50,7 +50,7 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = " ¡Pfft! Si hubiese usado
+global.messageArray[2] = "¡Pfft! Si hubiese usado
 todo mi poder, TÚ hubieras estallado.";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
@@ -108,7 +108,7 @@ global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "sad";
 
 global.messageArray[4] = "それだったら、
-洞窟が崩れた時に巻き込まれた人がいるんだけど…";
+洞窟が崩れた時に巻き込まれた人がいるんだけど...";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "neutral";
 global.emotionAntagonistArray[4] = "sad";
@@ -124,6 +124,97 @@ global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "neutral";
 global.emotionAntagonistArray[6] = "sad";
 break;
+
+
+case 3:
+global.messageArray[0] = "Que raios fez você demorar tanto naquela caverna!?
+Eu fiquei super preocupado!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Q-QUÊ!? Eu não tinha te explodido!?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Pff! Se eu tivesse usado todo meu poder,
+seria VOCÊ quem teria explodido.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "curious";
+
+global.messageArray[3] = "Mas eu achei mesmo que tinha acontecido algo contigo!
+Ouvi alguém gritando naquela caverna!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "Ah, acho que tem algum foragido lá que ficou preso.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "ESPERA! UM HOMEM DAS CAVERNAS!? Essa chance rara
+vai aumentar minha pontuação de tio maneiro!";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "Já volto!";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "sad";
+break;
+
+//French
+case 4:
+global.messageArray[0] = "Qu'est-ce qui t'as pris autant de temps
+dans cette grotte !? J'étais super inquiet!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "H-HEIN!? Je ne t'avais pas réduit en cendres !?";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Pfff ! Si j'avais utilisé ma pleine puissance,
+TU aurais été réduite en cendres.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "curious";
+
+global.messageArray[3] = "Sérieux, j'croyais que tu t'étais faite explosée !
+J'ai entendu quelqu'un crier dans cette grotte !";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "Oh, je pense qu'il y a une sorte de fugitif
+là-dedans qu'a été coincé.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "neutral";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "ATTENDS ! UN HOMME DES CAVERNES !?";
+global.categoryArray[5] = "right";
+global.emotionProtagonistArray[5] = "neutral";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "C'est une opportunité rare qui va carrément faire
+monter mon niveau de tonton méga cool !";
+global.categoryArray[6] = "right";
+global.emotionProtagonistArray[6] = "neutral";
+global.emotionAntagonistArray[6] = "sad";
+break;
+
+
 
 default:
 global.messageArray[0] = "The heck took you so long in that cave!?

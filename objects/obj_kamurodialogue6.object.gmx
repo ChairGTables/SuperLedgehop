@@ -35,6 +35,217 @@ global.messageLimit = 12;
 
 switch(global.language)
 {
+case 4:
+
+global.messageArray[0] = "Argh !! T-t'es trop forte !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "M-mais je ne peux pas perdre ! Je ne veux pas que la ville
+parte en cendres.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "Ferme-la ! Dépêche-toi de me dire où est mon frère !";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Écoute, je te l'ai dis...";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "Ton frère va détruire la ville.";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "Non, c'est faux !";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "Crache le morceau maintenant, tête de gruyère.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "Eh bien, pour honorer ma défaite...";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "sad";
+
+global.messageArray[8] = "Je vais te dire où il est.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "sad";
+
+global.messageArray[9] = "Mais... ";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "sad";
+
+global.messageArray[10] = "...tu ne dois absolument... ";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "sad";
+
+global.messageArray[11] = "...pas le laisser détruire la ville...";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "Son emplacement...";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "sad";
+break;
+
+case 3:
+
+global.messageArray[0] = "Grr... V-Você é muito forte...";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "M-Mas eu não posso ser derrotada!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "Cale-se! Diz logo onde tá o meu irmão!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "Olha, eu tô falando.";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "O seu irmão vai destruir a cidade!";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "Não, não vai!";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "Desembucha logo, cabeça de queijo.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "Bom, já que fui derrotada...";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "sad";
+
+global.messageArray[8] = "Vou te contar.";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "sad";
+
+global.messageArray[9] = "Mas... ";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "sad";
+
+global.messageArray[10] = "...você não pode de jeito nenhum... ";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "sad";
+
+global.messageArray[11] = "...deixar ele destruir nossa cidade...";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "Ele está em...";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "sad";
+break;
+
+
+case 2:
+
+global.messageArray[0] = "んぐっ！つっ、強すぎる！";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "angry";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "でもアタイも負けられないんだ！この街が...";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "黙れ！さっさと兄貴の居場所を教えろ！";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+
+global.messageArray[3] = "ちょっと、聞いてくれよ。";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "angry";
+global.emotionAntagonistArray[3] = "sad";
+
+global.messageArray[4] = "アンタの兄さんはこの街を滅ぼすつもりだって...。";
+global.categoryArray[4] = "right";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "sad";
+
+global.messageArray[5] = "そんなはずはねぇ！";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "sad";
+
+global.messageArray[6] = "さっさと吐け、この脳味噌チーズが！";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "sad";
+
+global.messageArray[7] = "アタイを倒した記念だ。";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "sad";
+
+global.messageArray[8] = ".........";
+global.categoryArray[8] = "right";
+global.emotionProtagonistArray[8] = "angry";
+global.emotionAntagonistArray[8] = "sad";
+
+global.messageArray[9] = "教えてやるよ。";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "angry";
+global.emotionAntagonistArray[9] = "sad";
+
+global.messageArray[10] = "でもどうせお前にはアイツを止める事なんてできねぇだろうがな。";
+global.categoryArray[10] = "right";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "sad";
+
+global.messageArray[11] = ".........";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "sad";
+
+global.messageArray[12] = "あんたの兄さんは...";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "sad";
+break;
+
+
+
 case 1:
 
 global.messageArray[0] = "¡¡Ngh!!

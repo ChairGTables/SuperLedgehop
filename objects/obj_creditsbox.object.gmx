@@ -27,6 +27,25 @@
             <kind>1</kind>
             <string>appear = 1;
 
+languageCheck = spr_creditslist;
+
+if (global.language == 1)
+{
+    languageCheck = spr_creditslistspanish;
+}
+if (global.language == 2)
+{
+    languageCheck = spr_creditslistjapanese;
+}
+if (global.language == 3)
+{
+    languageCheck = spr_creditslistbrazil;
+}
+if (global.language == 4)
+{
+    languageCheck = spr_creditslistfrench;
+}
+
 if (instance_exists(obj_chizumanpcend))
 {
     image_alpha = 0;
@@ -109,9 +128,9 @@ global.yHolder[4] -= 3;
             <kind>1</kind>
             <string>draw_sprite_ext(spr_creditsbox, 0, view_xview + view_wview - 300, view_yview, 1, 1, 0, c_white, image_alpha / 1.4);
 
-draw_sprite_ext(spr_creditslist, 0, view_xview + view_wview - 300, view_yview + global.yHolder[4], 1, 1, 0, c_white, image_alpha);
-draw_sprite_ext(spr_creditslist, 1, view_xview + view_wview - 300 , view_yview + global.yHolder[4] + 1440, 1, 1, 0, c_white, image_alpha);
-draw_sprite_ext(spr_creditslist, 2, view_xview + view_wview - 300 , view_yview + global.yHolder[4] + (1440 * 2), 1, 1, 0, c_white, image_alpha);
+draw_sprite_ext(languageCheck, 0, view_xview + view_wview - 300, view_yview + global.yHolder[4], 1, 1, 0, c_white, image_alpha);
+draw_sprite_ext(languageCheck, 1, view_xview + view_wview - 300 , view_yview + global.yHolder[4] + 1440, 1, 1, 0, c_white, image_alpha);
+draw_sprite_ext(languageCheck, 2, view_xview + view_wview - 300 , view_yview + global.yHolder[4] + (1440 * 2), 1, 1, 0, c_white, image_alpha);
 </string>
           </argument>
         </arguments>

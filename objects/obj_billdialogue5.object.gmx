@@ -36,9 +36,569 @@ global.messageLimit = 32;
 
 switch(global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "Ahh, on se rencontre à nouveau.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Mais je crois que ce sera la dernière fois que nous nous voyons...";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "...car je suis la dernière chose que tu verras de ta vie !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Pff, au moins, j'ai une vie, pas comme toi.";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Je suis amie avec tes ennemis maintenant, et même ton garde
+personnel s'est retourné contre toi.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Ce n'est pas la fin de ma vie mais de la tienne.";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Enfin, s'il te reste un soupçon de vie.";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Ma vie a pris fin il y a déja un moment, sale morveuse !";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "Comment le saurais-je !?";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Je n'ai pas prévu de faire exploser la ville pour moi,
+mais pour le futur de l'humanité.";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "T'es bizzaaaaaardddddd ! On veut pas de ça, nous !";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "C'est ce que tu crois. Vous désirez tous ça.";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "Vous désirez tous ça.";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[12] = "Mais vous ne le savez pas encore. As-tu déjà considéré le problème
+des malfrats de toutes ces villes ?";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "J'm'en fous en vrai.";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Oh, c'est vrai. T'es amie avec des voyous.
+Tu ne pourrais pas comprendre.";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "Non sérieux. Je m'en tape complètement.
+Je veux juste de la bouffe et des amis.";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "Imbécile typique. Tu ne sauras jamais à quel point les délinquants ont
+été un problème avec l'argent du gouvernement.";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "Pense à combien on dépense dans la sécurité. C'est juste un SEUL
+petit problème concernant tout l'argent que nous devons.";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "neutral";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Les délinquants aussi sont un danger pour la vie des citoyens,
+y compris la mienne.";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "Ma famille et mes amis sont morts. Même ton oncle a failli se
+faire tuer par un brigant.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "Eh ben, j'suis désolée, j'savais pas.";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
+
+global.messageArray[21] = "Mais t'es toujours un taré !";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "angry";
+global.emotionAntagonistArray[21] = "neutral";
+
+global.messageArray[22] = "Ton plan reste de tuer tout le monde, mon cher tonton y compris !";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "angry";
+global.emotionAntagonistArray[22] = "neutral";
+
+global.messageArray[23] = "AHAHAHHAA ! Je m'en cogne ! Évidemment si je balaie les zones les
+plus infestées de voyous...";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
+global.emotionAntagonistArray[23] = "neutral";
+
+global.messageArray[24] = "...tous ces maudits trafiquants auront la trouille pour le reste de
+leurs vies ! Crois-moi, ça va payer sur le long terme.";
+global.categoryArray[24] = "right";
+global.emotionProtagonistArray[24] = "angry";
+global.emotionAntagonistArray[24] = "neutral";
+
+global.messageArray[25] = "Et que dis-tu de l'argent que tu gâcheras à reconstruire des villes, hein !?
+Et tous ces brigands que t'as payé !? T'es un putain d'hypocrite !";
+global.categoryArray[25] = "left";
+global.emotionProtagonistArray[25] = "angry";
+global.emotionAntagonistArray[25] = "neutral";
+
+global.messageArray[26] = "Je n'ai même pas à les payer car ils mourront de toutes facons !";
+global.categoryArray[26] = "right";
+global.emotionProtagonistArray[26] = "angry";
+global.emotionAntagonistArray[26] = "neutral";
+
+global.messageArray[27] = "Qu'importe le prix, je vais pas abandonner. Tu sais ce qu'on dit.";
+global.categoryArray[27] = "right";
+global.emotionProtagonistArray[27] = "angry";
+global.emotionAntagonistArray[27] = "neutral";
+
+global.messageArray[28] = "Rien ne changera sans sacrifice.";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "angry";
+global.emotionAntagonistArray[28] = "neutral";
+
+global.messageArray[29] = "Tu ne seras pas en mesure de voir à quel point le monde sera meilleur
+sans ces malfrats dans les années à venir.";
+global.categoryArray[29] = "right";
+global.emotionProtagonistArray[29] = "angry";
+global.emotionAntagonistArray[29] = "neutral";
+
+global.messageArray[30] = "Parce que c'est ici que tu vas mourrir.";
+global.categoryArray[30] = "right";
+global.emotionProtagonistArray[30] = "angry";
+global.emotionAntagonistArray[30] = "neutral";
+
+global.messageArray[31] = "Je vais être le meneur d'un nouveau monde !";
+global.categoryArray[31] = "right";
+global.emotionProtagonistArray[31] = "angry";
+global.emotionAntagonistArray[31] = "neutral";
+
+global.messageArray[32] = "Un monde sans vous autres imbéciles !
+Disparais !";
+global.categoryArray[32] = "right";
+global.emotionProtagonistArray[32] = "angry";
+global.emotionAntagonistArray[32] = "neutral";
+break;
+
+
+
+case 3:
+global.messageArray[0] = "Ahh, você de novo.";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Mas acho que essa será a última vez que vamos nos encontrar.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "Porque eu serei a última coisa que você vai ver na sua vida!";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Pff! Pelo menos eu tenho uma vida, diferente de você!";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Eu sou amiga dos seus inimigos,
+e até a sua própria segurança se virou contra você.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Não é o fim da minha vida, mas da sua!";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Bom, se é que você ainda tem uma vida a esse ponto!";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Minha vida já acabou há um bom tempo, sua pirralha ignorante!";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "Como é que eu ia saber?!";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "Não quero explodir a cidade por mim mesmo,
+mas pelo futuro da humanidade.";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "Você é esquisiiiiiitooo! Ninguém quer isso!";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "É o que você pensa.";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "Chizuru...";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[12] = "Já pensou no problema com bandidos que muitas cidades tem?";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "Na real eu tô nem aí.";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "Ah, é mesmo. Você é amiga dos bandidos. Você não ia entender.";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "Não, sério. Eu não ligo mesmo. Só quero comida e amigos.";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "É uma idiota mesmo. Você nunca vai saber quantos bandidos têm sido um
+problemão pro governo. Pense no quanto a gente gasta com segurança.";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "E o dinheiro que devemos é só um problema menor.";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "neutral";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "Os bandidos são ainda um perigo para a vida das pessoas,
+incluindo a minha.";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "Minha família e meus amigos estão mortos por causa deles.
+Até o seu próprio tio foi quase morto por um bandido.";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "Desculpa, eu não sabia.. ";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
+
+global.messageArray[21] = "Mas você ainda tá maluco! ";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "angry";
+global.emotionAntagonistArray[21] = "neutral";
+
+global.messageArray[22] = "Seu plano vai matar todo mundo, até meu tio!";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "angry";
+global.emotionAntagonistArray[22] = "neutral";
+
+global.messageArray[23] = "HAHAHAHAA! Não me importo! Se eu explodir todas as regiões com mais bandidos,
+todos esses facínoras devem ficar com medo pro resto da vida!";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
+global.emotionAntagonistArray[23] = "neutral";
+
+global.messageArray[24] = "Confie em mim, vai valer a pena no final.";
+global.categoryArray[24] = "right";
+global.emotionProtagonistArray[24] = "angry";
+global.emotionAntagonistArray[24] = "neutral";
+
+global.messageArray[25] = "E o dinheiro que você vai gastar reconstruindo as cidades, hein!? E todos
+esses bandidos que você subornou!? Você é um hipócrita!";
+global.categoryArray[25] = "left";
+global.emotionProtagonistArray[25] = "angry";
+global.emotionAntagonistArray[25] = "neutral";
+
+global.messageArray[26] = "Eu nem tenho que pagar eles porque eles vão morrer mesmo!";
+global.categoryArray[26] = "right";
+global.emotionProtagonistArray[26] = "angry";
+global.emotionAntagonistArray[26] = "neutral";
+
+global.messageArray[27] = "Ainda vou fazer isso custe o que custar. Você sabe o que dizem.";
+global.categoryArray[27] = "right";
+global.emotionProtagonistArray[27] = "angry";
+global.emotionAntagonistArray[27] = "neutral";
+
+global.messageArray[28] = "Tome riscos ou nada vai mudar.";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "angry";
+global.emotionAntagonistArray[28] = "neutral";
+
+global.messageArray[29] = "Você nunca verá o quanto o mundo será melhor sem bandidos. E isso
+porque você vai morrer aqui!";
+global.categoryArray[29] = "right";
+global.emotionProtagonistArray[29] = "angry";
+global.emotionAntagonistArray[29] = "neutral";
+
+global.messageArray[30] = "O mundo renascerá sob a minha liderança!";
+global.categoryArray[30] = "right";
+global.emotionProtagonistArray[30] = "angry";
+global.emotionAntagonistArray[30] = "neutral";
+
+global.messageArray[31] = "Um novo mundo sem vocês babacas!";
+global.categoryArray[31] = "right";
+global.emotionProtagonistArray[31] = "angry";
+global.emotionAntagonistArray[31] = "neutral";
+
+global.messageArray[32] = "Então sumam!";
+global.categoryArray[32] = "right";
+global.emotionProtagonistArray[32] = "angry";
+global.emotionAntagonistArray[32] = "neutral";
+break;
+
+
+
+case 2:
+global.messageArray[0] = "あぁ、また会いましたね。";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "neutral";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "ですが、今回でそれも最後です。";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+global.messageArray[2] = "なぜなら、ここであなたに止めを刺すのですから。";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "neutral";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "フン！そういうお前こそここで終わりだ。";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "neutral";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "今となってはもうチンピラ共も警察も俺の味方だ。";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "俺がこんな所で止まる訳がねえよ。";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "まあ、まだお前が生きてる意味があるっていうなら話は違うが...。";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "angry";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "生きる意味...そんな物とっくの昔に失ってますよ！";
+global.categoryArray[7] = "right";
+global.emotionProtagonistArray[7] = "angry";
+global.emotionAntagonistArray[7] = "neutral";
+
+
+global.messageArray[8] = "どういう事だよ！？";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "sad";
+global.emotionAntagonistArray[8] = "neutral";
+
+global.messageArray[9] = "この計画は私ではなく、人類の未来のために...！";
+global.categoryArray[9] = "right";
+global.emotionProtagonistArray[9] = "sad";
+global.emotionAntagonistArray[9] = "neutral";
+
+global.messageArray[10] = "本ッッッッッッ当に頭イカれてやがる！
+そんな事しろなんて言う奴いるかよ！？";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "angry";
+global.emotionAntagonistArray[10] = "neutral";
+
+global.messageArray[11] = "貴方がそう思っただけでしょう。";
+global.categoryArray[11] = "right";
+global.emotionProtagonistArray[11] = "angry";
+global.emotionAntagonistArray[11] = "neutral";
+
+global.messageArray[12] = "全人類がこれを望んでいる。
+あなたが気づいていないだけです。";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[12] = "この街の不良や暴漢の問題...考えたことありませんか？";
+global.categoryArray[12] = "right";
+global.emotionProtagonistArray[12] = "angry";
+global.emotionAntagonistArray[12] = "neutral";
+
+global.messageArray[13] = "そんなの気にしてないぜ。";
+global.categoryArray[13] = "left";
+global.emotionProtagonistArray[13] = "neutral";
+global.emotionAntagonistArray[13] = "neutral";
+
+global.messageArray[14] = "おっと、そりゃそうでしょうねえ。
+チンピラ共と友達になるような奴ですからねえ。";
+global.categoryArray[14] = "right";
+global.emotionProtagonistArray[14] = "neutral";
+global.emotionAntagonistArray[14] = "neutral";
+
+global.messageArray[15] = "いやマジだよ。マジで気にしてない。
+俺は友達と食べ物さえあればそれでいい。";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
+global.emotionAntagonistArray[15] = "neutral";
+
+global.messageArray[16] = "わかりやすい。
+お前たちがどれだけ小さい問題なのか一生わかる事もないような愚か者だな。";
+global.categoryArray[16] = "right";
+global.emotionProtagonistArray[16] = "neutral";
+global.emotionAntagonistArray[16] = "neutral";
+
+global.messageArray[17] = "犯罪対策など税金から出た予算の総額に比べれば些細な問題のはずが、
+今や他の予算を圧迫し始めているのだ。";
+global.categoryArray[17] = "right";
+global.emotionProtagonistArray[17] = "neutral";
+global.emotionAntagonistArray[17] = "neutral";
+
+global.messageArray[18] = "私が、街の人々の命が、不良に脅かされている。";
+global.categoryArray[18] = "right";
+global.emotionProtagonistArray[18] = "neutral";
+global.emotionAntagonistArray[18] = "neutral";
+
+global.messageArray[19] = "私の家族も、親友も、皆不良に殺された。
+あなたの伯父ですら殺されかけたそうじゃないですか。";
+global.categoryArray[19] = "right";
+global.emotionProtagonistArray[19] = "neutral";
+global.emotionAntagonistArray[19] = "neutral";
+
+global.messageArray[20] = "知らなくてごめんな。";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
+
+global.messageArray[21] = "でもそれで皆殺しにしていい訳ねえよ！";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "angry";
+global.emotionAntagonistArray[21] = "neutral";
+
+global.messageArray[22] = "やっぱりイカれてるぜ！";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "angry";
+global.emotionAntagonistArray[22] = "neutral";
+
+global.messageArray[23] = "アーッハッハッハッ！そんな事知るもんですか！
+不良の溜まる地域を爆破できれば、他の連中も怯えて逃げ出すでしょう！";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "angry";
+global.emotionAntagonistArray[23] = "neutral";
+
+global.messageArray[24] = "長い目で見ればこれ以上の対策なんて無いでしょうよ！";
+global.categoryArray[24] = "right";
+global.emotionProtagonistArray[24] = "angry";
+global.emotionAntagonistArray[24] = "neutral";
+
+global.messageArray[25] = "建物の修理にかける金はどうするんだよ！？
+それとお前が雇ったチンピラ共も！お前本ッッ当に矛盾してんな！！";
+global.categoryArray[25] = "left";
+global.emotionProtagonistArray[25] = "angry";
+global.emotionAntagonistArray[25] = "neutral";
+
+global.messageArray[26] = "ふん、どうせ後で殺すような奴らに金を払ったところで！";
+global.categoryArray[26] = "right";
+global.emotionProtagonistArray[26] = "angry";
+global.emotionAntagonistArray[26] = "neutral";
+
+global.messageArray[27] = "リスクなくして成功なし、どれだけ犠牲にしようと構うものですか！";
+global.categoryArray[27] = "right";
+global.emotionProtagonistArray[27] = "angry";
+global.emotionAntagonistArray[27] = "neutral";
+
+global.messageArray[28] = "不良のいない世界がどれだけ美しいものになるか！";
+global.categoryArray[28] = "right";
+global.emotionProtagonistArray[28] = "angry";
+global.emotionAntagonistArray[28] = "neutral";
+
+global.messageArray[29] = "ここで死んでしまうあなたには到底わかり得ない！";
+global.categoryArray[29] = "right";
+global.emotionProtagonistArray[29] = "angry";
+global.emotionAntagonistArray[29] = "neutral";
+
+global.messageArray[30] = "私がその世界を支配する！";
+global.categoryArray[30] = "right";
+global.emotionProtagonistArray[30] = "angry";
+global.emotionAntagonistArray[30] = "neutral";
+
+global.messageArray[31] = "あなたのような愚か者のいない世界を！";
+global.categoryArray[31] = "right";
+global.emotionProtagonistArray[31] = "angry";
+global.emotionAntagonistArray[31] = "neutral";
+
+global.messageArray[32] = "あなたにはここで消えてもらいます！";
+global.categoryArray[32] = "right";
+global.emotionProtagonistArray[32] = "angry";
+global.emotionAntagonistArray[32] = "neutral";
+break;
 
 case 1:
-global.messageArray[0] = "“Ahh, nos encontramos una vez más.";
+global.messageArray[0] = "Ahh, nos encontramos una vez más.";
 global.categoryArray[0] = "right";
 global.emotionProtagonistArray[0] = "neutral";
 global.emotionAntagonistArray[0] = "neutral";
@@ -171,7 +731,7 @@ global.emotionProtagonistArray[22] = "angry";
 global.emotionAntagonistArray[22] = "neutral";
 
 global.messageArray[23] = "¡AHAHAHAA! ¡No me interesa! Estoy seguro de que si vuelo en pedazos
-las áreas con más pandillas, ¡todos esos rufianes estarán asustados el resto de sus vidas!";
+las áreas con más pandillas, ¡Todos esos rufianes estarán asustados el resto de sus vidas!";
 global.categoryArray[23] = "right";
 global.emotionProtagonistArray[23] = "angry";
 global.emotionAntagonistArray[23] = "neutral";
@@ -187,7 +747,7 @@ global.categoryArray[25] = "left";
 global.emotionProtagonistArray[25] = "angry";
 global.emotionAntagonistArray[25] = "neutral";
 
-global.messageArray[26] = "No necesito pagarles, ¡porque morirán de todos modos!";
+global.messageArray[26] = "No necesito pagarles, ¡Porque morirán de todos modos!";
 global.categoryArray[26] = "right";
 global.emotionProtagonistArray[26] = "angry";
 global.emotionAntagonistArray[26] = "neutral";

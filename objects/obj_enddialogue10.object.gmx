@@ -40,6 +40,150 @@ global.messageLimit = 7;
 
 switch(global.language)
 {
+case 4:
+global.messageArray[0] = "Eh bien, j'ai sauvé la ville.";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "Mais faut croire que je gagne pas de cheesesteaks pour ça !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[1] = "Mec, c'est n'importe quoi.";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "J'suis une criminelle pour avoir fait ce qui est juste !";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Umm...";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Si c'est un crime d'aider les gens, alors je vais pas lâcher !";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "Car c'est le souffle de toute une vie !";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Tu vas voir, Tito !";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Je vais te rendre fier de moi !";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+break;
+
+
+case 3:
+global.messageArray[0] = "Bom, eu salvei a cidade.";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "Ahh...";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[1] = "Cara, isso é muito errado!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "Sou uma criminosa por fazer a coisa certa!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Grr... ";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "Bom, se é um crime ajudar as pessoas, eu vou continuar fazendo!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "É! Isso é o que me faz viver!";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "Só espera, Tito!";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "Vou deixar você orgulhoso!";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+break;
+
+
+case 2:
+global.messageArray[0] = "街を救ってもまだチーズステーキのご褒美は無しか。";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+global.messageArray[1] = "正しいことをしただけなのに犯罪者だってさ...";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[1] = "本ッ当にこの街イカれてんな！";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = ".........。";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "人助けをしたのに犯罪...";
+global.categoryArray[3] = "left";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+global.messageArray[4] = "それならもっと人助けするか！";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "neutral";
+
+global.messageArray[5] = "よし！";
+global.categoryArray[5] = "left";
+global.emotionProtagonistArray[5] = "sad";
+global.emotionAntagonistArray[5] = "neutral";
+
+global.messageArray[6] = "待っててくれよ、おじさん！";
+global.categoryArray[6] = "left";
+global.emotionProtagonistArray[6] = "sad";
+global.emotionAntagonistArray[6] = "neutral";
+
+global.messageArray[7] = "俺、もっと強くなってみせるぜ！";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "sad";
+global.emotionAntagonistArray[7] = "neutral";
+break;
+
+
 case 1:
 global.messageArray[0] = "Bueno, salvé la ciudad...";
 global.categoryArray[0] = "left";
@@ -66,7 +210,8 @@ global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Si es un crimen hacer lo correcto, ¡entonces lo seguiré haciendo!";
+global.messageArray[4] = "Si es un crimen hacer lo correcto,
+¡Entonces lo seguiré haciendo!";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "neutral";
@@ -76,16 +221,17 @@ global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "sad";
 global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "¡Tan sólo obsérvame, Tito!";
+global.messageArray[6] = "¡Solo obsérvame Tito!";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
-global.messageArray[7] = "¡Haré que te enorgullezcas de mi!";
+global.messageArray[7] = "¡Hare que te enorgullezcas de mi!";
 global.categoryArray[7] = "left";
 global.emotionProtagonistArray[7] = "sad";
 global.emotionAntagonistArray[7] = "neutral";
 break;
+
 
 default:
 global.messageArray[0] = "Well, I did save the city.";

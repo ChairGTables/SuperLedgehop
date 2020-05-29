@@ -154,6 +154,45 @@ global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 break;
 
+//Brazil
+case 3:
+global.messageArray[0] = "Ai adai! Tá trancado!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Um desses guardas deve ter a chave.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "É! Vamos voltar e surrar mais uns tiras!";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
+//French
+case 4:
+global.messageArray[0] = "Mince ! C'est verrouillé !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "J'suis sûre qu'un des gardes à la clef.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "neutral";
+
+global.messageArray[2] = "Ouais ! On va retourner tabasser plus de flics !";
+global.categoryArray[2] = "left";
+global.emotionProtagonistArray[2] = "happy";
+global.emotionAntagonistArray[2] = "neutral";
+break;
+
+
 default:
 global.messageArray[0] = "Ai adai! It’s locked!";
 global.categoryArray[0] = "left";

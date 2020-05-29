@@ -76,12 +76,67 @@ global.emotionProtagonistArray[1] = "sad";
 global.emotionAntagonistArray[1] = "angry";
 
 
-global.messageArray[2] = "アンタと付き合ってる時間はないんだ、";
+global.messageArray[2] = "アンタと付き合ってる時間はないんだ...";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "sad";
 global.emotionAntagonistArray[2] = "neutral";
 
 global.messageArray[3] = "ムース、消し炭にしちまいな！";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+break;
+
+case 3:
+
+global.messageArray[0] = "O QUE RAIOS É ISSO!?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "Nem eu sei.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "angry";
+
+
+global.messageArray[2] = "Mas não posso perder mais tempo com você.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Acabe com ela!";
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "neutral";
+
+break;
+
+
+
+//French
+case 4:
+
+global.messageArray[0] = "PURÉE C'EST QUOI CE TRUC !?";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "angry";
+
+
+global.messageArray[1] = "J'en sais rien.";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "sad";
+global.emotionAntagonistArray[1] = "angry";
+
+
+global.messageArray[2] = "Mais je ne vais pas gâcher plus de temps avec toi.";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+global.messageArray[3] = "Explose-moi la en morceaux !";
 global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "neutral";

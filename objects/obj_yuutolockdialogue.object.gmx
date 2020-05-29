@@ -110,6 +110,27 @@ global.messageLimit = 2;
 
 switch (global.language)
 {
+//French
+case 4:
+global.messageArray[0] = "Pas par là ! S'échapper par la porte
+principale serait du suicide !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Qu'est-ce que tu veux dire ? Je peux
+m'occuper de tous ces flics moi-même !";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "N-non ! Je refuse !";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+break;
+
 //Spanish
 case 1:
 global.messageArray[0] = "¡Por aquí no! ¡Escapar por la puerta
@@ -145,6 +166,27 @@ global.emotionProtagonistArray[1] = "angry";
 global.emotionAntagonistArray[1] = "sad";
 
 global.messageArray[2] = "私はまっぴらごめんよ！";
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "angry";
+global.emotionAntagonistArray[2] = "sad";
+break;
+
+//Brazil
+case 3:
+global.messageArray[0] = "Por aí não! Escapar pela porta da frente
+é basicamente um suicídio!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "sad";
+
+
+global.messageArray[1] = "Como assim? Só pula por cima da beira
+e atira junto comigo!";
+global.categoryArray[1] = "left";
+global.emotionProtagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "sad";
+
+global.messageArray[2] = "N-Não! Isso é perigoso!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "angry";
 global.emotionAntagonistArray[2] = "sad";

@@ -51,17 +51,46 @@ global.emotionAntagonistArray[1] = "neutral";
 break;
 
 case 2:
-global.messageArray[0] = "S-Stop it!";
+global.messageArray[0] = "や、やめろ！";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "neutral";
 
 
-global.messageArray[1] = "Ahahahahahahaha!!!";
+global.messageArray[1] = "アーハッハッハッハァ！！";
 global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 break;
+
+
+case 3:
+global.messageArray[0] = "P-Para com isso!";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Hahahahahahaha!!!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
+
+case 4:
+global.messageArray[0] = "A-arrête ça !";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "neutral";
+
+
+global.messageArray[1] = "Ahahahahahahaha !!!";
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "neutral";
+global.emotionAntagonistArray[1] = "neutral";
+break;
+
 
 default:
 global.messageArray[0] = "S-Stop it!";

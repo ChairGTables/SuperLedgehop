@@ -67,7 +67,7 @@ izquierdo para usar tu movimiento especial!";
 }
 else
 {
-    global.messageArray[2] = "“¡Oh, y MANTÉN PRESIONADA la barra
+    global.messageArray[2] = "¡Oh, y MANTÉN PRESIONADA la barra
 espaciadora para usar tu movimiento especial!";
 }
 global.categoryArray[2] = "right";
@@ -119,11 +119,13 @@ global.emotionAntagonistArray[1] = "neutral";
 
 if (global.isGamepad == true)
 {
-    global.messageArray[2] = "それと左のトリガーを押しっぱなしにすれば必殺技も使えるぞ！";
+    global.messageArray[2] = "それと左のトリガーを押しっぱなし
+にすれば必殺技も使えるぞ！";
 }
 else
 {
-    global.messageArray[2] = "それとスペースバーを押しっぱなしにすれば必殺技も使えるぞ！";
+    global.messageArray[2] = "それとスペースバーを押しっぱなし
+にすれば必殺技も使えるぞ！";
 }
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "sad";
@@ -141,12 +143,132 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "sad";
 global.emotionAntagonistArray[3] = "happy";
 
-global.messageArray[4] = "頭痛くなってきたぁ…";
+global.messageArray[4] = "頭痛くなってきたぁ...";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "sad";
 global.emotionAntagonistArray[4] = "curious";
 
 break;
+
+case 3:
+
+global.messageArray[0] = "Bom trabalho!
+Estou tão orgulhoso!";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "happy";
+
+
+if (global.isGamepad == true)
+{
+    global.messageArray[1] = "Agora você pode tentar usar suas outras
+armas apertando os botões superiores (LB/RB).";
+}
+else
+{
+    global.messageArray[1] = "Agora você pode tentar usar suas outras
+armas usando a roda do mouse ou apertando Tab.";
+}
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+if (global.isGamepad == true)
+{
+    global.messageArray[2] = "Ah, e SEGURE o gatilho esquerdo (LT)
+para usar o seu especial irado!";
+}
+else
+{
+    global.messageArray[2] = "Ah, e SEGURE a barra de espaço para
+usar o seu especial irado!";
+}
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+if (global.isGamepad == true)
+{
+    global.messageArray[3] = "Vai! Segure o gatilho esquerdo!";
+}
+else
+{
+    global.messageArray[3] = "Vai! Segure a barra de espaço!";
+}
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "happy";
+
+global.messageArray[4] = "Você tá fazendo minha cabeça doer!";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "curious";
+
+break;
+
+
+
+
+//French
+
+case 4:
+
+global.messageArray[0] = "Bien joué !
+Je suis fier de toi !";
+global.categoryArray[0] = "right";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "happy";
+
+
+if (global.isGamepad == true)
+{
+    global.messageArray[1] = "Presse les boutons gâchettes
+pour changer d'arme.";
+}
+else
+{
+    global.messageArray[1] = "Défile la molette de ta souris
+ou appuie sur Tab pour changer d'arme.";
+}
+global.categoryArray[1] = "right";
+global.emotionProtagonistArray[1] = "happy";
+global.emotionAntagonistArray[1] = "neutral";
+
+
+if (global.isGamepad == true)
+{
+    global.messageArray[2] = "Oh, et MAINTIENS la Gâchette Gauche
+pour utiliser ton super pouvoir !";
+}
+else
+{
+    global.messageArray[2] = "Oh, et MAINTIENS la Barre Espace pour
+utiliser ton super pouvoir !";
+}
+global.categoryArray[2] = "right";
+global.emotionProtagonistArray[2] = "sad";
+global.emotionAntagonistArray[2] = "neutral";
+
+if (global.isGamepad == true)
+{
+    global.messageArray[3] = "Vas-y ! Maintiens la Gâchette maintenant !";
+}
+else
+{
+    global.messageArray[3] = "Vas-y ! Maintiens la Barre maintenant !";
+}
+global.categoryArray[3] = "right";
+global.emotionProtagonistArray[3] = "sad";
+global.emotionAntagonistArray[3] = "happy";
+
+global.messageArray[4] = "Tu me fais mal au crâne !";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "sad";
+global.emotionAntagonistArray[4] = "curious";
+
+break;
+
 
 default:
 

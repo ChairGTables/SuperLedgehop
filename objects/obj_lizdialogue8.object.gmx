@@ -42,7 +42,19 @@ global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
 break;
 case 2:
-global.messageArray[0] = "こりゃまずいな…";
+global.messageArray[0] = "こりゃまずいな...";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+break;
+case 3:
+global.messageArray[0] = "Isso não é nada bom...";
+global.categoryArray[0] = "left";
+global.emotionProtagonistArray[0] = "sad";
+global.emotionAntagonistArray[0] = "sad";
+break;
+case 4:
+global.messageArray[0] = "Oh, ça sent mauvais...";
 global.categoryArray[0] = "left";
 global.emotionProtagonistArray[0] = "sad";
 global.emotionAntagonistArray[0] = "sad";
