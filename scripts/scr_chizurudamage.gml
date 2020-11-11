@@ -48,7 +48,15 @@ if (instance_exists(obj_chizuru))
         }
     
         obj_chizuru.knockbackLook = obj_chizuru.lookDirection;
-        obj_chizuru.sprite_index = spr_chizuruhurtd;
+        if (global.misc1 == 0)
+        {
+            obj_chizuru.sprite_index = spr_chizuruhurtd;
+        }
+        else
+        {
+            obj_chizuru.sprite_index = spr_yuutohurt;
+        }
+        
         obj_chizuru.image_index = 0;
         obj_chizuru.image_speed = 1;
         if (destroyable == 1)

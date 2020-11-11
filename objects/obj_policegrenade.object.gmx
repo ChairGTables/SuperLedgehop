@@ -38,7 +38,7 @@ minDrops = 1;
 maxDrops = 4;
 
 //set animation speed
-image_speed = 0.1;
+image_speed = 0.2;
 
 //You must define the hurt sprite as a string
 hurtSprite = "spr_policegrenadehurt";
@@ -78,6 +78,8 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

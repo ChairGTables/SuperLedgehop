@@ -85,6 +85,8 @@ moveTimer = moveBeat;
 
 
 dropKey = 0;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

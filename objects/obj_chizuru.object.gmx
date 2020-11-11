@@ -34,6 +34,8 @@ previousY = 0;
 safeX = 0;
 safeY = 0;
 
+casting = false;
+
 mySpeed = 7;
 analogBoundary = 0.1;
 aimBoundary = 0.01;
@@ -65,6 +67,9 @@ gamepadCheck = global.isGamepad;
 
 global.chizuruShootBeat = global.quarterSec;
 global.chizuruShootTimer = global.chizuruShootBeat;
+
+
+yuutoRock = instance_create(x, y, obj_playerrock);
 </string>
           </argument>
         </arguments>
@@ -431,7 +436,7 @@ if (global.misc4 == 0)
 
 if (global.chizurushinecharge &gt; necessaryCharge &amp;&amp; global.shineget == 1 &amp;&amp; !instance_exists(obj_bonustheme))
 {
-    if (global.chizurushine &gt; 40)
+    if (global.chizurushine &gt; 40 &amp;&amp; global.misc1 == 0)
     {
         instance_create(x, y, obj_smallcircle);
     }
@@ -675,6 +680,11 @@ if (waveshine == 1)
     action = 0;
 }
 if (spinning == 1)
+{
+    action = 0;
+    
+}
+if (casting)
 {
     action = 0;
     
@@ -973,104 +983,224 @@ if (action == 1)
     if(lookDirection == 1)
     {
         image_xscale = -1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalkdr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalkdr;
+            }
+            else
+            {
+                sprite_index = spr_chizurustanddr;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustanddr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundd;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalkd;
+            }
+            
         }
     }
     
     if(lookDirection == 2)
     {
         image_xscale = 1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalkd;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalkd;
+            }
+            else
+            {
+                sprite_index = spr_chizurustandd;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustandd;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundd;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalkd;
+            }
+            
         }
     }
     
     if(lookDirection == 3)
     {
         image_xscale = 1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalkdr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalkdr;
+            }
+            else
+            {
+                sprite_index = spr_chizurustanddr;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustanddr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundd;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalkd;
+            }
+            
         }
     }
     
     if (lookDirection == 4)
     {
         image_xscale = -1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalkr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalkr;
+            }
+            else
+            {
+                sprite_index = spr_chizurustandr;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustandr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundd;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalkd;
+            }
+            
         }
     }
     
     if (lookDirection == 6)
     {
         image_xscale = 1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalkr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalkr;
+            }
+            else
+            {
+                sprite_index = spr_chizurustandr;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustandr;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundd;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalkd;
+            }
+            
         }
     }
     
     if (lookDirection == 7)
     {
         image_xscale = -1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalkur;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalkur;
+            }
+            else
+            {
+                sprite_index = spr_chizurustandur;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustandur;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundu;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalku;
+            }
+            
         }
     }
     
     if (lookDirection == 8)
     {
         image_xscale = 1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalku;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalku;
+            }
+            else
+            {
+                sprite_index = spr_chizurustandu;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustandu;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundu;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalku;
+            }
+            
         }
     }
     
     if (lookDirection == 9)
     {
         image_xscale = 1;
-        if (isMoving == 1)
+        if (global.misc1 == 0)
         {
-            sprite_index = spr_chizuruwalkur;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_chizuruwalkur;
+            }
+            else
+            {
+                sprite_index = spr_chizurustandur;
+            }
         }
         else
         {
-            sprite_index = spr_chizurustandur;
+            if (isMoving == 1)
+            {
+                sprite_index = spr_yuutowalkgroundu;
+            }
+            else
+            {
+                sprite_index = spr_yuutowalku;
+            }
+            
         }
     }
 
@@ -1105,10 +1235,21 @@ if (action == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index == spr_chizuruhurtd)
+            <string>if (sprite_index == spr_yuutoshootu)
+{
+    sprite_index = spr_yuutowalku;    
+    casting = false;
+}
+if (sprite_index == spr_yuutoshootd)
+{
+    sprite_index = spr_yuutowalkd;    
+    casting = false;
+}
+
+if(sprite_index == spr_chizuruhurtd || sprite_index == spr_yuutohurt)
 {
     lookDirection = knockbackLook;
-    
+    casting = false;
     if(lookDirection == 1)
     {
         image_xscale = -1;
@@ -1162,7 +1303,7 @@ if (action == 1)
     }
     
     image_index = 0;
-    image_speed = 0.5;
+    image_speed = 0.3;
 }
 </string>
           </argument>

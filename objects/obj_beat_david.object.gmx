@@ -107,7 +107,7 @@ if (image_index == 14)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!global.isCutscene &amp;&amp; !instance_exists(obj_bonustheme))
+            <string>if (!global.isCutscene &amp;&amp; !instance_exists(obj_bonustheme) &amp;&amp; global.misc1 == 0)
 {
     draw_sprite(sprite_index, image_index, view_xview[view_current] + offset_x, view_yview[view_current] + offset_y);
 }

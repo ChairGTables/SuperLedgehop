@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>46</bbox_right>
+  <bbox_right>45</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>25</bbox_bottom>
   <HTile>0</HTile>
@@ -32,5 +32,7 @@
     <frame index="9">images\spr_hpup_9.png</frame>
     <frame index="10">images\spr_hpup_10.png</frame>
     <frame index="11">images\spr_hpup_11.png</frame>
+    <frame index="12">images\spr_hpup_12.png</frame>
+    <frame index="13">images\spr_hpup_13.png</frame>
   </frames>
 </sprite>

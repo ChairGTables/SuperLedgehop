@@ -38,7 +38,7 @@ maxDrops = 4;
 equip = "spread";
 
 //set animation speed
-image_speed = 0.1;
+image_speed = 0.2;
 
 //You must define the hurt sprite as a string
 hurtSprite = "spr_grenaiderhurt_sonii";

@@ -8,8 +8,8 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>1</bbox_left>
-  <bbox_right>31</bbox_right>
-  <bbox_top>1</bbox_top>
+  <bbox_right>30</bbox_right>
+  <bbox_top>0</bbox_top>
   <bbox_bottom>39</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -18,9 +18,11 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>40</width>
-  <height>40</height>
+  <height>41</height>
   <frames>
     <frame index="0">images\spr_policegrenade_0.png</frame>
     <frame index="1">images\spr_policegrenade_1.png</frame>
+    <frame index="2">images\spr_policegrenade_2.png</frame>
+    <frame index="3">images\spr_policegrenade_3.png</frame>
   </frames>
 </sprite>

@@ -38,7 +38,7 @@ safeY = 0;
 equip = "enhanced";
 
 //set animation speed
-image_speed = 0.1;
+image_speed = 0.2;
 
 //You must define the hurt sprite as a string
 hurtSprite = "spr_enemybasic2hurt";
@@ -80,6 +80,8 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

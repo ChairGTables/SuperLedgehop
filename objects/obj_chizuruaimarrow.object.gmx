@@ -25,12 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-if (instance_exists(obj_chizuru))
+            <string>if (global.misc1 == 0)
 {
-    x = obj_chizuru.x;
-    y = obj_chizuru.y;
+    if (instance_exists(obj_chizuru))
+    {
+        x = obj_chizuru.x;
+        y = obj_chizuru.y;
+    }
+}
+else
+{
+    if (instance_exists(obj_playerrock))
+    {
+        x = obj_playerrock.x;
+        y = obj_playerrock.y;
+    }
 }
 
 if ((global.chizuruaimx == 0 &amp;&amp; global.chizuruaimy == 0) || global.isCutscene == true || instance_exists(obj_bonustheme))
