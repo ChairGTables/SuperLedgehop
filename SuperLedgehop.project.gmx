@@ -942,6 +942,7 @@
         <background>background\back_end2</background>
       </backgrounds>
       <background>background\back_titlesky</background>
+      <background>background\back_purplesky</background>
       <background>background\back_titlebuildingsback</background>
       <background>background\back_titlebuildingsmid</background>
       <background>background\back_titlebuildingsfront</background>
@@ -1554,6 +1555,7 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_stage3b2</room>
       <room>rooms\rm_stage3b1</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
