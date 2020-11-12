@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>1</bbox_left>
-  <bbox_right>38</bbox_right>
-  <bbox_top>5</bbox_top>
-  <bbox_bottom>37</bbox_bottom>
+  <bbox_left>3</bbox_left>
+  <bbox_right>36</bbox_right>
+  <bbox_top>2</bbox_top>
+  <bbox_bottom>36</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -26,5 +26,7 @@
     <frame index="3">images\spr_sidetoside_sonii_3.png</frame>
     <frame index="4">images\spr_sidetoside_sonii_4.png</frame>
     <frame index="5">images\spr_sidetoside_sonii_5.png</frame>
+    <frame index="6">images\spr_sidetoside_sonii_6.png</frame>
+    <frame index="7">images\spr_sidetoside_sonii_7.png</frame>
   </frames>
 </sprite>

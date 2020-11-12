@@ -877,18 +877,26 @@ if (!instance_exists(obj_bonusread) &amp;&amp; (global.speaking == false || exce
 {
     if (instance_exists(obj_chizuru))
     {
-        if (obj_chizuru.sprite_index == spr_chizuruhurtd)
+        if (global.misc1 == 0)
         {
-            draw_sprite(spr_chizuruhud, 1, xMain, yMain + hudshake_yoffset)
-        }
-        else if (global.chizuruhp &lt;= 20)
-        {
-            draw_sprite(spr_chizuruhud, 2, xMain, yMain + hudshake_yoffset)
+            if (obj_chizuru.sprite_index == spr_chizuruhurtd)
+            {
+                draw_sprite(spr_chizuruhud, 1, xMain, yMain + hudshake_yoffset)
+            }
+            else if (global.chizuruhp &lt;= 20)
+            {
+                draw_sprite(spr_chizuruhud, 2, xMain, yMain + hudshake_yoffset)
+            }
+            else
+            {
+                draw_sprite(spr_chizuruhud, 0, xMain, yMain + hudshake_yoffset)
+            }
         }
         else
         {
-            draw_sprite(spr_chizuruhud, 0, xMain, yMain + hudshake_yoffset)
+            draw_sprite(spr_yuutohudplayer, 1, xMain, yMain + hudshake_yoffset)
         }
+
         
         
         draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+25+ hudshake_yoffset,global.chizuruhp,myHeight)

@@ -109,6 +109,7 @@
         <sound>sound\snd_creditstheme</sound>
         <sound>sound\snd_bonusroom</sound>
         <sound>sound\snd_isuzu</sound>
+        <sound>sound\snd_stage3b</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -197,6 +198,8 @@
         <sound>sound\snd_yuutokyah</sound>
         <sound>sound\snd_yuutogah</sound>
         <sound>sound\snd_yuutodeviation</sound>
+        <sound>sound\snd_yuutotakethis</sound>
+        <sound>sound\snd_yuutomagic</sound>
       </sounds>
       <sounds name="crossette">
         <sound>sound\snd_defaultya1</sound>
@@ -333,6 +336,7 @@
         <sprites name="french">
           <sprite>sprites\spr_chizurucurrentbulletfrench</sprite>
         </sprites>
+        <sprite>sprites\spr_chizurutitle</sprite>
       </sprites>
       <sprites name="effects">
         <sprites name="spanish">
@@ -622,6 +626,7 @@
         <sprite>sprites\spr_caveshadow</sprite>
         <sprite>sprites\spr_cheesesteak</sprite>
         <sprite>sprites\spr_chizuruhud</sprite>
+        <sprite>sprites\spr_yuutohudplayer</sprite>
         <sprite>sprites\spr_colorkeys</sprite>
         <sprite>sprites\spr_controlscheme</sprite>
         <sprite>sprites\spr_creditsbox</sprite>
@@ -681,8 +686,10 @@
         <sprite>sprites\spr_yuutoneutral</sprite>
         <sprite>sprites\spr_yuutosad</sprite>
         <sprite>sprites\spr_yuutowalkd</sprite>
+        <sprite>sprites\spr_yuutowalkgroundd</sprite>
         <sprite>sprites\spr_yuutoshootd</sprite>
         <sprite>sprites\spr_yuutowalku</sprite>
+        <sprite>sprites\spr_yuutowalkgroundu</sprite>
         <sprite>sprites\spr_yuutoshootu</sprite>
         <sprite>sprites\spr_yuutokneel</sprite>
         <sprite>sprites\spr_yuutohurt</sprite>
@@ -847,6 +854,7 @@
     <sprites name="ultran">
       <sprite>sprites\spr_samplesprite_ultran</sprite>
     </sprites>
+    <sprite>sprites\spr_rockdetection</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="chair">
@@ -933,6 +941,13 @@
         <background>background\back_end1</background>
         <background>background\back_end2</background>
       </backgrounds>
+      <background>background\back_titlesky</background>
+      <background>background\back_purplesky</background>
+      <background>background\back_titlebuildingsback</background>
+      <background>background\back_titlebuildingsmid</background>
+      <background>background\back_titlebuildingsfront</background>
+      <background>background\back_titletrees</background>
+      <background>background\back_titlerails</background>
     </backgrounds>
     <backgrounds name="sonii">
       <background>background\back_samplebackground_sonii</background>
@@ -1010,6 +1025,7 @@
         <script>scripts\scr_lizbetrayskip.gml</script>
         <script>scripts\script54.gml</script>
       </scripts>
+      <script>scripts\scr_enemybasescript.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -1076,6 +1092,7 @@
         <object>objects\obj_circleeraser</object>
         <object>objects\obj_healmagnet</object>
         <object>objects\obj_movementtest</object>
+        <object>objects\obj_chizurutitle</object>
       </objects>
       <objects name="functionality">
         <objects name="bonusroom">
@@ -1166,6 +1183,7 @@
         <object>objects\obj_stagefivemusic</object>
         <object>objects\obj_stagefourmusic</object>
         <object>objects\obj_stagethreemusic</object>
+        <object>objects\obj_stagethreebmusic</object>
         <object>objects\obj_stagetwomusic</object>
         <object>objects\obj_louiemusic</object>
         <object>objects\obj_bonustheme</object>
@@ -1334,7 +1352,9 @@
           <object>objects\obj_yuutodetect</object>
           <object>objects\obj_yuutoassist</object>
           <object>objects\obj_yuutohitbox</object>
+          <object>objects\obj_playerrock</object>
           <object>objects\obj_rockcutscene</object>
+          <object>objects\obj_rockdetection</object>
         </objects>
         <object>objects\obj_bossdeath</object>
         <object>objects\obj_musicbox</object>
@@ -1451,6 +1471,7 @@
           <object>objects\obj_louieportrait</object>
           <object>objects\obj_louienpc1</object>
         </objects>
+        <object>objects\obj_enemydetector</object>
       </objects>
     </objects>
     <objects name="sonii">
@@ -1534,6 +1555,8 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
+      <room>rooms\rm_stage3b2</room>
+      <room>rooms\rm_stage3b1</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>
