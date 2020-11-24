@@ -30,6 +30,12 @@
     x = obj_yuutoassist.x;
     y = obj_yuutoassist.y;
 }
+
+if (instance_exists(obj_titoassist))
+{
+    x = obj_titoassist.x;
+    y = obj_titoassist.y;
+}
 </string>
           </argument>
         </arguments>
@@ -56,6 +62,12 @@
 {
     x = obj_yuutoassist.x;
     y = obj_yuutoassist.y;
+}
+
+if (instance_exists(obj_titoassist))
+{
+    x = obj_titoassist.x;
+    y = obj_titoassist.y;
 }
 </string>
           </argument>

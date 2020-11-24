@@ -32,6 +32,10 @@ if (instance_exists(obj_liz))
 {
     cancel = 1;
 }
+if (instance_exists(obj_saul))
+{
+    cancel = 1;
+}
 
 //check if outside view
 if (cancel == 0)

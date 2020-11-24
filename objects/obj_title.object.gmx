@@ -248,7 +248,7 @@ global.enhancedcount = 0;
 global.rapidcount = 0;
 global.spreadcount = 0;
 global.firecount = 100;
-global.icecount = 0;
+global.icecount = 100;
 
 global.rapidvirgin = 1;
 

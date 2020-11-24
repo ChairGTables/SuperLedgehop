@@ -33,6 +33,7 @@ killedWithTime = false;
 killedOnWall = false;
 image_angle = direction;
 summoner = noone;
+exploder = false;
 
 alarm[0] = 200;
 </string>
@@ -62,6 +63,10 @@ alarm[0] = 200;
     if (instance_exists(summoner) &amp;&amp; !killedWithTime &amp;&amp; !killedOnWall)
     {
         summoner.hitDetected = true;
+    }
+    if (instance_exists(summoner) &amp;&amp; !killedWithTime &amp;&amp; exploder)
+    {
+        summoner.explodeTrigger = true;
     }
 }
 </string>

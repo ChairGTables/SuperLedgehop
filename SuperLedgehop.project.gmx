@@ -70,6 +70,8 @@
         <sound>sound\snd_pickup</sound>
         <sound>sound\snd_switch</sound>
         <sound>sound\snd_enemyshined</sound>
+        <sound>sound\snd_icespike</sound>
+        <sound>sound\snd_rocketlaunch</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -110,6 +112,8 @@
         <sound>sound\snd_bonusroom</sound>
         <sound>sound\snd_isuzu</sound>
         <sound>sound\snd_stage3b</sound>
+        <sound>sound\snd_chiefintro</sound>
+        <sound>sound\snd_chiefloop</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -200,6 +204,12 @@
         <sound>sound\snd_yuutodeviation</sound>
         <sound>sound\snd_yuutotakethis</sound>
         <sound>sound\snd_yuutomagic</sound>
+        <sound>sound\snd_yuutowah</sound>
+        <sound>sound\snd_yuutoyay</sound>
+        <sound>sound\snd_yuutohey</sound>
+        <sound>sound\snd_yuutoho</sound>
+        <sound>sound\snd_yuutoflame</sound>
+        <sound>sound\snd_yuutoice</sound>
       </sounds>
       <sounds name="crossette">
         <sound>sound\snd_defaultya1</sound>
@@ -256,6 +266,17 @@
         <sound>sound\snd_titooof</sound>
         <sound>sound\snd_titokch</sound>
         <sound>sound\snd_titorice</sound>
+      </sounds>
+      <sounds name="chief">
+        <sound>sound\snd_saulaugh</sound>
+        <sound>sound\snd_saulah</sound>
+        <sound>sound\snd_saulcrash</sound>
+        <sound>sound\snd_saulyah</sound>
+        <sound>sound\snd_saulfreeze</sound>
+        <sound>sound\snd_saulcharge</sound>
+        <sound>sound\snd_sauldeath</sound>
+        <sound>sound\snd_saulgrowl</sound>
+        <sound>sound\snd_saulvolcano</sound>
       </sounds>
     </sounds>
     <sounds name="sonii">
@@ -499,9 +520,23 @@
           <sprite>sprites\spr_babycrt</sprite>
         </sprites>
         <sprite>sprites\spr_darkfog</sprite>
+        <sprite>sprites\spr_titlecorruptionback</sprite>
+        <sprite>sprites\spr_titlecorruptionfront</sprite>
         <sprite>sprites\spr_titlecorruption</sprite>
         <sprite>sprites\spr_prisonbars</sprite>
         <sprite>sprites\spr_tvstatic</sprite>
+        <sprites name="cg">
+          <sprite>sprites\spr_prisoncg</sprite>
+          <sprite>sprites\spr_lizcg</sprite>
+          <sprite>sprites\spr_yuutocg</sprite>
+          <sprite>sprites\spr_kamurocg</sprite>
+          <sprite>sprites\spr_crossettecg</sprite>
+          <sprite>sprites\spr_congratscg</sprite>
+          <sprite>sprites\spr_childcg</sprite>
+          <sprite>sprites\spr_saulcg</sprite>
+          <sprite>sprites\spr_billcg</sprite>
+          <sprite>sprites\spr_titocg</sprite>
+        </sprites>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -670,6 +705,8 @@
         <sprite>sprites\spr_lampstand</sprite>
         <sprite>sprites\spr_thugwarsinfo</sprite>
         <sprite>sprites\spr_savedicon</sprite>
+        <sprite>sprites\spr_floatplatform</sprite>
+        <sprite>sprites\spr_policecar</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -733,7 +770,6 @@
         <sprite>sprites\spr_musicboxhurt</sprite>
         <sprite>sprites\spr_oldbasicenemy</sprite>
         <sprite>sprites\spr_oldbasicenemyhurt</sprite>
-        <sprite>sprites\spr_policechief</sprite>
         <sprite>sprites\spr_policecyborg</sprite>
         <sprite>sprites\spr_policecyborghurt</sprite>
         <sprite>sprites\spr_policegrenade</sprite>
@@ -750,6 +786,13 @@
         <sprite>sprites\spr_totempole</sprite>
         <sprite>sprites\spr_trashbin</sprite>
         <sprite>sprites\spr_wooddoor</sprite>
+        <sprite>sprites\spr_firebarrel</sprite>
+      </sprites>
+      <sprites name="chief">
+        <sprite>sprites\spr_policechief</sprite>
+        <sprite>sprites\spr_policechiefshoot</sprite>
+        <sprite>sprites\spr_policechiefhurt</sprite>
+        <sprite>sprites\spr_saulneutral</sprite>
       </sprites>
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>
@@ -855,6 +898,7 @@
       <sprite>sprites\spr_samplesprite_ultran</sprite>
     </sprites>
     <sprite>sprites\spr_rockdetection</sprite>
+    <sprite>sprites\spr_icespike</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="chair">
@@ -914,6 +958,7 @@
         <background>background\back_doorwhite</background>
         <background>background\back_doorblack</background>
         <background>background\back_bricksblack</background>
+        <background>background\back_brickspurple</background>
         <background>background\back_grasswhite</background>
         <background>background\back_windowblack</background>
         <background>background\back_windowwhite</background>
@@ -979,8 +1024,8 @@
       <script>scripts\scr_bulletabsorb.gml</script>
       <script>scripts\scr_bulletreflect.gml</script>
       <script>scripts\scr_chizurudamage.gml</script>
-      <script>scripts\scr_chizurushine.gml</script>
       <script>scripts\scr_chizurushoot.gml</script>
+      <script>scripts\scr_chizurushine.gml</script>
       <script>scripts\scr_destroywhenoutofview.gml</script>
       <script>scripts\scr_enemycorestep.gml</script>
       <script>scripts\scr_enemydamage.gml</script>
@@ -1026,6 +1071,8 @@
         <script>scripts\script54.gml</script>
       </scripts>
       <script>scripts\scr_enemybasescript.gml</script>
+      <script>scripts\scr_playerrockstop.gml</script>
+      <script>scripts\scr_shinesprite.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -1208,6 +1255,10 @@
         <object>objects\obj_titlecorruption</object>
         <object>objects\obj_textoncontact</object>
         <object>objects\obj_savedicon</object>
+        <object>objects\obj_jarplatform</object>
+        <object>objects\obj_jarturner</object>
+        <object>objects\obj_policecar</object>
+        <object>objects\obj_policesurround</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -1257,6 +1308,7 @@
         <object>objects\obj_betatext</object>
         <object>objects\obj_darkfog</object>
         <object>objects\obj_endcg</object>
+        <object>objects\obj_frozenindicator</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -1307,7 +1359,9 @@
         </objects>
         <objects name="liz">
           <object>objects\obj_liz</object>
+          <object>objects\obj_saul</object>
           <object>objects\obj_lizpineapple</object>
+          <object>objects\obj_saulgrenade</object>
           <object>objects\obj_lizflashbang</object>
           <object>objects\obj_lizbombwarning</object>
           <object>objects\obj_lizexplosion</object>
@@ -1351,6 +1405,7 @@
           <object>objects\obj_yuutonpc1</object>
           <object>objects\obj_yuutodetect</object>
           <object>objects\obj_yuutoassist</object>
+          <object>objects\obj_titoassist</object>
           <object>objects\obj_yuutohitbox</object>
           <object>objects\obj_playerrock</object>
           <object>objects\obj_rockcutscene</object>
@@ -1366,6 +1421,7 @@
         <object>objects\obj_mooseentrance</object>
         <object>objects\obj_moose</object>
         <object>objects\obj_trashbin</object>
+        <object>objects\obj_flamebarrel</object>
         <objects name="kamuro">
           <object>objects\obj_kamurodialogue1</object>
           <object>objects\obj_kamurodialogue2</object>
@@ -1555,8 +1611,11 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_stage3b2</room>
       <room>rooms\rm_stage3b1</room>
+      <room>rooms\rm_stage3b2</room>
+      <room>rooms\rm_stage3b3</room>
+      <room>rooms\rm_saulfight</room>
+      <room>rooms\rm_140bpmsaul</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>

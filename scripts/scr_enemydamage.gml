@@ -5,6 +5,11 @@ if (other.sprite_index == spr_chizuruflame && other.image_xscale < 0.9)
     passable = 0;
 }
 
+if (other.sprite_index == spr_icespike && other.image_xscale >= 2)
+{
+    passable = 0;
+}
+
 if (passable == 1)
 {
     hp -= other.damage;
@@ -40,11 +45,18 @@ if (passable == 1)
         var hitSweat = instance_create(x, y, obj_hitsweat);
     }
     
-    if (other.timed == 1)
+    if (other.timed > 0)
     {
         sprite_index = asset_get_index(hurtSprite);
         image_index = 0;
         alarm[11] = hitstunTime;
+        if (other.timed == 5)
+        {
+            alarm[11] = hitstunTime * 3;
+            frozenDude = instance_create(x, y, obj_frozenindicator);
+            frozenDude.frozenGuy = self;
+        }
+        
         
         if (random_range(0,100) < 10)
         {

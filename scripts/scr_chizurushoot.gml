@@ -248,13 +248,24 @@ if (instance_exists(obj_chizuru) && !instance_exists(obj_bonustheme))
             }
             image_index = 0;
             audio_play_sound_on (global.effectsEmitter, snd_ricebullet, false, 10); 
-            if (random_range(0, 100) > 50)
+            randomVoice = round(random_range(0, 4));
+            switch(randomVoice)
             {
-                audio_play_sound_on (global.voiceEmitter, snd_yuutothere, false, 10); 
-            }
-            else
-            {
-                audio_play_sound_on (global.effectsEmitter, snd_yuutoyeah, false, 10); 
+                case 3:
+                    //audio_play_sound_on (global.effectsEmitter, snd_yuutoyay, false, 10); 
+                    break
+            
+                case 2:
+                    audio_play_sound_on (global.effectsEmitter, snd_yuutoho, false, 10); 
+                    break
+                
+                case 1:
+                    audio_play_sound_on (global.effectsEmitter, snd_yuutoyeah, false, 10); 
+                    break;
+            
+                default:
+                    audio_play_sound_on (global.voiceEmitter, snd_yuutothere, false, 10); 
+                    break;
             }
         }
     }

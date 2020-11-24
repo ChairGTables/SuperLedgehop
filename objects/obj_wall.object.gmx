@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>ice = 0;
+soft = false;
 </string>
           </argument>
         </arguments>

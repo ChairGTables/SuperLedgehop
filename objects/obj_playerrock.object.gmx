@@ -42,6 +42,14 @@ shootCount = 0;
 bulletAngle = 0;
 detector = instance_create(x, y, obj_rockdetection);
 detector.rockMaster = self;
+bypassShooting = false;
+flameAngle = 0;
+flameLength = 0;
+flame[0] = noone;
+flame[1] = noone;
+flame[2] = noone;
+flame[3] = noone;
+isIcing = false;
 
 if (global.misc1 == 0)
 {
@@ -110,6 +118,29 @@ if (instance_exists(obj_yuutoassist) &amp;&amp; astral == 0)
     speed = 10;
     direction = point_direction(x, y, obj_yuutoassist.x, obj_yuutoassist.y);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>isIcing = false;
 </string>
           </argument>
         </arguments>
@@ -275,23 +306,7 @@ alarm[1] = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 2;
-testString = 1;
-attacking = 0;
-if (instance_exists(obj_chizuru) &amp;&amp; !isShooting)
-{
-    testString = 2;
-    if (point_distance(x, y, obj_chizuru.x, obj_chizuru.y) &gt; 30)
-    {
-        speed = 10;
-        direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
-        testString = direction;
-    }
-    else
-    {
-        speed = 0;
-    }
-}
+            <string>scr_playerrockstop();
 </string>
           </argument>
         </arguments>
@@ -351,33 +366,36 @@ previousY = y;
 }
 else
 {
-    hitbox = instance_create(x, y, obj_chizurubasicbullet);
-    hitbox.alarm[0] = 1;
-    hitbox.summoner = self;
-    hitbox.image_xscale = 5;
-    hitbox.image_yscale = 5;
-    hitbox.speed = speed;
-    hitbox.direction = direction;
-    hitbox.timed = 1;
-    hitbox.visible = 0;
-    hitbox.image_alpha = 0;
-
-    limitCheck = 7;
-    if (instance_position(x + limitCheck, y, obj_wall) || instance_position(x - limitCheck, y, obj_wall))
-    {
-        hspeed = -hspeed;
-    }
-    if (instance_position(x, y + limitCheck, obj_wall) || instance_position(x, y  - limitCheck, obj_wall))
-    {
-        vspeed = -vspeed;
-    }
-    
     if (hitDetected)
     {
-        attacking = false;
         hitDetected = false;
-        alarm[0] = 1;
+        scr_playerrockstop();
+        if (hitbox != noone)
+        {
+            if (instance_exists(hitbox))
+            {
+                instance_destroy(hitbox);
+            }
+        }
     }
+    else
+    {
+        hitbox = instance_create(x, y, obj_chizurubasicbullet);
+        hitbox.alarm[0] = 1;
+        hitbox.summoner = self;
+        hitbox.image_xscale = 5;
+        hitbox.image_yscale = 5;
+        hitbox.speed = speed;
+        hitbox.direction = direction;
+        hitbox.timed = 1;
+        hitbox.visible = 0;
+        hitbox.image_alpha = 0;
+    
+        limitCheck = 7;
+    }
+    
+    
+    
 }
 
 if (isShooting || isFiring)
@@ -387,8 +405,45 @@ if (isShooting || isFiring)
     image_yscale += 0.2;
 }
 
+if (isIcing)
+{
+    speed = 0;
+}
+
+if (0 == 0)
+{
+    flameAngle += 0.2;
+    if (flameLength &lt; 80)
+    {
+        flameLength += 10;
+    }
+    
+
+    for (i = 0; i &lt; 4; i++)
+    {
+        if (flame[i] != noone &amp;&amp; instance_exists(flame[i]))
+        {
+            fireAngle = flameAngle + ((pi/2) * i);
+            flame[i].x = x + (cos(fireAngle) * flameLength);
+            flame[i].y = y + ((sin(fireAngle) * flameLength)/2);
+        }
+        
+    } 
+    
+}
+
+
+if (x &gt; view_xview + 960 || x &lt; view_xview + 0 || y &gt; view_yview + 540 || y &lt; view_yview + 0)
+{
+    if (attacking)
+    {
+        bypassShooting = true;
+        scr_playerrockstop();
+    }
+}
 
 /*
+
 if (rotationSpeed &gt; 2)
 {
     rotationSpeed += 1;
@@ -437,7 +492,15 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>if (attacking)
+{
+    if (!other.soft)
+    {
+        bypassShooting = true;
+        scr_playerrockstop();
+    }
+}
+/*
 if (bounce &gt; 0)
 {
     if (bounce &lt; 5)

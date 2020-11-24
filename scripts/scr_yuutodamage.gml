@@ -18,3 +18,27 @@ if (instance_exists(obj_yuutoassist))
         }
     }
 }
+
+if (instance_exists(obj_titoassist))
+{
+    if (obj_titoassist.image_alpha == 1)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_titooof, false, 10); 
+        audio_play_sound_on (global.effectsEmitter, snd_playerhit, false, 10); 
+        obj_titoassist.image_alpha = 0.5;
+        obj_titoassist.sprite_index = spr_titohurt;
+        obj_titoassist.image_speed = 0.3;
+        obj_titoassist.alarm[10] = 90;
+        obj_titoassist.alarm[9] = 6;
+        obj_titoassist.alarm[0] = 6;
+        global.assisthp -= 5;
+        obj_titoassist.speed = speed;
+        obj_titoassist.direction = direction;
+        obj_titoassist.moving = 1;
+        
+        if (destroyable == 1)
+        {
+            instance_destroy(self);
+        }
+    }
+}
