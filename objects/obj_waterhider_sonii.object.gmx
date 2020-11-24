@@ -38,7 +38,7 @@ minDrops = 0;
 maxDrops = 0;
 
 //set animation speed
-image_speed = 0.2;
+image_speed = 0.4;
 
 //You must define the hurt sprite as a string
 hurtSprite = "spr_frostenemyhurt";

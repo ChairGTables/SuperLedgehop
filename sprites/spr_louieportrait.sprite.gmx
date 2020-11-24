@@ -8,21 +8,33 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>565</bbox_right>
+  <bbox_right>671</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>483</bbox_bottom>
+  <bbox_bottom>487</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>566</width>
-  <height>484</height>
+  <width>672</width>
+  <height>488</height>
   <frames>
     <frame index="0">images\spr_louieportrait_0.png</frame>
     <frame index="1">images\spr_louieportrait_1.png</frame>
     <frame index="2">images\spr_louieportrait_2.png</frame>
     <frame index="3">images\spr_louieportrait_3.png</frame>
+    <frame index="4">images\spr_louieportrait_4.png</frame>
+    <frame index="5">images\spr_louieportrait_5.png</frame>
+    <frame index="6">images\spr_louieportrait_6.png</frame>
+    <frame index="7">images\spr_louieportrait_7.png</frame>
+    <frame index="8">images\spr_louieportrait_8.png</frame>
+    <frame index="9">images\spr_louieportrait_9.png</frame>
+    <frame index="10">images\spr_louieportrait_10.png</frame>
+    <frame index="11">images\spr_louieportrait_11.png</frame>
+    <frame index="12">images\spr_louieportrait_12.png</frame>
+    <frame index="13">images\spr_louieportrait_13.png</frame>
+    <frame index="14">images\spr_louieportrait_14.png</frame>
+    <frame index="15">images\spr_louieportrait_15.png</frame>
   </frames>
 </sprite>

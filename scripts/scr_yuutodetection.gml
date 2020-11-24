@@ -7,3 +7,13 @@ if (instance_exists(obj_yuutoassist))
         obj_yuutoassist.targetY = other.y;
     }
 }
+
+if (instance_exists(obj_titoassist))
+{
+    if (obj_titoassist.casting == 0)
+    {
+        obj_titoassist.casting = 1;
+        obj_titoassist.targetX = other.x;
+        obj_titoassist.targetY = other.y;
+    }
+}

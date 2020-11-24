@@ -86,7 +86,6 @@ if (instance_exists(obj_shmupcontroller))
     absorbed = 1;
 }
 
-
 if (absorbed == 1)
 {
     if (thing &lt; 30)
@@ -97,6 +96,18 @@ if (absorbed == 1)
     if (instance_exists(obj_chizuru))
     {
         direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
+    }
+}
+else if (absorbed == 2)
+{
+    if (thing &lt; 10)
+    {
+        speed = thing;
+        thing += 2;
+    }
+    if (instance_exists(obj_playerrock))
+    {
+        direction = point_direction(x, y, obj_playerrock.x, obj_playerrock.y);
     }
 }
 else
@@ -113,6 +124,32 @@ else
         gravity = 1;
         gravity_direction = 270;
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_playerrock">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (absorbed == 0)
+{
+    absorbed = 2;
 }
 </string>
           </argument>

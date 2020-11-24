@@ -33,3 +33,5 @@ audio_stop_sound(snd_creditstheme);
 audio_stop_sound(snd_bonusroom);
 audio_stop_sound(snd_isuzu);
 audio_stop_sound(snd_stage3b);
+audio_stop_sound(snd_chiefloop);
+audio_stop_sound(snd_chiefintro);

@@ -938,6 +938,12 @@ if (!instance_exists(obj_bonusread) &amp;&amp; (global.speaking == false || exce
             draw_sprite(spr_assisthud, 0, xMain, yMain - 100)
             draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+47-100,global.assisthp,myHeight)        
         }
+        
+        if (instance_exists(obj_titoassist) &amp;&amp; !instance_exists(obj_yuutodialogue9))
+        {
+            draw_sprite(spr_assisthud, 1, xMain, yMain - 100)
+            draw_sprite_stretched(spr_hudbars,0,xMain+72,yMain+47-100,global.assisthp,myHeight)        
+        }
     }
     
 
@@ -1008,6 +1014,13 @@ if (!instance_exists(obj_bonusread) &amp;&amp; (global.speaking == false || exce
     if (instance_exists(obj_bill))
     {
         draw_sprite(spr_bosshud, 7, view_xview+440, yMain);
+        draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
+        draw_sprite_ext(spr_hudbars, 2, view_xview+440+447, yMain+25, -global.bossthree, 26, 0, c_white, 1 );
+    }
+    if (instance_exists(obj_saul))
+    {
+        draw_sprite(spr_bosshud, 8, view_xview+440, yMain);
         draw_sprite_ext(spr_hudbars, 0, view_xview+440+447, yMain+25, -global.bossone, 26, 0, c_white, 1 );
         draw_sprite_ext(spr_hudbars, 1, view_xview+440+447, yMain+25, -global.bosstwo, 26, 0, c_white, 1 );
         draw_sprite_ext(spr_hudbars, 2, view_xview+440+447, yMain+25, -global.bossthree, 26, 0, c_white, 1 );

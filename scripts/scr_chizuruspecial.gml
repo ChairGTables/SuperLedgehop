@@ -7,7 +7,7 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5 && !instance_exists(obj
         obj_chizuru.spinning = 1;
         obj_chizuru.action = 0;
         obj_chizuru.waveshine = 0;
-        
+        obj_chizuru.explodeTrigger = false;
         
         //Check if there's a wall nearby
         xWallCheck = 0;
@@ -103,11 +103,24 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5 && !instance_exists(obj
             obj_chizuru.vspeed = 0;
         }
    
-        obj_chizuru.alarm[10] = 20;
+        
         obj_chizuru.alarm[8] = -1;
         obj_chizuru.alarm[9] = -1;
         
-        obj_chizuru.sprite_index = spr_chizuruspin;
+        
+        
+        if (global.misc1 == 0)
+        {
+            obj_chizuru.alarm[10] = 20;
+            obj_chizuru.sprite_index = spr_chizuruspin;
+        }
+        else
+        {
+            obj_chizuru.alarm[10] = 15;
+            global.chizurump -= 5;
+            instance_create(x, y, obj_explosion);
+            audio_play_sound_on (global.effectsEmitter, snd_rocketlaunch, false, 10); 
+        }
     }
     
 }

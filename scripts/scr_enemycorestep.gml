@@ -138,5 +138,3 @@ if (action == 1 && (x < view_xview-200 || x > view_xview+1168 || y < view_yview-
 }
 
 
-
-
