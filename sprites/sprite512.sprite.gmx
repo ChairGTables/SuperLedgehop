@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>56</bbox_left>
-  <bbox_right>276</bbox_right>
+  <bbox_right>267</bbox_right>
   <bbox_top>26</bbox_top>
   <bbox_bottom>399</bbox_bottom>
   <HTile>0</HTile>
@@ -20,6 +20,6 @@
   <width>288</width>
   <height>400</height>
   <frames>
-    <frame index="0">images\spr_saulneutral_0.png</frame>
+    <frame index="0">images\sprite512_0.png</frame>
   </frames>
 </sprite>

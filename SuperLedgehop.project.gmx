@@ -793,6 +793,7 @@
         <sprite>sprites\spr_policechiefshoot</sprite>
         <sprite>sprites\spr_policechiefhurt</sprite>
         <sprite>sprites\spr_saulneutral</sprite>
+        <sprite>sprites\sprite512</sprite>
       </sprites>
       <sprites name="kamuro">
         <sprite>sprites\spr_kamuroneutral</sprite>
@@ -1436,6 +1437,8 @@
           <object>objects\obj_kamurodialogue11</object>
           <object>objects\obj_kamurodialogue12</object>
           <object>objects\obj_titodialogue1</object>
+          <object>objects\obj_sauldialogue1</object>
+          <object>objects\obj_sauldialogue2</object>
           <object>objects\obj_titodialogue2</object>
           <object>objects\obj_titodialogue3</object>
           <object>objects\obj_titodialogue4</object>

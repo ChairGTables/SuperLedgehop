@@ -202,6 +202,7 @@
     <instance objName="obj_flamebarrel" x="1104" y="976" name="inst_6D9C6A95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="1024" y="960" name="inst_88627415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policerapid" x="992" y="1088" name="inst_E1863BA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="160" y="2304" name="inst_69772713" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_building1a" x="1728" y="1536" w="32" h="32" xo="0" yo="288" id="10078167" name="inst_E349A875" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
