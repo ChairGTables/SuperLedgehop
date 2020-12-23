@@ -107,6 +107,8 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>
@@ -549,6 +551,7 @@ if (shootTimer &lt;= 0)
                         thisBeam.alarm[1] = 40;
                         thisBeam.fading = 0;
                         thisBeam.image_angle = directionHold[i];
+                        thisBeam.damage = 14;
                     }
                 }
                 else if (shotCount == 309)
@@ -658,12 +661,12 @@ if (moveTimer &lt;= 0)
     if(action == 1 &amp;&amp; (shotCount == 200 || shotCount == 0))
     {
         //Touch these to modify movement
-        followspeed = 7;
+        followspeed = 8;
         minimumspeed = 6;
         maximumspeed = 9;
         
         //Do not touch these
-        if (random_range(0, 100) &gt; 50 &amp;&amp; instance_exists(obj_chizuru))
+        if (random_range(0, 100) &gt; 20 &amp;&amp; instance_exists(obj_chizuru))
         {
             move_towards_point(obj_chizuru.x, obj_chizuru.y, followspeed);
         }
@@ -729,7 +732,13 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
                 steam_set_achievement("THIRTY");
             }
         }
-        
+        if (global.misc1 == 1)
+        {
+            if (!steam_get_achievement("BLUE"))
+            {
+                steam_set_achievement("BLUE");
+            }
+        }
     }
     
     if (global.highestLevel &lt; 5)

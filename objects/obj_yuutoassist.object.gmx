@@ -25,20 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>up = 0;
-casting = 0;
-targetX = 0;
-targetY = 0;
-moving = 0;
+            <string>if (global.misc1 == 1)
+{
+    instance_destroy(self);
+}
+else
+{
 
-detection = instance_create(x, y, obj_yuutodetect);
-rock = instance_create(x, y, obj_yuutorock);
-hitbox = instance_create(x, y, obj_yuutohitbox);
+    up = 0;
+    casting = 0;
+    targetX = 0;
+    targetY = 0;
+    moving = 0;
+    
+    detection = instance_create(x, y, obj_yuutodetect);
+    rock = instance_create(x, y, obj_yuutorock);
+    hitbox = instance_create(x, y, obj_yuutohitbox);
+    
+    disabled = 0;
+    
+    alarm[0] = 30;
+    image_speed = 0.3;
 
-disabled = 0;
+}
 
-alarm[0] = 30;
-image_speed = 0.3;
+
+
 </string>
           </argument>
         </arguments>
@@ -140,6 +152,20 @@ if (moving == 1  &amp;&amp; disabled == 0)
     {
         direction = point_direction(x, y, obj_chizuru.x, obj_chizuru.y);
         speed = 7;
+        withinRange = true;
+        if (point_distance(x, y, obj_chizuru.x, obj_chizuru.y) &gt; 100)
+        {
+            speed = 12;
+        }
+        if (point_distance(x, y, obj_chizuru.x, obj_chizuru.y) &gt; 300)
+        {
+            speed = 20;
+        }
+        if (point_distance(x, y, obj_chizuru.x, obj_chizuru.y) &gt; 500)
+        {
+            withinRange = false;
+            speed = 30;
+        }
     }    
 }
 else
@@ -188,32 +214,38 @@ else if (hspeed &gt; 0)
 
 if (casting == 1)
 {
-    if (random_range(0, 100) &gt; 50)
+    if (withinRange)
     {
-        audio_play_sound_on (global.voiceEmitter, snd_yuutoyeah, false, 10); 
+        if (random_range(0, 100) &gt; 50)
+        {
+            audio_play_sound_on (global.voiceEmitter, snd_yuutoyeah, false, 10); 
+        }
+        else
+        {
+            audio_play_sound_on (global.voiceEmitter, snd_yuutothere, false, 10); 
+        }
+        
+        rock.astral = 1;
+        rock.direction = point_direction(rock.x, rock.y, targetX, targetY);
+        rock.speed = 30;
+        rock.alarm[7] = 7;
+        moving = 0;
+        alarm[0] = 30;
+        image_index = 0;
+        if (up == 0)
+        {
+            sprite_index = spr_yuutoshootd;
+        }
+        else
+        {
+            sprite_index = spr_yuutoshootu;
+        }
+        casting = 2;
     }
     else
-    {
-        audio_play_sound_on (global.voiceEmitter, snd_yuutothere, false, 10); 
+    {   
+        casting = 0;
     }
-    
-    rock.astral = 1;
-    rock.direction = point_direction(rock.x, rock.y, targetX, targetY);
-    rock.speed = 30;
-    rock.alarm[7] = 7;
-    moving = 0;
-    alarm[0] = 30;
-    image_index = 0;
-    if (up == 0)
-    {
-        sprite_index = spr_yuutoshootd;
-    }
-    else
-    {
-        sprite_index = spr_yuutoshootu;
-    }
-    casting = 2;
-    
 }
 
 if (global.assisthp &lt; 1)

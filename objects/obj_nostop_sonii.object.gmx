@@ -88,6 +88,8 @@ moveTimer = moveBeat;
 
 destroyable = 0;
 absorbed = 0;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

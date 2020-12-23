@@ -72,6 +72,7 @@
         <sound>sound\snd_enemyshined</sound>
         <sound>sound\snd_icespike</sound>
         <sound>sound\snd_rocketlaunch</sound>
+        <sound>sound\snd_pianobang</sound>
       </sounds>
       <sounds name="music">
         <sound>sound\snd_bossintro</sound>
@@ -114,6 +115,9 @@
         <sound>sound\snd_stage3b</sound>
         <sound>sound\snd_chiefintro</sound>
         <sound>sound\snd_chiefloop</sound>
+        <sound>sound\snd_strategytheme</sound>
+        <sound>sound\snd_badrealization</sound>
+        <sound>sound\snd_guitarcalm</sound>
       </sounds>
       <sounds name="chizuru">
         <sound>sound\snd_chizuruoof</sound>
@@ -127,6 +131,7 @@
         <sound>sound\snd_superledgehoptwo</sound>
         <sound>sound\snd_chizurumissioncomplete</sound>
         <sound>sound\snd_chizuruvoicesample</sound>
+        <sound>sound\snd_chizurumortal</sound>
       </sounds>
       <sounds name="generic">
         <sound>sound\snd_death1</sound>
@@ -194,6 +199,7 @@
         <sound>sound\snd_lizgiggle</sound>
         <sound>sound\snd_lizvulcano</sound>
         <sound>sound\snd_lizdeath</sound>
+        <sound>sound\snd_lizfall</sound>
       </sounds>
       <sounds name="yuuto">
         <sound>sound\snd_yuutoyeah</sound>
@@ -210,6 +216,9 @@
         <sound>sound\snd_yuutoho</sound>
         <sound>sound\snd_yuutoflame</sound>
         <sound>sound\snd_yuutoice</sound>
+        <sound>sound\snd_yuutoshow</sound>
+        <sound>sound\snd_yuutobootleg</sound>
+        <sound>sound\snd_yuutoalright</sound>
       </sounds>
       <sounds name="crossette">
         <sound>sound\snd_defaultya1</sound>
@@ -358,6 +367,10 @@
           <sprite>sprites\spr_chizurucurrentbulletfrench</sprite>
         </sprites>
         <sprite>sprites\spr_chizurutitle</sprite>
+        <sprite>sprites\spr_chizurubody</sprite>
+        <sprite>sprites\spr_chizuruhair</sprite>
+        <sprite>sprites\spr_chizuruface</sprite>
+        <sprite>sprites\spr_chizururails</sprite>
       </sprites>
       <sprites name="effects">
         <sprites name="spanish">
@@ -400,6 +413,10 @@
         <sprite>sprites\spr_mpup</sprite>
         <sprite>sprites\spr_musicnote</sprite>
         <sprite>sprites\spr_noshine</sprite>
+        <sprite>sprites\spr_nomp</sprite>
+        <sprite>sprites\spr_noflame</sprite>
+        <sprite>sprites\spr_noice</sprite>
+        <sprite>sprites\spr_nospread</sprite>
         <sprite>sprites\spr_outofabsorbs</sprite>
         <sprite>sprites\spr_outofammo</sprite>
         <sprite>sprites\spr_planetearth</sprite>
@@ -440,6 +457,11 @@
           <sprite>sprites\spr_titobookjapanese</sprite>
           <sprite>sprites\spr_titobookbrazil</sprite>
           <sprite>sprites\spr_titobookfrench</sprite>
+          <sprite>sprites\spr_saulbook</sprite>
+          <sprite>sprites\spr_saulbookspanish</sprite>
+          <sprite>sprites\spr_saulbookjapanese</sprite>
+          <sprite>sprites\spr_saulbookbrazil</sprite>
+          <sprite>sprites\spr_saulbookfrench</sprite>
           <sprite>sprites\spr_yuutobook</sprite>
           <sprite>sprites\spr_yuutobookspanish</sprite>
           <sprite>sprites\spr_yuutobookjapanese</sprite>
@@ -537,6 +559,15 @@
           <sprite>sprites\spr_billcg</sprite>
           <sprite>sprites\spr_titocg</sprite>
         </sprites>
+        <sprite>sprites\spr_buildinghole</sprite>
+        <sprite>sprites\spr_bigdoor</sprite>
+        <sprite>sprites\spr_fadeupwards</sprite>
+        <sprite>sprites\spr_notone</sprite>
+        <sprite>sprites\spr_titleback2</sprite>
+        <sprite>sprites\spr_titleback3</sprite>
+        <sprite>sprites\spr_titleback5</sprite>
+        <sprite>sprites\spr_titleback4</sprite>
+        <sprite>sprites\spr_titleback1</sprite>
       </sprites>
       <sprites name="functionality">
         <sprites name="mainmenu">
@@ -544,6 +575,7 @@
             <sprite>sprites\spr_stage1</sprite>
             <sprite>sprites\spr_stage2</sprite>
             <sprite>sprites\spr_stage3</sprite>
+            <sprite>sprites\spr_stage3b</sprite>
             <sprite>sprites\spr_stage4</sprite>
             <sprite>sprites\spr_finale</sprite>
             <sprite>sprites\spr_back</sprite>
@@ -564,6 +596,15 @@
             <sprite>sprites\spr_windowedinitial</sprite>
             <sprite>sprites\spr_absorbmenu</sprite>
             <sprite>sprites\spr_holdmenu</sprite>
+            <sprite>sprites\spr_menubar</sprite>
+            <sprite>sprites\spr_extras</sprite>
+            <sprite>sprites\spr_lockedmenu</sprite>
+            <sprite>sprites\spr_chizuruselect</sprite>
+            <sprite>sprites\spr_yuutoselect</sprite>
+            <sprite>sprites\spr_optionsbar</sprite>
+            <sprite>sprites\spr_missionbar</sprite>
+            <sprite>sprites\spr_optiontitle</sprite>
+            <sprite>sprites\spr_bonus</sprite>
           </sprites>
           <sprites name="spanish">
             <sprite>sprites\spr_stage1spanish</sprite>
@@ -697,6 +738,7 @@
         <sprite>sprites\spr_wowyoudied</sprite>
         <sprite>sprites\spr_yellowbox</sprite>
         <sprite>sprites\sprite142</sprite>
+        <sprite>sprites\spr_pausecharacters</sprite>
         <sprite>sprites\spr_pausemenu</sprite>
         <sprite>sprites\spr_shadowwalk</sprite>
         <sprite>sprites\spr_shadowdie</sprite>
@@ -707,6 +749,16 @@
         <sprite>sprites\spr_savedicon</sprite>
         <sprite>sprites\spr_floatplatform</sprite>
         <sprite>sprites\spr_policecar</sprite>
+        <sprite>sprites\spr_furnace</sprite>
+        <sprite>sprites\spr_yuutosplitprompt</sprite>
+        <sprite>sprites\spr_yuutosplitpromptspanish</sprite>
+        <sprite>sprites\spr_yuutosplitpromptbrazil</sprite>
+        <sprite>sprites\spr_yuutosplitpromptjapanese</sprite>
+        <sprite>sprites\spr_yuutosplitpromptfrench</sprite>
+        <sprite>sprites\spr_ceilingelevator</sprite>
+        <sprite>sprites\spr_pausecorrupt</sprite>
+        <sprite>sprites\spr_quitcorrupt</sprite>
+        <sprite>sprites\spr_yuutounlock</sprite>
       </sprites>
       <sprites name="tito">
         <sprite>sprites\spr_titowalk</sprite>
@@ -900,6 +952,8 @@
     </sprites>
     <sprite>sprites\spr_rockdetection</sprite>
     <sprite>sprites\spr_icespike</sprite>
+    <sprite>sprites\spr_shineback</sprite>
+    <sprite>sprites\spr_crossetteattack</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="chair">
@@ -1053,6 +1107,7 @@
       <script>scripts\scr_lizskip.gml</script>
       <script>scripts\scr_kamuroskip.gml</script>
       <script>scripts\scr_billskip.gml</script>
+      <script>scripts\scr_saulskip.gml</script>
       <script>scripts\scr_yuutodetection.gml</script>
       <script>scripts\scr_yuutodamage.gml</script>
       <script>scripts\scr_yuutoskip1.gml</script>
@@ -1069,11 +1124,15 @@
         <script>scripts\scr_kamuroskipgov.gml</script>
         <script>scripts\scr_lizdefeatskip.gml</script>
         <script>scripts\scr_lizbetrayskip.gml</script>
+        <script>scripts\scr_saulsurroundskip.gml</script>
         <script>scripts\script54.gml</script>
       </scripts>
       <script>scripts\scr_enemybasescript.gml</script>
       <script>scripts\scr_playerrockstop.gml</script>
       <script>scripts\scr_shinesprite.gml</script>
+      <script>scripts\scr_saulendskip.gml</script>
+      <script>scripts\scr_titobumpskip.gml</script>
+      <script>scripts\scr_selectcharacter.gml</script>
     </scripts>
     <scripts name="sonii">
       <script>scripts\script_samplescript_sonii.gml</script>
@@ -1141,6 +1200,18 @@
         <object>objects\obj_healmagnet</object>
         <object>objects\obj_movementtest</object>
         <object>objects\obj_chizurutitle</object>
+        <object>objects\obj_chizuruface</object>
+        <object>objects\obj_chizuruhair</object>
+        <object>objects\obj_chizurubody</object>
+        <object>objects\obj_chizururails</object>
+        <object>objects\obj_titleback5</object>
+        <object>objects\obj_titleback4</object>
+        <object>objects\obj_titleback3</object>
+        <object>objects\obj_titleback2</object>
+        <object>objects\obj_titleback1</object>
+        <object>objects\obj_menubar</object>
+        <object>objects\obj_optionsbar</object>
+        <object>objects\obj_missionbar</object>
       </objects>
       <objects name="functionality">
         <objects name="bonusroom">
@@ -1154,6 +1225,7 @@
           <object>objects\obj_billcheck</object>
           <object>objects\obj_moosecheck</object>
           <object>objects\obj_louiecheck</object>
+          <object>objects\obj_saulcheck</object>
           <object>objects\obj_halloweenframe</object>
           <object>objects\obj_introframe</object>
           <object>objects\obj_gangmeme</object>
@@ -1219,6 +1291,7 @@
         <object>objects\obj_options</object>
         <object>objects\obj_protagonisttalk</object>
         <object>objects\obj_quitgame</object>
+        <object>objects\obj_extras</object>
         <object>objects\obj_settingsarrow</object>
         <object>objects\obj_sfxvolumebar</object>
         <object>objects\obj_sfxvolumetext</object>
@@ -1226,6 +1299,7 @@
         <object>objects\obj_stage1</object>
         <object>objects\obj_stage2</object>
         <object>objects\obj_stage3</object>
+        <object>objects\obj_stage3b</object>
         <object>objects\obj_stage4</object>
         <object>objects\obj_stageback</object>
         <object>objects\obj_stagefivemusic</object>
@@ -1260,6 +1334,11 @@
         <object>objects\obj_jarturner</object>
         <object>objects\obj_policecar</object>
         <object>objects\obj_policesurround</object>
+        <object>objects\obj_ceilingelevator</object>
+        <object>objects\obj_congratscg</object>
+        <object>objects\obj_chizuruselect</object>
+        <object>objects\obj_yuutoselect</object>
+        <object>objects\obj_notone</object>
       </objects>
       <objects name="effects">
         <object>objects\obj_absorbinstructions</object>
@@ -1310,6 +1389,12 @@
         <object>objects\obj_darkfog</object>
         <object>objects\obj_endcg</object>
         <object>objects\obj_frozenindicator</object>
+        <object>objects\obj_buildingholefront</object>
+        <object>objects\obj_buildingholeback</object>
+        <object>objects\obj_bigdoor</object>
+        <object>objects\obj_shineback</object>
+        <object>objects\obj_yuutounlock</object>
+        <object>objects\obj_fadeupwards</object>
       </objects>
       <objects name="map">
         <object>objects\obj_wall</object>
@@ -1337,6 +1422,7 @@
         <object>objects\obj_chizurupusher</object>
         <object>objects\obj_billsign</object>
         <object>objects\obj_prisonbars</object>
+        <object>objects\obj_ceilingfurnace</object>
       </objects>
       <objects name="enemies">
         <object>objects\obj_surroundshooterDONOTDUPLICATE</object>
@@ -1403,6 +1489,7 @@
           <object>objects\obj_yuutodialogue7</object>
           <object>objects\obj_yuutodialogue8</object>
           <object>objects\obj_yuutodialogue9</object>
+          <object>objects\obj_yuutodialoguesplit</object>
           <object>objects\obj_yuutonpc1</object>
           <object>objects\obj_yuutodetect</object>
           <object>objects\obj_yuutoassist</object>
@@ -1439,9 +1526,18 @@
           <object>objects\obj_titodialogue1</object>
           <object>objects\obj_sauldialogue1</object>
           <object>objects\obj_sauldialogue2</object>
+          <object>objects\obj_sauldialogue3</object>
+          <object>objects\obj_sauldialogue4</object>
+          <object>objects\obj_sauldialogue5</object>
+          <object>objects\obj_sauldialogue6</object>
+          <object>objects\obj_sauldialogue7</object>
+          <object>objects\obj_sauldialogue8</object>
+          <object>objects\obj_sauldialogue9</object>
+          <object>objects\obj_sauldialogue10</object>
           <object>objects\obj_titodialogue2</object>
           <object>objects\obj_titodialogue3</object>
           <object>objects\obj_titodialogue4</object>
+          <object>objects\obj_titodialogue5</object>
           <object>objects\obj_prisondialogue1</object>
           <object>objects\obj_prisiondialouge2</object>
           <object>objects\obj_waveshine1</object>
@@ -1463,6 +1559,7 @@
           <object>objects\obj_yuutoreddialogue</object>
           <object>objects\obj_yuutoviolet</object>
           <object>objects\obj_yuutoleavedialogue</object>
+          <object>objects\obj_yuutoignoredialogue</object>
           <object>objects\obj_kamuro</object>
           <object>objects\obj_kamuronpc1</object>
           <object>objects\obj_kamuronpc2</object>
@@ -1475,6 +1572,17 @@
           <object>objects\obj_planetearth</object>
           <object>objects\obj_badend</object>
           <object>objects\obj_waveshinestaticdialogue</object>
+          <object>objects\obj_saulnpc1</object>
+          <object>objects\obj_liznpc5</object>
+          <object>objects\obj_saulnpc2</object>
+          <object>objects\obj_crossettenpc2</object>
+          <object>objects\obj_yuutonpc4</object>
+          <object>objects\obj_titonpc6</object>
+          <object>objects\obj_saulnpc3</object>
+          <object>objects\obj_saulnpc4</object>
+          <object>objects\obj_titobumptrigger</object>
+          <object>objects\obj_titobumpnpc</object>
+          <object>objects\obj_yuutosplitchoice</object>
         </objects>
         <objects name="default">
           <object>objects\obj_default</object>
@@ -1614,11 +1722,6 @@
       <room>rooms\rm_logo</room>
       <room>rooms\rm_title</room>
       <room>rooms\rm_120bpm_david</room>
-      <room>rooms\rm_stage3b1</room>
-      <room>rooms\rm_stage3b2</room>
-      <room>rooms\rm_stage3b3</room>
-      <room>rooms\rm_saulfight</room>
-      <room>rooms\rm_140bpmsaul</room>
       <rooms name="stage1">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage1_2</room>
@@ -1639,6 +1742,12 @@
         <room>rooms\rm_stage3_1</room>
         <room>rooms\rm_repeat3_1</room>
         <room>rooms\rm_stage3cutscene_</room>
+        <room>rooms\rm_140bpmsaul</room>
+        <room>rooms\rm_stage3bstart</room>
+        <room>rooms\rm_stage3b1</room>
+        <room>rooms\rm_stage3b2</room>
+        <room>rooms\rm_stage3b3</room>
+        <room>rooms\rm_saulfight</room>
         <room>rooms\rm_stage3_2</room>
         <room>rooms\rm_120bpmliz</room>
         <room>rooms\rm_lizfight</room>
@@ -1664,11 +1773,14 @@
         <room>rooms\rm_survivalmode</room>
         <room>rooms\rm_louiefight</room>
       </rooms>
+      <room>rooms\rm_120bpm_bonus</room>
       <room>rooms\rm_bonusroom</room>
       <room>rooms\rm_bestfriendencounter</room>
       <room>rooms\rm_prisonscene</room>
       <room>rooms\rm_survivalmodeold</room>
       <room>rooms\rm_waveshinescene</room>
+      <room>rooms\rm_congrats</room>
+      <room>rooms\rm_notone</room>
       <room>rooms\rm_louiefightold</room>
       <room>rooms\rm_templevelone</room>
       <room>rooms\rm_test_david</room>

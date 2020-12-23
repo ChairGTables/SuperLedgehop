@@ -31,20 +31,37 @@
 }
 else
 {
-    global.isCutscene = true;
-    state = 0;
-    global.volumeHold = global.voiceVolume;
-    if (instance_exists(obj_chizuru))
+    if (global.disableCutscenes == 1 || global.misc1 == 1)
     {
-        obj_chizuru.sprite_index = spr_chizuruwalku;
-        obj_chizuru.image_xscale = 1;
-        obj_chizuru.vspeed = -7;
+        state = 1;
+        script_execute(scr_lizbetrayskip);
+        if (instance_exists(obj_chizuru))
+        {  
+            obj_chizuru.sprite_index = spr_chizurustandu;
+            obj_chizuru.image_xscale = 1;
+            obj_chizuru.vspeed = 0;
+        }
+    }
+    else
+    {
+
+
+        global.isCutscene = true;
+        state = 0;
+        global.volumeHold = global.voiceVolume;
+        if (instance_exists(obj_chizuru))
+        {
+            obj_chizuru.sprite_index = spr_chizuruwalku;
+            obj_chizuru.image_xscale = 1;
+            obj_chizuru.vspeed = -7;
+        }
+        
+        image_speed = 0;
+        image_xscale = 1;
+        
+        alarm[0] = 30;
     }
     
-    image_speed = 0;
-    image_xscale = 1;
-    
-    alarm[0] = 30;
 }
 </string>
           </argument>
@@ -93,7 +110,7 @@ if (state == 1)
 
 if (state == 0)
 {
-    if (global.disableCutscenes == 1)
+    if (global.disableCutscenes == 1 || global.misc1 == 1)
     {
         state = 1;
         script_execute(scr_lizbetrayskip);
@@ -138,7 +155,12 @@ if (state == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == 6 &amp;&amp; !instance_exists(obj_lizdialogue10))
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_lizbetrayskip);
+}
+
+if (state == 6 &amp;&amp; !instance_exists(obj_lizdialogue10))
 {
     vspeed = 20;
     image_speed = 0.5;
@@ -205,7 +227,7 @@ if (state == 2 &amp;&amp; !instance_exists(obj_lizdialogue9))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_lizbetrayskip);
+            <string>//script_execute(scr_lizbetrayskip);
 </string>
           </argument>
         </arguments>
@@ -228,7 +250,7 @@ if (state == 2 &amp;&amp; !instance_exists(obj_lizdialogue9))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_lizbetrayskip);
+            <string>//script_execute(scr_lizbetrayskip);
 </string>
           </argument>
         </arguments>

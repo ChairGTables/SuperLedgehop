@@ -663,7 +663,16 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_camera_chair) &amp;&amp; global.messageNumber &gt; 18)
+            <string>if (global.skipCheck &gt;= 30)
+{
+    audio_stop_sound(snd_quake);
+    global.isCutscene = false;
+    instance_create(x, y, obj_skippingcutscene);
+    instance_create(x, y, obj_blackfadein);
+    room_goto_next();
+}
+
+if (instance_exists(obj_camera_chair) &amp;&amp; global.messageNumber &gt; 18)
 {
     obj_camera_chair.intensity = 15;
     if (global.messageNumber == 19 &amp;&amp; !audio_is_playing(snd_quake))
@@ -671,60 +680,6 @@ break;
         audio_play_sound_on (global.effectsEmitter, snd_quake, true, 10); 
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="54">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>audio_stop_sound(snd_quake);
-global.isCutscene = false;
-instance_create(x, y, obj_skippingcutscene);
-instance_create(x, y, obj_blackfadein);
-room_goto_next();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>audio_stop_sound(snd_quake);
-global.isCutscene = false;
-instance_create(x, y, obj_skippingcutscene);
-instance_create(x, y, obj_blackfadein);
-room_goto_next();
 </string>
           </argument>
         </arguments>

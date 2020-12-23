@@ -25,7 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.shineget = 0;
+            <string>if (global.misc1 == 0)
+{
+    global.shineget = 0;
+}
+else
+{
+    global.shineget = 1;
+}
 global.beginningStart = 1;
 
 //Turn off animation speed because sprite changes with timer
@@ -86,6 +93,12 @@ moveTimer = moveBeat;
 myWall = instance_create(x-22, y-24, obj_wall);
 myWall.image_xscale = 0.7;
 myWall.image_yscale = 1.5;
+
+if (global.misc1 == 1)
+{
+    instance_destroy(myWall);
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

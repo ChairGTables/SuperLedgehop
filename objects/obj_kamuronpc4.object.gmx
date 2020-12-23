@@ -35,6 +35,8 @@ global.isCutscene = true;
 state = 0;
 global.chizuruhp = 99;
 
+
+
 x = 992;
 y = 688;
 
@@ -69,6 +71,12 @@ else
     bill = instance_create(x, view_yview + view_hview + 30, obj_billnpc3);
     
     alarm[0] = 90;
+}
+
+if (global.misc1 == 1)
+{
+    state = 6;
+    alarm[0] = 1;
 }
 
 

@@ -66,6 +66,11 @@ if (x &lt; view_xview+975)
     hspeed = 0;
 }
 
+if (instance_exists(obj_dialogue))
+{
+    image_alpha = 1 - obj_dialogue.cgAlpha - obj_dialogue.cgRightAlpha;
+}
+
 if (emotion == "none" )
 {
     sprite_index = spr_emptysprite;

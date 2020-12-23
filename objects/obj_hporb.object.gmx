@@ -31,7 +31,7 @@ alarm[0] = random_range(10,15);
 falling = 1;
 absorbed = 0;
 thing = 0;
-
+lasso = false;
 rotation = random_range(-7, 7);
 </string>
           </argument>
@@ -85,6 +85,17 @@ vspeed = 0;
 if (instance_exists(obj_shmupcontroller))
 {
     absorbed = 1;
+}
+
+if (lasso)
+{
+    
+    if (instance_exists(obj_playerrock))
+    {
+        x = obj_playerrock.x;
+        y = obj_playerrock.y;
+        speed = 0;
+    }
 }
 
 if (absorbed == 1)
@@ -148,12 +159,11 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (absorbed == 0)
+            <string>if (!lasso)
 {
-    absorbed = 2;
+    lasso = true;
+    image_angle = random_range(0, 360);
 }
-
-
 </string>
           </argument>
         </arguments>

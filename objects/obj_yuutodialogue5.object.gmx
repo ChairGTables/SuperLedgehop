@@ -213,7 +213,12 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(dialogue) == 0)
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_yuutoskip1);
+}
+
+if (instance_exists(dialogue) == 0)
 {
     global.speaking = false;
     instance_destroy(self);
@@ -240,7 +245,7 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_yuutoskip1);
+            <string>//script_execute(scr_yuutoskip1);
 </string>
           </argument>
         </arguments>
@@ -263,7 +268,7 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_yuutoskip1);
+            <string>//script_execute(scr_yuutoskip1);
 </string>
           </argument>
         </arguments>

@@ -37,8 +37,23 @@ boss = 0;
 mini = 0;
 auto = 0;
 showCG = false;
+showCGLeft = false;
+showCGRight = false;
+showCGMiddle = false;
 cg = spr_hudbars;
+cgLeft = spr_hudbars;
+cgRight = spr_hudbars;
+cgMiddle = spr_hudbars;
 cgAlpha = 0;
+cgLeftAlpha = 0;
+cgRightAlpha = 0;
+cgMiddleAlpha = 0;
+cgSpeed = 8;
+cgY = 0;
+cgLeftY = 80;
+cgRightY = -120;
+cgMiddleY = 80;
+
 
 portraitsReady = 0;
 
@@ -58,6 +73,7 @@ emotiontwo = 0;
 alarm[0] = 2;
 alarm[1] = 50;
 
+proceedCooldown = 2;
 
 protagonist = "chizuru";
 antagonist = "tito";
@@ -133,7 +149,12 @@ if (mini == 1)
     alarm[1] = 85;
 }
 
-if (mini == 1 || auto == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4) || (boss == 2 &amp;&amp; global.messageNumber &gt; global.messageLimit - 6))
+if (instance_exists(obj_saulnpc3))
+{
+    alarm[1] = 40;
+}
+
+if (mini == 1 || auto == 1 || (boss == 1 &amp;&amp; global.messageNumber &gt; global.messageLimit - 4) || (boss == 2 &amp;&amp; global.messageNumber &gt; global.messageLimit - 6) || (boss == 3 &amp;&amp; global.messageNumber &gt; global.messageLimit - 3))
 {
     depth = -9000;
     
@@ -380,7 +401,10 @@ if (antagonist == "unknown")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (proceedCooldown &gt; -1)
+{
+    proceedCooldown -= 1;
+}
 
 
 image_alpha = 0.0000000000000000001;
@@ -399,6 +423,14 @@ if (global.categoryArray[global.messageNumber] == "right" &amp;&amp; category !=
 
 if (showCG)
 {
+    if (cgSpeed &gt; 1)
+    {
+        cgSpeed -= 0.5;
+    }
+    if (cgY &gt; - 40)
+    {
+        cgY -= cgSpeed;
+    }
     if (cgAlpha &lt; 1)
     {
         cgAlpha += 0.1;
@@ -406,11 +438,88 @@ if (showCG)
 }
 else
 {
+    cgSpeed = 8;
     if (cgAlpha &gt; 0)
     {
         cgAlpha -= 0.1;
     }
 }
+
+
+if (showCGLeft)
+{
+    if (cgLeftY &gt; - 40)
+    {
+        cgLeftY -= 20;
+        
+        if (cgLeftY &lt; -40)
+        {
+            cgLeftY = -40;    
+        }
+    }
+    if (cgLeftAlpha &lt; 1)
+    {
+        cgLeftAlpha += 0.1;
+    }
+}
+else
+{
+    if (cgLeftAlpha &gt; 0)
+    {
+        cgLeftAlpha -= 0.1;
+    }
+}
+
+
+if (showCGRight)
+{
+    if (cgRightY &lt; -40)
+    {
+        cgRightY += 20;
+        
+        if (cgRightY &gt; -40)
+        {
+            cgRightY = -40;    
+        }
+    }
+    if (cgRightAlpha &lt; 1)
+    {
+        cgRightAlpha += 0.1;
+    }
+}
+else
+{
+    if (cgRightAlpha &gt; 0)
+    {
+        cgRightAlpha -= 0.1;
+    }
+}
+
+
+if (showCGMiddle)
+{
+    if (cgMiddleY &gt; - 40)
+    {
+        cgMiddleY -= 20;
+        
+        if (cgMiddleY &lt; -40)
+        {
+            cgMiddleY = -40;    
+        }
+    }
+    if (cgMiddleAlpha &lt; 1)
+    {
+        cgMiddleAlpha += 0.1;
+    }
+}
+else
+{
+    if (cgMiddleAlpha &gt; 0)
+    {
+        cgMiddleAlpha -= 0.1;
+    }
+}
+
 
 if (category == 2)
 {
@@ -522,6 +631,10 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             {
                 audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
             }   
+            if (protagonist == "saul")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
+            }  
             if (protagonist == "crossette")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
@@ -560,6 +673,10 @@ if (bleeping == global.chr1 &amp;&amp; global.voiceArray[global.messageNumber] =
             if (antagonist == "liz")
             {
                 audio_play_sound_on (global.effectsEmitter, snd_girlbleep, false, 10); 
+            }
+            if (antagonist == "saul")
+            {
+                audio_play_sound_on (global.effectsEmitter, snd_malebleep, false, 10); 
             }
             if (antagonist == "kamuro")
             {
@@ -668,6 +785,14 @@ if (portraitsReady == 1)
     {
         protagonistDisplay.happySprite = spr_hudbars;
         protagonistDisplay.neutralSprite = spr_hudbars;
+        protagonistDisplay.sadSprite = spr_hudbars;
+        protagonistDisplay.angrySprite = spr_hudbars;
+        protagonistDisplay.curiousSprite = spr_hudbars;
+    }
+    if (protagonist == "saul")
+    {
+        protagonistDisplay.happySprite = spr_hudbars;
+        protagonistDisplay.neutralSprite = spr_saulneutral;
         protagonistDisplay.sadSprite = spr_hudbars;
         protagonistDisplay.angrySprite = spr_hudbars;
         protagonistDisplay.curiousSprite = spr_hudbars;
@@ -825,9 +950,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss != 1 || global.messageNumber &lt; global.messageLimit - 3) &amp;&amp; (boss != 2 || global.messageNumber &lt; global.messageLimit - 5))
+            <string>if (proceedCooldown &lt;= 0 &amp;&amp; mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss != 1 || global.messageNumber &lt; global.messageLimit - 3) &amp;&amp; (boss != 2 || global.messageNumber &lt; global.messageLimit - 5) &amp;&amp; (boss != 3 || global.messageNumber &lt; global.messageLimit - 2))
 {
-
+    proceedCooldown = 2;
     sounding = 2;
 
     depth = -9000;
@@ -905,6 +1030,10 @@ else
         {
             global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_finalbossintro, false, 10);
         }
+        else if (instance_exists(obj_saulnpc3))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chiefintro, false, 10);
+        }
         else
         {
             global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
@@ -926,10 +1055,39 @@ else
         {
             global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_finalbossintro, false, 10);
         }
+        else if (instance_exists(obj_saulnpc3))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chiefintro, false, 10);
+        }
         else
         {
             global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bossintro, false, 10);
         }
+    }
+    else if (boss == 3 &amp;&amp; global.messageNumber == global.messageLimit - 2)
+    {
+        script_execute(scr_stopmusic);
+        // Music in rm1, priority 10, looping
+        if (instance_exists(obj_saulnpc3))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chiefintro, false, 10);
+        }
+
+    }
+    
+    if (instance_exists(obj_saulnpc3))
+    {
+        if (boss == 1 || boss == 2 || boss == 3)
+        {
+            if (global.messageNumber &gt;= global.messageLimit - 2)
+            {
+                if (!audio_is_playing(snd_chiefintro) &amp;&amp; !audio_is_playing(snd_chiefloop))
+                {
+                    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chiefloop, true, 10);
+                }
+            }
+        }
+        
     }
 }
 
@@ -960,7 +1118,10 @@ else
     if (mini == 0)
     {
         //draw cg
-        draw_sprite_ext(cg, 0, view_xview, view_yview, 1, 1, 0, c_white, cgAlpha);
+        draw_sprite_ext(cg, 0, view_xview, view_yview + cgY, 1, 1, 0, c_white, cgAlpha);
+        draw_sprite_ext(cgLeft, 0, view_xview, view_yview + cgLeftY, 1, 1, 0, c_white, cgLeftAlpha);
+        draw_sprite_ext(cgRight, 1, view_xview, view_yview + cgRightY, 1, 1, 0, c_white, cgRightAlpha);
+        draw_sprite_ext(cgMiddle, 2, view_xview, view_yview + cgMiddleY, 1, 1, 0, c_white, cgMiddleAlpha);
         draw_set_color(c_black);
         if (global.language == 2 &amp;&amp; instance_exists(obj_defaultdialogue1) &amp;&amp; global.messageNumber == 16)
         {
@@ -996,23 +1157,23 @@ else
                 draw_set_color($ea8a89);
                 if (global.language == 2)
                 {
-                    draw_text(view_xview + 10, view_yview+445 + bonusY, "警察署長");
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "ソール・ダーツ");
                 }
                 else if (global.language == 1 )
                 {
-                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Jefe de Policia");
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Saul Dart");
                 }
                 else if (global.language == 3)
                 {
-                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Delegado");
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Saul Dart");
                 }
                 else if (global.language == 4)
                 {
-                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Chef de Police");
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Saul Dart");
                 }
                 else
                 {
-                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Police Chief");
+                    draw_text(view_xview + 10, view_yview+445 + bonusY, "Saul Dart");
                 }
                 
             }
@@ -1117,14 +1278,14 @@ else
             }
             if (protagonist == "saul")
             {
-                draw_set_color($9c92f5);
+                draw_set_color($ea8a89);
                 if (global.language == 2)
                 {
-                    draw_text(view_xview+10, view_yview+445 + bonusY, "サウル");
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "ソール・ダーツ");
                 }
                 else
                 {
-                    draw_text(view_xview+10, view_yview+445 + bonusY, "Saul");
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Saul Dart");
                 }
             }
         }
@@ -1170,14 +1331,14 @@ else
             }
             if (antagonist == "saul")
             {
-                draw_set_color($9c92f5);
+                draw_set_color($ea8a89);
                 if (global.language == 2)
                 {
-                    draw_text(view_xview+10, view_yview+445 + bonusY, "サウル");
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "ソール・ダーツ");
                 }
                 else
                 {
-                    draw_text(view_xview+10, view_yview+445 + bonusY, "Saul");
+                    draw_text(view_xview+10, view_yview+445 + bonusY, "Saul Dart");
                 }
             }
             if (antagonist == "unknown")
@@ -1368,7 +1529,13 @@ else
         }
         else if (instance_exists(obj_protagonisttalk) &amp;&amp; category == 0)
         {
-            draw_sprite_ext(obj_antagonisttalk.sprite_index, obj_antagonisttalk.image_index, view_xview+view_wview+50, view_yview+360, obj_antagonisttalk.image_xscale, obj_antagonisttalk.image_yscale, obj_antagonisttalk.image_angle, c_white, obj_antagonisttalk.image_alpha);
+            ySub = 0;
+            if (antagonist == "yuuto")
+            {
+                ySub = 70
+            }
+            
+            draw_sprite_ext(obj_antagonisttalk.sprite_index, obj_antagonisttalk.image_index, view_xview+view_wview+50, view_yview+360 - ySub, obj_antagonisttalk.image_xscale, obj_antagonisttalk.image_yscale, obj_antagonisttalk.image_angle, c_white, obj_antagonisttalk.image_alpha);
             draw_set_color(c_black);
             draw_rectangle(view_xview + 400, view_yview+480, view_xview+760, view_yview+540, false);
             draw_set_color(16645629);
@@ -1436,9 +1603,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss != 1 || global.messageNumber &lt; global.messageLimit - 3) &amp;&amp; (boss != 2 || global.messageNumber &lt; global.messageLimit - 5))
+            <string>if (proceedCooldown &lt;= 0 &amp;&amp; mini == 0 &amp;&amp; auto == 0 &amp;&amp; (boss != 1 || global.messageNumber &lt; global.messageLimit - 3) &amp;&amp; (boss != 2 || global.messageNumber &lt; global.messageLimit - 5))
 {
-
+    proceedCooldown = 2;
     sounding = 2;
 
     depth = -9000;

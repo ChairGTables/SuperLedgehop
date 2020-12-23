@@ -176,6 +176,7 @@ if (instance_exists(obj_yuutoassist) &amp;&amp; astral == 0)
         fire1.speed = random_range(7, 20);
         fire1.direction = myAngle;
         fire1.steroids = 1;
+        fire1.damage = 2;
         myAngle += random_range(0, 360);
     }
     
@@ -186,6 +187,7 @@ if (instance_exists(obj_yuutoassist) &amp;&amp; astral == 0)
         fire1.speed = random_range(7, 20);
         fire1.direction = myAngle;
         fire1.steroids = 1;
+        fire1.damage = 1;
         myAngle += random_range(0, 360);
     }
     
@@ -236,6 +238,7 @@ if (isShooting)
         spreadShot = instance_create(x, y, obj_chizuruspreadbullet);
         spreadShot.direction = bulletAngle;
         spreadShot.speed = 12 + bulletSpeedAdder;
+        spreadShot.damage = 5;
         spreadShot.timed = 1;
                             
         spreadShot.image_xscale = 2;

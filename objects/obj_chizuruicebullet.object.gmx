@@ -31,6 +31,7 @@ image_angle = direction;
 vortex = 0;
 timed = 0;
 disappear = false;
+spike = false;
 alarm[0] = 200;
 alarm[1] = 2;
 </string>
@@ -78,7 +79,7 @@ alarm[1] = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (timed != 5)
+            <string>if (timed != 5 &amp;&amp; !spike)
 {
     var icepath = instance_create(x, y, obj_icepath);
     icepath.image_angle = image_angle;
@@ -131,12 +132,17 @@ alarm[1] = 3;
             <kind>1</kind>
             <string>image_angle = direction;
 
-if (timed == 5)
+if (timed == 5 || spike)
 {
     if (instance_exists(obj_playerrock))
     {
         x = obj_playerrock.x;
         y = obj_playerrock.y;
+    }
+    
+    if (image_xscale &lt; 1.1)
+    {
+        alarm[2] = 20;
     }
 
     if (image_xscale &lt; 2)

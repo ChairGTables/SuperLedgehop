@@ -28,6 +28,7 @@
             <string>state = 0;
 alarm[0] = 60;
 global.isCutscene = true;
+image_alpha = 0.6;
 </string>
           </argument>
         </arguments>
@@ -162,7 +163,7 @@ if (state == 1 &amp;&amp; !instance_exists(obj_waveshine1))
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index, image_index, view_xview, view_yview, 3, 3, 0, c_white, image_alpha);
-draw_sprite_ext(spr_darkfog, 0, view_xview + (view_wview/2), view_yview + (view_hview/2), 1, 1, 0, c_white, image_alpha);
+draw_sprite_ext(spr_darkfog, 0, view_xview + (view_wview/2), view_yview + (view_hview/2), 1, 1, 0, c_white, 0.9);
 </string>
           </argument>
         </arguments>

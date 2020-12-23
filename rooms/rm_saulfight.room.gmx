@@ -3,8 +3,8 @@
   <caption></caption>
   <width>3000</width>
   <height>2000</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_rhythmcontroller_david" x="96" y="192" name="inst_F07A522A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chizuru" x="1344" y="1056" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizuru" x="1314" y="898" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controller" x="96" y="32" name="inst_E0109ADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamepad" x="96" y="96" name="inst_70CF5B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_chair" x="256" y="32" name="inst_146D2DA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -65,14 +65,17 @@
     <instance objName="obj_wall" x="1600" y="1216" name="inst_C6CD45E2" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="25"/>
     <instance objName="obj_wall" x="928" y="1152" name="inst_F98EA561" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="335"/>
     <instance objName="obj_wall" x="1621" y="613" name="inst_16C76890" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="335"/>
-    <instance objName="obj_bosspusher" x="736" y="416" name="inst_833BD814" locked="0" code="yPush = 4;" scaleX="35" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bosspusher" x="736" y="415" name="inst_833BD814" locked="0" code="yPush = 4;" scaleX="35" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="1728" y="512" name="inst_394DD01B" locked="0" code="xPush = -4;" scaleX="12" scaleY="27" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="768" y="1248" name="inst_30FFC962" locked="0" code="yPush = -4;" scaleX="34" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosspusher" x="608" y="608" name="inst_790A95D4" locked="0" code="xPush = 4;&#xA;" scaleX="10" scaleY="21" colour="4294967295" rotation="0"/>
-    <instance objName="obj_saul" x="1344" y="768" name="inst_63DE860D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1600" y="1216" name="inst_5CAF1262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1024" y="1216" name="inst_18787083" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_titoassist" x="1344" y="1184" name="inst_8469E95B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_titoassist" x="1266" y="735" name="inst_8469E95B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_saulnpc3" x="1312" y="691" name="inst_22CD8965" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ceilingfurnace" x="1312" y="646" name="inst_AB24C139" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1248" y="625" name="inst_0F7D5B03" locked="0" code="" scaleX="4" scaleY="1.28999996185303" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crossettenpc2" x="1389" y="658" name="inst_644D78A2" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_buildingfull" x="1376" y="1312" w="32" h="32" xo="480" yo="0" id="10060106" name="inst_3E72562B" depth="1000008" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

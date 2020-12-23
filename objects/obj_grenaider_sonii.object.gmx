@@ -78,6 +78,8 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

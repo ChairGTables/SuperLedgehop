@@ -36,7 +36,14 @@ if (instance_exists(obj_chizuru))
 {
     obj_chizuru.x = x;
     obj_chizuru.y = y + 60;    
-    obj_chizuru.sprite_index = spr_chizurustandu;
+    if (global.misc1 == 0)
+    {
+        obj_chizuru.sprite_index = spr_chizurustandu;
+    }
+    else
+    {
+        obj_chizuru.sprite_index = spr_yuutowalku;
+    }
     obj_chizuru.image_xscale = 1;
     view_xview = obj_chizuru.x - (view_wview/2);
     view_yview = obj_chizuru.y - (view_hview/2);
@@ -184,7 +191,14 @@ image_xscale = -1;
 if (state == 15)
 {
     instance_create(x, y, obj_chaptercomplete);
-    audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
+    if (global.misc1 == 0)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
+    }
+    else
+    {
+        audio_play_sound_on(global.voiceEmitter, snd_yuutoalright, false, 0);
+    }
     state = 16;
 
     alarm[0] = 60;
@@ -256,7 +270,7 @@ if (state == 2)
 
 if (state == 0)
 {
-    if (global.disableCutscenes == 1)
+    if (global.disableCutscenes == 1 || global.misc1 == 1)
     {
         state = 1;
         script_execute(scr_lizdefeatskip);
@@ -290,7 +304,14 @@ if (state == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = -y;
+            <string>
+depth = -y;
+
+if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_lizdefeatskip);
+}
+
 
 
 if (thug.y &lt; view_yview + 230 &amp;&amp; thug.vspeed &lt; 0)
@@ -493,7 +514,7 @@ instance_destroy(other);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_lizdefeatskip);
+            <string>//script_execute(scr_lizdefeatskip);
 </string>
           </argument>
         </arguments>
@@ -516,7 +537,7 @@ instance_destroy(other);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_lizdefeatskip);
+            <string>//script_execute(scr_lizdefeatskip);
 </string>
           </argument>
         </arguments>

@@ -31,6 +31,10 @@ if (instance_exists(obj_chizuru))
         }
     }
         
+    if (global.misc1 == 1 && global.shottype == 2)
+    {
+        global.shottype = 4;
+    }
     if (!(instance_exists(obj_chizurucurrentbullet)) && weaponChanged == true)
     {
         var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   

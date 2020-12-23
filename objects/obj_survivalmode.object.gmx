@@ -103,8 +103,10 @@ global.shineget = 1;
             <string>//You must reset the alarm so it always loops
 activateTimer  -= delta_time / 1000000;
 
-global.chizurump = 0;
-
+if (global.misc1 == 0)
+{
+    global.chizurump = 0;
+}
 if (global.resyncing)
 {
     activateTimer = global.currentQuarterSec;

@@ -56,6 +56,12 @@ absorbed = 0;
 
 //Set the alarm based on the given beat
 activateTimer = activateBeat;
+
+if (global.misc1 == 1)
+{
+    scr_stopmusic();
+    room_goto(rm_120bpm2);
+}
 </string>
           </argument>
         </arguments>

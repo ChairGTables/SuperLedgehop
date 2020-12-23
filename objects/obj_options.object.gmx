@@ -50,22 +50,13 @@
             <kind>1</kind>
             <string>script_execute(scr_menulanguage);
 
-if (global.titleSelection == 2  &amp;&amp; global.titleState == 0)
+if (global.titleSelection == 3  &amp;&amp; global.titleState == 0)
 {
     image_index = 1;
 }
 else
 {
     image_index = 0;
-}
-
-if (global.titleState == 0)
-{
-    visible = 1;
-}
-else
-{
-    visible = 0;
 }
 
 if (global.titleState == 2)
@@ -101,7 +92,7 @@ else
             <kind>1</kind>
             <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 0)
 {
-    global.titleSelection = 2;
+    global.titleSelection = 3;
 }
 </string>
           </argument>
@@ -125,10 +116,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2)
+            <string>if (obj_titlecamera.action == 0 &amp;&amp; (global.titleState == 2 || global.titleState == 1 || global.titleState == 3))
 {
     global.titleState = 0;
-    global.titleSelection = 2;
+    global.titleSelection = 3;
 }
 else if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 0)
 {

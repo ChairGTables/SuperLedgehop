@@ -105,6 +105,8 @@ warnTimer = warningBeat;
 warningLaser = 0;
 
 warningLaserBeat = 0;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

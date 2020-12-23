@@ -759,7 +759,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "angry";
 global.emotionAntagonistArray[3] = "angry";
 
-global.messageArray[4] = "No! I’m serious!
+global.messageArray[4] = "No! I'm serious!
 Try it! It sucks!";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "angry";
@@ -772,7 +772,7 @@ global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "sad";
 
 global.messageArray[6] = "No wonder you hate cheesesteak! 
-You’re getting the bad ones!";
+You're getting the bad ones!";
 global.categoryArray[6] = "left";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "sad";
@@ -800,13 +800,13 @@ global.emotionAntagonistArray[10] = "sad";
 
 
 global.messageArray[11] = "Yeah, I bet.
-She’s probably eating the rotten cheese inside trash cans at this point.";
+She's probably eating the rotten cheese inside trash cans at this point.";
 global.categoryArray[11] = "left";
 global.emotionProtagonistArray[11] = "neutral";
 global.emotionAntagonistArray[11] = "sad";
 
 
-global.messageArray[12] = "That would have been me too if they didn’t give me a raise.";
+global.messageArray[12] = "That would have been me too if they didn't give me a raise.";
 global.categoryArray[12] = "right";
 global.emotionProtagonistArray[12] = "curious";
 global.emotionAntagonistArray[12] = "sad";
@@ -816,17 +816,17 @@ global.categoryArray[13] = "left";
 global.emotionProtagonistArray[13] = "happy";
 global.emotionAntagonistArray[13] = "sad";
 
-global.messageArray[14] = "You’ll be the best cop out there soon enough!";
+global.messageArray[14] = "You'll be the best cop out there soon enough!";
 global.categoryArray[14] = "left";
 global.emotionProtagonistArray[14] = "happy";
 global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "Yeah, but it’s only a few cents raise, ahaha.";
+global.messageArray[15] = "Yeah, but it's only a few cents raise, ahaha.";
 global.categoryArray[15] = "right";
 global.emotionProtagonistArray[15] = "happy";
 global.emotionAntagonistArray[15] = "neutral";
 
-global.messageArray[16] = "Well, hey! At least you’re still a cop!";
+global.messageArray[16] = "Well, hey! At least you're still a cop!";
 global.categoryArray[16] = "left";
 global.emotionProtagonistArray[16] = "curious";
 global.emotionAntagonistArray[16] = "neutral";
@@ -855,7 +855,7 @@ global.emotionAntagonistArray[20] = "sad";
 
 
 global.messageArray[21] = "I KNEW CHIZURU IS SUPER STRONG!
-I’M SO PROUD!";
+I'M SO PROUD!";
 global.categoryArray[21] = "left";
 global.emotionProtagonistArray[21] = "happy";
 global.emotionAntagonistArray[21] = "sad";
@@ -871,7 +871,7 @@ global.categoryArray[23] = "left";
 global.emotionProtagonistArray[23] = "neutral";
 global.emotionAntagonistArray[23] = "sad";
 
-global.messageArray[24] = "W-What’s with you and crazy ideas!?";
+global.messageArray[24] = "W-What's with you and crazy ideas!?";
 global.categoryArray[24] = "right";
 global.emotionProtagonistArray[24] = "neutral";
 global.emotionAntagonistArray[24] = "angry";
@@ -882,13 +882,13 @@ global.categoryArray[25] = "left";
 global.emotionProtagonistArray[25] = "neutral";
 global.emotionAntagonistArray[25] = "angry";
 
-global.messageArray[26] = "If there’s anyone that would get Chizuru
+global.messageArray[26] = "If there's anyone that would get Chizuru
 arrested, it should be you.";
 global.categoryArray[26] = "left";
 global.emotionProtagonistArray[26] = "neutral";
 global.emotionAntagonistArray[26] = "neutral";
 
-global.messageArray[27] = "If it’s anyone else, then we’re screwed.";
+global.messageArray[27] = "If it's anyone else, then we're screwed.";
 global.categoryArray[27] = "left";
 global.emotionProtagonistArray[27] = "curous";
 global.emotionAntagonistArray[27] = "sad";
@@ -899,13 +899,13 @@ global.emotionProtagonistArray[28] = "curious";
 global.emotionAntagonistArray[28] = "sad";
 
 global.messageArray[29] = "I want her to be arrested only by you.
-It’s all in the mind games.";
+It's all in the mind games.";
 global.categoryArray[29] = "left";
 global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
 global.messageArray[30] = "Trust me on this.
-We’ll all get out of here and fix this mess after that.";
+We'll all get out of here and fix this mess after that.";
 global.categoryArray[30] = "left";
 global.emotionProtagonistArray[30] = "neutral";
 global.emotionAntagonistArray[30] = "neutral";

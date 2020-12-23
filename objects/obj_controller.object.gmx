@@ -86,8 +86,23 @@
     instance_create(x, y, obj_blackfadein);
 }
 
+noIce = false;
+noFlame = false;
+noSpread = false;
+noManaYuuto = false;
+iceScale = 1;
+flameScale = 1;
+spreadScale = 1;
+manaScale = 1;
 yuutoCheck = 0;
+titoCheck = 0;
+yuutoOnly = 0;
+corruptCheck = 0;
 showShineNotice = 0;
+global.skipCheck = 0;
+skipBase = 0;
+
+corruptSubimage = 0;
 
 //hud shake
 hudintensity = 0;
@@ -114,6 +129,7 @@ global.keyIndex = 0;
 
 
 alarm[5] = 30;
+alarm[6] = 2;
 
 global.playerQuarter = (60000 / global.bpm) / 1000;
 
@@ -127,6 +143,36 @@ amplitude = 5; //pixels of peak oscillation
 //clone the y-position (or use x instead if you're doing horizontal oscillation)
 yy = 0;
 yyy = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[6] = 1;
+
+corruptSubimage += 1;
+
+if (corruptSubimage &gt; 3000)
+{
+    corruptSubimage = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -378,7 +424,40 @@ if (global.totalAbsorbed &gt; 200)
 
 
 
+if (instance_exists(obj_dialogue))
+{
+    if (obj_dialogue.mini == 0)
+    {
+        if (mouse_check_button(mb_right) || keyboard_check(vk_escape) || keyboard_check(vk_enter) || keyboard_check(vk_return) || keyboard_check(vk_shift))
+        {
+            global.skipCheck += 1;
+            if (skipBase &lt; 0.7)
+            {
+                skipBase += 0.2;
+            }
+        }
+        else
+        {
+            global.skipCheck -= 1;
+            skipBase -= 0.2;
+        }
+    }
+}
+else
+{
+    global.skipCheck -= 1;
+    skipBase -= 0.2;
+}
 
+if (global.skipCheck &lt; 0)
+{
+    global.skipCheck = 0;
+}
+
+if (skipBase &lt; 0)
+{
+    skipBase = 0;
+}
 
 
 
@@ -388,11 +467,11 @@ if (global.pause &gt; 9)
     {
         mouseX = mouse_x;// + view_xview;
         mouseY = mouse_y;// + view_yview;
-        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 267 &amp;&amp; mouseY &lt; view_yview + 369)
+        if (mouseX &gt; view_xview + 700 &amp;&amp; mouseX &lt; view_xview + 900 &amp;&amp; mouseY &gt; view_yview + 122 &amp;&amp; mouseY &lt; view_yview + 170)
         {
             global.pause = 10 * (yuutoCheck + 1);
         }
-        if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 379 &amp;&amp; mouseY &lt; view_yview + 492)
+        if (mouseX &gt; view_xview + 700 &amp;&amp; mouseX &lt; view_xview + 900 &amp;&amp; mouseY &gt; view_yview + 170 &amp;&amp; mouseY &lt; view_yview + 224)
         {
             global.pause = 1 + (10 * (yuutoCheck + 1));
         }
@@ -436,8 +515,131 @@ if (global.chizurushine &gt; 40)
     showShineNotice = 0;
 }
 
+if (global.isCutscene)
+{
+    noIce = false;
+    noFlame = false;
+    noSpread = false;
+    noMana = false;
+}
 
-
+if (global.misc1 == 1 &amp;&amp; !global.isCutscene)
+{
+    if (!noIce &amp;&amp; global.icecount &lt; 25)
+    {
+        noIce = true;
+        iceScale = 5;
+        audio_play_sound_on (global.effectsEmitter, snd_noabsorb, false, 10); 
+    }
+    
+    
+    if (noIce)
+    {
+        if (iceScale &gt; 1)
+        {
+            iceScale -= 0.4;
+            if (iceScale &lt;= 1)
+            {
+                iceScale = 1;
+            }
+        }
+        
+        if(global.icecount &gt; 25)
+        {
+            noIce = false;
+            iceScale = 1;
+            audio_play_sound_on (global.effectsEmitter, snd_absorbready, false, 10); 
+        }
+        
+    }
+    
+    if (!noFlame &amp;&amp; global.firecount &lt; 18)
+    {
+        noFlame = true;
+        fireScale = 5;
+        audio_play_sound_on (global.effectsEmitter, snd_noabsorb, false, 10); 
+    }
+    
+    
+    if (noFlame)
+    {
+        if (flameScale &gt; 1)
+        {
+            flameScale -= 0.4;
+            if (flameScale &lt;= 1)
+            {
+                flameScale = 1;
+            }
+        }
+        
+        if(global.firecount &gt; 18)
+        {
+            noFlame = false;
+            flameScale = 1;
+            audio_play_sound_on (global.effectsEmitter, snd_absorbready, false, 10); 
+        }
+        
+    }
+    
+    
+    
+    if (!noSpread &amp;&amp; global.spreadcount &lt; 10)
+    {
+        noSpread = true;
+        spreadScale = 5;
+        audio_play_sound_on (global.effectsEmitter, snd_noabsorb, false, 10); 
+    }
+    
+    
+    if (noSpread)
+    {
+        if (spreadScale &gt; 1)
+        {
+            spreadScale -= 0.4;
+            if (spreadScale &lt;= 1)
+            {
+                spreadScale = 1;
+            }
+        }
+        
+        if(global.spreadcount &gt; 10)
+        {
+            noSpread = false;
+            spreadScale = 1;
+            audio_play_sound_on (global.effectsEmitter, snd_absorbready, false, 10); 
+        }
+        
+    }
+    
+    
+    if (!noManaYuuto &amp;&amp; global.chizurump &lt; 10)
+    {
+        noManaYuuto = true;
+        manaScale = 5;
+        audio_play_sound_on (global.effectsEmitter, snd_noabsorb, false, 10); 
+    }
+    
+    
+    if (noManaYuuto)
+    {
+        if (manaScale &gt; 1)
+        {
+            manaScale -= 0.4;
+            if (manaScale &lt;= 1)
+            {
+                manaScale = 1;
+            }
+        }
+        
+        if(global.chizurump &gt; 10)
+        {
+            noManaYuuto = false;
+            manaScale = 1;
+            audio_play_sound_on (global.effectsEmitter, snd_absorbready, false, 10); 
+        }
+        
+    }
+}
 
 if (audio_is_playing(snd_billdeath))
 {
@@ -616,6 +818,21 @@ if (global.bossthree &lt; 0)
     global.bossthree = 0;
 }
 
+if (global.misc1 == 1)
+{
+    if (global.spreadcount &lt; 99)
+    {
+        global.spreadcount += 0.21;
+    }
+    if (global.firecount &lt; 99)
+    {
+        global.firecount += 0.21;
+    }
+    if (global.icecount &lt; 99)
+    {
+        global.icecount += 0.21;
+    }
+}
 
 if (global.chizurushine &lt; 99)
 {
@@ -632,7 +849,15 @@ if (global.chizurushine &lt; 0)
 
 if (global.chizurump &lt; 99)
 {
-    global.chizurump += 0.08;
+    if (global.misc1 == 1)
+    {
+        global.chizurump += 0.11;
+    }
+    else
+    {
+        global.chizurump += 0.08;
+    }
+    
 }
 if (global.chizurump &gt; 99)
 {
@@ -752,12 +977,12 @@ global.playerQuarter = (60000 / global.bpm) / 1000;
         }
         else
         {
-            if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 267 &amp;&amp; mouseY &lt; view_yview + 369)
+            if (mouseX &gt; view_xview + 700 &amp;&amp; mouseX &lt; view_xview + 900 &amp;&amp; mouseY &gt; view_yview + 122 &amp;&amp; mouseY &lt; view_yview + 170)
             {
                 instance_activate_all();
                 global.pause = 0;
             }
-            if (mouseX &gt; view_xview + 162 &amp;&amp; mouseX &lt; view_xview + 530 &amp;&amp; mouseY &gt; view_yview + 379 &amp;&amp; mouseY &lt; view_yview + 492)
+            if (mouseX &gt; view_xview + 700 &amp;&amp; mouseX &lt; view_xview + 900 &amp;&amp; mouseY &gt; view_yview + 170 &amp;&amp; mouseY &lt; view_yview + 224)
             {
                 script_execute(scr_stopmusic);
                 room_goto(rm_title);
@@ -828,6 +1053,11 @@ if (global.secondsPassed &lt; 10)
 }
 timeString = timeString + string(global.secondsPassed);
 
+if (skipBase &gt; 0 &amp;&amp; !instance_exists(obj_billnpcend) &amp;&amp; !instance_exists(obj_chizumanpcend) &amp;&amp; !instance_exists(obj_prisonbars) &amp;&amp; !instance_exists(obj_shineback))
+{
+    draw_sprite_ext(spr_cutsceneskip, global.language, view_xview + view_wview - 90, view_yview + 40, skipBase + (global.skipCheck / 100), skipBase + (global.skipCheck / 100), 0, c_white, 1);
+}
+
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 draw_set_color(c_black);
@@ -862,7 +1092,7 @@ if (showShineNotice &gt; 0 &amp;&amp; instance_exists(obj_chizuru))
 
 
 
-if (global.chizurushine &lt; 40 &amp;&amp; instance_exists(obj_chizuru))
+if (instance_exists(obj_chizuru))
 {
     yy = obj_chizuru.y - 17;
     t = (t + increment) mod 360;
@@ -870,7 +1100,38 @@ if (global.chizurushine &lt; 40 &amp;&amp; instance_exists(obj_chizuru))
     
     yyy = yy;
     yy = yyy + shift; 
-    draw_sprite(spr_noshine, 0, obj_chizuru.x + 17, yy);    
+    if (global.misc1 == 0)
+    {
+        if (global.chizurushine &lt; 40)
+        {
+            draw_sprite(spr_noshine, 0, obj_chizuru.x + 17, yy);
+        }
+    }
+    else if (!global.isCutscene)
+    {
+        if (global.chizurump &lt; 10)
+        {
+            draw_sprite_ext(spr_nomp, 0, obj_chizuru.x, yy - 15, manaScale, manaScale, 0, c_white, 1); 
+        }  
+        if (global.chizurushine &lt; 40)
+        {
+            draw_sprite(spr_noshine, 0, obj_chizuru.x + 17, yy - 10); 
+        }  
+        if (global.firecount &lt; 18)
+        {
+            draw_sprite_ext(spr_noflame, 0, obj_chizuru.x + 17, yy + 5, flameScale, flameScale, 0, c_white, 1); 
+        }
+        if (global.spreadcount &lt; 10)
+        {
+            draw_sprite_ext(spr_nospread, 0, obj_chizuru.x - 17, yy - 10,  spreadScale, spreadScale, 0, c_white, 1); 
+        }
+        if (global.icecount &lt; 25)
+        {
+            draw_sprite_ext(spr_noice, 0, obj_chizuru.x - 17, yy + 5,  iceScale, iceScale, 0, c_white, 1); 
+        }
+    }
+    
+     
 }
 
 if (!instance_exists(obj_bonusread) &amp;&amp; (global.speaking == false || exceptionCheck == 1))
@@ -894,7 +1155,18 @@ if (!instance_exists(obj_bonusread) &amp;&amp; (global.speaking == false || exce
         }
         else
         {
-            draw_sprite(spr_yuutohudplayer, 1, xMain, yMain + hudshake_yoffset)
+            if (obj_chizuru.sprite_index == spr_yuutohurt)
+            {
+                draw_sprite(spr_yuutohudplayer, 1, xMain, yMain + hudshake_yoffset)
+            }
+            else if (global.chizuruhp &lt;= 20)
+            {
+                draw_sprite(spr_yuutohudplayer, 2, xMain, yMain + hudshake_yoffset)
+            }
+            else
+            {
+                draw_sprite(spr_yuutohudplayer, 0, xMain, yMain + hudshake_yoffset)
+            }
         }
 
         
@@ -908,6 +1180,15 @@ if (!instance_exists(obj_bonusread) &amp;&amp; (global.speaking == false || exce
         if (global.shottype != 0)
         {
             draw_sprite(spr_ammohud, global.shottype, xAmmo, yAmmo + hudshake_yoffset);
+        }
+        
+        if (global.misc1 == 1)
+        {
+            if (global.shottype == 0)
+            {
+                draw_sprite(spr_ammohud, 2, xAmmo, yAmmo + hudshake_yoffset);
+                draw_sprite_stretched(spr_hudbars,2,xAmmo+71,yAmmo+4+ hudshake_yoffset,global.spreadcount,myHeight)
+            }
         }
         
         if (global.shottype == 1)
@@ -1032,16 +1313,35 @@ if(global.pause &gt; 9)
     if (global.stageState &gt; 99)
     {
         draw_sprite(spr_pausemenu, 4, view_xview, view_yview);
+        draw_sprite(spr_pausecorrupt, corruptSubimage, view_xview, view_yview);
+        draw_sprite(spr_quitcorrupt, corruptSubimage, view_xview + 794, view_yview + 175);
     }
     else
     {
-        if (yuutoCheck == 0)
+        if (titoCheck == 1)
         {
             draw_sprite(spr_pausemenu, global.pause - 10, view_xview, view_yview);
+            draw_sprite(spr_pausecharacters, 3, view_xview, view_yview);
+        }
+        else if (yuutoCheck == 1)
+        {
+            draw_sprite(spr_pausemenu, global.pause - 18, view_xview, view_yview);
+            draw_sprite(spr_pausecharacters, 1, view_xview, view_yview);
+            
         }
         else
         {
-            draw_sprite(spr_pausemenu, global.pause - 18, view_xview, view_yview);
+            draw_sprite(spr_pausemenu, global.pause - 10, view_xview, view_yview);
+            if (global.misc1 == 0)
+            {
+                draw_sprite(spr_pausecharacters, 0, view_xview, view_yview);
+            }
+            else
+            {
+                draw_sprite(spr_pausecharacters, 2, view_xview, view_yview);
+            }
+            
+            
         }
     }
 }
@@ -1090,6 +1390,20 @@ global.bossthree = 0;
       </action>
     </event>
     <event eventtype="9" enumb="120">
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>212</id>
@@ -1595,6 +1909,53 @@ if (instance_exists(obj_kamurodialogue4))
 
 
 
+if (instance_exists(obj_sauldialogue1))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue2))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue3))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue4))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue5))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue6))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue7))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue8))
+{
+    pauseException = 1;
+}
+
+if (instance_exists(obj_sauldialogue9))
+{
+    pauseException = 1;
+}
+
+
+
 
 if (instance_exists(obj_kamuronpc1))
 {
@@ -1612,10 +1973,15 @@ if (pauseException == 0)
             global.pause = 20;
             yuutoCheck = 1;
         }
+        if (instance_exists(obj_titoassist))
+        {
+            titoCheck = 1;
+        }
         instance_deactivate_all(true);
         instance_activate_object(obj_gamepad);
         if (instance_exists(obj_darkfog))
         {
+            corruptCheck = 1;
             instance_activate_object(obj_darkfog);
         }
         

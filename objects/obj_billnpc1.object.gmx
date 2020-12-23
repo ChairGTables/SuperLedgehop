@@ -25,13 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.disableCutscenes == 1)
+            <string>audio_stop_sound(snd_stagethree);
+global.stageState = 1;
+
+if (global.disableCutscenes == 1 || global.misc1 == 1)
 {
     room_goto(rm_stage3_1);
 }
 
-audio_stop_sound(snd_stagethree);
-global.stageState = 1;
+
 
 alarm[0] = 20;
 
@@ -115,7 +117,12 @@ if (state == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == 7 &amp;&amp; !instance_exists(obj_billdialogue4))
+            <string>if (global.skipCheck &gt;= 30)
+{
+    room_goto(rm_stage3_1);
+}
+
+if (state == 7 &amp;&amp; !instance_exists(obj_billdialogue4))
 {
     state = 8;
     sprite_index = spr_billshoot;
@@ -234,7 +241,7 @@ if (state == 1 &amp;&amp; !instance_exists(obj_billdialogue1))
             <kind>1</kind>
             <string>if (state &gt; 0)
 {
-    room_goto(rm_stage3_1);
+    //room_goto(rm_stage3_1);
 }
 </string>
           </argument>
@@ -288,7 +295,7 @@ if (state == 1 &amp;&amp; !instance_exists(obj_billdialogue1))
             <kind>1</kind>
             <string>if (state &gt; 0)
 {
-    room_goto(rm_stage3_1);
+    //room_goto(rm_stage3_1);
 }
 </string>
           </argument>

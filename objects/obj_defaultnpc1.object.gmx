@@ -31,7 +31,7 @@ image_xscale = -1;
 image_speed = 0;
 state = 0;
 
-if (global.bossvirgin == 0)
+if (global.bossvirgin == 0 || global.misc1 == 1)
 {
     alarm[2] = 1;
 }
@@ -152,7 +152,12 @@ if (state == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_defaultskip);
+}
+
+
 if (state == 1 &amp;&amp; instance_number(obj_defaultdialogue1) == 0)
 {
     instance_create(x - 50, y + 20, obj_caution);
@@ -181,7 +186,7 @@ if (state == 1 &amp;&amp; instance_number(obj_defaultdialogue1) == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_defaultskip);
+            <string>//script_execute(scr_defaultskip);
 </string>
           </argument>
         </arguments>
@@ -226,7 +231,7 @@ if (state == 1 &amp;&amp; instance_number(obj_defaultdialogue1) == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_defaultskip);
+            <string>//script_execute(scr_defaultskip);
 </string>
           </argument>
         </arguments>
@@ -249,7 +254,7 @@ if (state == 1 &amp;&amp; instance_number(obj_defaultdialogue1) == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_defaultskip);
+            <string>//script_execute(scr_defaultskip);
 </string>
           </argument>
         </arguments>
@@ -272,7 +277,7 @@ if (state == 1 &amp;&amp; instance_number(obj_defaultdialogue1) == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_defaultskip);
+            <string>//script_execute(scr_defaultskip);
 </string>
           </argument>
         </arguments>

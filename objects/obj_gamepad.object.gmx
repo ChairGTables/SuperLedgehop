@@ -233,7 +233,7 @@ if gamepad_button_check_pressed(0, gp_start)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(vk_tab)
+            <string>if (keyboard_check_pressed(vk_tab) || keyboard_check_pressed(ord('E')))
 {
     global.isGamepad = false;
     if (instance_exists(obj_chizuru))
@@ -247,6 +247,26 @@ if gamepad_button_check_pressed(0, gp_start)
     }
 }
 
+if (keyboard_check_pressed(ord('Q')))
+{
+    global.isGamepad = false;
+    if (instance_exists(obj_chizuru))
+    {
+        if (global.shottype == 0)
+        {
+            global.shottype = global.maxshottype;
+        }
+        else
+        {
+            global.shottype -= 1;
+        }
+        script_execute(scr_checkbulletreverse);        
+        if !(instance_exists(obj_chizurucurrentbullet))
+        {
+            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+        }
+    }
+}
 
 
     
@@ -408,19 +428,66 @@ if gamepad_button_check_pressed(0, gp_face2)
 if (gamepad_button_check_released(0, gp_shoulderr) &amp;&amp; joy_rb == true)
 {
     joy_rb = false;
+    
+    if (global.misc1 == 1)
+    {
+        if (instance_exists(obj_chizuru))
+        {
+            if (global.misc4 == 0)
+            {
+                if (shined == 0)
+                {
+                    script_execute(scr_chizurushine);
+                }
+                
+            }
+            else
+            {
+                script_execute(scr_chizurushine);
+            }
+            shined = 0;
+        }
+    }
 }     
 
 if (gamepad_button_check_pressed(0, gp_shoulderr) &amp;&amp; joy_rb == false)
 {
     joy_rb = true;
     global.isGamepad = true;
-    if (instance_exists(obj_chizuru))
+    if (global.misc1 == 0)
     {
-        global.shottype += 1;
-        script_execute(scr_checkbullet);
-        if !(instance_exists(obj_chizurucurrentbullet))
+        if (instance_exists(obj_chizuru))
         {
-            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+            global.shottype += 1;
+            script_execute(scr_checkbullet);
+            if !(instance_exists(obj_chizurucurrentbullet))
+            {
+                var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+            }
+        }
+    }
+    else
+    {
+        if (instance_exists(obj_chizuru))
+        {
+            if (global.misc4 == 0)
+            {
+                chargeNeeded = 3;
+                if (global.misc1 == 1)
+                {
+                    chargeNeeded = 5;
+                }
+                if (global.chizurushinecharge &gt; chargeNeeded)
+                {
+                    script_execute(scr_chizurushine);
+                    shined = 1;
+                }
+            }
+            if (shined == 0)
+            {
+                global.chizurushinecharge += 1;
+            }
+            
         }
     }
     
@@ -481,16 +548,16 @@ if (gamepad_button_value(0, gp_shoulderrb) &gt; 0.7 &amp;&amp; global.chizurusho
 }
 
 
-if (gamepad_button_value(0, gp_shoulderlb) &lt; 0.7 &amp;&amp; joy_lt == true)
+if ((gamepad_button_value(0, gp_shoulderlb) &lt; 0.7 &amp;&amp; !keyboard_check(vk_space)) &amp;&amp; joy_lt == true)
 {
     joy_lt = false;
     spinning = false;
 }
     
-if (gamepad_button_value(0, gp_shoulderlb) &gt; 0.7 &amp;&amp; joy_lt == false)
+if ((gamepad_button_value(0, gp_shoulderlb) &gt; 0.7 || keyboard_check(vk_space)) &amp;&amp; joy_lt == false)
 {
     joy_lt = true;
-    global.isGamepad = true;
+    //global.isGamepad = false;
     if (instance_exists(obj_chizuru))
     {
         spinning = true;
@@ -1696,6 +1763,20 @@ global.isGamepad = false;
       </action>
     </event>
     <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>612</id>

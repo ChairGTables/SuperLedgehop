@@ -48,7 +48,7 @@ disappear = 0;
 hp = 40;
 
 //set animation speed
-image_speed = 0.2;
+image_speed = 1;
 
 //You must define the hurt sprite as a string
 hurtSprite = "spr_oldbasicenemyhurt";

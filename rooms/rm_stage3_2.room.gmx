@@ -127,8 +127,8 @@
     <instance objName="obj_basicenemy3_sonii" x="4592" y="1568" name="inst_EDBE4315" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="4896" y="1840" name="inst_23C67A1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grenaider_sonii" x="4864" y="1600" name="inst_080C4699" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policecyborg" x="6080" y="480" name="inst_54388CCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policecyborg" x="5760" y="352" name="inst_FBB70D22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policecyborg" x="6080" y="480" name="inst_54388CCB" locked="0" code="forceKillCheck = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policecyborg" x="5760" y="352" name="inst_FBB70D22" locked="0" code="forceKillCheck = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slowspikes" x="5504" y="848" name="inst_EF7E88D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slowspikes" x="5536" y="848" name="inst_4E444039" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slowspikes" x="5568" y="848" name="inst_9086B99D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

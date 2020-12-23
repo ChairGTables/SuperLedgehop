@@ -26,8 +26,43 @@
           <argument>
             <kind>1</kind>
             <string>frozenGuy = noone;
-alarm[0] = 30;
+alarm[0] = 100;
+alarm[1] = 1;
 disappear = false;
+holdX = x;
+holdY = y;
+readyToHold = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (frozenGuy != noone)
+{
+    if (instance_exists(frozenGuy))
+    {
+        holdX = frozenGuy.x;
+        holdY = frozenGuy.y + 20;
+        readyToHold = true;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -50,13 +85,15 @@ disappear = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (frozenGuy != noone)
+            <string>disappear = true;
+
+if (frozenGuy != noone)
 {
     if (instance_exists(frozenGuy))
     {
         if (frozenGuy.sprite_index != frozenGuy.hurtSprite)
         {
-            alarm[0] = 2;
+            //alarm[0] = 2;
         }
         else
         {
@@ -101,6 +138,10 @@ else
         x = frozenGuy.x;
         y = frozenGuy.y+ 20;
         
+        frozenGuy.x = holdX;
+        frozenGuy.y = holdY;
+        
+        
         depth = frozenGuy.depth - 1;
     }
 }
@@ -110,6 +151,10 @@ if (disappear)
     if (image_alpha &gt; 0)
     {
         image_alpha -= 0.1;
+    }
+    if (image_alpha &lt; 0.1)
+    {
+        instance_destroy(self);
     }
 }
 </string>

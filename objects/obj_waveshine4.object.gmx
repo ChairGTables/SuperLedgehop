@@ -31,6 +31,14 @@ dialogue = instance_create(x, y, obj_dialogue);
 dialogue.protagonist = "unknown"
 dialogue.antagonist = "unknown";
 
+if (instance_exists(obj_shineback))
+{
+    if (obj_shineback.state == 0)
+    {
+        obj_shineback.state = 1;
+    }
+}
+
 //set limit
 global.messageLimit = 3;
 

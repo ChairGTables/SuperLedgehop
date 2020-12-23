@@ -88,6 +88,11 @@ yOffset = 0;
         other.vspeed = 0;
         other.x = pad.x + pad.xOffset;
         other.y = pad.y + pad.yOffset;
+        if (instance_exists(obj_playerrock))
+        {
+            obj_playerrock.x = other.x;
+            obj_playerrock.y = other.y;
+        }
         canTeleport = 0;
         alarm[5] = 3;
         view_xview = other.x - view_wview/2;

@@ -30,6 +30,7 @@ dialogue = instance_create(x, y, obj_dialogue);
 
 dialogue.antagonist = "bill";
 dialogue.boss = 2;
+state = 1;
 
 //set limit
 global.messageLimit = 32;
@@ -991,7 +992,37 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (global.messageNumber == 25 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 2;
+    dialogue.showCGLeft = true;
+    dialogue.cgLeft = spr_billcg;
+}
+
+if (global.messageNumber == 26 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 3;
+    dialogue.showCGRight = true;
+    dialogue.cgRight = spr_billcg;
+}
+
+
+if (global.messageNumber == 27 &amp;&amp; state == 3 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 4;
+    dialogue.showCGMiddle = true;
+    dialogue.cgMiddle = spr_billcg;
+}
+
+if (global.messageNumber == 32 &amp;&amp; state == 4 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 5;
+    dialogue.showCGLeft = false;
+    dialogue.showCGRight = false;
+    dialogue.showCGMiddle = false;
+}
+
+
 if (instance_exists(dialogue) == 0)
 {
     global.speaking = false;

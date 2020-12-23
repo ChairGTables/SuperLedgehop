@@ -30,7 +30,7 @@ image_speed = 0;
 
 global.isCutscene = true;
 
-website[0] = 'https://twitter.com/ChairGTables';
+website[0] = 'https://www.twitter.com/ChairGTables';
 website[1] = 'https://twitter.com/sylvysprit';
 website[2] = 'https://twitter.com/danny_rg2000';
 website[3] = 'https://twitter.com/hoshihearts';
@@ -51,6 +51,10 @@ website[17] = 'https://twitter.com/Juqavies_P';
 website[18] = 'https://twitter.com/Danicky98';
 website[19] = 'https://www.pexels.com/search/dog/';
 website[20] = 'https://twitter.com/_StargazerG';
+website[21] = 'https://twitter.com/maple_java';
+website[22] = 'https://twitter.com/chained_tan';
+website[23] = 'https://www.deviantart.com/mishafoartes';
+website[24] = 'https://steamcommunity.com/id/P-M_c_N_e_w_h_o_l_d/';
 
 left = instance_create(x, y, obj_creditsbonusleft);
 right = instance_create(x, y, obj_creditsbonusright);
@@ -80,9 +84,9 @@ right = instance_create(x, y, obj_creditsbonusright);
 
 if (image_index &lt; 0)
 {
-    image_index = 21;
+    image_index = 25;
 }
-if (image_index &gt; 21)
+if (image_index &gt; 25)
 {
     image_index = 0;
 }
@@ -119,7 +123,7 @@ instance_destroy(left);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index == 20)
+            <string>if (image_index == 25)
 {
     global.isCutscene = false;
     instance_destroy(left);
@@ -175,7 +179,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index == 21)
+            <string>if (image_index == 25)
 {
     global.isCutscene = false;
     instance_destroy(left);

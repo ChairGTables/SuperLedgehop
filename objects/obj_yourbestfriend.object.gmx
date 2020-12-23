@@ -42,6 +42,11 @@ instance_create(x, y, obj_darkfog);
 script_execute(scr_stopmusic);
 //global.musicVolume = global.volumeHold;
 //audio_emitter_gain(global.musicEmitter, global.musicVolume);
+
+if (global.misc1 == 1)
+{
+    room_goto(rm_notone);
+}
 </string>
           </argument>
         </arguments>
@@ -110,7 +115,7 @@ if (state == 8)
 if (state == 7)
 {
     sprite_index = spr_shadowdie;
-    image_speed = 1;
+    image_speed = 0.75;
 }
 
 if (state == 6)
@@ -238,7 +243,7 @@ else if (state == 0 || state == 2)
 
 if (sprite_index == spr_shadowdie)
 {
-    image_index = 19;
+    image_index = 48;
     image_speed = 0;
     alarm[0] = 45;
     state += 1;

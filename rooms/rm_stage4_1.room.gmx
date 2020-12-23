@@ -225,7 +225,7 @@
     <instance objName="obj_teleportpad" x="2122" y="908" name="inst_045A45F5" locked="0" code="teleportID = 1;&#xA;yOffset = 48;&#xA;xOffset = 16;&#xA;visible = 0;&#xA;" scaleX="1.375" scaleY="0.96875" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="4096" y="768" name="inst_EB861035" locked="0" code="yOffset = -32;&#xA;xOffset = 32;&#xA;teleportID = 1;&#xA;visible = 0;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="4320" y="224" name="inst_8C88102E" locked="0" code="teleportID = 2;&#xA;xOffset = -16;&#xA;yOffset = 96&#xA;visible = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teleportpad" x="2240" y="512" name="inst_B7A3D1B3" locked="0" code="visible = 0;&#xA;teleportID = 2;&#xA;xOffset = -32;&#xA;yOffset = 32;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teleportpad" x="2240" y="512" name="inst_B7A3D1B3" locked="0" code="visible = 0;&#xA;teleportID = 2;&#xA;xOffset = -40;&#xA;yOffset = 50;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="3584" y="256" name="inst_0A7E494D" locked="0" code="" scaleX="7" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="3808" y="736" name="inst_FCB9976A" locked="0" code="" scaleX="9" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="4064" y="800" name="inst_1456A72C" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>

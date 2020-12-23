@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>global.isCutscene = false;
+
+if (global.misc1 == 1)
+{
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

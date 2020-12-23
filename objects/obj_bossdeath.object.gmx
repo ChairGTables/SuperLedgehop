@@ -144,14 +144,28 @@ else if (sprite_index == spr_crossettewalk &amp;&amp; endSong == 0)
 }
 else if (sprite_index == spr_billwalk)
 {
-    instance_create(x, y, obj_billnpcend);
-    instance_destroy(self);
+    if (global.misc1 == 1 || global.disableCutscenes == 1)
+    {
+        room_goto(rm_congrats);
+    }
+    else
+    {
+        instance_create(x, y, obj_billnpcend);
+        instance_destroy(self);
+    }
+    
 }
 else
 {
     instance_create(x, y, obj_chaptercomplete);
-    audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
-
+    if (global.misc1 == 0)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_chizurumissioncomplete, false, 10);
+    }
+    else
+    {
+        audio_play_sound_on(global.voiceEmitter, snd_yuutoalright, false, 0);
+    }
 
     alarm[7] = 60;
 }
@@ -252,6 +266,10 @@ else if (sprite_index == spr_billhurt)
     }
     x = 1312;
     y = 736;
+    if (global.misc1 == 1 || global.disableCutscenes == 1)
+    {
+        room_goto(rm_congrats);
+    }
     alarm[6] = 60;
 }
 else
@@ -322,6 +340,12 @@ else if (sprite_index == spr_lizhurt)
 {
     alarm[5] = 30;
     instance_create(x, y, obj_liznpc2);
+    instance_destroy(self);
+}
+else if (sprite_index == spr_policechiefhurt)
+{
+    alarm[5] = 30;
+    instance_create(x, y, obj_saulnpc4);
     instance_destroy(self);
 }
 else if (sprite_index == spr_kamurohurt)

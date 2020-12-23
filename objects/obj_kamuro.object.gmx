@@ -106,6 +106,8 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>
@@ -400,7 +402,7 @@ if (shootTimer &lt;= 0)
                             shot.direction = i;
                         }
                         shot.speed = random_range(7, 8);
-                        shot.damage = 15;
+                        shot.damage = 12;
                     }
                 }
                 else if (shotCount == 2)
@@ -1305,7 +1307,7 @@ script_execute(scr_enemydamage);
 {
     sekret = instance_create(other.x, other.y, obj_laser_sonii);
     sekret.visible = 0;
-    sekret.damage = 15;
+    sekret.damage = 12;
     if(instance_exists(obj_shine))
     {
         instance_destroy(obj_shine);

@@ -48,9 +48,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_menulanguage);
+            <string>if (global.highestLevel &gt;= 4)
+{
+    script_execute(scr_menulanguage);
+}
+else
+{
+    sprite_index = spr_lockedmenu
+}
 
-if (global.titleSelection == 4)
+
+if (global.titleSelection == 5)
 {
     image_index = 1;
 }
@@ -59,7 +67,7 @@ else
     image_index = 0;
 }
 
-if (global.titleState == 2 &amp;&amp; global.highestLevel &gt;= 4)
+if (global.titleState == 2)
 {
     visible = 1;
 }
@@ -89,9 +97,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2 &amp;&amp; global.highestLevel &gt;= 4)
+            <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 2)
 {
-    global.titleSelection = 4;
+    global.titleSelection = 5;
 }
 </string>
           </argument>

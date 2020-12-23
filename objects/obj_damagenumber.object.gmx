@@ -115,6 +115,10 @@ visible = 1;
     disappear -= 0.1;
 }
 
+if (damage &gt; 1.1 &amp;&amp; damage &lt; 1.5)
+{
+    damage = 1;
+}
 
 if (disappear &lt; 0.1)
 {

@@ -96,6 +96,8 @@ attackDelay = 0;
 aimDirection = 0;
 normalAttack = 0;
 chosenAttack = 0;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

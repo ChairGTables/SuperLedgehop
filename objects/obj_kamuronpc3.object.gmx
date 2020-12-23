@@ -29,7 +29,7 @@
 image_speed = 0;
 state = 0;
 
-if (global.bossvirgin == 0)
+if (global.bossvirgin == 0 || global.misc1 == 1)
 {
     alarm[2] = 1;
 }
@@ -155,7 +155,12 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == 1 &amp;&amp; instance_number(obj_kamurodialogue5) == 0 &amp;&amp; !instance_exists(obj_kamurodialogue8))
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_kamuroskip);
+}
+
+if (state == 1 &amp;&amp; instance_number(obj_kamurodialogue5) == 0 &amp;&amp; !instance_exists(obj_kamurodialogue8))
 {
     caution = instance_create(x - 50, y + 20, obj_caution);
     caution.alarm[0] = 50;
@@ -184,7 +189,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_kamuroskip);
+            <string>//script_execute(scr_kamuroskip);
 </string>
           </argument>
         </arguments>
@@ -207,7 +212,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_kamuroskip);
+            <string>//script_execute(scr_kamuroskip);
 </string>
           </argument>
         </arguments>
@@ -230,7 +235,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_kamuroskip);
+            <string>///script_execute(scr_kamuroskip);
 </string>
           </argument>
         </arguments>
@@ -253,7 +258,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_kamuroskip);
+            <string>//script_execute(scr_kamuroskip);
 </string>
           </argument>
         </arguments>

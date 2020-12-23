@@ -37,6 +37,17 @@
         instance_destroy(obj_billnpc2);
         
     }
+    else if (instance_exists(obj_saulnpc3))
+    {
+        if (!audio_is_playing(snd_chiefloop))
+        {
+            global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_chiefloop, true, 10);
+        }
+         
+        instance_create(obj_saulnpc3.x, obj_saulnpc3.y, obj_saul);
+        instance_destroy(obj_saulnpc3);
+        
+    }
     else
     {
         global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_bosstheme, true, 10); 
