@@ -7,9 +7,9 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>20</bbox_left>
-  <bbox_right>160</bbox_right>
-  <bbox_top>3</bbox_top>
+  <bbox_left>14</bbox_left>
+  <bbox_right>159</bbox_right>
+  <bbox_top>2</bbox_top>
   <bbox_bottom>34</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>181</width>
+  <width>173</width>
   <height>37</height>
   <frames>
     <frame index="0">images\spr_holdmenufrench_0.png</frame>

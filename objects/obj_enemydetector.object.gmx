@@ -2,8 +2,8 @@
 <object>
   <spriteName>spr_chizuruspreadbullet</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
-  <depth>0</depth>
+  <visible>0</visible>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,10 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>master = noone;
-
+isDead = false;
 deletionAllowed = false;
 alarm[0] = 3;
-alarm[1] = 60;
+alarm[1] = 4;
+readyNow = false;
 </string>
           </argument>
         </arguments>
@@ -78,7 +79,7 @@ alarm[1] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>deletionAllowed = true;
+            <string>readyNow = true;
 </string>
           </argument>
         </arguments>
@@ -101,14 +102,27 @@ alarm[1] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (master != noone)
+            <string>if (!isDead &amp;&amp; readyNow)
 {
-    if (instance_exists(master))
+    if (master != noone)
     {
-        x = master.x;
-        y = master.y;
-        
+        if (instance_exists(master))
+        {
+            x = master.x;
+            y = master.y;
+        }
+        else
+        {
+            isDead = true;
+            alarm[1] = 5;
+            deletionAllowed = true;
+        }
+    }
+    else
+    {
+        isDead = true;
         alarm[1] = 5;
+        deletionAllowed = true;
     }
 }
 </string>

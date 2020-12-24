@@ -70,8 +70,8 @@ vspeed = 30;
     beamV.image_xscale = 1;
     beamV.image_yscale = 3;
     
-    beamH.damage = 15;
-    beamV.damage = 15;
+    beamH.damage = 14;
+    beamV.damage = 14;
     
     instance_destroy(self);
 }

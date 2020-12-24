@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (global.misc1 == 1)
+{
+    instance_destroy(self);
+}
+
 if (global.stageState == 0)
 {
     instance_destroy(self);

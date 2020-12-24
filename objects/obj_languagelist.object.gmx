@@ -115,7 +115,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.language += 1;
+            <string>if (global.titleState == 1)
+{
+    global.language += 1;
+}
 </string>
           </argument>
         </arguments>

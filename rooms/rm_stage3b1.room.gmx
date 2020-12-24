@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_chizuru" x="1072" y="352" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizuru" x="1076" y="352" name="inst_043D0871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controller" x="96" y="32" name="inst_E0109ADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamepad" x="96" y="96" name="inst_70CF5B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_chair" x="256" y="32" name="inst_146D2DA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -120,7 +120,7 @@
     <instance objName="obj_wall" x="913" y="305" name="inst_6B8CF6D6" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="155"/>
     <instance objName="obj_wall" x="1248" y="64" name="inst_3818C817" locked="0" code="" scaleX="4" scaleY="5.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1232" y="272" name="inst_13CDCE45" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="28"/>
-    <instance objName="obj_wall" x="4016" y="352" name="inst_01489B2A" locked="0" code="" scaleX="9.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="4009" y="328" name="inst_01489B2A" locked="0" code="" scaleX="9.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="4016" y="544" name="inst_96CACF4A" locked="0" code="" scaleX="9" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="3120" y="180" name="inst_47995FB2" locked="0" code="" scaleX="6.5" scaleY="1" colour="4294967295" rotation="28"/>
     <instance objName="obj_wall" x="2848" y="208" name="inst_4012CCFF" locked="0" code="" scaleX="6.5" scaleY="1" colour="4294967295" rotation="153"/>
@@ -131,7 +131,7 @@
     <instance objName="obj_policecar" x="1176" y="500" name="inst_63BFA91D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flamebarrel" x="958" y="504" name="inst_049C92AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flamebarrel" x="742" y="349" name="inst_6D5ABA85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_nextroom" x="4005" y="321" name="inst_5F9131A9" locked="0" code="" scaleX="6.26000022888184" scaleY="11.8999996185303" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nextroom" x="4082" y="320" name="inst_5F9131A9" locked="0" code="" scaleX="6.26000022888184" scaleY="11.8999996185303" colour="4294967295" rotation="0"/>
     <instance objName="obj_titoassist" x="1032" y="330" name="inst_65DD1621" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policesurround" x="792" y="288" name="inst_949EA906" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policesurround" x="766" y="298" name="inst_ECBE5054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -146,11 +146,28 @@
     <instance objName="obj_policesurround" x="1384" y="340" name="inst_9E9BF651" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policesurround" x="1381" y="302" name="inst_42BFD1B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policesurround" x="1101" y="431" name="inst_3E0A8ABC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policesurround" x="1026" y="435" name="inst_9BAD28ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1026" y="434" name="inst_9BAD28ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policesurround" x="1329" y="343" name="inst_96CC11C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policesurround" x="834" y="315" name="inst_FFFE74D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policesurround" x="814" y="359" name="inst_14829FE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sauldialogue1" x="1132" y="347" name="inst_355447EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sauldialogue1" x="1092" y="376" name="inst_355447EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_saulnpc1" x="1247" y="348" name="inst_8BFA84A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="873" y="334" name="inst_8156DDC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="908" y="364" name="inst_03D2A90C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="933" y="341" name="inst_C64F067C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="964" y="394" name="inst_AFE2CBB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1182" y="400" name="inst_6F5B5051" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1219" y="376" name="inst_F6A8B037" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1215" y="318" name="inst_9F123B59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1068" y="423" name="inst_0B281C4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1009" y="395" name="inst_4DF3469C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1130" y="394" name="inst_3D3F9D39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flamebarrel" x="988" y="350" name="inst_7E9501B3" locked="0" code="hp = 25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policesurround" x="1287" y="334" name="inst_D7225E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flamebarrel" x="1149" y="351" name="inst_9D72210F" locked="0" code="hp = 25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bigdoor" x="976" y="181" name="inst_9BD9D1DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="703" y="233" name="inst_36B25AF8" locked="0" code="" scaleX="2.12903237342834" scaleY="0.903225779533386" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="2672" y="360" name="inst_89E4FE3C" locked="0" code="" scaleX="0.96875" scaleY="1.46875" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_building1b" x="1376" y="224" w="32" h="32" xo="224" yo="32" id="10064581" name="inst_7E871892" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

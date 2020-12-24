@@ -33,6 +33,7 @@ alarm[1] = 2;
 shootAngle = 0;
 previousX = x;
 previousY = y;
+withinRange = true;
 
 if (instance_exists(obj_yuutoboss))
 {
@@ -215,6 +216,9 @@ else
 {
     shotAngle = image_angle;
 }
+
+visible = true;
+image_alpha = 1;
 </string>
           </argument>
         </arguments>
@@ -250,9 +254,12 @@ else
         anglePerShot = 20;
         for (i = 0; i &lt; 360 / anglePerShot; i++)
         {
-            shot = instance_create(x, y, obj_spread_sonii);
-            shot.direction = i * anglePerShot;
-            shot.speed = 7;
+            for (j = 0; j &lt; 4; j++)
+            {
+                shot = instance_create(x, y, obj_spread_sonii);
+                shot.direction = i * anglePerShot;
+                shot.speed = 6 + (j * 0.5);
+            }
         }
     }
     else

@@ -125,8 +125,12 @@ if (rockMaster != noone)
             <kind>1</kind>
             <string>if (enemyTarget == noone || !instance_exists(enemyTarget))
 {
-    enemyTarget = other;
-    alarm[1] = 2;
+    if(instance_exists(other.master))
+    {
+        enemyTarget = other.master;
+        alarm[1] = 2;
+    }
+    
 }
 
 if (enemyTarget != noone)
@@ -135,8 +139,12 @@ if (enemyTarget != noone)
     {
         if (point_distance(x, y, other.x, other.y) &lt; point_distance(x, y, enemyTarget.x, enemyTarget.y))
         {
-            enemyTarget = other;
-            alarm[1] = 2;
+            if(instance_exists(other.master))
+            {
+                enemyTarget = other.master;
+                alarm[1] = 2;
+            }
+            
         }
     }
 }

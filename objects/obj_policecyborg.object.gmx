@@ -84,6 +84,8 @@ shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
 
+forceKillCheck = false;
+
 scr_enemybasescript();
 </string>
           </argument>
@@ -429,6 +431,15 @@ if (hp &lt; 1)
         key.index = 0;
     }
     script_execute(scr_enemydeath);
+}
+
+if (forceKillCheck)
+{
+    if (instance_exists(obj_yuutosplitchoice))
+    {
+        instance_destroy(self);
+    }
+    
 }
 </string>
           </argument>

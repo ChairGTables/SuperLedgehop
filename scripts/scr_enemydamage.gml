@@ -50,9 +50,8 @@ if (passable == 1)
         sprite_index = asset_get_index(hurtSprite);
         image_index = 0;
         alarm[11] = hitstunTime;
-        if (other.timed == 5)
+        if (other.timed == 5 && !instance_exists(obj_frozenindicator))
         {
-            alarm[11] = hitstunTime * 3;
             frozenDude = instance_create(x, y, obj_frozenindicator);
             frozenDude.frozenGuy = self;
         }

@@ -149,50 +149,45 @@ global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "neutral";
 
 global.messageArray[19] = "Fermez-la ! Vous racontez n'importe quoi !";
-global.categoryArray[19] = "out";
+global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "angry";
 global.emotionAntagonistArray[19] = "neutral";
 
 global.messageArray[20] = "M-mais, monsieur ! C'est vrai !";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "angry";
-global.emotionAntagonistArray[20] = "sad";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
 
 global.messageArray[21] = "L-le gouverneur...";
-global.categoryArray[21] = "right";
-global.emotionProtagonistArray[21] = "angry";
-global.emotionAntagonistArray[21] = "sad";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "sad";
+global.emotionAntagonistArray[21] = "neutral";
 
 global.messageArray[22] = "Sa campagne a servi à préparer une bombe atomique qui aurait
 balayé plusieures villes !";
-global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "angry";
-global.emotionAntagonistArray[22] = "sad";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "sad";
+global.emotionAntagonistArray[22] = "neutral";
 
 global.messageArray[23] = "Tu vas sérieusement croire à ces rumeurs !?";
-global.categoryArray[23] = "out";
-global.emotionProtagonistArray[23] = "angry";
-global.emotionAntagonistArray[23] = "sad";
-
-global.messageArray[24] = "Ca ne change pas le fait que ces pourritures ont tué le gouverneur !";
-global.categoryArray[24] = "out";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "sad";
+global.emotionAntagonistArray[23] = "neutral";
 
 global.messageArray[24] = "Mais Monsieur ! Ils essayaient seulement de...";
-global.categoryArray[24] = "right";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[24] = "left";
+global.emotionProtagonistArray[24] = "sad";
+global.emotionAntagonistArray[24] = "neutral";
 
 global.messageArray[25] = "Ne m'oblige pas encore à réduire ton salaire, Liz.";
-global.categoryArray[25] = "out";
-global.emotionProtagonistArray[25] = "angry";
-global.emotionAntagonistArray[25] = "sad";
+global.categoryArray[25] = "right";
+global.emotionProtagonistArray[25] = "sad";
+global.emotionAntagonistArray[25] = "neutral";
 
 global.messageArray[26] = "P-pardon !";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[26] = "angry";
-global.emotionAntagonistArray[26] = "sad";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "sad";
+global.emotionAntagonistArray[26] = "neutral";
 
 global.messageArray[27] = "Chizuma, tu dois lui dire d'arrêter !";
 global.categoryArray[27] = "left";
@@ -205,13 +200,13 @@ global.emotionProtagonistArray[28] = "angry";
 global.emotionAntagonistArray[28] = "neutral";
 
 global.messageArray[29] = "NE L'ÉCOUTEZ PAS ! ILS SONT TOUS CINGLÉS !";
-global.categoryArray[29] = "out";
-global.emotionProtagonistArray[29] = "angry";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
 global.messageArray[30] = "Tito, tu sais que j'ai un grand respect envers toi.";
 global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "angry";
+global.emotionProtagonistArray[30] = "sad";
 global.emotionAntagonistArray[30] = "neutral";
 
 global.messageArray[31] = "M-mais je me dois faire ce que me dicte mon devoir.";
@@ -337,50 +332,45 @@ global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "neutral";
 
 global.messageArray[19] = "Calem-se! Vocês só falam asneira!";
-global.categoryArray[19] = "out";
+global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "angry";
 global.emotionAntagonistArray[19] = "neutral";
 
 global.messageArray[20] = "M-Mas, senhor! É verdade!";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "angry";
-global.emotionAntagonistArray[20] = "sad";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
 
 global.messageArray[21] = "O governador...";
-global.categoryArray[21] = "right";
-global.emotionProtagonistArray[21] = "angry";
-global.emotionAntagonistArray[21] = "sad";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "sad";
+global.emotionAntagonistArray[21] = "neutral";
 
 global.messageArray[22] = "A campanha dele era secretamente uma bomba nuclear que vai
 explodir muitas cidades!";
-global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "angry";
-global.emotionAntagonistArray[22] = "sad";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "sad";
+global.emotionAntagonistArray[22] = "neutral";
 
-global.messageArray[23] = "Liz!?";
-global.categoryArray[23] = "out";
-global.emotionProtagonistArray[23] = "angry";
-global.emotionAntagonistArray[23] = "sad";
-
-global.messageArray[24] = "Vai mesmo dar bola para esses rumores!?";
-global.categoryArray[24] = "out";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.messageArray[23] = "Liz!? Vai mesmo dar bola para esses rumores!?";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "sad";
+global.emotionAntagonistArray[23] = "neutral";
 
 global.messageArray[24] = "Senhor! M-Mas eles estavam apenas tentando...";
-global.categoryArray[24] = "right";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[24] = "left";
+global.emotionProtagonistArray[24] = "sad";
+global.emotionAntagonistArray[24] = "neutral";
 
 global.messageArray[25] = "Não me faça cortar seu salário de novo, Liz.";
-global.categoryArray[25] = "out";
-global.emotionProtagonistArray[25] = "angry";
-global.emotionAntagonistArray[25] = "sad";
+global.categoryArray[25] = "right";
+global.emotionProtagonistArray[25] = "sad";
+global.emotionAntagonistArray[25] = "neutral";
 
 global.messageArray[26] = "Eeep!!!";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[26] = "angry";
-global.emotionAntagonistArray[26] = "sad";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "sad";
+global.emotionAntagonistArray[26] = "neutral";
 
 global.messageArray[27] = "Chizuma, mande ele parar!";
 global.categoryArray[27] = "left";
@@ -393,13 +383,13 @@ global.emotionProtagonistArray[28] = "angry";
 global.emotionAntagonistArray[28] = "neutral";
 
 global.messageArray[29] = "NÃO LIGUE PRA ELE! ELES ESTÃO TODOS LOUCOS!";
-global.categoryArray[29] = "out";
-global.emotionProtagonistArray[29] = "angry";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
 global.messageArray[30] = "Tito, você sabe que eu te respeito muito.";
 global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "angry";
+global.emotionProtagonistArray[30] = "sad";
 global.emotionAntagonistArray[30] = "neutral";
 
 global.messageArray[31] = "M-mas eu preciso fazer isso.";
@@ -520,50 +510,46 @@ global.categoryArray[18] = "right";
 global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "neutral";
 
-global.messageArray[19] = "黙りなさい！デタラメは無用です！";
-global.categoryArray[19] = "out";
+global.messageArray[19] = "黙れ！デタラメは無用だ！";
+global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "angry";
 global.emotionAntagonistArray[19] = "neutral";
 
 global.messageArray[20] = "で、でも！本当の話なの！";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "angry";
-global.emotionAntagonistArray[20] = "sad";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
 
 global.messageArray[21] = "長官は...";
-global.categoryArray[21] = "right";
-global.emotionProtagonistArray[21] = "angry";
-global.emotionAntagonistArray[21] = "sad";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "sad";
+global.emotionAntagonistArray[21] = "neutral";
 
 global.messageArray[22] = "核爆弾でこの街どころか他の街まで吹き飛ばそうと...！";
-global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "angry";
-global.emotionAntagonistArray[22] = "sad";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "sad";
+global.emotionAntagonistArray[22] = "neutral";
 
-global.messageArray[23] = "本気か！？";
-global.categoryArray[23] = "out";
-global.emotionProtagonistArray[23] = "angry";
-global.emotionAntagonistArray[23] = "sad";
-
-global.messageArray[24] = "それでもこいつらがスティールズ長官を殺した事には変わりないんだぞ！？";
-global.categoryArray[24] = "out";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.messageArray[23] = "耳を貸さないでください！こいつらがスティールズ
+長官を殺した事には変わりありません！";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "sad";
+global.emotionAntagonistArray[23] = "neutral";
 
 global.messageArray[24] = "しかしあの人たちはー";
-global.categoryArray[24] = "right";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[24] = "left";
+global.emotionProtagonistArray[24] = "sad";
+global.emotionAntagonistArray[24] = "neutral";
 
 global.messageArray[25] = "また給料を下げられたいか？";
-global.categoryArray[25] = "out";
-global.emotionProtagonistArray[25] = "angry";
-global.emotionAntagonistArray[25] = "sad";
+global.categoryArray[25] = "right";
+global.emotionProtagonistArray[25] = "sad";
+global.emotionAntagonistArray[25] = "neutral";
 
 global.messageArray[26] = "ひいっ！";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[26] = "angry";
-global.emotionAntagonistArray[26] = "sad";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "sad";
+global.emotionAntagonistArray[26] = "neutral";
 
 global.messageArray[27] = "チズマァ！早く止めさせろォ！";
 global.categoryArray[27] = "left";
@@ -576,13 +562,13 @@ global.emotionProtagonistArray[28] = "angry";
 global.emotionAntagonistArray[28] = "neutral";
 
 global.messageArray[29] = "狂人の言うことなど！！";
-global.categoryArray[29] = "out";
-global.emotionProtagonistArray[29] = "angry";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
 global.messageArray[30] = "ティトさん、あなたの事は本当に尊敬しています。";
 global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "angry";
+global.emotionProtagonistArray[30] = "sad";
 global.emotionAntagonistArray[30] = "neutral";
 
 global.messageArray[31] = "でも私は為すべきことを為さなければ...。";
@@ -708,51 +694,45 @@ global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "neutral";
 
 global.messageArray[19] = "¡Silencio! ¡No hacen más que hablar cosas sin sentido!";
-global.categoryArray[19] = "out";
+global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "angry";
 global.emotionAntagonistArray[19] = "neutral";
 
 global.messageArray[20] = "¡P-Pero, señor! ¡Es verdad!";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "angry";
-global.emotionAntagonistArray[20] = "sad";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
 
 global.messageArray[21] = "E-El gobernador...";
-global.categoryArray[21] = "right";
-global.emotionProtagonistArray[21] = "angry";
-global.emotionAntagonistArray[21] = "sad";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "sad";
+global.emotionAntagonistArray[21] = "neutral";
 
 global.messageArray[22] = "¡Su plan era crear múltiples bombas nucleares para destruir
 múltiples ciudades!";
-global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "angry";
-global.emotionAntagonistArray[22] = "sad";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "sad";
+global.emotionAntagonistArray[22] = "neutral";
 
 global.messageArray[23] = "¿¡En serio vas a creer en esos rumores!?";
-global.categoryArray[23] = "out";
-global.emotionProtagonistArray[23] = "angry";
-global.emotionAntagonistArray[23] = "sad";
-
-global.messageArray[24] = "¡Eso sigue sin cambiar el hecho de que estos canallas hallan
-asesinado a nuestro gobernador!";
-global.categoryArray[24] = "out";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "sad";
+global.emotionAntagonistArray[23] = "neutral";
 
 global.messageArray[24] = "¡Señor! Pero ellos solo están tratando de-";
-global.categoryArray[24] = "right";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[24] = "left";
+global.emotionProtagonistArray[24] = "sad";
+global.emotionAntagonistArray[24] = "neutral";
 
 global.messageArray[25] = "No me hagas volver a reducirte el sueldo, Liz.";
-global.categoryArray[25] = "out";
-global.emotionProtagonistArray[25] = "angry";
-global.emotionAntagonistArray[25] = "sad";
+global.categoryArray[25] = "right";
+global.emotionProtagonistArray[25] = "sad";
+global.emotionAntagonistArray[25] = "neutral";
 
 global.messageArray[26] = "¡Ay...!";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[26] = "angry";
-global.emotionAntagonistArray[26] = "sad";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "sad";
+global.emotionAntagonistArray[26] = "neutral";
 
 global.messageArray[27] = "Chizuma, ¡Debes decirles que se detengan!";
 global.categoryArray[27] = "left";
@@ -766,13 +746,13 @@ global.emotionAntagonistArray[28] = "neutral";
 
 global.messageArray[29] = "¡NO LO ESCUCHES!
 ¡TODOS ELLOS ESTÁN DEMENTES!";
-global.categoryArray[29] = "out";
-global.emotionProtagonistArray[29] = "angry";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
 global.messageArray[30] = "Tito, sabes que en verdad te respeto.";
 global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "angry";
+global.emotionProtagonistArray[30] = "sad";
 global.emotionAntagonistArray[30] = "neutral";
 
 global.messageArray[31] = "P-Pero debo hacer mi trabajo.";
@@ -897,51 +877,45 @@ global.emotionProtagonistArray[18] = "angry";
 global.emotionAntagonistArray[18] = "neutral";
 
 global.messageArray[19] = "Shut it! You're all spouting nonsense!";
-global.categoryArray[19] = "out";
+global.categoryArray[19] = "right";
 global.emotionProtagonistArray[19] = "angry";
 global.emotionAntagonistArray[19] = "neutral";
 
 global.messageArray[20] = "B-But, sir! I-It's true!";
-global.categoryArray[20] = "right";
-global.emotionProtagonistArray[20] = "angry";
-global.emotionAntagonistArray[20] = "sad";
+global.categoryArray[20] = "left";
+global.emotionProtagonistArray[20] = "sad";
+global.emotionAntagonistArray[20] = "neutral";
 
 global.messageArray[21] = "T-The governor...";
-global.categoryArray[21] = "right";
-global.emotionProtagonistArray[21] = "angry";
-global.emotionAntagonistArray[21] = "sad";
+global.categoryArray[21] = "left";
+global.emotionProtagonistArray[21] = "sad";
+global.emotionAntagonistArray[21] = "neutral";
 
 global.messageArray[22] = "His campaign was secretly a nuclear bomb
 that will blow up many cities!";
-global.categoryArray[22] = "right";
-global.emotionProtagonistArray[22] = "angry";
-global.emotionAntagonistArray[22] = "sad";
+global.categoryArray[22] = "left";
+global.emotionProtagonistArray[22] = "sad";
+global.emotionAntagonistArray[22] = "neutral";
 
 global.messageArray[23] = "Are you seriously going to listen to those rumors?";
-global.categoryArray[23] = "out";
-global.emotionProtagonistArray[23] = "angry";
-global.emotionAntagonistArray[23] = "sad";
-
-global.messageArray[24] = "That still doesn't change the fact that these dirtbags
-killed our governor!";
-global.categoryArray[24] = "out";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[23] = "right";
+global.emotionProtagonistArray[23] = "sad";
+global.emotionAntagonistArray[23] = "neutral";
 
 global.messageArray[24] = "Sir! B-But they were only trying to...";
-global.categoryArray[24] = "right";
-global.emotionProtagonistArray[24] = "angry";
-global.emotionAntagonistArray[24] = "sad";
+global.categoryArray[24] = "left";
+global.emotionProtagonistArray[24] = "sad";
+global.emotionAntagonistArray[24] = "neutral";
 
 global.messageArray[25] = "Don't make me cut your salary again, Liz.";
-global.categoryArray[25] = "out";
-global.emotionProtagonistArray[25] = "angry";
-global.emotionAntagonistArray[25] = "sad";
+global.categoryArray[25] = "right";
+global.emotionProtagonistArray[25] = "sad";
+global.emotionAntagonistArray[25] = "neutral";
 
 global.messageArray[26] = "Eeep!!!";
-global.categoryArray[26] = "right";
-global.emotionProtagonistArray[26] = "angry";
-global.emotionAntagonistArray[26] = "sad";
+global.categoryArray[26] = "left";
+global.emotionProtagonistArray[26] = "sad";
+global.emotionAntagonistArray[26] = "neutral";
 
 global.messageArray[27] = "Chizuma, you need to tell him to stop!";
 global.categoryArray[27] = "left";
@@ -955,13 +929,13 @@ global.emotionAntagonistArray[28] = "neutral";
 
 global.messageArray[29] = "DON'T LISTEN TO HIM!
 THEY'RE ALL CRAZY!";
-global.categoryArray[29] = "out";
-global.emotionProtagonistArray[29] = "angry";
+global.categoryArray[29] = "left";
+global.emotionProtagonistArray[29] = "neutral";
 global.emotionAntagonistArray[29] = "neutral";
 
 global.messageArray[30] = "Tito, you know that I really respect you.";
 global.categoryArray[30] = "right";
-global.emotionProtagonistArray[30] = "angry";
+global.emotionProtagonistArray[30] = "sad";
 global.emotionAntagonistArray[30] = "neutral";
 
 global.messageArray[31] = "B-But I need to do what I must do.";
@@ -1081,20 +1055,63 @@ if (global.messageNumber == 17 &amp;&amp; state == 4 &amp;&amp; instance_exists(
     }
 }
 
-if (global.messageNumber == 20 &amp;&amp; state == 5 &amp;&amp; instance_exists(obj_antagonisttalk))
+
+
+if (global.messageNumber == 19 &amp;&amp; state == 5 &amp;&amp; instance_exists(obj_antagonisttalk))
 {
     state = 6;
     obj_antagonisttalk.x = view_xview+1060;
     obj_antagonisttalk.hspeed = -30;
-    dialogue.antagonist = "liz";
+    dialogue.antagonist = "saul";
 }
 
-if (global.messageNumber == 27 &amp;&amp; state == 6 &amp;&amp; instance_exists(obj_antagonisttalk))
+if (global.messageNumber == 20 &amp;&amp; state == 6 &amp;&amp; instance_exists(obj_protagonisttalk))
 {
     state = 7;
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "liz";
+    
+    //obj_antagonisttalk.x = view_xview+1060;
+    //obj_antagonisttalk.hspeed = -30;
+    //dialogue.antagonist = "chizuma";
+}
+
+if (global.messageNumber == 27 &amp;&amp; state == 7 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 8;
+    
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "tito";
+    
     obj_antagonisttalk.x = view_xview+1060;
     obj_antagonisttalk.hspeed = -30;
     dialogue.antagonist = "chizuma";
+}
+
+if (global.messageNumber == 29 &amp;&amp; state == 8 &amp;&amp; instance_exists(obj_protagonisttalk))
+{
+    state = 9;
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "saul";
+    
+    //obj_antagonisttalk.x = view_xview+1060;
+    //obj_antagonisttalk.hspeed = -30;
+    //dialogue.antagonist = "chizuma";
+}
+
+if (global.messageNumber == 30 &amp;&amp; state == 9 &amp;&amp; instance_exists(obj_protagonisttalk))
+{
+    state = 10;
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "tito";
+    
+    //obj_antagonisttalk.x = view_xview+1060;
+    //obj_antagonisttalk.hspeed = -30;
+    //dialogue.antagonist = "chizuma";
 }
 
 if (instance_exists(dialogue) == 0)

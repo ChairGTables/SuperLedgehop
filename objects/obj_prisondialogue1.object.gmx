@@ -31,6 +31,8 @@ dialogue = instance_create(x, y, obj_dialogue);
 dialogue.protagonist = "tito"
 dialogue.antagonist = "liz";
 
+state = 1;
+
 //set limit
 global.messageLimit = 9;
 
@@ -276,7 +278,7 @@ global.emotionProtagonistArray[1] = "neutral";
 global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "Yup! It’s me, you
+global.messageArray[2] = "Yup! It's me, you
 DOOOOOOOOOOOOORRRRRRRRRRRRRRRRRKKKKKKKKKKKKKKKKKK!";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "neutral";
@@ -287,7 +289,7 @@ global.categoryArray[3] = "right";
 global.emotionProtagonistArray[3] = "neutral";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Nah, I’m getting tired of prison food...";
+global.messageArray[4] = "Nah, I'm getting tired of prison food...";
 global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "neutral";
 global.emotionAntagonistArray[4] = "neutral";
@@ -297,7 +299,7 @@ global.categoryArray[5] = "left";
 global.emotionProtagonistArray[5] = "curious";
 global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "Ta-da! It’s your favorite!";
+global.messageArray[6] = "Ta-da! It's your favorite!";
 global.categoryArray[6] = "right";
 global.emotionProtagonistArray[6] = "curious";
 global.emotionAntagonistArray[6] = "neutral";
@@ -343,7 +345,21 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(dialogue) == 0)
+            <string>if (global.messageNumber == 6 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 2;
+    dialogue.showCG = true;
+    dialogue.cg = spr_prisoncg;
+}
+
+if (global.messageNumber == 9 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 3;
+    dialogue.showCG = false;
+}
+
+
+if (instance_exists(dialogue) == 0)
 {
     global.speaking = false;
     instance_destroy(self);

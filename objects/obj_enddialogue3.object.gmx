@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>obj_enddialogue3</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -77,24 +77,24 @@ global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
 global.messageArray[7] = "Monsieur ! Ne l'écoutez pas !";
-global.categoryArray[7] = "out";
-global.emotionProtagonistArray[7] = "sad";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "neutral";
 
 
 global.messageArray[8] = "Elle est complètement folle !";
-global.categoryArray[8] = "out";
-global.emotionProtagonistArray[8] = "sad";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
 
 global.messageArray[9] = "Nous vous avons sauvé, pas elle !";
-global.categoryArray[9] = "out";
-global.emotionProtagonistArray[9] = "sad";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "neutral";
 
 global.messageArray[10] = "Mes hommes ! Visez-la !";
-global.categoryArray[10] = "out";
-global.emotionProtagonistArray[10] = "sad";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "neutral";
 
 global.messageArray[11] = "G-grand frère !";
@@ -118,23 +118,23 @@ global.emotionProtagonistArray[14] = "sad";
 global.emotionAntagonistArray[14] = "sad";
 
 global.messageArray[15] = "Liz ! T'es de mèche avec cette guenon ?";
-global.categoryArray[15] = "out";
-global.emotionProtagonistArray[15] = "sad";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
 
 global.messageArray[16] = "...";
 global.categoryArray[16] = "right";
-global.emotionProtagonistArray[16] = "sad";
+global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "sad";
 
 global.messageArray[17] = "Vous avez intéret à tirer sur mon ordre !";
-global.categoryArray[17] = "out";
-global.emotionProtagonistArray[17] = "sad";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "sad";
 
 global.messageArray[18] = "FEU !";
-global.categoryArray[18] = "out";
-global.emotionProtagonistArray[18] = "sad";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "sad";
 break;
 
@@ -178,24 +178,24 @@ global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
 global.messageArray[7] = "Senhor! Ignore ela!";
-global.categoryArray[7] = "out";
-global.emotionProtagonistArray[7] = "sad";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "neutral";
 
 
 global.messageArray[8] = "Ela está doida!";
-global.categoryArray[8] = "out";
-global.emotionProtagonistArray[8] = "sad";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
 
 global.messageArray[9] = "Nós quem te salvamos, não ela!";
-global.categoryArray[9] = "out";
-global.emotionProtagonistArray[9] = "sad";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "neutral";
 
 global.messageArray[10] = "Homens! Apontar fogo!";
-global.categoryArray[10] = "out";
-global.emotionProtagonistArray[10] = "sad";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "neutral";
 
 global.messageArray[11] = "M-Meu irmão!";
@@ -219,23 +219,23 @@ global.emotionProtagonistArray[14] = "sad";
 global.emotionAntagonistArray[14] = "sad";
 
 global.messageArray[15] = "Liz! Você está com essa pateta?";
-global.categoryArray[15] = "out";
-global.emotionProtagonistArray[15] = "sad";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
 
 global.messageArray[16] = "...";
 global.categoryArray[16] = "right";
-global.emotionProtagonistArray[16] = "sad";
+global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "sad";
 
 global.messageArray[17] = "É melhor atirar quando eu dar a ordem!";
-global.categoryArray[17] = "out";
-global.emotionProtagonistArray[17] = "sad";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "sad";
 
 global.messageArray[18] = "ATIREM!";
-global.categoryArray[18] = "out";
-global.emotionProtagonistArray[18] = "sad";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "sad";
 break;
 
@@ -280,24 +280,24 @@ global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
 global.messageArray[7] = "おい！";
-global.categoryArray[7] = "out";
-global.emotionProtagonistArray[7] = "sad";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "neutral";
 
 
 global.messageArray[8] = "チズマ殿！";
-global.categoryArray[8] = "out";
-global.emotionProtagonistArray[8] = "sad";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
 
 global.messageArray[9] = "狂人に構う必要はありません！";
-global.categoryArray[9] = "out";
-global.emotionProtagonistArray[9] = "sad";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "neutral";
 
 global.messageArray[10] = "総員構え！";
-global.categoryArray[10] = "out";
-global.emotionProtagonistArray[10] = "sad";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "neutral";
 
 global.messageArray[11] = "兄貴ィ！！";
@@ -320,24 +320,24 @@ global.categoryArray[14] = "right";
 global.emotionProtagonistArray[14] = "sad";
 global.emotionAntagonistArray[14] = "sad";
 
-global.messageArray[15] = "リズ警部、まさか知り合いですか？";
-global.categoryArray[15] = "out";
-global.emotionProtagonistArray[15] = "sad";
+global.messageArray[15] = "リズ、まさか知り合いなのか？";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
 
 global.messageArray[16] = ".........。";
 global.categoryArray[16] = "right";
-global.emotionProtagonistArray[16] = "sad";
+global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "sad";
 
 global.messageArray[17] = ".........。";
-global.categoryArray[17] = "out";
-global.emotionProtagonistArray[17] = "sad";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "sad";
 
 global.messageArray[18] = "撃てーっ！";
-global.categoryArray[18] = "out";
-global.emotionProtagonistArray[18] = "sad";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "sad";
 break;
 
@@ -381,24 +381,24 @@ global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
 global.messageArray[7] = "¡Señor! ¡No la escuche!";
-global.categoryArray[7] = "out";
-global.emotionProtagonistArray[7] = "sad";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "neutral";
 
 
 global.messageArray[8] = "¡Está Demente!";
-global.categoryArray[8] = "out";
-global.emotionProtagonistArray[8] = "sad";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
 
 global.messageArray[9] = "Nosotros lo salvamos, ¡no ella!";
-global.categoryArray[9] = "out";
-global.emotionProtagonistArray[9] = "sad";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "neutral";
 
 global.messageArray[10] = "¡Hombres! ¡Apunten!";
-global.categoryArray[10] = "out";
-global.emotionProtagonistArray[10] = "sad";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "neutral";
 
 global.messageArray[11] = "¡Hermano!";
@@ -422,23 +422,23 @@ global.emotionProtagonistArray[14] = "sad";
 global.emotionAntagonistArray[14] = "sad";
 
 global.messageArray[15] = "¿Liz? ¡Liz! Acaso estás con esta maníaca?";
-global.categoryArray[15] = "out";
-global.emotionProtagonistArray[15] = "sad";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
 
 global.messageArray[16] = "...";
 global.categoryArray[16] = "right";
-global.emotionProtagonistArray[16] = "sad";
+global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "sad";
 
 global.messageArray[17] = "Mas vale que dispares cuando de la orden.";
-global.categoryArray[17] = "out";
-global.emotionProtagonistArray[17] = "sad";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "sad";
 
 global.messageArray[18] = "¡FUEGO!";
-global.categoryArray[18] = "out";
-global.emotionProtagonistArray[18] = "sad";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "sad";
 break;
 
@@ -481,24 +481,24 @@ global.emotionProtagonistArray[6] = "sad";
 global.emotionAntagonistArray[6] = "neutral";
 
 global.messageArray[7] = "Sir! Don't listen to her!";
-global.categoryArray[7] = "out";
-global.emotionProtagonistArray[7] = "sad";
+global.categoryArray[7] = "left";
+global.emotionProtagonistArray[7] = "neutral";
 global.emotionAntagonistArray[7] = "neutral";
 
 
 global.messageArray[8] = "She's crazy!";
-global.categoryArray[8] = "out";
-global.emotionProtagonistArray[8] = "sad";
+global.categoryArray[8] = "left";
+global.emotionProtagonistArray[8] = "neutral";
 global.emotionAntagonistArray[8] = "neutral";
 
 global.messageArray[9] = "We saved you, not her!";
-global.categoryArray[9] = "out";
-global.emotionProtagonistArray[9] = "sad";
+global.categoryArray[9] = "left";
+global.emotionProtagonistArray[9] = "neutral";
 global.emotionAntagonistArray[9] = "neutral";
 
 global.messageArray[10] = "Men! Aim fire!";
-global.categoryArray[10] = "out";
-global.emotionProtagonistArray[10] = "sad";
+global.categoryArray[10] = "left";
+global.emotionProtagonistArray[10] = "neutral";
 global.emotionAntagonistArray[10] = "neutral";
 
 global.messageArray[11] = "B-Big bro!";
@@ -522,23 +522,23 @@ global.emotionProtagonistArray[14] = "sad";
 global.emotionAntagonistArray[14] = "sad";
 
 global.messageArray[15] = "Liz! Are you with this baffoon?";
-global.categoryArray[15] = "out";
-global.emotionProtagonistArray[15] = "sad";
+global.categoryArray[15] = "left";
+global.emotionProtagonistArray[15] = "neutral";
 global.emotionAntagonistArray[15] = "sad";
 
 global.messageArray[16] = "...";
 global.categoryArray[16] = "right";
-global.emotionProtagonistArray[16] = "sad";
+global.emotionProtagonistArray[16] = "neutral";
 global.emotionAntagonistArray[16] = "sad";
 
 global.messageArray[17] = "You better shoot when I give my order!";
-global.categoryArray[17] = "out";
-global.emotionProtagonistArray[17] = "sad";
+global.categoryArray[17] = "left";
+global.emotionProtagonistArray[17] = "neutral";
 global.emotionAntagonistArray[17] = "sad";
 
 global.messageArray[18] = "FIRE!!!";
-global.categoryArray[18] = "out";
-global.emotionProtagonistArray[18] = "sad";
+global.categoryArray[18] = "left";
+global.emotionProtagonistArray[18] = "neutral";
 global.emotionAntagonistArray[18] = "sad";
 break;
 }
@@ -564,12 +564,36 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.messageNumber == 14 &amp;&amp; state == 0 &amp;&amp; instance_exists(obj_antagonisttalk))
+            <string>if (global.messageNumber == 7 &amp;&amp; state == 0 &amp;&amp; instance_exists(obj_protagonisttalk))
 {
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "saul";
     state = 1;
+}
+
+if (global.messageNumber == 11 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_protagonisttalk))
+{
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "chizuru";
+    state = 2;
+}
+
+if (global.messageNumber == 14 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 3;
     obj_antagonisttalk.x = view_xview+1060;
     obj_antagonisttalk.hspeed = -30;
     dialogue.antagonist = "liz";
+}
+
+if (global.messageNumber == 15 &amp;&amp; state == 3 &amp;&amp; instance_exists(obj_protagonisttalk))
+{
+    obj_protagonisttalk.x = view_xview-200;
+    obj_protagonisttalk.hspeed = 30;
+    dialogue.protagonist = "saul";
+    state = 4;
 }
 
 if (instance_exists(dialogue) == 0)

@@ -91,7 +91,7 @@ if (instance_exists(obj_chizuru))
             obj_chizuru.spinFinish = 0;
             
             obj_chizuru.alarm[8] = 2;
-            
+            obj_chizuru.alarm[5] = 9;
             obj_chizuru.alarm[10] = -1;
             
             obj_chizuru.hspeed *= 0.7;
@@ -100,11 +100,13 @@ if (instance_exists(obj_chizuru))
             scr_shinesprite();
             if (global.shottype == 0)
             {
-                if (!obj_playerrock.isShooting)
+                if (!obj_playerrock.isShooting && global.spreadcount > 10 && global.chizurump > 5)
                 {
                     obj_playerrock.isShooting = true;
                     obj_playerrock.bulletAngle = global.aimangle;
                     obj_playerrock.alarm[2] = 3;
+                    global.spreadcount -= 10;
+                    global.chizurump -= 5;
                     audio_play_sound_on (global.effectsEmitter, snd_yuutomagic, false, 10);
                     if (random_range(0, 100) < 30)
                     {
@@ -127,14 +129,21 @@ if (instance_exists(obj_chizuru))
             }
             else if (global.shottype == 4)
             {
-                if (!obj_playerrock.isFiring)
+                if (!obj_playerrock.isFiring && global.firecount > 20 && global.chizurump > 5)
                 {
                     obj_playerrock.isFiring = true;
+                    global.firecount -= 20;
+                    global.chizurump -= 5;
                     for (i = 0; i < 4; i++)
                     {
                         obj_playerrock.flame[i] = instance_create(obj_playerrock.x, obj_playerrock.y, obj_chizuruflame);
                         obj_playerrock.flame[i].alarm[0] = 30;
                         obj_playerrock.flame[i].sprite_index = spr_enemyflame_sonii;
+                        obj_playerrock.flame[i].damage = 2;
+                        if (i == 0 || i == 2)
+                        {
+                            obj_playerrock.flame[i].damage = 2;
+                        }
                     }
                     
                     obj_playerrock.flameAngle = 0;
@@ -155,14 +164,16 @@ if (instance_exists(obj_chizuru))
             }
             else if (global.shottype == 5)
             {
-                if (!obj_playerrock.isIcing)
+                if (!obj_playerrock.isIcing && global.icecount > 25 && global.chizurump > 8)
                 {
                     obj_playerrock.isIcing = true;
                     obj_playerrock.iceSpike = instance_create(obj_playerrock.x, obj_playerrock.y, obj_chizuruicebullet);
                     obj_playerrock.iceSpike.timed = 5;
-                    
+                    obj_playerrock.iceSpike.damage = 7;
+                    obj_playerrock.iceSpike.spike = true;
                     obj_playerrock.bulletAngle = global.aimangle;
-                    
+                    global.icecount -= 25;
+                    global.chizurump -= 8;
                     if (obj_playerrock.detector.enemyTarget != noone)
                     {
                         if (instance_exists(obj_playerrock.detector.enemyTarget))
@@ -177,7 +188,7 @@ if (instance_exists(obj_chizuru))
                     obj_playerrock.iceSpike.sprite_index = spr_icespike;
                     obj_playerrock.iceSpike.image_alpha = 0.5;
                     obj_playerrock.iceSpike.destroyable = 0;
-                    obj_playerrock.alarm[4] = 10;
+                    obj_playerrock.alarm[4] = 30;
                     audio_play_sound_on (global.effectsEmitter, snd_yuutomagic, false, 10);
                     audio_play_sound_on (global.effectsEmitter, snd_icespike, false, 10); 
                     if (random_range(0, 100) < 30)

@@ -103,7 +103,7 @@ if (instance_exists(obj_chizumanpcend))
     image_alpha += 0.1;
 }
 
-global.yHolder[4] -= 3;
+global.yHolder[4] -= 3.1;
 </string>
           </argument>
         </arguments>

@@ -71,6 +71,12 @@ shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 
 
+if (global.misc1 == 1)
+{
+    instance_destroy(myWall);
+    instance_destroy(self);
+}
+
 
 </string>
           </argument>

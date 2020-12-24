@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.disableCutscenes == 1)
+            <string>if (global.disableCutscenes == 1 || global.misc1 == 1)
 {
     script_execute(scr_kamuroskipgov);
 }
@@ -457,7 +457,12 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_yuutorock))
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_kamuroskipgov);
+}
+
+if (instance_exists(obj_yuutorock))
 {
     obj_yuutorock.visible = 0;
 }
@@ -520,7 +525,7 @@ if (state == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_kamuroskipgov);
+            <string>//script_execute(scr_kamuroskipgov);
 </string>
           </argument>
         </arguments>
@@ -543,7 +548,7 @@ if (state == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_kamuroskipgov);
+            <string>//script_execute(scr_kamuroskipgov);
 </string>
           </argument>
         </arguments>

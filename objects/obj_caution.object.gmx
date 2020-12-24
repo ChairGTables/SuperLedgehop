@@ -38,6 +38,11 @@ if (audio_is_playing(snd_finalbossintro))
 {
     timingCheck = 0.02;
 }
+
+if (audio_is_playing(snd_chiefintro))
+{
+    timingCheck = 0.01;
+}
 </string>
           </argument>
         </arguments>
@@ -88,7 +93,7 @@ y = view_yview + view_hview / 2;
 
 
 
-if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(global.musicrm1) - timingCheck || (!audio_is_playing(snd_bossintro) &amp;&amp; !audio_is_playing(snd_yuutointro) &amp;&amp; !audio_is_playing(snd_kamurofight) &amp;&amp; !audio_is_playing(snd_finalbossintro)))
+if (audio_sound_get_track_position(global.musicrm1) &gt; audio_sound_length(global.musicrm1) - timingCheck || (!audio_is_playing(snd_bossintro) &amp;&amp; !audio_is_playing(snd_yuutointro) &amp;&amp; !audio_is_playing(snd_kamurofight) &amp;&amp; !audio_is_playing(snd_finalbossintro) &amp;&amp; !audio_is_playing(snd_chiefintro)))
 {
     script_execute(scr_cautiontiming);
 }

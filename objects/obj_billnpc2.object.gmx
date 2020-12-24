@@ -29,7 +29,7 @@
 image_speed = 0;
 state = 0;
 
-if (global.bossvirgin == 0)
+if (global.bossvirgin == 0 || global.misc1 == 1)
 {
     alarm[2] = 1;
 }
@@ -149,7 +149,12 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == 1 &amp;&amp; instance_number(obj_billdialogue5) == 0 )
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_billskip);
+}
+
+if (state == 1 &amp;&amp; instance_number(obj_billdialogue5) == 0 )
 {
     caution = instance_create(x - 50, y + 20, obj_caution);
     alarm[0] = 10;
@@ -177,7 +182,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_billskip);
+            <string>//script_execute(scr_billskip);
 </string>
           </argument>
         </arguments>
@@ -200,7 +205,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_billskip);
+            <string>//script_execute(scr_billskip);
 </string>
           </argument>
         </arguments>
@@ -223,7 +228,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_billskip);
+            <string>//script_execute(scr_billskip);
 </string>
           </argument>
         </arguments>
@@ -246,7 +251,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_billskip);
+            <string>//script_execute(scr_billskip);
 </string>
           </argument>
         </arguments>

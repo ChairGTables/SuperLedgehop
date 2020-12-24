@@ -91,7 +91,7 @@
     <instance objName="obj_moosespawner" x="1120" y="1424" name="inst_18BE7091" locked="0" code="drop = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="2736" y="3600" name="inst_83F5981C" locked="0" code="teleportID = 3;&#xA;visible = 0;&#xA;xOffset = 16;&#xA;yOffset = 48;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="2112" y="656" name="inst_6F625171" locked="0" code="visible = 0;&#xA;teleportID = 3;&#xA;xOffset = 16;&#xA;yOffset = -48;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teleportpad" x="3084" y="3722" name="inst_FFA9ADBF" locked="0" code="teleportID = 4;&#xA;visible = 0;&#xA;xOffset = -48;&#xA;yOffset = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teleportpad" x="3084" y="3722" name="inst_FFA9ADBF" locked="0" code="teleportID = 4;&#xA;visible = 0;&#xA;xOffset = -70;&#xA;yOffset = 32;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleportpad" x="528" y="1408" name="inst_0016B063" locked="0" code="teleportID = 4;&#xA;xOffset = 48;&#xA;yOffset = 16;&#xA;visible = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sidetoside_sonii" x="2624" y="464" name="inst_F8CC61C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sidetoside_sonii" x="2928" y="224" name="inst_48778790" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -263,7 +263,7 @@
     <instance objName="obj_laststagefade" x="2461" y="3397" name="inst_DFA69C81" locked="0" code="" scaleX="0.933962285518646" scaleY="1.89999997615814" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2450" y="3285" name="inst_F7FF40C8" locked="0" code="" scaleX="6.84000015258789" scaleY="3.65625" colour="4294967295" rotation="0"/>
     <instance objName="obj_violetkey" x="4400" y="363" name="inst_67FDAC59" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stagefourdeleter" x="2939" y="1001" name="inst_1B5B16AC" locked="0" code="" scaleX="61.9000015258789" scaleY="62.1300010681152" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stagefourdeleter" x="2939" y="1000" name="inst_1B5B16AC" locked="0" code="" scaleX="61.9000015258789" scaleY="62.1300010681152" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagefourdeleter2" x="-39" y="2577" name="inst_02948998" locked="0" code="" scaleX="31.3400001525879" scaleY="35.2258071899414" colour="4294967295" rotation="0"/>
     <instance objName="obj_downarrow" x="2560" y="3880" name="inst_92713A47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badendwarnspace" x="2443" y="3495" name="inst_08475739" locked="0" code="" scaleX="7.15625" scaleY="1.48387098312378" colour="4294967295" rotation="0"/>

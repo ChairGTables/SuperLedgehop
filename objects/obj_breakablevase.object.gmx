@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>//Set health for enemy
-hp = 4;
+hp = 1;
 equip = "enhanced";
 //set health drops
-minDrops = 3;
-maxDrops = 5;
+minDrops = 0;
+maxDrops = 0;
 
 //set animation speed
 image_speed = 0;
@@ -202,7 +202,11 @@ if (hp &lt; 1)
             instance_destroy(obj_dialogue);
         }
         instance_create(x, y, obj_policerapid);
-        instance_create(x, y, obj_yuutoreddialogue);
+        if (global.misc1 == 0)
+        {
+            instance_create(x, y, obj_yuutoreddialogue);
+        }
+        
     }
     else if (red == 0)
     {
@@ -218,7 +222,10 @@ if (hp &lt; 1)
         {
             instance_destroy(obj_dialogue);
         }
-        instance_create(x, y, obj_yuutoviolet);
+        if (global.misc1 == 0)
+        {
+            instance_create(x, y, obj_yuutoviolet);
+        }
         for(i = 0; i &lt; instance_number( obj_vasespikes); i++ )
         {
             spike = instance_find( obj_vasespikes, i );

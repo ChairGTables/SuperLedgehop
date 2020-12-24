@@ -32,8 +32,17 @@ if (global.stageState != 1)
 }
 else
 {
-    alarm[0] = 15;
-    alarm[1] = 1;
+    if (0 == 1)
+    {
+        state = 1;
+        script_execute(scr_yuutoskipgov);
+    }
+    else
+    {
+        alarm[0] = 15;
+        alarm[1] = 1;
+    }
+    
 }
 
 
@@ -59,13 +68,24 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-if(instance_exists(obj_chizuru))
+            <string>if (global.misc1 == 1)
 {
-    obj_chizuru.hspeed = -15;
-    obj_chizuru.sprite_index = spr_chizuruwalkr;
-    obj_chizuru.image_xscale = -1;
+    state = 1;
+    global.speaking = false;
+    global.isCutscene = false;
+    global.stageState = 2;
+    script_execute(scr_yuutoskipgov);
+    scr_stopmusic();
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutotheme, true, 10);
+}
+else
+{
+    if(instance_exists(obj_chizuru))
+    {
+        obj_chizuru.hspeed = -15;
+        obj_chizuru.sprite_index = spr_chizuruwalkr;
+        obj_chizuru.image_xscale = -1;
+    }
 }
 </string>
           </argument>
@@ -687,7 +707,18 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_yuutosillhoute))
+            <string>if (global.skipCheck &gt;= 30)
+{
+    state = 1;
+    global.speaking = false;
+    global.isCutscene = false;
+    global.stageState = 2;
+    script_execute(scr_yuutoskipgov);
+    scr_stopmusic();
+    global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_yuutotheme, true, 10);
+}
+
+if (instance_exists(obj_yuutosillhoute))
 {
     obj_yuutosillhoute.visible = 0;
 }
@@ -769,7 +800,7 @@ if (state == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_yuutoskipgov);
+            <string>//script_execute(scr_yuutoskipgov);
 </string>
           </argument>
         </arguments>
@@ -792,7 +823,7 @@ if (state == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_yuutoskipgov);
+            <string>//script_execute(scr_yuutoskipgov);
 </string>
           </argument>
         </arguments>

@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>burning = false;
+            <string>burning = 0;
 flameSubimage = 0;
-
+instance_create(x, y, obj_wall);
 alarm[0] = 1;
 </string>
           </argument>
@@ -53,7 +53,64 @@ alarm[0] = 1;
             <kind>1</kind>
             <string>flameSubimage += 1;
 
-alarm[0] = 3;
+alarm[0] = 2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_defaultexplosion">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (burning == 0)
+{
+    burning = 1;
+    audio_play_sound_on (global.voiceEmitter, snd_death2, false, 10); 
+    instance_create(x, y, obj_defaultexplosion);
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_chizuruspreadbullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (burning == 0)
+{
+    burning = 1;
+    audio_play_sound_on (global.voiceEmitter, snd_death2, false, 10); 
+    instance_create(x, y, obj_defaultexplosion);
+}
 </string>
           </argument>
         </arguments>
@@ -79,9 +136,8 @@ alarm[0] = 3;
             <string>if (burning == 0)
 {
     burning = 1;
-    audio_play_sound_on (global.voiceEmitter, snd_death2, false, 10); 
+    audio_play_sound_on (global.effectsEmitter, snd_crashedlower, false, 10);
     instance_create(x, y, obj_defaultexplosion);
-    instance_destroy(self);
 }
 </string>
           </argument>

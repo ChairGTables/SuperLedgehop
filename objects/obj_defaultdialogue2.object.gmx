@@ -651,7 +651,7 @@ global.emotionAntagonistArray[21] = "none";
 break;
 }
 
-if (global.disableCutscenes == 1)
+if (global.disableCutscenes == 1 || global.misc1 == 1)
     {
         instance_destroy(dialogue);
     }
@@ -677,7 +677,17 @@ if (global.disableCutscenes == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.messageNumber &gt; 20)
+            <string>if (global.skipCheck &gt;= 30)
+{
+    if (instance_exists(obj_dialogue))
+    {
+        instance_destroy(obj_dialogue);
+    }
+}
+
+
+
+if (global.messageNumber &gt; 20)
 {
     if (!instance_exists(obj_whiteenlarge))
     {
@@ -698,58 +708,6 @@ if (instance_exists(dialogue) == 0)
     }
 
     instance_destroy(self);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="54">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (instance_exists(obj_dialogue))
-{
-    instance_destroy(obj_dialogue);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (instance_exists(obj_dialogue))
-{
-    instance_destroy(obj_dialogue);
 }
 </string>
           </argument>

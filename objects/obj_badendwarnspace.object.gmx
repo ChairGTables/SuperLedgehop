@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>state = 0;
-if (global.stageState == 10 || global.disableCutscenes == 1)
+if (global.stageState == 10 || global.disableCutscenes == 1 || global.misc1 == 1)
 {
     instance_destroy(self);
 }

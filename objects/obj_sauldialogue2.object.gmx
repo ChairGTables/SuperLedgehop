@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>titoState = 0;
-titoAngle = 180;
+titoAngle = 170;
 state = 0;
 alarm[1] = 3;
 </string>
@@ -51,22 +51,23 @@ alarm[1] = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (titoAngle &lt; 360)
+            <string>if (titoAngle &lt; 400)
 {
     audio_play_sound_on (global.effectsEmitter, snd_gatling, false, 10);
-    for (i = 0; i &lt; 5; i++)
+    for (i = 0; i &lt; 10; i++)
     {
         if (instance_exists(obj_titoassist))
         {
             shot = instance_create(obj_titoassist.x, obj_titoassist.y, obj_chizururapidbullet);
             obj_titoassist.sprite_index = spr_titoshoot;
             obj_titoassist.image_speed = 0.3;
+            obj_titoassist.moving = 0;
         }
         shot.direction = titoAngle + random_range(-5, 5);
-        shot.speed = 12;
+        shot.speed = random_range(12, 20);
     }
     alarm[1] = 2;
-    titoAngle += 9;
+    titoAngle += 20;
 }
 else
 {
@@ -75,8 +76,9 @@ else
         shot = instance_create(obj_titoassist.x, obj_titoassist.y, obj_chizururapidbullet);
         obj_titoassist.sprite_index = spr_titoshoot;
         obj_titoassist.image_speed = 0.3;
+        obj_titoassist.moving = 1;
     }
-    alarm[0] = 15;
+    alarm[0] = 60;
 }
 </string>
           </argument>
@@ -106,6 +108,7 @@ dialogue = instance_create(x, y, obj_dialogue);
 obj_dialogue.protagonist = "tito";
 obj_dialogue.antagonist = "saul";
 
+audio_play_sound_on (global.effectsEmitter, snd_pianobang, false, 10);
 state = 1;
 
 //set limit
@@ -117,160 +120,127 @@ switch(global.language)
 
 case 1:
 
-global.messageArray[0] = "¡No puedo dejar que estos tipos te den por el queso!";
+global.messageArray[0] = "Oh, no esperaba esto.";
 global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "angry";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
 
-
-global.messageArray[1] = "¡Tío Tito!";
-global.categoryArray[1] = "left";
+global.messageArray[1] = "¡Retirada!";
+global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
-global.emotionAntagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "¡Hafa Adai!";
+global.messageArray[2] = "Woah, ¿Cómo hiciste ese hechizo, Tito?";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "¡Hafa Adai!";
+global.messageArray[3] = "Se llama golpear un barril de petróleo hasta que explote.
+Deberías aprenderlo algún día.";
 global.categoryArray[3] = "left";
-global.emotionProtagonistArray[3] = "happy";
+global.emotionProtagonistArray[3] = "curious";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "¿¡Qué quieres decir con HOLA!?";
-global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "sad";
-global.emotionAntagonistArray[4] = "angry";
+global.messageArray[4] = "Ahora a movernos antes de que ese oficial nos detenga de nuevo.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "¡Estás toda lastimada!
-¡Hubieras muerto si no hubiese reflejado esas balas!";
+global.messageArray[5] = "¿No eras el senador anterior?
+¿Qué no puedes explicarle toda nuestra situación?";
 global.categoryArray[5] = "right";
-global.emotionProtagonistArray[5] = "sad";
-global.emotionAntagonistArray[5] = "angry";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "Tío, estoy bieeeen.";
+global.messageArray[6] = "No, el apesta.";
 global.categoryArray[6] = "left";
-global.emotionProtagonistArray[6] = "neutral";
-global.emotionAntagonistArray[6] = "angry";
-
-global.messageArray[7] = "¡No, no lo estás!";
-global.categoryArray[7] = "right";
-global.emotionProtagonistArray[7] = "neutral";
-global.emotionAntagonistArray[7] = "angry";
-
-global.messageArray[8] = "Toma, tengo un poco de té helado King Truck para ti.
-Curate, Chizuru.";
-global.categoryArray[8] = "right";
-global.emotionProtagonistArray[8] = "neutral";
-global.emotionAntagonistArray[8] = "neutral";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "neutral";
 
 break;
 
 case 2:
 
-global.messageArray[0] = "あんな奴らにお前をチーズにされる訳にはいかねぇ。";
+global.messageArray[0] = "何！？これは想定外だ！";
 global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "angry";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
 
-
-global.messageArray[1] = "ティトおじさん！";
-global.categoryArray[1] = "left";
+global.messageArray[1] = "総員撤退！";
+global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
-global.emotionAntagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "「Ｈａｆａ Ａｄａｉ！」";
+global.messageArray[2] = "ねえ、今の魔法何？";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "「Ｈａｆａ Ａｄａｉ！」";
+global.messageArray[3] = "今のは「ガスタンクを撃つ」って奴だ。覚えておけ。";
 global.categoryArray[3] = "left";
-global.emotionProtagonistArray[3] = "happy";
+global.emotionProtagonistArray[3] = "curious";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "...って「こんにちは」ってどういう事だ！？";
-global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "sad";
-global.emotionAntagonistArray[4] = "angry";
+global.messageArray[4] = "またあいつらが来る前に急ぐぞ！";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "お前傷だらけじゃないか！
-俺が弾を跳ね返してなかったら死んでたんだぞ！？";
+global.messageArray[5] = "でも上院議員だったんでしょ？
+説明したらいいじゃない。";
 global.categoryArray[5] = "right";
-global.emotionProtagonistArray[5] = "sad";
-global.emotionAntagonistArray[5] = "angry";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "大丈夫だよぉ、おじさぁん。";
+global.messageArray[6] = "いいや、アイツはダメだ。";
 global.categoryArray[6] = "left";
-global.emotionProtagonistArray[6] = "neutral";
-global.emotionAntagonistArray[6] = "angry";
-
-global.messageArray[7] = "んな訳あるか！";
-global.categoryArray[7] = "right";
-global.emotionProtagonistArray[7] = "neutral";
-global.emotionAntagonistArray[7] = "angry";
-
-global.messageArray[8] = "ほら、午前の紅茶だ。これを飲めば元気になるだろ。";
-global.categoryArray[8] = "right";
-global.emotionProtagonistArray[8] = "neutral";
-global.emotionAntagonistArray[8] = "neutral";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "neutral";
 
 break;
 
 
 case 3:
 
-global.messageArray[0] = "Não posso deixar esses caras fazerem queijo de você.";
+global.messageArray[0] = "Oh, I did not expect this.";
 global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "angry";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
 
-
-global.messageArray[1] = "Tio Tito!";
-global.categoryArray[1] = "left";
+global.messageArray[1] = "Fall back!";
+global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
-global.emotionAntagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "Hafa Adai!";
+global.messageArray[2] = "Whoa, how did you do that spell, Tito?";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "Hafa Adai!";
+global.messageArray[3] = "It's called, hitting an oil barrel until it explodes.
+You should learn it one day.";
 global.categoryArray[3] = "left";
-global.emotionProtagonistArray[3] = "happy";
+global.emotionProtagonistArray[3] = "curious";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Como assim OLÁ!?";
-global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "sad";
-global.emotionAntagonistArray[4] = "angry";
+global.messageArray[4] = "Now let's make a move before the police chief stops us again.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Você está toda machucada!
-Você poderia ter morrido se eu não tivesse refletido essas balas!";
+global.messageArray[5] = "Aren't you the previous senator?
+Can't you just explain to him the entire situation?";
 global.categoryArray[5] = "right";
-global.emotionProtagonistArray[5] = "sad";
-global.emotionAntagonistArray[5] = "angry";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "Tio, eu tô beeem.";
+global.messageArray[6] = "No, he sucks.";
 global.categoryArray[6] = "left";
-global.emotionProtagonistArray[6] = "neutral";
-global.emotionAntagonistArray[6] = "angry";
-
-global.messageArray[7] = "Não tá não!";
-global.categoryArray[7] = "right";
-global.emotionProtagonistArray[7] = "neutral";
-global.emotionAntagonistArray[7] = "angry";
-
-global.messageArray[8] = "Toma, peguei um Chá Tigre pra você.
-Beba, Chizuru.";
-global.categoryArray[8] = "right";
-global.emotionProtagonistArray[8] = "neutral";
-global.emotionAntagonistArray[8] = "neutral";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "neutral";
 
 break;
 
@@ -279,54 +249,44 @@ break;
 //French
 case 4:
 
-global.messageArray[0] = "Je peux pas laisser ces gars te trouer.";
+global.messageArray[0] = "Oh je m'y attendais pas.";
 global.categoryArray[0] = "right";
-global.emotionProtagonistArray[0] = "sad";
-global.emotionAntagonistArray[0] = "angry";
+global.emotionProtagonistArray[0] = "happy";
+global.emotionAntagonistArray[0] = "neutral";
 
-
-global.messageArray[1] = "Oncle Tito !";
-global.categoryArray[1] = "left";
+global.messageArray[1] = "Repli !";
+global.categoryArray[1] = "right";
 global.emotionProtagonistArray[1] = "happy";
-global.emotionAntagonistArray[1] = "angry";
+global.emotionAntagonistArray[1] = "neutral";
 
 
-global.messageArray[2] = "Hafa Adai !";
+global.messageArray[2] = "Waouh, comment as-tu fait ce sort, Tito ?";
 global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "Hafa Adai !";
+global.messageArray[3] = "Ça s'appelle tirer sur un baril d'huile jusqu'à ce qu'il explose.
+Tu devrais l'apprendre un de ces quatre.";
 global.categoryArray[3] = "left";
-global.emotionProtagonistArray[3] = "happy";
+global.emotionProtagonistArray[3] = "curious";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Tu veux dire quoi par BONJOUR !?";
-global.categoryArray[4] = "right";
-global.emotionProtagonistArray[4] = "sad";
-global.emotionAntagonistArray[4] = "angry";
+global.messageArray[4] = "Maintenant on bouge avant que ce chef de police
+nous barre encore la route.";
+global.categoryArray[4] = "left";
+global.emotionProtagonistArray[4] = "angry";
+global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Ils t'ont mise en piteux état ! Tu aurais pu mourir si je
-n'avais pas réfléchit toutes ces balles !";
+global.messageArray[5] = "N'es-tu pas l'ancien sénateur ?
+Ne peux-tu pas lui expliquer toute cette histoire ?";
 global.categoryArray[5] = "right";
-global.emotionProtagonistArray[5] = "sad";
-global.emotionAntagonistArray[5] = "angry";
+global.emotionProtagonistArray[5] = "angry";
+global.emotionAntagonistArray[5] = "neutral";
 
-global.messageArray[6] = "Tonton, ça vaaaaa.";
+global.messageArray[6] = "Nan c'est un gros naze.";
 global.categoryArray[6] = "left";
-global.emotionProtagonistArray[6] = "neutral";
-global.emotionAntagonistArray[6] = "angry";
-
-global.messageArray[7] = "Nan ça va pas !";
-global.categoryArray[7] = "right";
-global.emotionProtagonistArray[7] = "neutral";
-global.emotionAntagonistArray[7] = "angry";
-
-global.messageArray[8] = "Tiens, j'ai du thé glacé Ripton pour toi.
-Soigne-toi, Chizuru.";
-global.categoryArray[8] = "right";
-global.emotionProtagonistArray[8] = "neutral";
-global.emotionAntagonistArray[8] = "neutral";
+global.emotionProtagonistArray[6] = "curious";
+global.emotionAntagonistArray[6] = "neutral";
 
 break;
 
@@ -350,19 +310,19 @@ global.categoryArray[2] = "right";
 global.emotionProtagonistArray[2] = "happy";
 global.emotionAntagonistArray[2] = "neutral";
 
-global.messageArray[3] = "It’s called, hitting an oil barrel until it explodes.
+global.messageArray[3] = "It's called, hitting an oil barrel until it explodes.
 You should learn it one day.";
 global.categoryArray[3] = "left";
 global.emotionProtagonistArray[3] = "curious";
 global.emotionAntagonistArray[3] = "neutral";
 
-global.messageArray[4] = "Now let’s make a move before the police chief stops us again.";
-global.categoryArray[4] = "right";
+global.messageArray[4] = "Now let's make a move before the police chief stops us again.";
+global.categoryArray[4] = "left";
 global.emotionProtagonistArray[4] = "angry";
 global.emotionAntagonistArray[4] = "neutral";
 
-global.messageArray[5] = "Aren’t you the previous senator?
-Can’t you just explain to him the entire situation?";
+global.messageArray[5] = "Aren't you the previous senator?
+Can't you just explain to him the entire situation?";
 global.categoryArray[5] = "right";
 global.emotionProtagonistArray[5] = "angry";
 global.emotionAntagonistArray[5] = "neutral";
@@ -397,33 +357,38 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.messageNumber == 0 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
+            <string>if (global.skipCheck &gt;= 30)
+{
+    scr_saulsurroundskip();
+}
+
+if (global.messageNumber == 2 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
 {
     state = 2;
-    //obj_antagonisttalk.x = view_xview+1060;
-    //obj_antagonisttalk.hspeed = -30;
-    if (instance_exists(dialogue))
+    obj_antagonisttalk.x = view_xview+1060;
+    obj_antagonisttalk.hspeed = -30;
+    dialogue.antagonist = "yuuto";
+    
+    if (instance_exists(obj_saulnpc1))
     {
-        dialogue.showCG = true;
-        dialogue.cg = spr_saulcg;
+        obj_saulnpc1.speed = 20;
+        obj_saulnpc1.direction = 10;
+        obj_saulnpc1.alarm[0] = 5;
     }
-    dialogue.antagonist = "saul";
 }
 
 if (global.messageNumber == 5 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
 {
     state = 3;
-    if (instance_exists(dialogue))
-    {
-        dialogue.showCG = false;
-    }
-    dialogue.antagonist = "yuuto";
+
 }
 
 if (state == 3)
 {
     if (instance_exists(dialogue) == 0)
     {
+        global.musicrm1 = audio_play_sound_on (global.musicEmitter, snd_stage3b, true, 10); // Music in rm1, priority 10, looping
+        global.isCutscene = false;
         global.speaking = false;
         instance_destroy(self);
     }

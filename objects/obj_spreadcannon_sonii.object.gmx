@@ -76,6 +76,8 @@ downmomentum = 0;
 //Begin the alarms based on the beats
 timer = shootBeat;
 //alarm[1] = moveBeat;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>

@@ -473,6 +473,7 @@ if (shootTimer &lt;= 0)
         shootTimer = shootBeat;
         audio_play_sound_on (global.effectsEmitter, snd_waveblast, false, 10);
         shot = instance_create(x, y, obj_laser_sonii);
+        shot.damage = 10;
         if (instance_exists(obj_chizuru))
         {
             shot.image_angle = warnIndicator.image_angle;

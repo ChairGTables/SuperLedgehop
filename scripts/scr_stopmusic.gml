@@ -35,3 +35,7 @@ audio_stop_sound(snd_isuzu);
 audio_stop_sound(snd_stage3b);
 audio_stop_sound(snd_chiefloop);
 audio_stop_sound(snd_chiefintro);
+audio_stop_sound(snd_strategytheme);
+audio_stop_sound(snd_endcutscene2);
+audio_stop_sound(snd_badrealization);
+audio_stop_sound(snd_guitarcalm);

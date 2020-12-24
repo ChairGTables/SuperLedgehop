@@ -114,6 +114,8 @@ downmomentum = 0;
 shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
+
+scr_enemybasescript();
 </string>
           </argument>
         </arguments>
@@ -215,8 +217,10 @@ image_index = 0;
 // Scroll all the way down for changeable features
 /////////////////////////
 
-global.chizurump = 0;
-
+if (global.misc1 == 0)
+{
+    global.chizurump = 0;
+}
 script_execute(scr_enemycorestep);
 
 if (global.bosstwo &gt; 0 &amp;&amp; global.bossthree &gt; 0 &amp;&amp; global.bossone &gt; 0)
@@ -674,7 +678,7 @@ if (hp &lt; 1 &amp;&amp; global.bossone &lt; 1 &amp;&amp; global.bosstwo &lt; 1 
     death.sprite_index = spr_louiehurt;
     global.musicVolume = global.volumeHold;
     audio_emitter_gain(global.musicEmitter,   global.musicVolume);
-    
+    global.misc3 = 1;
     if (!steam_get_achievement("BOSS6"))
     {
         steam_set_achievement("BOSS6");

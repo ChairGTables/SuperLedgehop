@@ -118,56 +118,68 @@ else
     audio_stop_sound(snd_bulletget);
     audio_play_sound_on (global.effectsEmitter, snd_bulletget, false, 10); 
     
-    if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)
+    if (global.misc1 == 0)
     {
-        global.enhancedcount += 6;
-        if (global.shottype != 2 &amp;&amp; global.shottype != 4)
+    
+        if (category == "enhanced" &amp;&amp; global.enhancedcount &lt; 100)
         {
-            global.shottype = 1;
-            if (!instance_exists(obj_chizurucurrentbullet))
+            global.enhancedcount += 6;
+            if (global.shottype != 2 &amp;&amp; global.shottype != 4)
+            {
+                global.shottype = 1;
+                if (!instance_exists(obj_chizurucurrentbullet))
+                {
+                    var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+                }
+            }
+        }
+        if (category == "spread" &amp;&amp; global.spreadcount &lt; 100)
+        {
+            global.spreadcount += 3;
+            global.shottype = 2;
+            if !(instance_exists(obj_chizurucurrentbullet))
+            {
+                var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+            }
+        }
+        
+        if (category == "rapid" &amp;&amp; global.rapidcount &lt; 100)
+        {
+            global.rapidcount += 3;
+            global.shottype = 3;
+            if !(instance_exists(obj_chizurucurrentbullet))
+            {
+                var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+            }
+        }
+        
+        if (category == "fire" &amp;&amp; global.firecount &lt; 100)
+        {
+            global.firecount += 3;
+            global.shottype = 4;
+            if !(instance_exists(obj_chizurucurrentbullet))
+            {
+                var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
+            }
+        }
+        
+        if (category == "ice" &amp;&amp; global.icecount &lt; 100)
+        {
+            global.icecount += 3;
+            global.shottype = 5;
+            if !(instance_exists(obj_chizurucurrentbullet))
             {
                 var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
             }
         }
     }
-    if (category == "spread" &amp;&amp; global.spreadcount &lt; 100)
+    else
     {
-        global.spreadcount += 3;
-        global.shottype = 2;
-        if !(instance_exists(obj_chizurucurrentbullet))
-        {
-            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
-        }
-    }
-    
-    if (category == "rapid" &amp;&amp; global.rapidcount &lt; 100)
-    {
-        global.rapidcount += 3;
-        global.shottype = 3;
-        if !(instance_exists(obj_chizurucurrentbullet))
-        {
-            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
-        }
-    }
-    
-    if (category == "fire" &amp;&amp; global.firecount &lt; 100)
-    {
-        global.firecount += 3;
-        global.shottype = 4;
-        if !(instance_exists(obj_chizurucurrentbullet))
-        {
-            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
-        }
-    }
-    
-    if (category == "ice" &amp;&amp; global.icecount &lt; 100)
-    {
-        global.icecount += 3;
-        global.shottype = 5;
-        if !(instance_exists(obj_chizurucurrentbullet))
-        {
-            var currentBullet = instance_create(x, y, obj_chizurucurrentbullet);   
-        }
+        global.chizurump += 1;
+        global.chizurushine += 1;
+        global.firecount += 2;
+        global.icecount += 2;
+        global.spreadcount += 2;
     }
     
     instance_destroy(self);

@@ -32,6 +32,7 @@ dialogue = instance_create(x, y, obj_dialogue);
 
 obj_dialogue.antagonist = "crossette";
 
+state = 1;
 
 //set limit
 global.messageLimit = 23;
@@ -702,7 +703,7 @@ global.emotionAntagonistArray[23] = "happy";
 break;
 }
 
-if (global.disableCutscenes == 1)
+if (global.disableCutscenes == 1 || global.misc1 == 1)
     {
         instance_destroy(dialogue);
     }
@@ -728,7 +729,28 @@ if (global.disableCutscenes == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(dialogue) == 0)
+            <string>if (global.skipCheck &gt;= 30)
+{
+    if (instance_exists(obj_dialogue))
+    {
+        instance_destroy(obj_dialogue);
+    }
+}
+
+if (global.messageNumber == 0 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 2;
+    dialogue.showCG = true;
+    dialogue.cg = spr_crossettecg;
+}
+
+if (global.messageNumber == 4 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 3;
+    dialogue.showCG = false;
+}
+
+if (instance_exists(dialogue) == 0)
 {
     script_execute(scr_stopmusic);
 
@@ -756,11 +778,7 @@ if (global.disableCutscenes == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_dialogue))
-{
-    instance_destroy(obj_dialogue);
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -782,11 +800,7 @@ if (global.disableCutscenes == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_dialogue))
-{
-    instance_destroy(obj_dialogue);
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

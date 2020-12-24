@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.shineget == 0)
+            <string>if (global.misc1 == 1)
+{
+    global.isCutscene = false;
+    instance_destroy(self);
+}
+else if (global.shineget == 0)
 {
     global.bossone = 434;
     global.chizuruhp += 40;
@@ -40,6 +45,11 @@
         obj_chizuru.sprite_index = spr_chizuruwalkr;
         obj_chizuru.hspeed = 15;
     }
+    
+    if (global.disableCutscenes == 1)
+    {
+        script_execute(scr_mooseskip);
+    }
 }
 else
 {
@@ -47,10 +57,7 @@ else
     instance_destroy(self);
 }
 
-if (global.disableCutscenes == 1)
-{
-    script_execute(scr_mooseskip);
-}
+
 </string>
           </argument>
         </arguments>
@@ -161,7 +168,12 @@ if (state == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == 6 &amp;&amp; instance_number(obj_kamurodialogue3) == 0)
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_mooseskip);
+}
+
+if (state == 6 &amp;&amp; instance_number(obj_kamurodialogue3) == 0)
 {
     instance_create(x - 50, y + 20, obj_caution);
     image_speed = 0.3
@@ -208,7 +220,7 @@ if (state == 4 &amp;&amp; instance_number(obj_kamurodialogue2) == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_mooseskip);
+            <string>//script_execute(scr_mooseskip);
 </string>
           </argument>
         </arguments>
@@ -256,7 +268,7 @@ image_index = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_mooseskip);
+            <string>//script_execute(scr_mooseskip);
 </string>
           </argument>
         </arguments>
@@ -279,7 +291,7 @@ image_index = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_mooseskip);
+            <string>//script_execute(scr_mooseskip);
 </string>
           </argument>
         </arguments>
@@ -302,7 +314,7 @@ image_index = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_mooseskip);
+            <string>//script_execute(scr_mooseskip);
 </string>
           </argument>
         </arguments>

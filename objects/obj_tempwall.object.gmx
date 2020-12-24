@@ -29,6 +29,12 @@
 wall.image_xscale = image_xscale;
 wall.image_yscale = image_yscale;
 wall.image_angle = image_angle;
+
+if (global.misc1 == 1)
+{
+    instance_destroy(wall);
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

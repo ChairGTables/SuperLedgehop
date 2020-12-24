@@ -57,13 +57,41 @@
 if (y &gt; room_height - 270)
 {
     global.volumeHold = global.musicVolume;
-    if (global.titleSelection == 4 &amp;&amp; global.titleState == 2)
+    global.isGamepad = false;
+    if (global.misc1 == 1)
+    {
+        global.basiccount = 100;
+        global.enhancedcount = 0;
+        global.rapidcount = 0;
+        global.spreadcount = 100;
+        global.firecount = 100;
+        global.icecount = 100;
+        global.shottype = 0;
+    }
+    
+    if (global.titleSelection == 2 &amp;&amp; global.titleState == 0)
+    {
+        room_goto(rm_120bpm_bonus);
+    }
+    else if (global.titleSelection == 5 &amp;&amp; global.titleState == 2)
     {
         room_goto(rm_120bpmstage5);
     }
-    else if (global.titleSelection == 3 &amp;&amp; global.titleState == 2)
+    else if (global.titleSelection == 4 &amp;&amp; global.titleState == 2)
     {
         room_goto(rm_120bpmstage4);
+    }
+    else if (global.titleSelection == 3 &amp;&amp; global.titleState == 2)
+    {
+        global.misc1 = 1;
+        global.basiccount = 100;
+        global.enhancedcount = 0;
+        global.rapidcount = 0;
+        global.spreadcount = 100;
+        global.firecount = 100;
+        global.icecount = 100;
+        global.shottype = 0;
+        room_goto(rm_140bpmsaul);
     }
     else if (global.titleSelection == 2 &amp;&amp; global.titleState == 2)
     {

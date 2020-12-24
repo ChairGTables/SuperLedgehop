@@ -70,6 +70,10 @@ if (emotion == "none" )
     sprite_index = spr_emptysprite;
 }
 
+if (instance_exists(obj_dialogue))
+{
+    image_alpha = 1 - obj_dialogue.cgAlpha - obj_dialogue.cgLeftAlpha;;
+}
 
 if (emotion == "neutral" &amp;&amp; sprite_index != neutralSprite)
 {

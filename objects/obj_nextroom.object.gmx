@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>activated = 0;
+showPlayer = false;
 </string>
           </argument>
         </arguments>
@@ -83,7 +84,7 @@ if (!instance_exists(obj_wowyoudied))
     global.isCutscene = true;
     if (instance_exists(obj_chizuru))
     {
-        obj_chizuru.visible = false;
+        obj_chizuru.visible = showPlayer;
         if (instance_exists(obj_smolhitbox))
         {
             instance_destroy(obj_smolhitbox);

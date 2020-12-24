@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>touching = 0;
 completed = 0;
+
+if (global.misc1 == 1)
+{
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

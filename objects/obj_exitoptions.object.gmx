@@ -118,7 +118,7 @@ else
             <string>if (obj_titlecamera.action == 0 &amp;&amp; global.titleState == 1)
 {
     global.titleState = 0;
-    global.titleSelection = 0;
+    global.titleSelection = 3;
     script_execute(scr_autosave);
 }
 </string>

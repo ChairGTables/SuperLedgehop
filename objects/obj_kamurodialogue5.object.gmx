@@ -30,6 +30,8 @@ dialogue = instance_create(x, y, obj_dialogue);
 obj_dialogue.antagonist = "kamuro";
 obj_dialogue.boss = 1;
 
+state = 1;
+
 //set limit
 global.messageLimit = 18;
 
@@ -573,36 +575,40 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(dialogue) == 0)
+            <string>if (global.messageNumber == 3 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 2;
+    dialogue.showCGLeft = true;
+    dialogue.cgLeft = spr_kamurocg;
+}
+
+if (global.messageNumber == 4 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 3;
+    dialogue.showCGRight = true;
+    dialogue.cgRight = spr_kamurocg;
+}
+
+
+if (global.messageNumber == 5 &amp;&amp; state == 3 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 4;
+    dialogue.showCGMiddle = true;
+    dialogue.cgMiddle = spr_kamurocg;
+}
+
+if (global.messageNumber == 11 &amp;&amp; state == 4 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 5;
+    dialogue.showCGLeft = false;
+    dialogue.showCGRight = false;
+    dialogue.showCGMiddle = false;
+}
+
+if (instance_exists(dialogue) == 0)
 {
     global.speaking = false;
     instance_destroy(self);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="54">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (instance_exists(obj_dialogue))
-{
-    instance_destroy(obj_dialogue);
 }
 </string>
           </argument>

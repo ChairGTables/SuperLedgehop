@@ -7,17 +7,17 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>4</bbox_left>
-  <bbox_right>176</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>36</bbox_bottom>
+  <bbox_left>6</bbox_left>
+  <bbox_right>166</bbox_right>
+  <bbox_top>3</bbox_top>
+  <bbox_bottom>34</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>181</width>
+  <width>173</width>
   <height>37</height>
   <frames>
     <frame index="0">images\spr_languagelist_0.png</frame>

@@ -4,19 +4,27 @@ if (obj_titlecamera.action == 0)
     
     randThing = random_range(0,200);
     
-    if (randThing < 75)
+    instance_create(0, 540, obj_fadeupwards);
+    
+    if (global.misc1 == 0)
     {
-        audio_play_sound_on(global.voiceEmitter, snd_iwillcheeseyouup, false, 0);
-    }
-    else if (randThing > 74 && randThing < 125)
-    {
-        audio_play_sound_on(global.voiceEmitter, snd_cheeseitup, false, 0);
+        if (randThing < 75)
+        {
+            audio_play_sound_on(global.voiceEmitter, snd_iwillcheeseyouup, false, 0);
+        }
+        else if (randThing > 74 && randThing < 125)
+        {
+            audio_play_sound_on(global.voiceEmitter, snd_cheeseitup, false, 0);
+        }
+        else
+        {
+            audio_play_sound_on(global.voiceEmitter, snd_imgoingallin, false, 0);
+        }
     }
     else
     {
-        audio_play_sound_on(global.voiceEmitter, snd_imgoingallin, false, 0);
+        audio_play_sound_on(global.voiceEmitter, snd_yuutobootleg, false, 0);
     }
-    
     
     if (instance_exists(obj_titlecamera))
     {

@@ -186,10 +186,38 @@ if (previousBullet = 1 &amp;&amp; global.enhancedcount &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>if (global.misc1 == 1 &amp;&amp; image_index == 0)
+{
+    draw_sprite(sprite_index, 2, x, y);
+}
+else
+{
+    draw_self();
+}
 
-draw_sprite_ext(sprite_index, nextBullet, x+50, y+10, 0.5, 0.5, 0, c_white, 1);
-draw_sprite_ext(sprite_index, previousBullet, x-50, y+10, 0.5, 0.5, 0, c_white, 1);
+if (global.misc1 == 1 &amp;&amp; nextBullet == 2)
+{
+    draw_sprite_ext(sprite_index, 4, x+50, y+10, 0.5, 0.5, 0, c_white, 1);
+}
+else if (global.misc1 == 1 &amp;&amp; nextBullet == 0)
+{
+    draw_sprite_ext(sprite_index, 2, x+50, y+10, 0.5, 0.5, 0, c_white, 1);
+}
+else
+{
+    draw_sprite_ext(sprite_index, nextBullet, x+50, y+10, 0.5, 0.5, 0, c_white, 1);
+}
+
+if (global.misc1 == 1 &amp;&amp; previousBullet == 0)
+{
+    draw_sprite_ext(sprite_index, 5, x+50, y+10, 0.5, 0.5, 0, c_white, 1);
+}
+else
+{
+    draw_sprite_ext(sprite_index, previousBullet, x-50, y+10, 0.5, 0.5, 0, c_white, 1);
+}
+
+
 draw_sprite_ext(sprite_index, global.maxshottype+1, x+75, y+20, 0.5, 0.5, 0, c_white, 1);
 draw_sprite_ext(sprite_index, global.maxshottype+2, x-75, y+20, 0.5, 0.5, 0, c_white, 1);
 </string>

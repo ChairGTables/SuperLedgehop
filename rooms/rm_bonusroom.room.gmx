@@ -110,6 +110,7 @@
     <instance objName="obj_creditspapers" x="1970" y="4352" name="inst_C006841A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_prisoncrt" x="1939" y="4032" name="inst_20E9F425" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waveshinecrt" x="1838" y="4032" name="inst_94698F0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_saulcheck" x="1752" y="4544" name="inst_AC810600" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_carpetred" x="1088" y="5472" w="32" h="32" xo="128" yo="32" id="10061093" name="inst_A932DE01" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

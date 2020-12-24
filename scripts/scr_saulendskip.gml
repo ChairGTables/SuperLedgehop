@@ -1,0 +1,16 @@
+scr_musicfadekill();
+scr_stopmusic();
+skipped = true;
+global.misc1 = 0;
+global.misc2 = 1;
+global.basiccount = 100;
+global.enhancedcount = 100;
+global.rapidcount = 50;
+global.spreadcount = 100;
+global.firecount = 20;
+global.icecount = 0;
+global.shottype = 0;
+global.chizuruhp = 100;
+global.chizurump = 100;
+global.chizurushine = 100;
+room_goto(rm_120bpmliz);

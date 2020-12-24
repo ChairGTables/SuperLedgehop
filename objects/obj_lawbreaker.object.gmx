@@ -120,6 +120,7 @@ if (shootTimer &lt;= 0)
         spread[i].gravity = 0.5;
         spread[i].speed = random_range(13,17);
         spread[i].direction = 20 + ( 7 * i );
+        spread[i].damage = 9;
     }
     for (i = 0; i &lt; 10; i++)
     {

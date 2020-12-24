@@ -78,7 +78,7 @@ shootTimer = shootBeat;
 //alarm[1] = moveBeat;
 moveTimer = moveBeat;
 
-scr_enemybasescript();
+//scr_enemybasescript();
 </string>
           </argument>
         </arguments>

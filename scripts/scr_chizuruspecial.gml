@@ -118,7 +118,11 @@ if (instance_exists(obj_chizuru) && global.chizurump > 5 && !instance_exists(obj
         {
             obj_chizuru.alarm[10] = 15;
             global.chizurump -= 5;
-            instance_create(x, y, obj_explosion);
+            if (!instance_exists(obj_survivalmode))
+            {
+                instance_create(obj_chizuru.x, obj_chizuru.y, obj_explosion);
+            }
+            audio_stop_sound(snd_crashed);
             audio_play_sound_on (global.effectsEmitter, snd_rocketlaunch, false, 10); 
         }
     }

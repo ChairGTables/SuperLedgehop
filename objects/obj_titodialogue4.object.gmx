@@ -33,6 +33,8 @@ obj_dialogue.boss = 1;
 //set limit
 global.messageLimit = 25;
 
+state = 1;
+
 switch(global.language)
 {
 
@@ -764,7 +766,20 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(dialogue) == 0)
+            <string>if (global.messageNumber == 0 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 2;
+    dialogue.showCG = true;
+    dialogue.cg = spr_titocg;
+}
+
+if (global.messageNumber == 4 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 3;
+    dialogue.showCG = false;
+}
+
+if (instance_exists(dialogue) == 0)
 {
     global.speaking = false;
     instance_destroy(self);

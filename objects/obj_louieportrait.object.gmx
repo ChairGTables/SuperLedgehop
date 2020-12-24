@@ -114,7 +114,7 @@ if (state == 4)
 {
     scroll = 0;
     state = 5;
-    image_speed = 0.2;
+    image_speed = 0.5;
     alarm[0] = 90;
 }
 
@@ -173,6 +173,14 @@ if (xSpeed &gt;= 0 &amp;&amp; state == 0)
 {
     state = 1;
     alarm[0] = 60;
+}
+
+if (sillhouteAlpha == 1)
+{
+    if (image_index == 8)
+    {
+        sillhouteAlpha = 0.9;
+    }
 }
 
 if (sillhouteAlpha &gt; 0 &amp;&amp; sillhouteAlpha &lt; 1)
@@ -237,9 +245,9 @@ if (state == 6)
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-image_index = 3;
+image_index = 15;
 
-sillhouteAlpha = 0.9;
+
 </string>
           </argument>
         </arguments>
@@ -264,18 +272,18 @@ sillhouteAlpha = 0.9;
             <kind>1</kind>
             <string>if (sillhouteAlpha &lt; 1)
 {
-    draw_sprite_ext(sprite_index, image_index, view_xview + view_wview + 283 + xDraw, view_yview + view_hview - 242, sillhouteScale, sillhouteScale, image_angle, c_white, sillhouteAlpha);
+    draw_sprite_ext(sprite_index, image_index, view_xview + view_wview + 83 + xDraw, view_yview + view_hview - 242, sillhouteScale, sillhouteScale, image_angle, c_white, sillhouteAlpha);
 }
-draw_sprite(sprite_index, image_index, view_xview + view_wview + 283 + xDraw, view_yview + view_hview - 242);
+draw_sprite(sprite_index, image_index, view_xview + view_wview + 83 + xDraw, view_yview + view_hview - 242);
 
-if (image_index != 3 &amp;&amp; instance_exists(obj_blacktransparentbackground))
+if (image_index &lt; 8 &amp;&amp; instance_exists(obj_blacktransparentbackground))
 {
     draw_sprite_ext(spr_bigblack, 0, view_xview + (view_wview/2), view_yview + (view_hview/2), 1, 1, 0, c_white, obj_blacktransparentbackground.image_alpha);
 }
 
 if (eyeshineAlpha &lt; 1)
 {
-    draw_sprite_ext(spr_eyeshine, image_index, view_xview + view_wview + 283 + xDraw, view_yview + view_hview - 242 - 120, eyeshineScale, eyeshineScale, eyeshineAngle, c_white, eyeshineAlpha);
+    draw_sprite_ext(spr_eyeshine, image_index, view_xview + view_wview + 83 + xDraw, view_yview + view_hview - 242 - 120, eyeshineScale, eyeshineScale, eyeshineAngle, c_white, eyeshineAlpha);
 }
         draw_set_color(16645629);
         draw_set_valign(fa_top);

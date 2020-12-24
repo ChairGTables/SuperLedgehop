@@ -33,6 +33,8 @@ dialogue = instance_create(x, y, obj_dialogue);
 obj_dialogue.antagonist = "yuuto";
 obj_dialogue.boss = 1;
 
+state = 1;
+
 if (global.disableCutscenes == 1)
 {
     script_execute(scr_stopmusic);
@@ -292,65 +294,33 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(dialogue) == 0)
+            <string>if (global.skipCheck &gt;= 30)
+{
+    script_execute(scr_stopmusic);
+    global.isCutscene = false;
+    instance_create(x, y, obj_skippingcutscene);
+    instance_create(x, y, obj_blackfadein);
+    room_goto_next();
+}
+
+if (global.messageNumber == 5 &amp;&amp; state == 1 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 2;
+    dialogue.showCG = true;
+    dialogue.cg = spr_yuutocg;
+}
+
+if (global.messageNumber == 7 &amp;&amp; state == 2 &amp;&amp; instance_exists(obj_antagonisttalk))
+{
+    state = 3;
+    dialogue.showCG = false;
+}
+
+if (instance_exists(dialogue) == 0)
 {
     global.speaking = false;
     instance_destroy(self);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="54">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>script_execute(scr_stopmusic);
-global.isCutscene = false;
-instance_create(x, y, obj_skippingcutscene);
-instance_create(x, y, obj_blackfadein);
-room_goto_next();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>script_execute(scr_stopmusic);
-global.isCutscene = false;
-instance_create(x, y, obj_skippingcutscene);
-instance_create(x, y, obj_blackfadein);
-room_goto_next();
 </string>
           </argument>
         </arguments>

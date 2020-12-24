@@ -1,3 +1,5 @@
+image_index = 0;
+
 if(obj_chizuru.lookDirection == 1)
             {
                 obj_chizuru.image_xscale = -1;

@@ -66,8 +66,21 @@ switch(selectedSprite)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound_on (global.voiceEmitter, snd_death2, false, 10); 
-instance_create(x, y, obj_explosion);
+            <string>instance_create(x, y, obj_explosion);
+audio_stop_sound(snd_crashed);
+audio_play_sound_on (global.effectsEmitter, snd_crashedlower, false, 10);
+    if (sprite_index == spr_policerifle)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death12lower, false, 10);
+    }
+    else if (sprite_index == spr_policegrenade)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death13lower, false, 10);
+    }
+    else
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death10lower, false, 10);
+    }
 instance_destroy(self);
 </string>
           </argument>
@@ -91,8 +104,21 @@ instance_destroy(self);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound_on (global.voiceEmitter, snd_death2, false, 10); 
-instance_create(x, y, obj_explosion);
+            <string>instance_create(x, y, obj_explosion);
+audio_stop_sound(snd_crashed);
+audio_play_sound_on (global.effectsEmitter, snd_crashedlower, false, 10);
+    if (sprite_index == spr_policerifle)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death12lower, false, 10);
+    }
+    else if (sprite_index == spr_policegrenade)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death13lower, false, 10);
+    }
+    else
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death10lower, false, 10);
+    }
 instance_destroy(self);
 </string>
           </argument>
@@ -116,8 +142,21 @@ instance_destroy(self);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound_on (global.voiceEmitter, snd_death2, false, 10); 
-instance_create(x, y, obj_explosion);
+            <string>instance_create(x, y, obj_explosion);
+audio_stop_sound(snd_crashed);
+audio_play_sound_on (global.effectsEmitter, snd_crashedlower, false, 10);
+    if (sprite_index == spr_policerifle)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death12lower, false, 10);
+    }
+    else if (sprite_index == spr_policegrenade)
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death13lower, false, 10);
+    }
+    else
+    {
+        audio_play_sound_on (global.voiceEmitter, snd_death10lower, false, 10);
+    }
 instance_destroy(self);
 </string>
           </argument>

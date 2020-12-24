@@ -68,6 +68,14 @@ if (instance_exists(obj_wall))
 bill = instance_create(x, view_yview + view_hview + 30, obj_billnpc3);
 crossette = instance_create(view_xview-30, view_yview-30, obj_crossettenpc1);
 alarm[0] = 90;
+
+if (global.disableCutscenes == 1 || global.misc1 == 1)
+{
+    global.chizuruhp = 100;
+    global.isCutscene = false;
+    script_execute(scr_stopmusic);
+    room_goto_next();
+}
 </string>
           </argument>
         </arguments>
@@ -208,6 +216,14 @@ if (state == 0)
             <kind>1</kind>
             <string>depth = -y;
 
+if (global.skipCheck &gt;= 30)
+{
+    global.chizuruhp = 100;
+    global.isCutscene = false;
+    script_execute(scr_stopmusic);
+    room_goto_next();
+}
+
 if (state == 9 &amp;&amp; !instance_exists(obj_kamurodialogue12))
 {
     state = 10;
@@ -291,32 +307,6 @@ if (state == 1 &amp;&amp; !instance_exists(obj_kamurodialogue9) &amp;&amp; insta
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="54">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.chizuruhp = 100;
-global.isCutscene = false;
-script_execute(scr_stopmusic);
-room_goto_next();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
@@ -345,32 +335,6 @@ room_goto_next();
         obj_chizuru.sprite_index = spr_chizurustandd;
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.chizuruhp = 100;
-global.isCutscene = false;
-script_execute(scr_stopmusic);
-room_goto_next();
 </string>
           </argument>
         </arguments>

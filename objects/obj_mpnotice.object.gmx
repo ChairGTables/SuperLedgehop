@@ -31,6 +31,11 @@ invisibility = 0;
 disappearing = 0;
 
 alarm[0] = 200;
+
+if (global.misc1 == 1)
+{
+    instance_destroy(self);
+}
 </string>
           </argument>
         </arguments>

@@ -3,7 +3,7 @@
   <caption></caption>
   <width>4000</width>
   <height>3200</height>
-  <vsnap>16</vsnap>
+  <vsnap>1</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_camera_chair" xview="640" yview="3400" wview="960" hview="540" xport="0" yport="0" wport="960" hport="540" hborder="960" vborder="540" hspeed="60" vspeed="60"/>
+    <view visible="-1" objName="obj_camera_chair" xview="2640" yview="2400" wview="960" hview="540" xport="0" yport="0" wport="960" hport="540" hborder="960" vborder="540" hspeed="60" vspeed="60"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -58,7 +58,7 @@
     <instance objName="obj_beat_david" x="544" y="96" name="inst_4A3AA553" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_soundcontroller_david" x="480" y="192" name="inst_A2960B1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stagethreebmusic" x="336" y="272" name="inst_C6F21DC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chizuru" x="3072" y="2832" name="inst_1A9E78EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chizuru" x="3152" y="2608" name="inst_1A9E78EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_jarturner" x="2496" y="1728" name="inst_08D8BEDB" locked="0" code="angleTurn = 45;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_jarturner" x="2880" y="1344" name="inst_FA545F18" locked="0" code="angleTurn = 270;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_jarturner" x="2880" y="1760" name="inst_E56BC7A0" locked="0" code="angleTurn = 135;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -71,7 +71,7 @@
     <instance objName="obj_vasespikes" x="2224" y="1552" name="inst_D04CE1DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vasespikes" x="2256" y="1552" name="inst_3CA71430" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vasespikes" x="2288" y="1552" name="inst_4613EA23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_switch_david" x="617" y="1145" name="inst_BC5B3E89" locked="0" code="unlockID = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_switch_david" x="528" y="1154" name="inst_BC5B3E89" locked="0" code="unlockID = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_david" x="1120" y="1120" name="inst_B9346C14" locked="0" code="unlockID = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2848" y="2816" name="inst_C32D67A0" locked="0" code="" scaleX="4.12903213500977" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="3168" y="2816" name="inst_899C5771" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
@@ -146,7 +146,7 @@
     <instance objName="obj_wall" x="1258" y="1145" name="inst_E7A3BD68" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="45"/>
     <instance objName="obj_wall" x="992" y="1024" name="inst_68FFDC11" locked="0" code="" scaleX="3" scaleY="4.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1063" y="1145" name="inst_920127A1" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="45"/>
-    <instance objName="obj_nextroom" x="368" y="-176" name="inst_D5960F95" locked="0" code="" scaleX="14" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nextroom" x="368" y="-205" name="inst_D5960F95" locked="0" code="" scaleX="14" scaleY="4.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="336" y="-80" name="inst_7DB491D5" locked="0" code="" scaleX="3.61290311813354" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="736" y="-64" name="inst_3561882C" locked="0" code="" scaleX="3.61290311813354" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="336" y="1664" name="inst_283A4FE2" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="135"/>
@@ -163,8 +163,8 @@
     <instance objName="obj_sidetoside_sonii" x="2272" y="2240" name="inst_26134B7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sidetoside_sonii" x="2208" y="2528" name="inst_8B2297D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sidetoside_sonii" x="2208" y="1824" name="inst_AD14E601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="2480" y="2384" name="inst_760208A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basicenemy3_sonii" x="2432" y="2464" name="inst_35EA015A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basicenemy3_sonii" x="2384" y="2384" name="inst_760208A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basicenemy3_sonii" x="2320" y="2464" name="inst_35EA015A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="2368" y="2016" name="inst_F6D1557A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="1712" y="1264" name="inst_E90A03DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spreadcannon_sonii" x="1040" y="1456" name="inst_BDDACEF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -172,8 +172,7 @@
     <instance objName="obj_policegrenade" x="1024" y="1360" name="inst_D285D7B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policegrenade" x="704" y="192" name="inst_EAE7ED41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policecyborg" x="496" y="112" name="inst_38674CCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policerapid" x="400" y="720" name="inst_028B8E57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policerapid" x="496" y="896" name="inst_79E02AB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policerapid" x="400" y="661" name="inst_028B8E57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policecyborg" x="2400" y="1504" name="inst_63CB891E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flamebarrel" x="2352" y="2272" name="inst_D9F01C30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flamebarrel" x="1264" y="1456" name="inst_DAE20933" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -182,7 +181,13 @@
     <instance objName="obj_basicenemy3_sonii" x="640" y="80" name="inst_8E37C7C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="1136" y="1184" name="inst_6CF8E589" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basicenemy3_sonii" x="672" y="640" name="inst_53AFCDB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_titoassist" x="3104" y="2896" name="inst_10E10E93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_titoassist" x="3152" y="2704" name="inst_10E10E93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_saulnpc2" x="3184" y="2560" name="inst_08DF08F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_liznpc5" x="3072" y="2976" name="inst_8599E037" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crossettenpc2" x="3056" y="3008" name="inst_9C9588BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sauldialogue3" x="3200" y="2592" name="inst_F50D1094" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_yuutonpc4" x="3104" y="3024" name="inst_D2397288" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_titonpc6" x="3088" y="3041" name="inst_7C02F868" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_building1b" x="2976" y="3168" w="32" h="32" xo="192" yo="32" id="10086238" name="inst_558C97CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
